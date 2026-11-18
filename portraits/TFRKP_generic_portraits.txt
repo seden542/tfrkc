@@ -1,0 +1,68 @@
+KOR = {
+	army = {
+		male = {
+			"GFX_portrait_KOR_random_generals_kor"
+			"GFX_portrait_KOR_random_generals_kor_2"
+			"GFX_portrait_KOR_random_generals_kor_3"
+			"GFX_portrait_KOR_random_generals_kor_4"
+			"GFX_portrait_KOR_random_generals_kor_5"
+			"GFX_portrait_KOR_random_generals_kor_6"
+			"GFX_portrait_KOR_random_generals_kor_7"
+			"GFX_portrait_KOR_random_generals_kor_8"
+			"GFX_portrait_KOR_random_generals_kor_9"
+			"GFX_portrait_KOR_random_generals_kor_10"
+			"GFX_portrait_KOR_random_generals_kor_11"
+			"GFX_portrait_KOR_random_generals_kor_12"
+			"GFX_portrait_KOR_random_generals_kor_13"
+			"GFX_portrait_KOR_random_generals_kor_14"
+			"GFX_portrait_KOR_random_generals_kor_15"
+			"GFX_portrait_KOR_random_generals_kor_16"
+			"GFX_portrait_KOR_random_generals_kor_17"
+			"GFX_portrait_KOR_random_generals_kor_18"
+			"GFX_portrait_KOR_random_generals_kor_19"
+			"GFX_portrait_KOR_random_generals_kor_20"
+			"GFX_portrait_KOR_random_generals_kor_21"
+			"GFX_portrait_KOR_random_generals_kor_22"
+			"GFX_portrait_KOR_random_generals_kor_23"
+			"GFX_portrait_KOR_random_generals_kor_24"
+			"GFX_portrait_KOR_random_generals_kor_25"
+			"GFX_portrait_KOR_random_generals_kor_26"
+
+		}
+		female = {
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_portrait_KOR_random_admirals_kor"
+			"GFX_portrait_KOR_random_admirals_kor_2"
+			"GFX_portrait_KOR_random_admirals_kor_3"
+			"GFX_portrait_KOR_random_admirals_kor_4"
+		}
+	}
+	operative = {
+		male = {
+			"GFX_portrait_KOR_random_spy_male_1"
+			"GFX_portrait_KOR_random_spy_male_2"
+			"GFX_portrait_KOR_random_spy_male_3"
+			"GFX_portrait_KOR_random_spy_male_4"
+			"GFX_portrait_KOR_random_spy_male_5"
+			"GFX_portrait_KOR_random_spy_male_6"
+			"GFX_portrait_KOR_random_spy_male_7"
+			"GFX_portrait_KOR_random_spy_male_8"
+			"GFX_portrait_KOR_random_spy_male_9"
+			"GFX_portrait_KOR_random_spy_male_10"
+			"GFX_portrait_KOR_random_spy_male_11"
+			"GFX_portrait_KOR_random_spy_male_12"
+			"GFX_portrait_KOR_random_spy_male_13"
+		}
+		female = {
+			"GFX_portrait_KOR_random_spy_female_1"
+			"GFX_portrait_KOR_random_spy_female_2"
+			"GFX_portrait_KOR_random_spy_female_3"
+			"GFX_portrait_KOR_random_spy_female_4"
+			"GFX_portrait_KOR_random_spy_female_5"
+		}	
+	}
+}

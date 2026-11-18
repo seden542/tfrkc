@@ -1,0 +1,36 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 KLF line" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 KLF armor" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+division_template = { name = "TFRKC v5 KLF mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "KLF line 1" location = 15361 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 2" location = 15370 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 3" location = 15356 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 4" location = 14238 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 5" location = 15325 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 6" location = 7204 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 7" location = 15305 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 8" location = 15177 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 9" location = 15360 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 10" location = 15279 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 11" location = 15280 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 12" location = 15281 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 13" location = 15310 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 14" location = 11992 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 15" location = 15334 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 16" location = 15324 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 17" location = 15116 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 18" location = 15332 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 19" location = 15296 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 20" location = 15297 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 21" location = 15300 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 22" location = 15353 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 23" location = 15335 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF line 24" location = 7175 division_template = "TFRKC v5 KLF line" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF armor 1" location = 15117 division_template = "TFRKC v5 KLF armor" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF armor 2" location = 15299 division_template = "TFRKC v5 KLF armor" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF armor 3" location = 15184 division_template = "TFRKC v5 KLF armor" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF mobile 1" location = 15322 division_template = "TFRKC v5 KLF mobile" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF mobile 2" location = 15304 division_template = "TFRKC v5 KLF mobile" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+ division = { name = "KLF mobile 3" location = 15301 division_template = "TFRKC v5 KLF mobile" start_manpower_factor = 0.85 start_equipment_factor = 0.72 start_experience_factor = 0.4 }
+}

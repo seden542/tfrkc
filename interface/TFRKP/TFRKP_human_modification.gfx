@@ -1,0 +1,36 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_human_all_part"
+		texturefile = "gfx/interface/gui/human/human_all_part.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_human_head"
+		texturefile = "gfx/interface/gui/human/head.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_human_body"
+		texturefile = "gfx/interface/gui/human/body.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_human_left_arm"
+		texturefile = "gfx/interface/gui/human/left_arm.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_human_right_arm"
+		texturefile = "gfx/interface/gui/human/right_arm.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_human_leg"
+		texturefile = "gfx/interface/gui/human/leg.png"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+}

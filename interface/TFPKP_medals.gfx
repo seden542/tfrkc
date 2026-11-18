@@ -1,0 +1,34 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_medal_icon_kor"
+		texturefile = "gfx/interface/medals/kor_medal_strip.png"
+		noOfFrames = 4
+    }
+	spriteType = {
+		name = "GFX_medal_icon_kor_large"
+		texturefile = "gfx/interface/medals/kor_medal_strip_large.png"
+		noOfFrames = 4
+    }
+    spriteType = {
+		name = "GFX_KOR_medal_1"
+		texturefile = "gfx/interface/medals/KOR_medal_1.png"
+	}
+	
+    spriteType = {
+		name = "GFX_KOR_medal_2"
+		texturefile = "gfx/interface/medals/KOR_medal_2.png"
+	}
+    	
+    spriteType = {
+		name = "GFX_KOR_medal_3"
+		texturefile = "gfx/interface/medals/KOR_medal_3.png"
+	}
+    	
+    spriteType = {
+		name = "GFX_KOR_medal_4"
+		texturefile = "gfx/interface/medals/KOR_medal_4.png"
+    }
+	
+}
+

@@ -1,0 +1,17 @@
+ideas = {
+	#################################################
+	#                  Dummy Ideas                  #
+	#################################################
+	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+	hidden_ideas = {
+		TFR_SE_KOR_MARTIAL_LAW_YOON = {}
+		TFR_SE_KOR_TAIWAN_ANNEX = {}
+		TFR_SE_KOR_TAIWAN_INDEPENDENCE = {}
+		TFR_SE_KOR_PDTO_WIN_LIGHT_YOON = {}
+		TFR_SE_KOR_PDTO_WIN_MARTIAL_LAW_YOON = {}
+		TFR_SE_KOR_ARMY_COUPDETAT = {}
+		TFR_SE_KOR_PDTO_WIN_ARMY = {}
+		TFR_SE_KOR_PDTO_WIN_CHO_KUK = {}
+		TFR_SE_KOR_KOREAN_FEDERATION = {}
+	}
+}

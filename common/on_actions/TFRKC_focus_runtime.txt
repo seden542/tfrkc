@@ -1,0 +1,9 @@
+# STAGED REWORK: passive routing only for the six playable countries.
+on_actions = { on_daily = { effect = {
+ KWC = { TFRKC_focus_dispatch_effect = yes }
+ KLF = { TFRKC_focus_dispatch_effect = yes }
+ KRC = { TFRKC_focus_dispatch_effect = yes }
+ KCH = { TFRKC_focus_dispatch_effect = yes }
+ KYA = { TFRKC_focus_dispatch_effect = yes }
+ KOR = { TFRKC_focus_dispatch_effect = yes }
+} } }

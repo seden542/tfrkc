@@ -1,0 +1,24 @@
+PRK_fight_malignant_virus_category = {
+	icon = GFX_decision_PRK_fight_malignant_virus_category
+	allowed = {
+		original_tag = PRK
+	}
+	priority = 98
+	visible_when_empty = yes
+	visible = {
+		has_completed_focus = PRK_wave_of_malignant_virus
+		NOT = { has_country_flag = PRK_virus_crisis_over }
+	}
+}
+
+PRK_national_economic_development_plan_category = {
+	icon = GFX_decision_PRK_national_economic_development_plan_category
+	allowed = {
+		original_tag = PRK
+	}
+	priority = 90
+	visible_when_empty = yes
+	visible = {
+		has_completed_focus = PRK_eighth_congress_workers_party
+	}
+}

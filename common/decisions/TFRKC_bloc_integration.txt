@@ -1,0 +1,50 @@
+TFRKC_bloc_integration_category = {
+ TFRKC_bloc_request_KWC_KLF = {
+  icon = generic_political_discourse
+  visible = { tag = KWC has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes KLF = { exists = yes } }
+  available = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KWC = { is_ai = no } KLF = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no KLF = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KWC_KLF } } NOT = { has_country_flag = TFRKC_bloc_pending_KWC_KLF } NOT = { has_country_flag = TFRKC_bloc_cooldown_KWC_KLF } }
+  cost = 0
+  ai_will_do = { factor = 1 }
+  complete_effect = { if = { limit = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KWC = { is_ai = no } KLF = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no KLF = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KWC_KLF } } NOT = { has_country_flag = TFRKC_bloc_pending_KWC_KLF } NOT = { has_country_flag = TFRKC_bloc_cooldown_KWC_KLF } } set_country_flag = TFRKC_bloc_pending_KWC_KLF set_country_flag = TFRKC_rework_accept_KLF set_country_flag = { flag = TFRKC_bloc_cooldown_KWC_KLF days = 30 } KLF = { set_country_flag = TFRKC_bloc_offer_KWC_KLF country_event = { id = tfrkc_bloc_integration.1 } } } }
+ }
+ TFRKC_bloc_request_KWC_KPL = {
+  icon = generic_political_discourse
+  visible = { tag = KWC has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes KPL = { exists = yes } }
+  available = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KWC = { is_ai = no } KPL = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no KPL = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KWC_KPL } } NOT = { has_country_flag = TFRKC_bloc_pending_KWC_KPL } NOT = { has_country_flag = TFRKC_bloc_cooldown_KWC_KPL } }
+  cost = 0
+  ai_will_do = { factor = 1 }
+  complete_effect = { if = { limit = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KWC = { is_ai = no } KPL = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no KPL = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KWC_KPL } } NOT = { has_country_flag = TFRKC_bloc_pending_KWC_KPL } NOT = { has_country_flag = TFRKC_bloc_cooldown_KWC_KPL } } set_country_flag = TFRKC_bloc_pending_KWC_KPL set_country_flag = TFRKC_rework_accept_KPL set_country_flag = { flag = TFRKC_bloc_cooldown_KWC_KPL days = 30 } KPL = { set_country_flag = TFRKC_bloc_offer_KWC_KPL country_event = { id = tfrkc_bloc_integration.2 } } } }
+ }
+ TFRKC_bloc_request_KRC_ZAF = {
+  icon = generic_political_discourse
+  visible = { tag = KRC has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes ZAF = { exists = yes } }
+  available = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KRC = { is_ai = no } ZAF = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no ZAF = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KRC_ZAF } } NOT = { has_country_flag = TFRKC_bloc_pending_KRC_ZAF } NOT = { has_country_flag = TFRKC_bloc_cooldown_KRC_ZAF } }
+  cost = 0
+  ai_will_do = { factor = 1 }
+  complete_effect = { if = { limit = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KRC = { is_ai = no } ZAF = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no ZAF = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KRC_ZAF } } NOT = { has_country_flag = TFRKC_bloc_pending_KRC_ZAF } NOT = { has_country_flag = TFRKC_bloc_cooldown_KRC_ZAF } } set_country_flag = TFRKC_bloc_pending_KRC_ZAF set_country_flag = TFRKC_rework_accept_ZAF set_country_flag = { flag = TFRKC_bloc_cooldown_KRC_ZAF days = 30 } ZAF = { set_country_flag = TFRKC_bloc_offer_KRC_ZAF country_event = { id = tfrkc_bloc_integration.3 } } } }
+ }
+ TFRKC_bloc_request_KOR_KCH = {
+  icon = generic_political_discourse
+  visible = { tag = KOR has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes KCH = { exists = yes } }
+  available = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KOR = { is_ai = no } KCH = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no KCH = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KOR_KCH } } NOT = { has_country_flag = TFRKC_bloc_pending_KOR_KCH } NOT = { has_country_flag = TFRKC_bloc_cooldown_KOR_KCH } }
+  cost = 0
+  ai_will_do = { factor = 1 }
+  complete_effect = { if = { limit = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KOR = { is_ai = no } KCH = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no KCH = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KOR_KCH } } NOT = { has_country_flag = TFRKC_bloc_pending_KOR_KCH } NOT = { has_country_flag = TFRKC_bloc_cooldown_KOR_KCH } } set_country_flag = TFRKC_bloc_pending_KOR_KCH set_country_flag = TFRKC_rework_accept_KCH set_country_flag = { flag = TFRKC_bloc_cooldown_KOR_KCH days = 30 } KCH = { set_country_flag = TFRKC_bloc_offer_KOR_KCH country_event = { id = tfrkc_bloc_integration.4 } } } }
+ }
+ TFRKC_bloc_request_KYA_ZSL = {
+  icon = generic_political_discourse
+  visible = { tag = KYA has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes ZSL = { exists = yes } }
+  available = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KYA = { is_ai = no } ZSL = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no ZSL = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KYA_ZSL } } NOT = { has_country_flag = TFRKC_bloc_pending_KYA_ZSL } NOT = { has_country_flag = TFRKC_bloc_cooldown_KYA_ZSL } }
+  cost = 0
+  ai_will_do = { factor = 1 }
+  complete_effect = { if = { limit = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KYA = { is_ai = no } ZSL = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no ZSL = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KYA_ZSL } } NOT = { has_country_flag = TFRKC_bloc_pending_KYA_ZSL } NOT = { has_country_flag = TFRKC_bloc_cooldown_KYA_ZSL } } set_country_flag = TFRKC_bloc_pending_KYA_ZSL set_country_flag = TFRKC_rework_accept_ZSL set_country_flag = { flag = TFRKC_bloc_cooldown_KYA_ZSL days = 30 } ZSL = { set_country_flag = TFRKC_bloc_offer_KYA_ZSL country_event = { id = tfrkc_bloc_integration.5 } } } }
+ }
+ TFRKC_bloc_request_KYA_ZUS = {
+  icon = generic_political_discourse
+  visible = { tag = KYA has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes ZUS = { exists = yes } }
+  available = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KYA = { is_ai = no } ZUS = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no ZUS = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KYA_ZUS } } NOT = { has_country_flag = TFRKC_bloc_pending_KYA_ZUS } NOT = { has_country_flag = TFRKC_bloc_cooldown_KYA_ZUS } }
+  cost = 0
+  ai_will_do = { factor = 1 }
+  complete_effect = { if = { limit = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes NOT = { AND = { KYA = { is_ai = no } ZUS = { is_ai = no } } } exists = yes has_country_flag = TFRKC_rework_participant has_war = no ZUS = { exists = yes has_country_flag = TFRKC_rework_participant has_war = no has_capitulated = no NOT = { has_country_flag = TFRKC_bloc_offer_KYA_ZUS } } NOT = { has_country_flag = TFRKC_bloc_pending_KYA_ZUS } NOT = { has_country_flag = TFRKC_bloc_cooldown_KYA_ZUS } } set_country_flag = TFRKC_bloc_pending_KYA_ZUS set_country_flag = TFRKC_rework_accept_ZUS set_country_flag = { flag = TFRKC_bloc_cooldown_KYA_ZUS days = 30 } ZUS = { set_country_flag = TFRKC_bloc_offer_KYA_ZUS country_event = { id = tfrkc_bloc_integration.6 } } } }
+ }
+}

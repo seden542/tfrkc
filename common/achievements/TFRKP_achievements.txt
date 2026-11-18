@@ -1,0 +1,644 @@
+unique_id = the_fire_rises_korea_plus
+
+################################################################
+# List of new achievements
+################################################################
+
+
+
+##### Ending (Star 1) #####
+### Yoon ###
+TFRKP_achieve_ending_yoon_canon = { # 윤석열 - 정사
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_lee_after_yoon_path = yes
+		}
+    }
+}
+
+TFRKP_achieve_ending_yoon_martial_law = { # 윤석열 - 계엄 성공
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_yoon_declare_martial_law = yes
+		}
+	}
+}
+
+TFRKP_achieve_ending_yoon_martial_law_nuke = { # 윤석열 - 계엄 성공 핵피엔딩
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			KOR_is_yoon_declare_martial_law = yes
+			has_country_flag = KOR_yoon_burn_asia_use_nuke_flag
+		}
+	}
+}
+
+TFRKP_achieve_ending_yoon_happy = { # 윤석열 - 빛석열
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_yoon_path = yes
+			has_country_flag = KOR_yoon_taiwan_war_victory
+		}
+    }
+}
+
+TFRKP_achieve_ending_yoon_gaka = { # 윤석열 - GAKA
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			has_country_leader = {
+				character = KOR_ai_park_chung_hee_char
+				ruling_only = yes
+			}
+		}
+    }
+}
+
+
+### Lee ###
+TFRKP_achieve_ending_lee_happy = { # 이재명 - 빛재명
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_lee_path = yes
+			has_country_flag = KOR_lee_taiwan_war_victory_supported
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_free_ppp_happy = { # 이재명 - 꽁승 이준석
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_lee_PPP_path = yes
+			has_country_flag = KOR_ppp_junstone_korea_success_flag
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_free_dpk_happy = { # 이재명 - 꽁승 조국
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_lee_DPK_path = yes
+			has_country_flag = KOR_lee_dpk_cho_korea_flag
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_army_nam_happy = { # 이재명 - 군부 남영신 우민화 실패
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_army_path = yes
+			has_country_flag = KOR_army_power_nam_strong
+			has_country_flag = KOR_army_ending_stupid_failed_flag
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_army_nam_bad = { # 이재명 - 군부 남영신 우민화 성공
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_army_path = yes
+			has_country_flag = KOR_army_power_nam_strong
+			NOT = { has_country_flag = KOR_army_ending_stupid_failed_flag }
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_army_yec_happy = { # 이재명 - 군부 윤의철 우민화 실패
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_army_path = yes
+			has_country_flag = KOR_army_power_yec_strong
+			has_country_flag = KOR_army_ending_stupid_failed_flag
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_army_yec_bad = { # 이재명 - 군부 윤의철 우민화 성공
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_army_path = yes
+			has_country_flag = KOR_army_power_yec_strong
+			NOT = { has_country_flag = KOR_army_ending_stupid_failed_flag }
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_reds_dpk = { # 이재명 - 민노당 기성정당
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_PP_DPK_path = yes
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_reds_pp = { # 이재명 - 민노당 진보당계
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_PP_path = yes
+			has_country_flag = KOR_PP_PP_route
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_reds_jp = { # 이재명 - 민노당 정의당계
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_PP_path = yes
+			has_country_flag = KOR_PP_JP_route
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_reds_lp = { # 이재명 - 민노당 좌단위
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_PP_path = yes
+			has_country_flag = KOR_PP_LP_route
+		}
+    }
+}
+
+TFRKP_achieve_ending_lee_coa_ending = { # 이재명 - 거국연정
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_watched_ending_tt
+				has_country_flag = unrestricted_diplomacy_flag
+			}
+			KOR_is_PPPDKP_path = yes
+		}
+    }
+}
+
+##### Star 2 #####
+TFRKP_achieve_normal_sons_of_pacific = { # 태평양의 아들들
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		has_global_flag = PRC_japanese_gaw_victory_global
+    }
+}
+
+TFRKP_achieve_normal_kill_reds = { # 때려죽일 빨갱이들
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_is_PP_path_tt
+				has_country_flag = KOR_lee_progress_party_route
+				NOT = { has_country_flag = KOR_PP_DPK_route }
+				NOT = { has_country_flag = KOR_yoon_path }
+			}
+			has_idea = total_mobilization
+			has_idea = lower_safety
+			has_idea = higher_taxes
+			has_idea = lower_trade
+			has_idea = lower_welfare
+			has_idea = highest_conscription
+			has_idea = lower_prison
+			has_idea = lower_female
+			has_idea = lower_education
+			has_idea = lower_immigration
+			has_idea = lower_race
+			has_idea = higher_police
+		}
+    }
+}
+
+TFRKP_achieve_normal_army_got_fucked = { # 국군개혁 안함
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		has_global_flag = pan_asian_war_ongoing
+		KOR = {
+			has_completed_focus = KOR_yoon_army_upper
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_army_reform_under_15_tt
+				check_variable = { KOR_defreform_progress_var < 15 }
+			}
+		}
+    }
+}
+
+##### Star 3 #####
+TFRKP_achieve_normal_k_pandemic = { # K-방역
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_under_pandemic_death_50k_tt
+				has_country_flag = KOR_corona_under_50k_flag
+			}
+			has_country_flag = KOR_corona_pandemic_end_flag
+		}
+    }
+}
+
+TFRKP_achieve_normal_luanox_of_diplomancy = { # 외교 천재
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		NOT = { has_global_flag = TFRKP_GAW_is_started_flag }
+		KOR = {
+			is_in_faction_with = JAP
+			is_in_faction_with = CHI
+			is_in_faction_with = AST
+			is_in_faction_with = RAJ
+			is_in_faction_with = VIN
+			is_in_faction_with = INS
+			is_in_faction_with = CAM
+			is_in_faction_with = LAO
+			is_in_faction_with = SIA
+			is_in_faction_with = BRM
+			is_in_faction_with = MAL
+			is_in_faction_with = SIG
+		}
+    }
+}
+
+TFRKP_achieve_normal_fly_of_icarus = { # 이카루스의 비행
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_icarus_altitude_10_tt
+				check_variable = { KOR_icarus_altitude = 10 }
+			}
+		}
+    }
+}
+
+TFRKP_achieve_normal_house_of_card = { # 윤버지 모래성
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+        game_rules_allow_achievements = yes
+		KOR = {
+			KOR_is_yoon_declare_martial_law = yes
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_house_of_card_tt
+				check_variable = { KOR_martial_law_countdown_var < 20 }
+			}
+		}
+    }
+}
+
+##### Star 4 #####
+TFRKP_achieve_normal_malatang_is_korean = { # 마라탕은 우리꺼
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		has_global_flag = pan_asian_war_ongoing
+		KOR = {
+			has_war_with = PRC
+			controls_state = 1189
+		}
+    }
+}
+
+TFRKP_achieve_normal_real_kk = { # ㄹㅇㅋㅋ만 치세요
+    possible = {
+        # classic triggers used in all vanilla achievements
+        #difficulty > 1
+        custom_trigger_tooltip = {
+			tooltip = TFRKP_is_not_debug_tt
+			is_debug = no
+		}
+		tag = KOR
+		KOR = { is_ai = no }
+    }
+ 
+    happened = {
+		KOR = {
+			custom_trigger_tooltip = {
+				tooltip = TFRKP_ljs_fuckyou_67_tt
+				check_variable = { 
+					var = KOR_LJS_approval_rating_bad_var 
+					value = 67
+					compare = greater_than_or_equals
+				}
+			}
+		}
+    }
+}

@@ -1,0 +1,55 @@
+# Authored civil-war tree; assets are dependency references, no Workshop edits.
+focus_tree = {
+ id = TFRKC_focus_POST_tree
+ country = { factor = 0 modifier = { add = 1000 has_global_flag = TFRKC_civilwar_finished has_country_flag = TFRKC_unifier  TFRKC_focus_v5_playable_trigger = yes } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = TFRKC_focus_POST_inventory }
+
+ 
+
+ 
+ shared_focus = TFRKC_focus_POST_inventory
+}
+
+# Shared recovery branch: existing IDs and rewards, retained with the winner tree.
+shared_focus = {
+  id = TFRKC_focus_POST_inventory
+  icon = GFX_KOR_lee_army_route_nam_focus_2
+  x = 24
+  y = 0
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available = { TFRKC_focus_postwar_trigger = yes  }
+  ai_will_do = { factor = 100 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_postwar_trigger = yes  }
+    add_political_power = 25 custom_effect_tooltip = TFRKC_focus_extension_tt
+    set_country_flag = TFRKC_focus_POST_inventory_done
+   }
+  }
+ }
+
+shared_focus = {
+  id = TFRKC_focus_POST_civilian
+  icon = GFX_KOR_lee_reds_focus_22
+  x = 24
+  y = 1
+  cost = 5
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_POST_inventory }
+  available = { TFRKC_focus_postwar_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_postwar_trigger = yes  }
+    add_stability = 0.03
+    set_country_flag = TFRKC_focus_POST_civilian_done
+   }
+  }
+ }

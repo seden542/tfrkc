@@ -1,0 +1,9 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 KCG militia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+units = {
+ division = { name = "KCG militia 1" location = 15391 division_template = "TFRKC v5 KCG militia" start_manpower_factor = 0.8 start_equipment_factor = 0.6 start_experience_factor = 0.3 }
+ division = { name = "KCG militia 2" location = 14228 division_template = "TFRKC v5 KCG militia" start_manpower_factor = 0.8 start_equipment_factor = 0.6 start_experience_factor = 0.3 }
+ division = { name = "KCG militia 3" location = 15467 division_template = "TFRKC v5 KCG militia" start_manpower_factor = 0.8 start_equipment_factor = 0.6 start_experience_factor = 0.3 }
+ division = { name = "KCG militia 4" location = 15404 division_template = "TFRKC v5 KCG militia" start_manpower_factor = 0.8 start_equipment_factor = 0.6 start_experience_factor = 0.3 }
+ division = { name = "KCG militia 5" location = 15407 division_template = "TFRKC v5 KCG militia" start_manpower_factor = 0.8 start_equipment_factor = 0.6 start_experience_factor = 0.3 }
+}

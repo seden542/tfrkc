@@ -1,0 +1,16 @@
+# Retired v4 API: no old tags or map allocation can be reactivated.
+TFRKC_city_GWANGJU_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_JEONJU_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_CORPORATE_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_CONTINUITY_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_TAEBAEK_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_FARMERS_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_COVENANT_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_TAIWAN_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_DAEDEOK_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_RAIL_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_WHITE_NIGHT_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_CHEONGSONG_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_IMPERIAL_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_HOMECOMING_release_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_CREDIT_release_effect = { log = "TFRKC: ignored retired v4 military API" }

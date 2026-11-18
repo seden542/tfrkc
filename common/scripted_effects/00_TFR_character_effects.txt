@@ -1,0 +1,46 @@
+kill_character = {
+	hidden_effect = {
+		set_nationality = PREV
+		# remove_all_country_leader_roles = yes
+		if = {
+			limit = { is_unit_leader = yes }
+			remove_unit_leader_role = yes
+		}
+		set_character_as_dead = yes
+		retire = yes
+	}
+	custom_effect_tooltip = kill_character_tt
+}
+
+
+set_character_as_dead = {
+	set_character_flag = is_dead
+}
+
+#used when transferring characters between tags
+promote_to_field_marshal = {
+	hidden_effect = {
+		if = {
+			limit = {
+				is_army_leader = yes
+				is_field_marshal = no
+			}
+			promote_leader = yes
+			remove_trait = { trait = recently_promoted }
+		}
+	}
+}
+
+#used when transferring characters between tags
+demote_to_general = {
+	hidden_effect = {
+		if = {
+			limit = {
+				is_army_leader = yes
+				is_field_marshal = yes
+			}
+			demote_leader = yes
+			remove_trait = { trait = recently_promoted }
+		}
+	}
+}

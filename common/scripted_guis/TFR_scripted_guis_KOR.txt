@@ -1,0 +1,3572 @@
+scripted_gui = {
+
+	### GAW ###
+	TFRKP_GAW_show_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TFRKP_GAW_show_button_container"
+		visible = {
+			original_tag = KOR
+			has_country_flag = TFRKP_show_GAW_GUI
+		}
+		triggers = {
+			view_click_enabled = {
+				NOT = { has_country_flag = TFRKP_show_gaw_main_flag }
+			}
+		}
+		effects = {
+            view_click = {
+				set_country_flag = TFRKP_show_gaw_main_flag
+			}
+		}
+	}
+	TFRKP_GAW_plan_ongoing_window = {
+		context_type = player_context
+		window_name = "TFRKP_GAW_plan_ongoing_window_container"
+		visible = {
+			original_tag = KOR
+			has_country_flag = TFRKP_show_gaw_main_flag
+			has_country_flag = TFRKP_show_GAW_GUI
+			has_country_flag = TFRKP_show_gaw_ongoing_flag
+		}
+		properties = {
+			GAW_card_setting_1 = {
+				image = [GAW_card_1_image_local]
+			}
+			GAW_card_setting_2 = {
+				image = [GAW_card_2_image_local]
+			}
+		}
+		triggers = {
+			GAW_card_setting_end_button_click_enabled = {
+				NOT = {
+					check_variable = { var_GAW_border_nk = 2 }
+					check_variable = { var_GAW_border_gd = 2 }
+					check_variable = { var_GAW_border_mc = 2 }
+					check_variable = { var_GAW_border_hb = 2 }
+					check_variable = { var_GAW_border_jd = 2 }
+					check_variable = { var_GAW_border_lg = 2 }
+					check_variable = { var_GAW_border_hz = 2 }
+					check_variable = { var_GAW_border_xn = 2 }
+					check_variable = { var_GAW_border_sc = 2 }
+					check_variable = { var_GAW_border_xb = 2 }
+					check_variable = { var_GAW_border_bj = 2 }
+					check_variable = { var_GAW_border_tw = 2 }
+					check_variable = { var_GAW_border_ni = 2 }
+					check_variable = { var_GAW_border_sea = 2 }
+				}
+				OR = {
+					check_variable = { var_GAW_border_nk = 1 }
+					check_variable = { var_GAW_border_gd = 1 }
+					check_variable = { var_GAW_border_mc = 1 }
+					check_variable = { var_GAW_border_hb = 1 }
+					check_variable = { var_GAW_border_jd = 1 }
+					check_variable = { var_GAW_border_lg = 1 }
+					check_variable = { var_GAW_border_hz = 1 }
+					check_variable = { var_GAW_border_xn = 1 }
+					check_variable = { var_GAW_border_sc = 1 }
+					check_variable = { var_GAW_border_xb = 1 }
+					check_variable = { var_GAW_border_bj = 1 }
+					check_variable = { var_GAW_border_tw = 1 }
+					check_variable = { var_GAW_border_ni = 1 }
+					check_variable = { var_GAW_border_sea = 1 }
+				}
+				NOT = {
+					has_country_flag = GAW_plan_have_rest_flag
+				}
+			}
+			GAW_card_setting_1_click_enabled = {
+				NOT = { has_country_flag = TFRKP_show_card_select_flag }
+			}
+			GAW_card_setting_2_click_enabled = {
+				NOT = { has_country_flag = TFRKP_show_card_select_flag }
+			}
+			GAW_draw_card_button_click_enabled = {
+				check_variable = { GAW_operation_chip_var > 0 }
+			}
+			GAW_chip_1_click_enabled = {
+				has_political_power > 249
+			}
+			GAW_chip_2_click_enabled = {
+				has_war_support > 0.699
+			}
+			GAW_chip_3_click_enabled = {
+				command_power > 99
+			}
+			GAW_chip_4_click_enabled = {
+				OR = {
+					has_army_experience > 79
+					has_navy_experience > 79
+					has_air_experience > 79
+				}
+				NOT = { has_country_flag = GAW_chip_4_click_flag }
+			}
+		}
+		effects = {
+			close_click = {
+				clr_country_flag = TFRKP_show_gaw_ongoing_flag
+				clr_country_flag = GAW_card_select_1_flag
+				clr_country_flag = GAW_card_select_2_flag
+				clr_country_flag = TFRKP_show_card_select_flag
+				clr_country_flag = GAW_chip_4_click_flag
+				clr_country_flag = GAW_plan_go_click_flag
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+			}
+			GAW_card_setting_end_button_click = {
+				set_country_flag = GAW_plan_go_click_flag
+			}
+			GAW_card_setting_1_click = {
+				GAW_remove_card_click_effect = yes
+				set_country_flag = TFRKP_show_card_select_flag
+				set_country_flag = GAW_card_select_1_flag
+			}
+			GAW_card_setting_2_click = {
+				GAW_remove_card_click_effect = yes
+				set_country_flag = TFRKP_show_card_select_flag
+				set_country_flag = GAW_card_select_2_flag
+			}
+			GAW_draw_card_button_click = {
+				add_to_variable = { GAW_operation_chip_var = -1 }
+				GAW_add_random_card_effect = yes
+			}
+			GAW_chip_1_click = {
+				add_to_variable = { GAW_operation_chip_var = 1 }
+				add_political_power = -250
+			}
+			GAW_chip_2_click = {
+				add_to_variable = { GAW_operation_chip_var = 1 }
+				add_war_support = -0.2
+			}
+			GAW_chip_3_click = {
+				add_to_variable = { GAW_operation_chip_var = 1 }
+				add_command_power = -100
+			}
+			GAW_chip_4_click = {
+				set_country_flag = GAW_chip_4_click_flag
+			}
+		}
+	}
+	TFRKP_GAW_plan_set_end_popup = {
+		context_type = player_context
+		window_name = "TFRKP_GAW_plan_set_end_popup_window"
+		visible = {
+			has_country_flag = TFRKP_show_gaw_main_flag
+			has_country_flag = TFRKP_show_GAW_GUI
+			has_country_flag = TFRKP_show_gaw_ongoing_flag
+			has_country_flag = GAW_plan_go_click_flag
+		}
+		triggers = {
+			accept_button_click_enabled = {
+				OR = {
+					check_variable = { var_GAW_border_nk = 1 }
+					check_variable = { var_GAW_border_gd = 1 }
+					check_variable = { var_GAW_border_mc = 1 }
+					check_variable = { var_GAW_border_hb = 1 }
+					check_variable = { var_GAW_border_jd = 1 }
+					check_variable = { var_GAW_border_lg = 1 }
+					check_variable = { var_GAW_border_hz = 1 }
+					check_variable = { var_GAW_border_xn = 1 }
+					check_variable = { var_GAW_border_sc = 1 }
+					check_variable = { var_GAW_border_xb = 1 }
+					check_variable = { var_GAW_border_bj = 1 }
+					check_variable = { var_GAW_border_tw = 1 }
+					check_variable = { var_GAW_border_ni = 1 }
+					check_variable = { var_GAW_border_sea = 1 }
+				}
+			}
+		}
+		effects = {
+			accept_button_click = {
+				clr_country_flag = GAW_plan_go_click_flag
+				GAW_set_the_plan_effect = yes
+				GAW_set_plan_random_name_effect = yes
+			}
+			decline_button_click = {
+				clr_country_flag = GAW_plan_go_click_flag
+			}
+		}
+	}
+	TFRKP_GAW_exp_select_popup = {
+		context_type = player_context
+		window_name = "TFRKP_GAW_exp_select_popup_window"
+		visible = {
+			has_country_flag = TFRKP_show_gaw_main_flag
+			has_country_flag = TFRKP_show_GAW_GUI
+			has_country_flag = TFRKP_show_gaw_ongoing_flag
+			has_country_flag = GAW_chip_4_click_flag
+		}
+		triggers = {
+			accept_button_click_enabled = {
+				OR = {
+					has_country_flag = GAW_exp_spend_army_flag
+					has_country_flag = GAW_exp_spend_navy_flag
+					has_country_flag = GAW_exp_spend_air_flag
+				}
+			}
+			GAW_exp_army_button_click_enabled = {
+				has_army_experience > 79
+			}
+			GAW_exp_navy_button_click_enabled = {
+				has_navy_experience > 79
+			}
+			GAW_exp_air_button_click_enabled = {
+				has_air_experience > 79
+			}
+		}
+		effects = {
+			GAW_exp_army_button_click = {
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+				set_country_flag = GAW_exp_spend_army_flag
+			}
+			GAW_exp_navy_button_click = {
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+				set_country_flag = GAW_exp_spend_navy_flag
+			}
+			GAW_exp_air_button_click = {
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+				set_country_flag = GAW_exp_spend_air_flag
+			}
+
+			accept_button_click = {
+				add_to_variable = { GAW_operation_chip_var = 1 }
+				if = {
+					limit = {
+						has_country_flag = GAW_exp_spend_army_flag
+					}
+					army_experience = -80
+				}
+				else_if = {
+					limit = {
+						has_country_flag = GAW_exp_spend_navy_flag
+					}
+					navy_experience = -80
+				}
+				else_if = {
+					limit = {
+						has_country_flag = GAW_exp_spend_air_flag
+					}
+					air_experience = -80
+				}
+				clr_country_flag = GAW_chip_4_click_flag
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+			}
+			decline_button_click = {
+				clr_country_flag = GAW_chip_4_click_flag
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+			}
+		}
+	}
+
+	TFRKP_GAW_card_select_window = {
+		context_type = player_context
+		window_name = "TFRKP_GAW_card_select_window_container"
+		dirty = TFRKP_GAW_card_have_dirty
+
+		ai_enabled = { always = no }
+
+		dynamic_lists = {
+			GAW_card_container_gridbox = {
+				array = TFRKP_GAW_card_have_array
+				index = idx
+				value = v
+				entry_container = TFRKP_GAW_card_button_container
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = TFRKP_show_gaw_main_flag
+			has_country_flag = TFRKP_show_GAW_GUI
+			has_country_flag = TFRKP_show_gaw_ongoing_flag
+			OR = {
+				has_country_flag = GAW_card_select_1_flag
+				has_country_flag = GAW_card_select_2_flag
+			}
+			has_country_flag = TFRKP_show_card_select_flag
+		}
+		triggers = {
+			GAW_card_button_click_enabled = {
+				GAW_plan_isnt_ongoing_trigger = yes
+				NOT = { check_variable = { var_GAW_card_1_select = TFRKP_GAW_card_have_array^idx } }
+				NOT = { check_variable = { var_GAW_card_2_select = TFRKP_GAW_card_have_array^idx } }
+			}
+		}
+		effects = {
+			GAW_card_close_click = {
+				clr_country_flag = GAW_card_select_1_flag
+				clr_country_flag = GAW_card_select_2_flag
+				clr_country_flag = TFRKP_show_card_select_flag
+			}
+			GAW_card_button_click = {
+				set_temp_variable = { TFRKP_GAW_selected_card_temp = TFRKP_GAW_card_have_array^idx }
+				if = {
+					limit = {
+						has_country_flag = GAW_card_select_1_flag
+						check_variable = { var_GAW_card_1_select > 0 }
+					}
+					add_to_array = { TFRKP_GAW_card_have_array = var_GAW_card_1_select }
+				}
+				if = {
+					limit = {
+						has_country_flag = GAW_card_select_2_flag
+						check_variable = { var_GAW_card_2_select > 0 }
+					}
+					add_to_array = { TFRKP_GAW_card_have_array = var_GAW_card_2_select }
+				}
+				if = {
+					limit = {
+						has_country_flag = GAW_card_select_1_flag
+					}
+					set_variable = { var_GAW_card_1_select = TFRKP_GAW_selected_card_temp }
+				}
+				if = {
+					limit = {
+						has_country_flag = GAW_card_select_2_flag
+					}
+					set_variable = { var_GAW_card_2_select = TFRKP_GAW_selected_card_temp }
+				}
+				remove_from_array = { array = TFRKP_GAW_card_have_array index = idx }
+				add_to_variable = { TFRKP_GAW_card_have_dirty = 1 }
+				clr_country_flag = GAW_card_select_1_flag
+				clr_country_flag = GAW_card_select_2_flag
+				clr_country_flag = TFRKP_show_card_select_flag
+			}
+		}
+		properties = {
+			GAW_card_button = {
+				image = [GAW_card_select_image]
+			}
+		}
+	}
+	TFRKP_GAW_main_window = {
+		context_type = player_context
+		window_name = "TFRKP_GAW_main_window_container"
+		visible = {
+			original_tag = KOR
+			has_country_flag = TFRKP_show_gaw_main_flag
+			has_country_flag = TFRKP_show_GAW_GUI
+		}
+		triggers = {
+			## _click_enabled, _visible
+			GAW_ongoing_oplan_button_click_enabled = {
+				NOT = { has_country_flag = TFRKP_show_gaw_ongoing_flag }
+			}
+			GAW_north_korea_button_click_enabled = {
+				PRK = { exists = yes }
+			}
+		}
+
+		properties = {
+			GAW_north_korea_button = {
+				image = [GAW_map_image_nk]
+			}
+			GAW_jiandao_button = {
+				image = [GAW_map_image_gd]
+			}
+			GAW_manchuria_button = {
+				image = [GAW_map_image_mc]
+			}
+			GAW_huabei_button = {
+				image = [GAW_map_image_hb]
+			}
+			GAW_jiangdong_button = {
+				image = [GAW_map_image_jd]
+			}
+			GAW_huazhong_button = {
+				image = [GAW_map_image_hz]
+			}
+			GAW_liangguang_button = {
+				image = [GAW_map_image_lg]
+			}
+			GAW_xinan_button = {
+				image = [GAW_map_image_xn]
+			}
+			GAW_sichuan_button = {
+				image = [GAW_map_image_sc]
+			}
+			GAW_xibei_button = {
+				image = [GAW_map_image_xb]
+			}
+			GAW_bianjing_button = {
+				image = [GAW_map_image_bj]
+			}
+			GAW_taiwan_button = {
+				image = [GAW_map_image_tw]
+			}
+			GAW_north_india_button = {
+				image = [GAW_map_image_ni]
+			}
+			GAW_SEA_button = {
+				image = [GAW_map_image_sea]
+			}
+			GAW_mongolia_annexed = {
+				image = [GAW_map_image_mon]
+			}
+		}
+		effects = {
+			## _click
+			close_click = {
+				clr_country_flag = TFRKP_show_gaw_main_flag
+				clr_country_flag = TFRKP_show_gaw_ongoing_flag
+				clr_country_flag = GAW_card_select_1_flag
+				clr_country_flag = GAW_card_select_2_flag
+				clr_country_flag = TFRKP_show_card_select_flag
+				clr_country_flag = GAW_chip_4_click_flag
+				clr_country_flag = GAW_plan_go_click_flag
+				clr_country_flag = GAW_exp_spend_army_flag
+				clr_country_flag = GAW_exp_spend_navy_flag
+				clr_country_flag = GAW_exp_spend_air_flag
+			}
+			GAW_ongoing_oplan_button_click = {
+				set_country_flag = TFRKP_show_gaw_ongoing_flag
+			}
+			## Maps
+			GAW_north_korea_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_nk = 2 } } } set_variable = { var_GAW_border_nk = 1 } }
+			}
+			GAW_jiandao_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_gd = 2 } } } set_variable = { var_GAW_border_gd = 1 } }
+			}
+			GAW_manchuria_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_mc = 2 } } } set_variable = { var_GAW_border_mc = 1 } }
+			}
+			GAW_huabei_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_hb = 2 } } } set_variable = { var_GAW_border_hb = 1 } }
+			}
+			GAW_jiangdong_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_jd = 2 } } } set_variable = { var_GAW_border_jd = 1 } }
+			}
+			GAW_huazhong_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_hz = 2 } } } set_variable = { var_GAW_border_hz = 1 } }
+			}
+			GAW_liangguang_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_lg = 2 } } } set_variable = { var_GAW_border_lg = 1 } }
+			}
+			GAW_xinan_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_xn = 2 } } } set_variable = { var_GAW_border_xn = 1 } }
+			}
+			GAW_sichuan_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_sc = 2 } } } set_variable = { var_GAW_border_sc = 1 } }
+			}
+			GAW_xibei_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_xb = 2 } } } set_variable = { var_GAW_border_xb = 1 } }
+			}
+			GAW_bianjing_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_bj = 2 } } } set_variable = { var_GAW_border_bj = 1 } }
+			}
+			GAW_taiwan_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_tw = 2 } } } set_variable = { var_GAW_border_tw = 1 } }
+			}
+			GAW_north_india_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_ni = 2 } } } set_variable = { var_GAW_border_ni = 1 } }
+			}
+			GAW_SEA_button_click = {
+				GAW_reset_all_selection_effect = yes
+				if = { limit = { NOT = { check_variable = { var_GAW_border_sea = 2 } } } set_variable = { var_GAW_border_sea = 1 } }
+			}
+		}
+	}
+
+	### Anothers ###
+	TFR_KOR_saudi_volunteer = {
+		context_type = decision_category
+		window_name = TFR_KOR_saudi_volunteer_container
+	}
+
+	TFR_KOR_coronavirus = {
+		context_type = decision_category
+		window_name = TFR_KOR_coronavirus_container
+
+		properties = {
+			coronavirus_vaccine = { frame = KOR_coronavirus_vaccine_var }
+			coronavirus_dissatisfaction = { frame = KOR_coronavirus_dissatisfaction_var }
+			coronavirus_infection = { frame = KOR_coronavirus_infection_var }
+		}
+	}
+
+	TFR_KOR_inner_circle = {
+		context_type = decision_category
+		window_name = TFR_KOR_Yoon_inner_circle_decision_container
+
+		properties = {
+			TFR_KOR_ascended_advisor_1_portrait = {
+				frame = TFR_KOR_ascended_advisor_1
+			}
+			TFR_KOR_ascended_advisor_2_portrait = {
+				frame = TFR_KOR_ascended_advisor_2
+			}
+			TFR_KOR_ascended_advisor_3_portrait = {
+				frame = TFR_KOR_ascended_advisor_3
+			}
+		}
+	}
+
+	TFR_KOR_PPP_inner_circle = {
+		context_type = decision_category
+		window_name = TFR_KOR_ppp_decision_inner_circle_gui_window
+
+		properties = {
+			TFR_KOR_PPP_party_leader_portrait = {
+				frame = TFR_KOR_PPP_inner_circle_1
+			}
+			TFR_KOR_PPP_floor_leader_portrait = {
+				frame = TFR_KOR_PPP_inner_circle_2
+			}
+		}
+	}
+
+	TFR_KOR_dpk_dynasty_gui = {
+		context_type = decision_category
+		window_name = KOR_democratic_party_GUI
+
+		triggers = {
+			KOR_DPK_pre_lee_progressbar_frame_ruling_visible = { check_variable = { KOR_DPK_cycle_var = 1 } }
+			KOR_DPK_anti_lee_progressbar_frame_ruling_visible = { check_variable = { KOR_DPK_cycle_var = 2 } }
+			KOR_DPK_anxious_progressbar_frame_ruling_visible = { check_variable = { KOR_DPK_cycle_var = 3 } }
+			KOR_dpk_dynasty_cycle_pre_lee_bottom_left_icon_visible = { check_variable = { KOR_DPK_cycle_var = 1 } }
+			KOR_dpk_dynasty_cycle_pre_lee_bottom_right_icon_visible = { check_variable = { KOR_DPK_cycle_var = 1 } }
+			KOR_dpk_dynasty_cycle_anti_lee_bottom_left_icon_visible = { check_variable = { KOR_DPK_cycle_var = 2 } }
+			KOR_dpk_dynasty_cycle_anti_lee_bottom_right_icon_visible = { check_variable = { KOR_DPK_cycle_var = 2 } }
+			KOR_dpk_dynasty_cycle_anxious_bottom_left_icon_visible = { check_variable = { KOR_DPK_cycle_var = 3 } }
+			KOR_dpk_dynasty_cycle_anxious_bottom_right_icon_visible = { check_variable = { KOR_DPK_cycle_var = 3 } }
+
+			###
+			KOR_DPK_pre_lee_gauge_lock_progressbar_visible = {
+				NOT = { has_country_flag = KOR_dpk_pre_lee_unlock_flag }
+			}
+			KOR_DPK_pre_lee_gauge_lock_visible = {
+				NOT = { has_country_flag = KOR_dpk_pre_lee_unlock_flag }
+			}
+
+			KOR_DPK_anti_lee_gauge_lock_progressbar_visible = {
+				NOT = { has_country_flag = KOR_dpk_anti_lee_unlock_flag }
+			}
+			KOR_DPK_anti_lee_gauge_lock_visible = {
+				NOT = { has_country_flag = KOR_dpk_anti_lee_unlock_flag }
+			}
+
+			KOR_DPK_anxious_gauge_lock_progressbar_visible = {
+				NOT = { has_country_flag = KOR_dpk_anxious_unlock_flag }
+			}
+			KOR_DPK_anxious_gauge_lock_visible = {
+				NOT = { has_country_flag = KOR_dpk_anxious_unlock_flag }
+			}
+		}
+
+		properties = {
+			KOR_dpk_dynasty_cycle_icon = {
+				image = [GetKORDPKCycleGFX]
+			}
+			KOR_DPK_party_leader_icon = {
+				image = [GetKORDPKLeaderGFX]
+			}
+			TFR_KOR_DPK_party_leader_portrait_04 = {
+				image = [GetSocLibPresident04DPK_GFX]
+			}
+			KOR_DPK_government_progressbar = {
+				frame = KOR_lee_government_stability_var
+			}
+			KOR_DPK_pre_lee_progressbar = {
+				frame = KOR_lee_dpk_pre_lee_var
+			}
+			KOR_DPK_anti_lee_progressbar = {
+				frame = KOR_lee_dpk_anti_lee_var
+			}
+			KOR_DPK_anxious_progressbar = {
+				frame = KOR_lee_dpk_anxious_var
+			}
+		}
+	}
+
+	KOR_LJS_world_wide_web_gui = {
+		context_type = decision_category
+		window_name = TFR_KOR_LJS_world_wide_web_gui_window
+
+		triggers = {
+			KOR_LJS_www_instagram_bg_visible = { has_country_flag = TFR_KOR_LJS_www_instagram_visible }
+			KOR_LJS_www_instagram_feed_visible = { has_country_flag = TFR_KOR_LJS_www_instagram_visible }
+			KOR_LJS_www_instagram_verfied_visible = { has_country_flag = TFR_KOR_LJS_www_instagram_visible }
+		}
+	}
+
+	KOR_unfinished_symphony_gui = {
+		context_type = decision_category
+		window_name = TFR_KOR_unfinished_symphony_gui_window
+
+		properties = {
+			portrait_sub_pm = {
+				frame = sub_pm_var
+			}
+		}
+	}
+
+	KOR_plp_party_decision_gui = {
+		context_type = decision_category
+		window_name = KOR_peoples_labor_party_GUI
+
+		properties = {
+			KOR_PLP_president_influence_color_icon = {
+				image = [GetGFXPRESIDENTINFLOC]
+			}
+			KOR_PLP_congress_party_leader = {
+				image = [GetKORPLPLeaderGFX]
+			}
+			KOR_PLP_head_faction_icon = {
+				image = [GetKORPLPHeadFaction]
+			}
+		}
+		triggers = {
+			KOR_PLP_faction_text_pp_click_enabled = {
+				NOT = {
+					check_variable = { PLPHeadFaction_var = 1 }
+				}
+				OR = {
+					has_political_power > 299
+				}
+			}
+			KOR_PLP_faction_text_jp_click_enabled = {
+				NOT = {
+					check_variable = { PLPHeadFaction_var = 2 }
+				}
+				OR = {
+					has_political_power > 299
+				}
+			}
+			KOR_PLP_faction_text_lp_click_enabled = {
+				NOT = {
+					check_variable = { PLPHeadFaction_var = 3 }
+				}
+				OR = {
+					has_political_power > 299
+				}
+			}
+			plp_focus_setting_clear_visible = {
+				has_country_flag = KOR_plp_set_net_focus_flag
+				KOR_PLP_focus_is_clearable = yes
+			}
+			plp_focus_setting_clear_click_enabled = {
+				OR = {
+					has_political_power > 199
+				}
+				if = {
+					limit = {
+						check_variable = { PLPHeadFaction_var = 1 }
+					}
+					check_variable = { KOR_plp_pp_inf_var > 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { PLPHeadFaction_var = 2 }
+					}
+					check_variable = { KOR_plp_jp_inf_var > 0 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { PLPHeadFaction_var = 3 }
+					}
+					check_variable = { KOR_plp_lp_inf_var > 0 }
+				}
+			}
+		}
+
+		effects = {
+			KOR_PLP_faction_text_pp_click = {
+				set_variable = { KOR_lead_faction_temp_var = 1 }
+				set_country_flag = KOR_plp_lead_faction_confirm_flag
+			}
+			KOR_PLP_faction_text_jp_click = {
+				set_variable = { KOR_lead_faction_temp_var = 2 }
+				set_country_flag = KOR_plp_lead_faction_confirm_flag
+			}
+			KOR_PLP_faction_text_lp_click = {
+				set_variable = { KOR_lead_faction_temp_var = 3 }
+				set_country_flag = KOR_plp_lead_faction_confirm_flag
+			}
+			KOR_PLP_select_button_click = {
+				if = {
+					limit = {
+						has_country_flag = KOR_plp_focus_visible
+					}
+					clr_country_flag = KOR_plp_focus_visible
+				}
+				else = {
+					set_country_flag = KOR_plp_focus_visible
+				}
+			}
+			plp_focus_setting_clear_click = {
+				set_country_flag = KOR_plp_clear_second_popup_flag
+			}
+		}
+	}
+
+	KOR_plp_chang_lead_faciton_popup_window = {
+		context_type = player_context
+		window_name = "KOR_plp_chang_lead_faciton_popup_window"
+		visible = {
+			has_country_flag = KOR_plp_lead_faction_confirm_flag
+		}
+		effects = {
+			accept_button_click = {
+				clr_country_flag = KOR_plp_lead_faction_confirm_flag
+				clr_country_flag = KOR_plp_focus_visible
+				KOR_PLP_lead_faction_change_effect = yes
+				add_political_power = -300
+			}
+			decline_button_click = {
+				clr_country_flag = KOR_plp_lead_faction_confirm_flag
+			}
+		}
+	}
+
+	KOR_plp_clear_popup_window = {
+		context_type = player_context
+		window_name = "KOR_plp_clear_popup_window"
+		visible = {
+			has_country_flag = KOR_plp_clear_second_popup_flag
+		}
+		effects = {
+			accept_button_click = {
+				clr_country_flag = KOR_plp_clear_second_popup_flag
+				KOR_PLP_cancle_focus_effect = yes
+			}
+			decline_button_click = {
+				clr_country_flag = KOR_plp_clear_second_popup_flag
+			}
+		}
+	}
+
+	KOR_plp_select_popup_window = {
+		context_type = player_context
+		window_name = "KOR_plp_select_popup_window"
+		visible = {
+			has_country_flag = KOR_plp_select_second_popup_flag
+		}
+		effects = {
+			accept_button_click = {
+				clr_country_flag = KOR_plp_select_second_popup_flag
+				clr_country_flag = KOR_plp_focus_visible
+				KOR_PLP_select_focus_effect = yes
+			}
+			decline_button_click = {
+				clr_country_flag = KOR_plp_select_second_popup_flag
+			}
+		}
+	}
+
+	KOR_plp_focus_GUI = {
+		context_type = player_context
+		window_name = "KOR_plp_focus_GUI"
+		dirty = KOR_plp_focus_dirty
+
+		ai_enabled = { always = no }
+
+		visible = {
+			has_country_flag = KOR_plp_focus_visible
+		}
+
+		dynamic_lists = {
+			plp_focus_container_gridbox = {
+				array = plp_focus_array
+				index = idx
+				value = v
+				entry_container = plp_focus_container
+			}
+		}
+
+		triggers = {
+			###
+			plp_focus_on_active_visible = {
+				check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+			}
+			###
+			plp_focus_end_button_visible = {
+				check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+			}
+			plp_focus_end_button_click_enabled = {
+				KOR_PLP_is_focus_end_trigger = yes
+			}
+			###
+			plp_focus_select_button_click_enabled = {
+				KOR_PLP_is_focus_select_trigger = yes
+			}
+			###
+			plp_focus_mine_button_visible = {
+				KOR_PLP_focus_mine_can_show_trigger = yes
+			}
+			plp_focus_mine_button_click_enabled = {
+				KOR_PLP_focus_mine_button_trigger = yes
+			}
+			###
+		}
+
+		effects = {
+			plp_focus_close_click = {
+				clr_country_flag = KOR_plp_focus_visible
+			}
+			plp_focus_select_button_click = {
+				set_country_flag = KOR_plp_select_second_popup_flag
+				set_variable = {
+					KOR_select_second_temp_var = plp_focus_array^idx #Real Var but just use like Temp
+				}
+			}
+			plp_focus_end_button_click = {
+				if = {
+					limit = {
+						KOR_PLP_is_focus_end_trigger = yes
+					}
+					KOR_PLP_focus_end_effect = yes
+					set_temp_variable = { plp_array_var_temp = plp_focus_array^idx }
+					KOR_PLP_remove_focus_array_effect = yes
+					scoped_sound_effect = HOI4_ui_award_tier_03
+				}
+			}
+			plp_focus_mine_button_click = {
+				KOR_PLP_focus_mine_change_effect = yes
+			}
+		}
+
+		properties = {
+			plp_focus_icon = {
+				image = [GetKORPLPfocusGFX]
+			}
+		}
+	}
+
+	KOR_behind_the_curtain_gui = {
+		context_type = decision_category
+		window_name = KOR_behind_the_curtain_container
+		properties = {
+			tendency_icon = {
+				x = KOR_BtC_influence_x
+				y = KOR_BtC_influence_y
+			}
+		}
+	}
+
+	KOR_lee_military_ignorant_gui = {
+		context_type = decision_category
+		window_name = KOR_lee_military_ignorant_container
+
+		properties = {
+			KOR_lee_military_ignorant_brain_progress = {
+				frame = KOR_lee_military_ignorant_var
+			}
+		}
+
+		triggers = {
+			KOR_lee_military_ignorant_default_banner_visible = {
+				NOT = { has_country_flag = KOR_lee_military_ignorant_detail_view_flag }
+			}
+			KOR_lee_military_ignorant_default_description_visible = {
+				NOT = { has_country_flag = KOR_lee_military_ignorant_detail_view_flag }
+			}
+			KOR_lee_military_ignorant_detail_image_visible = {
+				has_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+			KOR_lee_military_ignorant_left_asset_visible = {
+				has_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+			KOR_lee_military_ignorant_right_asset_visible = {
+				has_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+			KOR_lee_military_ignorant_brain_progress_visible = {
+				has_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+			KOR_lee_military_ignorant_details_button_visible = {
+				NOT = { has_country_flag = KOR_lee_military_ignorant_detail_view_flag }
+			}
+			KOR_lee_military_ignorant_back_button_visible = {
+				has_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+			KOR_lee_military_ignorant_details_button_click_enabled = { always = yes }
+			KOR_lee_military_ignorant_back_button_click_enabled = { always = yes }
+		}
+
+		effects = {
+			KOR_lee_military_ignorant_details_button_click = {
+				KOR_lee_army_ignorant_clamp = yes
+				set_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+			KOR_lee_military_ignorant_back_button_click = {
+				clr_country_flag = KOR_lee_military_ignorant_detail_view_flag
+			}
+		}
+	}
+	KOR_military_supreme_council_gui = {
+		context_type = decision_category
+		window_name = KOR_military_supreme_council_window_container
+
+		properties = {
+			KOR_supreme_statue = {
+				image = [GetSCStatue]
+			}
+			KOR_supreme_quote = {
+				image = [GetSCQuote]
+			}
+		}
+
+		triggers = {
+		}
+
+		effects = {
+			KOR_button_rhee_click = {
+				set_variable = { KOR_council_show_var = 1 }
+			}
+			KOR_button_park_click = {
+				set_variable = { KOR_council_show_var = 2 }
+			}
+			KOR_button_chun_click = {
+				set_variable = { KOR_council_show_var = 3 }
+			}
+		}
+	}
+	KOR_national_conference_for_unification_gui = {
+		context_type = decision_category
+		window_name = KOR_military_national_council_of_unification_container
+
+		properties = {
+		}
+
+		triggers = {
+		}
+
+		effects = {
+		}
+	}
+
+	KOR_human_modification_gui = {
+		context_type = decision_category
+		window_name = KOR_human_modification_container
+
+		triggers = {
+			KOR_human_head_button_available_visible = { NOT = { has_country_flag = KOR_human_modification_head_completed_flag } }
+			KOR_human_head_button_completed_visible = { has_country_flag = KOR_human_modification_head_completed_flag }
+			KOR_human_body_button_available_visible = { NOT = { has_country_flag = KOR_human_modification_body_completed_flag } }
+			KOR_human_body_button_completed_visible = { has_country_flag = KOR_human_modification_body_completed_flag }
+			KOR_human_left_arm_button_available_visible = { check_variable = { KOR_human_modification_left_arm_completed_count_var < 4 } }
+			KOR_human_left_arm_button_completed_visible = { check_variable = { KOR_human_modification_left_arm_completed_count_var > 3 } }
+			KOR_human_right_arm_button_available_visible = { NOT = { has_country_flag = KOR_human_modification_right_arm_completed_flag } }
+			KOR_human_right_arm_button_completed_visible = { has_country_flag = KOR_human_modification_right_arm_completed_flag }
+			KOR_human_leg_button_available_visible = { check_variable = { KOR_human_modification_leg_completed_count_var < 5 } }
+			KOR_human_leg_button_completed_visible = { check_variable = { KOR_human_modification_leg_completed_count_var > 4 } }
+
+			KOR_human_head_button_available_click_enabled = { always = yes }
+			KOR_human_head_button_completed_click_enabled = { always = yes }
+			KOR_human_body_button_available_click_enabled = { always = yes }
+			KOR_human_body_button_completed_click_enabled = { always = yes }
+			KOR_human_left_arm_button_available_click_enabled = { always = yes }
+			KOR_human_left_arm_button_completed_click_enabled = { always = yes }
+			KOR_human_right_arm_button_available_click_enabled = { always = yes }
+			KOR_human_right_arm_button_completed_click_enabled = { always = yes }
+			KOR_human_leg_button_available_click_enabled = { always = yes }
+			KOR_human_leg_button_completed_click_enabled = { always = yes }
+		}
+
+		effects = {
+			KOR_human_head_button_available_click = { KOR_human_modification_select_head_effect = yes }
+			KOR_human_head_button_completed_click = { KOR_human_modification_select_head_effect = yes }
+			KOR_human_body_button_available_click = { KOR_human_modification_select_body_effect = yes }
+			KOR_human_body_button_completed_click = { KOR_human_modification_select_body_effect = yes }
+			KOR_human_left_arm_button_available_click = { KOR_human_modification_select_left_arm_effect = yes }
+			KOR_human_left_arm_button_completed_click = { KOR_human_modification_select_left_arm_effect = yes }
+			KOR_human_right_arm_button_available_click = { KOR_human_modification_select_right_arm_effect = yes }
+			KOR_human_right_arm_button_completed_click = { KOR_human_modification_select_right_arm_effect = yes }
+			KOR_human_leg_button_available_click = { KOR_human_modification_select_leg_effect = yes }
+			KOR_human_leg_button_completed_click = { KOR_human_modification_select_leg_effect = yes }
+		}
+	}
+
+	KOR_riot_suppression_gui = {
+		context_type = decision_category
+		window_name = KOR_riot_suppression_container
+
+		triggers = {
+			KOR_riot_busan_button_reds_visible = { check_variable = { KOR_riot_resistance_busan_var > 0 } }
+			KOR_riot_busan_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_busan_var > 0 } } }
+			KOR_riot_chungbuk_button_reds_visible = { check_variable = { KOR_riot_resistance_chungbuk_var > 0 } }
+			KOR_riot_chungbuk_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_chungbuk_var > 0 } } }
+			KOR_riot_chungnam_button_reds_visible = { check_variable = { KOR_riot_resistance_chungnam_var > 0 } }
+			KOR_riot_chungnam_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_chungnam_var > 0 } } }
+			KOR_riot_daegu_button_reds_visible = { check_variable = { KOR_riot_resistance_daegu_var > 0 } }
+			KOR_riot_daegu_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_daegu_var > 0 } } }
+			KOR_riot_daejeon_button_reds_visible = { check_variable = { KOR_riot_resistance_daejeon_var > 0 } }
+			KOR_riot_daejeon_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_daejeon_var > 0 } } }
+			KOR_riot_gangwon_button_reds_visible = { check_variable = { KOR_riot_resistance_gangwon_var > 0 } }
+			KOR_riot_gangwon_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_gangwon_var > 0 } } }
+			KOR_riot_gwangju_button_reds_visible = { check_variable = { KOR_riot_resistance_gwangju_var > 0 } }
+			KOR_riot_gwangju_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_gwangju_var > 0 } } }
+			KOR_riot_gyeongbuk_button_reds_visible = { check_variable = { KOR_riot_resistance_gyeongbuk_var > 0 } }
+			KOR_riot_gyeongbuk_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_gyeongbuk_var > 0 } } }
+			KOR_riot_gyeonggi_button_reds_visible = { check_variable = { KOR_riot_resistance_gyeonggi_var > 0 } }
+			KOR_riot_gyeonggi_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_gyeonggi_var > 0 } } }
+			KOR_riot_gyeongnam_button_reds_visible = { check_variable = { KOR_riot_resistance_gyeongnam_var > 0 } }
+			KOR_riot_gyeongnam_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_gyeongnam_var > 0 } } }
+			KOR_riot_incheon_button_reds_visible = { check_variable = { KOR_riot_resistance_incheon_var > 0 } }
+			KOR_riot_incheon_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_incheon_var > 0 } } }
+			KOR_riot_jeju_button_reds_visible = { check_variable = { KOR_riot_resistance_jeju_var > 0 } }
+			KOR_riot_jeju_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_jeju_var > 0 } } }
+			KOR_riot_jeonbuk_button_reds_visible = { check_variable = { KOR_riot_resistance_jeonbuk_var > 0 } }
+			KOR_riot_jeonbuk_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_jeonbuk_var > 0 } } }
+			KOR_riot_jeonnam_button_reds_visible = { check_variable = { KOR_riot_resistance_jeonnam_var > 0 } }
+			KOR_riot_jeonnam_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_jeonnam_var > 0 } } }
+			KOR_riot_sejong_button_reds_visible = { check_variable = { KOR_riot_resistance_sejong_var > 0 } }
+			KOR_riot_sejong_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_sejong_var > 0 } } }
+			KOR_riot_seoul_button_reds_visible = { check_variable = { KOR_riot_resistance_seoul_var > 0 } }
+			KOR_riot_seoul_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_seoul_var > 0 } } }
+			KOR_riot_ulsan_button_reds_visible = { check_variable = { KOR_riot_resistance_ulsan_var > 0 } }
+			KOR_riot_ulsan_button_army_visible = { NOT = { check_variable = { KOR_riot_resistance_ulsan_var > 0 } } }
+
+			KOR_riot_busan_button_reds_click_enabled = { always = yes }
+			KOR_riot_busan_button_army_click_enabled = { always = yes }
+			KOR_riot_chungbuk_button_reds_click_enabled = { always = yes }
+			KOR_riot_chungbuk_button_army_click_enabled = { always = yes }
+			KOR_riot_chungnam_button_reds_click_enabled = { always = yes }
+			KOR_riot_chungnam_button_army_click_enabled = { always = yes }
+			KOR_riot_daegu_button_reds_click_enabled = { always = yes }
+			KOR_riot_daegu_button_army_click_enabled = { always = yes }
+			KOR_riot_daejeon_button_reds_click_enabled = { always = yes }
+			KOR_riot_daejeon_button_army_click_enabled = { always = yes }
+			KOR_riot_gangwon_button_reds_click_enabled = { always = yes }
+			KOR_riot_gangwon_button_army_click_enabled = { always = yes }
+			KOR_riot_gwangju_button_reds_click_enabled = { always = yes }
+			KOR_riot_gwangju_button_army_click_enabled = { always = yes }
+			KOR_riot_gyeongbuk_button_reds_click_enabled = { always = yes }
+			KOR_riot_gyeongbuk_button_army_click_enabled = { always = yes }
+			KOR_riot_gyeonggi_button_reds_click_enabled = { always = yes }
+			KOR_riot_gyeonggi_button_army_click_enabled = { always = yes }
+			KOR_riot_gyeongnam_button_reds_click_enabled = { always = yes }
+			KOR_riot_gyeongnam_button_army_click_enabled = { always = yes }
+			KOR_riot_incheon_button_reds_click_enabled = { always = yes }
+			KOR_riot_incheon_button_army_click_enabled = { always = yes }
+			KOR_riot_jeju_button_reds_click_enabled = { always = yes }
+			KOR_riot_jeju_button_army_click_enabled = { always = yes }
+			KOR_riot_jeonbuk_button_reds_click_enabled = { always = yes }
+			KOR_riot_jeonbuk_button_army_click_enabled = { always = yes }
+			KOR_riot_jeonnam_button_reds_click_enabled = { always = yes }
+			KOR_riot_jeonnam_button_army_click_enabled = { always = yes }
+			KOR_riot_sejong_button_reds_click_enabled = { always = yes }
+			KOR_riot_sejong_button_army_click_enabled = { always = yes }
+			KOR_riot_seoul_button_reds_click_enabled = { always = yes }
+			KOR_riot_seoul_button_army_click_enabled = { always = yes }
+			KOR_riot_ulsan_button_reds_click_enabled = { always = yes }
+			KOR_riot_ulsan_button_army_click_enabled = { always = yes }
+			KOR_riot_major_city_seoul_button_click_enabled = { always = yes }
+			KOR_riot_major_city_incheon_button_click_enabled = { always = yes }
+			KOR_riot_major_city_busan_button_click_enabled = { always = yes }
+			KOR_riot_major_city_daegu_button_click_enabled = { always = yes }
+			KOR_riot_major_city_ulsan_button_click_enabled = { always = yes }
+			KOR_riot_major_city_gwangju_button_click_enabled = { always = yes }
+			KOR_riot_major_city_daejeon_button_click_enabled = { always = yes }
+			KOR_riot_major_city_sejong_button_click_enabled = { always = yes }
+		}
+
+		effects = {
+			KOR_riot_busan_button_reds_click = { KOR_riot_suppression_select_busan_effect = yes }
+			KOR_riot_busan_button_army_click = { KOR_riot_suppression_select_busan_effect = yes }
+			KOR_riot_chungbuk_button_reds_click = { KOR_riot_suppression_select_chungbuk_effect = yes }
+			KOR_riot_chungbuk_button_army_click = { KOR_riot_suppression_select_chungbuk_effect = yes }
+			KOR_riot_chungnam_button_reds_click = { KOR_riot_suppression_select_chungnam_effect = yes }
+			KOR_riot_chungnam_button_army_click = { KOR_riot_suppression_select_chungnam_effect = yes }
+			KOR_riot_daegu_button_reds_click = { KOR_riot_suppression_select_daegu_effect = yes }
+			KOR_riot_daegu_button_army_click = { KOR_riot_suppression_select_daegu_effect = yes }
+			KOR_riot_daejeon_button_reds_click = { KOR_riot_suppression_select_daejeon_effect = yes }
+			KOR_riot_daejeon_button_army_click = { KOR_riot_suppression_select_daejeon_effect = yes }
+			KOR_riot_gangwon_button_reds_click = { KOR_riot_suppression_select_gangwon_effect = yes }
+			KOR_riot_gangwon_button_army_click = { KOR_riot_suppression_select_gangwon_effect = yes }
+			KOR_riot_gwangju_button_reds_click = { KOR_riot_suppression_select_gwangju_effect = yes }
+			KOR_riot_gwangju_button_army_click = { KOR_riot_suppression_select_gwangju_effect = yes }
+			KOR_riot_gyeongbuk_button_reds_click = { KOR_riot_suppression_select_gyeongbuk_effect = yes }
+			KOR_riot_gyeongbuk_button_army_click = { KOR_riot_suppression_select_gyeongbuk_effect = yes }
+			KOR_riot_gyeonggi_button_reds_click = { KOR_riot_suppression_select_gyeonggi_effect = yes }
+			KOR_riot_gyeonggi_button_army_click = { KOR_riot_suppression_select_gyeonggi_effect = yes }
+			KOR_riot_gyeongnam_button_reds_click = { KOR_riot_suppression_select_gyeongnam_effect = yes }
+			KOR_riot_gyeongnam_button_army_click = { KOR_riot_suppression_select_gyeongnam_effect = yes }
+			KOR_riot_incheon_button_reds_click = { KOR_riot_suppression_select_incheon_effect = yes }
+			KOR_riot_incheon_button_army_click = { KOR_riot_suppression_select_incheon_effect = yes }
+			KOR_riot_jeju_button_reds_click = { KOR_riot_suppression_select_jeju_effect = yes }
+			KOR_riot_jeju_button_army_click = { KOR_riot_suppression_select_jeju_effect = yes }
+			KOR_riot_jeonbuk_button_reds_click = { KOR_riot_suppression_select_jeonbuk_effect = yes }
+			KOR_riot_jeonbuk_button_army_click = { KOR_riot_suppression_select_jeonbuk_effect = yes }
+			KOR_riot_jeonnam_button_reds_click = { KOR_riot_suppression_select_jeonnam_effect = yes }
+			KOR_riot_jeonnam_button_army_click = { KOR_riot_suppression_select_jeonnam_effect = yes }
+			KOR_riot_sejong_button_reds_click = { KOR_riot_suppression_select_sejong_effect = yes }
+			KOR_riot_sejong_button_army_click = { KOR_riot_suppression_select_sejong_effect = yes }
+			KOR_riot_seoul_button_reds_click = { KOR_riot_suppression_select_seoul_effect = yes }
+			KOR_riot_seoul_button_army_click = { KOR_riot_suppression_select_seoul_effect = yes }
+			KOR_riot_ulsan_button_reds_click = { KOR_riot_suppression_select_ulsan_effect = yes }
+			KOR_riot_ulsan_button_army_click = { KOR_riot_suppression_select_ulsan_effect = yes }
+			KOR_riot_major_city_seoul_button_click = { KOR_riot_suppression_select_seoul_effect = yes }
+			KOR_riot_major_city_incheon_button_click = { KOR_riot_suppression_select_incheon_effect = yes }
+			KOR_riot_major_city_busan_button_click = { KOR_riot_suppression_select_busan_effect = yes }
+			KOR_riot_major_city_daegu_button_click = { KOR_riot_suppression_select_daegu_effect = yes }
+			KOR_riot_major_city_ulsan_button_click = { KOR_riot_suppression_select_ulsan_effect = yes }
+			KOR_riot_major_city_gwangju_button_click = { KOR_riot_suppression_select_gwangju_effect = yes }
+			KOR_riot_major_city_daejeon_button_click = { KOR_riot_suppression_select_daejeon_effect = yes }
+			KOR_riot_major_city_sejong_button_click = { KOR_riot_suppression_select_sejong_effect = yes }
+		}
+	}
+
+	KOR_nis_dismantlement_progress_gui = {
+		context_type = decision_category
+		window_name = KOR_nis_dismantlement_progress_container
+		properties = {
+			KOR_nis_dismantlement_progress_bar = {
+				frame = KOR_nis_dismantlement_gui_var
+			}
+		}
+	}
+
+	KOR_baseball_game_GUI = {
+		context_type = decision_category
+		window_name = KOR_baseball_game_GUI
+
+		triggers = {
+			### Out Count ###
+			baseball_out_count_1_visible = {
+				check_variable = { KOR_baseball_outcount_var > 0 }
+			}
+			baseball_out_count_2_visible = {
+				check_variable = { KOR_baseball_outcount_var > 1 }
+			}
+			baseball_out_count_3_visible = {
+				check_variable = { KOR_baseball_outcount_var > 2 }
+			}
+			### Score ###
+			KOR_up_score_1_visible = {
+				check_variable = { KOR_baseball_inning > 0 }
+			}
+			KOR_down_score_1_visible = {
+				check_variable = { KOR_baseball_inning > 1 }
+			}
+			KOR_up_score_2_visible = {
+				check_variable = { KOR_baseball_inning > 2 }
+			}
+			KOR_down_score_2_visible = {
+				check_variable = { KOR_baseball_inning > 3 }
+			}
+			KOR_up_score_3_visible = {
+				check_variable = { KOR_baseball_inning > 4 }
+			}
+			KOR_down_score_3_visible = {
+				check_variable = { KOR_baseball_inning > 5 }
+			}
+			KOR_up_score_4_visible = {
+				check_variable = { KOR_baseball_inning > 6 }
+			}
+			KOR_down_score_4_visible = {
+				check_variable = { KOR_baseball_inning > 7 }
+			}
+			KOR_up_score_5_visible = {
+				check_variable = { KOR_baseball_inning > 8 }
+			}
+			KOR_down_score_5_visible = {
+				check_variable = { KOR_baseball_inning > 9 }
+			}
+			KOR_up_score_6_visible = {
+				check_variable = { KOR_baseball_inning > 10 }
+			}
+			KOR_down_score_6_visible = {
+				check_variable = { KOR_baseball_inning > 11 }
+			}
+			KOR_up_score_7_visible = {
+				check_variable = { KOR_baseball_inning > 12 }
+			}
+			KOR_down_score_7_visible = {
+				check_variable = { KOR_baseball_inning > 13 }
+			}
+			KOR_up_score_8_visible = {
+				check_variable = { KOR_baseball_inning > 14 }
+			}
+			KOR_down_score_8_visible = {
+				check_variable = { KOR_baseball_inning > 15 }
+			}
+			KOR_up_score_9_visible = {
+				check_variable = { KOR_baseball_inning > 16 }
+			}
+			KOR_down_score_9_visible = {
+				check_variable = { KOR_baseball_inning > 17 }
+			}
+			### Result Count ###
+			KOR_inning_now_text_visible = {
+				NOT = {
+					has_country_flag = KOR_bb_cold_game_flag
+					has_country_flag = KOR_bb_end_game_flag
+				}
+				check_variable = {
+					KOR_baseball_inning < 19
+				}
+			}
+			KOR_inning_result_text_visible = {
+				OR = {
+					check_variable = {
+						KOR_baseball_inning > 18
+					}
+					has_country_flag = KOR_bb_cold_game_flag
+					has_country_flag = KOR_bb_end_game_flag
+				}
+			}
+		}
+
+		properties = {
+			KOR_ingame_base_1 = {
+				image = [GetBaseImageFirst]
+			}
+			KOR_ingame_base_2 = {
+				image = [GetBaseImageSecond]
+			}
+			KOR_ingame_base_3 = {
+				image = [GetBaseImageThird]
+			}
+			baseball_inning_state = {
+				frame = baseball_top_bottom_var
+			}
+		}
+	}
+
+	TFRKP_head_of_gov_tt = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TFRKP_head_of_gov_tt_container"
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = TFRKP_cabinet_enable_flag
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_head_of_gov_tt_diplo = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "TFRKP_head_of_gov_tt_diplo_container"
+
+		visible = {
+			original_tag = KOR
+			FROM = { original_tag = KOR }
+			has_country_flag = TFRKP_cabinet_enable_flag
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_cabinet_premier_kim_jae_ryong_tt = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TFRKP_cabinet_premier_kim_jae_ryong_tt_container"
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = PRK
+					NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+				}
+				AND = {
+					original_tag = KPA
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+			}
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_cabinet_premier_kim_jae_ryong_tt_diplo = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "TFRKP_cabinet_premier_kim_jae_ryong_tt_diplo_container"
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = PRK
+					NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+				}
+				AND = {
+					original_tag = KPA
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+			}
+			FROM = {
+				OR = {
+					AND = {
+						original_tag = PRK
+						NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+					}
+					AND = {
+						original_tag = KPA
+						has_global_flag = PRK_north_korea_coupdeta_flag
+					}
+				}
+			}
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_eternal_leader_tt = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TFRKP_eternal_leader_tt_container"
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = PRK
+					NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+				}
+				AND = {
+					original_tag = KPA
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+			}
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_eternal_leader_tt_diplo = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "TFRKP_eternal_leader_tt_diplo_container"
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = PRK
+					NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+				}
+				AND = {
+					original_tag = KPA
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+			}
+			FROM = {
+				OR = {
+					AND = {
+						original_tag = PRK
+						NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+					}
+					AND = {
+						original_tag = KPA
+						has_global_flag = PRK_north_korea_coupdeta_flag
+					}
+				}
+			}
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_eternal_leader_kim_jong_il_tt = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TFRKP_eternal_leader_kim_jong_il_tt_container"
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = PRK
+					NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+				}
+				AND = {
+					original_tag = KPA
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+			}
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+	TFRKP_eternal_leader_kim_jong_il_tt_diplo = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "TFRKP_eternal_leader_kim_jong_il_tt_diplo_container"
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = PRK
+					NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+				}
+				AND = {
+					original_tag = KPA
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+			}
+			FROM = {
+				OR = {
+					AND = {
+						original_tag = PRK
+						NOT = { has_global_flag = PRK_north_korea_coupdeta_flag }
+					}
+					AND = {
+						original_tag = KPA
+						has_global_flag = PRK_north_korea_coupdeta_flag
+					}
+				}
+			}
+		}
+		triggers = {
+			view_click_enabled = {
+				always = no
+			}
+		}
+	}
+
+
+	TFR_Documents_Button_GUI = {
+		window_name = "Documents_Button_GUI"
+		parent_window_name = event_header
+
+		visible = { tag = KOR }
+
+		effects = {
+			documents_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = Documents_visible } }
+					set_country_flag = Documents_visible
+					set_country_flag = gui_disable_arrows
+				}
+				else = {
+					clr_country_flag = Documents_visible
+				}
+			}
+		}
+
+		triggers = {
+			documents_button_click_enabled = { has_country_flag = Documents_button_enable }
+			gui_alert_visible = {
+				has_country_flag = Documents_button_enable
+				NOT = { has_country_flag = gui_disable_arrows }
+			}
+		}
+	}
+
+	TFR_Documents_GUI = {
+		window_name = "TFR_Documents_Container"
+		parent_window_name = countrydecisionview
+
+		visible = {
+			has_country_flag = Documents_visible
+		}
+
+		dynamic_lists = {
+			documents_list = {
+				array = KOR_top_secret_documents
+				index = documents_idx
+				entry_container = TFR_Documents_entry_container
+				value = documents_val
+			}
+		}
+
+		effects = {
+			list_button_click = {
+				if = {
+					limit = {
+						check_variable = { documents_val = 1 }
+						NOT = { has_country_flag = KOR_Army_Secret_Plan_visible }
+					}
+					set_country_flag = KOR_Army_Secret_Plan_visible
+				}
+				else_if = {
+					limit = { check_variable = { documents_val = 1 } }
+					clr_country_flag = KOR_Army_Secret_Plan_visible
+				}
+				if = {
+					limit = {
+						check_variable = { documents_val = 2 }
+						NOT = { has_country_flag = TFR_KOR_Army_Nuclear_Program_visible }
+					}
+					set_country_flag = TFR_KOR_Army_Nuclear_Program_visible
+				}
+				else_if = {
+					limit = { check_variable = { documents_val = 2 } }
+					clr_country_flag = TFR_KOR_Army_Nuclear_Program_visible
+				}
+			}
+		}
+	}
+
+	TFR_KOR_Army_Secret_Plan = {
+		window_name = "TFR_KOR_Army_Secret_Plan_container"
+		context_type = player_context
+		dirty = TFR_KOR_Army_Secret_Plan_dirty
+		visible = { has_country_flag = KOR_Army_Secret_Plan_visible }
+	}
+
+	TFR_KOR_Army_Nuclear_Program = {
+		window_name = "TFR_KOR_Army_Nuclear_Program_container"
+		context_type = player_context
+		dirty = TFR_KOR_Army_Nuclear_Program_dirty
+		visible = { has_country_flag = TFR_KOR_Army_Nuclear_Program_visible }
+
+		ai_enabled = { always = no }
+
+		triggers = {
+			# progress_pie_visible = {
+			# 	check_variable = { KOR.army_nuclear_progress > 0 }
+			# }
+		}
+
+		dynamic_lists = {
+			KOR_army_nuclear_funding_slider_gridbox = {
+				array = KOR_army_nuclear_funding_slider_temp
+				entry_container = "KOR_nuclear_funding_slider_entry"
+			}
+		}
+
+		properties = {
+			progress_pie = {
+				frame = KOR.army_nuclear_progress
+			}
+			KOR_army_nuclear_funding_slider_thumb = {
+				frame = KOR_army_nuclear_funding_slider_thumb_frame
+				x = KOR_army_nuclear_funding_slider_thumb_x
+			}
+		}
+
+		## slider stuff
+		@NUCLEAR_FUNDING_SLIDER_AMOUNT_CLICK = 1
+
+		triggers = {
+			KOR_nuclear_funding_slider_background_click_enabled = {
+				resize_temp_array = { KOR_army_nuclear_funding_slider_temp = 11 }
+			}
+
+			progress_complete_button_visible = { has_country_flag = KOR_ready_to_launch_nuclear }
+			progress_complete_button_click_enabled = { has_country_flag = KOR_ready_to_launch_nuclear }
+			gui_alert_visible = {
+				has_country_flag = KOR_ready_to_launch_nuclear
+				NOT = { has_country_flag = gui_disable_arrows_nuke }
+			}
+
+			KOR_army_nuclear_funding_slider_thumb_click_enabled = {
+				set_temp_variable = {
+					KOR_army_nuclear_funding_slider_thumb_x = {
+						value = KOR_set_nuclear_budget
+						multiply = 10
+					}
+				}
+				check_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 1 }
+			}
+		}
+
+		effects = {
+			progress_complete_button_click = {
+				if = {
+					limit = { has_country_flag = KOR_army_power_yec_strong }
+					launch_medium_nuke = yes
+				}
+				else_if = {
+					limit = { has_country_flag = KOR_army_power_nam_strong }
+					launch_medium_nuke_nam = yes
+				}
+				else = {
+					launch_mini_nuke = yes
+				}
+				news_event = { id = kor_news.77 days = 1 }
+				clr_country_flag = KOR_ready_to_launch_nuclear
+				add_to_variable = { TFR_KOR_Army_Nuclear_Program_dirty = 1 }
+				remove_dynamic_modifier = { modifier = KOR_army_nuclear_cost_dynamic }
+				set_country_flag = gui_disable_arrows_nuke
+				country_event = { id = korea.1136 hours = 6 }
+			}
+
+			# slider proper
+			KOR_army_nuclear_funding_slider_slice_click = {
+				set_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				multiply_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1000 }
+				set_variable = { KOR_set_nuclear_budget = i }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 1 }
+				modulo_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 2 }
+				add_to_variable = { TFR_KOR_Army_Nuclear_Program_dirty = 1 }
+				KOR_army_change_nuclear_budget = yes
+			}
+
+			# left click
+			KOR_army_nuclear_funding_slider_increase_click = {
+				set_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				multiply_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1000 }
+				add_to_variable = { KOR_set_nuclear_budget = @NUCLEAR_FUNDING_SLIDER_AMOUNT_CLICK }
+				clamp_variable = { var = KOR_set_nuclear_budget max = 10 min = 0 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 1 }
+				modulo_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 2 }
+				add_to_variable = { TFR_KOR_Army_Nuclear_Program_dirty = 1 }
+				KOR_army_change_nuclear_budget = yes
+			}
+			KOR_army_nuclear_funding_slider_decrease_click = {
+				set_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				multiply_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1000 }
+				subtract_from_variable = { KOR_set_nuclear_budget = @NUCLEAR_FUNDING_SLIDER_AMOUNT_CLICK }
+				clamp_variable = { var = KOR_set_nuclear_budget max = 10 min = 0 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 1 }
+				modulo_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 2 }
+				add_to_variable = { TFR_KOR_Army_Nuclear_Program_dirty = 1 }
+				KOR_army_change_nuclear_budget = yes
+			}
+
+			# control left click
+			KOR_army_nuclear_funding_slider_increase_control_click = {
+				set_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				multiply_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1000 }
+				set_variable = { KOR_set_nuclear_budget = 10 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 1 }
+				modulo_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 2 }
+				add_to_variable = { TFR_KOR_Army_Nuclear_Program_dirty = 1 }
+				KOR_army_change_nuclear_budget = yes
+			}
+			KOR_army_nuclear_funding_slider_decrease_control_click = {
+				set_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				multiply_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1000 }
+				set_variable = { KOR_set_nuclear_budget = 0 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = KOR_set_nuclear_budget }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_frame = 1 }
+				add_to_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 1 }
+				modulo_variable = { KOR_army_nuclear_funding_slider_thumb_animation = 2 }
+				add_to_variable = { TFR_KOR_Army_Nuclear_Program_dirty = 1 }
+				KOR_army_change_nuclear_budget = yes
+			}
+		}
+	}
+	### 김민석 개혁 디시전 카테고리 탭 GUI ###
+	# common/decisions/categories 에서 scripted_gui = TFRKP_reform_tab_ui 로 부착
+	TFRKP_kimminseok_reform_tab_ui = {
+		context_type = decision_category
+		window_name = "TFRKP_reform_tab_GUI"
+
+		visible = {
+			original_tag = KOR
+		}
+
+		# 프로그레스바 / 버튼 하이라이트 / 이카루스 요소를 변수로 제어
+		properties = {
+			TFRKP_reform_influence_bar = {
+				frame = KOR_influence_bar_frame
+			}
+			TFRKP_reform_tab_political_button = {
+				frame = KOR_reform_tab_pol_frame
+			}
+			TFRKP_reform_tab_social_button = {
+				frame = KOR_reform_tab_soc_frame
+			}
+			TFRKP_reform_tab_economic_button = {
+				frame = KOR_reform_tab_eco_frame
+			}
+			# 이카루스: 고도 트랙 프레임
+			TFRKP_icarus_track = {
+				frame = KOR_icarus_track_frame
+			}
+			# 이카루스: 마커 x좌표 (지상 -> 태양으로 이동)
+			TFRKP_icarus_marker = {
+				x = KOR_icarus_marker_x
+			}
+			# 이카루스: 밀랍 게이지 프레임
+			TFRKP_icarus_wax_bar = {
+				frame = KOR_icarus_wax_frame
+			}
+
+			# Region development / constitutional reform GUI
+			TFRKP_regiondev_map_gyeonggi = { frame = KOR_regiondev_frame_1 }
+			TFRKP_regiondev_map_gangwon = { frame = KOR_regiondev_frame_2 }
+			TFRKP_regiondev_map_chungcheong = { frame = KOR_regiondev_frame_3 }
+			TFRKP_regiondev_map_honam = { frame = KOR_regiondev_frame_4 }
+			TFRKP_regiondev_map_yeongnam = { frame = KOR_regiondev_frame_5 }
+			TFRKP_regiondev_map_jeju = { frame = KOR_regiondev_frame_4 }
+			TFRKP_regiondev_progress = { frame = KOR_regiondev_progress_frame }
+		}
+
+		triggers = {
+			# 이미 선택된 탭은 다시 클릭 불가
+			TFRKP_reform_tab_political_button_click_enabled = {
+				NOT = { check_variable = { KOR_reform_tab = 1 } }
+			}
+			TFRKP_reform_tab_social_button_click_enabled = {
+				NOT = { check_variable = { KOR_reform_tab = 2 } }
+			}
+			TFRKP_reform_tab_economic_button_click_enabled = {
+				NOT = { check_variable = { KOR_reform_tab = 3 } }
+			}
+
+			# 비상 버튼 활성 조건
+			TFRKP_icarus_ascend_button_click_enabled = {
+				check_variable = { KOR_icarus_altitude < 10 }
+				check_variable = { KOR_icarus_wax > 9 }
+				check_variable = { TFRKP_icarus_stage_ready_var > 0 }
+			}
+
+			# 이카루스 섹션은 시스템 활성화 플래그가 있을 때만 표시
+			TFRKP_icarus_bg_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_title_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_altitude_text_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_track_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_marker_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_stage_desc_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_spirit_text_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_wax_label_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_wax_bar_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+			TFRKP_icarus_ascend_button_visible = { has_country_flag = TFRKP_show_icarus_GUI }
+
+			# Region development: shared elements
+			TFRKP_election_before_bg_visible = {
+				NOT = {
+					has_country_flag = TFRKP_regiondev_enabled_flag
+				}
+			}
+			TFRKP_constitution_before_bg_visible = {
+				NOT = {
+					has_country_flag = TFRKP_regiondev_enabled_flag
+					has_country_flag = KOR_election_kimminseok_gui_visible_flag
+				}
+				has_country_flag = TFRKP_constitution_locked_flag
+			}
+			TFRKP_regiondev_bg_visible = { has_country_flag = TFRKP_regiondev_enabled_flag }
+			TFRKP_regiondev_title_visible = { has_country_flag = TFRKP_regiondev_enabled_flag }
+			TFRKP_regiondev_header_visible = { has_country_flag = TFRKP_regiondev_enabled_flag }
+			TFRKP_regiondev_status_visible = { has_country_flag = TFRKP_regiondev_enabled_flag }
+
+			# Phase 1: campaign map and classified document
+			TFRKP_regiondev_map_gyeonggi_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_regiondev_map_gangwon_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_regiondev_map_chungcheong_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_regiondev_map_honam_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_regiondev_map_yeongnam_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_regiondev_map_jeju_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_regiondev_secret_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+			TFRKP_2028_election_quest_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 1 } }
+
+			# Phase 2: constitutional document and summary
+			TFRKP_constitution_doc_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 2 } }
+			TFRKP_const_sum_1_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 2 } }
+			TFRKP_const_sum_2_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 2 } }
+			TFRKP_const_sum_3_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 2 } }
+			TFRKP_const_sum_4_visible = { has_country_flag = TFRKP_regiondev_enabled_flag check_variable = { KOR_regiondev_phase = 2 } }
+
+			TFRKP_regiondev_map_gyeonggi_click_enabled = { NOT = { has_country_flag = TFRKP_regiondev_election_done_flag } }
+			TFRKP_regiondev_map_gangwon_click_enabled = { NOT = { has_country_flag = TFRKP_regiondev_election_done_flag } }
+			TFRKP_regiondev_map_chungcheong_click_enabled = { NOT = { has_country_flag = TFRKP_regiondev_election_done_flag } }
+			TFRKP_regiondev_map_honam_click_enabled = { NOT = { has_country_flag = TFRKP_regiondev_election_done_flag } }
+			TFRKP_regiondev_map_yeongnam_click_enabled = { NOT = { has_country_flag = TFRKP_regiondev_election_done_flag } }
+			TFRKP_regiondev_map_jeju_click_enabled = { NOT = { has_country_flag = TFRKP_regiondev_election_done_flag } }
+
+			TFRKP_regiondev_agenda_1_visible = {
+				has_country_flag = TFRKP_regiondev_enabled_flag
+				OR = {
+					AND = { check_variable = { KOR_regiondev_phase = 1 } check_variable = { KOR_regiondev_selected > 0 } }
+					check_variable = { KOR_regiondev_phase = 2 }
+				}
+			}
+			TFRKP_regiondev_agenda_2_visible = {
+				has_country_flag = TFRKP_regiondev_enabled_flag
+				OR = {
+					AND = { check_variable = { KOR_regiondev_phase = 1 } check_variable = { KOR_regiondev_selected > 0 } }
+					check_variable = { KOR_regiondev_phase = 2 }
+				}
+			}
+			TFRKP_regiondev_agenda_3_visible = {
+				has_country_flag = TFRKP_regiondev_enabled_flag
+				OR = {
+					AND = { check_variable = { KOR_regiondev_phase = 1 } check_variable = { KOR_regiondev_selected > 0 } }
+					check_variable = { KOR_regiondev_phase = 2 }
+				}
+			}
+
+			TFRKP_regiondev_agenda_1_click_enabled = {
+				NOT = { has_country_flag = TFRKP_constitution_locked_flag }
+				OR = {
+					AND = {
+						check_variable = { KOR_regiondev_phase = 1 }
+						NOT = { has_country_flag = TFRKP_regiondev_election_done_flag }
+						check_variable = { KOR_regiondev_active_region = 0 }
+						check_variable = { KOR_regiondev_done_a1^KOR_regiondev_selected = 0 }
+					}
+					AND = {
+						check_variable = { KOR_regiondev_phase = 2 }
+						NOT = { has_country_flag = TFRKP_constitution_done_flag }
+					}
+				}
+			}
+			TFRKP_regiondev_agenda_2_click_enabled = {
+				NOT = { has_country_flag = TFRKP_constitution_locked_flag }
+				OR = {
+					AND = {
+						check_variable = { KOR_regiondev_phase = 1 }
+						NOT = { has_country_flag = TFRKP_regiondev_election_done_flag }
+						check_variable = { KOR_regiondev_active_region = 0 }
+						check_variable = { KOR_regiondev_done_a2^KOR_regiondev_selected = 0 }
+					}
+					AND = {
+						check_variable = { KOR_regiondev_phase = 2 }
+						NOT = { has_country_flag = TFRKP_constitution_done_flag }
+					}
+				}
+			}
+			TFRKP_regiondev_agenda_3_click_enabled = {
+				NOT = { has_country_flag = TFRKP_constitution_locked_flag }
+				OR = {
+					AND = {
+						check_variable = { KOR_regiondev_phase = 1 }
+						NOT = { has_country_flag = TFRKP_regiondev_election_done_flag }
+						check_variable = { KOR_regiondev_active_region = 0 }
+						check_variable = { KOR_regiondev_done_a3^KOR_regiondev_selected = 0 }
+					}
+					AND = {
+						check_variable = { KOR_regiondev_phase = 2 }
+						NOT = { has_country_flag = TFRKP_constitution_done_flag }
+					}
+				}
+			}
+
+			TFRKP_regiondev_agenda_lock_1_visible = {
+				OR = {
+					AND = { check_variable = { KOR_regiondev_phase = 1 } has_country_flag = TFRKP_regiondev_election_done_flag  }
+					AND = { check_variable = { KOR_regiondev_phase = 2 } has_country_flag = TFRKP_constitution_locked_flag has_country_flag = TFRKP_used_not_flag}
+				}
+			}
+			TFRKP_regiondev_agenda_lock_2_visible = {
+				OR = {
+					AND = { check_variable = { KOR_regiondev_phase = 1 } has_country_flag = TFRKP_regiondev_election_done_flag }
+					AND = { check_variable = { KOR_regiondev_phase = 2 } has_country_flag = TFRKP_constitution_locked_flag has_country_flag = TFRKP_used_not_flag}
+				}
+			}
+			TFRKP_regiondev_agenda_lock_3_visible = {
+				OR = {
+					AND = { check_variable = { KOR_regiondev_phase = 1 } has_country_flag = TFRKP_regiondev_election_done_flag }
+					AND = { check_variable = { KOR_regiondev_phase = 2 } has_country_flag = TFRKP_constitution_locked_flag has_country_flag = TFRKP_used_not_flag}
+				}
+			}
+			TFRKP_constitution_lock_big_visible = {
+				check_variable = { KOR_regiondev_phase = 2 }
+				has_country_flag = TFRKP_constitution_locked_flag
+				has_country_flag = TFRKP_used_not_flag
+			}
+
+			TFRKP_regiondev_progress_visible = {
+				check_variable = { KOR_regiondev_phase = 1 }
+				check_variable = { KOR_regiondev_active_region > 0 }
+			}
+			TFRKP_regiondev_cancel_visible = {
+				check_variable = { KOR_regiondev_phase = 1 }
+				check_variable = { KOR_regiondev_active_region > 0 }
+			}
+		}
+
+		effects = {
+			# 정치개혁 탭 선택
+			TFRKP_reform_tab_political_button_click = {
+				set_variable = { KOR_reform_tab = 1 }
+				TFRKP_reform_update_tab_frames_effect = yes
+			}
+			# 사회개혁 탭 선택
+			TFRKP_reform_tab_social_button_click = {
+				set_variable = { KOR_reform_tab = 2 }
+				TFRKP_reform_update_tab_frames_effect = yes
+			}
+			# 경제개혁 탭 선택
+			TFRKP_reform_tab_economic_button_click = {
+				set_variable = { KOR_reform_tab = 3 }
+				TFRKP_reform_update_tab_frames_effect = yes
+			}
+			# 비상
+			TFRKP_icarus_ascend_button_click = {
+				TFRKP_icarus_ascend_effect = yes
+			}
+
+			TFRKP_regiondev_map_gyeonggi_click = { set_variable = { KOR_regiondev_selected = 1 } TFRKP_regiondev_update_frames_effect = yes }
+			TFRKP_regiondev_map_gangwon_click = { set_variable = { KOR_regiondev_selected = 2 } TFRKP_regiondev_update_frames_effect = yes }
+			TFRKP_regiondev_map_chungcheong_click = { set_variable = { KOR_regiondev_selected = 3 } TFRKP_regiondev_update_frames_effect = yes }
+			TFRKP_regiondev_map_honam_click = { set_variable = { KOR_regiondev_selected = 4 } TFRKP_regiondev_update_frames_effect = yes }
+			TFRKP_regiondev_map_yeongnam_click = { set_variable = { KOR_regiondev_selected = 5 } TFRKP_regiondev_update_frames_effect = yes }
+			TFRKP_regiondev_map_jeju_click = { set_variable = { KOR_regiondev_selected = 4 } TFRKP_regiondev_update_frames_effect = yes }
+
+			TFRKP_regiondev_agenda_1_click = {
+				set_temp_variable = { TFRKP_regiondev_agenda_pick = 1 }
+				TFRKP_regiondev_agenda_click_effect = yes
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								KOR_regiondev_phase = 2
+							}
+						}
+					}
+					set_country_flag = KOR_regiondev_agenda_3_click_flag
+					add_political_power = -25
+				}
+			}
+			TFRKP_regiondev_agenda_2_click = {
+				set_temp_variable = { TFRKP_regiondev_agenda_pick = 2 }
+				TFRKP_regiondev_agenda_click_effect = yes
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								KOR_regiondev_phase = 2
+							}
+						}
+					}
+					set_country_flag = KOR_regiondev_agenda_3_click_flag
+					add_political_power = -50
+				}
+			}
+			TFRKP_regiondev_agenda_3_click = {
+				set_temp_variable = { TFRKP_regiondev_agenda_pick = 3 }
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								KOR_regiondev_phase = 2
+							}
+						}
+					}
+					set_country_flag = KOR_regiondev_agenda_3_click_flag
+					add_political_power = -75
+				}
+				TFRKP_regiondev_agenda_click_effect = yes
+			}
+			TFRKP_regiondev_cancel_click = {
+				TFRKP_regiondev_cancel_effect = yes
+			}
+		}
+	}
+	KMS_ECON_gui = {
+		context_type = decision_category
+		window_name = TFR_KOR_KMS_ECON_gui_window
+
+		dynamic_lists = {
+			line_segments = {
+				array = KMS_ECON_graph_offsets
+				change_scope = no
+				entry_container = KMS_ECON_line_graph_line_segment
+				index = segment_idx
+			}
+		}
+
+		properties = {
+			segment = {
+				y = KMS_ECON_graph_offsets^segment_idx
+				frame = KMS_ECON_graph_slopes^segment_idx
+			}
+		}
+
+		triggers = {
+			label_visible = {
+				set_temp_variable = { si = segment_idx }
+				modulo_temp_variable = { si = 2 }
+				check_variable = { si = 0 }
+			}
+		}
+	}
+
+	KOR_democratic_pillars_gui = {
+		context_type = decision_category
+		window_name = KOR_democratic_pillars_container
+
+		triggers = {
+			KOR_democratic_pillars_step_one_visible = {
+				check_variable = { KOR_democratic_pillars_stage_var = 2 }
+			}
+			KOR_democratic_pillars_step_two_visible = {
+				check_variable = { KOR_democratic_pillars_stage_var = 3 }
+			}
+			KOR_democratic_pillars_step_three_visible = {
+				check_variable = { KOR_democratic_pillars_stage_var = 4 }
+			}
+			KOR_democratic_pillars_step_four_visible = {
+				check_variable = { KOR_democratic_pillars_stage_var = 5 }
+			}
+			KOR_democratic_pillars_step_five_visible = {
+				check_variable = { KOR_democratic_pillars_stage_var > 5 }
+			}
+		}
+	}
+
+	KOR_special_strategic_materials_program_gui = {
+		context_type = decision_category
+		window_name = KOR_special_strategic_materials_program_container
+
+		properties = {
+			KOR_special_strategic_materials_progressbar = {
+				frame = KOR_special_strategic_materials_stage_progress_display_var
+			}
+		}
+
+		triggers = {
+			KOR_special_strategic_materials_biochemical_selected_overlay_visible = {
+				has_country_flag = KOR_special_strategic_materials_biochemical_route_flag
+			}
+			KOR_special_strategic_materials_corona_variant_selected_overlay_visible = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+			}
+			KOR_special_strategic_materials_biochemical_button_click_enabled = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+				num_of_civilian_factories_available_for_projects > 4
+			}
+			KOR_special_strategic_materials_corona_variant_button_click_enabled = {
+				has_country_flag = KOR_korea_887_fired_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+				num_of_civilian_factories_available_for_projects > 4
+			}
+			KOR_ssm_bio_factory_block_visible = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+				NOT = { num_of_civilian_factories_available_for_projects > 4 }
+			}
+			KOR_ssm_bio_factory_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_bio_route_block_visible = {
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+			}
+			KOR_ssm_bio_route_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_corona_sign_block_visible = {
+				always = no
+			}
+			KOR_ssm_corona_sign_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_corona_signing_block_visible = {
+				always = no
+			}
+			KOR_ssm_corona_signing_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_corona_route_block_visible = {
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+			}
+			KOR_ssm_corona_route_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_corona_event_block_visible = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+				NOT = { has_country_flag = KOR_korea_887_fired_flag }
+			}
+			KOR_ssm_corona_event_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_corona_factory_block_visible = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+				has_country_flag = KOR_korea_887_fired_flag
+				NOT = { num_of_civilian_factories_available_for_projects > 4 }
+			}
+			KOR_ssm_corona_factory_block_click_enabled = {
+				always = no
+			}
+			KOR_ssm_signature_panel_visible = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_panel_open_flag
+				NOT = { has_country_flag = KOR_ssm_corona_signature_signed_flag }
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_special_strategic_materials_signature_document_background_visible = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_panel_open_flag
+				NOT = { has_country_flag = KOR_ssm_corona_signature_signed_flag }
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_special_strategic_materials_signature_button_visible = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_panel_open_flag
+				NOT = { has_country_flag = KOR_ssm_corona_signature_signed_flag }
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_special_strategic_materials_signature_button_click_enabled = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_panel_open_flag
+				NOT = { has_country_flag = KOR_ssm_corona_signature_signed_flag }
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_special_strategic_materials_signature_close_button_visible = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_panel_open_flag
+				NOT = { has_country_flag = KOR_ssm_corona_signature_signed_flag }
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_ssm_signature_completion_container_visible = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_completion_active_flag
+				has_country_flag = KOR_ssm_corona_signature_signed_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_ssm_signature_completion_animation_visible = {
+				has_country_flag = KOR_korea_887_fired_flag
+				has_country_flag = KOR_ssm_signature_completion_active_flag
+				has_country_flag = KOR_ssm_corona_signature_signed_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+			}
+			KOR_special_strategic_materials_signature_close_button_click_enabled = {
+				always = yes
+			}
+			KOR_special_strategic_materials_control_room_open_button_visible = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_control_room_open_flag }
+			}
+			KOR_special_strategic_materials_control_room_open_button_click_enabled = {
+				always = yes
+			}
+			KOR_special_strategic_materials_factory_decrease_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_control_room_open_flag
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+				check_variable = { KOR_special_strategic_materials_factories_var > 1 }
+			}
+			KOR_special_strategic_materials_factory_increase_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_control_room_open_flag
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+				check_variable = { KOR_special_strategic_materials_factories_var < 10 }
+				num_of_civilian_factories_available_for_projects > 0
+			}
+		}
+
+		effects = {
+			KOR_special_strategic_materials_biochemical_button_click = {
+				KOR_special_strategic_materials_select_biochemical_effect = yes
+			}
+			KOR_special_strategic_materials_corona_variant_button_click = {
+				KOR_special_strategic_materials_select_corona_variant_effect = yes
+			}
+			KOR_special_strategic_materials_signature_button_click = {
+				if = {
+					limit = {
+						has_country_flag = KOR_korea_887_fired_flag
+						has_country_flag = KOR_ssm_signature_panel_open_flag
+						NOT = { has_country_flag = KOR_ssm_corona_signature_signed_flag }
+						NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag }
+					}
+					set_country_flag = KOR_ssm_corona_signature_signed_flag
+					set_country_flag = KOR_special_strategic_materials_corona_access_flag
+					set_country_flag = KOR_ssm_signature_completion_active_flag
+					clr_country_flag = KOR_ssm_signature_panel_open_flag
+				}
+			}
+			KOR_special_strategic_materials_signature_close_button_click = {
+				clr_country_flag = KOR_ssm_signature_completion_active_flag
+				clr_country_flag = KOR_ssm_signature_panel_open_flag
+			}
+			KOR_special_strategic_materials_control_room_open_button_click = {
+				if = {
+					limit = { has_country_flag = KOR_special_strategic_materials_symptom_configuration_confirmed_flag }
+					KOR_special_strategic_materials_rebuild_confirmed_symptom_slots_effect = yes
+				}
+				set_country_flag = KOR_special_strategic_materials_control_room_open_flag
+			}
+			KOR_special_strategic_materials_factory_decrease_button_click = {
+				KOR_special_strategic_materials_decrease_factories_effect = yes
+			}
+			KOR_special_strategic_materials_factory_increase_button_click = {
+				KOR_special_strategic_materials_increase_factories_effect = yes
+			}
+		}
+	}
+
+	KOR_special_strategic_materials_control_room_gui = {
+		context_type = player_context
+		window_name = KOR_special_strategic_materials_control_room_window
+		ai_enabled = { always = no }
+		visible = {
+			original_tag = KOR
+			has_country_flag = KOR_special_strategic_materials_control_room_open_flag
+		}
+
+		properties = {
+			KOR_special_strategic_materials_control_room_progressbar = {
+				frame = KOR_special_strategic_materials_stage_progress_display_var
+			}
+		}
+
+		triggers = {
+			KOR_special_strategic_materials_control_room_close_button_click_enabled = {
+				always = yes
+			}
+			KOR_special_strategic_materials_weaponization_test_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+				check_variable = { KOR_special_strategic_materials_stage_var > 2 }
+				check_variable = { KOR_special_strategic_materials_test_cooldown_var > 99 }
+			}
+			KOR_special_strategic_materials_control_room_factory_decrease_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+				check_variable = { KOR_special_strategic_materials_factories_var > 1 }
+			}
+			KOR_special_strategic_materials_control_room_factory_increase_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+				NOT = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+				check_variable = { KOR_special_strategic_materials_factories_var < 10 }
+				num_of_civilian_factories_available_for_projects > 0
+			}
+			KOR_special_strategic_materials_budget_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_route_selected_flag
+			}
+			KOR_special_strategic_materials_test_approval_button_visible = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_bioweapon_production_in_progress_flag }
+			}
+			KOR_special_strategic_materials_bioweapon_production_in_progress_button_visible = {
+				has_country_flag = KOR_special_strategic_materials_bioweapon_production_in_progress_flag
+			}
+			KOR_special_strategic_materials_test_approval_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_completed_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_configuration_confirmed_flag
+				check_variable = { KOR_special_strategic_materials_confirmed_symptom_count_var = 3 }
+				NOT = { has_country_flag = KOR_special_strategic_materials_bioweapon_production_in_progress_flag }
+			}
+			KOR_special_strategic_materials_bioweapon_production_in_progress_button_click_enabled = { always = no }
+			KOR_special_strategic_materials_staff_button_click_enabled = {
+				has_country_flag = KOR_special_strategic_materials_completed_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_configuration_confirmed_flag
+				check_variable = { KOR_special_strategic_materials_confirmed_symptom_count_var = 3 }
+				check_variable = { KOR_special_strategic_materials_bioweapon_stockpile_var > 0 }
+				has_war_with = PRC
+				PRC = { exists = yes }
+			}
+			KOR_special_strategic_materials_suspend_button_click_enabled = { always = yes }
+		}
+
+		effects = {
+			KOR_special_strategic_materials_control_room_close_button_click = {
+				clr_country_flag = KOR_special_strategic_materials_control_room_open_flag
+				clr_country_flag = KOR_special_strategic_materials_variant_configuration_open_flag
+				clr_country_flag = KOR_special_strategic_materials_grouped_variant_configuration_open_flag
+				clr_country_flag = KOR_special_strategic_materials_keypad_open_flag
+			}
+			KOR_special_strategic_materials_weaponization_test_button_click = {
+				KOR_special_strategic_materials_weaponization_test_effect = yes
+			}
+			KOR_special_strategic_materials_control_room_factory_decrease_button_click = {
+				KOR_special_strategic_materials_decrease_factories_effect = yes
+			}
+			KOR_special_strategic_materials_control_room_factory_increase_button_click = {
+				KOR_special_strategic_materials_increase_factories_effect = yes
+			}
+			KOR_special_strategic_materials_budget_button_click = {
+				KOR_special_strategic_materials_open_grouped_variant_configuration_effect = yes
+			}
+			KOR_special_strategic_materials_test_approval_button_click = {
+				KOR_special_strategic_materials_start_bioweapon_production_effect = yes
+			}
+			KOR_special_strategic_materials_staff_button_click = {
+				if = {
+					limit = {
+						has_country_flag = KOR_special_strategic_materials_completed_flag
+						has_country_flag = KOR_special_strategic_materials_symptom_configuration_confirmed_flag
+						check_variable = { KOR_special_strategic_materials_confirmed_symptom_count_var = 3 }
+						check_variable = { KOR_special_strategic_materials_bioweapon_stockpile_var > 0 }
+						has_war_with = PRC
+						PRC = { exists = yes }
+					}
+					add_to_variable = { KOR_special_strategic_materials_bioweapon_stockpile_var = -1 }
+					PRC = {
+						KOR_apply_configured_bioweapon_payload_effect = yes
+					}
+				}
+			}
+			KOR_special_strategic_materials_suspend_button_click = {
+				set_country_flag = KOR_special_strategic_materials_suspend_window_requested_flag
+			}
+		}
+	}
+
+	KOR_special_strategic_materials_variant_configuration_gui = {
+		context_type = player_context
+		window_name = KOR_special_strategic_materials_variant_configuration_window
+		ai_enabled = { always = no }
+		visible = {
+			always = no
+			original_tag = KOR
+			has_country_flag = KOR_special_strategic_materials_control_room_open_flag
+			has_country_flag = KOR_special_strategic_materials_variant_configuration_open_flag
+		}
+
+		triggers = {
+			KOR_special_strategic_materials_pending_cough_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_cough_flag
+			}
+			KOR_special_strategic_materials_pending_vomiting_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_vomiting_flag
+			}
+			KOR_special_strategic_materials_pending_immunosuppression_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_immunosuppression_flag
+			}
+			KOR_special_strategic_materials_pending_inflammation_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_inflammation_flag
+			}
+			KOR_special_strategic_materials_pending_systemic_infection_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_systemic_infection_flag
+			}
+			KOR_special_strategic_materials_pending_internal_bleeding_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_internal_bleeding_flag
+			}
+			KOR_special_strategic_materials_pending_necrosis_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_necrosis_flag
+			}
+			KOR_special_strategic_materials_pending_hemorrhagic_shock_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_hemorrhagic_shock_flag
+			}
+			KOR_special_strategic_materials_pending_adrenal_fatigue_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_adrenal_fatigue_flag
+			}
+			KOR_special_strategic_materials_pending_sensory_paralysis_marker_visible = {
+				has_country_flag = KOR_special_strategic_materials_pending_symptom_sensory_paralysis_flag
+			}
+			KOR_special_strategic_materials_variant_configuration_close_button_click_enabled = { always = yes }
+			KOR_special_strategic_materials_variant_configuration_cancel_button_click_enabled = { always = yes }
+			KOR_special_strategic_materials_variant_configuration_confirm_button_click_enabled = {
+				check_variable = { KOR_special_strategic_materials_pending_symptom_count_var = 3 }
+			}
+			KOR_special_strategic_materials_symptom_cough_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_cough_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_vomiting_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_vomiting_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_immunosuppression_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_immunosuppression_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_inflammation_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_inflammation_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_systemic_infection_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_systemic_infection_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_internal_bleeding_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_internal_bleeding_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_necrosis_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_necrosis_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_hemorrhagic_shock_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_hemorrhagic_shock_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_adrenal_fatigue_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_adrenal_fatigue_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+			KOR_special_strategic_materials_symptom_sensory_paralysis_button_click_enabled = {
+				OR = {
+					has_country_flag = KOR_special_strategic_materials_pending_symptom_sensory_paralysis_flag
+					check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 }
+				}
+			}
+		}
+
+		effects = {
+			KOR_special_strategic_materials_variant_configuration_close_button_click = {
+				clr_country_flag = KOR_special_strategic_materials_variant_configuration_open_flag
+			}
+			KOR_special_strategic_materials_variant_configuration_cancel_button_click = {
+				clr_country_flag = KOR_special_strategic_materials_variant_configuration_open_flag
+			}
+			KOR_special_strategic_materials_variant_configuration_confirm_button_click = {
+				KOR_special_strategic_materials_confirm_variant_configuration_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_cough_button_click = {
+				KOR_special_strategic_materials_toggle_cough_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_vomiting_button_click = {
+				KOR_special_strategic_materials_toggle_vomiting_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_immunosuppression_button_click = {
+				KOR_special_strategic_materials_toggle_immunosuppression_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_inflammation_button_click = {
+				KOR_special_strategic_materials_toggle_inflammation_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_systemic_infection_button_click = {
+				KOR_special_strategic_materials_toggle_systemic_infection_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_internal_bleeding_button_click = {
+				KOR_special_strategic_materials_toggle_internal_bleeding_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_necrosis_button_click = {
+				KOR_special_strategic_materials_toggle_necrosis_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_hemorrhagic_shock_button_click = {
+				KOR_special_strategic_materials_toggle_hemorrhagic_shock_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_adrenal_fatigue_button_click = {
+				KOR_special_strategic_materials_toggle_adrenal_fatigue_effect = yes
+			}
+			KOR_special_strategic_materials_symptom_sensory_paralysis_button_click = {
+				KOR_special_strategic_materials_toggle_sensory_paralysis_effect = yes
+			}
+		}
+	}
+
+	KOR_special_strategic_materials_grouped_variant_configuration_gui = {
+		context_type = player_context
+		window_name = KOR_special_strategic_materials_grouped_variant_configuration_window
+		ai_enabled = { always = no }
+		visible = {
+			original_tag = KOR
+			has_country_flag = KOR_special_strategic_materials_control_room_open_flag
+			has_country_flag = KOR_special_strategic_materials_grouped_variant_configuration_open_flag
+		}
+
+		triggers = {
+			KOR_special_strategic_materials_grouped_variant_close_button_click_enabled = { always = yes }
+			KOR_special_strategic_materials_grouped_variant_cancel_button_click_enabled = { always = yes }
+			KOR_special_strategic_materials_grouped_variant_confirm_button_click_enabled = {
+				check_variable = { KOR_special_strategic_materials_pending_symptom_count_var = 3 }
+			}
+			KOR_special_strategic_materials_group_four_unlock_button_click_enabled = { always = yes }
+			KOR_special_strategic_materials_group_four_unlock_button_visible = {
+				NOT = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag }
+				NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag }
+			}
+			KOR_special_strategic_materials_group_one_panel_visible = { NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag } }
+			KOR_special_strategic_materials_group_two_panel_visible = { NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag } }
+			KOR_special_strategic_materials_group_three_panel_visible = { NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag } }
+			KOR_special_strategic_materials_group_four_panel_visible = { NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag } }
+			KOR_special_strategic_materials_grouped_variant_cancel_button_visible = { NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag } }
+			KOR_special_strategic_materials_grouped_variant_confirm_button_visible = { NOT = { has_country_flag = KOR_special_strategic_materials_keypad_open_flag } }
+			KOR_special_strategic_materials_group_four_irritable_bowel_syndrome_button_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag }
+			KOR_special_strategic_materials_group_four_sex_hormone_imbalance_button_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag }
+			KOR_special_strategic_materials_group_four_alopecia_button_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag }
+			KOR_special_strategic_materials_group_four_sexual_dysfunction_button_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag }
+
+			KOR_special_strategic_materials_group_one_cough_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_cough_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_one_vomiting_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_vomiting_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_one_immunosuppression_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_immunosuppression_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_one_inflammation_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_inflammation_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_two_systemic_infection_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_systemic_infection_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_two_internal_bleeding_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_internal_bleeding_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_two_necrosis_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_necrosis_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_two_hemorrhagic_shock_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_hemorrhagic_shock_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_three_adrenal_fatigue_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_adrenal_fatigue_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_three_sensory_paralysis_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_sensory_paralysis_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_three_paranoia_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_paranoia_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_three_hypersensitivity_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_hypersensitivity_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_four_irritable_bowel_syndrome_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_irritable_bowel_syndrome_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_four_sex_hormone_imbalance_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_sex_hormone_imbalance_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_four_alopecia_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_alopecia_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_four_sexual_dysfunction_button_click_enabled = { OR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_sexual_dysfunction_flag check_variable = { KOR_special_strategic_materials_pending_symptom_count_var < 3 } } }
+			KOR_special_strategic_materials_group_one_cough_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_cough_flag }
+			KOR_special_strategic_materials_group_one_vomiting_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_vomiting_flag }
+			KOR_special_strategic_materials_group_one_immunosuppression_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_immunosuppression_flag }
+			KOR_special_strategic_materials_group_one_inflammation_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_inflammation_flag }
+			KOR_special_strategic_materials_group_two_systemic_infection_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_systemic_infection_flag }
+			KOR_special_strategic_materials_group_two_internal_bleeding_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_internal_bleeding_flag }
+			KOR_special_strategic_materials_group_two_necrosis_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_necrosis_flag }
+			KOR_special_strategic_materials_group_two_hemorrhagic_shock_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_hemorrhagic_shock_flag }
+			KOR_special_strategic_materials_group_three_adrenal_fatigue_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_adrenal_fatigue_flag }
+			KOR_special_strategic_materials_group_three_sensory_paralysis_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_sensory_paralysis_flag }
+			KOR_special_strategic_materials_group_three_paranoia_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_paranoia_flag }
+			KOR_special_strategic_materials_group_three_hypersensitivity_marker_visible = { has_country_flag = KOR_special_strategic_materials_pending_symptom_hypersensitivity_flag }
+			KOR_special_strategic_materials_group_four_irritable_bowel_syndrome_marker_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag has_country_flag = KOR_special_strategic_materials_pending_symptom_irritable_bowel_syndrome_flag }
+			KOR_special_strategic_materials_group_four_sex_hormone_imbalance_marker_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag has_country_flag = KOR_special_strategic_materials_pending_symptom_sex_hormone_imbalance_flag }
+			KOR_special_strategic_materials_group_four_alopecia_marker_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag has_country_flag = KOR_special_strategic_materials_pending_symptom_alopecia_flag }
+			KOR_special_strategic_materials_group_four_sexual_dysfunction_marker_visible = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag has_country_flag = KOR_special_strategic_materials_pending_symptom_sexual_dysfunction_flag }
+		}
+
+		effects = {
+			KOR_special_strategic_materials_grouped_variant_close_button_click = {
+				clr_country_flag = KOR_special_strategic_materials_grouped_variant_configuration_open_flag
+				clr_country_flag = KOR_special_strategic_materials_keypad_open_flag
+			}
+			KOR_special_strategic_materials_grouped_variant_cancel_button_click = {
+				clr_country_flag = KOR_special_strategic_materials_grouped_variant_configuration_open_flag
+				clr_country_flag = KOR_special_strategic_materials_keypad_open_flag
+			}
+			KOR_special_strategic_materials_grouped_variant_confirm_button_click = {
+				clr_country_flag = KOR_special_strategic_materials_keypad_open_flag
+				KOR_special_strategic_materials_confirm_grouped_variant_configuration_effect = yes
+			}
+			KOR_special_strategic_materials_group_four_unlock_button_click = {
+				KOR_special_strategic_materials_open_keypad_effect = yes
+			}
+			KOR_special_strategic_materials_group_one_cough_button_click = { KOR_special_strategic_materials_toggle_cough_effect = yes }
+			KOR_special_strategic_materials_group_one_vomiting_button_click = { KOR_special_strategic_materials_toggle_vomiting_effect = yes }
+			KOR_special_strategic_materials_group_one_immunosuppression_button_click = { KOR_special_strategic_materials_toggle_immunosuppression_effect = yes }
+			KOR_special_strategic_materials_group_one_inflammation_button_click = { KOR_special_strategic_materials_toggle_inflammation_effect = yes }
+			KOR_special_strategic_materials_group_two_systemic_infection_button_click = { KOR_special_strategic_materials_toggle_systemic_infection_effect = yes }
+			KOR_special_strategic_materials_group_two_internal_bleeding_button_click = { KOR_special_strategic_materials_toggle_internal_bleeding_effect = yes }
+			KOR_special_strategic_materials_group_two_necrosis_button_click = { KOR_special_strategic_materials_toggle_necrosis_effect = yes }
+			KOR_special_strategic_materials_group_two_hemorrhagic_shock_button_click = { KOR_special_strategic_materials_toggle_hemorrhagic_shock_effect = yes }
+			KOR_special_strategic_materials_group_three_adrenal_fatigue_button_click = { KOR_special_strategic_materials_toggle_adrenal_fatigue_effect = yes }
+			KOR_special_strategic_materials_group_three_sensory_paralysis_button_click = { KOR_special_strategic_materials_toggle_sensory_paralysis_effect = yes }
+			KOR_special_strategic_materials_group_three_paranoia_button_click = { KOR_special_strategic_materials_toggle_paranoia_effect = yes }
+			KOR_special_strategic_materials_group_three_hypersensitivity_button_click = { KOR_special_strategic_materials_toggle_hypersensitivity_effect = yes }
+			KOR_special_strategic_materials_group_four_irritable_bowel_syndrome_button_click = { KOR_special_strategic_materials_toggle_irritable_bowel_syndrome_effect = yes }
+			KOR_special_strategic_materials_group_four_sex_hormone_imbalance_button_click = { KOR_special_strategic_materials_toggle_sex_hormone_imbalance_effect = yes }
+			KOR_special_strategic_materials_group_four_alopecia_button_click = { KOR_special_strategic_materials_toggle_alopecia_effect = yes }
+			KOR_special_strategic_materials_group_four_sexual_dysfunction_button_click = { KOR_special_strategic_materials_toggle_sexual_dysfunction_effect = yes }
+		}
+	}
+
+	KOR_special_strategic_materials_keypad_gui = {
+		context_type = player_context
+		window_name = KOR_special_strategic_materials_keypad_window
+		ai_enabled = { always = no }
+		visible = {
+			original_tag = KOR
+			has_country_flag = KOR_special_strategic_materials_control_room_open_flag
+			has_country_flag = KOR_special_strategic_materials_grouped_variant_configuration_open_flag
+			has_country_flag = KOR_special_strategic_materials_keypad_open_flag
+			NOT = { has_country_flag = KOR_special_strategic_materials_group_four_keypad_unlocked_flag }
+		}
+
+		triggers = {
+			KOR_special_strategic_materials_keypad_0_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_1_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_2_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_3_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_4_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_5_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_6_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_7_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_8_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_9_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var < 4 } }
+			KOR_special_strategic_materials_keypad_star_button_click_enabled = { always = yes }
+			KOR_special_strategic_materials_keypad_hash_button_click_enabled = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var = 4 } }
+		}
+
+		effects = {
+			KOR_special_strategic_materials_keypad_0_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 0 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_1_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 1 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_2_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 2 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_3_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 3 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_4_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 4 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_5_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 5 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_6_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 6 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_7_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 7 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_8_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 8 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_9_button_click = { set_variable = { KOR_special_strategic_materials_keypad_pressed_digit_var = 9 } KOR_special_strategic_materials_append_keypad_digit_effect = yes }
+			KOR_special_strategic_materials_keypad_star_button_click = { KOR_special_strategic_materials_reset_keypad_effect = yes }
+			KOR_special_strategic_materials_keypad_hash_button_click = { KOR_special_strategic_materials_submit_keypad_effect = yes }
+		}
+	}
+
+	TFR_KOR_LJS_government_gui = {
+		context_type = decision_category
+		window_name = TFR_KOR_LJS_government_gui_window
+
+		dynamic_lists = {
+			LJS_government_positive = {
+				array = LJS_government_positive_graph_offsets
+				change_scope = no
+				entry_container = LJS_government_positive_line_graph_line_segment
+				index = positive_segment_idx
+			}
+			LJS_government_negative = {
+				array = LJS_government_negative_graph_offsets
+				change_scope = no
+				entry_container = LJS_government_negative_line_graph_line_segment
+				index = negative_segment_idx
+			}
+		}
+
+		properties = {
+			KOR_LJS_fatigue_progressbar = {
+				frame = KOR_LJS_pirodo_var_visible
+			}
+			LJS_government_positive = {
+				x = LJS_government_graph_x
+			}
+			LJS_government_negative = {
+				x = LJS_government_graph_x
+			}
+			positive_segment = {
+				y = LJS_government_positive_graph_offsets^positive_segment_idx
+				frame = LJS_government_positive_graph_slopes^positive_segment_idx
+			}
+			positive_value_label = {
+				y = LJS_government_positive_graph_value_label_y^positive_segment_idx
+			}
+			negative_segment = {
+				y = LJS_government_negative_graph_offsets^negative_segment_idx
+				frame = LJS_government_negative_graph_slopes^negative_segment_idx
+			}
+			negative_value_label = {
+				y = LJS_government_negative_graph_value_label_y^negative_segment_idx
+			}
+		}
+
+		triggers = {
+			label_visible = {
+				always = yes
+			}
+			positive_value_label_visible = {
+				has_country_flag = LJS_government_graph_value_labels_initialized_flag
+				check_variable = { LJS_government_numbers^positive_segment_idx = LJS_government_count }
+			}
+			negative_value_label_visible = {
+				has_country_flag = LJS_government_graph_value_labels_initialized_flag
+				check_variable = { LJS_government_numbers^negative_segment_idx = LJS_government_count }
+			}
+		}
+	}
+
+	TFR_KOR_LJS_blue_marble = {
+		context_type = decision_category
+		window_name = TFR_KOR_LJS_blue_marble_container
+
+		effects = {
+			TFR_KOR_LJS_blue_marble_map_gyeonggi_click = {
+				set_variable = { KOR_LJS_select_state_var = 1 }
+			}
+
+			TFR_KOR_LJS_blue_marble_map_LJS_gangwon_click = {
+				set_variable = { KOR_LJS_select_state_var = 2 }
+
+			}
+
+			TFR_KOR_LJS_blue_marble_map_LJS_chungcheong_click = {
+				set_variable = { KOR_LJS_select_state_var = 3 }
+
+			}
+
+			TFR_KOR_LJS_blue_marble_map_LJS_jeolla_click = {
+				set_variable = { KOR_LJS_select_state_var = 4 }
+
+			}
+
+			TFR_KOR_LJS_blue_marble_map_LJS_gyeongsang_click = {
+				set_variable = { KOR_LJS_select_state_var = 5 }
+			}
+
+			TFR_KOR_LJS_blue_marble_map_LJS_jeju_click = {
+				set_variable = { KOR_LJS_select_state_var = 6 }
+			}
+		}
+
+		triggers = {
+			TFR_KOR_LJS_blue_marble_marker_gyeonggi_semiconductor_belt_visible = {
+				has_country_flag = KOR_LJS_pivot_gyeonggi_semiconductor_belt_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_ktx_sejong_station_visible = {
+				has_country_flag = KOR_LJS_pivot_ktx_sejong_station_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_sejong_capital_promise_visible = {
+				has_country_flag = KOR_LJS_constitutional_amendment_passed_flag
+			}
+			TFR_KOR_LJS_blue_marble_marker_daejeon_science_capital_visible = {
+				has_country_flag = KOR_LJS_pivot_daejeon_science_capital_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_gwangju_complex_mall_visible = {
+				has_country_flag = KOR_LJS_pivot_gwangju_complex_mall_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_heuksan_airport_visible = {
+				has_country_flag = KOR_LJS_pivot_heuksan_airport_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_yeosu_high_value_visible = {
+				has_country_flag = KOR_LJS_pivot_yeosu_high_value_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_saemangeum_megacity_visible = {
+				has_country_flag = KOR_LJS_pivot_saemangeum_megacity_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_gunsan_logistics_visible = {
+				has_country_flag = KOR_LJS_pivot_gunsan_logistics_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_jeonbuk_finance_city_visible = {
+				has_country_flag = KOR_LJS_pivot_jeonbuk_finance_city_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_korean_rustbelt_visible = {
+				has_country_flag = KOR_LJS_pivot_korean_rustbelt_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_yeongil_ulleung_infra_visible = {
+				has_country_flag = KOR_LJS_pivot_yeongil_ulleung_infra_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_manufacturing_rebound_visible = {
+				has_country_flag = KOR_LJS_pivot_manufacturing_rebound_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_busan_data_zone_visible = {
+				has_country_flag = KOR_LJS_pivot_busan_data_zone_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_busan_global_idc_visible = {
+				has_country_flag = KOR_LJS_pivot_busan_global_idc_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_south_coast_data_centers_visible = {
+				has_country_flag = KOR_LJS_pivot_south_coast_data_centers_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_jeju_second_airport_visible = {
+				has_country_flag = KOR_LJS_pivot_jeju_second_airport_done
+			}
+			TFR_KOR_LJS_blue_marble_marker_jeju_ai_testbed_visible = {
+				has_country_flag = KOR_LJS_pivot_jeju_ai_testbed_done
+			}
+			TFR_KOR_LJS_blue_marble_region_card_1_visible = {
+				has_country_flag = KOR_LJS_pivot_gyeonggi_semiconductor_belt_done
+				has_country_flag = KOR_LJS_pivot_sejong_gangwon_rail_done
+				has_country_flag = KOR_LJS_pivot_mega_yeongwol_done
+				has_country_flag = KOR_LJS_pivot_jecheon_samcheok_rail_done
+				has_country_flag = KOR_LJS_pivot_yeongwol_samcheok_expressway_done
+				has_country_flag = KOR_LJS_pivot_dongtan_education_zone_done
+				has_country_flag = KOR_LJS_pivot_capital_integrated_transit_pass_done
+			}
+			TFR_KOR_LJS_blue_marble_region_card_2_visible = {
+				has_country_flag = KOR_LJS_constitutional_amendment_passed_flag
+				has_country_flag = KOR_LJS_pivot_ktx_sejong_station_done
+				has_country_flag = KOR_LJS_pivot_daejeon_science_capital_done
+			}
+			TFR_KOR_LJS_blue_marble_region_card_3_visible = {
+				has_country_flag = KOR_LJS_pivot_gwangju_complex_mall_done
+				has_country_flag = KOR_LJS_pivot_heuksan_airport_done
+				has_country_flag = KOR_LJS_pivot_yeosu_high_value_done
+				has_country_flag = KOR_LJS_pivot_jeonbuk_finance_city_done
+				has_country_flag = KOR_LJS_pivot_saemangeum_megacity_done
+				has_country_flag = KOR_LJS_pivot_gunsan_logistics_done
+				has_country_flag = KOR_LJS_pivot_jeonju_daegu_expressway_done
+				has_country_flag = KOR_LJS_pivot_jeonju_gimcheon_rail_done
+			}
+			TFR_KOR_LJS_blue_marble_region_card_4_visible = {
+				has_country_flag = KOR_LJS_pivot_busan_data_zone_done
+				has_country_flag = KOR_LJS_pivot_busan_global_idc_done
+				has_country_flag = KOR_LJS_pivot_korean_rustbelt_done
+				has_country_flag = KOR_LJS_pivot_yeongil_ulleung_infra_done
+				has_country_flag = KOR_LJS_pivot_south_coast_data_centers_done
+				has_country_flag = KOR_LJS_pivot_manufacturing_rebound_done
+			}
+			TFR_KOR_LJS_blue_marble_region_card_5_visible = {
+				has_country_flag = KOR_LJS_pivot_jeju_second_airport_done
+				has_country_flag = KOR_LJS_pivot_jeju_ai_testbed_done
+			}
+		}
+	}
+	
+	
+	KOR_three_principles_category_gui = {
+		context_type = decision_category
+		window_name = "KOR_three_principles_category_container"
+
+		properties = {
+			KOR_three_principles_nation_button = {
+				frame = KOR_three_principles_nation_button_frame
+			}
+			KOR_three_principles_democracy_button = {
+				frame = KOR_three_principles_democracy_button_frame
+			}
+			KOR_three_principles_people_button = {
+				frame = KOR_three_principles_people_button_frame
+			}
+		}
+
+		triggers = {
+			KOR_three_principles_easter_egg_glow_visible = {
+				has_country_flag = KOR_three_principles_easter_egg_eye_flag
+				NOT = { has_country_flag = KOR_three_principles_phone_call_flag }
+			}
+			KOR_three_principles_easter_egg_glow_call_visible = {
+				has_country_flag = KOR_three_principles_phone_call_flag
+			}
+			KOR_three_principles_idle_eye_visible = {
+				NOT = { has_country_flag = KOR_three_principles_easter_egg_eye_flag }
+				check_variable = { KOR_three_principles_selected_var = 0 }
+			}
+			KOR_three_principles_left_light_visible = {
+				check_variable = { KOR_three_principles_selected_var = 1 }
+			}
+			KOR_three_principles_center_light_visible = {
+				check_variable = { KOR_three_principles_selected_var = 2 }
+			}
+			KOR_three_principles_right_light_visible = {
+				check_variable = { KOR_three_principles_selected_var = 3 }
+			}
+			KOR_three_principles_nation_eye_visible = {
+				NOT = { has_country_flag = KOR_three_principles_easter_egg_eye_flag }
+				check_variable = { KOR_three_principles_selected_var = 1 }
+			}
+			KOR_three_principles_democracy_eye_visible = {
+				NOT = { has_country_flag = KOR_three_principles_easter_egg_eye_flag }
+				check_variable = { KOR_three_principles_selected_var = 2 }
+			}
+			KOR_three_principles_people_eye_visible = {
+				NOT = { has_country_flag = KOR_three_principles_easter_egg_eye_flag }
+				check_variable = { KOR_three_principles_selected_var = 3 }
+			}
+			KOR_three_principles_easter_egg_eye_visible = {
+				has_country_flag = KOR_three_principles_easter_egg_eye_flag
+			}
+			KOR_three_principles_nation_selected_visible = {
+				check_variable = { KOR_three_principles_selected_var = 1 }
+			}
+			KOR_three_principles_democracy_selected_visible = {
+				check_variable = { KOR_three_principles_selected_var = 2 }
+			}
+			KOR_three_principles_people_selected_visible = {
+				check_variable = { KOR_three_principles_selected_var = 3 }
+			}
+			KOR_three_principles_nation_button_click_enabled = {
+				NOT = { has_country_flag = KOR_three_principles_phone_call_flag }
+			}
+			KOR_three_principles_democracy_button_click_enabled = {
+				NOT = { has_country_flag = KOR_three_principles_phone_call_flag }
+			}
+			KOR_three_principles_people_button_click_enabled = {
+				NOT = { has_country_flag = KOR_three_principles_phone_call_flag }
+			}
+			KOR_three_principles_eye_background_click_enabled = {
+				NOT = { has_country_flag = KOR_three_principles_phone_call_flag }
+			}
+		}
+
+		effects = {
+			KOR_three_principles_eye_background_click = {
+				add_to_variable = { KOR_three_principles_eye_click_count = 1 }
+				if = {
+					limit = {
+						check_variable = { KOR_three_principles_eye_click_count = 67 }
+					}
+					set_country_flag = KOR_three_principles_phone_call_flag
+					set_country_flag = KOR_three_principles_easter_egg_eye_flag
+					scoped_play_song = "KOR_three_principles_phone_ringtone_music"
+				}
+				else_if = {
+					limit = { has_country_flag = KOR_three_principles_easter_egg_eye_flag }
+					clr_country_flag = KOR_three_principles_easter_egg_eye_flag
+				}
+				else = {
+					random_list = {
+						80 = { }
+						20 = {
+							set_country_flag = KOR_three_principles_easter_egg_eye_flag
+						}
+					}
+				}
+				if = {
+					limit = { has_country_flag = KOR_three_principles_easter_egg_eye_flag }
+					set_variable = { KOR_three_principles_selected_var = 0 }
+					set_variable = { KOR_three_principles_nation_button_frame = 1 }
+					set_variable = { KOR_three_principles_democracy_button_frame = 1 }
+					set_variable = { KOR_three_principles_people_button_frame = 1 }
+				}
+			}
+			KOR_three_principles_nation_button_click = {
+				clr_country_flag = KOR_three_principles_easter_egg_eye_flag
+				if = {
+					limit = { check_variable = { KOR_three_principles_selected_var = 1 } }
+					set_variable = { KOR_three_principles_selected_var = 0 }
+					set_variable = { KOR_three_principles_nation_button_frame = 1 }
+				}
+				else = {
+					set_variable = { KOR_three_principles_selected_var = 1 }
+					set_variable = { KOR_three_principles_nation_button_frame = 2 }
+					set_variable = { KOR_three_principles_democracy_button_frame = 1 }
+					set_variable = { KOR_three_principles_people_button_frame = 1 }
+				}
+			}
+			KOR_three_principles_democracy_button_click = {
+				clr_country_flag = KOR_three_principles_easter_egg_eye_flag
+				if = {
+					limit = { check_variable = { KOR_three_principles_selected_var = 2 } }
+					set_variable = { KOR_three_principles_selected_var = 0 }
+					set_variable = { KOR_three_principles_democracy_button_frame = 1 }
+				}
+				else = {
+					set_variable = { KOR_three_principles_selected_var = 2 }
+					set_variable = { KOR_three_principles_nation_button_frame = 1 }
+					set_variable = { KOR_three_principles_democracy_button_frame = 2 }
+					set_variable = { KOR_three_principles_people_button_frame = 1 }
+				}
+			}
+			KOR_three_principles_people_button_click = {
+				clr_country_flag = KOR_three_principles_easter_egg_eye_flag
+				if = {
+					limit = { check_variable = { KOR_three_principles_selected_var = 3 } }
+					set_variable = { KOR_three_principles_selected_var = 0 }
+					set_variable = { KOR_three_principles_people_button_frame = 1 }
+				}
+				else = {
+					KOR_three_principles_initialize_democracy_effect = yes
+					set_variable = { KOR_three_principles_selected_var = 3 }
+					set_variable = { KOR_three_principles_nation_button_frame = 1 }
+					set_variable = { KOR_three_principles_democracy_button_frame = 1 }
+					set_variable = { KOR_three_principles_people_button_frame = 2 }
+				}
+			}
+		}
+	}
+
+	KOR_three_principles_easter_egg_phone_gui = {
+		window_name = "KOR_three_principles_easter_egg_phone_container"
+		parent_window_name = countrydecisionview
+
+		visible = {
+			has_country_flag = KOR_three_principles_phone_call_flag
+		}
+
+		triggers = {
+			KOR_three_principles_easter_egg_phone_button_click_enabled = { always = yes }
+		}
+
+		effects = {
+			KOR_three_principles_easter_egg_phone_button_click = {
+				scoped_play_song = "KOR_three_principles_phone_ringtone_stop"
+				clr_country_flag = KOR_three_principles_phone_call_flag
+			}
+		}
+	}
+	
+
+	kimminseok_korea_war_ui_v3 = {
+		context_type = decision_category
+		window_name = "kmsw3_main_window"
+		dirty = kimminseok_korea_war_dirty
+
+		visible = {
+			original_tag = KOR
+			OR = {
+				has_country_flag = KOR_debug_show_all_decision_uis_flag
+				has_country_flag = kimminseok_korea_war_unlocked
+			}
+		}
+
+		triggers = {
+			### 1페이즈 요소: 2페이즈 켜지면 전부 숨김 ###
+			kmsw3_nk_title_visible			= { NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on } }
+			kmsw3_nk_map_bg_visible			= { NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on } }
+			kmsw3_nk_map_glow_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				has_country_flag = kimminseok_korea_war_peninsula_glow
+			}
+			kmsw3_zone_north_visible		= { NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on } }
+			kmsw3_zone_south_visible		= { NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on } }
+			kmsw3_zone_eastsea_visible	= { NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on } }
+
+			### 상태 컬럼: 2페이즈 OFF + 동해 패널 닫힘 + 조건 ###
+			kmsw3_nk_tension_bar_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+			}
+			kmsw3_nk_tension_txt_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+			}
+			kmsw3_nk_discontent_bar_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+			}
+			kmsw3_nk_discontent_txt_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+			}
+			kmsw3_nk_deadline_txt_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_countdown_active
+			}
+			kmsw3_nk_fail_warning_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_prep_failed
+			}
+			kmsw3_nk_hint_txt_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				NOT = { has_country_flag = kimminseok_korea_war_escalated }
+			}
+
+			### 동해 오버레이 ###
+			kmsw3_nk_eastsea_bg_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				check_variable = { kimminseok_korea_war_eastsea_open = 1 }
+			}
+			kmsw3_eastsea_title_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				check_variable = { kimminseok_korea_war_eastsea_open = 1 }
+			}
+			kmsw3_eastsea_desc_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				check_variable = { kimminseok_korea_war_eastsea_open = 1 }
+			}
+			kmsw3_eastsea_close_btn_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				check_variable = { kimminseok_korea_war_eastsea_open = 1 }
+			}
+			kmsw3_fire_cheongung_btn_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				check_variable = { kimminseok_korea_war_eastsea_open = 1 }
+				NOT = { has_country_flag = kimminseok_korea_war_escalated }
+			}
+			kmsw3_fire_cheongung_btn_click_enabled = { has_political_power > 24 }
+
+			kmsw3_start_visible = {
+				has_country_flag = KOR_gaw_kimminseok_trigger_flag
+			}
+			kmsw3_start_click_enabled = {
+				NOT = {
+					has_global_flag = PRC_japanese_gaw_victory_global
+					has_global_flag = TFRKP_GAW_is_started_flag
+					has_war_with = PRC
+				}
+			}
+
+			### 게이지 세그먼트 (frame 속성 미작동 → 가시성 방식) ###
+			kmsw3_nk_tbar_s1_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 4 }
+			}
+			kmsw3_nk_tbar_s2_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 14 }
+			}
+			kmsw3_nk_tbar_s3_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 24 }
+			}
+			kmsw3_nk_tbar_s4_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 34 }
+			}
+			kmsw3_nk_tbar_s5_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 44 }
+			}
+			kmsw3_nk_tbar_s6_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 54 }
+			}
+			kmsw3_nk_tbar_s7_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 64 }
+			}
+			kmsw3_nk_tbar_s8_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 74 }
+			}
+			kmsw3_nk_tbar_s9_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 84 }
+			}
+			kmsw3_nk_tbar_s10_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_tension > 94 }
+			}
+			kmsw3_nk_dbar_s1_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 4 }
+			}
+			kmsw3_nk_dbar_s2_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 14 }
+			}
+			kmsw3_nk_dbar_s3_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 24 }
+			}
+			kmsw3_nk_dbar_s4_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 34 }
+			}
+			kmsw3_nk_dbar_s5_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 44 }
+			}
+			kmsw3_nk_dbar_s6_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 54 }
+			}
+			kmsw3_nk_dbar_s7_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 64 }
+			}
+			kmsw3_nk_dbar_s8_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 74 }
+			}
+			kmsw3_nk_dbar_s9_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 84 }
+			}
+			kmsw3_nk_dbar_s10_visible = {
+				NOT = { has_country_flag = kimminseok_korea_war_p2_panel_on }
+				NOT = { check_variable = { kimminseok_korea_war_eastsea_open = 1 } }
+				has_country_flag = kimminseok_korea_war_escalated
+				check_variable = { kimminseok_korea_war_discontent > 94 }
+			}
+			kmsw3_p2_abar_s1_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 4 }
+			}
+			kmsw3_p2_abar_s2_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 14 }
+			}
+			kmsw3_p2_abar_s3_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 24 }
+			}
+			kmsw3_p2_abar_s4_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 34 }
+			}
+			kmsw3_p2_abar_s5_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 44 }
+			}
+			kmsw3_p2_abar_s6_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 54 }
+			}
+			kmsw3_p2_abar_s7_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 64 }
+			}
+			kmsw3_p2_abar_s8_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 74 }
+			}
+			kmsw3_p2_abar_s9_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 84 }
+			}
+			kmsw3_p2_abar_s10_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_assim > 94 }
+			}
+			kmsw3_p2_dbar_s1_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 4 }
+			}
+			kmsw3_p2_dbar_s2_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 14 }
+			}
+			kmsw3_p2_dbar_s3_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 24 }
+			}
+			kmsw3_p2_dbar_s4_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 34 }
+			}
+			kmsw3_p2_dbar_s5_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 44 }
+			}
+			kmsw3_p2_dbar_s6_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 54 }
+			}
+			kmsw3_p2_dbar_s7_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 64 }
+			}
+			kmsw3_p2_dbar_s8_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 74 }
+			}
+			kmsw3_p2_dbar_s9_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 84 }
+			}
+			kmsw3_p2_dbar_s10_visible = {
+				has_country_flag = kimminseok_korea_war_p2_panel_on
+				check_variable = { kimminseok_korea_war_discontent > 94 }
+			}
+
+			### 2페이즈 요소 ###
+			kmsw3_p2_bg_visible				= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_title_visible			= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_desc_visible				= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_assim_bar_visible		= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_assim_txt_visible		= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_discontent_bar_visible	= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_discontent_txt_visible	= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+			kmsw3_p2_hint_txt_visible			= { has_country_flag = kimminseok_korea_war_p2_panel_on }
+		}
+
+		effects = {
+			kmsw3_zone_eastsea_click = {
+				set_variable = { kimminseok_korea_war_eastsea_open = 1 }
+				add_to_variable = { kimminseok_korea_war_dirty = 1 }
+			}
+			kmsw3_eastsea_close_btn_click = {
+				set_variable = { kimminseok_korea_war_eastsea_open = 0 }
+				add_to_variable = { kimminseok_korea_war_dirty = 1 }
+			}
+			kmsw3_start_click = {
+				country_event = kimminseok_korea_war.24
+			}
+			kmsw3_fire_cheongung_btn_click = {
+				custom_effect_tooltip = kimminseok_korea_war_FIRE_EFFECT_TT
+				add_political_power = -25
+				set_temp_variable = { KOR_lee_government_stability_temp_var = 100}
+				KOR_lee_govenment_stability_add = yes
+				set_country_flag = kimminseok_korea_war_escalated
+				set_country_flag = { flag = kimminseok_korea_war_peninsula_glow days = 5 value = 1 }
+				set_variable = { kimminseok_korea_war_eastsea_open = 0 }
+				add_to_variable = { kimminseok_korea_war_tension = 15 }
+				add_to_variable = { kimminseok_korea_war_discontent = 5 }
+				kimminseok_korea_war_update_ui = yes
+				country_event = { id = kimminseok_korea_war.2 days = 1 }
+			}
+		}
+	}
+	KOR_yec_space_revolution_gui = {
+		context_type = decision_category
+		window_name = "KOR_yec_space_revolution_container"
+		dirty = KOR_yec_gui_dirty_var
+
+		properties = {
+			KOR_yec_production_progressbar = {
+				frame = KOR_yec_satellite_production_progress_var
+			}
+			KOR_yec_target_west_button = {
+				image = [GetKORYECTargetWestGFX]
+			}
+			KOR_yec_target_east_button = {
+				image = [GetKORYECTargetEastGFX]
+			}
+			KOR_yec_target_north_button = {
+				image = [GetKORYECTargetNorthGFX]
+			}
+		}
+
+		triggers = {
+			KOR_yec_satellite_background_visible = {
+				check_variable = { KOR_yec_space_page_var = 0 }
+			}
+			KOR_yec_earth_back_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_orbit_line_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_satellite_animation_visible = {
+				check_variable = { KOR_yec_space_page_var = 0 }
+				OR = {
+					has_country_flag = KOR_yec_satellite_production_active_flag
+					check_variable = { KOR_yec_satellite_count_var > 0 }
+				}
+			}
+			KOR_yec_earth_front_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_satellite_count_text_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_production_progressbar_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_production_progressbar_frame_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_production_progress_text_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_production_panel_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_status_panel_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_production_icon_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_factory_decrease_button_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_factory_count_text_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_factory_increase_button_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_status_icon_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_availability_text_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_status_text_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_production_start_button_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+			KOR_yec_maintenance_start_button_visible = { check_variable = { KOR_yec_space_page_var = 0 } }
+
+			KOR_yec_night_background_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_target_west_button_visible = {
+				check_variable = { KOR_yec_space_page_var = 1 }
+			}
+			KOR_yec_target_east_button_visible = {
+				check_variable = { KOR_yec_space_page_var = 1 }
+			}
+			KOR_yec_target_north_button_visible = {
+				check_variable = { KOR_yec_space_page_var = 1 }
+			}
+			KOR_yec_clouds_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_selected_theatre_text_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_emp_bottom_panel_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_civil_emp_attack_button_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_military_emp_attack_button_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_civil_emp_label_panel_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_military_emp_label_panel_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_civil_emp_label_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+			KOR_yec_military_emp_label_visible = { check_variable = { KOR_yec_space_page_var = 1 } }
+
+			KOR_yec_factory_decrease_button_click_enabled = {
+				NOT = { has_country_flag = KOR_yec_satellite_production_active_flag }
+				check_variable = { KOR_yec_satellite_factories_selected_var > 1 }
+			}
+			KOR_yec_factory_increase_button_click_enabled = {
+				NOT = { has_country_flag = KOR_yec_satellite_production_active_flag }
+				check_variable = { KOR_yec_satellite_factories_selected_var < 10 }
+			}
+			KOR_yec_production_start_button_click_enabled = {
+				NOT = { has_country_flag = KOR_yec_satellite_production_active_flag }
+				num_of_civilian_factories_available_for_projects > ROOT.KOR_yec_satellite_factories_selected_minus_one_var
+			}
+			KOR_yec_maintenance_start_button_click_enabled = {
+				NOT = { has_country_flag = KOR_yec_maintenance_active_flag }
+				check_variable = { KOR_yec_satellite_count_var > 0 }
+				check_variable = { KOR_yec_satellite_availability_var < 100 }
+				num_of_civilian_factories_available_for_projects > ROOT.KOR_yec_maintenance_required_minus_one_var
+			}
+			KOR_yec_toggle_page_button_click_enabled = {
+				always = yes
+			}
+			KOR_yec_target_west_button_click_enabled = {
+				always = yes
+			}
+			KOR_yec_target_east_button_click_enabled = {
+				always = yes
+			}
+			KOR_yec_target_north_button_click_enabled = {
+				always = yes
+			}
+			KOR_yec_civil_emp_attack_button_click_enabled = {
+				check_variable = { KOR_yec_emp_theatre_var > 0 }
+				check_variable = { KOR_yec_satellite_count_var > 0 }
+				KOR_yec_has_civil_emp_cost_trigger = yes
+				KOR_yec_is_selected_emp_theatre_available_for_strike_trigger = yes
+				NOT = {
+					has_country_flag = KOR_yec_civil_emp_cooldown_flag
+				}
+				PRC = {
+					exists = yes
+					has_war_with = ROOT
+				}
+				any_state = {
+					KOR_yec_is_selected_emp_theatre_state_trigger = yes
+					controller = {
+						exists = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+			KOR_yec_military_emp_attack_button_click_enabled = {
+				check_variable = { KOR_yec_emp_theatre_var > 0 }
+				check_variable = { KOR_yec_satellite_count_var > 0 }
+				KOR_yec_has_military_emp_cost_trigger = yes
+				KOR_yec_is_selected_emp_theatre_available_for_strike_trigger = yes
+				NOT = {
+					has_country_flag = KOR_yec_military_emp_cooldown_flag
+				}
+				PRC = {
+					exists = yes
+					has_war_with = ROOT
+				}
+				any_state = {
+					KOR_yec_is_selected_emp_theatre_state_trigger = yes
+					controller = {
+						exists = yes
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+
+		effects = {
+			KOR_yec_factory_decrease_button_click = {
+				add_to_variable = { KOR_yec_satellite_factories_selected_var = -1 }
+				KOR_yec_refresh_production_selection_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_factory_increase_button_click = {
+				add_to_variable = { KOR_yec_satellite_factories_selected_var = 1 }
+				KOR_yec_refresh_production_selection_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_production_start_button_click = {
+				KOR_yec_start_satellite_production_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_maintenance_start_button_click = {
+				KOR_yec_start_maintenance_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_toggle_page_button_click = {
+				if = {
+					limit = {
+						check_variable = { KOR_yec_space_page_var = 0 }
+					}
+					set_variable = { KOR_yec_space_page_var = 1 }
+				}
+				else = {
+					set_variable = { KOR_yec_space_page_var = 0 }
+				}
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_target_west_button_click = {
+				set_variable = { KOR_yec_emp_theatre_var = 1 }
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_target_east_button_click = {
+				set_variable = { KOR_yec_emp_theatre_var = 2 }
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_target_north_button_click = {
+				set_variable = { KOR_yec_emp_theatre_var = 3 }
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_civil_emp_attack_button_click = {
+				KOR_yec_launch_civil_emp_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+			KOR_yec_military_emp_attack_button_click = {
+				KOR_yec_launch_military_emp_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+		}
+	}
+
+	### 국방개혁 카테고리 GUI (독립 카테고리 부착형) ###
+	# common/decisions/categories 에서 scripted_gui = TFRKP_defreform_main_ui 로 부착
+	TFRKP_defreform_main_ui = {
+		context_type = decision_category
+		window_name = "TFRKP_defreform_main_GUI"
+
+		visible = {
+			original_tag = KOR
+		}
+
+		properties = {
+			TFRKP_defreform_token_1 = { frame = KOR_defreform_token_frame_1 }
+			TFRKP_defreform_token_2 = { frame = KOR_defreform_token_frame_2 }
+			TFRKP_defreform_token_3 = { frame = KOR_defreform_token_frame_3 }
+			TFRKP_defreform_token_4 = { frame = KOR_defreform_token_frame_4 }
+			TFRKP_defreform_token_5 = { frame = KOR_defreform_token_frame_5 }
+			TFRKP_defreform_progress_bar = { frame = KOR_defreform_progress_frame }
+			TFRKP_defreform_trust_bar = { frame = KOR_defreform_trust_frame }
+			TFRKP_defreform_poster_welfare = { frame = KOR_defreform_poster_frame_1 }
+			TFRKP_defreform_poster_equip = { frame = KOR_defreform_poster_frame_2 }
+			TFRKP_defreform_poster_training = { frame = KOR_defreform_poster_frame_3 }
+		}
+
+		effects = {
+			# 포스터 선택/해제 (같은 포스터 재클릭 시 해제)
+			TFRKP_defreform_poster_welfare_click = {
+				if = {
+					limit = { check_variable = { KOR_defreform_focus_area = 1 } }
+					set_variable = { KOR_defreform_focus_area = 0 }
+				}
+				else = {
+					set_variable = { KOR_defreform_focus_area = 1 }
+				}
+				TFRKP_defreform_update_poster_frames_effect = yes
+			}
+			TFRKP_defreform_poster_equip_click = {
+				if = {
+					limit = { check_variable = { KOR_defreform_focus_area = 2 } }
+					set_variable = { KOR_defreform_focus_area = 0 }
+				}
+				else = {
+					set_variable = { KOR_defreform_focus_area = 2 }
+				}
+				TFRKP_defreform_update_poster_frames_effect = yes
+			}
+			TFRKP_defreform_poster_training_click = {
+				if = {
+					limit = { check_variable = { KOR_defreform_focus_area = 3 } }
+					set_variable = { KOR_defreform_focus_area = 0 }
+				}
+				else = {
+					set_variable = { KOR_defreform_focus_area = 3 }
+				}
+				TFRKP_defreform_update_poster_frames_effect = yes
+			}
+		}
+	}
+}

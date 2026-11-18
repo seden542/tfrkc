@@ -1,0 +1,34 @@
+# War owner calls in KOR scope after territorial partition and actual hostilities begin.
+TFRKC_rework_record_civilwar_start_effect = {
+ if = { limit = { tag = KOR has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_rework_start_recorded } }
+ set_global_flag = TFRKC_rework_start_recorded
+ TFRKC_publish_civilwar_news_effect = yes
+ set_variable = { var = global.TFRKC_rework_start_date value = global.date }
+ set_variable = { var = global.TFRKC_rework_start_day value = global.num_days }
+ set_variable = { var = global.TFRKC_rework_UN_deadline value = global.num_days }
+ add_to_variable = { var = global.TFRKC_rework_UN_deadline value = 7 }
+ TFRKC_calendar_delay_effect = yes
+ if = { limit = { NOT = { has_country_flag = TFRKC_calendar_unsupported } }
+ set_variable = { var = global.TFRKC_rework_KPL_deadline value = global.num_days }
+ add_to_variable = { var = global.TFRKC_rework_KPL_deadline value = TFRKC_month_delay }
+ set_global_flag = TFRKC_rework_KPL_calendar_valid
+ }
+ else = { set_global_flag = TFRKC_rework_KPL_calendar_unsupported }
+ }
+}
+TFRKC_rework_check_intervention_dates_effect = {
+ if = { limit = { has_global_flag = TFRKC_rework_start_recorded has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ if = { limit = { check_variable = { var = global.num_days value = global.TFRKC_rework_UN_deadline compare = greater_than_or_equals } NOT = { has_global_flag = TFRKC_rework_UN_spawned } }
+ set_global_flag = TFRKC_rework_UN_due
+ set_global_flag = TFRKC_rework_UN_pending
+ if = { limit = { TFRKC_rework_UN_ready_trigger = yes } TFRKC_rework_spawn_UN_effect = yes }
+ if = { limit = { has_global_flag = TFRKC_rework_UN_spawned } clr_global_flag = TFRKC_rework_UN_pending }
+ }
+ if = { limit = { has_global_flag = TFRKC_rework_KPL_calendar_valid check_variable = { var = global.num_days value = global.TFRKC_rework_KPL_deadline compare = greater_than_or_equals } NOT = { has_global_flag = TFRKC_rework_KPL_spawned } }
+ set_global_flag = TFRKC_rework_KPL_due
+ set_global_flag = TFRKC_rework_KPL_pending
+ if = { limit = { TFRKC_rework_KPL_ready_trigger = yes } TFRKC_rework_spawn_KPL_effect = yes }
+ if = { limit = { has_global_flag = TFRKC_rework_KPL_spawned } clr_global_flag = TFRKC_rework_KPL_pending }
+ }
+ }
+}

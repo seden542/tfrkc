@@ -1,0 +1,40 @@
+﻿l_korean:
+ QUIT_DESC: "정말로 필연적인 일을 일시적으로 미루시겠습니까?\n\n당신의 환상 속 세계로 돌아가시겠습니까?"
+ RESIGN_DESC: "과거로 돌아가는 것은 아무것도 구하지 못할 것입니다. 이것은 되돌릴 수 없는 과정입니다.  \n\n정말로 하시겠습니까?"
+ FE_SELECT_SCENARIO: "스스로 바뀌어가는 세상"
+ CONTINUOUS_FOCUS_TREE_HEADER: ""
+ CONTINUOUS_FOCUS_TREE_DESC: ""
+ CONTINUOUS_FOCUS_LOCKED_DESC: ""
+ CONTINUOUS_FOCUS_UNLOCKED_DESC: ""
+ LOADING_MAP_SPRITES: "롯데리아에서 회동하는 중..." #
+ LOAD_INIT: "화염이 피어오르는 중..." # 
+ LOAD_EVENTS: "재앙 계획 중.." #
+ LOAD_GFX: "국민을 분열하는 중..." #
+ LOADING_GUI: "세계를 불태우는 중..."  #
+ LOADING_HISTORY: "역사를 다시 써내려가는 중..." #
+ CREATING_CHKSUM: "개발을 방해하는 중..." #
+ LOADING_DATABASES: "달러를 축적하는 중..." #
+ LOAD_FLAGS: "R&D 예산을 삭감하는 중..." #
+ PRECALC_NAVAL_DIST: "불타오르는 세계를 지켜보는 중..." #
+ LOAD_GFX_PDXMAP_SHADERS: "미디어에 영향력을 행사하는 중..." 
+ LOAD_GFX_PDXMAP_TERRAIN: "내각을 개편하는 중..." #
+ LOAD_GFX_PDXMAP_BORDERS: "PDTO에 가입하는 중..." #
+ LOAD_GFX_PDXMAP_TEXTURES: "난민을 받는 중..." #
+ LOAD_GFX_PDXMAP_TREES: "경제제재를 받는 중..." #
+ LOAD_GFX_PDXMAP_RIVERS: "시위대를 해산하는 중..." #
+ LOAD_GFX_PDXMAP_STATIC_OBJECTS: "계엄령을 준비하는 중..." #
+ INIT_MAP_LOGIC: "민주주의를 해체하는 중..." #
+ INIT_GAMESTATE: "38선을 넘는 중..." #
+ NAVAL_COMBAT_SHIP_STRENGTH: "£strenght_texticon 내구도:$STR|%Y$"
+ NAVAL_COMBAT_SHIP_ORGANIZATION_FACTOR: "- £organization_texticon 조직력: $ORG|%Y$"
+ UNIT_ORG: "£organization_texticon 조직력: $VALUE|H$"
+ ARMY_UNIT_ORG: "£organization_texticon 조직력: $VALUE|%H$"
+ COMBAT_ATTACK_BUFF: "£attack_texticon 공격" 
+ COMBAT_DEFENSE_BUFF: "£defence_texticon 방어"
+ COMBAT_BREAKTHROUGH_BUFF: "£breakthrough_texticon 돌파"
+ COMBAT_ENTRENCHMENT_BUFF: "£dig_in_texticon 참호"
+ ORG_DAMAGE_MULTIPLIER: "£organization_texticon 조직력 피해량"
+ STR_DAMAGE_MULTIPLIER: "£strenght_texticon 공격력 피해량"
+ WAR_SUPPORT_REDUCTION_ON_DAMAGE: "£war_support_texticon 피해에 의한 전쟁 지지도 감소"
+ ACHIEVEMENT_UNLOCKED_WHEN: "§С선행 조건:§!"
+ EFFECT_ACTIVATE_TARGETED_DECISION: "결정 활성화: $NAME|H$"

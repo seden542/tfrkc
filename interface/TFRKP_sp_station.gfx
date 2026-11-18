@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_radio_tfrkp_superevents_stations_album_art"
+		texturefile = "gfx/radio_tfrkp_superevents_stations_album_art.png"
+		noOfFrames = 2
+		alwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_TFR_original_tfrkp"
+		texturefile = "gfx/TFR_album_covers/TFR_original_tfrkp.png"
+		legacy_lazy_load = no
+	}
+}

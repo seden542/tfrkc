@@ -1,0 +1,14 @@
+division_template = { name = "TFRKC city KAF 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } }  }
+division_template = { name = "TFRKC city KAF 1" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+units = {
+division = { name = "호남농민공동전선 제1전투단" location = 10110 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제2전투단" location = 15129 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제3전투단" location = 15171 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제4전투단" location = 15139 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제5전투단" location = 11948 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제6전투단" location = 10110 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제7전투단" location = 15129 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제8전투단" location = 15171 division_template = "TFRKC city KAF 0" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제9전투단" location = 15139 division_template = "TFRKC city KAF 1" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+division = { name = "호남농민공동전선 제10전투단" location = 11948 division_template = "TFRKC city KAF 1" start_manpower_factor = 0.9 start_equipment_factor = 0.45 start_experience_factor = 0.2 }
+}

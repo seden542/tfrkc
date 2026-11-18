@@ -1,0 +1,2 @@
+# Register before token lookup, matching TFRKP_tokens.txt.
+TFRKC_SE_KOREAN_CIVILWAR

@@ -1,0 +1,146 @@
+defined_text = {
+	name = GetPRKPyonganInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_pyongan_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_pyongan_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_pyongan_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_pyongan_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}
+
+defined_text = {
+	name = GetPRKHwanghaeInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_hwanghae_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_hwanghae_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_hwanghae_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_hwanghae_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}
+
+defined_text = {
+	name = GetPRKKangwonInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_kangwon_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_kangwon_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_kangwon_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_kangwon_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}
+
+defined_text = {
+	name = GetPRKHamgyongInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_hamgyong_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_hamgyong_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_hamgyong_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_hamgyong_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}
+
+defined_text = {
+	name = GetPRKRyanggangInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_ryanggang_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_ryanggang_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_ryanggang_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_ryanggang_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}
+
+defined_text = {
+	name = GetPRKChagangInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_chagang_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_chagang_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_chagang_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_chagang_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}
+
+defined_text = {
+	name = GetPRKNationalInfectionStage
+	text = {
+		trigger = { check_variable = { PRK_national_infection_var > 0.80 } }
+		localization_key = PRK_infection_stage_uncontrollable
+	}
+	text = {
+		trigger = { check_variable = { PRK_national_infection_var > 0.60 } }
+		localization_key = PRK_infection_stage_collapse_imminent
+	}
+	text = {
+		trigger = { check_variable = { PRK_national_infection_var > 0.40 } }
+		localization_key = PRK_infection_stage_amplified
+	}
+	text = {
+		trigger = { check_variable = { PRK_national_infection_var > 0.20 } }
+		localization_key = PRK_infection_stage_detected
+	}
+	text = { localization_key = PRK_infection_stage_clear }
+}

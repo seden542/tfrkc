@@ -1,0 +1,691 @@
+
+KOR_PLP_party_influence_clamp = {
+	clamp_variable = { var = KOR_plp_pp_inf_var min = 0 max = 10 }
+	clamp_variable = { var = KOR_plp_jp_inf_var min = 0 max = 10 }
+	clamp_variable = { var = KOR_plp_lp_inf_var min = 0 max = 10 }
+}
+KOR_PLP_president_influence_clamp = {
+	clamp_variable = { var = KOR_PLP_president_influence_var min = 0 max = 5 }
+}
+KOR_PLP_reset_now_focus_effect = {
+	add_to_variable = { KOR_plp_focus_dirty = 1 }
+	set_variable = { KOR_plp_focus_selected = 0 }
+	clr_country_flag = KOR_plp_set_net_focus_flag
+}
+KOR_PLP_president_influence_add = {
+	custom_effect_tooltip = KOR_PLP_influence_add_president_tooltip
+	add_to_variable = { KOR_PLP_president_influence_var = plp_influence_president_var_temp }
+	KOR_PLP_president_influence_clamp = yes
+}
+KOR_PLP_influence_add = {
+	### Progressive Party Influence
+	if = {
+		limit = {
+			check_variable = {
+				plp_influence_party_temp = 1 # PP
+			}
+		}
+		add_to_variable = { KOR_plp_pp_inf_var = plp_influence_var_temp }
+		custom_effect_tooltip = KOR_PLP_influence_add_pp_tooltip
+	}
+	
+	### Justice Party Influence
+	if = {
+		limit = {
+			check_variable = {
+				plp_influence_party_temp = 2 # JP
+			}
+		}
+		add_to_variable = { KOR_plp_jp_inf_var = plp_influence_var_temp }
+		custom_effect_tooltip = KOR_PLP_influence_add_jp_tooltip
+	}
+	
+	### Labor Party Influence
+	if = {
+		limit = {
+			check_variable = {
+				plp_influence_party_temp = 3 # LP
+			}
+		}
+		add_to_variable = { KOR_plp_lp_inf_var = plp_influence_var_temp }
+		custom_effect_tooltip = KOR_PLP_influence_add_lp_tooltip
+	}
+	
+	KOR_PLP_party_influence_clamp = yes
+}
+KOR_PLP_add_focus_array_effect = {
+	add_to_variable = { KOR_plp_focus_dirty = 1 }
+	add_to_array = { plp_focus_array = plp_array_var_temp } #3번 의제
+	custom_effect_tooltip = KOR_PLP_add_focus_array_tt
+	KOR_PLP_reset_now_focus_effect = yes
+}
+KOR_PLP_remove_focus_array_effect = {
+	add_to_variable = { KOR_plp_focus_dirty = 1 }
+	remove_from_array = { plp_focus_array = plp_array_var_temp } #3번 의제
+	custom_effect_tooltip = KOR_PLP_remove_focus_array_tt
+	KOR_PLP_reset_now_focus_effect = yes
+}
+KOR_PLP_debug_add_all_focus_effect = {
+	add_to_variable = { KOR_plp_focus_dirty = 1 }
+	add_to_array = { plp_focus_array = 7 } #Common
+	# Factions
+	add_to_array = { plp_focus_array = 1 } #1번 의제
+	add_to_array = { plp_focus_array = 2 } #2번 의제
+	add_to_array = { plp_focus_array = 3 } #3번 의제
+	add_to_array = { plp_focus_array = 4 } #...
+	add_to_array = { plp_focus_array = 5 }
+	add_to_array = { plp_focus_array = 6 }
+	#add_to_array = { plp_focus_array = 7 }
+	add_to_array = { plp_focus_array = 8 }
+	add_to_array = { plp_focus_array = 9 }
+	add_to_array = { plp_focus_array = 10 }
+	#add_to_array = { plp_focus_array = 11 }
+	#add_to_array = { plp_focus_array = 12 }
+	#add_to_array = { plp_focus_array = 13 }
+	#add_to_array = { plp_focus_array = 14 }
+	#add_to_array = { plp_focus_array = 15 }
+	#add_to_array = { plp_focus_array = 16 }
+}
+KOR_PLP_debug_add_one_focus_effect = {
+	add_to_variable = { KOR_plp_focus_dirty = 1 }
+	add_to_array = { plp_focus_array = 3 } #3번 의제
+}
+KOR_PLP_debug_clear_all_focus_effect = {
+	set_variable = { KOR_plp_focus_selected = 0 }
+
+	add_to_variable = { KOR_plp_focus_dirty = 1 }
+	clear_array = plp_focus_array
+}
+KOR_PLP_lead_faction_pp_effect = {
+	custom_effect_tooltip = KOR_PLP_chang_lf_pp_tt
+	set_variable = {
+		PLPHeadFaction_var = 1 # Progressive Party
+	}
+}
+KOR_PLP_lead_faction_jp_effect = {
+	custom_effect_tooltip = KOR_PLP_chang_lf_jp_tt
+	set_variable = {
+		PLPHeadFaction_var = 2 # Jeong-ui Party
+	}
+}
+KOR_PLP_lead_faction_lp_effect = {
+	custom_effect_tooltip = KOR_PLP_chang_lf_lp_tt
+	set_variable = {
+		PLPHeadFaction_var = 3 # Labor Party
+	}
+}
+KOR_PLP_cancle_focus_effect = {
+	add_political_power = -200
+	if = {
+		limit = {
+			check_variable = { PLPHeadFaction_var = 1 }
+		}
+		set_temp_variable = {
+			plp_influence_party_temp = 1
+		}
+		set_temp_variable = {
+			plp_influence_var_temp = -1
+		}
+		KOR_PLP_influence_add = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { PLPHeadFaction_var = 2 }
+		}
+		set_temp_variable = {
+			plp_influence_party_temp = 2
+		}
+		set_temp_variable = {
+			plp_influence_var_temp = -1
+		}
+		KOR_PLP_influence_add = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { PLPHeadFaction_var = 3 }
+		}
+		set_temp_variable = {
+			plp_influence_party_temp = 3
+		}
+		set_temp_variable = {
+			plp_influence_var_temp = -1
+		}
+		KOR_PLP_influence_add = yes
+	}
+	KOR_PLP_reset_now_focus_effect = yes
+	set_variable = { plp_focus_owner_var = 0 } 
+}
+KOR_PLP_select_focus_effect = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = KOR_plp_set_net_focus_flag }
+		}
+		set_country_flag = KOR_plp_set_net_focus_flag
+		add_to_variable = { KOR_plp_focus_dirty = 1 }
+		set_variable = { KOR_plp_focus_selected = KOR_select_second_temp_var }
+		set_variable = {
+			KOR_select_second_temp_var = 0
+		}
+	}
+}
+KOR_PLP_lead_faction_change_effect = {
+	add_political_power = -500
+	clr_country_flag = KOR_plp_lead_faction_confirm_flag
+	set_variable = { PLPHeadFaction_var = KOR_lead_faction_temp_var }
+	set_variable = {
+		KOR_lead_faction_temp_var = 0
+	}
+}
+KOR_PLP_party_system_setup_effect = {
+	hidden_effect = {
+		# Clear Olds
+		KOR_PLP_debug_clear_all_focus_effect = yes
+		KOR_PLP_reset_now_focus_effect = yes
+
+		# Setting Start
+		set_country_flag = KOR_PLP_party_setup_flag
+
+		# Start President Influence
+		set_variable = { 
+			KOR_PLP_president_faction_var = 1 # PP Faction
+		}
+		set_variable = {
+			KOR_PLP_president_influence_var = 3
+		}
+		
+		# Start Faction influence
+		set_variable = {
+			KOR_plp_pp_inf_var = 4
+		}
+		set_variable = {
+			KOR_plp_jp_inf_var = 3
+		}
+		set_variable = {
+			KOR_plp_lp_inf_var = 1
+		}
+
+		# Start Lead Faction
+		set_variable = {
+			PLPHeadFaction_var = 1 # Progressive Party
+		}
+
+		# Start Head of Party
+		set_variable = {
+			PLPPartyLeader_var = 2 # Sim Sang Jung
+		}
+
+		# Focuses
+		KOR_PLP_debug_add_all_focus_effect = yes
+		
+		# Setup Starting Focus
+		set_variable = { KOR_plp_focus_selected = 7 }
+		set_country_flag = KOR_plp_set_net_focus_flag
+		
+		# Clamps
+		KOR_PLP_party_influence_clamp = yes
+		KOR_PLP_president_influence_clamp = yes
+	}
+}
+KOR_PLP_pi_faction_effect = {
+	if = {
+		limit = {
+			OR = {
+				check_variable = { KOR_plp_focus_selected = 1 }
+				check_variable = { KOR_plp_focus_selected = 2 }
+			}
+			check_variable = {
+				KOR_PLP_president_faction_var = 1
+			}
+		}
+		set_temp_variable = {
+			plp_influence_president_var_temp = 1
+		}
+		KOR_PLP_president_influence_add = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				check_variable = { KOR_plp_focus_selected = 3 }
+				check_variable = { KOR_plp_focus_selected = 4 }
+			}
+			check_variable = {
+				KOR_PLP_president_faction_var = 2
+			}
+		}
+		set_temp_variable = {
+			plp_influence_president_var_temp = 1
+		}
+		KOR_PLP_president_influence_add = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				check_variable = { KOR_plp_focus_selected = 5 }
+				check_variable = { KOR_plp_focus_selected = 6 }
+			}
+			check_variable = {
+				KOR_PLP_president_faction_var = 3
+			}
+		}
+		set_temp_variable = {
+			plp_influence_president_var_temp = 1
+		}
+		KOR_PLP_president_influence_add = yes
+	}
+}
+KOR_PLP_focus_reward_3_pp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 1
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 3
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_2_pp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 1
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 2
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_1_pp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 1
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 1
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_3_jp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 2
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 3
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_2_jp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 2
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 2
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_1_jp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 2
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 1
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_3_lp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 3
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 3
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_2_lp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 3
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 2
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_1_lp_effect = {
+	set_temp_variable = {
+		plp_influence_party_temp = 3
+	}
+	set_temp_variable = {
+		plp_influence_var_temp = 1
+	}
+	KOR_PLP_influence_add = yes
+}
+KOR_PLP_focus_reward_all_effect = {
+	KOR_PLP_focus_reward_1_pp_effect = yes
+	KOR_PLP_focus_reward_1_jp_effect = yes
+	KOR_PLP_focus_reward_1_lp_effect = yes
+}
+KOR_PLP_focus_owner_change_reward_effect = { 
+	if = {
+		limit = {
+			OR = { check_variable = { plp_focus_owner_var = 1 } check_variable = { plp_focus_owner_var = 2 } check_variable = { plp_focus_owner_var = 3 } }			
+		}
+		if = {
+			limit = {
+				check_variable = { plp_focus_owner_var = 1 }
+			}
+			KOR_PLP_focus_reward_3_pp_effect = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { plp_focus_owner_var = 2 }
+			}
+			KOR_PLP_focus_reward_3_jp_effect = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { plp_focus_owner_var = 3 }
+			}
+			KOR_PLP_focus_reward_3_lp_effect = yes
+		}
+	}
+	else = {
+		KOR_PLP_focus_reward_all_effect = yes
+	}
+}
+KOR_PLP_focus_end_effect = {
+	if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 1 }
+		}
+		add_political_power = 60
+		KOR_PLP_pi_faction_effect = yes
+		country_event = { id = korea.1271 hours = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 2 }
+		}
+		add_political_power = 60
+		PRK = { add_opinion_modifier = { target = KOR modifier = KOR_reunifed_nation_up_opinion } }
+		KOR = { add_opinion_modifier = { target = PRK modifier = KOR_reunifed_nation_up_opinion } }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 3 }
+		}
+		add_political_power = 60
+		if = {
+			limit = {
+				KOR_PLP_is_pp_focus_trigger = yes
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+		}
+		else_if = {
+			limit = {
+				KOR_PLP_is_jp_focus_trigger = yes
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+		}
+		else_if = {
+			limit = {
+				KOR_PLP_is_lp_focus_trigger = yes
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+		else = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.015
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 4 }
+		}
+		add_political_power = 80
+		add_stability = 0.03
+		country_event = { id = korea.1267 hours = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 5 }
+		}
+		add_political_power = 100
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 6 }
+		}
+		country_event = { id = korea.1266 hours = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 7 }
+		}
+		add_stability = 0.03
+		add_political_power = 80
+		country_event = { id = korea.1264 hours = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 8 }
+		}
+		add_political_power = 40
+		country_event = { id = korea.1270 hours = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 9 }
+		}
+		add_political_power = 100
+		country_event = { id = korea.1269 hours = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 10 }
+		}
+		add_political_power = 80
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 11 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 12 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 13 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 14 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 15 }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 16 }
+		}
+	}
+	
+	if = {
+		limit = {
+			OR = {
+				check_variable = { KOR_plp_focus_selected = 1 }
+				check_variable = { KOR_plp_focus_selected = 2 }
+			}
+		}
+		KOR_PLP_focus_reward_3_pp_effect = yes
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { KOR_plp_focus_selected = 3 }
+				check_variable = { KOR_plp_focus_selected = 4 }
+			}
+		}
+		KOR_PLP_focus_reward_3_jp_effect = yes
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { KOR_plp_focus_selected = 5 }
+				check_variable = { KOR_plp_focus_selected = 6 }
+			}
+		}
+		KOR_PLP_focus_reward_3_lp_effect = yes
+	}
+	else = {
+		KOR_PLP_focus_owner_change_reward_effect = yes
+	}
+	
+	if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected < 7 }
+		}
+		KOR_PLP_pi_faction_effect = yes
+	}
+	set_variable = { plp_focus_owner_var = 0 } 
+}
+KOR_PLP_focus_mine_change_effect = {
+	set_variable = { plp_focus_owner_var = 0 } 
+	if = {
+		limit = {
+			check_variable = { PLPHeadFaction_var = 1 }
+		}
+		set_variable = { plp_focus_owner_var = 1 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { PLPHeadFaction_var = 2 }
+		}
+		set_variable = { plp_focus_owner_var = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { PLPHeadFaction_var = 3 }
+		}
+		set_variable = { plp_focus_owner_var = 3 }
+	}
+	add_political_power = -100
+	clr_country_flag = KOR_plp_focus_visible
+}
+KOR_PLP_focus_auto_end_effect = {
+	custom_effect_tooltip = KOR_plp_reward_auto_select_tt
+	KOR_PLP_focus_end_effect = yes
+	if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 1 }
+		}
+		set_temp_variable = { plp_array_var_temp = 1 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 2 }
+		}
+		set_temp_variable = { plp_array_var_temp = 2 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 3 }
+		}
+		set_temp_variable = { plp_array_var_temp = 3 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 4 }
+		}
+		set_temp_variable = { plp_array_var_temp = 4 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 5 }
+		}
+		set_temp_variable = { plp_array_var_temp = 5 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 6 }
+		}
+		set_temp_variable = { plp_array_var_temp = 6 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 7 }
+		}
+		set_temp_variable = { plp_array_var_temp = 7 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 8 }
+		}
+		set_temp_variable = { plp_array_var_temp = 8 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 9 }
+		}
+		set_temp_variable = { plp_array_var_temp = 9 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 10 }
+		}
+		set_temp_variable = { plp_array_var_temp = 10 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 11 }
+		}
+		set_temp_variable = { plp_array_var_temp = 11 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 12 }
+		}
+		set_temp_variable = { plp_array_var_temp = 12 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 13 }
+		}
+		set_temp_variable = { plp_array_var_temp = 13 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 14 }
+		}
+		set_temp_variable = { plp_array_var_temp = 14 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 15 }
+		}
+		set_temp_variable = { plp_array_var_temp = 15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 16 }
+		}
+		set_temp_variable = { plp_array_var_temp = 16 }
+	}
+	hidden_effect = {
+		KOR_PLP_remove_focus_array_effect = yes
+		scoped_sound_effect = HOI4_ui_award_tier_03
+	}
+	set_variable = { plp_focus_owner_var = 0 } 
+}

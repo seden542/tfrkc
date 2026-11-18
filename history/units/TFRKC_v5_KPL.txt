@@ -1,0 +1,13 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 KPL line" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 KPL mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "KPL line 1" location = 15233 division_template = "TFRKC v5 KPL line" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL line 2" location = 15461 division_template = "TFRKC v5 KPL line" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL line 3" location = 15462 division_template = "TFRKC v5 KPL line" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL line 4" location = 15158 division_template = "TFRKC v5 KPL line" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL line 5" location = 15464 division_template = "TFRKC v5 KPL line" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL line 6" location = 15463 division_template = "TFRKC v5 KPL line" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL mobile 1" location = 15244 division_template = "TFRKC v5 KPL mobile" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+ division = { name = "KPL mobile 2" location = 15248 division_template = "TFRKC v5 KPL mobile" start_manpower_factor = 0.85 start_equipment_factor = 0.8 start_experience_factor = 0.65 }
+}

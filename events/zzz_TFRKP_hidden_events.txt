@@ -1,0 +1,2196 @@
+add_namespace = TFRKP_hidden
+
+country_event = {
+	id = TFRKP_hidden.1
+	title = TFRKP_hidden.1.t
+	desc = TFRKP_hidden.1.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2024.7.20
+		KOR = {
+			KOR_is_PP_path = yes
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.1 option TFRKP_hidden.1.a"
+		name = TFRKP_hidden.1.a
+		KOR = {
+			country_event = korea.705
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.2
+	title = TFRKP_hidden.2.t
+	desc = TFRKP_hidden.2.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			has_war_with = PRC
+			NOT = {
+				has_global_flag = GLOB_TFRKP_HID_2
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = GLOB_TFRKP_HID_2
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.2 option TFRKP_hidden.2.a"
+		name = TFRKP_hidden.2.a
+		KOR = {
+			country_event = {
+				id = korea.300
+			}
+			if = {
+				limit = {
+					KOR_is_lee_PPP_path = yes
+					has_country_flag = KOR_LJS_government_enable_flag
+				}
+				country_event = { id = korea.1300 days = 30 }
+				set_country_flag = KOR_LJS_wartime_government_phase_flag
+				clr_country_flag = KOR_LJS_late_term_choice_pending_flag
+			}
+			set_country_flag = KOR_great_asia_war
+			mark_focus_tree_layout_dirty = yes
+		}
+		if = {
+			limit = {
+				KOR = {
+					NOT = {
+						is_in_faction_with = JAP
+					}
+				}
+			}
+			JAP = {
+				add_to_faction = KOR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.3
+	title = TFRKP_hidden.3.t
+	desc = TFRKP_hidden.3.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2022.2.4
+		KOR = {
+			exists = yes
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.3 option TFRKP_hidden.3.a"
+		name = TFRKP_hidden.3.a
+		KOR = {
+			country_event = {
+				id = korea.350
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.4
+	title = TFRKP_hidden.4.t
+	desc = TFRKP_hidden.4.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2024.3.7
+		KOR_is_yoon_path = yes
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.4 option TFRKP_hidden.4.a"
+		name = TFRKP_hidden.4.a
+		KOR = {
+			country_event = {
+				id = korea.352
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.5 # 개혁신당
+	title = TFRKP_hidden.5.t
+	desc = TFRKP_hidden.5.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2024.1.20
+		NOT = {
+			has_completed_focus = KOR_youn_party_together
+		}
+		KOR_is_yoon_path = yes
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.5 option TFRKP_hidden.5.a"
+		name = TFRKP_hidden.5.a
+		KOR = {
+			country_event = {
+				id = korea.353
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.6 # 구 국민의당 합당코드. 다른 hidden 처리 발동에 사용하세요.
+	title = TFRKP_hidden.6.t
+	desc = TFRKP_hidden.6.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		tag = KOR
+		always = no
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.6 option TFRKP_hidden.6.a"
+		name = TFRKP_hidden.6.a
+	}
+}
+country_event = {
+	id = TFRKP_hidden.7
+	title = TFRKP_hidden.7.t
+	desc = TFRKP_hidden.7.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2022.3.9
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.7 option TFRKP_hidden.7.a"
+		name = TFRKP_hidden.7.a
+		KOR = {
+			country_event = {
+				id = korea.355
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.8
+	title = TFRKP_hidden.8.t
+	desc = TFRKP_hidden.8.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2020.9.17
+		KOR = {
+			has_country_flag = KOR_election_of_NA_2020
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.8 option TFRKP_hidden.8.a"
+		name = TFRKP_hidden.8.a
+		KOR = {
+			country_event = {
+				id = korea.356
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.9
+	title = TFRKP_hidden.9.t
+	desc = TFRKP_hidden.9.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2021.1.7
+		KOR = {
+			has_country_flag = KOR_election_of_NA_2020
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.9 option TFRKP_hidden.9.a"
+		name = TFRKP_hidden.9.a
+		KOR = {
+			country_event = {
+				id = korea.357
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.10
+	title = TFRKP_hidden.10.t
+	desc = TFRKP_hidden.10.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2021.6.24
+		KOR = {
+			has_country_flag = KOR_election_of_NA_2020
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.10 option TFRKP_hidden.10.a"
+		name = TFRKP_hidden.10.a
+		KOR = {
+			country_event = {
+				id = korea.358
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.11
+	title = TFRKP_hidden.11.t
+	desc = TFRKP_hidden.11.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2021.8.5
+		KOR = {
+			has_country_flag = KOR_election_of_NA_2020
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.11 option TFRKP_hidden.11.a"
+		name = TFRKP_hidden.11.a
+		KOR = {
+			country_event = {
+				id = korea.359
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.12
+	title = TFRKP_hidden.12.t
+	desc = TFRKP_hidden.12.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2022.6.13
+		KOR = {
+			has_country_flag = KOR_election_of_NA_2020
+			has_country_flag = KOR_election_of_NA_2022_by
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.12 option TFRKP_hidden.12.a"
+		name = TFRKP_hidden.12.a
+		KOR = {
+			country_event = {
+				id = korea.360
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.13
+	title = TFRKP_hidden.13.t
+	desc = TFRKP_hidden.13.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+		}
+		date > 2020.6.29
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.13 option TFRKP_hidden.13.a"
+		name = TFRKP_hidden.13.a
+		KOR = {
+			country_event = {
+				id = korea.361
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.14
+	title = TFRKP_hidden.14.t
+	desc = TFRKP_hidden.14.desc
+	picture = GFX
+	hidden = yes
+	
+	trigger = {
+		date > 2023.4.5 #본투표 개표 
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.14 option TFRKP_hidden.14.a"
+		name = TFRKP_hidden.14.a
+		KOR = {
+			if = {
+				limit = { # 중립 - 승전의 경우 격발
+					has_country_flag = KOR_lee_taiwan_war_victory
+					NOT = { has_country_flag = KOR_lee_has_intervened_in_taiwan_flag }
+					NOT = { has_country_flag = KOR_lee_taiwan_war_defeat }
+				}
+				country_event = { id = korea.1288 }
+			}
+			else_if = { # 제한적으로 다른 루트에 사용하고 싶을 경우
+				limit = {
+					has_country_flag = KOR_lee_has_intervened_in_taiwan_flag
+				}
+				country_event = { id = korea.362 }
+			}
+			else = { # 다른 모든 경우에 격발(ex.윤버지)
+				country_event = { id = korea.362 }
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.15
+	title = TFRKP_hidden.15.t
+	desc = TFRKP_hidden.15.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		tag = KOR
+		has_global_flag = PRC_japanese_gaw_victory_global
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.15 option TFRKP_hidden.15.a"
+		name = TFRKP_hidden.15.a
+		KOR = {
+			country_event = {
+				id = korea.417
+			}
+		}
+	}
+}
+country_event = {
+	id = TFRKP_hidden.16
+	title = TFRKP_hidden.16.t
+	desc = TFRKP_hidden.16.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			has_country_flag = KOR_yoon_winter_republic
+			has_war_with = PRC
+			is_in_faction_with = JAP
+		}
+		PRK = {
+			OR = {
+				is_in_faction_with = PRC
+				exists = no
+			}
+		}
+		JAP = {
+			NOT = {
+				has_war_with = PRC
+			}
+			is_ai = yes
+		}
+		RAJ = {
+			has_war_with = PRC
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.16 option TFRKP_hidden.16.a"
+		name = TFRKP_hidden.16.a
+		JAP = {
+			declare_war_on = { target = PRC type = annex_everything }
+		}
+		PRC = {
+			PRC_gaw_start = yes
+		}
+	}
+}
+country_event = { #If PD1 is exists, they will be Korea's Puppet
+	id = TFRKP_hidden.17
+	title = TFRKP_hidden.17.t
+	desc = TFRKP_hidden.17.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		PD1 = {
+			exists = yes
+			NOT = {
+				is_puppet_of = KOR
+			}
+		}
+		has_global_flag = PRC_japanese_gaw_victory_global
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.17 option TFRKP_hidden.17.a"
+		name = TFRKP_hidden.17.a
+		if = {
+			limit = {
+				KOR = {
+					KOR_is_lee_path = yes
+				}
+				PD1 = {
+					NOT = {
+						has_country_leader = {
+							character = PD1_yang_mujin_char
+							ruling_only = yes
+						}
+					}
+				}
+			}
+			PD1 = {
+				PD1_yang_mujin_char = {
+					promote_character = yes
+				}
+			}
+		}
+		PD1 = {
+			set_popularities = {
+				nationalist = 58.3
+				conservative = 10.7
+				libertarian_socialist = 3.2
+				communist = 27.8
+			}
+			get_current_government_type = yes
+		}
+		KOR = {
+			puppet = PD1
+		}
+		PD1 = {
+			restore_previous_government_type = yes
+		}
+
+	}
+}
+country_event = { #If KOR is PP route, PRC **Can't** start GAW
+	id = TFRKP_hidden.18
+	title = TFRKP_hidden.18.t
+	desc = TFRKP_hidden.18.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		PRC = {
+			OR = {
+				has_completed_focus = PRC_push_for_thaw
+				has_completed_focus = PRC_support_the_korean_way
+			}
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		KOR = {
+			KOR_is_PP_path = yes
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = no
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.18 option TFRKP_hidden.18.a"
+		name = TFRKP_hidden.18.a
+		PRC = {
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_push_for_thaw }
+				}
+				uncomplete_national_focus = {
+					focus = PRC_push_for_thaw
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+				PRK = {
+					set_temp_variable = { industrial_development_var_temp = -0.125 }
+					add_industrial_development = yes
+					set_temp_variable = { poverty_development_var_temp = -0.125 }
+					add_poverty_development = yes
+				}
+			}
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_support_the_korean_way }
+				}
+				uncomplete_national_focus = {
+					focus = PRC_support_the_korean_way
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+				PRK = {
+					set_temp_variable = { society_development_var_temp = -0.125 }
+					add_society_development = yes
+					set_temp_variable = { military_development_var_temp = -0.125 }
+					add_military_development = yes
+				}
+			}
+			if = {
+				limit = {
+					PRC = { NOT = { has_completed_focus = PRC_revolution_in_myanmar } }
+				}
+				if = {
+					limit = {
+						NOT = { has_completed_focus = PRC_south_asian_brothers }
+						NOT = { has_completed_focus = PRC_masters_of_asia }
+					}
+					complete_national_focus = PRC_south_asian_brothers
+				}
+				load_oob = "00_focus_PRC_brm"
+			}
+		}
+
+	}
+}
+country_event = { #If KOR is PP route, KOR tag will be KOR_ppp_revolution_1
+	id = TFRKP_hidden.19
+	title = TFRKP_hidden.19.t
+	desc = TFRKP_hidden.19.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+			KOR_is_PP_path = yes
+			NOT = {
+				has_country_flag = KOR_PP_DPK_route
+			}
+			NOT = {
+				has_cosmetic_tag = KOR_ppp_revolution_1
+				has_cosmetic_tag = KOR_ppp_revolution_3
+				has_cosmetic_tag = KOR_federation
+				has_cosmetic_tag = KOR_federation_blue
+			}
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.19 option TFRKP_hidden.19.a"
+		name = TFRKP_hidden.19.a
+		KOR = {
+			set_cosmetic_tag = KOR_ppp_revolution_1
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.20
+	title = TFRKP_hidden.20.t
+	desc = TFRKP_hidden.20.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			exists = yes
+			power_balance_value = {
+				id = KOR_bop_coa_cabinet_balance
+				value > 0.89
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.20 option TFRKP_hidden.20.a"
+		name = TFRKP_hidden.20.a
+		KOR = {
+			country_event = korea.740
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.21
+	title = TFRKP_hidden.21.t
+	desc = TFRKP_hidden.21.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2026.1.1
+		KOR = {
+			NOT = { has_country_flag = KOR_kim_new_year_speech_event_fired_flag }
+			NOT = { has_country_flag = KOR_kim_new_year_speech_delivered_flag }
+		}
+		KOR = {
+			OR = {
+				has_completed_focus = KOR_lee_hard_march_to_future
+				AND = {
+					has_government = libertarian_socialist
+					has_country_leader = {
+						character = KOR_kim_jae_yeon_char
+						ruling_only = yes
+					}
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.21 option TFRKP_hidden.21.a"
+		name = TFRKP_hidden.21.a
+		KOR = {
+			set_country_flag = KOR_kim_new_year_speech_event_fired_flag
+			country_event = korea.957
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.22
+	title = TFRKP_hidden.22.t
+	desc = TFRKP_hidden.22.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			KOR_is_PP_path = no
+			is_in_faction_with = JAP
+		}
+		1041 = { has_dynamic_modifier = { modifier = KOR_USFK_vacant_dynamic } }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.22 option TFRKP_hidden.22.a"
+		name = TFRKP_hidden.22.a
+		KOR = {
+			country_event = { id = korea.796 days = 40 }
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.23
+	title = TFRKP_hidden.23.t
+	desc = TFRKP_hidden.23.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			KOR_is_lee_path = yes
+			has_country_flag = KOR_lee_taiwan_war_victory
+			NOT = { has_country_flag = KOR_lee_taiwan_war_victory_supported }
+			date > 2026.11.20
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.23 option TFRKP_hidden.23.a"
+		name = TFRKP_hidden.23.a
+		KOR = {
+			country_event = { id = korea.938 }
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.24
+	title = TFRKP_hidden.24.t
+	desc = TFRKP_hidden.24.desc
+	picture = GFX
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.24 option TFRKP_hidden.24.a"
+		name = TFRKP_hidden.24.a
+		KOR = {
+			load_oob = "00_focus_KOR_reds_1"
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.25
+	title = TFRKP_hidden.25.t
+	desc = TFRKP_hidden.25.desc
+	picture = GFX
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.25 option TFRKP_hidden.25.a"
+		name = TFRKP_hidden.25.a
+		KOR = {
+			load_oob = "00_focus_KOR_reds_2"
+		}
+	}
+}
+country_event = { #
+	id = TFRKP_hidden.26
+	title = TFRKP_hidden.26.t
+	desc = TFRKP_hidden.26.desc
+	picture = GFX
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.26 option TFRKP_hidden.26.a"
+		name = TFRKP_hidden.26.a
+		KOR = {
+			load_oob = "00_focus_KOR_reds_3"
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.27
+	title = TFRKP_hidden.27.t
+	desc = TFRKP_hidden.27.desc
+	picture = GFX
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.27 option TFRKP_hidden.27.a"
+		name = TFRKP_hidden.27.a
+		KOR_special_strategic_materials_complete_bioweapon_production_effect = yes
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.28
+	title = TFRKP_hidden.28.t
+	desc = TFRKP_hidden.28.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		any_country = {
+			is_in_faction_with = JAP
+			has_war_with = PRC
+		}
+		has_global_flag = PRC_japanese_gaw_victory_global
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.28 option TFRKP_hidden.28.a"
+		name = TFRKP_hidden.28.a
+		every_country = {
+			limit = {
+				is_in_faction_with = JAP
+			}
+			white_peace = PRC
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.29
+	title = TFRKP_hidden.29.t
+	desc = TFRKP_hidden.29.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			OR = {
+				has_country_flag = KOR_lee_taiwan_war_victory_supported
+				KOR_is_army_path = yes
+			}
+		}
+		PD1 = {
+			exists = yes
+		}
+		NTT = {
+			owns_state = 716
+		}
+		has_global_flag = PRC_japanese_gaw_victory_global
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.29 option TFRKP_hidden.29.a"
+		name = TFRKP_hidden.29.a
+		PD1 = {
+			transfer_state = 716
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.30
+	title = TFRKP_hidden.30.t
+	desc = TFRKP_hidden.30.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2027.11.15
+		KOR = {
+			KOR_is_lee_path = yes
+			has_country_flag = KOR_lee_taiwan_war_victory
+			has_country_flag = KOR_lee_taiwan_war_victory_supported
+			has_country_flag = KOR_second_president_DPK_22
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.30 option TFRKP_hidden.30.a"
+		name = TFRKP_hidden.30.a
+		KOR = {
+			country_event = korea.1321
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.31
+	title = TFRKP_hidden.31.t
+	desc = TFRKP_hidden.31.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			check_variable = { KOR_lee_military_ignorant_var > 99 }
+			NOT = { has_country_flag = korea_814_fired_flag }
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.31 option TFRKP_hidden.31.a"
+		name = TFRKP_hidden.31.a
+		KOR = {
+			set_country_flag = korea_814_fired_flag
+			country_event = { id = korea.814 days = 1 }
+		}
+	}
+}
+
+country_event = { #2024.4.10 총선
+	id = TFRKP_hidden.32
+	title = TFRKP_hidden.32.t
+	desc = TFRKP_hidden.32.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2024.4.10
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.32 option TFRKP_hidden.32.a"
+		name = TFRKP_hidden.32.a
+		if = {
+			limit = {
+				KOR = { has_country_flag = KOR_yoon_taiwan_war_victory }
+			}
+			KOR = {
+				country_event = { id = korea.151 }
+			}
+		}
+		else_if = {
+			limit = {
+				KOR = { has_country_flag = KOR_yoon_taiwan_war_defeat }
+			}
+			KOR = {
+				country_event = { id = korea.156 }
+			}
+		}
+		else_if = {
+			limit = {
+				KOR = {
+					has_country_flag = KOR_lee_path #Lee Path Check
+					NOT = {
+						has_country_flag = KOR_lee_national_revolution_route #군바리 루트 아님
+					}
+				}
+			}
+			KOR = {
+				country_event = { id = korea.534 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.33
+	title = TFRKP_hidden.33.t
+	desc = TFRKP_hidden.33.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		JAP = {
+			is_faction_leader = yes
+			has_war_with = PRC
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		has_global_flag = pan_asian_war_ongoing
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.33 option TFRKP_hidden.33.a"
+		name = TFRKP_hidden.33.a
+		set_global_flag = TFRKP_GAW_is_started_flag
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.34
+	title = TFRKP_hidden.34.t
+	desc = TFRKP_hidden.34.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		PRC = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+			has_war_with = KOR
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.34 option TFRKP_hidden.34.a"
+		name = TFRKP_hidden.34.a
+		PRC = {
+			remove_mission = PRC_korean_war_joining
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.35
+	title = TFRKP_hidden.35.t
+	desc = TFRKP_hidden.35.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2023.5.17
+		KOR = {
+			exists = yes
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.35 option TFRKP_hidden.35.a"
+		name = TFRKP_hidden.35.a
+		KOR = {
+			country_event = korea.559
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.36
+	title = TFRKP_hidden.36.t
+	desc = TFRKP_hidden.36.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2026.6.3
+		KOR = {
+			exists = yes
+			NOT = {
+				has_country_flag = KOR_seoul_mayor_martial_law
+				has_country_flag = KOR_busan_mayor_martial_law
+				has_country_flag = KOR_busan_mayor_jeon_hangil
+				has_country_flag = KOR_seoul_mayor_lee_nakyeon
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.36 option TFRKP_hidden.36.a"
+		name = TFRKP_hidden.36.a
+		KOR = {
+			KOR_seoul_city_mayor_reset_effect = yes
+			KOR_busan_city_mayor_reset_effect = yes
+			if = {
+				limit = { #빛버지
+					has_country_flag = KOR_yoon_second_election_victory
+				}
+				set_country_flag = KOR_seoul_mayor_oh_sehoon
+				set_country_flag = KOR_busan_mayor_park_hyeongjoon
+			}
+			else_if = {
+				limit = { #계엄버지 - 이재명
+					has_country_flag = KOR_yoon_taiwan_war_defeat
+					has_country_flag = KOR_lee_after_yoon_path
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_wonoh
+				set_country_flag = KOR_busan_mayor_jeon_jaesoo
+			}
+			else_if = { #이재명 - 빛재명
+				limit = {
+					has_country_flag = KOR_lee_taiwan_war_victory
+					has_country_flag = KOR_lee_has_intervened_in_taiwan_flag
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_wonoh
+				set_country_flag = KOR_busan_mayor_jeon_jaesoo
+			}
+			else_if = { #이재명 - 꽁승재명
+				limit = {
+					has_country_flag = KOR_lee_taiwan_war_victory
+					NOT = { has_country_flag = KOR_lee_has_intervened_in_taiwan_flag }
+				}
+				set_country_flag = KOR_seoul_mayor_oh_sehoon
+				set_country_flag = KOR_busan_mayor_cho_gyeongtae
+			}
+			else_if = { #이재명 - 패전재명 진보당
+				limit = {
+					has_country_flag = KOR_lee_progress_party_route
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_taeheung
+				set_country_flag = KOR_busan_mayor_jeon_jaesoo
+			}
+			else_if = { #이재명 - 패전재명 거국내각
+				limit = {
+					has_country_flag = KOR_lee_coalition_route
+				}
+				set_country_flag = KOR_seoul_mayor_oh_sehoon
+				set_country_flag = KOR_busan_mayor_park_hyeongjoon
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.37
+	title = TFRKP_hidden.37.t
+	desc = TFRKP_hidden.37.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2030.6.3
+		KOR = {
+			exists = yes
+			NOT = {
+				has_country_flag = KOR_seoul_mayor_martial_law
+				has_country_flag = KOR_busan_mayor_martial_law
+				has_country_flag = KOR_busan_mayor_jeon_hangil
+				has_country_flag = KOR_seoul_mayor_lee_nakyeon
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.37 option TFRKP_hidden.37.a"
+		name = TFRKP_hidden.37.a
+		KOR = {
+			KOR_seoul_city_mayor_reset_effect = yes
+			KOR_busan_city_mayor_reset_effect = yes
+			if = {
+				limit = { #빛버지
+					has_country_flag = KOR_yoon_second_election_victory
+				}
+				set_country_flag = KOR_seoul_mayor_cho_eunhee
+				set_country_flag = KOR_busan_mayor_park_minsik
+			}
+			else_if = {
+				limit = { #계엄버지 - 이재명
+					has_country_flag = KOR_yoon_taiwan_war_defeat
+					has_country_flag = KOR_lee_after_yoon_path
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_wonoh
+				set_country_flag = KOR_busan_mayor_jeon_jaesoo
+			}
+			else_if = { #이재명 - 빛재명
+				limit = {
+					has_country_flag = KOR_lee_taiwan_war_victory
+					has_country_flag = KOR_lee_has_intervened_in_taiwan_flag
+				}
+				set_country_flag = KOR_seoul_mayor_park_joomin
+				set_country_flag = KOR_busan_mayor_jeon_jaesoo
+			}
+			else_if = { #이재명 - 꽁승재명 조국
+				limit = {
+					has_country_flag = KOR_lee_taiwan_war_victory
+					has_country_flag = KOR_lee_DPK_path
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_cheongrae
+				set_country_flag = KOR_busan_mayor_choi_inho
+			}
+			else_if = { #이재명 - 꽁승재명 이준석
+				limit = {
+					has_country_flag = KOR_lee_taiwan_war_victory
+					has_country_flag = KOR_lee_PPP_path
+				}
+				set_country_flag = KOR_seoul_mayor_kim_jaesub
+				set_country_flag = KOR_busan_mayor_cho_gyeongtae
+			}
+			else_if = { #이재명 - 패전재명 진보당
+				limit = {
+					has_country_flag = KOR_lee_progress_party_route
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_taeheung
+				set_country_flag = KOR_busan_mayor_kim_seokjoon
+			}
+			else_if = { #이재명 - 패전재명 거국내각
+				limit = {
+					has_country_flag = KOR_lee_coalition_route
+				}
+				set_country_flag = KOR_seoul_mayor_jeong_wonoh
+				set_country_flag = KOR_busan_mayor_cho_gyeongtae
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.38
+	title = TFRKP_hidden.38.t
+	desc = TFRKP_hidden.38.desc
+	picture = GFX
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.38 option TFRKP_hidden.38.a"
+		name = TFRKP_hidden.38.a
+		KOR = {
+			load_oob = "00_focus_KOR_freewin_1"
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.39 # Cho Kuk
+	title = TFRKP_hidden.39.t
+	desc = TFRKP_hidden.39.desc
+	picture = GFX
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.39 option TFRKP_hidden.39.a"
+		name = TFRKP_hidden.39.a
+		KOR = {
+			load_oob = "00_focus_KOR_freewin_chokuk"
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.40 # Lee Junseok
+	title = TFRKP_hidden.40.t
+	desc = TFRKP_hidden.40.desc
+	picture = GFX
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.40 option TFRKP_hidden.40.a"
+		name = TFRKP_hidden.40.a
+		KOR = {
+			load_oob = "00_focus_KOR_freewin_leejunseok"
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.41 # NK2 떠서 지랄나는 거 방지
+	title = TFRKP_hidden.41.t
+	desc = TFRKP_hidden.41.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			KOR_is_PP_path = yes
+			NOT = {
+				has_government = social_liberal
+			}
+		}
+		NK2 = {
+			exists = yes
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.41 option TFRKP_hidden.41.a"
+		name = TFRKP_hidden.41.a
+		KOR = {
+			if = {
+				limit = {
+					PD2 = { exists = no }
+				}
+				KOR = {
+					transfer_state = 1415
+					transfer_state = 1416
+					puppet = PD2
+				}
+				PD2 = {
+					transfer_state = 1415
+					transfer_state = 1416
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.42 
+	title = TFRKP_hidden.42.t
+	desc = TFRKP_hidden.42.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2025.4.1
+		KOR = {
+			KOR_is_PP_path = yes
+			NOT = {
+				has_government = social_liberal
+			}
+			NOT = { has_country_flag = KOR_korea_1486_event_fired_flag }
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.42 option TFRKP_hidden.42.a"
+		name = TFRKP_hidden.42.a
+		KOR = {
+			set_country_flag = KOR_korea_1486_event_fired_flag
+			country_event = { id = korea.1486 }
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.43
+	title = TFRKP_hidden.43.t
+	desc = TFRKP_hidden.43.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2022.3.19
+		KOR = {
+			exists = yes
+			NOT = { has_country_flag = KOR_korea_1509_date_roll_completed_flag }
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.43 option TFRKP_hidden.43.a"
+		name = TFRKP_hidden.43.a
+		KOR = {
+			set_country_flag = KOR_korea_1509_date_roll_completed_flag
+			random_list = {
+				50 = { country_event = { id = korea.1509 } }
+				50 = { }
+			}
+		}
+	}
+}
+### Free Win Lee Route, PRC can't attack PDTO before 2029.10 ###
+country_event = {
+	id = TFRKP_hidden.44
+	title = TFRKP_hidden.44.t
+	desc = TFRKP_hidden.44.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		OR = {
+			date < 2029.11.1
+			KOR = {
+				has_country_flag = KOR_lee_kim_min_seok_flag 
+				NOT = { has_country_flag = KOR_third_president_DPK_22 }
+			}
+		}
+		NOT = { has_global_flag = TFRKP_FREEWIN_SKIP_FOCUS }
+		PRC = {
+			is_ai = yes
+			OR = {
+				has_completed_focus = PRC_stability_and_security
+				has_completed_focus = PRC_protectors_of_the_chinese_nation
+				has_completed_focus = PRC_suppress_dissent
+			}
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.44 option TFRKP_hidden.44.a"
+		name = TFRKP_hidden.44.a
+		set_global_flag = TFRKP_FREEWIN_SKIP_FOCUS
+		PRC = {
+			unlock_national_focus = PRC_operation_wu_qi
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.45
+	title = TFRKP_hidden.45.t
+	desc = TFRKP_hidden.45.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		OR = {
+			date > 2029.11.1 
+			KOR = {
+				AND = {
+					has_country_flag = KOR_lee_kim_min_seok_flag
+					has_country_flag = KOR_third_president_DPK_22
+				}
+			}
+		}
+		has_global_flag = TFRKP_FREEWIN_SKIP_FOCUS
+		PRC = {
+			is_ai = yes
+			OR = {
+				has_completed_focus = PRC_stability_and_security
+				has_completed_focus = PRC_protectors_of_the_chinese_nation
+				has_completed_focus = PRC_suppress_dissent
+			}
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.45 option TFRKP_hidden.45.a"
+		name = TFRKP_hidden.45.a
+		PRC = {
+			uncomplete_national_focus = {
+				focus = PRC_operation_wu_qi
+				uncomplete_children = yes
+				refund_political_power = no
+			}
+		}
+	}
+}
+
+country_event = { #If KOR is Free Win route, PRC Hu Chunhua **Can't** start GAW
+	id = TFRKP_hidden.46
+	title = TFRKP_hidden.46.t
+	desc = TFRKP_hidden.46.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		OR = {
+			date < 2029.11.1
+			KOR = {
+				has_country_flag = KOR_lee_kim_min_seok_flag 
+				NOT = { has_country_flag = KOR_third_president_DPK_22 }
+			}
+		}
+		PRC = {
+			is_ai = yes
+			has_completed_focus = PRC_the_red_phoenix
+			OR = {
+				has_completed_focus = PRC_push_for_thaw
+				has_completed_focus = PRC_support_the_korean_way
+			}
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = no
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.46 option TFRKP_hidden.46.a"
+		name = TFRKP_hidden.46.a
+		PRC = {
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_push_for_thaw }
+				}
+				uncomplete_national_focus = {
+					focus = PRC_push_for_thaw
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+				PRK = {
+					set_temp_variable = { industrial_development_var_temp = -0.125 }
+					add_industrial_development = yes
+					set_temp_variable = { poverty_development_var_temp = -0.125 }
+					add_poverty_development = yes
+				}
+			}
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_support_the_korean_way }
+				}
+				uncomplete_national_focus = {
+					focus = PRC_support_the_korean_way
+					uncomplete_children = yes
+					refund_political_power = no
+				}
+				PRK = {
+					set_temp_variable = { society_development_var_temp = -0.125 }
+					add_society_development = yes
+					set_temp_variable = { military_development_var_temp = -0.125 }
+					add_military_development = yes
+				}
+			}
+			if = {
+				limit = {
+					PRC = { NOT = { has_completed_focus = PRC_revolution_in_myanmar } }
+				}
+				if = {
+					limit = {
+						NOT = { has_completed_focus = PRC_south_asian_brothers }
+						NOT = { has_completed_focus = PRC_masters_of_asia }
+					}
+					complete_national_focus = PRC_south_asian_brothers
+				}
+				load_oob = "00_focus_PRC_brm"
+			}
+		}
+
+	}
+}
+country_event = { #If KOR is Free Win route, PRC Hu Chunhua **Can't** start GAW
+	id = TFRKP_hidden.47
+	title = TFRKP_hidden.47.t
+	desc = TFRKP_hidden.47.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		OR = {
+			date < 2029.11.1
+			KOR = {
+				has_country_flag = KOR_lee_kim_min_seok_flag 
+				NOT = { has_country_flag = KOR_third_president_DPK_22 }
+			}
+		}
+		has_global_flag = PRC_liberal_china_flag
+		PRC = {
+			is_ai = yes
+			has_completed_focus = PRC_coordinate_eadi_militaries
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+		}
+	}
+
+	fire_only_once = no
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.47 option TFRKP_hidden.47.a"
+		name = TFRKP_hidden.47.a
+		PRC = {
+			uncomplete_national_focus = {
+				focus = PRC_coordinate_eadi_militaries
+				uncomplete_children = yes
+				refund_political_power = no
+			}
+			if = {
+				limit = {
+					PRC = { NOT = { has_completed_focus = PRC_revolution_in_myanmar } }
+				}
+				if = {
+					limit = {
+						NOT = { has_completed_focus = PRC_south_asian_brothers }
+						NOT = { has_completed_focus = PRC_masters_of_asia }
+					}
+					complete_national_focus = PRC_south_asian_brothers
+				}
+				load_oob = "00_focus_PRC_brm"
+			}
+		}
+
+	}
+}
+country_event = { #Always PD1 Establish
+	id = TFRKP_hidden.48
+	title = TFRKP_hidden.48.t
+	desc = TFRKP_hidden.48.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			is_ai = no
+			has_war_with = PRC
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		has_global_flag = TFRKP_GAW_is_started_flag
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.48 option TFRKP_hidden.48.a"
+		name = TFRKP_hidden.48.a
+		KOR = {
+			set_global_flag = pdto_takes_1415
+			set_global_flag = pdto_takes_1413_1414
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.49
+	title = TFRKP_hidden.49.t
+	desc = TFRKP_hidden.49.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2031.12.31
+		tag = KOR
+		KOR = {
+			exists = yes
+			KOR_is_lee_PPP_path = yes
+			has_country_flag = KOR_LJS_government_enable_flag
+			NOT = { has_country_flag = KOR_LJS_2032_new_year_checked_flag }
+			NOT = { has_country_flag = KOR_lee_nothing_2032_election }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.49 option TFRKP_hidden.49.a"
+		name = TFRKP_hidden.49.a
+		KOR = {
+			set_country_flag = KOR_LJS_2032_new_year_checked_flag
+			set_country_flag = KOR_LJS_2032_opposition_realignment_checked_flag
+			set_variable = { KOR_LJS_late_term_momentum_reward_var = 0 }
+			clr_country_flag = KOR_LJS_late_term_choice_pending_flag
+			if = {
+				limit = { has_war = yes }
+				set_country_flag = KOR_LJS_2032_wartime_bad_ending_flag
+				if = {
+					limit = {
+						has_country_flag = KOR_LJS_2032_jeong_cheong_rae_nominee_flag
+					}
+					set_country_flag = KOR_LJS_2032_wartime_monthly_approval_penalty_flag
+					clr_country_flag = KOR_LJS_2032_broken_cooperation_monthly_approval_penalty_flag
+				}
+				else = {
+					country_event = { id = korea.1378 days = 4 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = KOR_LJS_bipartisan_cooperation_broken_flag
+					NOT = { has_country_flag = KOR_LJS_2032_jeong_cheong_rae_nominee_flag }
+				}
+				set_country_flag = KOR_LJS_2032_broken_cooperation_bad_ending_flag
+				country_event = { id = korea.1379 days = 4 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = KOR_LJS_constitutional_amendment_passed_flag
+				}
+				country_event = { id = korea.1298 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.50 # 보복파 
+	title = TFRKP_hidden.50.t
+	desc = TFRKP_hidden.50.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2030.5.1
+		PRC = {
+			is_ai = yes
+			OR = {
+				has_completed_focus = PRC_stability_and_security
+				has_completed_focus = PRC_protectors_of_the_chinese_nation
+				has_completed_focus = PRC_suppress_dissent
+			}
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		NOT = {
+			has_global_flag = GAW_soon
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+			NOT = { has_country_flag = KOR_lee_taiwan_war_victory_supported }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.50 option TFRKP_hidden.50.a"
+		name = TFRKP_hidden.50.a
+		PRC = {
+			set_global_flag = GAW_soon
+			activate_mission = PRC_wu_qi_operation_mission
+			country_event = {
+				id = china.325
+				days = 20
+			}
+			country_event = {
+				id = china.129
+				days = 5
+			}
+			country_event = {
+				id = china.130
+				days = 8
+			}
+			country_event = {
+				id = china.131
+				days = 12
+			}
+			country_event = {
+				id = china.216
+				days = 30
+			}
+			country_event = {
+				id = china.217
+				days = 45
+			}
+			country_event = {
+				id = china.218
+				days = 49
+			}
+			PRK = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = KOR
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = consider_weak
+					id = KOR
+					value = 1000
+				}
+				add_ai_strategy = {
+					type = conquer
+					id = KOR
+					value = 1000
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PRC_coordinate_eadi_militaries
+					}
+				}
+				complete_national_focus = PRC_coordinate_eadi_militaries
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = PRC_our_commitment_to_korea
+					}
+				}
+				complete_national_focus = PRC_our_commitment_to_korea
+			}
+			
+			if = {
+				limit = {
+					has_completed_focus = PRC_stability_and_security
+					NOT = {
+						has_completed_focus = PRC_key_to_omniscience_and_omnipotence
+					}
+				}
+				complete_national_focus = PRC_key_to_omniscience_and_omnipotence
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PRC_protectors_of_the_chinese_nation
+					NOT = {
+						has_completed_focus = PRC_the_fortress_of_blood_and_flesh
+					}
+				}
+				complete_national_focus = PRC_the_fortress_of_blood_and_flesh
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PRC_suppress_dissent
+					NOT = {
+						has_completed_focus = PRC_pillar_of_crimson_sovereignty
+					}
+				}
+				complete_national_focus = PRC_pillar_of_crimson_sovereignty
+			}
+			
+			if = {
+				limit = {
+					is_ally_with = PAK
+				}
+				load_oob = "00_focus_PRC_wu_qi"
+			}
+			else = {
+				complete_national_focus = PRC_operation_wu_qi
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.51 # 개혁파
+	title = TFRKP_hidden.51.t
+	desc = TFRKP_hidden.51.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2030.5.1
+		has_global_flag = PRC_liberal_china_flag
+		PRC = {
+			is_ai = yes
+			has_completed_focus = PRC_coordinate_eadi_militaries
+			NOT = { has_decision = PRC_Liberals_Start_Gaw }
+			NOT = { has_active_mission = PRC_Liberals_Start_Gaw }
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		NOT = {
+			has_global_flag = GAW_soon
+		}
+		PRK = {
+			NOT = { has_country_flag = eadi_member }
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+			NOT = { has_country_flag = KOR_lee_taiwan_war_victory_supported }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.51 option TFRKP_hidden.51.a"
+		name = TFRKP_hidden.51.a
+		PRC = {
+			if = {
+				limit = {
+					NOT = { has_completed_focus = PRC_counter_indian_aggression }
+				}
+				complete_national_focus = PRC_counter_indian_aggression
+			}	
+			if = {
+				limit = {
+					NOT = { has_completed_focus = PRC_coordinate_eadi_militaries }
+				}
+				complete_national_focus = PRC_coordinate_eadi_militaries
+			}	
+			if = {
+				limit = {
+					NOT = { has_completed_focus = PRC_our_commitment_to_korea }
+				}
+				complete_national_focus = PRC_our_commitment_to_korea
+			}	
+			if = {
+				limit = {
+					NOT = { has_completed_focus = PRC_five_shinig_stars_of_china }
+				}
+				complete_national_focus = PRC_five_shinig_stars_of_china
+			}	
+			activate_decision = PRC_Liberals_Start_Gaw
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.52 # 신좌파
+	title = TFRKP_hidden.52.t
+	desc = TFRKP_hidden.52.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		date > 2030.5.1
+		PRC = {
+			is_ai = yes
+			has_completed_focus = PRC_the_red_phoenix
+			NOT = { has_completed_focus = PRC_finilize_korean_revolution }
+		}
+		NOT = {
+			has_global_flag = PRC_japanese_gaw_victory_global
+		}
+		NOT = {
+			has_global_flag = TFRKP_GAW_is_started_flag
+		}
+		NOT = {
+			has_global_flag = GAW_soon
+		}
+		KOR = {
+			has_country_flag = KOR_lee_taiwan_war_victory
+			NOT = { has_country_flag = KOR_lee_taiwan_war_victory_supported }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.52 option TFRKP_hidden.52.a"
+		name = TFRKP_hidden.52.a
+		PRC = {		
+			if = {
+				limit = {
+					NOT = {
+						PRC = { has_completed_focus = PRC_push_for_thaw }
+						PRC = { has_completed_focus = PRC_support_the_korean_way }
+					}	
+				}	
+				complete_national_focus = PRC_support_the_korean_way
+			}	
+			complete_national_focus = PRC_finilize_korean_revolution
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.53
+	title = TFRKP_hidden.53.t
+	desc = TFRKP_hidden.53.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			KOR_is_lee_PPP_path = yes
+			has_country_flag = KOR_LJS_government_enable_flag
+			has_country_flag = KOR_LJS_wartime_government_phase_flag
+			KOR_LJS_jeong_cheong_rae_ending_locked = yes
+			has_war = no
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.53 option TFRKP_hidden.53.a"
+		name = TFRKP_hidden.53.a
+		KOR = {
+			clr_country_flag = KOR_LJS_wartime_government_phase_flag
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.54
+	title = TFRKP_hidden.54.t
+	desc = TFRKP_hidden.54.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			KOR_is_PP_path = yes
+			date > 2025.6.23
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.54 option TFRKP_hidden.54.a"
+		name = TFRKP_hidden.54.a
+		KOR = {
+			country_event = korea.2003
+		}
+	}
+}
+
+country_event = {
+	id = TFRKP_hidden.55
+	title = TFRKP_hidden.55.t
+	desc = TFRKP_hidden.55.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		KOR = {
+			has_country_flag = KOR_lee_kim_min_seok_flag
+			NOT = { has_country_flag = TFRKP_constitution_locked_flag }
+			OR = {
+				has_war_with = PRC
+				has_war_with = PRK
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.55 option TFRKP_hidden.55.a"
+		name = TFRKP_hidden.55.a
+		KOR = {
+			set_country_flag = TFRKP_constitution_locked_flag
+			clr_country_flag = KOR_election_kimminseok_gui_visible_flag
+			clr_country_flag = TFRKP_regiondev_enabled_flag
+		}
+	}
+}
+
+
+country_event = {
+	id = TFRKP_hidden.56
+	title = TFRKP_hidden.56.t
+	desc = TFRKP_hidden.56.desc
+	picture = GFX
+	hidden = yes
+
+	trigger = {
+		has_global_flag = pan_asian_war_ongoing
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		log = "[GetLogInfo]: event TFRKP_hidden.56 option TFRKP_hidden.56.a"
+		name = TFRKP_hidden.56.a
+		if = {
+			limit = {
+				
+				OR = {
+					has_completed_focus = PRC_stability_and_security
+					has_completed_focus = PRC_protectors_of_the_chinese_nation
+					has_completed_focus = PRC_suppress_dissent
+				}
+			}
+			PRC = {
+				unlock_national_focus = PRC_operation_wu_qi
+			}
+		}
+		else = {
+			PRC = {
+				unlock_national_focus = PRC_finilize_korean_revolution
+			}
+		}
+	}
+}

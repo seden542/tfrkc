@@ -1,0 +1,212 @@
+ideas = { country = {
+TFRKC_focus_gov_supply = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { supply_consumption_factor = -0.04 }
+}
+TFRKC_focus_gov_repair = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { production_factory_efficiency_gain_factor = 0.04 industrial_capacity_factory = 0.02 }
+}
+TFRKC_focus_gov_civil = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { stability_factor = 0.03 political_power_gain = -0.05 }
+}
+TFRKC_focus_gov_emergency = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { industrial_capacity_factory = 0.04 stability_factor = -0.03 }
+}
+TFRKC_focus_ch_front = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_org_factor = -0.06 supply_consumption_factor = 0.06 }
+}
+TFRKC_focus_ch_civil = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { stability_factor = 0.03 planning_speed = -0.03 }
+}
+TFRKC_focus_ch_oversight = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { political_power_gain = 0.1 planning_speed = -0.05 }
+}
+TFRKC_focus_ch_autonomy = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { planning_speed = 0.08 stability_factor = -0.04 }
+}
+TFRKC_focus_ya_command = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_org_factor = -0.07 army_morale_factor = -0.04 }
+}
+TFRKC_focus_ya_factory = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { industrial_capacity_factory = 0.04 production_factory_efficiency_gain_factor = 0.03 }
+}
+TFRKC_focus_ya_cadre = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_morale_factor = 0.04 political_power_gain = 0.1 stability_factor = -0.03 }
+}
+TFRKC_focus_ya_crusade = {
+ picture = KOR_after_bubble_defeat_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { war_support_factor = 0.06 political_power_gain = -0.12 industrial_capacity_factory = -0.02 }
+}
+TFRKC_focus_rc_fuel = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { fuel_gain_factor = -0.12 supply_consumption_factor = 0.08 }
+}
+TFRKC_focus_rc_tech = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { production_factory_efficiency_gain_factor = 0.05 political_power_gain = -0.05 }
+}
+TFRKC_focus_rc_nam = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { industrial_capacity_factory = 0.04 stability_factor = 0.02 }
+}
+TFRKC_focus_rc_hard = {
+ picture = KOR_after_bubble_defeat_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_org_factor = 0.04 industrial_capacity_factory = -0.04 stability_factor = -0.04 }
+}
+TFRKC_focus_lf_command = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_org_factor = -0.08 training_time_army_factor = 0.08 }
+}
+TFRKC_focus_lf_housing = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { stability_factor = 0.04 industrial_capacity_factory = -0.02 }
+}
+TFRKC_focus_lf_reform = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { political_power_gain = 0.12 planning_speed = -0.04 }
+}
+TFRKC_focus_lf_radical = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { war_support_factor = 0.04 industrial_capacity_factory = 0.03 stability_factor = -0.04 }
+}
+TFRKC_focus_wc_command = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_core_defence_factor = 0.1 army_org_factor = -0.11 }
+}
+TFRKC_focus_wc_grid = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { industrial_capacity_factory = 0.05 production_factory_efficiency_gain_factor = 0.03 }
+}
+TFRKC_focus_wc_local = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { stability_factor = 0.04 production_factory_efficiency_gain_factor = -0.03 }
+}
+TFRKC_focus_wc_plan = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { industrial_capacity_factory = 0.06 stability_factor = -0.04 political_power_gain = -0.05 }
+}
+TFRKC_focus_sf_command = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_org_factor = -0.12 political_power_gain = -0.15 }
+}
+TFRKC_focus_sf_control = {
+ picture = KOR_after_bubble_defeat_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { war_support_factor = 0.03 industrial_capacity_factory = -0.05 stability_factor = -0.03 }
+}
+TFRKC_focus_sf_purge = {
+ picture = KOR_after_bubble_defeat_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_attack_factor = 0.04 recruitable_population_factor = -0.08 industrial_capacity_factory = -0.07 stability_factor = -0.05 }
+}
+TFRKC_focus_sf_pragmatic = {
+ picture = KOR_army_great_nation_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { production_factory_efficiency_gain_factor = 0.03 war_support_factor = -0.04 political_power_gain = -0.1 }
+}
+TFRKC_focus_navy_rescue = {
+ picture = KOR_japan_assistance_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { naval_accidents_chance = -0.1 }
+}
+TFRKC_focus_pl_liaison = {
+ picture = KOR_army_noman_idea
+ allowed = { always = no }
+ allowed_civil_war = { always = yes }
+ removal_cost = -1
+ modifier = { army_org_factor = -0.05 supply_consumption_factor = 0.05 }
+}
+} }

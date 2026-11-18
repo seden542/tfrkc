@@ -1,0 +1,86 @@
+KOR_snt_motiv_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_KOR_snt_motiv
+	allowed = { tag = KOR }
+    ai_will_do = { base = 100 }
+}
+
+KOR_dasan_machineries_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_KOR_dasan
+	allowed = { tag = KOR }
+}
+
+KOR_snt_dynamics_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_KOR_snt_dynamics
+	allowed = {	tag = KOR }
+}
+
+KOR_lig_defense_aerospace_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_KOR_lig
+	allowed = {	tag = KOR }
+}
+
+KOR_hyundai_wia_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_KOR_wia
+	allowed = {	tag = KOR }
+}
+
+KOR_kia_manufacturer = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_KOR_kia
+	allowed = { tag = KOR }
+}
+
+KOR_hyundai_rotem_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_KOR_rotem
+	allowed = { tag = KOR }
+    ai_will_do = { base = 100 }
+}
+
+KOR_ls_mtron_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_KOR_ls
+	allowed = { tag = KOR }
+}
+
+KOR_hanhwa_aerospace_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_KOR_hanhwa
+	allowed = { tag = KOR }
+    ai_will_do = { base = 100 }
+}
+
+KOR_korean_air_aerospace_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_KOR_korean_air
+	allowed = { tag = KOR }
+}
+
+KOR_korean_aerospace_industries_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_KOR_kai
+	allowed = { tag = KOR }
+}
+
+KOR_hd_hyundai_shipbuilding_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_KOR_hdhyundai
+	allowed = { tag = KOR }
+}
+
+KOR_sk_oceanplant_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_KOR_sk
+	allowed = { tag = KOR }
+}
+
+KOR_hj_shipbuilding_organization = {
+	include = generic_submarine_organization
+	icon = GFX_idea_KOR_hj
+	allowed = { tag = KOR }
+}

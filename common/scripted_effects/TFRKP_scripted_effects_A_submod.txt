@@ -1,0 +1,58 @@
+TFRKP_project_A_536_events_effect = {
+	custom_effect_tooltip = TFRKP_project_A_536_effect_tooltip
+	
+	### Sorry Bro, It might be release but not now ###
+	# Army Route
+	complete_national_focus = KOR_lee_army_route_national_revolution
+	custom_effect_tooltip = tooltip_white_line
+	clr_country_flag = KOR_lee_progress_party_route
+	set_country_flag = KOR_lee_national_revolution_route
+	set_country_flag = KOR_NatAsm_dismentled_flag
+	clr_country_flag = KOR_yoon_eui_cheol_retired_flag
+	KOR_nam_young_sin_char = {
+		set_portraits = {
+			civilian = { large = GFX_portrait_KOR_nam_young_sin_char_civilian_large }
+		}
+		add_country_leader_role = {
+			country_leader = {
+				desc = KOR_nam_young_sin_char_desc
+				traits = { kor_nam_yeong_shin_traits }
+				ideology = military_junta
+			}
+			promote_leader = yes
+		}
+	}
+	custom_effect_tooltip = tooltip_white_line
+	set_politics = {
+		ruling_party = nationalist
+		elections_allowed = no
+	}
+	custom_effect_tooltip = tooltip_white_line
+	change_government_type_military_dictatorship = yes
+	effect_tooltip = {
+		focus_unlock = yes
+	}
+	hidden_effect = {
+		end_coalition = yes
+		end_ruling_party_wings = yes
+		set_cosmetic_tag = KOR_army_revolution
+		mark_focus_tree_layout_dirty = yes
+		remove_ideas = KOR_candlelight_idea
+		remove_ideas = KOR_lee_re100_idea
+		set_temp_variable = { coalition_partner_var_temp = token:social_democrat }
+		remove_from_coalition = yes
+		set_temp_variable = { coalition_partner_var_temp = token:communist }
+		remove_from_coalition = yes
+		set_popularities = {
+			communist = 2
+			libertarian_socialist = 17
+			social_democrat = 12
+			social_liberal = 24
+			market_liberal = 0
+			conservative = 30
+			nationalist = 8
+			authoritarian_democrat = 7
+		}
+		news_event = { id = kor_news.40 hours = 6 }
+	}
+}

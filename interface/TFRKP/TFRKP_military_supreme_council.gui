@@ -1,0 +1,93 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_military_supreme_council_window_container"
+		size = { width = 500 height = 485 }
+		clipping = no
+		iconType = {
+			name = "KOR_supreme_council_bg"
+			spriteType = "GFX_KOR_supreme_council_supreme_council_bg"
+			position = { x = 7 y = -20 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_supreme_statue"
+			spriteType = "GFX_KOR_supreme_council_statue_park"
+			position = { x = 270 y = 0 }
+			pdx_tooltip = KOR_supreme_statue_tt
+			pdx_tooltip_delayed =  KOR_supreme_statue_tt_delayed
+			pdx_disabled_tooltip = KOR_supreme_statue_tt_disabled
+		}
+		iconType = {
+			name = "KOR_supreme_quote"
+			spriteType = "GFX_KOR_supreme_council_quote_park"
+			position = { x = 23 y = 0 }
+			pdx_tooltip = KOR_supreme_quote_tt
+		}
+		containerWindowType = {
+			name = "KOR_button_container_rhee"
+			position = { x = 27 y = 190 }
+			buttonType = {
+				name = "KOR_button_rhee"
+				spriteType = "GFX_KOR_supreme_council_button_rhee"
+			}
+			iconType = {
+				name = "KOR_picture_rhee"
+				spriteType = "GFX_KOR_supreme_council_picture_rhee"
+				position = { x = 6 y = 6 }
+				pdx_tooltip = KOR_picture_rhee_tt
+			}
+		}
+		containerWindowType = {
+			name = "KOR_button_container_park"
+			position = { x = 27 y = 280 }
+			buttonType = {
+				name = "KOR_button_park"
+				spriteType = "GFX_KOR_supreme_council_button_park"
+			}
+			iconType = {
+				name = "KOR_picture_park"
+				spriteType = "GFX_KOR_supreme_council_picture_park"
+				position = { x = 6 y = 6 }
+				pdx_tooltip = KOR_picture_park_tt
+			}
+		}
+		containerWindowType = {
+			name = "KOR_button_container_chun"
+			position = { x = 27 y = 370 }
+			buttonType = {
+				name = "KOR_button_chun"
+				spriteType = "GFX_KOR_supreme_council_button_chun"
+			}
+			iconType = {
+				name = "KOR_picture_chun"
+				spriteType = "GFX_KOR_supreme_council_picture_chun"
+				position = { x = 6 y = 6 }
+				pdx_tooltip = KOR_picture_chun_tt
+			}
+		}
+		iconType = {
+			name = "KOR_supreme_council_loyalty_score"
+			spriteType = "GFX_KOR_supreme_council_loyalty_score"
+			position = { x = 27 y = 460 }
+			pdx_tooltip = KOR_supreme_council_loyalty_score_tt
+		}
+		instantTextboxType = {
+			name = "KOR_supreme_council_loyalty_value"
+			position = { x = 50 y = 460 }
+			font = "VCR02_14"
+			maxWidth = 190
+			maxHeight = 18
+			format = left
+			text = "KOR_supreme_council_loyalty_value_text"
+		}
+		instantTextboxType = {
+			name = "KOR_supreme_council_stage_value"
+			position = { x = 285 y = 460 }
+			font = "VCR02_14"
+			maxWidth = 185
+			maxHeight = 18
+			format = right
+			text = "KOR_supreme_council_stage_value_text"
+		}
+	}
+}

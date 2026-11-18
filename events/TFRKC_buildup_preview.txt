@@ -1,0 +1,73 @@
+add_namespace = tfrkc_buildup_preview
+country_event = {
+ id = tfrkc_buildup_preview.1 title = TFRKC_buildup_1_t desc = TFRKC_buildup_1_d picture = GFX_report_event_kor_gwangju_riot is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.2 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.2 title = TFRKC_buildup_2_t desc = TFRKC_buildup_2_d picture = GFX_report_event_yoon_arrest is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.3 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.3 title = TFRKC_buildup_3_t desc = TFRKC_buildup_3_d picture = GFX_report_event_kor_gwangju_riot_2 is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.4 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.4 title = TFRKC_buildup_4_t desc = TFRKC_buildup_4_d picture = GFX_report_event_martial_law_jeon is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.5 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.5 title = TFRKC_buildup_5_t desc = TFRKC_buildup_5_d picture = GFX_report_event_martial_law_youtuber is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.6 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.6 title = TFRKC_buildup_6_t desc = TFRKC_buildup_6_d picture = GFX_report_event_martial_law_univ is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.7 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.7 title = TFRKC_buildup_7_t desc = TFRKC_buildup_7_d picture = GFX_report_event_kor_watch is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.8 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.8 title = TFRKC_buildup_8_t desc = TFRKC_buildup_8_d picture = GFX_report_event_martial_law_seoul is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.9 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.9 title = TFRKC_buildup_9_t desc = TFRKC_buildup_9_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.10 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.10 title = TFRKC_buildup_10_t desc = TFRKC_buildup_10_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.11 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.11 title = TFRKC_buildup_11_t desc = TFRKC_buildup_11_d picture = GFX_report_event_martial_law_ready is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.12 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.12 title = TFRKC_buildup_12_t desc = TFRKC_buildup_12_d picture = GFX_report_event_martial_law_smoke is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.13 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.13 title = TFRKC_buildup_13_t desc = TFRKC_buildup_13_d picture = GFX_report_event_more_impeachment is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.14 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.14 title = TFRKC_buildup_14_t desc = TFRKC_buildup_14_d picture = GFX_report_event_more_impeachment is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.15 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.15 title = TFRKC_buildup_15_t desc = TFRKC_buildup_15_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.16 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.16 title = TFRKC_buildup_16_t desc = TFRKC_buildup_16_d picture = GFX_TFRKC_story_return is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.17 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.17 title = TFRKC_buildup_17_t desc = TFRKC_buildup_17_d picture = GFX_TFRKC_story_daejeon is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_next ai_chance = { factor = 100 } country_event = { id = tfrkc_buildup_preview.18 } }
+}
+country_event = {
+ id = tfrkc_buildup_preview.18 title = TFRKC_buildup_18_t desc = TFRKC_buildup_18_d picture = GFX_TFRKC_story_outbreak is_triggered_only = yes
+ option = { name = TFRKC_buildup_preview_done ai_chance = { factor = 100 }  }
+}

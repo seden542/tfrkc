@@ -1,0 +1,55 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bb_score_counter"
+		texturefile = "gfx/interface/GUI/baseball/score_counter_players.png"
+	}
+	spriteType = {
+		name = "GFX_bb_base_background"
+		texturefile = "gfx/interface/GUI/baseball/base_background.png"
+	}
+	spriteType = {
+		name = "GFX_bb_base_home"
+		texturefile = "gfx/interface/GUI/baseball/base_home.png"
+	}
+	spriteType = {
+		name = "GFX_bb_base_normal"
+		texturefile = "gfx/interface/GUI/baseball/base_normal.png"
+	}
+	spriteType = {
+		name = "GFX_bb_base_normal_ai"
+		texturefile = "gfx/interface/GUI/baseball/base_normal_ai.png"
+	}
+	spriteType = {
+		name = "GFX_bb_base_normal_player"
+		texturefile = "gfx/interface/GUI/baseball/base_normal_player.png"
+	}
+	spriteType = {
+		name = "GFX_bb_base_pitcher"
+		texturefile = "gfx/interface/GUI/baseball/base_pitcher.png"
+	}
+	spriteType = {
+		name = "GFX_bb_inning"
+		texturefile = "gfx/interface/GUI/baseball/inning.png"
+	}
+	spriteType = {
+		name = "GFX_bb_out"
+		texturefile = "gfx/interface/GUI/baseball/out.png"
+	}
+	spriteType = {
+		name = "GFX_bb_out_blank"
+		texturefile = "gfx/interface/GUI/baseball/out_blank.png"
+	}
+	spriteType = {
+		name = "GFX_bb_out_counter"
+		texturefile = "gfx/interface/GUI/baseball/out_counter.png"
+	}
+	spriteType = {
+		name = "GFX_bb_baseball_banner"
+		texturefile = "gfx/interface/GUI/baseball/baseball_banner.png"
+	}
+	spriteType = {
+		name = "GFX_bb_inning_state"
+		texturefile = "gfx/interface/GUI/baseball/inning_state.png"
+		noOfFrames = 2
+	}
+}

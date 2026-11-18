@@ -1,0 +1,57 @@
+opinion_modifiers = {
+    KOR_dispatch_to_taiwan_opinion_PRC = {
+        value = -10
+    }
+
+    KOR_korea_japan_together_opinion_PRC = {
+        value = -10
+    }
+
+    KOR_korea_japan_together_opinion_KOR = {
+        value = 20
+    }
+
+    KOR_korea_japan_together_opinion_JAP = {
+        value = 20
+    }
+
+    KOR_more_weapon_opinion_PRC = {
+        value = -30
+    }
+
+    KOR_opinion_CUBA = {
+        value = 10
+    }
+
+    KOR_reconciliation_JAP = {
+        value = 10
+    }
+
+    TFRKP_past_japanese_war_crimes = {
+        value = -10
+    }
+
+    KOR_lee_army_route_common_focus_13_opinion = {
+        value = -30
+    }
+
+    KOR_anti_communist_frontline_opinion = {
+        value = 30
+    }
+
+    KOR_inter_korean_resource_development_opinion = {
+        value = 100
+    }
+
+    KOR_inter_korean_relations_improved_opinion = {
+        value = 100
+    }
+
+    KOR_reunifed_nation_up_opinion = {
+        value = 300
+    }
+
+    KOR_not_taiwan_reconstruction_bill_opinion = {
+        value = -10
+    }
+}

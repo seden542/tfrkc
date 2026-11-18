@@ -1,0 +1,211 @@
+on_actions = {
+	on_war_relation_added = {
+		effect = {
+			log = "on_war_relation_added [GetLogRoot] [GetLogFrom]"
+			# 양안전쟁
+			if = {
+				limit = {
+					tag = PRC
+					FROM = { tag = CHI }
+				}
+				country_event = ai_events.100
+			}
+			# 사우디 내전
+			if = {
+				limit = {
+					tag = ROC
+					FROM = { tag = SAU }
+				}
+				country_event = ai_events.300
+			}
+			# 미국 내전
+			if = {
+				limit = {
+					tag = USB
+					FROM = { tag = USC }
+				}
+				country_event = ai_events.200
+			}
+			else_if = {
+				limit = {
+					tag = USC
+					FROM = { tag = USB }
+				}
+				country_event = ai_events.200
+			}
+		}
+	}
+
+	on_peaceconference_ended = {
+		effect = {
+			log = "on_peaceconference_ended [GetLogRoot] [GetLogFrom]"
+			# 양안전쟁 승전
+			if = {
+				limit = {
+					tag = PRC
+					FROM = { tag = CHI }
+				}
+				country_event = ai_events.201
+			}
+		}
+	}
+
+	on_annex = {
+		effect = {
+			log = "on_annex [GetLogRoot] [GetLogFrom]"
+			if = {
+				limit = {
+					tag = PRC
+					FROM = { tag = CHI }
+				}
+				country_event = ai_events.101
+			}
+			if = {
+				limit = {
+					tag = KOR
+					FROM = { tag = PRK }
+					check_variable = { var_GAW_border_nk = 2 }
+				}
+				KOR = {
+					GAW_remove_now_plan_effect = yes
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = { limit = { FROM.FROM = { state = 1043 } } KOR = { set_country_flag = GAW_city_pyongyang_captured_flag } } # Pyongyang
+			if = { limit = { FROM.FROM = { state = 1042 } } KOR = { set_country_flag = GAW_city_wonsan_captured_flag } } # Wonsan
+			if = { limit = { FROM.FROM = { state = 874 } } KOR = { set_country_flag = GAW_city_chongjin_captured_flag } } # Chongjin
+			if = { limit = { FROM.FROM = { state = 1413 } } KOR = { set_country_flag = GAW_city_dandong_captured_flag } } # Dandong
+			if = { limit = { FROM.FROM = { state = 1415 } } KOR = { set_country_flag = GAW_city_yanbian_captured_flag } } # Yanji
+			if = { limit = { FROM.FROM = { state = 716 } } KOR = { set_country_flag = GAW_city_shenyang_captured_flag } } # Shenyang
+			if = { limit = { FROM.FROM = { state = 717 } } KOR = { set_country_flag = GAW_city_harbin_captured_flag } } # Harbin
+			if = { limit = { FROM.FROM = { state = 608 } } KOR = { set_country_flag = GAW_city_beijing_captured_flag } } # Beijing
+			if = { limit = { FROM.FROM = { state = 597 } } KOR = { set_country_flag = GAW_city_jinan_captured_flag } } # Jinan
+			if = { limit = { FROM.FROM = { state = 1215 } } KOR = { set_country_flag = GAW_city_shanghai_captured_flag } } # Shanghai
+			if = { limit = { FROM.FROM = { state = 1222 } } KOR = { set_country_flag = GAW_city_nanjing_captured_flag } } # Nanjing
+			if = { limit = { FROM.FROM = { state = 1211 } } KOR = { set_country_flag = GAW_city_wuhan_captured_flag } } # Wuhan
+			if = { limit = { FROM.FROM = { state = 602 } } KOR = { set_country_flag = GAW_city_changde_captured_flag } } # Changde
+			if = { limit = { FROM.FROM = { state = 592 } } KOR = { set_country_flag = GAW_city_guangzhou_captured_flag } } # Guangzhou
+			if = { limit = { FROM.FROM = { state = 594 } } KOR = { set_country_flag = GAW_city_nanning_captured_flag } } # Nanning
+			if = { limit = { FROM.FROM = { state = 1196 } } KOR = { set_country_flag = GAW_city_kunming_captured_flag } } # Kunming
+			if = { limit = { FROM.FROM = { state = 603 } } KOR = { set_country_flag = GAW_city_guiyang_captured_flag } } # Guiyang
+			if = { limit = { FROM.FROM = { state = 605 } } KOR = { set_country_flag = GAW_city_chengdu_captured_flag } } # Chengdu
+			if = { limit = { FROM.FROM = { state = 1189 } } KOR = { set_country_flag = GAW_city_chongqing_captured_flag } } # Chongqing
+			if = { limit = { FROM.FROM = { state = 622 } } KOR = { set_country_flag = GAW_city_xian_captured_flag } } # Xi'an
+			if = { limit = { FROM.FROM = { state = 283 } } KOR = { set_country_flag = GAW_city_lanzhou_captured_flag } } # Lanzhou
+			if = { limit = { FROM.FROM = { state = 1165 } } KOR = { set_country_flag = GAW_city_urumqi_captured_flag } } # Urumqi
+			if = { limit = { FROM.FROM = { state = 1156 } } KOR = { set_country_flag = GAW_city_lhasa_captured_flag } } # Lhasa
+			if = { limit = { FROM.FROM = { state = 1148 } } KOR = { set_country_flag = GAW_city_taipei_captured_flag } } # Taipei
+			if = { limit = { FROM.FROM = { state = 1150 } } KOR = { set_country_flag = GAW_city_kaohsiung_captured_flag } } # Kaohsiung
+			if = { limit = { FROM.FROM = { state = 1379 } } KOR = { set_country_flag = GAW_city_new_delhi_captured_flag } } # Delhi
+			if = { limit = { FROM.FROM = { state = 431 } } KOR = { set_country_flag = GAW_city_calcutta_captured_flag } } # Kolkata
+			if = { limit = { FROM.FROM = { state = 640 } } KOR = { set_country_flag = GAW_city_naypyidaw_captured_flag } } # Naypyidaw
+			if = { limit = { FROM.FROM = { state = 671 } } KOR = { set_country_flag = GAW_city_hanoi_captured_flag } } # Hanoi
+			if = {
+				limit = {
+					FROM.FROM = { state = 1394 }
+					ROOT = {
+						tag = KOR
+						NOT = { has_country_flag = KOR_state_1394_capture_letter_event_fired }
+						NOT = { has_completed_focus = KOR_lee_dpk_happy_afterwar4 }
+					}
+				}
+				ROOT = {
+					set_country_flag = KOR_state_1394_capture_letter_event_fired
+					random_list = {
+						50 = { country_event = { id = korea.1494 } }
+						50 = { country_event = { id = korea.1495 } }
+					}
+				}
+			}
+			if = {
+				#Pyongyang
+				limit = {
+					FROM.FROM = { state = 1043 }
+					FROM = {
+						OR = {
+							tag = PRK
+							is_ally_with = PRC
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = KOR
+							is_ally_with = JAP
+						}
+					}
+					not = {
+						has_global_flag = captured_pyongyang
+					}
+					OR = {
+						has_global_flag = GAW_soon
+						has_global_flag = pan_asian_war_ongoing
+					}
+				}
+				if = {
+					limit = {
+						PRK = {
+							has_country_leader = {
+								character = PRK_kim_jongun
+								ruling_only = yes
+							}
+						}
+					}
+					KOR = { country_event = korea.188 }
+				}
+			}
+			if = {
+				#원산
+				limit = {
+					FROM.FROM = { state = 1042 }
+					FROM = {
+						OR = {
+							tag = PRK
+							is_ally_with = PRC
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = KOR
+							is_ally_with = JAP
+						}
+					}
+				}
+				KOR = { country_event = korea.138 }
+			}
+			if = {
+				# 평양 함락 후 중국 개입
+				limit = {
+					FROM.FROM = { state = 1043 }
+					FROM = {
+						tag = PRK
+						NOT = { is_in_faction_with = PRC }
+						has_war_with = KOR
+					}
+					PRC = {
+						NOT = {
+							has_war_with = KOR
+							has_war_with = JAP
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = KOR
+							is_ally_with = JAP
+						}
+					}
+					NOT = {
+						has_global_flag = TFRKP_GAW_PYONGYANG_TIMER_FLAG
+					}
+				}
+				PRC = {
+					set_global_flag = TFRKP_GAW_PYONGYANG_TIMER_FLAG
+					TFRKP_GAW_timer_clear_effect = yes
+				}
+			}
+		}
+	}
+}

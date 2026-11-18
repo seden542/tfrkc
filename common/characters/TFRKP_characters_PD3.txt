@@ -1,0 +1,15 @@
+characters = {
+	PD3_wang_zexian_char = {
+		name = PD3_wang_zexian_char
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_PD3_wang_zexian_char_civilian_large"
+			}
+		}
+		country_leader = {
+			desc = PD3_wang_zexian_char_desc
+			ideology = reformist_socialism
+			traits = { }
+		}
+	}
+}

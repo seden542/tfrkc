@@ -1,0 +1,63 @@
+defined_text = {
+	name = GetStartMenuDesc
+
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "USB_caligula_country_summary"
+	}
+	
+	text = {
+		localization_key = country_culture|country_summary
+	}
+}
+
+defined_text = {
+	name = GetStartMenuPaths
+
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "USB_caligula_country_paths"
+	}
+	
+	text = {
+		localization_key = country_culture|country_paths
+	}
+}
+
+defined_text = {
+	name = GetStartMenuOther
+
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "USB_caligula_country_other"
+	}
+	
+	text = {
+		localization_key = country_culture|country_other
+	}
+}	
+
+defined_text = {
+	name = GET_BACKGROUND
+	
+	text = {
+		trigger = {
+			tag = USB
+			has_completed_focus = USB_rebirth
+		}
+		localization_key = "GFX_Caligula_BG"
+	}
+
+	text = {
+		localization_key = country_culture|country_background
+	}
+}

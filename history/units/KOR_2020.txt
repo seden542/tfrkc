@@ -1,0 +1,988 @@
+﻿focus = {
+	current = KOR_a_new_decade_of_the_twentyonest_century
+	progress = 0
+}
+
+division_template = {
+	name = "jiyeogbang-wi Sadan"
+	division_names_group = KOR_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	
+	support = {
+		apc_company = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
+		engineer = { x = 0 y = 4 }
+	}
+}
+
+
+division_template = {
+	name = "Hae-byong Yeodan"
+	division_names_group = KOR_MAR_02
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		spaa_brigade = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Hae-byong Sadan"
+	division_names_group = KOR_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0}
+		paratrooper = { x = 2 y = 1}
+		paratrooper = { x = 2 y = 2}
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 1 }
+		amphibious_mechanized = { x = 3 y = 2 }
+		modern_armor = { x = 4 y = 0 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Gigyehwa Sadan"
+	division_names_group = KOR_MEC_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 1 }
+		motorized_rocket_brigade = { x = 3 y = 2 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_car_recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Sinsok-Daeung Sadan"
+	division_names_group = KOR_INF_02
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }	
+	}
+	
+	support = {
+		logistics_company = { x = 0 y = 0}
+		helicopter_recon = { x = 0 y = 1}
+		signal_company = { x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Sang-bi Sadan"
+	division_names_group = KOR_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 1 }
+		motorized_rocket_brigade = { x = 3 y = 2 }
+		modern_armor = { x = 4 y = 0 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_car_recon = { x = 0 y = 4 }
+		#recon = { x = 0 y = 5 }
+
+	}
+}
+
+division_template = {
+	name = "Teugjeon Yeodan"
+	division_names_group = KOR_PAR_01
+
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+		special_forces = { x = 0 y = 1 }
+		special_forces = { x = 0 y = 2 }
+		special_forces = { x = 0 y = 3 }
+	}
+	
+	support = {
+		signal_company = { x = 0 y = 0}
+		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Gigap Yeodan"
+	division_names_group = KOR_ARM_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_company = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		light_tank_recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "3rd Gigap Yeodan"
+	division_names_group = KOR_ARM_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+	}
+
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+		spaa_company = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		light_tank_recon = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Po-byeong Yeodan"
+	division_names_group = KOR_ART_01
+
+	regiments = {
+		modern_sp_artillery_brigade = { x = 0 y = 0 }
+		modern_sp_artillery_brigade = { x = 0 y = 1 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "jiyeop command"
+	division_names_group = KOR_OC_01
+	is_locked = yes 
+	regiments = {
+		bus = { x = 0 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 14241
+		division_template = "jiyeop command"
+		start_experience_factor = 0.75
+		
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 14234
+		division_template = "jiyeop command"
+		start_experience_factor = 0.75
+		
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 13689
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13689
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 14248
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 14248
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13690
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13694
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7125
+		division_template = "Po-byeong Yeodan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13689
+		division_template = "Gigap Yeodan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13695
+		division_template = "Gigap Yeodan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 14247
+		division_template = "3rd Gigap Yeodan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7125
+		division_template = "Gigap Yeodan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 14247
+		division_template = "Gigap Yeodan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13689
+		division_template = "Gigap Yeodan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13692
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 14246
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = { # PKO
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3 
+		}
+		location = 13691
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 14232
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13691
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 12085
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 14238
+		division_template = "Teugjeon Yeodan"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13693
+		division_template = "Gigyehwa Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13693
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13688
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 13688
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13688
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 4004
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 7125
+		division_template = "Gigyehwa Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 13693
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 14247
+		division_template = "Gigyehwa Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 4004
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 4004
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 13691
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 4004
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 11958
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 11912
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 7125
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 4004
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 13694
+		division_template = "Sang-bi Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 13693
+		division_template = "Gigyehwa Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 14228
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 14238
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 14232
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 14243
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 1100
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 14227
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 14234
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 14244
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 14244
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 4056
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 14245
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 13692
+		division_template = "jiyeogbang-wi Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "KOR" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 14237
+		division_template = "Hae-byong Sadan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1E1 '88 tank'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13693
+		division_template = "Hae-byong Sadan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "M48A5K 'Patton'" } }		
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13691
+		division_template = "Hae-byong Yeodan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1177
+		division_template = "Hae-byong Yeodan"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_snt_motiv_organization
+		requested_factories = 4
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_snt_dynamics_organization
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_kia_manufacturer
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = modern_tank_equipment_3
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_hyundai_rotem_organization
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mechanized_equipment_2
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_kia_manufacturer
+		requested_factories = 3
+		progress = 0.5
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = light_mechanized_equipment_2
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "KOR" 
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_hyundai_wia_organization
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "KOR" 
+		}
+		industrial_manufacturer = mio:KOR_hyundai_wia_organization
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}

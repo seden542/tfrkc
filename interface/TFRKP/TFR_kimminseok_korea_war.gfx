@@ -1,0 +1,78 @@
+spriteTypes = {
+
+	# 런처 아이콘 (52x52)
+
+	# 메인 패널 배경 (560x640) - 계엄령 패널풍 CRT 스타일 추천
+
+	# 서브 패널 배경 (520x190 겸용, 늘려 씀)
+
+	# 한반도 지도 (300x260, 남한/북한/동해 구분되게)
+	spriteType = { name = "GFX_kmsw3_map"			texturefile = "gfx/interface/GUI/kimminseok_reform/map.dds" }
+
+	# 지도 글로우 오버레이 (300x260, 반투명 발광)
+	spriteType = { name = "GFX_kmsw3_map_glow"		texturefile = "gfx/interface/GUI/kimminseok_reform/map_glow.dds" }
+
+	# 투명 히트박스
+	spriteType = { name = "GFX_kmsw3_zone_invis"		texturefile = "gfx/interface/GUI/kimminseok_reform/zone_invis.dds" }
+	spriteType = { name = "GFX_kmsw3_zone_invis_n_korea"		texturefile = "gfx/interface/GUI/kimminseok_reform/zone_invis_n_korea.dds"  transparencecheck = yes }
+	spriteType = { name = "GFX_kmsw3_zone_invis_s_korea"		texturefile = "gfx/interface/GUI/kimminseok_reform/zone_invis_s_korea.dds"  transparencecheck = yes }
+	spriteType = { name = "GFX_kmsw3_zone_eastsea"		texturefile = "gfx/interface/GUI/kimminseok_reform/zone_invis_eastsea.dds" transparencecheck = yes }
+
+	# 닫기 버튼 (30x30)
+	spriteType = { name = "GFX_kmsw3_close"			texturefile = "gfx/interface/GUI/kimminseok_reform/close.dds" }
+
+	# 큰 버튼 (160x40) / 골드 큰 버튼 (220x50)
+	spriteType = { name = "GFX_kmsw3_bigbutton"		texturefile = "gfx/interface/GUI/kimminseok_reform/bigbutton.dds" }
+
+	# 탭 버튼 (170x40)
+
+	# 단계 버튼 (340x44)
+
+	# 완료 체크 (28x28) / 경고 (28x28)
+	spriteType = { name = "GFX_kmsw3_warning"		texturefile = "gfx/interface/GUI/kimminseok_reform/warning.dds" }
+
+	# 게이지 바 3종 (170x26, 가로 11프레임 스트립: 0%~100% 10단위)
+	spriteType = {
+		name = "GFX_kmsw3_bar_red"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/bar_red.dds"
+		noOfFrames = 11
+	}
+	spriteType = {
+		name = "GFX_kmsw3_bar_purple"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/bar_purple.dds"
+		noOfFrames = 11
+	}
+	spriteType = {
+		name = "GFX_kmsw3_bar_blue"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/bar_blue.dds"
+		noOfFrames = 11
+	}
+
+	# 이벤트 픽처 6종 (원하는 이미지로 교체)
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_missile"		texturefile = "gfx/event_pictures/events/kimminseok_korea_war_missile.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_response"		texturefile = "gfx/event_pictures/events/kimminseok_korea_war_response.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_ready"		texturefile = "gfx/event_pictures/events/kimminseok_korea_war_ready.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_fail"			texturefile = "gfx/event_pictures/events/kimminseok_korea_war_fail.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_coup"			texturefile = "gfx/event_pictures/events/kimminseok_korea_war_coup.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_provoke"		texturefile = "gfx/event_pictures/events/kimminseok_korea_war_provoke.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_gwanghwamun"	texturefile = "gfx/event_pictures/events/kimminseok_korea_war_gwanghwamun.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_war"			texturefile = "gfx/event_pictures/events/kimminseok_korea_war_war.png" }
+	spriteType = { name = "GFX_report_event_kimminseok_korea_war_unified"		texturefile = "gfx/event_pictures/events/kimminseok_korea_war_unified.png" }
+}
+
+spriteTypes = {
+	# 디시전 카테고리 아이콘 (49x49) / 배너 (700x125)
+	spriteType = { name = "GFX_kmsw3_cat_picture"		texturefile = "gfx/interface/GUI/kimminseok_reform/cat_picture.dds" }
+	# GUI 배경 (불투명): 디시전 창 530x344 / 동해 오버레이 214x276
+	spriteType = { name = "GFX_kmsw3_decision_bg"	texturefile = "gfx/interface/GUI/kimminseok_reform/decision_bg.dds" }
+	spriteType = { name = "GFX_kmsw3_eastsea_bg"		texturefile = "gfx/interface/GUI/kimminseok_reform/eastsea_bg.dds" }
+	# 게이지 세그먼트 (15x18)
+	spriteType = { name = "GFX_kmsw3_seg_red"		texturefile = "gfx/interface/GUI/kimminseok_reform/seg_red.dds" }
+	spriteType = { name = "GFX_kmsw3_seg_purple"	texturefile = "gfx/interface/GUI/kimminseok_reform/seg_purple.dds" }
+	spriteType = { name = "GFX_kmsw3_seg_blue"		texturefile = "gfx/interface/GUI/kimminseok_reform/seg_blue.dds" }
+	# 디시전 아이콘 4종 (49x49)
+	spriteType = { name = "GFX_kmsw3_decision_warprep"	texturefile = "gfx/interface/GUI/kimminseok_reform/decision_warprep.dds" }
+	spriteType = { name = "GFX_kmsw3_decision_unrest"	texturefile = "gfx/interface/GUI/kimminseok_reform/decision_unrest.dds" }
+	spriteType = { name = "GFX_kmsw3_decision_asym"		texturefile = "gfx/interface/GUI/kimminseok_reform/decision_asym.dds" }
+	spriteType = { name = "GFX_kmsw3_decision_assim"		texturefile = "gfx/interface/GUI/kimminseok_reform/decision_assim.dds" }
+}

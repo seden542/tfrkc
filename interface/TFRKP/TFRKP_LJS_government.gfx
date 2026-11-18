@@ -1,0 +1,35 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_LJS_line_graph_chart"
+		textureFile = "/gfx/interface/GUI/LJS_government/line_graph_chart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LJS_government_background_frame"
+		textureFile = "/gfx/interface/GUI/LJS_government/just_frame.png"
+	}
+
+	progressbartype = {
+		name = "GFX_LJS_government_positive_line_segment"
+		textureFile1 = "/gfx/interface/GUI/LJS_government/graph_line_green.dds"
+		textureFile2 = "/gfx/interface/GUI/LJS_government/graph_line_empty.dds"
+		size = {
+			x = 20
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_LJS_government_negative_line_segment"
+		textureFile1 = "/gfx/interface/GUI/LJS_government/graph_line_red.dds"
+		textureFile2 = "/gfx/interface/GUI/LJS_government/graph_line_empty.dds"
+		size = {
+			x = 20
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+}

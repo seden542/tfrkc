@@ -1,0 +1,34 @@
+PD1_credit_society_occupation = {
+	tooltip = "PD1_credit_society_occupation_tt"
+	icon = 12
+	sound_effect = "Martial_Law_Interface_Secret_Police_Oversight"
+	fallback_law = foreign_civilian_oversight
+
+	visible = {
+		original_tag = PD1
+		has_country_flag = PD1_manchuria_social_correction_pilot_zone_established_v1
+	}
+
+	available = {
+		original_tag = PD1
+		has_country_flag = PD1_manchuria_social_correction_pilot_zone_established_v1
+	}
+
+	state_modifier = {
+		resistance_target = -0.75
+		compliance_gain = 0.05
+		required_garrison_factor = -0.75
+		resistance_damage_to_garrison = -0.75
+		resistance_decay = 1.00
+		local_factories = 0.50
+		local_resources = 0.50
+		local_manpower = 0.15
+		repair_speed_infrastructure_factor = 0.50
+		repair_speed_arms_factory_factor = 0.50
+		repair_speed_industrial_complex_factor = 0.50
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+}

@@ -1,0 +1,673 @@
+# Bound to staged municipal v5; this file does NOT activate the deployment gate.
+TFRKC_rework_bound_partition_effect = {
+ if = { limit = { tag = KOR TFRKC_rework_map_ready_trigger = yes NOT = { has_global_flag = TFRKC_rework_partition_complete } has_war = no }
+  delete_unit = { disband = no }
+  set_equipment_fraction = 0
+  set_variable = { TFRKC_rework_old_reserve = manpower_k }
+  multiply_variable = { TFRKC_rework_old_reserve = -1000 }
+  add_manpower = TFRKC_rework_old_reserve
+  clear_variable = TFRKC_rework_old_reserve
+  if = { limit = { is_in_faction_with = JAP } set_country_flag = TFRKC_former_PDTO }
+  leave_faction = yes
+  1589 = { transfer_state_to = ZGP add_core_of = ZGP }
+  1568 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1682 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1683 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1556 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1684 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1685 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1686 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1687 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1503 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1688 = { transfer_state_to = ZIA add_core_of = ZIA }
+  1575 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1579 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1585 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1041 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1632 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1633 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1634 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1635 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1636 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1637 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1638 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1639 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1640 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1641 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1562 = { transfer_state_to = ZMS add_core_of = ZMS }
+  1607 = { transfer_state_to = ZNE add_core_of = ZNE }
+  1656 = { transfer_state_to = ZNE add_core_of = ZNE }
+  1659 = { transfer_state_to = ZNE add_core_of = ZNE }
+  1679 = { transfer_state_to = ZNE add_core_of = ZNE }
+  1541 = { transfer_state_to = ZNE add_core_of = ZNE }
+  1719 = { transfer_state_to = ZNE add_core_of = ZNE }
+  1708 = { transfer_state_to = ZHY add_core_of = ZHY }
+  1547 = { transfer_state_to = ZFA add_core_of = ZFA }
+  1592 = { transfer_state_to = ZFA add_core_of = ZFA }
+  1525 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1643 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1505 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1646 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1647 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1648 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1524 = { transfer_state_to = ZSS add_core_of = ZSS }
+  1570 = { transfer_state_to = KWC add_core_of = KWC }
+  1573 = { transfer_state_to = KWC add_core_of = KWC }
+  1598 = { transfer_state_to = KWC add_core_of = KWC }
+  1599 = { transfer_state_to = KWC add_core_of = KWC }
+  1411 = { transfer_state_to = KWC add_core_of = KWC }
+  1600 = { transfer_state_to = KWC add_core_of = KWC }
+  1601 = { transfer_state_to = KWC add_core_of = KWC }
+  1602 = { transfer_state_to = KWC add_core_of = KWC }
+  1603 = { transfer_state_to = KWC add_core_of = KWC }
+  1604 = { transfer_state_to = KWC add_core_of = KWC }
+  1644 = { transfer_state_to = KWC add_core_of = KWC }
+  1652 = { transfer_state_to = KWC add_core_of = KWC }
+  1658 = { transfer_state_to = KWC add_core_of = KWC }
+  1667 = { transfer_state_to = KWC add_core_of = KWC }
+  1669 = { transfer_state_to = KWC add_core_of = KWC }
+  1542 = { transfer_state_to = KWC add_core_of = KWC }
+  1543 = { transfer_state_to = KWC add_core_of = KWC }
+  1680 = { transfer_state_to = KWC add_core_of = KWC }
+  1715 = { transfer_state_to = KWC add_core_of = KWC }
+  1555 = { transfer_state_to = KWC add_core_of = KWC }
+  1504 = { transfer_state_to = KWC add_core_of = KWC }
+  1572 = { transfer_state_to = KLF add_core_of = KLF }
+  1509 = { transfer_state_to = KLF add_core_of = KLF }
+  1559 = { transfer_state_to = KLF add_core_of = KLF }
+  1597 = { transfer_state_to = KLF add_core_of = KLF }
+  1551 = { transfer_state_to = KLF add_core_of = KLF }
+  1552 = { transfer_state_to = KLF add_core_of = KLF }
+  1631 = { transfer_state_to = KLF add_core_of = KLF }
+  1642 = { transfer_state_to = KLF add_core_of = KLF }
+  1554 = { transfer_state_to = KLF add_core_of = KLF }
+  1510 = { transfer_state_to = KLF add_core_of = KLF }
+  1707 = { transfer_state_to = KLF add_core_of = KLF }
+  1550 = { transfer_state_to = KLF add_core_of = KLF }
+  1717 = { transfer_state_to = KLF add_core_of = KLF }
+  1725 = { transfer_state_to = KLF add_core_of = KLF }
+  1605 = { transfer_state_to = ZAF add_core_of = ZAF }
+  525 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1549 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1548 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1606 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1553 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1710 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1711 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1712 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1713 = { transfer_state_to = ZAF add_core_of = ZAF }
+  1507 = { transfer_state_to = KRC add_core_of = KRC }
+  1563 = { transfer_state_to = KRC add_core_of = KRC }
+  1588 = { transfer_state_to = KRC add_core_of = KRC }
+  1595 = { transfer_state_to = KRC add_core_of = KRC }
+  1610 = { transfer_state_to = KRC add_core_of = KRC }
+  1612 = { transfer_state_to = KRC add_core_of = KRC }
+  1546 = { transfer_state_to = KRC add_core_of = KRC }
+  1662 = { transfer_state_to = KRC add_core_of = KRC }
+  1666 = { transfer_state_to = KRC add_core_of = KRC }
+  1668 = { transfer_state_to = KRC add_core_of = KRC }
+  1508 = { transfer_state_to = KRC add_core_of = KRC }
+  1545 = { transfer_state_to = KRC add_core_of = KRC }
+  1695 = { transfer_state_to = KRC add_core_of = KRC }
+  1696 = { transfer_state_to = KRC add_core_of = KRC }
+  1700 = { transfer_state_to = KRC add_core_of = KRC }
+  1561 = { transfer_state_to = KRC add_core_of = KRC }
+  1516 = { transfer_state_to = KCH add_core_of = KCH }
+  1645 = { transfer_state_to = KCH add_core_of = KCH }
+  1653 = { transfer_state_to = KCH add_core_of = KCH }
+  871 = { transfer_state_to = KCH add_core_of = KCH }
+  1714 = { transfer_state_to = KCH add_core_of = KCH }
+  1728 = { transfer_state_to = KCH add_core_of = KCH }
+  1564 = { transfer_state_to = ZTW add_core_of = ZTW }
+  1608 = { transfer_state_to = ZTW add_core_of = ZTW }
+  1565 = { transfer_state_to = ZTW add_core_of = ZTW }
+  1716 = { transfer_state_to = ZTW add_core_of = ZTW }
+  1655 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1665 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1676 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1693 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1517 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1726 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1729 = { transfer_state_to = ZGL add_core_of = ZGL }
+  1571 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1586 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1613 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1514 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1664 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1678 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1566 = { transfer_state_to = ZSL add_core_of = ZSL }
+  870 = { transfer_state_to = ZSL add_core_of = ZSL }
+  1661 = { transfer_state_to = ZEC add_core_of = ZEC }
+  1675 = { transfer_state_to = ZEC add_core_of = ZEC }
+  1590 = { transfer_state_to = KYA add_core_of = KYA }
+  1539 = { transfer_state_to = KYA add_core_of = KYA }
+  1614 = { transfer_state_to = KYA add_core_of = KYA }
+  1615 = { transfer_state_to = KYA add_core_of = KYA }
+  1537 = { transfer_state_to = KYA add_core_of = KYA }
+  1616 = { transfer_state_to = KYA add_core_of = KYA }
+  1617 = { transfer_state_to = KYA add_core_of = KYA }
+  1618 = { transfer_state_to = KYA add_core_of = KYA }
+  1619 = { transfer_state_to = KYA add_core_of = KYA }
+  1620 = { transfer_state_to = KYA add_core_of = KYA }
+  1621 = { transfer_state_to = KYA add_core_of = KYA }
+  1622 = { transfer_state_to = KYA add_core_of = KYA }
+  1623 = { transfer_state_to = KYA add_core_of = KYA }
+  1624 = { transfer_state_to = KYA add_core_of = KYA }
+  1625 = { transfer_state_to = KYA add_core_of = KYA }
+  1409 = { transfer_state_to = KYA add_core_of = KYA }
+  1626 = { transfer_state_to = KYA add_core_of = KYA }
+  1627 = { transfer_state_to = KYA add_core_of = KYA }
+  1654 = { transfer_state_to = KYA add_core_of = KYA }
+  1701 = { transfer_state_to = KYA add_core_of = KYA }
+  1702 = { transfer_state_to = KYA add_core_of = KYA }
+  1703 = { transfer_state_to = KYA add_core_of = KYA }
+  1704 = { transfer_state_to = KYA add_core_of = KYA }
+  1705 = { transfer_state_to = KYA add_core_of = KYA }
+  1706 = { transfer_state_to = KYA add_core_of = KYA }
+  1709 = { transfer_state_to = KYA add_core_of = KYA }
+  1672 = { transfer_state_to = ZUS add_core_of = ZUS }
+  1673 = { transfer_state_to = ZUS add_core_of = ZUS }
+  1538 = { transfer_state_to = ZUS add_core_of = ZUS }
+  1410 = { transfer_state_to = ZUS add_core_of = ZUS }
+  1674 = { transfer_state_to = ZUS add_core_of = ZUS }
+  1412 = { transfer_state_to = KOR add_core_of = KOR }
+  1569 = { transfer_state_to = KOR add_core_of = KOR }
+  1574 = { transfer_state_to = KOR add_core_of = KOR }
+  1594 = { transfer_state_to = KOR add_core_of = KOR }
+  1629 = { transfer_state_to = KOR add_core_of = KOR }
+  1630 = { transfer_state_to = KOR add_core_of = KOR }
+  1677 = { transfer_state_to = KOR add_core_of = KOR }
+  1699 = { transfer_state_to = KOR add_core_of = KOR }
+  1718 = { transfer_state_to = KOR add_core_of = KOR }
+  1720 = { transfer_state_to = KOR add_core_of = KOR }
+  1721 = { transfer_state_to = KOR add_core_of = KOR }
+  1722 = { transfer_state_to = KOR add_core_of = KOR }
+  1723 = { transfer_state_to = KOR add_core_of = KOR }
+  1578 = { transfer_state_to = ZGT add_core_of = ZGT }
+  1580 = { transfer_state_to = ZGT add_core_of = ZGT }
+  1540 = { transfer_state_to = ZGT add_core_of = ZGT }
+  1650 = { transfer_state_to = ZGT add_core_of = ZGT }
+  1657 = { transfer_state_to = ZGT add_core_of = ZGT }
+  1567 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1576 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1577 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1513 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1587 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1591 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1593 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1596 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1609 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1512 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1515 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1611 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1628 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1649 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1651 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1660 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1663 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1670 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1671 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1681 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1689 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1690 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1691 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1560 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1558 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1692 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1694 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1697 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1698 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1557 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1724 = { transfer_state_to = ZRD add_core_of = ZRD }
+  1727 = { transfer_state_to = ZRD add_core_of = ZRD }
+  869 = { transfer_state_to = KCG add_core_of = KCG }
+  1581 = { transfer_state_to = KCG add_core_of = KCG }
+  1582 = { transfer_state_to = KCG add_core_of = KCG }
+  1583 = { transfer_state_to = KCG add_core_of = KCG }
+  1584 = { transfer_state_to = KCG add_core_of = KCG }
+  1506 = { transfer_state_to = KNM add_core_of = KNM }
+  1544 = { transfer_state_to = KNM add_core_of = KNM }
+  ZGP = {
+   set_capital = { state = 1589 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 3500
+  }
+  ZIA = {
+   set_capital = { state = 1503 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 4500
+  }
+  ZMS = {
+   set_capital = { state = 1640 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 6500
+  }
+  ZNE = {
+   set_capital = { state = 1679 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 5000
+  }
+  ZHY = {
+   set_capital = { state = 1708 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 3000
+  }
+  ZFA = {
+   set_capital = { state = 1592 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 4500
+  }
+  ZSS = {
+   set_capital = { state = 1648 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 4000
+  }
+  KWC = {
+   set_capital = { state = 1604 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.4
+   set_war_support = 0.65
+   add_manpower = 40000
+  }
+  KLF = {
+   set_capital = { state = 1707 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.4
+   set_war_support = 0.65
+   add_manpower = 40000
+  }
+  ZAF = {
+   set_capital = { state = 1606 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 4000
+  }
+  KRC = {
+   set_capital = { state = 1561 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.4
+   set_war_support = 0.65
+   add_manpower = 45000
+  }
+  KCH = {
+   set_capital = { state = 1714 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.4
+   set_war_support = 0.65
+   add_manpower = 25000
+  }
+  ZTW = {
+   set_capital = { state = 1716 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 3500
+  }
+  ZGL = {
+   set_capital = { state = 1693 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 4000
+  }
+  ZSL = {
+   set_capital = { state = 1571 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 6000
+  }
+  ZEC = {
+   set_capital = { state = 1661 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 3500
+  }
+  KYA = {
+   set_capital = { state = 1626 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.4
+   set_war_support = 0.65
+   add_manpower = 35000
+  }
+  ZUS = {
+   set_capital = { state = 1674 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 4000
+  }
+  KOR = {
+   set_capital = { state = 1699 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.4
+   set_war_support = 0.65
+   add_manpower = 22000
+   set_cosmetic_tag = TFRKC_KOR_PROVINCIAL
+  }
+  ZGT = {
+   set_capital = { state = 1650 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 6000
+  }
+  ZRD = {
+   set_capital = { state = 1692 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 6500
+  }
+  KCG = {
+   set_capital = { state = 1582 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   set_country_flag = TFRKC_prewar_participant
+   add_ideas = TFRKC_no_naval_war
+   set_stability = 0.5
+   set_war_support = 0.65
+   add_manpower = 6000
+  }
+  KNM = {
+   set_capital = { state = 1544 }
+   leave_faction = yes
+   set_rule = { can_join_factions = no }
+   inherit_technology = KOR
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_naval_neutrality
+   set_rule = { can_not_declare_war = yes can_join_factions = no }
+   add_ideas = TFRKC_no_naval_war
+  }
+  every_country = { limit = { NOT = { tag = ZGP } } diplomatic_relation = { country = ZGP relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZIA } } diplomatic_relation = { country = ZIA relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZMS } } diplomatic_relation = { country = ZMS relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZNE } } diplomatic_relation = { country = ZNE relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZHY } } diplomatic_relation = { country = ZHY relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZFA } } diplomatic_relation = { country = ZFA relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZSS } } diplomatic_relation = { country = ZSS relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KWC } } diplomatic_relation = { country = KWC relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KLF } } diplomatic_relation = { country = KLF relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZAF } } diplomatic_relation = { country = ZAF relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KRC } } diplomatic_relation = { country = KRC relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KCH } } diplomatic_relation = { country = KCH relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZTW } } diplomatic_relation = { country = ZTW relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZGL } } diplomatic_relation = { country = ZGL relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZSL } } diplomatic_relation = { country = ZSL relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZEC } } diplomatic_relation = { country = ZEC relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KYA } } diplomatic_relation = { country = KYA relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZUS } } diplomatic_relation = { country = ZUS relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KOR } } diplomatic_relation = { country = KOR relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZGT } } diplomatic_relation = { country = ZGT relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = ZRD } } diplomatic_relation = { country = ZRD relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KCG } } diplomatic_relation = { country = KCG relation = guarantee active = no } }
+  every_country = { limit = { NOT = { tag = KNM } } diplomatic_relation = { country = KNM relation = guarantee active = no } }
+  KOR = { transfer_units_fraction = { target = KNM size = 0 army_ratio = 0 air_ratio = 0 navy_ratio = 1 stockpile_ratio = 0 } every_navy_leader = { set_nationality = KNM } }
+  KOR = { transfer_units_fraction = { target = ZIA size = 0 army_ratio = 0 air_ratio = 0.008264462810 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = ZMS size = 0 army_ratio = 0 air_ratio = 0.008333333333 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = ZSS size = 0 army_ratio = 0 air_ratio = 0.008403361345 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = KWC size = 0 army_ratio = 0 air_ratio = 0.127118644068 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = KLF size = 0 army_ratio = 0 air_ratio = 0.097087378641 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = ZAF size = 0 army_ratio = 0 air_ratio = 0.215053763441 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = KRC size = 0 army_ratio = 0 air_ratio = 0.410958904110 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = KCH size = 0 army_ratio = 0 air_ratio = 0.232558139535 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = ZSL size = 0 army_ratio = 0 air_ratio = 0.030303030303 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = KYA size = 0 army_ratio = 0 air_ratio = 0.687500000000 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = ZUS size = 0 army_ratio = 0 air_ratio = 0.100000000000 navy_ratio = 0 stockpile_ratio = 0 } }
+  KOR = { transfer_units_fraction = { target = ZRD size = 0 army_ratio = 0 air_ratio = 0.111111111111 navy_ratio = 0 stockpile_ratio = 0 } }
+  ZGP = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZGP set_country_flag = TFRKC_rework_oob_loaded }
+  ZIA = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZIA set_country_flag = TFRKC_rework_oob_loaded }
+  ZMS = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZMS set_country_flag = TFRKC_rework_oob_loaded }
+  ZNE = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZNE set_country_flag = TFRKC_rework_oob_loaded }
+  ZHY = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZHY set_country_flag = TFRKC_rework_oob_loaded }
+  ZFA = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZFA set_country_flag = TFRKC_rework_oob_loaded }
+  ZSS = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZSS set_country_flag = TFRKC_rework_oob_loaded }
+  KWC = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KWC set_country_flag = TFRKC_rework_oob_loaded }
+  KLF = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KLF set_country_flag = TFRKC_rework_oob_loaded }
+  ZAF = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZAF set_country_flag = TFRKC_rework_oob_loaded }
+  KRC = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KRC set_country_flag = TFRKC_rework_oob_loaded }
+  KCH = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KCH set_country_flag = TFRKC_rework_oob_loaded }
+  ZTW = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZTW set_country_flag = TFRKC_rework_oob_loaded }
+  ZGL = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZGL set_country_flag = TFRKC_rework_oob_loaded }
+  ZSL = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZSL set_country_flag = TFRKC_rework_oob_loaded }
+  ZEC = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZEC set_country_flag = TFRKC_rework_oob_loaded }
+  KYA = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KYA set_country_flag = TFRKC_rework_oob_loaded }
+  ZUS = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZUS set_country_flag = TFRKC_rework_oob_loaded }
+  KOR = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KOR set_country_flag = TFRKC_rework_oob_loaded }
+  ZGT = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZGT set_country_flag = TFRKC_rework_oob_loaded }
+  ZRD = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_ZRD set_country_flag = TFRKC_rework_oob_loaded }
+  KCG = { TFRKC_rework_army_designs_effect = yes load_oob = TFRKC_v5_KCG set_country_flag = TFRKC_rework_oob_loaded }
+  KWC = { diplomatic_relation = { country = KLF relation = military_access active = yes }  }
+  KLF = { diplomatic_relation = { country = KWC relation = military_access active = yes } diplomatic_relation = { country = KWC relation = non_aggression_pact active = yes } }
+  KRC = { diplomatic_relation = { country = ZAF relation = military_access active = yes } diplomatic_relation = { country = ZAF relation = non_aggression_pact active = yes } }
+  ZAF = { diplomatic_relation = { country = KRC relation = military_access active = yes }  }
+  KOR = { diplomatic_relation = { country = KCH relation = military_access active = yes }  }
+  KCH = { diplomatic_relation = { country = KOR relation = military_access active = yes } diplomatic_relation = { country = KOR relation = non_aggression_pact active = yes } }
+  KYA = { diplomatic_relation = { country = ZSL relation = military_access active = yes } diplomatic_relation = { country = ZSL relation = non_aggression_pact active = yes } }
+  KYA = { diplomatic_relation = { country = ZUS relation = military_access active = yes } diplomatic_relation = { country = ZUS relation = non_aggression_pact active = yes } }
+  ZSL = { diplomatic_relation = { country = KYA relation = military_access active = yes }  }
+  ZSL = { diplomatic_relation = { country = ZUS relation = military_access active = yes } diplomatic_relation = { country = ZUS relation = non_aggression_pact active = yes } }
+  ZUS = { diplomatic_relation = { country = KYA relation = military_access active = yes }  }
+  ZUS = { diplomatic_relation = { country = ZSL relation = military_access active = yes }  }
+  set_global_flag = TFRKC_partition_prepared
+  set_global_flag = TFRKC_rework_partition_complete
+ }
+}
+TFRKC_rework_UN_bound_landing_effect = {
+ if = { limit = { TFRKC_rework_UN_ready_trigger = yes }
+  1580 = { transfer_state_to = ZUN add_core_of = ZUN }
+  1657 = { transfer_state_to = ZUN add_core_of = ZUN }
+  ZUN = {
+   set_capital = { state = 1580 }
+   leave_faction = yes
+   inherit_technology = KOR
+   set_rule = { can_join_factions = no }
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   add_ideas = TFRKC_no_naval_war
+   add_manpower = 2000
+   set_war_support = 0.7
+   TFRKC_rework_army_designs_effect = yes
+   load_oob = TFRKC_v5_ZUN
+   set_country_flag = TFRKC_rework_oob_loaded
+  }
+ }
+}
+TFRKC_rework_KPL_bound_landing_effect = {
+ if = { limit = { TFRKC_rework_KPL_ready_trigger = yes }
+  1682 = { transfer_state_to = KPL add_core_of = KPL }
+  1683 = { transfer_state_to = KPL add_core_of = KPL }
+  1556 = { transfer_state_to = KPL add_core_of = KPL }
+  1684 = { transfer_state_to = KPL add_core_of = KPL }
+  1685 = { transfer_state_to = KPL add_core_of = KPL }
+  1686 = { transfer_state_to = KPL add_core_of = KPL }
+  1687 = { transfer_state_to = KPL add_core_of = KPL }
+  1688 = { transfer_state_to = KPL add_core_of = KPL }
+  ZGP = { transfer_units_fraction = { target = KPL size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } every_unit_leader = { set_nationality = KPL } }
+  1589 = { transfer_state_to = KPL add_core_of = KPL }
+  KPL = {
+   set_capital = { state = 1589 }
+   leave_faction = yes
+   inherit_technology = KOR
+   set_rule = { can_join_factions = no }
+   set_country_flag = TFRKC_rework_initialized
+   set_country_flag = TFRKC_rework_participant
+   set_country_flag = TFRKC_participant
+   add_ideas = TFRKC_no_naval_war
+   add_manpower = 8000
+   set_war_support = 0.7
+   TFRKC_rework_army_designs_effect = yes
+   load_oob = TFRKC_v5_KPL
+   set_country_flag = TFRKC_rework_oob_loaded
+  }
+  if = { limit = { KWC = { exists = yes } } KWC = { diplomatic_relation = { country = KPL relation = military_access active = yes } diplomatic_relation = { country = KPL relation = non_aggression_pact active = yes } } KPL = { diplomatic_relation = { country = KWC relation = military_access active = yes } } }
+  if = { limit = { KLF = { exists = yes } } KLF = { diplomatic_relation = { country = KPL relation = military_access active = yes } diplomatic_relation = { country = KPL relation = non_aggression_pact active = yes } } KPL = { diplomatic_relation = { country = KLF relation = military_access active = yes } } }
+ }
+}

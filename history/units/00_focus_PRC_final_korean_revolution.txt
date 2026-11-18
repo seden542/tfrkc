@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "PRC_finilize_korean_revolution"
+    Progress = 0
+}   

@@ -1,0 +1,558 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_bb_score_counter"
+	#	texturefile = "gfx/interface/GUI/baseball/score_counter_players.png"
+	#	legacy_lazy_load = no
+	#}
+	### Base Setting ###
+	spriteType = { 
+		name = "GFX_GAW_background"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_square"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_square.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_plan"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_plan.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_mahjong"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_mahjong.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_none"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_none.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_jocker"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_jocker.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_chips"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_chips.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_chip_1"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_chip_1.png"
+		transparencecheck = yes
+	}
+	spriteType = { 
+		name = "GFX_GAW_background_chip_2"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_background_chip_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_mapborder"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_mapborder.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_pdto_bg"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_pdto_bg.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_ongoing_oplan"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_ongoing_oplan.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_text_left"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_text_left.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_text_right"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_text_right.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_war_theme_logo"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_war_theme_logo_small.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_war_theme_logo_large"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_war_theme_logo.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_left_banner"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_left_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GAW_right_banner"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_right_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GAW_random_icon"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_random_icon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_mongolia_annexed"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_mongolia_annexed.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_none"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_none.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_chip_1"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_chip_1.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_chip_2"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_chip_2.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_chip_3"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_chip_3.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_chip_4"
+		texturefile = "gfx/interface/GUI/KP_GAW/GAW_chip_4.png"
+		transparencecheck = yes
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_GAW_scroll_1"
+		textureFile = "gfx/interface/GUI/KP_GAW/scroll/GAW_scroll_1.dds"
+		noOfFrames = 54
+        loadType = "INGAME"
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_GAW_scroll_2"
+		textureFile = "gfx/interface/GUI/KP_GAW/scroll/GAW_scroll_2.dds"
+		noOfFrames = 54
+        loadType = "INGAME"
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_GAW_scroll_3"
+		textureFile = "gfx/interface/GUI/KP_GAW/scroll/GAW_scroll_3.dds"
+		noOfFrames = 54
+        loadType = "INGAME"
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_GAW_scroll_4"
+		textureFile = "gfx/interface/GUI/KP_GAW/scroll/GAW_scroll_4.dds" 
+		noOfFrames = 54
+        loadType = "INGAME"
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_GAW_scroll_5"
+		textureFile = "gfx/interface/GUI/KP_GAW/scroll/GAW_scroll_5.dds"
+		noOfFrames = 54
+        loadType = "INGAME"
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+	}
+	
+	### Specific Map Border Setting ###
+	# None Checking
+	spriteType = {
+		name = "GFX_GAW_bianjing_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_bianjing_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_huabei_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_huabei_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_huazhong_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_huazhong_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_jiandao_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_jiandao_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_jiangdong_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_jiangdong_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_liangguang_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_liangguang_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_manchuria_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_manchuria_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_sichuan_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_sichuan_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_xibei_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_xibei_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_xinan_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_xinan_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_taiwan_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_taiwan_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_north_india_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_north_india_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_northkorea_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_northkorea_n.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_SEA_n"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_SEA_n.png"
+		transparencecheck = yes
+	}
+
+	### City Tooltip Images ###
+	spriteType = { name = "GFX_GAW_city_pyongyang_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/pyongyang_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_pyongyang_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/pyongyang_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_wonsan_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/wonsan_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_wonsan_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/wonsan_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_chongjin_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/chongjin_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_chongjin_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/chongjin_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_dandong_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/dandong_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_dandong_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/dandong_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_yanbian_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/yanbian_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_yanbian_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/yanbian_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_shenyang_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/shenyang_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_shenyang_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/shenyang_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_harbin_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/harbin_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_harbin_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/harbin_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_beijing_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/beijing_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_beijing_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/beijing_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_jinan_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/jinan_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_jinan_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/jinan_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_shanghai_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/shanghai_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_shanghai_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/shanghai_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_nanjing_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/nanjing_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_nanjing_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/nanjing_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_wuhan_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/wuhan_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_wuhan_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/wuhan_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_changde_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/changde_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_changde_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/changde_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_guangzhou_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/guangzhou_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_guangzhou_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/guangzhou_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_nanning_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/nanning_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_nanning_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/nanning_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_kunming_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/kunming_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_kunming_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/kunming_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_guiyang_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/guiyang_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_guiyang_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/guiyang_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_chengdu_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/chengdu_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_chengdu_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/chengdu_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_chongqing_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/chongqing_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_chongqing_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/chongqing_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_xian_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/xian_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_xian_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/xian_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_lanzhou_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/lanzhou_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_lanzhou_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/lanzhou_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_urumqi_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/urumqi_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_urumqi_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/urumqi_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_lhasa_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/lhasa_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_lhasa_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/lhasa_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_taipei_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/taipei_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_taipei_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/taipei_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_kaohsiung_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/kaohsiung_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_kaohsiung_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/kaohsiung_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_new_delhi_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/new_delhi_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_new_delhi_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/new_delhi_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_calcutta_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/calcutta_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_calcutta_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/calcutta_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_naypyidaw_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/naypyidaw_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_naypyidaw_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/naypyidaw_captured.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_hanoi_default" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/hanoi_default.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_GAW_city_hanoi_captured" texturefile = "gfx/interface/GUI/KP_GAW/city_tooltips/hanoi_captured.png" legacy_lazy_load = no }
+
+	# Checked
+	spriteType = {
+		name = "GFX_GAW_bianjing_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_bianjing_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_huabei_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_huabei_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_huazhong_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_huazhong_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_jiandao_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_jiandao_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_jiangdong_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_jiangdong_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_liangguang_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_liangguang_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_manchuria_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_manchuria_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_sichuan_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_sichuan_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_xibei_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_xibei_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_xinan_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_xinan_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_taiwan_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_taiwan_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_north_india_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_north_india_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_northkorea_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_northkorea_y.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_SEA_y"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_SEA_y.png"
+		transparencecheck = yes
+	}
+	# Plan Started
+	spriteType = {
+		name = "GFX_GAW_bianjing_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_bianjing_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_huabei_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_huabei_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_huazhong_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_huazhong_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_jiandao_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_jiandao_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_jiangdong_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_jiangdong_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_liangguang_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_liangguang_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_manchuria_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_manchuria_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_sichuan_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_sichuan_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_xibei_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_xibei_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_xinan_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_xinan_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_taiwan_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_taiwan_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_north_india_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_north_india_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_northkorea_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_northkorea_p.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_GAW_SEA_p"
+		texturefile = "gfx/interface/GUI/KP_GAW/map/GAW_SEA_p.png"
+		transparencecheck = yes
+	}
+	
+	### Cards ###
+	spriteType = {
+		name = "GFX_GAW_card_none"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_none.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_none_attack"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_none_attack.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_none_defence"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_none_defence.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_north_korea_attack"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_north_korea_attack.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_north_korea_defence"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_north_korea_defence.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_jocker"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_jocker.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_jocker_bomb"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_jocker_bomb.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_inf_attack"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_inf_attack.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_inf_defence"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_inf_defence.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_inf_logitics"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_inf_logitics.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_inf_planning"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_inf_planning.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_art_attack"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_art_attack.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_art_defence"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_art_defence.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_art_logitics"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_art_logitics.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_art_planning"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_art_planning.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_tank_attack"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_tank_attack.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_tank_defence"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_tank_defence.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_tank_logitics"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_tank_logitics.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_tank_planning"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_tank_planning.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_spe_attack"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_spe_attack.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_spe_defence"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_spe_defence.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_spe_logitics"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_spe_logitics.png"
+	}
+	spriteType = {
+		name = "GFX_GAW_card_spe_planning"
+		texturefile = "gfx/interface/GUI/KP_GAW/cards/GAW_card_spe_planning.png"
+	}
+}

@@ -1,0 +1,813 @@
+armor_generic = {
+
+	role = armor
+	
+	blocked_for = {
+		SOV
+		APA
+		USB
+		USA
+		PTF
+		NSM
+		BRN
+		ATW
+		CAR
+		POL
+		ENG
+		UKR
+		HRL
+		PRC
+		KOR
+	}
+	
+	upgrade_prio = {
+		base = 1
+		
+		#modifier = {
+		#	factor = 3
+		#	OR = {
+		#		has_tech = basic_medium_tank
+		#		has_tech = basic_medium_tank_chassis
+		#	}
+		#}
+		#modifier = {
+		#	factor = 0
+		#	NOT = {
+		#		has_tech = tech_mountaineers
+		#	}
+		#}
+		modifier = {
+			factor = 0
+			num_of_factories < 25
+		}
+		modifier = {
+			factor = 50
+			is_major = yes
+		}
+	}
+
+	light_armor_early = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = nato_western_doctrine }
+			}
+		}
+		
+		can_upgrade_in_field = {
+			has_equipment = { light_tank_chassis < 500 } 
+		}
+		
+		target_template = {
+			
+			support = {
+				#engineer = 1
+				#mot_recon = 1
+				#artillery = 1
+			}
+
+			regimental_support = {
+				#anti_tank_battery = 1
+			}
+
+			regiments = {
+				light_armor = 6
+				light_mechanized = 3
+			}
+		}
+		
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = light_armor_early
+		target_min_match = 0.5
+	}
+	
+	modern_armor_early = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = csto_eastern_doctrine }
+			}
+		}
+		
+		#can_upgrade_in_field = {
+		#	has_equipment = { modern_armor < 500 } 
+		#}
+		
+		target_template = {
+			
+			support = {
+				#engineer = 1
+				#mot_recon = 1
+				#artillery = 1
+			}
+
+			regimental_support = {
+				#anti_tank_battery = 1
+			}
+
+			regiments = {
+				modern_armor = 4
+				mechanized = 3
+				modern_sp_artillery_brigade = 1
+			}
+		}
+		
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = modern_armor_early
+		target_min_match = 0.5
+	}
+
+}
+
+garrison_generic = {
+
+	blocked_for = {
+		SOV
+		APA
+		USB
+		USA
+		PTF
+		NSM
+		BRN
+		ATW
+		CAR
+		POL
+		ENG
+		UKR
+		HRL
+		PRC
+	}
+	
+	role = garrison
+	
+	upgrade_prio = {
+		base = 0.5
+
+		#modifier = {
+		#	factor = 20
+		#	NOT = { ai_has_role_template = garrison }
+		#}
+	}
+
+	garrison_generic = {
+	
+		reinforce_prio = 0
+		custom_icon = 7
+	
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+	
+		target_template = {
+			support = { 
+				engineer = 1
+			}
+			
+			regiments = {
+				motorized = 3
+			}
+		}
+	}
+}
+
+infantry_generic = {
+
+	blocked_for = {
+		SOV
+		APA
+		USB
+		USA
+		PTF
+		NSM
+		BRN
+		ATW
+		CAR
+		POL
+		ENG
+		UKR
+		HRL
+		PRC
+		KOR
+	}
+
+	role = infantry
+	
+	upgrade_prio = {
+		base = 5
+	}
+
+	infantry_default = {
+		upgrade_prio = {
+			base = 1
+			#modifier = {
+			#	factor = 150
+			#	surrender_progress > 0.50
+			#}
+			#modifier = {
+			#	factor = 2
+			#	num_of_factories < 50
+			#}
+			#modifier = {
+			#	factor = 0
+			#	num_of_factories > 49
+			#}
+			#modifier = {
+			#	factor = 0
+			#	is_major =yes
+			#}
+			modifier = {
+				factor = 0
+				num_of_factories > 24
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = assymetric_warfare }
+			}
+		}
+
+		target_template = {
+			regiments = {
+				infantry = 7
+				artillery = 3
+			}
+			support = {
+				engineer = 1
+				recon = 1
+				signal_company = 1
+			}
+		}
+	}
+
+	infantry_division_2 = {
+		upgrade_prio = {
+			base = 0
+			#modifier = {
+			#	factor = 150
+			#	surrender_progress > 0.50
+			#}
+			#modifier = {
+			#	factor = 2
+			#	num_of_factories > 49
+			#}
+			#modifier = {
+			#	factor = 0
+			#	num_of_factories < 50
+			#}
+			#modifier = {
+			#	factor = 0
+			#	is_major =yes
+			#}
+			modifier = {
+				factor = 0
+				num_of_factories < 25
+			}
+		}
+
+		target_template = {
+			regiments = {
+				motorized = 8
+				modern_sp_artillery_brigade = 3
+			}
+			support = {
+				engineer = 1
+			}
+		}
+	}
+}
+
+mechanized_default = {
+
+	blocked_for = {
+		SOV
+		APA
+		USB
+		USA
+		PTF
+		NSM
+		BRN
+		ATW
+		CAR
+		POL
+		ENG
+		UKR
+		HRL
+		PRC
+		KOR
+	}
+
+	role = mechanized
+	
+	upgrade_prio = {
+		base = 5
+		
+		modifier = {
+			factor = 100
+			num_of_factories > 1
+		}
+	}
+	
+	light_mechanized_default = {
+		
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 5
+				num_of_factories > 19
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = csto_eastern_doctrine  }
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				mot_recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				light_mechanized = 5
+				motorized_rocket_brigade = 3
+			}
+		}
+		
+		replace_at_match = 1.5
+		replace_with = light_mechanized_default
+		target_min_match = 1.5
+	}
+	
+	mechanized_default = {
+		
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 5
+				num_of_factories > 19
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = nato_western_doctrine  }
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				mot_recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				mechanized = 5
+				modern_sp_artillery_brigade = 3
+			}
+		}
+		
+		replace_at_match = 1.5
+		replace_with = mechanized_default
+		target_min_match = 1.5
+	}
+}
+
+mountaineers_generic = {
+
+	blocked_for = {
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+		SIA
+		KOR
+	}
+
+	role = mountaineers
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = tech_mountaineers
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_doctrine = assymetric_warfare }
+		}
+	}
+
+	mountaineers_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				engineer = 1
+				artillery = 1
+				logistics_company = 1
+			}
+			
+			regimental_support = {
+				#anti_air_battery = 1
+				#anti_tank_battery = 1
+			}
+
+			regiments = {
+				mountaineers = 9
+			}
+		}
+	}
+}
+
+marines_generic = {
+
+	role = marines
+	
+	blocked_for = {
+		SOV
+		APA
+		USB
+		USA
+		PTF
+		NSM
+		BRN
+		ATW
+		CAR
+		POL
+		ENG
+		UKR
+		HRL
+		PRC
+		KOR
+	}
+
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = marines
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_doctrine = assymetric_warfare }
+		}
+	}
+	
+	#match_to_count = 0.45
+
+	marine_default = {
+	
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			support = {
+				recon = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				marine = 9
+			}
+		}
+	}
+	
+	marine_armored = {
+	
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 0
+				NOT = {
+					has_tech = amphibious_tank1
+					has_tech = amphibious_mechanized_infantry1
+				}
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+
+		target_template = {
+			support = {
+				mot_recon = 1
+				logistics_company = 1
+				engineer = 1
+			}
+			
+			regiments = {
+				#amphibious_armor = 4
+				amphibious_mechanized = 6
+			}
+		}
+	}
+}
+
+
+paratrooper_generic = {
+
+	role = paratroopers
+	
+	blocked_for = {
+		SOV
+		APA
+		USB
+		USA
+		PTF
+		NSM
+		BRN
+		ATW
+		CAR
+		POL
+		ENG
+		UKR
+		HRL
+		PRC
+		KOR
+	}
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = paratroopers
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_doctrine = assymetric_warfare }
+		}
+	}
+	
+	#match_to_count = 0.45
+	
+	paratrooper_default = {
+	
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+	
+		target_template = {
+			support = {
+				engineer = 1
+				artillery = 1
+				anti_tank = 1
+				signal_company = 1
+			}
+			
+			regiments = {
+				paratrooper = 9
+			}
+		}
+	}
+}
+
+militia_generic = {
+	role = militia
+	upgrade_prio = {
+		base = 1
+		modifier = {
+			factor = 5
+			has_civil_war = yes
+		}
+		modifier = {
+			factor = 0
+			has_civil_war = no
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_doctrine = assymetric_warfare }
+		}
+	}
+
+	Militia_brigades1 = {
+		reinforce_prio = 0
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 1
+				num_of_factories < 25
+			}
+			modifier = {
+				factor = 0
+				num_of_factories > 24
+			}
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 0
+				is_major =yes
+			}
+		}
+
+		target_template = {
+			regiments = {
+				militia = 5
+			}
+		}
+	}
+	militia_brigades2 = {
+		reinforce_prio = 0
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 1
+				num_of_factories > 25
+			}
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_major =yes
+			}
+		}
+
+		target_template = {
+			regiments = {
+				militia = 9
+			}
+			support = {
+				recon = 1
+				engineer = 1
+			}
+		}
+	}
+	
+	mot_militia_generic = {
+		reinforce_prio = 0
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 0
+				num_of_factories > 25
+			}
+			modifier = {
+				add = 15
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 0
+				is_major =yes
+			}
+		}
+
+		target_template = {
+			regiments = {
+				mot_militia = 6
+			}
+			support = {
+				mot_recon = 1
+				engineer = 1
+			}
+		}
+	}
+}
+
+hq_generic = {
+	role = hq_role
+	
+	upgrade_prio = {
+		base = 1
+	}
+
+	hq_default = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = nato_western_doctrine }
+			}
+		}
+
+		target_template = {
+			support = {
+				hq_support_company = 1
+				hq_maintenance = 1
+				hq_logistics = 1
+				hq_signal = 1 
+			}
+			
+			regiments = {
+				light_armor = 4
+			}
+		}
+	}
+	
+	hq_default2 = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 0
+				NOT = { has_doctrine = csto_eastern_doctrine }
+			}
+		}
+
+		target_template = {
+			support = {
+				hq_support_company = 1
+				hq_maintenance = 1
+				hq_air_liaison = 1
+				hq_military_police = 1 
+			}
+			
+			regiments = {
+				light_armor = 4
+			}
+		}
+	}
+}
+
+# Non-complete list of sub-units
+
+# REGIMENTS:
+# - infantry
+# - light_armor
+# - medium_armor
+# - heavy_armor
+# - super_heavy_armor
+# - modern_armor
+# - cavalry
+# - motorized
+# - mechanized
+# - marine
+# - mountaineers
+# - paratrooper
+# - artillery_brigade
+# - anti_air_brigade
+# - anti_tank_brigade
+# - light_tank_destroyer_brigade
+# - medium_tank_destroyer_brigade
+# - heavy_tank_destroyer_brigade
+# - super_heavy_tank_destroyer_brigade
+# - modern_tank_destroyer_brigade
+# - light_sp_anti_air_brigade
+# - light_sp_artillery_brigade
+
+# SUPPORT:
+# - engineer
+# - recon
+# - signal_company
+# - maintenance_company
+# - artillery
+# - field_hospital
+# - logistics_company
+# - military_police
+# - rocket_artillery
+
+# SUPPORT (REGIMENTAL):
+# - anti_air
+# - anti_tank
+# - field_guns
+# - fire_support
+# - mot_fire_support
+# - rocket_battery

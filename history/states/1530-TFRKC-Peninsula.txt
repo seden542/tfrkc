@@ -1,0 +1,18 @@
+state={
+	id = 1530
+	name = "STATE_1530"
+	
+	history = {
+owner = PRK
+add_claim_by = KOR
+add_core_of = PRK
+ buildings = {
+ infrastructure = 2
+ }
+}
+	provinces = { 15159 }
+	manpower = 86971
+	buildings_max_level_factor = 0.45161290
+	
+	state_category = pastoral
+}

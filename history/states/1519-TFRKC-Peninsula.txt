@@ -1,0 +1,20 @@
+state={
+	id = 1519
+	name = "STATE_1519"
+	provinces = { 15165 13708 15080 852 }
+	manpower = 695556
+	buildings_max_level_factor = 0.22686025
+	
+	resources = { tungsten = 0 steel = 2 }
+	
+	history = {
+owner = PRK
+add_core_of = PRK
+add_claim_by = KOR
+ buildings = {
+ infrastructure = 2
+ }
+}
+	
+	state_category = town
+}

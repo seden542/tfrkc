@@ -1,0 +1,14 @@
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+TFRKP_fire_super_event = {
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_global_flag = super_events_off_flag } } #Doesn't set any new super events if nuclear war has occured
+			set_variable = { TFRKP_super_event = TFRKP_temp_super_event }
+
+			meta_effect = {
+				text = { scoped_play_song = "TFRKP_[SUPER]" }
+				SUPER = "[?TFRKP_super_event.GetTokenKey]"
+			}
+		}
+	}
+}

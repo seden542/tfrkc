@@ -1,0 +1,15 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFRKP_west_pacific_security_conference_countrypoliticsview_container"
+		position = { x = 105 y = 325 }
+		size = { width = 68 height = 68 }
+		clipping = yes
+
+		iconType = {
+			name = "TFRKP_west_pacific_security_conference_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_KOR_WPSC_faction"
+			pdx_tooltip = "TFR_GLOBAL_ASSOCIATION_TT"
+		}
+	}
+}

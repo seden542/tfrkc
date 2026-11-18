@@ -1,0 +1,3 @@
+# Retired v4 API: no old tags or map allocation can be reactivated.
+TFRKC_city_declare_effect = { log = "TFRKC: ignored retired v4 military API" }
+TFRKC_city_integrate_effect = { log = "TFRKC: ignored retired v4 military API" }

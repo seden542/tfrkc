@@ -1,0 +1,85 @@
+spriteTypes = {
+	# GUI 배경
+	spriteType = {
+		name = "GFX_TFRKP_reform_gui_big_bg"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/reform_gui_big_bg.png"
+	}
+	spriteType = {
+		name = "GFX_TFRKP_reform_gui_bg"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/reform_gui_bg.png"
+	}
+
+	# 파벌 영향력 바 (21프레임)
+	spriteType = {
+		name = "GFX_TFRKP_reform_influence_bar"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/reform_influence_bar_strip.png"
+		noOfFrames = 21
+	}
+
+	# 개혁 탭 버튼 (3프레임)
+	spriteType = {
+		name = "GFX_TFRKP_reform_tab_button"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/reform_tab_button.png"
+		noOfFrames = 3
+	}
+
+	### ===== 이카루스의 비상 (가로형, 탭 GUI 통합) ===== ###
+
+	# 이카루스 배경 (440x170, 좌측 밤 -> 우측 태양)
+	spriteType = {
+		name = "GFX_TFRKP_icarus_bg_h"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/icarus_bg_h.png"
+	}
+
+	# 가로형 고도 트랙 (11프레임, 프레임당 428x56, 전체 4708x56)
+	# frame 1 = 고도 0 ... frame 11 = 고도 10 (태양)
+	spriteType = {
+		name = "GFX_TFRKP_icarus_track_h"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/icarus_track_h_strip.png"
+		noOfFrames = 11
+	}
+
+	# 이카루스 마커 (48x30, x좌표는 변수로 이동)
+	spriteType = {
+		name = "GFX_TFRKP_icarus_marker"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/icarus_marker.png"
+	}
+
+	# 밀랍 게이지 (21프레임, 프레임당 240x12, 전체 5040x12)
+	spriteType = {
+		name = "GFX_TFRKP_icarus_wax_bar_h"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/icarus_wax_bar_h_strip.png"
+		noOfFrames = 21
+	}
+
+	# 비상 버튼 (3프레임, 프레임당 120x30)
+	spriteType = {
+		name = "GFX_TFRKP_icarus_ascend_button_s"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/icarus_ascend_button_s.png"
+		noOfFrames = 3
+	}
+
+	### ===== 총선/개헌 시스템 ===== ###
+	spriteType = {
+		name = "GFX_TFRKP_election_before_bg"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/election_before_bg.png"
+	}
+	spriteType = {
+		name = "GFX_TFRKP_constitution_before_bg"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/constitution_before_bg.png"
+	}
+	spriteType = { name = "GFX_TFRKP_regiondev_bg" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_bg.png" }
+	spriteType = { name = "GFX_TFRKP_regiondev_lock" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_lock.png" }
+	spriteType = { name = "GFX_TFRKP_regiondev_lock_big" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_lock_big.png" }
+	spriteType = { name = "GFX_TFRKP_regiondev_doc" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_doc.png" }
+	spriteType = { name = "GFX_TFRKP_regiondev_secret" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_secret.png" }
+	spriteType = { name = "GFX_TFRKP_regiondev_agenda_button" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_agenda_button.png" noOfFrames = 3 }
+	spriteType = { name = "GFX_TFRKP_regiondev_cancel_button" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_cancel_button.png" noOfFrames = 3 }
+	spriteType = { name = "GFX_TFRKP_regiondev_progress_bar" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_progress_bar.png" noOfFrames = 21 }
+	spriteType = { name = "GFX_TFRKP_regiondev_map_gyeonggi" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_map_gyeonggi.png" noOfFrames = 2 transparencecheck = yes }
+	spriteType = { name = "GFX_TFRKP_regiondev_map_gangwon" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_map_gangwon.png" noOfFrames = 2 transparencecheck = yes }
+	spriteType = { name = "GFX_TFRKP_regiondev_map_chungcheong" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_map_chungcheong.png" noOfFrames = 2 transparencecheck = yes }
+	spriteType = { name = "GFX_TFRKP_regiondev_map_honam" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_map_honam.png" noOfFrames = 2 transparencecheck = yes }
+	spriteType = { name = "GFX_TFRKP_regiondev_map_yeongnam" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_map_yeongnam.png" noOfFrames = 2 transparencecheck = yes }
+	spriteType = { name = "GFX_TFRKP_regiondev_map_jeju" texturefile = "gfx/interface/GUI/kimminseok_reform/regiondev_map_jeju.png" noOfFrames = 2 transparencecheck = yes }
+}

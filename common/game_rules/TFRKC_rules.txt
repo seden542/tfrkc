@@ -1,0 +1,1 @@
+TFRKC_development = { name = TFRKC_test_rule group = RULE_GROUP_EAST_ASIAN default = { name = TFRKC_test_off text = TFRKC_test_off desc = TFRKC_test_off_desc } option = { name = TFRKC_test_on text = TFRKC_test_on desc = TFRKC_test_on_desc } }

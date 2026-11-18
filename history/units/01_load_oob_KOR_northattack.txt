@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Sinsok-Daeung Sadan (GAW)"
+	division_names_group = KOR_INF_02
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }	
+	}
+	
+	support = {
+		logistics_company = { x = 0 y = 0}
+		helicopter_recon = { x = 0 y = 1}
+		signal_company = { x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Gidong Sadan (GAW)"
+	division_names_group = KOR_INF_03
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 1 }
+		motorized_rocket_brigade_short = { x = 3 y = 2 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_company = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_car_recon = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3 #노도
+		}
+		location = 7175
+		division_template = "Sinsok-Daeung Sadan (GAW)"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14 #결전
+		}
+		location = 7175
+		division_template = "Gidong Sadan (GAW)"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19 #불무리
+		}
+		location = 7175
+		division_template = "Gidong Sadan (GAW)"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22 #태권
+		}
+		location = 7175
+		division_template = "Gidong Sadan (GAW)"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_chassis_1 = { owner = KOR creator = KOR version_name = "K-1A1/A2 '88 tank'" } }
+	}
+}

@@ -1,0 +1,12 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZUS security" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 ZUS armor" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+division_template = { name = "TFRKC v5 ZUS mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "ZUS security 1" location = 15378 division_template = "TFRKC v5 ZUS security" start_manpower_factor = 0.7 start_equipment_factor = 0.8 start_experience_factor = 0.5 }
+ division = { name = "ZUS security 2" location = 15379 division_template = "TFRKC v5 ZUS security" start_manpower_factor = 0.7 start_equipment_factor = 0.8 start_experience_factor = 0.5 }
+ division = { name = "ZUS security 3" location = 15468 division_template = "TFRKC v5 ZUS security" start_manpower_factor = 0.7 start_equipment_factor = 0.8 start_experience_factor = 0.5 }
+ division = { name = "ZUS security 4" location = 15357 division_template = "TFRKC v5 ZUS security" start_manpower_factor = 0.7 start_equipment_factor = 0.8 start_experience_factor = 0.5 }
+ division = { name = "ZUS armor 1" location = 14235 division_template = "TFRKC v5 ZUS armor" start_manpower_factor = 0.7 start_equipment_factor = 0.8 start_experience_factor = 0.5 }
+ division = { name = "ZUS mobile 1" location = 15100 division_template = "TFRKC v5 ZUS mobile" start_manpower_factor = 0.7 start_equipment_factor = 0.8 start_experience_factor = 0.5 }
+}

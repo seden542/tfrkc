@@ -1,0 +1,4 @@
+TFRKC_category = {
+ TFRKC_start_test = { visible = { tag = KOR has_game_rule = { rule = TFRKC_development option = TFRKC_test_on } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } } available = { has_war = no } cost = 0 fire_only_once = yes complete_effect = { country_event = { id = tfrkc.90 } } ai_will_do = { factor = 0 } }
+ TFRKC_restore_administration = { visible = { has_idea = TFRKC_government_disruption } available = { has_global_flag = TFRKC_civilwar_active } cost = 75 days_remove = 30 fire_only_once = yes remove_effect = { remove_ideas = TFRKC_government_disruption add_stability = 0.05 } ai_will_do = { factor = 5 } }
+}

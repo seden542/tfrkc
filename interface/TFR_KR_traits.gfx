@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_KOR_chung_arm"
+		texturefile = "gfx/interface/traits/trait_KOR_chung_arm.png"
+	}
+	spriteType = {
+		name = "GFX_trait_KOR_yong_hyun"
+		texturefile = "gfx/interface/traits/trait_KOR_yong_hyun.png"
+	}	
+}
+

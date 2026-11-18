@@ -1,0 +1,11 @@
+division_template = { name = "TFRKC city KBD 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC city KBD 1" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } }  }
+division_template = { name = "TFRKC city KBD 2" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } }  }
+units = {
+division = { name = "국가채권회수단 제1전투단" location = 15158 division_template = "TFRKC city KBD 0" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.6 }
+division = { name = "국가채권회수단 제2전투단" location = 15158 division_template = "TFRKC city KBD 0" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.6 }
+division = { name = "국가채권회수단 제3전투단" location = 15158 division_template = "TFRKC city KBD 0" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.6 }
+division = { name = "국가채권회수단 제4전투단" location = 15158 division_template = "TFRKC city KBD 1" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.6 }
+division = { name = "국가채권회수단 제5전투단" location = 15158 division_template = "TFRKC city KBD 1" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.6 }
+division = { name = "국가채권회수단 제6전투단" location = 15158 division_template = "TFRKC city KBD 2" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.6 }
+}

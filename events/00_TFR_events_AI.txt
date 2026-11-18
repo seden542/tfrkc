@@ -1,0 +1,169 @@
+add_namespace = ai_events
+
+country_event = {
+	id = ai_events.100
+	hidden = yes
+
+	trigger = {
+		AND = {
+			JAP = {
+				is_faction_leader = yes
+			}
+			CHI = {
+				has_war_with = PRC
+				is_in_faction_with = JAP
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event ai_events.100 option 1"
+		KOR = {
+			country_event = { id = korea.53 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = ai_events.200
+	hidden = yes
+
+	trigger = {
+		AND = {
+			USB = {
+				has_war_with = USC
+				is_faction_leader = yes
+			}
+			USC = {
+				has_war_with = USB
+				is_faction_leader = yes
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event ai_events.200 option 1"
+		KOR = {
+			country_event = { id = korea.64 days = 2 }
+			swap_ideas = {
+				remove_idea = KOR_imf_idea
+				add_idea = KOR_imf_idea_2
+			}
+			set_country_flag = KOR_economic_crisis
+		}
+	}
+}
+
+country_event = {
+	id = ai_events.300
+	hidden = yes
+
+	trigger = {
+		AND = {
+			SAU = {
+				has_war_with = ROC
+			}
+			ROC = {
+				has_war_with = SAU
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event ai_events.300 option 1"
+		news_event = { id = kor_news.2 days = 5 }
+		KOR = {
+			country_event = { id = korea.8 days = 7 }
+			country_event = { id = korea.66 days = 13 }
+		}
+	}
+}
+
+country_event = {
+	id = ai_events.101
+	hidden = yes
+
+	trigger = {
+		has_global_flag = PRC_taiwan_war_won
+		CHI = {
+			NOT = { has_war_with = PRC }
+			OR = {
+				exists = no
+				is_in_faction = no
+				is_subject = yes
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event ai_events.101 option 1"
+		KOR = {
+			country_event = { id = korea.11 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = ai_events.201
+	hidden = yes
+
+	trigger = {
+		has_global_flag = PRC_taiwan_war_lost
+		CHI = {
+			NOT = { has_war_with = PRC }
+			OR = {
+				exists = yes
+				is_in_faction = yes
+				is_subject = no
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event ai_events.201 option 1"
+		KOR = {
+			country_event = { id = korea.22 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = ai_events.400
+	hidden = yes
+
+	trigger = {
+		AND = {
+			KOR = {
+				has_war_with = PRK
+			}
+			PRK = {
+				has_war_with = KOR
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		log = "[GetLogInfo]: event ai_events.400 option 1"
+		KOR = {
+			country_event = { id = korea.186 hours = 4 }
+		}
+	}
+}

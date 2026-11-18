@@ -1,0 +1,308 @@
+# PRK epidemic system
+# Regional and nationwide infection variables use a normalized 0.00-1.00 range.
+
+PRK_epidemic_update_effect = {
+	clamp_variable = { var = PRK_pyongan_infection_var min = 0 max = 1 }
+	clamp_variable = { var = PRK_hwanghae_infection_var min = 0 max = 1 }
+	clamp_variable = { var = PRK_kangwon_infection_var min = 0 max = 1 }
+	clamp_variable = { var = PRK_hamgyong_infection_var min = 0 max = 1 }
+	clamp_variable = { var = PRK_ryanggang_infection_var min = 0 max = 1 }
+	clamp_variable = { var = PRK_chagang_infection_var min = 0 max = 1 }
+	clamp_variable = { var = PRK_epidemic_containment_var min = 0 max = 0.10 }
+	clamp_variable = { var = PRK_epidemic_supplies_var min = 0 max = 100 }
+
+	set_variable = { PRK_national_infection_var = PRK_pyongan_infection_var }
+	add_to_variable = { PRK_national_infection_var = PRK_hwanghae_infection_var }
+	add_to_variable = { PRK_national_infection_var = PRK_kangwon_infection_var }
+	add_to_variable = { PRK_national_infection_var = PRK_hamgyong_infection_var }
+	add_to_variable = { PRK_national_infection_var = PRK_ryanggang_infection_var }
+	add_to_variable = { PRK_national_infection_var = PRK_chagang_infection_var }
+	divide_variable = { PRK_national_infection_var = 6 }
+	clamp_variable = { var = PRK_national_infection_var min = 0 max = 1 }
+
+	set_variable = { PRK_epidemic_current_spread_var = 0.16 }
+	set_temp_variable = { PRK_epidemic_containment_negative_temp = PRK_epidemic_containment_var }
+	multiply_temp_variable = { PRK_epidemic_containment_negative_temp = -1 }
+	add_to_variable = { PRK_epidemic_current_spread_var = PRK_epidemic_containment_negative_temp }
+	clamp_variable = { var = PRK_epidemic_current_spread_var min = 0.06 max = 0.16 }
+
+	set_variable = { PRK_virus_political_power_gain_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_political_power_gain_var = -0.50 }
+	set_variable = { PRK_virus_stability_factor_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_stability_factor_var = -0.25 }
+	set_variable = { PRK_virus_war_support_factor_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_war_support_factor_var = -0.15 }
+	set_variable = { PRK_virus_consumer_goods_factor_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_consumer_goods_factor_var = 0.15 }
+	set_variable = { PRK_virus_factory_output_factor_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_factory_output_factor_var = -0.35 }
+	set_variable = { PRK_virus_construction_speed_factor_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_construction_speed_factor_var = -0.30 }
+	set_variable = { PRK_virus_research_speed_factor_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_research_speed_factor_var = -0.15 }
+	set_variable = { PRK_virus_society_development_monthly_var = PRK_national_infection_var }
+	multiply_variable = { PRK_virus_society_development_monthly_var = -0.01 }
+
+	if = {
+		limit = {
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.40 }
+			NOT = { has_country_flag = PRK_virus_warning_40 }
+		}
+		set_country_flag = PRK_virus_warning_40
+		country_event = { id = korea.1554 hours = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.60 }
+			NOT = { has_country_flag = PRK_virus_warning_60 }
+		}
+		set_country_flag = PRK_virus_warning_60
+		country_event = { id = korea.1555 hours = 1 }
+	}
+	if = {
+		limit = {
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.80 }
+			NOT = { has_country_flag = PRK_virus_warning_80 }
+		}
+		set_country_flag = PRK_virus_warning_80
+		country_event = { id = korea.1556 hours = 1 }
+	}
+}
+
+# Kept after PRK_epidemic_update_effect so incremental database reloads can
+# resolve the scripted-effect reference on their first pass.
+PRK_epidemic_setup_effect = {
+	set_country_flag = PRK_virus_crisis_active
+	clr_country_flag = PRK_virus_crisis_over
+	clr_country_flag = PRK_virus_first_outbreak
+	clr_country_flag = PRK_virus_warning_40
+	clr_country_flag = PRK_virus_warning_60
+	clr_country_flag = PRK_virus_warning_80
+	clr_country_flag = PRK_virus_breakthrough_1560
+	clr_country_flag = PRK_virus_breakthrough_1561
+	clr_country_flag = PRK_virus_breakthrough_1562
+	clr_country_flag = PRK_epidemic_reserve_units_prepared
+	set_country_flag = PRK_virus_spread_stage_1
+	clr_country_flag = PRK_virus_spread_stage_2
+	clr_country_flag = PRK_virus_spread_stage_3
+
+	set_variable = { PRK_pyongan_infection_var = 0 }
+	set_variable = { PRK_hwanghae_infection_var = 0 }
+	set_variable = { PRK_kangwon_infection_var = 0 }
+	set_variable = { PRK_hamgyong_infection_var = 0 }
+	set_variable = { PRK_ryanggang_infection_var = 0 }
+	set_variable = { PRK_chagang_infection_var = 0 }
+	set_variable = { PRK_national_infection_var = 0 }
+	set_variable = { PRK_epidemic_containment_var = 0 }
+	set_variable = { PRK_epidemic_current_spread_var = 0.16 }
+	set_variable = { PRK_epidemic_supplies_var = 20 }
+
+	set_variable = { PRK_virus_political_power_gain_var = 0 }
+	set_variable = { PRK_virus_stability_factor_var = 0 }
+	set_variable = { PRK_virus_war_support_factor_var = 0 }
+	set_variable = { PRK_virus_consumer_goods_factor_var = 0 }
+	set_variable = { PRK_virus_factory_output_factor_var = 0 }
+	set_variable = { PRK_virus_construction_speed_factor_var = 0 }
+	set_variable = { PRK_virus_research_speed_factor_var = 0 }
+	set_variable = { PRK_virus_society_development_monthly_var = 0 }
+
+	add_dynamic_modifier = { modifier = PRK_malignant_virus_dynamic }
+	PRK_epidemic_update_effect = yes
+	activate_mission = PRK_virus_spread_mission
+	activate_mission = PRK_virus_stage_2_countdown_mission
+	activate_mission = PRK_epidemic_supply_production_mission
+}
+
+PRK_epidemic_random_breakthrough_effect = {
+	if = {
+		limit = {
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.05 }
+			OR = {
+				NOT = { has_country_flag = PRK_virus_breakthrough_1560 }
+				NOT = { has_country_flag = PRK_virus_breakthrough_1561 }
+				NOT = { has_country_flag = PRK_virus_breakthrough_1562 }
+			}
+		}
+		random_list = {
+			70 = { }
+			10 = {
+				if = {
+					limit = { NOT = { has_country_flag = PRK_virus_breakthrough_1560 } }
+					set_country_flag = PRK_virus_breakthrough_1560
+					country_event = { id = korea.1560 hours = 1 }
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						check_variable = { PRK_national_infection_var > 0.15 }
+						NOT = { has_country_flag = PRK_virus_breakthrough_1561 }
+					}
+					set_country_flag = PRK_virus_breakthrough_1561
+					country_event = { id = korea.1561 hours = 1 }
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						check_variable = { PRK_national_infection_var > 0.30 }
+						NOT = { has_country_flag = PRK_virus_breakthrough_1562 }
+					}
+					set_country_flag = PRK_virus_breakthrough_1562
+					country_event = { id = korea.1562 hours = 1 }
+				}
+			}
+		}
+	}
+}
+
+PRK_epidemic_spread_effect = {
+	if = {
+		limit = { NOT = { has_country_flag = PRK_virus_first_outbreak } }
+		set_country_flag = PRK_virus_first_outbreak
+		add_to_variable = { PRK_hwanghae_infection_var = 0.25 }
+		PRK_epidemic_update_effect = yes
+		country_event = { id = korea.1553 hours = 1 }
+	}
+	else = {
+		PRK_epidemic_update_effect = yes
+
+		# Undetected local transmission continues in every province.
+		add_to_variable = { PRK_pyongan_infection_var = 0.01 }
+		add_to_variable = { PRK_hwanghae_infection_var = 0.01 }
+		add_to_variable = { PRK_kangwon_infection_var = 0.01 }
+		add_to_variable = { PRK_hamgyong_infection_var = 0.01 }
+		add_to_variable = { PRK_ryanggang_infection_var = 0.01 }
+		add_to_variable = { PRK_chagang_infection_var = 0.01 }
+
+		if = {
+			limit = { has_country_flag = PRK_epidemic_reserve_units_prepared }
+			clr_country_flag = PRK_epidemic_reserve_units_prepared
+		}
+		else = {
+			random_list = {
+				1 = { add_to_variable = { PRK_pyongan_infection_var = PRK_epidemic_current_spread_var } }
+				1 = { add_to_variable = { PRK_hwanghae_infection_var = PRK_epidemic_current_spread_var } }
+				1 = { add_to_variable = { PRK_kangwon_infection_var = PRK_epidemic_current_spread_var } }
+				1 = { add_to_variable = { PRK_hamgyong_infection_var = PRK_epidemic_current_spread_var } }
+				1 = { add_to_variable = { PRK_ryanggang_infection_var = PRK_epidemic_current_spread_var } }
+				1 = { add_to_variable = { PRK_chagang_infection_var = PRK_epidemic_current_spread_var } }
+			}
+
+			if = {
+				limit = { check_variable = { PRK_national_infection_var > 0.20 } }
+				random_list = {
+					50 = { }
+					50 = {
+						random_list = {
+							1 = { add_to_variable = { PRK_pyongan_infection_var = PRK_epidemic_current_spread_var } }
+							1 = { add_to_variable = { PRK_hwanghae_infection_var = PRK_epidemic_current_spread_var } }
+							1 = { add_to_variable = { PRK_kangwon_infection_var = PRK_epidemic_current_spread_var } }
+							1 = { add_to_variable = { PRK_hamgyong_infection_var = PRK_epidemic_current_spread_var } }
+							1 = { add_to_variable = { PRK_ryanggang_infection_var = PRK_epidemic_current_spread_var } }
+							1 = { add_to_variable = { PRK_chagang_infection_var = PRK_epidemic_current_spread_var } }
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = { check_variable = { PRK_national_infection_var > 0.40 } }
+				random_list = {
+					1 = { add_to_variable = { PRK_pyongan_infection_var = PRK_epidemic_current_spread_var } }
+					1 = { add_to_variable = { PRK_hwanghae_infection_var = PRK_epidemic_current_spread_var } }
+					1 = { add_to_variable = { PRK_kangwon_infection_var = PRK_epidemic_current_spread_var } }
+					1 = { add_to_variable = { PRK_hamgyong_infection_var = PRK_epidemic_current_spread_var } }
+					1 = { add_to_variable = { PRK_ryanggang_infection_var = PRK_epidemic_current_spread_var } }
+					1 = { add_to_variable = { PRK_chagang_infection_var = PRK_epidemic_current_spread_var } }
+				}
+			}
+		}
+
+		if = {
+			limit = { check_variable = { PRK_national_infection_var > 0.60 } }
+			add_to_variable = { PRK_pyongan_infection_var = 0.01 }
+			add_to_variable = { PRK_hwanghae_infection_var = 0.01 }
+			add_to_variable = { PRK_kangwon_infection_var = 0.01 }
+			add_to_variable = { PRK_hamgyong_infection_var = 0.01 }
+			add_to_variable = { PRK_ryanggang_infection_var = 0.01 }
+			add_to_variable = { PRK_chagang_infection_var = 0.01 }
+		}
+
+		PRK_epidemic_update_effect = yes
+		PRK_epidemic_random_breakthrough_effect = yes
+	}
+}
+
+PRK_epidemic_all_infection_change_effect = {
+	add_to_variable = { PRK_pyongan_infection_var = PRK_infection_change_temp }
+	add_to_variable = { PRK_hwanghae_infection_var = PRK_infection_change_temp }
+	add_to_variable = { PRK_kangwon_infection_var = PRK_infection_change_temp }
+	add_to_variable = { PRK_hamgyong_infection_var = PRK_infection_change_temp }
+	add_to_variable = { PRK_ryanggang_infection_var = PRK_infection_change_temp }
+	add_to_variable = { PRK_chagang_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+
+PRK_epidemic_pyongan_change_effect = {
+	add_to_variable = { PRK_pyongan_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+PRK_epidemic_hwanghae_change_effect = {
+	add_to_variable = { PRK_hwanghae_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+PRK_epidemic_kangwon_change_effect = {
+	add_to_variable = { PRK_kangwon_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+PRK_epidemic_hamgyong_change_effect = {
+	add_to_variable = { PRK_hamgyong_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+PRK_epidemic_ryanggang_change_effect = {
+	add_to_variable = { PRK_ryanggang_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+PRK_epidemic_chagang_change_effect = {
+	add_to_variable = { PRK_chagang_infection_var = PRK_infection_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+
+PRK_epidemic_response_change_effect = {
+	add_to_variable = { PRK_epidemic_containment_var = PRK_epidemic_response_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+
+PRK_epidemic_supplies_change_effect = {
+	add_to_variable = { PRK_epidemic_supplies_var = PRK_epidemic_supplies_change_temp }
+	PRK_epidemic_update_effect = yes
+}
+
+PRK_epidemic_end_effect = {
+	clr_country_flag = PRK_virus_crisis_active
+	set_country_flag = PRK_virus_crisis_over
+	clr_country_flag = PRK_virus_spread_stage_1
+	clr_country_flag = PRK_virus_spread_stage_2
+	clr_country_flag = PRK_virus_spread_stage_3
+	clr_country_flag = PRK_epidemic_reserve_units_prepared
+	remove_mission = PRK_virus_spread_mission
+	remove_mission = PRK_virus_spread_mission_stage_2
+	remove_mission = PRK_virus_spread_mission_stage_3
+	remove_mission = PRK_virus_stage_2_countdown_mission
+	remove_mission = PRK_virus_stage_3_countdown_mission
+	remove_mission = PRK_epidemic_supply_production_mission
+	remove_dynamic_modifier = { modifier = PRK_malignant_virus_dynamic }
+	set_variable = { PRK_pyongan_infection_var = 0 }
+	set_variable = { PRK_hwanghae_infection_var = 0 }
+	set_variable = { PRK_kangwon_infection_var = 0 }
+	set_variable = { PRK_hamgyong_infection_var = 0 }
+	set_variable = { PRK_ryanggang_infection_var = 0 }
+	set_variable = { PRK_chagang_infection_var = 0 }
+	set_variable = { PRK_national_infection_var = 0 }
+	set_variable = { PRK_epidemic_supplies_var = 0 }
+}

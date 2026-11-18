@@ -1,0 +1,28 @@
+﻿l_english:
+ ### Only Korean Cabinet
+ # if you want to use Cabinet, do TFRKP_cabinet_enable_flag
+ # You want to set HoG in Game with console and some reason to use submod, [local_key]_flag is HoG Setup Rule in TFRKP.
+
+ ###Hog
+ KOR_hog_vacant: "Head of State: §H Vacant §!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_vacant\n\n\n\n\n\n\n\n\n-------------------------------------"
+ KOR_hog_kim_moon_soo: "Prime Minister: §HKim Moon-soo§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_kim_moon_soo\n\n\n\n\n\n\n\n\n------------------------------------- \n§L$KOR_kim_moon_soo_char_minister_desc$§!"
+ KOR_hog_kim_moon_soo_communist: "Prime Minister: §HKim Moon-soo§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_kim_moon_soo_communist\n\n\n\n\n\n\n\n\n------------------------------------- \n§L$KOR_kim_moon_soo_char_minister_desc$§!"
+ KOR_hog_im_jong_seok: "Prime Minister: §HIm Jong-seok§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_im_jong_seok\n\n\n\n\n\n\n\n\n------------------------------------- "
+ KOR_hog_kim_bu_gyeom: "Prime Minister: §HKim Boo-kyum§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_kim_bu_gyeom\n\n\n\n\n\n\n\n\n------------------------------------- "
+ KOR_hog_ha_tae_kyung: "Prime Minister: §HHa Tae-kyung§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_ha_tae_kyung\n\n\n\n\n\n\n\n\n------------------------------------- "
+ KOR_hog_nam_yeong_shin: "Prime Minister: §HNam Yeong-shin§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_nam_yeong_shin\n\n\n\n\n\n\n\n\n------------------------------------- \n§L$KOR_nam_young_sin_char_desc$§!"
+
+ #Just Submod
+ KOR_hog_yi_won_emperor: "Emperor: §HYi Won§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_yi_won_char_emperor\n\n\n\n\n\n\n\n\n-------------------------------------"
+ KOR_hog_yi_yeongju_emperor: "Emperor: §HYi Yeong-ju§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_yi_yeongju_char_emperor\n\n\n\n\n\n\n\n\n-------------------------------------"
+ KOR_hog_yi_seok_emperor: "Emperor: §HYi Seok§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_yi_seok_char_emperor\n\n\n\n\n\n\n\n\n-------------------------------------"
+ KOR_hog_yi_won_joon_emperor: "Emperor: §HYi Won-jun§!\n\n\n\n\n\n\n\n   £GFX_KOR_hog_yi_won_joon_char_emperor\n\n\n\n\n\n\n\n\n-------------------------------------"
+
+ ###Korea Name
+ KOR_hog_name_rok: "§HHead of Government of the Republic of Korea§!"
+ KOR_hog_name_goryeo: "§H Head of Government of the Democratic Federal Republic of Koryo §!"
+
+ #Just Submod
+ KOR_hog_name_eok: "§H Head of State of the Korean Empire §!"
+ KOR_hog_name_sok: "§HHead of State of the Great Korean State§!"
+

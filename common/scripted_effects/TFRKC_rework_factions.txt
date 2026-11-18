@@ -1,0 +1,41 @@
+# Domestic factions only. Called before the first declaration and on late arrival.
+TFRKC_rework_establish_factions_effect = {
+ if = { limit = { TFRKC_rework_map_ready_trigger = yes has_global_flag = TFRKC_rework_partition_complete has_global_flag = TFRKC_rework_start_requested NOT = { has_global_flag = TFRKC_civilwar_finished } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_faction_DAEGU_COMMUNE } KWC = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } }
+   KWC = { create_faction = TFRKC_rework_bloc_DAEGU_COMMUNE
+    if = { limit = { KLF = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } } KLF = { set_rule = { can_join_factions = yes } } add_to_faction = KLF KLF = { set_rule = { can_join_factions = no } } }
+   }
+   if = { limit = { KWC = { is_in_faction = yes } } set_global_flag = TFRKC_rework_faction_DAEGU_COMMUNE }
+  }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_faction_ARMED_FORCES } KRC = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } }
+   KRC = { create_faction = TFRKC_rework_bloc_ARMED_FORCES
+    if = { limit = { ZAF = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } } ZAF = { set_rule = { can_join_factions = yes } } add_to_faction = ZAF ZAF = { set_rule = { can_join_factions = no } } }
+   }
+   if = { limit = { KRC = { is_in_faction = yes } } set_global_flag = TFRKC_rework_faction_ARMED_FORCES }
+  }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_faction_REPUBLIC } KOR = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } }
+   KOR = { create_faction = TFRKC_rework_bloc_REPUBLIC
+    if = { limit = { KCH = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } } KCH = { set_rule = { can_join_factions = yes } } add_to_faction = KCH KCH = { set_rule = { can_join_factions = no } } }
+   }
+   if = { limit = { KOR = { is_in_faction = yes } } set_global_flag = TFRKC_rework_faction_REPUBLIC }
+  }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_faction_YOON_AGAIN } KYA = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } }
+   KYA = { create_faction = TFRKC_rework_bloc_YOON_AGAIN
+    if = { limit = { ZSL = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } } ZSL = { set_rule = { can_join_factions = yes } } add_to_faction = ZSL ZSL = { set_rule = { can_join_factions = no } } }
+    if = { limit = { ZUS = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } } ZUS = { set_rule = { can_join_factions = yes } } add_to_faction = ZUS ZUS = { set_rule = { can_join_factions = no } } }
+   }
+   if = { limit = { KYA = { is_in_faction = yes } } set_global_flag = TFRKC_rework_faction_YOON_AGAIN }
+  }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_faction_DEMOCRATIC_PARTY } ZRD = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } }
+   ZRD = { create_faction = TFRKC_rework_bloc_DEMOCRATIC_PARTY
+   }
+   if = { limit = { ZRD = { is_in_faction = yes } } set_global_flag = TFRKC_rework_faction_DEMOCRATIC_PARTY }
+  }
+  # Use the surviving domestic ally if the original commune leader has fallen.
+  if = { limit = { KPL = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = no } }
+   if = { limit = { KWC = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = yes } } KPL = { set_rule = { can_join_factions = yes } } KWC = { add_to_faction = KPL } KPL = { set_rule = { can_join_factions = no } } }
+   else_if = { limit = { KLF = { exists = yes has_country_flag = TFRKC_rework_participant is_in_faction = yes } } KPL = { set_rule = { can_join_factions = yes } } KLF = { add_to_faction = KPL } KPL = { set_rule = { can_join_factions = no } } }
+   else_if = { limit = { NOT = { country_exists = KWC } NOT = { country_exists = KLF } NOT = { has_global_flag = TFRKC_rework_KPL_successor_faction } } KPL = { create_faction = TFRKC_rework_bloc_DAEGU_COMMUNE } set_global_flag = TFRKC_rework_KPL_successor_faction }
+  }
+ }
+}

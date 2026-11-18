@@ -1,0 +1,12 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZGT militia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC v5 ZGT mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "ZGT militia 1" location = 15422 division_template = "TFRKC v5 ZGT militia" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+ division = { name = "ZGT militia 2" location = 15423 division_template = "TFRKC v5 ZGT militia" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+ division = { name = "ZGT militia 3" location = 15427 division_template = "TFRKC v5 ZGT militia" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+ division = { name = "ZGT militia 4" location = 15087 division_template = "TFRKC v5 ZGT militia" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+ division = { name = "ZGT militia 5" location = 12085 division_template = "TFRKC v5 ZGT militia" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+ division = { name = "ZGT militia 6" location = 15428 division_template = "TFRKC v5 ZGT militia" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+ division = { name = "ZGT mobile 1" location = 15422 division_template = "TFRKC v5 ZGT mobile" start_manpower_factor = 0.75 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+}

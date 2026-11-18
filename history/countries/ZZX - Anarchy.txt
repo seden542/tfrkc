@@ -1,0 +1,14 @@
+﻿capital = 1443
+set_country_flag = shithole_country
+recruit_character = ZZX_anarchy_char
+
+set_politics = {
+	ruling_party = libertarian_socialist
+	last_election = "2018.11.13"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	libertarian_socialist = 100
+}

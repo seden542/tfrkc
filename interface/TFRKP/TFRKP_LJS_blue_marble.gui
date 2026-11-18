@@ -1,0 +1,294 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_KOR_LJS_blue_marble_container"
+		size = { width = 100%% height = 392 }
+
+		
+		containerWindowType = {
+			name = "TFR_KOR_LJS_blue_marble_map_container"
+			position = { x = 0 y = 0 }
+			size = { width = 280 height = 388 }
+
+			background = {
+				name = "background"
+				spriteType = "GFX_tiled_decisions_bg_small"
+				alwaystransparent = yes
+			}
+
+			containerWindowType = {
+				name = "TFR_KOR_LJS_blue_marble_map_title_container"
+				position = { x = 1 y = 0 }
+				size = { width = 278 height = 30 }
+
+				background = {
+					name = "background"
+					spriteType = "GFX_tiled_header_1"
+					alwaystransparent = yes
+				}
+
+				instantTextBoxType = {
+					name = "TFR_KOR_LJS_blue_marble_map_title_container_textbox"
+					position = { x = -130 y = 2 }
+					orientation = CENTER_UP
+					text = "KOR_LJS_blue_marble_title_text"
+					font = "hoi_18mbs"
+					format = left
+					maxWidth = 300
+					alwaystransparent = yes
+				}
+			}
+
+			buttonType = {
+				name = "TFR_KOR_LJS_blue_marble_map_LJS_gangwon"
+				position = { x = 81 y = 16 }
+				spriteType = "GFX_LJS_map_gangwon"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "TFR_KOR_LJS_blue_marble_map_LJS_chungcheong"
+				position = { x = 19 y = 123 }
+				spriteType = "GFX_LJS_map_chungcheong"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "TFR_KOR_LJS_blue_marble_map_gyeonggi"
+				position = { x = 26 y = 44 }
+				spriteType = "GFX_LJS_map_gyeonggi"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "TFR_KOR_LJS_blue_marble_map_LJS_gyeongsang"
+				position = { x = 112 y = 130 }
+				spriteType = "GFX_LJS_map_gyeongsang"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "TFR_KOR_LJS_blue_marble_map_LJS_jeolla"
+				position = { x = 0 y = 210 }
+				spriteType = "GFX_LJS_map_jeolla"
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "TFR_KOR_LJS_blue_marble_map_LJS_jeju"
+				position = { x = 190 y = 315 }
+				spriteType = "GFX_LJS_map_jeju"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_map_outline"
+				position = { x = 0 y = 15 }
+				spriteType = GFX_LJS_map_bg
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_gyeonggi_semiconductor_belt"
+				position = { x = 82 y = 120 }
+				spriteType = "GFX_LJS_icon_semiconductor"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_gyeonggi_semiconductor_belt_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_ktx_sejong_station"
+				position = { x = 94 y = 154 }
+				spriteType = "GFX_LJS_icon_train"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_ktx_sejong_station_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_sejong_capital_promise"
+				position = { x = 97 y = 164 }
+				spriteType = "GFX_LJS_icon_capital"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_sejong_capital_promise_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_daejeon_science_capital"
+				position = { x = 102 y = 187 }
+				spriteType = "GFX_LJS_icon_science"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_daejeon_science_capital_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_gwangju_complex_mall"
+				position = { x = 70 y = 282 }
+				spriteType = "GFX_LJS_icon_shopping"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_gwangju_complex_mall_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_heuksan_airport"
+				position = { x = 5 y = 304 }
+				spriteType = "GFX_LJS_icon_airport"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_heuksan_airport_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_yeosu_high_value"
+				position = { x = 108 y = 314 }
+				spriteType = "GFX_LJS_icon_industry"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_yeosu_high_value_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_gunsan_logistics"
+				position = { x = 52 y = 209 }
+				spriteType = "GFX_LJS_icon_port"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_gunsan_logistics_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_saemangeum_megacity"
+				position = { x = 41 y = 225 }
+				spriteType = "GFX_LJS_icon_saemangeum"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_saemangeum_megacity_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_jeonbuk_finance_city"
+				position = { x = 80 y = 238 }
+				spriteType = "GFX_LJS_icon_finance"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_jeonbuk_finance_city_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_korean_rustbelt"
+				position = { x = 226 y = 232 }
+				spriteType = "GFX_LJS_icon_finance"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_korean_rustbelt_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_yeongil_ulleung_infra"
+				position = { x = 249 y = 176 }
+				spriteType = "GFX_LJS_icon_airport"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_yeongil_ulleung_infra_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_manufacturing_rebound"
+				position = { x = 193 y = 232 }
+				spriteType = "GFX_LJS_icon_industry"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_manufacturing_rebound_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_busan_data_zone"
+				position = { x = 210 y = 258 }
+				spriteType = "GFX_LJS_icon_data"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_busan_data_zone_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_busan_global_idc"
+				position = { x = 206 y = 274 }
+				spriteType = "GFX_LJS_icon_data"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_busan_global_idc_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_south_coast_data_centers"
+				position = { x = 188 y = 286 }
+				spriteType = "GFX_LJS_icon_data"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_south_coast_data_centers_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_jeju_second_airport"
+				position = { x = 219 y = 330 }
+				spriteType = "GFX_LJS_icon_airport"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_jeju_second_airport_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_marker_jeju_ai_testbed"
+				position = { x = 242 y = 330 }
+				spriteType = "GFX_LJS_icon_data"
+				pdx_tooltip = KOR_LJS_blue_marble_marker_jeju_ai_testbed_tt
+			}
+		}
+
+		containerWindowType = {
+			name = "TFR_KOR_LJS_blue_marble_region_cards_container"
+			position = { x = 283 y = 8 }
+			size = { width = 125 height = 370 }
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_empty_1"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_LJS_region_card"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_empty_2"
+				position = { x = 0 y = 75 }
+				spriteType = "GFX_LJS_region_card"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_empty_3"
+				position = { x = 0 y = 150 }
+				spriteType = "GFX_LJS_region_card"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_empty_4"
+				position = { x = 0 y = 225 }
+				spriteType = "GFX_LJS_region_card"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_empty_5"
+				position = { x = 0 y = 300 }
+				spriteType = "GFX_LJS_region_card"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_1"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_LJS_region_card_gyeonggi"
+				pdx_tooltip = KOR_LJS_blue_marble_region_card_1_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_2"
+				position = { x = 0 y = 75 }
+				spriteType = "GFX_LJS_region_card_chungcheong"
+				pdx_tooltip = KOR_LJS_blue_marble_region_card_2_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_3"
+				position = { x = 0 y = 150 }
+				spriteType = "GFX_LJS_region_card_jeolla"
+				pdx_tooltip = KOR_LJS_blue_marble_region_card_3_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_4"
+				position = { x = 0 y = 225 }
+				spriteType = "GFX_LJS_region_card_gyeongsang"
+				pdx_tooltip = KOR_LJS_blue_marble_region_card_4_tt
+			}
+
+			iconType = {
+				name = "TFR_KOR_LJS_blue_marble_region_card_5"
+				position = { x = 0 y = 300 }
+				spriteType = "GFX_LJS_region_card_jeju"
+				pdx_tooltip = KOR_LJS_blue_marble_region_card_5_tt
+			}
+		}
+		
+	}
+}

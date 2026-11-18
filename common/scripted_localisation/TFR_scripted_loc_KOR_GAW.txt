@@ -1,0 +1,2179 @@
+defined_text = {
+	name = GAW_map_image_nk
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_nk = 1
+			}
+		}
+		localization_key = "GFX_GAW_northkorea_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_nk = 2
+			}
+		}
+		localization_key = "GFX_GAW_northkorea_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_northkorea_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_gd
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_gd = 1
+			}
+		}
+		localization_key = "GFX_GAW_jiandao_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_gd = 2
+			}
+		}
+		localization_key = "GFX_GAW_jiandao_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_jiandao_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_mc
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_mc = 1
+			}
+		}
+		localization_key = "GFX_GAW_manchuria_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_mc = 2
+			}
+		}
+		localization_key = "GFX_GAW_manchuria_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_manchuria_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_hb
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_hb = 1
+			}
+		}
+		localization_key = "GFX_GAW_huabei_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_hb = 2
+			}
+		}
+		localization_key = "GFX_GAW_huabei_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_huabei_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_jd
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_jd = 1
+			}
+		}
+		localization_key = "GFX_GAW_jiangdong_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_jd = 2
+			}
+		}
+		localization_key = "GFX_GAW_jiangdong_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_jiangdong_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_hz
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_hz = 1
+			}
+		}
+		localization_key = "GFX_GAW_huazhong_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_hz = 2
+			}
+		}
+		localization_key = "GFX_GAW_huazhong_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_huazhong_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_lg
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_lg = 1
+			}
+		}
+		localization_key = "GFX_GAW_liangguang_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_lg = 2
+			}
+		}
+		localization_key = "GFX_GAW_liangguang_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_liangguang_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_xn
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_xn = 1
+			}
+		}
+		localization_key = "GFX_GAW_xinan_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_xn = 2
+			}
+		}
+		localization_key = "GFX_GAW_xinan_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_xinan_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_sc
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_sc = 1
+			}
+		}
+		localization_key = "GFX_GAW_sichuan_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_sc = 2
+			}
+		}
+		localization_key = "GFX_GAW_sichuan_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_sichuan_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_xb
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_xb = 1
+			}
+		}
+		localization_key = "GFX_GAW_xibei_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_xb = 2
+			}
+		}
+		localization_key = "GFX_GAW_xibei_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_xibei_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_bj
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_bj = 1
+			}
+		}
+		localization_key = "GFX_GAW_bianjing_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_bj = 2
+			}
+		}
+		localization_key = "GFX_GAW_bianjing_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_bianjing_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_tw
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_tw = 1
+			}
+		}
+		localization_key = "GFX_GAW_taiwan_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_tw = 2
+			}
+		}
+		localization_key = "GFX_GAW_taiwan_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_taiwan_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_ni
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_ni = 1
+			}
+		}
+		localization_key = "GFX_GAW_north_india_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_ni = 2
+			}
+		}
+		localization_key = "GFX_GAW_north_india_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_north_india_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_sea
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_sea = 1
+			}
+		}
+		localization_key = "GFX_GAW_SEA_y"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_sea = 2
+			}
+		}
+		localization_key = "GFX_GAW_SEA_p"
+	}
+	text = { 
+		localization_key = "GFX_GAW_SEA_n"
+	}
+}
+defined_text = {
+	name = GAW_map_image_mon
+	text = {
+		trigger = {
+			MON = {
+				exists = no
+			}
+		}
+		localization_key = "GFX_GAW_mongolia_annexed"
+	}
+	text = { 
+		localization_key = "GFX_GAW_none"
+	}
+}
+defined_text = {
+	name = GAW_goal_name_local
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_nk = 2
+			}
+		}
+		localization_key = "GAW_plan_goal_name_text_nk"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_gd = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_gd"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_mc = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_mc"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hb = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_hb"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_jd = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_jd"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_lg = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_lg"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hz = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_hz"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xn = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_xn"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sc = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_sc"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xb = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_xb"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_bj = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_bj"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_tw = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_tw"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_ni = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_ni"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sea = 2 }
+		}
+		localization_key = "GAW_plan_goal_name_text_sea"
+	}
+	text = { 
+		localization_key = "GAW_plan_goal_name_text_none"
+	}
+}
+defined_text = {
+	name = GAW_goal_selected_local
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_nk = 1 }
+		}
+		localization_key = "GAW_north_korea_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_gd = 1 }
+		}
+		localization_key = "GAW_jiandao_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_mc = 1 }
+		}
+		localization_key = "GAW_manchuria_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hb = 1 }
+		}
+		localization_key = "GAW_huabei_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_jd = 1 }
+		}
+		localization_key = "GAW_jiangdong_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_lg = 1 }
+		}
+		localization_key = "GAW_liangguang_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hz = 1 }
+		}
+		localization_key = "GAW_huazhong_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xn = 1 }
+		}
+		localization_key = "GAW_xinan_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sc = 1 }
+		}
+		localization_key = "GAW_sichuan_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xb = 1 }
+		}
+		localization_key = "GAW_xibei_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_bj = 1 }
+		}
+		localization_key = "GAW_bianjing_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_tw = 1 }
+		}
+		localization_key = "GAW_taiwan_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_ni = 1 }
+		}
+		localization_key = "GAW_north_india_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sea = 1 }
+		}
+		localization_key = "GAW_SEA_button_tt"
+	}
+	text = { 
+		localization_key = "GAW_button_none_tt"
+	}
+}
+
+defined_text = {
+	name = GAW_goal_ongoing_era_local
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_nk = 2 }
+		}
+		localization_key = "GAW_north_korea_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_gd = 2 }
+		}
+		localization_key = "GAW_jiandao_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_mc = 2 }
+		}
+		localization_key = "GAW_manchuria_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hb = 2 }
+		}
+		localization_key = "GAW_huabei_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_jd = 2 }
+		}
+		localization_key = "GAW_jiangdong_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_lg = 2 }
+		}
+		localization_key = "GAW_liangguang_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hz = 2 }
+		}
+		localization_key = "GAW_huazhong_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xn = 2 }
+		}
+		localization_key = "GAW_xinan_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sc = 2 }
+		}
+		localization_key = "GAW_sichuan_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xb = 2 }
+		}
+		localization_key = "GAW_xibei_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_bj = 2 }
+		}
+		localization_key = "GAW_bianjing_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_tw = 2 }
+		}
+		localization_key = "GAW_taiwan_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_ni = 2 }
+		}
+		localization_key = "GAW_north_india_button_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sea = 2 }
+		}
+		localization_key = "GAW_SEA_button_tt"
+	}
+	text = { 
+		localization_key = "GAW_button_none_tt"
+	}
+}
+defined_text = {
+	name = GAW_plan_random_name_local
+	text = {
+		trigger = { check_variable = { GAW_plan_random_name_count_var < 250 } }
+		localization_key = GAW_plan_random_name_[?GAW_plan_random_name_var]
+	}
+	text = {
+		localization_key = "GAW_plan_random_name_another"
+	}
+}	
+defined_text = {
+	name = GAW_goal_desc_local
+	text = {
+		trigger = {
+			check_variable = {
+				var_GAW_border_nk = 2
+			}
+		}
+		localization_key = "GAW_plan_goal_desc_text_nk"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_gd = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_gd"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_mc = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_mc"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hb = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_hb"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_jd = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_jd"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_lg = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_lg"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_hz = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_hz"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xn = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_xn"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sc = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_sc"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_xb = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_xb"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_bj = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_bj"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_tw = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_tw"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_ni = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_ni"
+	}
+	text = {
+		trigger = {
+			check_variable = { var_GAW_border_sea = 2 }
+		}
+		localization_key = "GAW_plan_goal_desc_text_sea"
+	}
+	text = { 
+		localization_key = "GAW_plan_goal_desc_text_none"
+	}
+}
+
+defined_text = {
+	name = GAW_plan_goal_ongoing_local_1
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 1 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_jocker_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 2 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_jocker_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 3 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 4 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 5 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 6 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 7 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 8 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 9 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 10 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 11 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 12 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 13 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 14 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 15 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 16 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 17 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_1_select = 18 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_4"
+	}
+	text = {
+		localization_key = "GAW_plan_goal_ongoing_fallback"
+	}
+}
+
+defined_text = {
+	name = GAW_plan_goal_ongoing_local_2
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 1 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_jocker_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 2 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_jocker_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 3 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 4 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 5 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 6 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_inf_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 7 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 8 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 9 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 10 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_art_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 11 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 12 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 13 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 14 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_tank_4"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 15 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_1"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 16 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_2"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 17 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_3"
+	}
+	text = {
+		trigger = { 
+			check_variable = { var_GAW_card_2_select = 18 } 
+		}
+		localization_key = "GAW_plan_goal_ongoing_spe_4"
+	}
+	text = {
+		localization_key = "GAW_plan_goal_ongoing_fallback_2"
+	}
+}
+
+defined_text = {
+	name = GAW_card_1_local
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 1 } # Jocker CAS
+		}	
+		localization_key = "GAW_card_jocker_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 2 } # Jocker TB
+		}	
+		localization_key = "GAW_card_jocker_bomb_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 3 } # Inf
+		}	
+		localization_key = "GAW_card_inf_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 4 } # Inf
+		}	
+		localization_key = "GAW_card_inf_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 5 } # Inf
+		}	
+		localization_key = "GAW_card_inf_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 6 } # Inf
+		}	
+		localization_key = "GAW_card_inf_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 7 } # Art
+		}	
+		localization_key = "GAW_card_art_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 8 } # Art
+		}	
+		localization_key = "GAW_card_art_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 9 } # Art
+		}	
+		localization_key = "GAW_card_art_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 10 } # Art
+		}	
+		localization_key = "GAW_card_art_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 11 } # Tank
+		}	
+		localization_key = "GAW_card_tank_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 12 } # Tank
+		}	
+		localization_key = "GAW_card_tank_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 13 } # Tank
+		}	
+		localization_key = "GAW_card_tank_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 14 } # Tank
+		}	
+		localization_key = "GAW_card_tank_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 15 } # Spe
+		}	
+		localization_key = "GAW_card_spe_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 16 } # Spe
+		}	
+		localization_key = "GAW_card_spe_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 17 } # Spe
+		}	
+		localization_key = "GAW_card_spe_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 18 } # Spe
+		}	
+		localization_key = "GAW_card_spe_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 19 } # North Attack
+		}	
+		localization_key = "GAW_card_north_korea_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 20 } # North Defence
+		}	
+		localization_key = "GAW_card_north_korea_defence_desc"
+	}
+	text = { 
+		localization_key = "GAW_card_setting_1_text_none"
+	}
+}
+defined_text = {
+	name = GAW_card_2_local
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 1 } # Jocker CAS
+		}	
+		localization_key = "GAW_card_jocker_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 2 } # Jocker TB
+		}	
+		localization_key = "GAW_card_jocker_bomb_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 3 } # Inf
+		}	
+		localization_key = "GAW_card_inf_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 4 } # Inf
+		}	
+		localization_key = "GAW_card_inf_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 5 } # Inf
+		}	
+		localization_key = "GAW_card_inf_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 6 } # Inf
+		}	
+		localization_key = "GAW_card_inf_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 7 } # Art
+		}	
+		localization_key = "GAW_card_art_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 8 } # Art
+		}	
+		localization_key = "GAW_card_art_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 9 } # Art
+		}	
+		localization_key = "GAW_card_art_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 10 } # Art
+		}	
+		localization_key = "GAW_card_art_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 11 } # Tank
+		}	
+		localization_key = "GAW_card_tank_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 12 } # Tank
+		}	
+		localization_key = "GAW_card_tank_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 13 } # Tank
+		}	
+		localization_key = "GAW_card_tank_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 14 } # Tank
+		}	
+		localization_key = "GAW_card_tank_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 15 } # Tank
+		}	
+		localization_key = "GAW_card_spe_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 16 } # Tank
+		}	
+		localization_key = "GAW_card_spe_defence_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 17 } # Tank
+		}	
+		localization_key = "GAW_card_spe_logitics_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 18 } # Tank
+		}	
+		localization_key = "GAW_card_spe_planning_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 19 } # North Attack
+		}	
+		localization_key = "GAW_card_north_korea_attack_desc"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 20 } # North Defence
+		}	
+		localization_key = "GAW_card_north_korea_defence_desc"
+	}
+	text = { 
+		localization_key = "GAW_card_setting_2_text_none"
+	}
+}
+
+defined_text = {
+	name = GAW_card_title_select_local
+	text = { 
+		trigger = {
+			has_country_flag = GAW_card_select_1_flag
+		}	
+		localization_key = "GAW_card_title_text_1"
+	}
+	text = { 
+		trigger = {
+			has_country_flag = GAW_card_select_2_flag
+		}	
+		localization_key = "GAW_card_title_text_2"
+	}
+	text = { 
+		localization_key = "GAW_card_title_text_none"
+	}
+}
+
+defined_text = {
+	name = GAW_exp_select_local
+	text = { 
+		trigger = {
+			has_country_flag = GAW_exp_spend_army_flag
+		}	
+		localization_key = "GAW_exp_select_army_text"
+	}
+	text = { 
+		trigger = {
+			has_country_flag = GAW_exp_spend_navy_flag
+		}	
+		localization_key = "GAW_exp_select_navy_text"
+	}
+	text = { 
+		trigger = {
+			has_country_flag = GAW_exp_spend_air_flag
+		}	
+		localization_key = "GAW_exp_select_air_text"
+	}
+	text = { 
+		localization_key = "GAW_exp_select_none"
+	}
+}
+
+defined_text = {
+	name = GAW_card_1_image_local
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 1 } # Jocker CAS
+		}	
+		localization_key = "GFX_GAW_card_jocker"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 2 } # Jocker TB
+		}	
+		localization_key = "GFX_GAW_card_jocker_bomb"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 3 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 4 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 5 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 6 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 7 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 8 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 9 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 10 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 11 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 12 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 13 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 14 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 15 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 16 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 17 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 18 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 19 } # North Attack
+		}	
+		localization_key = "GFX_GAW_card_north_korea_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_1_select = 20 } # North Defence
+		}	
+		localization_key = "GFX_GAW_card_north_korea_defence"
+	}
+	text = { 
+		localization_key = "GFX_GAW_card_none_attack"
+	}
+}
+
+defined_text = {
+	name = GAW_card_2_image_local
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 1 } # Jocker CAS
+		}	
+		localization_key = "GFX_GAW_card_jocker"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 2 } # Jocker TB
+		}	
+		localization_key = "GFX_GAW_card_jocker_bomb"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 3 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 4 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 5 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 6 } # Inf
+		}	
+		localization_key = "GFX_GAW_card_inf_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 7 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 8 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 9 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 10 } # Art
+		}	
+		localization_key = "GFX_GAW_card_art_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 11 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 12 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 13 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 14 } # Tank
+		}	
+		localization_key = "GFX_GAW_card_tank_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 15 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 16 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_defence"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 17 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_logitics"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 18 } # Spe
+		}	
+		localization_key = "GFX_GAW_card_spe_planning"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 19 } # North Attack
+		}	
+		localization_key = "GFX_GAW_card_north_korea_attack"
+	}
+	text = { 
+		trigger = {
+			check_variable = { var_GAW_card_2_select = 20 } # North Defence
+		}	
+		localization_key = "GFX_GAW_card_north_korea_defence"
+	}
+	text = { 
+		localization_key = "GFX_GAW_card_none_defence"
+	}
+}
+
+defined_text = {
+	name = GAW_card_select_image
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 1 } } localization_key = "GFX_GAW_card_jocker" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 2 } } localization_key = "GFX_GAW_card_jocker_bomb" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 3 } } localization_key = "GFX_GAW_card_inf_attack" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 4 } } localization_key = "GFX_GAW_card_inf_defence" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 5 } } localization_key = "GFX_GAW_card_inf_logitics" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 6 } } localization_key = "GFX_GAW_card_inf_planning" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 7 } } localization_key = "GFX_GAW_card_art_attack" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 8 } } localization_key = "GFX_GAW_card_art_defence" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 9 } } localization_key = "GFX_GAW_card_art_logitics" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 10 } } localization_key = "GFX_GAW_card_art_planning" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 11 } } localization_key = "GFX_GAW_card_tank_attack" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 12 } } localization_key = "GFX_GAW_card_tank_defence" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 13 } } localization_key = "GFX_GAW_card_tank_logitics" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 14 } } localization_key = "GFX_GAW_card_tank_planning" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 15 } } localization_key = "GFX_GAW_card_spe_attack" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 16 } } localization_key = "GFX_GAW_card_spe_defence" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 17 } } localization_key = "GFX_GAW_card_spe_logitics" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 18 } } localization_key = "GFX_GAW_card_spe_planning" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 19 } } localization_key = "GFX_GAW_card_north_korea_attack" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 20 } } localization_key = "GFX_GAW_card_north_korea_defence" }
+	text = { localization_key = "GFX_GAW_card_jocker" }
+}
+
+defined_text = {
+	name = GAW_card_select_desc
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 1 } } localization_key = "GAW_card_jocker_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 2 } } localization_key = "GAW_card_jocker_bomb_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 3 } } localization_key = "GAW_card_inf_attack_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 4 } } localization_key = "GAW_card_inf_defence_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 5 } } localization_key = "GAW_card_inf_logitics_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 6 } } localization_key = "GAW_card_inf_planning_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 7 } } localization_key = "GAW_card_art_attack_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 8 } } localization_key = "GAW_card_art_defence_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 9 } } localization_key = "GAW_card_art_logitics_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 10 } } localization_key = "GAW_card_art_planning_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 11 } } localization_key = "GAW_card_tank_attack_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 12 } } localization_key = "GAW_card_tank_defence_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 13 } } localization_key = "GAW_card_tank_logitics_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 14 } } localization_key = "GAW_card_tank_planning_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 15 } } localization_key = "GAW_card_spe_attack_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 16 } } localization_key = "GAW_card_spe_defence_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 17 } } localization_key = "GAW_card_spe_logitics_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 18 } } localization_key = "GAW_card_spe_planning_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 19 } } localization_key = "GAW_card_north_korea_attack_desc" }
+	text = { trigger = { check_variable = { TFRKP_GAW_card_have_array^idx = 20 } } localization_key = "GAW_card_north_korea_defence_desc" }
+	text = { localization_key = "GAW_card_jocker_desc" }
+}
+
+defined_text = {
+	name = GAW_card_select_delay_slot_local
+	text = { trigger = { has_country_flag = GAW_card_select_1_flag } localization_key = "GAW_card_slot_1_name" }
+	text = { trigger = { has_country_flag = GAW_card_select_2_flag } localization_key = "GAW_card_slot_2_name" }
+	text = { localization_key = "GAW_card_slot_none_name" }
+}
+
+defined_text = {
+	name = GAW_card_select_delayed_local
+	text = { localization_key = "GAW_card_button_text_abled" }
+}
+
+defined_text = {
+	name = GAW_city_pyongyang_image
+	text = {
+		trigger = { GAW_city_pyongyang_ever_captured = yes }
+		localization_key = "GAW_city_pyongyang_image_captured"
+	}
+	text = { localization_key = "GAW_city_pyongyang_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_pyongyang_status
+	text = {
+		trigger = { GAW_city_pyongyang_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_pyongyang_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_wonsan_image
+	text = {
+		trigger = { GAW_city_wonsan_ever_captured = yes }
+		localization_key = "GAW_city_wonsan_image_captured"
+	}
+	text = { localization_key = "GAW_city_wonsan_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_wonsan_status
+	text = {
+		trigger = { GAW_city_wonsan_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_wonsan_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_chongjin_image
+	text = {
+		trigger = { GAW_city_chongjin_ever_captured = yes }
+		localization_key = "GAW_city_chongjin_image_captured"
+	}
+	text = { localization_key = "GAW_city_chongjin_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_chongjin_status
+	text = {
+		trigger = { GAW_city_chongjin_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_chongjin_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_dandong_image
+	text = {
+		trigger = { GAW_city_dandong_ever_captured = yes }
+		localization_key = "GAW_city_dandong_image_captured"
+	}
+	text = { localization_key = "GAW_city_dandong_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_dandong_status
+	text = {
+		trigger = { GAW_city_dandong_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_dandong_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_yanbian_image
+	text = {
+		trigger = { GAW_city_yanbian_ever_captured = yes }
+		localization_key = "GAW_city_yanbian_image_captured"
+	}
+	text = { localization_key = "GAW_city_yanbian_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_yanbian_status
+	text = {
+		trigger = { GAW_city_yanbian_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_yanbian_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_shenyang_image
+	text = {
+		trigger = { GAW_city_shenyang_ever_captured = yes }
+		localization_key = "GAW_city_shenyang_image_captured"
+	}
+	text = { localization_key = "GAW_city_shenyang_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_shenyang_status
+	text = {
+		trigger = { GAW_city_shenyang_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_shenyang_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_harbin_image
+	text = {
+		trigger = { GAW_city_harbin_ever_captured = yes }
+		localization_key = "GAW_city_harbin_image_captured"
+	}
+	text = { localization_key = "GAW_city_harbin_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_harbin_status
+	text = {
+		trigger = { GAW_city_harbin_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_harbin_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_beijing_image
+	text = {
+		trigger = { GAW_city_beijing_ever_captured = yes }
+		localization_key = "GAW_city_beijing_image_captured"
+	}
+	text = { localization_key = "GAW_city_beijing_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_beijing_status
+	text = {
+		trigger = { GAW_city_beijing_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_beijing_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_jinan_image
+	text = {
+		trigger = { GAW_city_jinan_ever_captured = yes }
+		localization_key = "GAW_city_jinan_image_captured"
+	}
+	text = { localization_key = "GAW_city_jinan_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_jinan_status
+	text = {
+		trigger = { GAW_city_jinan_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_jinan_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_shanghai_image
+	text = {
+		trigger = { GAW_city_shanghai_ever_captured = yes }
+		localization_key = "GAW_city_shanghai_image_captured"
+	}
+	text = { localization_key = "GAW_city_shanghai_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_shanghai_status
+	text = {
+		trigger = { GAW_city_shanghai_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_shanghai_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_nanjing_image
+	text = {
+		trigger = { GAW_city_nanjing_ever_captured = yes }
+		localization_key = "GAW_city_nanjing_image_captured"
+	}
+	text = { localization_key = "GAW_city_nanjing_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_nanjing_status
+	text = {
+		trigger = { GAW_city_nanjing_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_nanjing_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_wuhan_image
+	text = {
+		trigger = { GAW_city_wuhan_ever_captured = yes }
+		localization_key = "GAW_city_wuhan_image_captured"
+	}
+	text = { localization_key = "GAW_city_wuhan_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_wuhan_status
+	text = {
+		trigger = { GAW_city_wuhan_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_wuhan_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_changde_image
+	text = {
+		trigger = { GAW_city_changde_ever_captured = yes }
+		localization_key = "GAW_city_changde_image_captured"
+	}
+	text = { localization_key = "GAW_city_changde_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_changde_status
+	text = {
+		trigger = { GAW_city_changde_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_changde_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_guangzhou_image
+	text = {
+		trigger = { GAW_city_guangzhou_ever_captured = yes }
+		localization_key = "GAW_city_guangzhou_image_captured"
+	}
+	text = { localization_key = "GAW_city_guangzhou_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_guangzhou_status
+	text = {
+		trigger = { GAW_city_guangzhou_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_guangzhou_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_nanning_image
+	text = {
+		trigger = { GAW_city_nanning_ever_captured = yes }
+		localization_key = "GAW_city_nanning_image_captured"
+	}
+	text = { localization_key = "GAW_city_nanning_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_nanning_status
+	text = {
+		trigger = { GAW_city_nanning_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_nanning_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_kunming_image
+	text = {
+		trigger = { GAW_city_kunming_ever_captured = yes }
+		localization_key = "GAW_city_kunming_image_captured"
+	}
+	text = { localization_key = "GAW_city_kunming_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_kunming_status
+	text = {
+		trigger = { GAW_city_kunming_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_kunming_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_guiyang_image
+	text = {
+		trigger = { GAW_city_guiyang_ever_captured = yes }
+		localization_key = "GAW_city_guiyang_image_captured"
+	}
+	text = { localization_key = "GAW_city_guiyang_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_guiyang_status
+	text = {
+		trigger = { GAW_city_guiyang_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_guiyang_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_chengdu_image
+	text = {
+		trigger = { GAW_city_chengdu_ever_captured = yes }
+		localization_key = "GAW_city_chengdu_image_captured"
+	}
+	text = { localization_key = "GAW_city_chengdu_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_chengdu_status
+	text = {
+		trigger = { GAW_city_chengdu_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_chengdu_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_chongqing_image
+	text = {
+		trigger = { GAW_city_chongqing_ever_captured = yes }
+		localization_key = "GAW_city_chongqing_image_captured"
+	}
+	text = { localization_key = "GAW_city_chongqing_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_chongqing_status
+	text = {
+		trigger = { GAW_city_chongqing_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_chongqing_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_xian_image
+	text = {
+		trigger = { GAW_city_xian_ever_captured = yes }
+		localization_key = "GAW_city_xian_image_captured"
+	}
+	text = { localization_key = "GAW_city_xian_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_xian_status
+	text = {
+		trigger = { GAW_city_xian_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_xian_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_lanzhou_image
+	text = {
+		trigger = { GAW_city_lanzhou_ever_captured = yes }
+		localization_key = "GAW_city_lanzhou_image_captured"
+	}
+	text = { localization_key = "GAW_city_lanzhou_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_lanzhou_status
+	text = {
+		trigger = { GAW_city_lanzhou_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_lanzhou_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_urumqi_image
+	text = {
+		trigger = { GAW_city_urumqi_ever_captured = yes }
+		localization_key = "GAW_city_urumqi_image_captured"
+	}
+	text = { localization_key = "GAW_city_urumqi_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_urumqi_status
+	text = {
+		trigger = { GAW_city_urumqi_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_urumqi_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_lhasa_image
+	text = {
+		trigger = { GAW_city_lhasa_ever_captured = yes }
+		localization_key = "GAW_city_lhasa_image_captured"
+	}
+	text = { localization_key = "GAW_city_lhasa_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_lhasa_status
+	text = {
+		trigger = { GAW_city_lhasa_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_lhasa_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_taipei_image
+	text = {
+		trigger = { GAW_city_taipei_ever_captured = yes }
+		localization_key = "GAW_city_taipei_image_captured"
+	}
+	text = { localization_key = "GAW_city_taipei_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_taipei_status
+	text = {
+		trigger = { GAW_city_taipei_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_taipei_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_kaohsiung_image
+	text = {
+		trigger = { GAW_city_kaohsiung_ever_captured = yes }
+		localization_key = "GAW_city_kaohsiung_image_captured"
+	}
+	text = { localization_key = "GAW_city_kaohsiung_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_kaohsiung_status
+	text = {
+		trigger = { GAW_city_kaohsiung_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_kaohsiung_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_new_delhi_image
+	text = {
+		trigger = { GAW_city_new_delhi_ever_captured = yes }
+		localization_key = "GAW_city_new_delhi_image_captured"
+	}
+	text = { localization_key = "GAW_city_new_delhi_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_new_delhi_status
+	text = {
+		trigger = { GAW_city_new_delhi_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_new_delhi_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_calcutta_image
+	text = {
+		trigger = { GAW_city_calcutta_ever_captured = yes }
+		localization_key = "GAW_city_calcutta_image_captured"
+	}
+	text = { localization_key = "GAW_city_calcutta_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_calcutta_status
+	text = {
+		trigger = { GAW_city_calcutta_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_calcutta_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_naypyidaw_image
+	text = {
+		trigger = { GAW_city_naypyidaw_ever_captured = yes }
+		localization_key = "GAW_city_naypyidaw_image_captured"
+	}
+	text = { localization_key = "GAW_city_naypyidaw_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_naypyidaw_status
+	text = {
+		trigger = { GAW_city_naypyidaw_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_naypyidaw_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+
+defined_text = {
+	name = GAW_city_hanoi_image
+	text = {
+		trigger = { GAW_city_hanoi_ever_captured = yes }
+		localization_key = "GAW_city_hanoi_image_captured"
+	}
+	text = { localization_key = "GAW_city_hanoi_image_default" }
+}
+
+defined_text = {
+	name = GAW_city_hanoi_status
+	text = {
+		trigger = { GAW_city_hanoi_pdto_controlled = yes }
+		localization_key = "GAW_city_status_pdto_control"
+	}
+	text = {
+		trigger = { GAW_city_hanoi_eadi_controlled = yes }
+		localization_key = "GAW_city_status_eadi_control"
+	}
+	text = { localization_key = "GAW_city_status_neutral_control" }
+}
+

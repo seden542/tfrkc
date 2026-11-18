@@ -1,0 +1,29 @@
+TFRKC_buildup_mark_main_effect = {
+ set_country_flag = TFRKC_buildup_main_marked
+ set_variable = { var = TFRKC_buildup_main_day value = global.num_days }
+}
+TFRKC_buildup_mark_story_effect = {
+ set_country_flag = TFRKC_buildup_shown_any
+ set_variable = { var = TFRKC_buildup_next_day value = global.num_days }
+ add_to_variable = { var = TFRKC_buildup_next_day value = 2 }
+}
+TFRKC_buildup_poll_effect = {
+ if = { limit = { TFRKC_buildup_1_ready_trigger = yes } country_event = { id = tfrkc_buildup.1 } }
+ else_if = { limit = { TFRKC_buildup_2_ready_trigger = yes } country_event = { id = tfrkc_buildup.2 } }
+ else_if = { limit = { TFRKC_buildup_3_ready_trigger = yes } country_event = { id = tfrkc_buildup.3 } }
+ else_if = { limit = { TFRKC_buildup_4_ready_trigger = yes } country_event = { id = tfrkc_buildup.4 } }
+ else_if = { limit = { TFRKC_buildup_5_ready_trigger = yes } country_event = { id = tfrkc_buildup.5 } }
+ else_if = { limit = { TFRKC_buildup_6_ready_trigger = yes } country_event = { id = tfrkc_buildup.6 } }
+ else_if = { limit = { TFRKC_buildup_7_ready_trigger = yes } country_event = { id = tfrkc_buildup.7 } }
+ else_if = { limit = { TFRKC_buildup_8_ready_trigger = yes } country_event = { id = tfrkc_buildup.8 } }
+ else_if = { limit = { TFRKC_buildup_9_ready_trigger = yes } country_event = { id = tfrkc_buildup.9 } }
+ else_if = { limit = { TFRKC_buildup_10_ready_trigger = yes } country_event = { id = tfrkc_buildup.10 } }
+ else_if = { limit = { TFRKC_buildup_11_ready_trigger = yes } country_event = { id = tfrkc_buildup.11 } }
+ else_if = { limit = { TFRKC_buildup_12_ready_trigger = yes } country_event = { id = tfrkc_buildup.12 } }
+ else_if = { limit = { TFRKC_buildup_13_ready_trigger = yes } country_event = { id = tfrkc_buildup.13 } }
+ else_if = { limit = { TFRKC_buildup_14_ready_trigger = yes } country_event = { id = tfrkc_buildup.14 } }
+ else_if = { limit = { TFRKC_buildup_15_ready_trigger = yes } country_event = { id = tfrkc_buildup.15 } }
+ else_if = { limit = { TFRKC_buildup_16_ready_trigger = yes } country_event = { id = tfrkc_buildup.16 } }
+ else_if = { limit = { TFRKC_buildup_17_ready_trigger = yes } country_event = { id = tfrkc_buildup.17 } }
+ else_if = { limit = { TFRKC_buildup_18_ready_trigger = yes } country_event = { id = tfrkc_buildup.18 } }
+}

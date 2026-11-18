@@ -1,0 +1,1 @@
+on_actions = { on_daily = { effect = { TFRKC_bloc_cleanup_effect = yes } } }

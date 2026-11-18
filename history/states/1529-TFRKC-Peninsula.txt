@@ -1,0 +1,23 @@
+state={
+	id = 1529
+	name = "STATE_1529"
+	
+	history = {
+owner = PRK
+add_claim_by = KOR
+add_core_of = PRK
+ buildings = {
+ infrastructure = 4
+ industrial_complex = 2
+ arms_factory = 1
+ air_base = 2
+ office_park = 1
+ power_plant = 1
+ }
+}
+	provinces = { 13706 13711 13710 }
+	manpower = 1548041
+	buildings_max_level_factor = 0.50574713
+	
+	state_category = city
+}

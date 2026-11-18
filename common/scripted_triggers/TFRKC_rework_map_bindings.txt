@@ -1,0 +1,19 @@
+# Atomic cutover must replace this one closed gate after the foundation hashes are verified.
+TFRKC_rework_map_ready_trigger = { always = yes }
+TFRKC_rework_UN_landing_clear_trigger = { NOT = { country_exists = ZUN }
+ 1580 = { is_owned_by = ZGT is_controlled_by = ZGT }
+ 1657 = { is_owned_by = ZGT is_controlled_by = ZGT }
+}
+TFRKC_rework_UN_landing_complete_trigger = { ZUN = { exists = yes has_country_flag = TFRKC_rework_oob_loaded owns_state = 1580 controls_state = 1580 owns_state = 1657 controls_state = 1657 } }
+TFRKC_rework_KPL_landing_clear_trigger = { NOT = { country_exists = KPL }
+ 1589 = { is_owned_by = ZGP is_controlled_by = ZGP }
+ 1682 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1683 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1556 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1684 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1685 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1686 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1687 = { is_owned_by = ZIA is_controlled_by = ZIA }
+ 1688 = { is_owned_by = ZIA is_controlled_by = ZIA }
+}
+TFRKC_rework_KPL_landing_complete_trigger = { KPL = { exists = yes has_country_flag = TFRKC_rework_oob_loaded owns_state = 1589 controls_state = 1589 owns_state = 1682 controls_state = 1682 owns_state = 1683 controls_state = 1683 owns_state = 1556 controls_state = 1556 owns_state = 1684 controls_state = 1684 owns_state = 1685 controls_state = 1685 owns_state = 1686 controls_state = 1686 owns_state = 1687 controls_state = 1687 owns_state = 1688 controls_state = 1688 } }

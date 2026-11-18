@@ -1,0 +1,28 @@
+characters = {
+	PD4_olhunud_daichin_char = {
+		name = PD4_olhunud_daichin_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD4_olhunud_daichin_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD4_olhunud_daichin_char_desc
+			ideology = oligarchist
+			traits = { }
+		}
+	}
+	PD4_eun_wookeun_char = {
+		name = PD4_eun_wookeun_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD4_eun_wookeun_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD4_eun_wookeun_char_desc
+			ideology = chogukism
+			traits = { }
+		}
+	}
+}

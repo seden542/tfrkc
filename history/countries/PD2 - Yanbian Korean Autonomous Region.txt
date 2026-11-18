@@ -1,0 +1,53 @@
+capital = 1415
+
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.5
+set_war_support = 0.25
+
+add_ideas = {
+	war_mobilization
+	higher_trade
+	high_welfare
+	lowest_interest_rates
+	high_conscription
+	high_female_service
+	high_supervision
+	high_training
+	medium_racial_integration
+	general_exemptions
+	higher_safety
+	high_immigration
+	medium_race
+	low_female
+	medium_prison
+	low_police
+	medium_society
+	higher_academic
+	higher_farming
+	high_poverty
+	higher_industry
+	medium_military
+}
+
+set_party_name = {
+	ideology = libertarian_socialist
+	long_name = PD2_libertarian_socialist_party_long
+	name = PD2_libertarian_socialist_party
+}
+
+set_politics = {
+	ruling_party = libertarian_socialist
+	last_election = "2020.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	libertarian_socialist = 70
+	social_democrat = 15
+	communist = 10
+	social_liberal = 5
+}
+
+recruit_character = PD2_hong_kyung_char

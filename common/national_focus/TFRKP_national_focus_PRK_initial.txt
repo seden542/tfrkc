@@ -1,0 +1,1248 @@
+focus_tree = {
+	id = TFRKP_tree_PRK_initial
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 1000
+			tag = PRK
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 70 y = 50 }
+
+	focus = {
+		id = PRK_75th_anniversary_of_party_foundation
+		icon = GFX_PRK_political_common_focus
+		x = 20
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { industrial_development_var_temp = 0.02 }
+			add_industrial_development = yes
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_economy_under_epidemic_trial
+		icon = GFX_PRK_industry_common_focus
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = PRK_75th_anniversary_of_party_foundation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRK_malignant_virus_must_be_fully_resolved_tt
+				has_completed_focus = PRK_national_emergency_epidemic_prevention_review_conference
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { industrial_development_var_temp = 0.02 }
+			add_industrial_development = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_strengthen_people_first_principle
+		icon = GFX_PRK_industry_common_focus
+		x = 6
+		y = 1
+		cost = 5
+		prerequisite = { focus = PRK_75th_anniversary_of_party_foundation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRK_malignant_virus_must_be_fully_resolved_tt
+				has_completed_focus = PRK_national_emergency_epidemic_prevention_review_conference
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { industrial_development_var_temp = 0.03 }
+			add_industrial_development = yes
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_five_year_national_economic_development_strategy
+		icon = GFX_PRK_industry_common_focus
+		x = 2
+		y = 2
+		cost = 5
+		prerequisite = { focus = PRK_economy_under_epidemic_trial }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.02
+			set_temp_variable = { industrial_development_var_temp = 0.01 }
+			add_industrial_development = yes
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_struggle_against_anti_socialism
+		icon = GFX_PRK_industry_common_focus
+		x = 6
+		y = 2
+		cost = 5
+		prerequisite = { focus = PRK_strengthen_people_first_principle }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { industrial_development_var_temp = 0.02 }
+			add_industrial_development = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_eighth_congress_workers_party
+		icon = GFX_PRK_industry_common_focus
+		x = 4
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_five_year_national_economic_development_strategy }
+		prerequisite = { focus = PRK_struggle_against_anti_socialism }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_category_tooltip = PRK_national_economic_development_plan_category
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_national_economic_reconstruction_dynamic_dummy_idea
+					add_idea = PRK_national_economic_reconstruction_established_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = { PRK_national_economic_reconstruction_stability_factor_var = 0.03 }
+				set_variable = { PRK_national_economic_reconstruction_production_speed_buildings_factor_var = 0.05 }
+				set_variable = { PRK_national_economic_reconstruction_production_speed_infrastructure_factor_var = 0.05 }
+				set_variable = { PRK_national_economic_reconstruction_industrial_capacity_factory_var = 0.03 }
+				set_variable = { PRK_national_economic_reconstruction_production_factory_efficiency_gain_factor_var = 0.03 }
+				set_variable = { PRK_national_economic_reconstruction_production_factory_max_efficiency_factor_var = 0.03 }
+				set_variable = { PRK_national_economic_reconstruction_industrial_development_monthly_var = 0.005 }
+				add_dynamic_modifier = { modifier = PRK_national_economic_reconstruction_dynamic }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_five_year_national_economic_development_plan
+		icon = GFX_PRK_industry_common_focus
+		x = 2
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_eighth_congress_workers_party }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = PRK_expand_civilian_industry
+			unlock_decision_tooltip = PRK_expand_defense_industry
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_national_economic_reconstruction_dynamic_dummy_idea
+					add_idea = PRK_national_economic_reconstruction_improved_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = { PRK_national_economic_reconstruction_stability_factor_var = 0.05 }
+				set_variable = { PRK_national_economic_reconstruction_production_speed_buildings_factor_var = 0.10 }
+				set_variable = { PRK_national_economic_reconstruction_production_speed_infrastructure_factor_var = 0.10 }
+				set_variable = { PRK_national_economic_reconstruction_industrial_capacity_factory_var = 0.05 }
+				set_variable = { PRK_national_economic_reconstruction_production_factory_efficiency_gain_factor_var = 0.05 }
+				set_variable = { PRK_national_economic_reconstruction_production_factory_max_efficiency_factor_var = 0.05 }
+				set_variable = { PRK_national_economic_reconstruction_industrial_development_monthly_var = 0.01 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_guideline_crush_ideological_cultural_infiltration
+		icon = GFX_PRK_industry_common_focus
+		x = 6
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_eighth_congress_workers_party }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_great_innovation_in_rural_areas
+		icon = GFX_PRK_industry_common_focus
+		x = 1
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_five_year_national_economic_development_plan }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = PRK_modernize_rural_infrastructure
+			unlock_decision_tooltip = PRK_expand_agricultural_support_network
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_national_economic_reconstruction_dynamic_dummy_idea
+					add_idea = PRK_national_economic_reconstruction_rural_innovation_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_stability_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_farming_development_monthly_var
+					value = 0.005
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_great_innovation_in_industrial_sector
+		icon = GFX_PRK_industry_common_focus
+		x = 3
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_five_year_national_economic_development_plan }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = PRK_modernize_industrial_equipment
+			unlock_decision_tooltip = PRK_expand_power_transport_network
+			set_temp_variable = { industrial_development_var_temp = 0.03 }
+			add_industrial_development = yes
+			add_research_slot = 1
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_national_economic_reconstruction_dynamic_dummy_idea
+					add_idea = PRK_industrial_reconstruction_innovation_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_industrial_capacity_factory_var
+					value = 0.03
+				}
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_production_factory_efficiency_gain_factor_var
+					value = 0.03
+				}
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_production_speed_buildings_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_production_speed_infrastructure_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_national_economic_reconstruction_industrial_development_monthly_var
+					value = 0.005
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_enact_reactionary_thought_culture_rejection_act
+		icon = GFX_PRK_industry_common_focus
+		x = 5
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_guideline_crush_ideological_cultural_infiltration }
+		mutually_exclusive = { focus = PRK_strengthen_anti_imperialist_class_education }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { society_development_var_temp = -0.05 }
+			add_society_development = yes
+			add_political_power = 150
+			add_stability = 0.025
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_strengthen_anti_imperialist_class_education
+		icon = GFX_PRK_industry_common_focus
+		x = 7
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_guideline_crush_ideological_cultural_infiltration }
+		mutually_exclusive = { focus = PRK_enact_reactionary_thought_culture_rejection_act }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = PRK_strengthened_anti_imperialist_class_education_idea
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_review_line_for_rural_revitalization
+		icon = GFX_PRK_industry_common_focus
+		x = 2
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = PRK_great_innovation_in_rural_areas
+			focus = PRK_great_innovation_in_industrial_sector
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = PRK_coordinate_rural_industrial_development
+			unlock_decision_tooltip = PRK_complete_regional_development_projects
+			set_temp_variable = { farming_development_var_temp = 0.05 }
+			add_farming_development = yes
+			set_temp_variable = { industrial_development_var_temp = 0.05 }
+			add_industrial_development = yes
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_kim_jong_un_original_ideological_theory
+		icon = GFX_PRK_industry_common_focus
+		x = 6
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = PRK_enact_reactionary_thought_culture_rejection_act
+			focus = PRK_strengthen_anti_imperialist_class_education
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = PRK_original_ideological_theory_idea
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_regional_development_20x10_policy
+		icon = GFX_PRK_industry_common_focus
+		x = 4
+		y = 7
+		cost = 5
+		prerequisite = { focus = PRK_review_line_for_rural_revitalization }
+		prerequisite = { focus = PRK_kim_jong_un_original_ideological_theory }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = PRK_20x10_songchon_regional_industry
+			unlock_decision_tooltip = PRK_20x10_jaeryong_foodstuffs
+			unlock_decision_tooltip = PRK_20x10_sukchon_west_sea_foodstuffs
+			unlock_decision_tooltip = PRK_20x10_unpha_integrated_production
+			unlock_decision_tooltip = PRK_20x10_kyongsong_specialty_foods
+			unlock_decision_tooltip = PRK_20x10_sinpho_offshore_farm
+			remove_ideas = PRK_economy_broken_beyond_recognition
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_wave_of_malignant_virus
+		icon = GFX_PRK_covid_common_focus
+		x = 16
+		y = 1
+		cost = 5
+		prerequisite = { focus = PRK_75th_anniversary_of_party_foundation }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_category_tooltip = PRK_fight_malignant_virus_category
+			hidden_effect = {
+				PRK_epidemic_setup_effect = yes
+				country_event = { id = korea.1552 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_activate_maximum_emergency_epidemic_prevention_system
+		icon = GFX_PRK_covid_common_focus
+		x = 14
+		y = 2
+		cost = 5
+		prerequisite = { focus = PRK_wave_of_malignant_virus }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.01 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.02 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			unlock_decision_tooltip = PRK_quarantine_pyongan
+			unlock_decision_tooltip = PRK_quarantine_hwanghae
+			unlock_decision_tooltip = PRK_quarantine_kangwon
+			unlock_decision_tooltip = PRK_quarantine_hamgyong
+			unlock_decision_tooltip = PRK_quarantine_ryanggang
+			unlock_decision_tooltip = PRK_quarantine_chagang
+			unlock_decision_tooltip = PRK_nationwide_disinfection_campaign
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_close_borders
+		icon = GFX_PRK_covid_common_focus
+		x = 19
+		y = 2
+		cost = 5
+		prerequisite = { focus = PRK_wave_of_malignant_virus }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.01 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			hidden_effect = { PRK_epidemic_response_change_effect = yes }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_role_of_party
+		icon = GFX_PRK_covid_common_focus
+		x = 13
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_activate_maximum_emergency_epidemic_prevention_system }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.005 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			unlock_decision_tooltip = PRK_mobilize_party_quarantine_cells
+			unlock_decision_tooltip = PRK_household_fever_surveys
+			hidden_effect = { PRK_epidemic_response_change_effect = yes }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_organize_state_emergency_epidemic_prevention_command
+		icon = GFX_PRK_covid_common_focus
+		x = 15
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_activate_maximum_emergency_epidemic_prevention_system }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.015 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.02 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			set_temp_variable = { PRK_epidemic_supplies_change_temp = 10 }
+			custom_effect_tooltip = PRK_epidemic_supplies_change_tt
+			unlock_decision_tooltip = PRK_expand_temporary_quarantine_posts
+			unlock_decision_tooltip = PRK_deploy_epidemic_reserve_units
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+				PRK_epidemic_supplies_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_impose_lockdowns_across_provinces
+		icon = GFX_PRK_covid_common_focus
+		x = 19
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_close_borders }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.01 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.03 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			unlock_decision_tooltip = PRK_enforce_nationwide_lockdown
+			unlock_decision_tooltip = PRK_suspend_interprovincial_transport
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_role_of_cabinet
+		icon = GFX_PRK_covid_common_focus
+		x = 13
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_role_of_party }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.005 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			hidden_effect = { PRK_epidemic_response_change_effect = yes }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_ensure_medical_supplies
+		icon = GFX_PRK_covid_common_focus
+		x = 15
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_organize_state_emergency_epidemic_prevention_command }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.01 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.04 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			set_temp_variable = { PRK_epidemic_supplies_change_temp = 20 }
+			custom_effect_tooltip = PRK_epidemic_supplies_change_tt
+			unlock_decision_tooltip = PRK_requisition_medical_supplies
+			unlock_decision_tooltip = PRK_dispatch_emergency_medical_trains
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+				PRK_epidemic_supplies_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_investigate_infection_route
+		icon = GFX_PRK_covid_common_focus
+		x = 19
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_impose_lockdowns_across_provinces }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.01 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.02 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_role_of_judiciary_and_prosecution
+		icon = GFX_PRK_covid_common_focus
+		x = 12
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_role_of_cabinet }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.005 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			unlock_decision_tooltip = PRK_punish_quarantine_violations
+			unlock_decision_tooltip = PRK_quarantine_self_reporting_period
+			hidden_effect = { PRK_epidemic_response_change_effect = yes }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_emergency_vaccine_imports
+		icon = GFX_PRK_covid_common_focus
+		x = 14
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_ensure_medical_supplies }
+		mutually_exclusive = { focus = PRK_our_own_vaccine }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.015 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			set_temp_variable = { PRK_epidemic_supplies_change_temp = 20 }
+			custom_effect_tooltip = PRK_epidemic_supplies_change_tt
+			unlock_decision_tooltip = PRK_emergency_vaccination_drive
+			unlock_decision_tooltip = PRK_prioritize_high_risk_vaccination
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+				PRK_epidemic_supplies_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_our_own_vaccine
+		icon = GFX_PRK_covid_common_focus
+		x = 16
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_ensure_medical_supplies }
+		mutually_exclusive = { focus = PRK_emergency_vaccine_imports }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.02 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.08 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			set_temp_variable = { PRK_epidemic_supplies_change_temp = 25 }
+			custom_effect_tooltip = PRK_epidemic_supplies_change_tt
+			unlock_decision_tooltip = PRK_emergency_vaccination_drive
+			unlock_decision_tooltip = PRK_prioritize_high_risk_vaccination
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+				PRK_epidemic_supplies_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_kumgang_county_ipo_ri
+		icon = GFX_PRK_covid_common_focus
+		x = 18
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_investigate_infection_route }
+		mutually_exclusive = { focus = PRK_hyesan_kanggu_dong }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.015 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.15 }
+			custom_effect_tooltip = PRK_infection_kangwon_change_tt
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_kangwon_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_hyesan_kanggu_dong
+		icon = GFX_PRK_covid_common_focus
+		x = 20
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_investigate_infection_route }
+		mutually_exclusive = { focus = PRK_kumgang_county_ipo_ri }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.015 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.15 }
+			custom_effect_tooltip = PRK_infection_ryanggang_change_tt
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_ryanggang_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_role_of_peoples_army
+		icon = GFX_PRK_covid_common_focus
+		x = 13
+		y = 6
+		cost = 5
+		prerequisite = { focus = PRK_role_of_judiciary_and_prosecution }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.01 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			unlock_decision_tooltip = PRK_deploy_army_quarantine_cordon
+			unlock_decision_tooltip = PRK_dispatch_military_medical_units
+			hidden_effect = { PRK_epidemic_response_change_effect = yes }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_research_koryo_medicine
+		icon = GFX_PRK_covid_common_focus
+		x = 15
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = PRK_emergency_vaccine_imports
+			focus = PRK_our_own_vaccine
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.005 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.03 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			unlock_decision_tooltip = PRK_koryo_medicine_treatment_campaign
+			unlock_decision_tooltip = PRK_expand_koryo_medicine_production
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_boiled_cows_head
+		icon = GFX_PRK_covid_common_focus
+		x = 19
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = PRK_kumgang_county_ipo_ri
+			focus = PRK_hyesan_kanggu_dong
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_national_emergency_epidemic_prevention_review_conference
+		icon = GFX_PRK_covid_common_focus
+		x = 16
+		y = 7
+		cost = 5
+		prerequisite = { focus = PRK_role_of_peoples_army }
+		prerequisite = { focus = PRK_research_koryo_medicine }
+		prerequisite = { focus = PRK_boiled_cows_head }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRK_epidemic_review_available_tt
+				OR = {
+					NOT = { check_variable = { PRK_national_infection_var > 0.20 } }
+					date > 2023.4.30 # Available from 1 May 2023 onward.
+				}
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = PRK_epidemic_crisis_ends_tt
+			add_stability = 0.05
+			hidden_effect = {
+				PRK_epidemic_end_effect = yes
+				country_event = { id = korea.1559 hours = 1 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_toward_new_hundred_years
+		icon = GFX_PRK_political_common_focus
+		x = 16
+		y = 8
+		cost = 5
+		prerequisite = { focus = PRK_national_emergency_epidemic_prevention_review_conference }
+		prerequisite = { focus = PRK_regional_development_20x10_policy }
+		prerequisite = { focus = PRK_victory_over_us_imperialism_commemorative_parade }
+		prerequisite = { focus = PRK_strengthen_strategic_force_in_every_way }
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = PRK_toward_new_hundred_years_custom_tooltip
+			hidden_effect = {
+				country_event = { id = korea.1564 hours = 1 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_collapse_of_empire
+		icon = GFX_PRK_political_common_focus
+		x = 27
+		y = 1
+		cost = 5
+		prerequisite = { focus = PRK_75th_anniversary_of_party_foundation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRK_usa_must_have_collapsed_tt
+				KOR = { has_country_flag = KOR_economic_crisis }
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_restore_external_diplomatic_relations
+		icon = GFX_PRK_political_common_focus
+		x = 27
+		y = 2
+		cost = 5
+		prerequisite = { focus = PRK_collapse_of_empire }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_comprehensive_revision_foreign_policy_line
+		icon = GFX_PRK_political_common_focus
+		x = 27
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_restore_external_diplomatic_relations }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_strengthen_traditional_friendly_relations
+		icon = GFX_PRK_political_common_focus
+		x = 25
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_comprehensive_revision_foreign_policy_line }
+		mutually_exclusive = { focus = PRK_seek_new_allies }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = { target = PRC modifier = medium_increase }
+			PRC = { add_opinion_modifier = { target = PRK modifier = medium_increase } }
+			set_temp_variable = { academic_development_var_temp = 0.03 }
+			add_academic_development = yes
+			set_temp_variable = { income_var_temp = 5 }
+			add_income = yes
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_seek_new_allies
+		icon = GFX_PRK_political_common_focus
+		x = 29
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_comprehensive_revision_foreign_policy_line }
+		mutually_exclusive = { focus = PRK_strengthen_traditional_friendly_relations }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = { target = SOV modifier = medium_increase }
+			SOV = { add_opinion_modifier = { target = PRK modifier = medium_increase } }
+			set_temp_variable = { industrial_development_var_temp = 0.03 }
+			add_industrial_development = yes
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_direction_of_policy_toward_south
+		icon = GFX_PRK_political_common_focus
+		x = 27
+		y = 5
+		cost = 5
+		prerequisite = {
+			focus = PRK_strengthen_traditional_friendly_relations
+			focus = PRK_seek_new_allies
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_gradual_restoration_peaceful_relations
+		icon = GFX_PRK_political_common_focus
+		x = 25
+		y = 6
+		cost = 5
+		prerequisite = { focus = PRK_direction_of_policy_toward_south }
+		mutually_exclusive = { focus = PRK_hardline_response_to_enemies }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 100 }
+	}
+
+	focus = {
+		id = PRK_hardline_response_to_enemies
+		icon = GFX_PRK_political_common_focus
+		x = 29
+		y = 6
+		cost = 5
+		prerequisite = { focus = PRK_direction_of_policy_toward_south }
+		mutually_exclusive = { focus = PRK_gradual_restoration_peaceful_relations }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	focus = {
+		id = PRK_victory_over_us_imperialism_commemorative_parade
+		icon = GFX_PRK_political_common_focus
+		x = 27
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = PRK_gradual_restoration_peaceful_relations
+			focus = PRK_hardline_response_to_enemies
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = PRK_death_to_us_imperialists_idea
+				days = 150
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_shape_our_style_peoples_army
+		icon = GFX_PRK_army_common_focus
+		x = 36
+		y = 1
+		cost = 5
+		prerequisite = { focus = PRK_75th_anniversary_of_party_foundation }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRK_malignant_virus_must_be_fully_resolved_tt
+				has_completed_focus = PRK_national_emergency_epidemic_prevention_review_conference
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				add_ideas = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+			}
+			hidden_effect = {
+				set_variable = { PRK_march_forward_korean_peoples_army_attack_factor_var = 0.025 }
+				set_variable = { PRK_march_forward_korean_peoples_army_defence_factor_var = 0.015 }
+				set_variable = { PRK_march_forward_korean_peoples_army_battalion_upkeep_factor_var = 0.05 }
+				set_variable = { PRK_march_forward_korean_peoples_army_army_org_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_army_morale_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_land_reinforce_rate_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_strategic_bombing_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_bombing_targetting_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_air_attack_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_air_mission_efficiency_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_navy_org_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_naval_damage_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_rocket_attack_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_production_speed_rocket_site_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_nuclear_production_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_artillery_attack_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_artillery_defence_factor_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_planning_speed_var = 0 }
+				set_variable = { PRK_march_forward_korean_peoples_army_max_planning_factor_var = 0 }
+				add_dynamic_modifier = { modifier = PRK_march_forward_korean_peoples_army_dynamic }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_five_year_national_defense_development_plan
+		icon = GFX_PRK_army_common_focus
+		x = 36
+		y = 2
+		cost = 5
+		prerequisite = { focus = PRK_shape_our_style_peoples_army }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_strengthen_asymmetric_forces
+		icon = GFX_PRK_air_common_focus
+		x = 34
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_five_year_national_defense_development_plan }
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+					add_idea = PRK_march_forward_korean_peoples_army_asymmetric_forces_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_strategic_bombing_factor_var
+					value = 0.10
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_bombing_targetting_var
+					value = 0.10
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_strengthen_conventional_forces
+		icon = GFX_PRK_navy_common_focus
+		x = 38
+		y = 3
+		cost = 5
+		prerequisite = { focus = PRK_five_year_national_defense_development_plan }
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+					add_idea = PRK_march_forward_korean_peoples_army_conventional_forces_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_artillery_attack_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_artillery_defence_factor_var
+					value = 0.05
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_integrate_nuclear_and_conventional_forces
+		icon = GFX_PRK_army_common_focus
+		x = 36
+		y = 4
+		cost = 5
+		prerequisite = { focus = PRK_strengthen_asymmetric_forces }
+		prerequisite = { focus = PRK_strengthen_conventional_forces }
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = { industrial_development_var_temp = 0.05 }
+			add_industrial_development = yes
+			set_temp_variable = { military_development_var_temp = 0.05 }
+			add_military_development = yes
+			set_temp_variable = { academic_development_var_temp = 0.05 }
+			add_academic_development = yes
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_new_strategic_line_for_peoples_army
+		icon = GFX_PRK_army_common_focus
+		x = 36
+		y = 5
+		cost = 5
+		prerequisite = { focus = PRK_integrate_nuclear_and_conventional_forces }
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+					add_idea = PRK_march_forward_korean_peoples_army_new_strategic_line_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_planning_speed_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_max_planning_factor_var
+					value = 0.025
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	focus = {
+		id = PRK_hold_ground_forces_firmly
+		icon = GFX_PRK_army_common_focus
+		x = 34
+		y = 6
+		cost = 5
+		prerequisite = { focus = PRK_new_strategic_line_for_peoples_army }
+		mutually_exclusive = { focus = PRK_hold_air_and_naval_forces_firmly }
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+					add_idea = PRK_march_forward_korean_peoples_army_ground_forces_idea
+				}
+			}
+			add_tech_bonus = {
+				name = PRK_hold_ground_forces_firmly_bonus
+				bonus = 0.50
+				uses = 2
+				category = infantry_weapons
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_army_org_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_army_morale_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_land_reinforce_rate_var
+					value = 0.02
+				}
+			}
+		}
+		ai_will_do = { factor = 30 }
+	}
+
+	focus = {
+		id = PRK_hold_air_and_naval_forces_firmly
+		icon = GFX_PRK_navy_common_focus
+		x = 38
+		y = 6
+		cost = 5
+		prerequisite = { focus = PRK_new_strategic_line_for_peoples_army }
+		mutually_exclusive = { focus = PRK_hold_ground_forces_firmly }
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+					add_idea = PRK_march_forward_korean_peoples_army_air_naval_forces_idea
+				}
+			}
+			add_tech_bonus = {
+				name = PRK_hold_air_and_naval_forces_firmly_air_bonus
+				bonus = 0.50
+				uses = 1
+				category = air_equipment
+			}
+			add_tech_bonus = {
+				name = PRK_hold_air_and_naval_forces_firmly_naval_bonus
+				bonus = 0.50
+				uses = 1
+				category = naval_equipment
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_air_attack_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_air_mission_efficiency_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_navy_org_factor_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_naval_damage_factor_var
+					value = 0.05
+				}
+			}
+		}
+		ai_will_do = { factor = 70 }
+	}
+
+	focus = {
+		id = PRK_strengthen_strategic_force_in_every_way
+		icon = GFX_PRK_army_common_focus
+		x = 36
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = PRK_hold_ground_forces_firmly
+			focus = PRK_hold_air_and_naval_forces_firmly
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRK_march_forward_korean_peoples_army_dynamic_dummy_idea
+					add_idea = PRK_march_forward_korean_peoples_army_strategic_force_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_rocket_attack_factor_var
+					value = 0.10
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_production_speed_rocket_site_factor_var
+					value = 0.10
+				}
+				add_to_variable = {
+					var = PRK_march_forward_korean_peoples_army_nuclear_production_factor_var
+					value = 0.05
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

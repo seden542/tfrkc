@@ -1,0 +1,12 @@
+add_namespace = tfrkc_pacing
+# Self-contained fallback: existing wars and future entry factions get the same policy.
+country_event = {
+ id = tfrkc_pacing.1
+ hidden = yes
+ trigger = {
+  TFRKC_war_pacing_eligible_trigger = yes
+  NOT = { has_dynamic_modifier = { modifier = TFRKC_protracted_civilwar } }
+ }
+ mean_time_to_happen = { days = 1 }
+ immediate = { TFRKC_apply_war_pacing_effect = yes }
+}

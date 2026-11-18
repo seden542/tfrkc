@@ -1,0 +1,7 @@
+# RETIRED in rework 2026-11-17. Definitions retained only for explicit legacy references.
+focus_tree = {
+ id = TFRKC_civilwar_tree
+ country = { factor = 0 }
+ default = no
+ focus = { id = TFRKC_wartime_administration icon = GFX_KOR_lee_army_route_common_focus_1 x = 0 y = 0 cost = 3 available = { always = no } completion_reward = { } }
+}

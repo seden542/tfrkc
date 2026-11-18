@@ -1,0 +1,122 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFRKP_head_of_gov_tt_container"
+		position = { x = 150 y = 290 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_head_of_gov_tt_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_HoG_icon"
+			pdx_tooltip  = "TFRKP_HEAD_OF_GOV_TT1"
+			pdx_tooltip_delayed  = "TFRKP_HEAD_OF_GOV_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_head_of_gov_tt_diplo_container"
+		position = { x = 490 y = 117 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_head_of_gov_tt_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_HoG_icon"
+			pdx_tooltip  = "TFRKP_HEAD_OF_GOV_TT1"
+			pdx_tooltip_delayed  = "TFRKP_HEAD_OF_GOV_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_cabinet_premier_kim_jae_ryong_tt_container"
+		position = { x = 110 y = 290 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_cabinet_premier_kim_jae_ryong_tt_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_PRK_cabinet_premier_kim_jae_ryong_icon"
+			pdx_tooltip = "TFRKP_CABINET_PREMIER_TT1"
+			pdx_tooltip_delayed = "TFRKP_CABINET_PREMIER_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_cabinet_premier_kim_jae_ryong_tt_diplo_container"
+		position = { x = 450 y = 117 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_cabinet_premier_kim_jae_ryong_tt_diplo_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_PRK_cabinet_premier_kim_jae_ryong_icon"
+			pdx_tooltip = "TFRKP_CABINET_PREMIER_TT1"
+			pdx_tooltip_delayed = "TFRKP_CABINET_PREMIER_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_eternal_leader_tt_container"
+		position = { x = 150 y = 290 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_eternal_leader_tt_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_PRK_eternal_leader_kim_il_sung_icon"
+			pdx_tooltip = "TFRKP_ETERNAL_LEADER_TT1"
+			pdx_tooltip_delayed = "TFRKP_ETERNAL_LEADER_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_eternal_leader_tt_diplo_container"
+		position = { x = 490 y = 117 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_eternal_leader_tt_diplo_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_PRK_eternal_leader_kim_il_sung_icon"
+			pdx_tooltip = "TFRKP_ETERNAL_LEADER_TT1"
+			pdx_tooltip_delayed = "TFRKP_ETERNAL_LEADER_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_eternal_leader_kim_jong_il_tt_container"
+		position = { x = 150 y = 330 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_eternal_leader_kim_jong_il_tt_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_PRK_eternal_leader_kim_jong_il_icon"
+			pdx_tooltip = "TFRKP_ETERNAL_LEADER_KIM_JONG_IL_TT1"
+			pdx_tooltip_delayed = "TFRKP_ETERNAL_LEADER_KIM_JONG_IL_TT"
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_eternal_leader_kim_jong_il_tt_diplo_container"
+		position = { x = 490 y = 157 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFRKP_eternal_leader_kim_jong_il_tt_diplo_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_PRK_eternal_leader_kim_jong_il_icon"
+			pdx_tooltip = "TFRKP_ETERNAL_LEADER_KIM_JONG_IL_TT1"
+			pdx_tooltip_delayed = "TFRKP_ETERNAL_LEADER_KIM_JONG_IL_TT"
+		}
+	}
+}

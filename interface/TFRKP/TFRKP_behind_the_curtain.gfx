@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_behind_the_curtain_overlay"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_triangle_background"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/background.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_triangle_r"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/triangle_r.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_triangle_g"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/triangle_g.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_triangle_b"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/triangle_b.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_behind_the_curtain_warning_zone"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/warning_zone.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_behind_the_curtain_tendency_icon"
+		texturefile = "gfx/interface/GUI/behind_the_curtain/tendency_icon.png"
+	}
+}

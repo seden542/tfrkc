@@ -1,0 +1,175 @@
+﻿l_korean:
+#  NatAsm_diagram_tt: "[?KOR_DP_right]\n[?KOR_PPP_display]\n[?KOR_PP_display]\n[?KOR_JP_display]\n[?KOR_Ind_display]"
+ KOR_NatAsm_changed_tt: "§Y국회 GUI§!가 갱신되었습니다."
+ 
+ KOR_election_of_NA_2020: "§L제21대 국회의원 선거§!"
+ KOR_election_of_NA_2024: "§L제22대 국회의원 선거§!"
+ KOR_election_of_NA_2024_tw_defeat: "§L제22대 국회의원 선거§!에서 [GetNameDPLoc]이 승리를 거둠"
+ KOR_election_of_NA_2024_tw_win: "§L제22대 국회의원 선거§!에서 [GetNamePPPLoc]이 승리를 거둠"
+ KOR_election_of_NA_2028: "§L제23대 국회의원 선거§!"
+ KOR_election_of_NA_2032: "§L제24대 국회의원 선거§!"
+
+ KOR_NatAsm_DP_color: "§B"
+ KOR_NatAsm_PPP_color: "§d"
+ KOR_NatAsm_JP_color: "§Y"
+ KOR_NatAsm_PP_color: "§O"
+ KOR_NatAsm_Ind_color: "§g"
+
+ KOR_NatAsm_DP_c: "§B더불어민주당§!"
+ KOR_NatAsm_PPP_c: "§d국민의힘§!"
+ KOR_NatAsm_JP_c: "§Y정의당§!"
+ KOR_NatAsm_PP_c: "§O국민의당§!"
+ KOR_NatAsm_Ind_c: "§g무소속§!"
+
+ KOR_NatAsm_faction_title: "[KOR_NatAsm_current_faction_dynamic]"
+ KOR_NatAsm_faction_seats: "[KOR_NatAsm_current_faction_color_dynamic][KOR_NatAsm_vote_seats][KOR_NatAsm_current_faction_seats_dynamic]석§!"
+ KOR_NatAsm_vote_seat_show: "[?KOR_NatAsm_faction_support^KOR_NatAsm_faction]/"
+
+ #군바리 국회의원
+ KOR_national_assembly_new_category: "[GetKORNationalAssemblyCategoryTitle]"
+ KOR_national_assembly_new_category_desc: "\n\n\n\n\n£GFX_KOR_national_assembly_new_category_decision\n\n\n\n\n\n\n\n§Y대한민국 국회§!는 대한민국의 최고 입법 기관이자 유일한 입법 기관입니다. 단원제로 운영되며, 법률 제정 및 개정, 국가 예산 심의, 조약 비준, 정부에 대한 감시와 견제를 담당합니다.\n\n국회는 국가 권력 구조의 핵심 축으로서, 질의, 청문, 탄핵 등의 권한을 통해 행정부와 사법부를 견제합니다. 그 결정은 국가 정책, 국방 안보, 국민의 삶에 직접적인 영향을 미칩니다.\n\n우리는 핵심 법안을 통과시켜 '포스트 아메리카 시대'의 기반을 다지고, 불안정한 국제 질서 속에서도 국가의 안정과 독립, 지속 가능한 발전을 보장해야 합니다.\n\n---- §Y원내 정당 목록§! ---- \n[GetNamePPPLoc]\n[GetNameDPLoc]\n[GetNamePPLoc]"
+ #기존 국회
+ KOR_national_assembly_category: "[GetKORNationalAssemblyCategoryTitle]"
+ KOR_national_assembly_category_desc: ""
+ KOR_national_assembly_category_title_default: "국회"
+ KOR_national_assembly_category_title_southern_local_government: "남측 지방정부 의회"
+ KOR_NatAsm_logo_tt: "[GetNatAsmspeaker]"
+ ## 20대 국회 ##
+ NatAsmSpeaker_moon_hee_sang: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Moon_hee_sang_Portrait\n\n\n\n\n\n\n\n§W         문희상§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ ## 21대 국회 ##
+ NatAsmSpeaker_park_byeong_seug: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Park_byeong_seug_Portrait\n\n\n\n\n\n\n\n§W         박병석§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_kim_jin_pyo: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Kim_jin_pyo_Portrait\n\n\n\n\n\n\n\n§W         김진표§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ ## 22대 국회 ##
+ #정사
+ NatAsmSpeaker_woo_won_shik: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Woo_won_shik_Portrait\n\n\n\n\n\n\n\n§W         우원식§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_jeong_dong_yeong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_jeong_dong_yeong_Portrait\n\n\n\n\n\n\n\n§W         정동영§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ #빛버지
+ NatAsmSpeaker_jeong_jin_seok: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Chung_Jin_suk_Portrait\n\n\n\n\n\n\n\n§W         정진석§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_cho_gyeong_tae: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Cho_Kyoung_Tae_Portrait\n\n\n\n\n\n\n\n§W         조경태§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ ## 23대 국회 ##
+ #정사
+ NatAsmSpeaker_cho_jeong_shik: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_cho_jeong_shik_Portrait\n\n\n\n\n\n\n\n§W         조정식§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_lee_in_yeong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_lee_in_yeong_Portrait\n\n\n\n\n\n\n\n§W         이인영§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ #빛버지
+ NatAsmSpeaker_ha_tae_gyung: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Ha_tae_kyung_Portrait\n\n\n\n\n\n\n\n§W         하태경§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_kim_tae_ho: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Kim_Tae_ho_Portrait\n\n\n\n\n\n\n\n§W         김태호§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ ## 24대 국회 ##
+ #정사
+ NatAsmSpeaker_jeong_seong_ho: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_jeong_seong_ho_Portrait\n\n\n\n\n\n\n\n§W         정성호§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_yoon_ho_jung: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_yoon_ho_jung_Portrait\n\n\n\n\n\n\n\n§W         윤호중§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ #빛버지
+ NatAsmSpeaker_jang_dong_hyeok: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_jang_dong_hyeok_Portrait\n\n\n\n\n\n\n\n§W         장동혁§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_bae_hyeon_jin: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_bae_hyeon_jin_Portrait\n\n\n\n\n\n\n\n§W         배현진§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ ### 루트 추가 ###
+ NatAsmSpeaker_seol_hoon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_seol_hoon_Portrait\n\n\n\n\n\n\n\n§W         설훈§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_joo_ho_yeong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_joo_ho_yeong_Portrait\n\n\n\n\n\n\n\n§W         주호영§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_park_ji_won: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_park_ji_won_Portrait\n\n\n\n\n\n\n\n§W         박지원§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_kwon_yeong_se: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kwon_yeong_se_Portrait\n\n\n\n\n\n\n\n§W         권영세§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_hong_yeong_pyo: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_hong_yeong_pyo_Portrait\n\n\n\n\n\n\n\n§W         홍영표§!\n\n\n§Y원 소속 정당: §C조국혁신당§!"
+ NatAsmSpeaker_yoon_sang_hyeon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_yoon_sang_hyeon_Portrait\n\n\n\n\n\n\n\n§W         윤상현§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_kim_ki_hyeon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_ki_hyeon_Portrait\n\n\n\n\n\n\n\n§W         김기현§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_kim_hak_yong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_hak_yong_Portrait\n\n\n\n\n\n\n\n§W         김학용§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_yu_eui_dong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_yu_eui_dong_Portrait\n\n\n\n\n\n\n\n§W         유의동§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_ahn_cheol_soo: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_ahn_cheol_soo_Portrait\n\n\n\n\n\n\n\n§W         안철수§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_kim_se_yeon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_se_yeon_Portrait\n\n\n\n\n\n\n\n§W         김세연§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_na_kyung_won: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_na_kyung_won_Portrait\n\n\n\n\n\n\n\n§W         나경원§!\n\n\n§Y원 소속 정당: §A국민의힘§!"
+ NatAsmSpeaker_song_yeong_gil: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_song_yeong_gil_Portrait\n\n\n\n\n\n\n\n§W         송영길§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_an_kyu_baek: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_an_kyu_baek_Portrait\n\n\n\n\n\n\n\n§W         안규백§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_kim_tae_nyeon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_tae_nyeon_Portrait\n\n\n\n\n\n\n\n§W         김태년§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_lee_hak_yeong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_tae_nyeon_Portrait\n\n\n\n\n\n\n\n§W         이학영§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_min_hong_cheol: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_min_hong_cheol_Portrait\n\n\n\n\n\n\n\n§W         민홍철§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_roh_woon_rae: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_roh_woon_rae_Portrait\n\n\n\n\n\n\n\n§W         노웅래§!\n\n\n§Y원 소속 정당: §C조국혁신당§!"
+ NatAsmSpeaker_jeon_byung_heon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_jeon_byung_heon_Portrait\n\n\n\n\n\n\n\n§W         전병헌§!\n\n\n§Y원 소속 정당: §C조국혁신당§!"
+ NatAsmSpeaker_kim_jong_min: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_jong_min_Portrait\n\n\n\n\n\n\n\n§W         김종민§!\n\n\n§Y원 소속 정당: §C조국혁신당§!"
+ NatAsmSpeaker_sim_sang_jung: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_sim_sang_jung_Portrait\n\n\n\n\n\n\n\n§W         심상정§!\n\n\n§Y원 소속 정당: §s민주노동당§!"
+ NatAsmSpeaker_kim_seon_dong: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_seon_dong_Portrait\n\n\n\n\n\n\n\n§W         김선동§!\n\n\n§Y원 소속 정당: §s민주노동당§!"
+ NatAsmSpeaker_kim_jong_hoon: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kim_jong_hoon_Portrait\n\n\n\n\n\n\n\n§W         김종훈§!\n\n\n§Y원 소속 정당: §s민주노동당§!"
+ NatAsmSpeaker_kang_eun_mi: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_kang_eun_mi_Portrait\n\n\n\n\n\n\n\n§W         강은미§!\n\n\n§Y원 소속 정당: §s민주노동당§!"
+ 
+ ### 날려버림 ###
+ NatAsmSpeaker_cho_seung_rae: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_cho_seung_rae_Portrait\n\n\n\n\n\n\n\n§W         조승래§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ NatAsmSpeaker_jeong_cheong_rae: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_jeong_cheong_rae_Portrait\n\n\n\n\n\n\n\n§W         정청래§!\n\n\n§Y원 소속 정당: §P더불어민주당§!"
+ 
+ ## 공석 ##
+ NatAsmSpeaker_vacant: "\n§Y대한민국 국회의장:§!\n\n\n\n\n\n\n\n\n\n£GFX_Vacant_Portrait\n\n\n\n\n\n\n\n§W          공석§!\n\n\n "
+
+ NatAsm_member_text: "[GetNatAsmPartyName] ([GetKORNatAsmSeatsDynamic])"
+ NatAsm_member_loc: "[GetNatAsmPartyDesc]"
+ KOR_NatAsm_DP_seats: "[?KOR_NatAsm_DP_seats]석"
+ KOR_NatAsm_PPP_seats: "[?KOR_NatAsm_PPP_seats]석"
+ KOR_NatAsm_JP_seats: "[?KOR_NatAsm_JP_seats]석"
+ KOR_NatAsm_PP_seats: "[?KOR_NatAsm_PP_seats]석"
+ KOR_NatAsm_Ind_seats: "[?KOR_NatAsm_Ind_seats]석"
+ 
+ KOR_PARTY_LOC_NONE: ""
+
+ KOR_DP_Party_text: "민주당계 정당"
+ KOR_DP_Party_desc: "[GetNatAsmPartyName]\n\n\n\n\n£GFX_NA_minju_banner_texticon\n\n\n\n\n\n£GFX_KOR_DemocraticParty_texticon §3민주당계§!§L는 군부 독재에 맞선 민주화 운동 세력을 중심으로 모인 계파입니다.§!\n§L현재§! [GetHeadofDP]§L이 §3민주당계§!를 이끌고 있으며 사회자유주의에 기반한 중도개혁 노선을 주장하고 있습니다. 이들은 '진보'와 '보수'의 이분법을 넘어 실용적 문제 해결을 강조하며 '보편적 복지국가' '노동 존중 사회'를 추구하고 있습니다.§!\n§W------------§!\n§3원내 민주당계 정당 목록§!\n[GetNameDPLoc]\n[GetNameODPLoc]\n[GetNameRKPLoc]\n\n" #순서: 더민주/열린민주당/조혁당
+ 
+ ## GetNameDPLoc ##
+ KOR_DP_LOC_DPK: "£GFX_KOR_DemocraticParty_texticon §P더불어민주당§!"
+ KOR_DP_LOC_NFP: "£GFX_KOR_DemocraticParty_texticon §B새미래민주당§!"
+ KOR_ODP_LOC_ODP: "£GFX_KOR_ODP_texticon §3열린민주당§!"
+ KOR_ODP_LOC_ANNEXED: "§L[GetNameDPLoc]으로 합병됨(£GFX_KOR_ODP_texticon §3열린민주당§!)§!"
+ KOR_RKP_LOC_RKP: "£GFX_KOR_RKP_texticon §4조국혁신당§!"
+ 
+ KOR_PPP_Party_text: "보수 정당"
+ KOR_PPP_Party_desc: "[GetNatAsmPartyName]\n\n\n\n\n£GFX_NA_ppp_banner_texticon\n\n\n\n\n\n£GFX_KOR_PPP_texticon §A보수정당§!§L의 계보는 1990년 '3당 합당'에서 그 기원을 찾습니다. 당시 군부정권을 계승한 민주정의당, 민주화 세력인 김영삼, 김종필의 세력이 합당하여 거대 여당은 민주자유당을 창당한 것이 시작입니다. 현재 [GetNamePPPLoc]이 §A보수정당§!§L을 이끌고 있으며 이들은 '자유민주주의' '법치주의'의 가치를 내세우고 있으며, 굳건한 한미동맹을 외교 안보정책의 최우선 근간으로 삼고 있습니다.§!\n§W------------§!\n§A원내 보수 정당 목록§!\n[GetNamePPPLoc]\n[GetNameORPLoc]"
+ 
+ ## GetNamePPPLoc ###
+ KOR_PPP_LOC_LKP: "§R£GFX_KOR_LKP_texticon 자유한국당§!"
+ KOR_PPP_LOC_UFP: "§p£GFX_KOR_UFP_texticon 미래통합당§!"
+ KOR_PPP_LOC_PPP: "§d£GFX_KOR_PPP_texticon 국민의힘§!"
+ KOR_PPP_LOC_NP: "§d£GFX_KOR_PPP_NCP_texticon 자유미래당§!"
+ KOR_PPP_LOC_RC: "§d£GFX_KOR_PPP_RCP_texticon 한국공화당§!"
+ KOR_PPP_LOC_DISMENDTLED: "§d< 해산됨 >§!"
+ KOR_ORP_LOC_ORP: "§G£GFX_KOR_ORP_texticon 우리공화당§!"
+ 
+ KOR_JP_Party_text: "진보 정당"
+ KOR_JP_Party_desc: "[GetNatAsmPartyName]\n\n\n\n\n£GFX_NA_jb_banner_texticon\n\n\n\n\n\n£GFX_KOR_JusticeParty_texticon §p진보 정당§!§L들은 노동 운동, 사회 운동, 민중 운동을 기반으로 등장한 정당들입니다. 이들은 공통적으로 사회민주주의 및 민주사회주의에 기반한 좌파적 노선을 주장하고 있습니다. 이들은 '노동권 강화', '사회 불평등 해소', '생태주의', '반전 평화'를 핵심 가치로 추구하고 있습니다.§!\n§W------------§!\n§p원내 진보 정당 목록§!\n[GetNameJPLoc]\n[GetNameTPPLoc]\n[GetNameLPLoc]\n[GetNameKSDPLoc]\n[GetNameGPKLoc]\n[GetNameBIPLoc]\n[GetNamePDPLoc]\n[GetNameKSDLWPLoc]"
+ 
+ ## GetNameJPLoc ##
+ KOR_JP_LOC_JP: "§Y£GFX_KOR_JP_texticon 정의당§!"
+ KOR_JP_LOC_GJP: "§7£GFX_KOR_GJP_texticon 녹색정의당§!"
+ KOR_JP_LOC_KDLP: "§H£GFX_KOR_KDLP_texticon 민주노동당§!" #원역사 2025 대선용
+ KOR_JP_LOC_DLP: "§s£GFX_KOR_DLP_texticon 민주노동당§!" #좌빨루트
+ KOR_JP_LOC_ESP: "§7£GFX_KOR_ESP_texticon 평등사회당§!" #해산 후 재건
+ KOR_JP_LOC_IJP: "§Y£GFX_KOR_JP_texticon 혁신정의당§!"
+ KOR_TPP_LOC_TPP: "§s£GFX_KOR_TPP_texticon 진보당§!"
+ KOR_TPP_LOC_NPP: "§s£GFX_KOR_NPP_texticon 새로운민중당§!" #해산 후 재건
+ KOR_TPP_LOC_PPSK: "§s£GFX_KOR_PPSK_texticon 민중당§!"
+ KOR_LP_LOC_LP: "§t£GFX_KOR_LP_texticon 노동당§!"
+ KOR_PDP_LOC_PDP: "§1£GFX_KOR_PDP_texticon 민중민주당§!"
+ KOR_KSDP_LOC_KSDP: "§8£GFX_KOR_KSDP_texticon 사회민주당§!"
+ KOR_GPK_LOC_GPK: "§6£GFX_KOR_GPK_texticon 녹색당§!"
+ KOR_BIP_LOC_BIP: "§5£GFX_KOR_BIP_texticon 기본소득당§!"
+ KOR_KSDLWP_LOC_KSDLWP: "§R£GFX_KOR_WPK_after_texticon 조선사회민주로동자당§!"
+ 
+ KOR_BP_Party_text: "제3지대 정당"
+ KOR_BP_Party_desc: "[GetNatAsmPartyName]\n\n\n\n\n£GFX_NA_third_banner_texticon\n\n\n\n\n\n£GFX_KOR_PeopleParty_texticon §Y제3지대§!§L 정당들은 민주당계와 민정당계 거대 양당의 독점적 정치 구도를 비판하며 등장한 세력입니다. 이들은 이념 대결을 넘어 '실용주의', '합리적 개혁', '미래 대비'를 강조하며 중도주의 및 개혁보수 노선을 추구하고 있습니다.§!\n§W------------§!\n§Y원내 제3지대 정당 목록§!\n[GetNamePPLoc]\n[GetNameRPLoc]\n[GetNameLUPLoc]\n[GetNameHEOLoc]\n\n"
+ 
+ ## GetNameBPLoc ##
+ KOR_PP_LOC_BP: "§5£GFX_KOR_BP_texticon 바른미래당§!"
+ KOR_PP_LOC_PP: "§O£GFX_KOR_PeopleParty_texticon 국민의당§!"
+ KOR_PP_LOC_ANNEXED: "§L[GetNamePPPLoc]으로 합병됨(§O£GFX_KOR_PeopleParty_texticon 국민의당§!)§!"
+ KOR_PP_LOC_ANNEXED2: "§d< 해산됨 >§!"
+ KOR_RP_LOC_RP: "§9£GFX_KOR_RP_texticon 개혁신당§!"
+ KOR_RP_LOC_NONE: "[GetNamePPPLoc] 소장파"
+ KOR_LUP_LOC_LUP: "§5£GFX_KOR_LUP_texticon 자유통일당§!"
+ KOR_HEO_LOC_HEO: "§R£GFX_KOR_HEO_texticon 국가혁명당§!"
+ 
+ KOR_Ind_Party_text: "무소속"
+ KOR_Ind_Party_desc: "[GetNatAsmPartyName]\n\n\n\n\n£GFX_NA_non_banner_texticon\n\n\n\n\n\n§L국회의원이 자신의 정당이 없다는 의미는 좋게 말하자면 정당원칙에 얽매이는 정치를 하지 않는다는 것이지만, 대부분의 경우 정당과 불화를 겪거나 추문 탓에 당적을 버렸습니다.§!"
+
+ KOR_NatAsm_DP_seat_tooltip: "£GFX_KOR_DemocraticParty_texticon §3민주당계§!"
+ KOR_NatAsm_PPP_seat_tooltip: "£GFX_KOR_PPP_texticon §A보수정당§!"
+ KOR_NatAsm_JP_seat_tooltip: "£GFX_KOR_JusticeParty_texticon §d진보정당§!"
+ KOR_NatAsm_PP_seat_tooltip: "£GFX_KOR_PeopleParty_texticon §O제3지대§!"
+ KOR_NatAsm_Ind_seat_tooltip: "£GFX_KOR_Independent_texticon §g무소속§!"
+
+ KOR_NatAsm_diagram_tt: "§8국회 원내 구성§!\n§3민주당계§!: [?KOR_NatAsm_DP_seats]석\n§A보수정당§!: [?KOR_NatAsm_PPP_seats]석\n§d진보정당§!: [?KOR_NatAsm_JP_seats]석\n§O제3지대§!: [?KOR_NatAsm_PP_seats]석\n§g무소속§!: [?KOR_NatAsm_Ind_seats]석"
+
+ KOR_NatAsm_seat_temp_decrease_tt: "[KOR_NatAsm_change_seats_dynamic]의 £GFX_KOR_NationalAssembly_texticon §8국회 의석§!이 [?KOR_NatAsm_seat_temp|Y0]석 §R감소§!합니다."
+ KOR_NatAsm_seat_temp_increase_tt: "[KOR_NatAsm_change_seats_dynamic]의 £GFX_KOR_NationalAssembly_texticon §8국회 의석§!이 [?KOR_NatAsm_seat_temp|Y0]석 §G증가§!합니다."
+ KOR_NatAsm_seat_specific_1_decrease_tt: "[KOR_NatAsm_change_seats_dynamic]의 £GFX_KOR_NationalAssembly_texticon §8국회 의석§!이 [?KOR_NatAsm_seat_temp|Y0]석 §R감소§!하고 [KOR_NatAsm_change_seats_specific_1_target]이 이들의 의석을 §G획득§!합니다."
+ KOR_NatAsm_seat_specific_1_increase_tt: "[KOR_NatAsm_change_seats_dynamic]§W의§! £GFX_KOR_NationalAssembly_texticon §8국회 의석§!§W이§! [?KOR_NatAsm_seat_temp|Y0]§W석§! §G증가§!§W하고§!, [KOR_NatAsm_change_seats_specific_1_target]§W이 의석을§! §R상실§!§W합니다.§!"

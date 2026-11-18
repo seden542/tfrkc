@@ -1,0 +1,61 @@
+﻿### Air OOB ###
+# KOR_CAS_equipment_1 : F-5E
+# KOR_CAS_equipment_2 : KF-16
+# KOR_fighter_equipment_1 : FA-50
+# KOR_fighter_equipment_2 : F-15K
+# KOR_fighter_equipment_3 : KF-21 Borame
+# KOR_fighter_equipment_4 : F-35 
+air_wings = {
+	1579 = { #Gyeonggi
+		CAS_equipment_1 =  {
+			owner = "KOR" 
+			amount = 60
+		}
+		CAS_equipment_1 =  {
+			owner = "KOR" 
+			amount = 20
+		}
+	}
+	871 = { #Gangwon
+		fighter_equipment_1 =  {
+			owner = "KOR" 
+			amount = 40
+		}
+		CAS_equipment_1 =  {
+			owner = "KOR" 
+			amount = 40
+		}
+	}
+	1710 = { #Chungcheong
+		fighter_equipment_4 =  {
+			owner = "USA" 
+			amount = 16
+		}
+		CAS_equipment_2 =  {
+			owner = "KOR" 
+			amount = 100
+		}
+		CAS_equipment_2 =  {
+			owner = "KOR" 
+			amount = 67
+		}
+	}
+	1557 = { #Jeolla
+		fighter_equipment_1 =  {
+			owner = "KOR" 
+			amount = 60
+		}
+	}	
+	870 = { #Gyeongbuk
+		fighter_equipment_1 =  {
+			owner = "KOR" 
+			amount = 40
+		}
+	}	
+	1411 = { #Daegu
+		fighter_equipment_2 =  {
+			owner = "KOR" 
+			amount = 59
+		}
+	}	
+}

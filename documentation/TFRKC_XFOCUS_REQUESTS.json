@@ -1,0 +1,1464 @@
+{
+  "schema_version": 1,
+  "focus_prefix": "TFRKC_xfocus_",
+  "policy_flags": "TFRKC_xfocus_policy_<KEY>_A/B/C",
+  "completed_flag": "TFRKC_xfocus_<KEY>_<node>_done",
+  "organization_flag": "TFRKC_xfocus_organization_<KEY>",
+  "notes": [
+    "Unknown effect/event IDs are never called.",
+    "Organization systems and decisions are owned by event team.",
+    "UNDERGROUND has no country tag and no automatic host-country bonuses.",
+    "Organization->country transfer copies only KEY-scoped policy/done flags; never replay one-shot rewards."
+  ],
+  "factions": [
+    {
+      "key": "GWANGJU",
+      "name": "광주시민방위정부",
+      "tag": "KCG",
+      "stagedRegistryTag": "KCG",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "지방분권 공화국",
+          "flag": "TFRKC_xfocus_policy_GWANGJU_A",
+          "node": "TFRKC_xfocus_GWANGJU_route_a",
+          "commitEffect": "TFRKC_xfocus_set_GWANGJU_A_effect"
+        },
+        {
+          "name": "강력한 비상정부",
+          "flag": "TFRKC_xfocus_policy_GWANGJU_B",
+          "node": "TFRKC_xfocus_GWANGJU_route_b",
+          "commitEffect": "TFRKC_xfocus_set_GWANGJU_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "district_mandates",
+          "purpose": "타 지역 진출의 시민 위임",
+          "conditions": [
+            "실제 주민 협의",
+            "상대 지역 통제·전투 상태"
+          ],
+          "expectedEffect": "지역별 동의 기록과 진출 비용. 공짜 영토·봉기 생성 금지",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_GWANGJU_district_mandates_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_GWANGJU_system_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "joint_front",
+          "purpose": "전주와 공동전선·재판 갈등",
+          "conditions": [
+            "양측 생존",
+            "실제 비적대 또는 협상 가능"
+          ],
+          "expectedEffect": "공동전선 선택과 결별 사건; 전쟁 효과는 전쟁 담당으로 위임",
+          "owner": "이벤트·전쟁·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_GWANGJU_joint_front_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_GWANGJU_system_2_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_GWANGJU_effect"
+    },
+    {
+      "key": "JEONJU",
+      "name": "전주국민혁명위원회",
+      "tag": "KJR",
+      "stagedRegistryTag": "KJR",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "민주적 혁명",
+          "flag": "TFRKC_xfocus_policy_JEONJU_A",
+          "node": "TFRKC_xfocus_JEONJU_route_a",
+          "commitEffect": "TFRKC_xfocus_set_JEONJU_A_effect"
+        },
+        {
+          "name": "영구혁명과 숙청",
+          "flag": "TFRKC_xfocus_policy_JEONJU_B",
+          "node": "TFRKC_xfocus_JEONJU_route_b",
+          "commitEffect": "TFRKC_xfocus_set_JEONJU_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "uprising",
+          "purpose": "점령 지역 봉기 지원",
+          "conditions": [
+            "실제 지역 통제·저항 상태",
+            "조직 비용",
+            "1회성·재사용 제한"
+          ],
+          "expectedEffect": "실제 전쟁 담당 조건을 만족할 때만 봉기 지원",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_JEONJU_uprising_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_JEONJU_system_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "tribunal",
+          "purpose": "혁명재판의 범위",
+          "conditions": [
+            "광주 관계",
+            "민간 보호 원칙",
+            "선택 노선"
+          ],
+          "expectedEffect": "민주적 절차 또는 숙청 확대로 갈등·고립·항복 협상 비용을 반영",
+          "owner": "이벤트·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_JEONJU_tribunal_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_JEONJU_system_2_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_JEONJU_effect"
+    },
+    {
+      "key": "CORPORATE",
+      "name": "한국기업안보연합",
+      "tag": "KCA",
+      "stagedRegistryTag": "KCA",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "기업 간 협약",
+          "flag": "TFRKC_xfocus_policy_CORPORATE_A",
+          "node": "TFRKC_xfocus_CORPORATE_route_a",
+          "commitEffect": "TFRKC_xfocus_set_CORPORATE_A_effect"
+        },
+        {
+          "name": "단일 기업의 국가 장악",
+          "flag": "TFRKC_xfocus_policy_CORPORATE_B",
+          "node": "TFRKC_xfocus_CORPORATE_route_b",
+          "commitEffect": "TFRKC_xfocus_set_CORPORATE_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "procurement",
+          "purpose": "유상 장비·용병 계약",
+          "conditions": [
+            "실제 자금·재고",
+            "공급자 생존",
+            "납기·1회성 제한"
+          ],
+          "expectedEffect": "실제 비용과 공급자 비축 차감을 수반하는 구매",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CORPORATE_procurement_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CORPORATE_system_2_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "shareholders",
+          "purpose": "계열사 경쟁과 사병 지휘",
+          "conditions": [
+            "선택 노선",
+            "계열사 충성·경쟁 상태"
+          ],
+          "expectedEffect": "지휘권 분쟁 또는 공동 의결을 처리. 다른 기업 인물 임의 추가 금지",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CORPORATE_shareholders_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CORPORATE_system_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_CORPORATE_effect"
+    },
+    {
+      "key": "CONTINUITY",
+      "name": "국가존속위원회",
+      "tag": "KSC",
+      "stagedRegistryTag": "KSC",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "서울 정부 지원",
+          "flag": "TFRKC_xfocus_policy_CONTINUITY_A",
+          "node": "TFRKC_xfocus_CONTINUITY_route_a",
+          "commitEffect": "TFRKC_xfocus_set_CONTINUITY_A_effect"
+        },
+        {
+          "name": "정통성 승계 주장",
+          "flag": "TFRKC_xfocus_policy_CONTINUITY_B",
+          "node": "TFRKC_xfocus_CONTINUITY_route_b",
+          "commitEffect": "TFRKC_xfocus_set_CONTINUITY_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "seoul_support",
+          "purpose": "서울 정부 지원 협의",
+          "conditions": [
+            "KOR 생존·비적대",
+            "실제 자원 비용",
+            "서로의 동의"
+          ],
+          "expectedEffect": "원조·통신 지원의 유상 협의. 자동 합병·진영 가입 금지",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CONTINUITY_seoul_support_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CONTINUITY_system_2_done",
+            "TFRKC_xfocus_CONTINUITY_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "succession",
+          "purpose": "정부 붕괴 후 승계 논쟁",
+          "conditions": [
+            "서울 정부 상태",
+            "기록 보존",
+            "기존 헌정연합 관계"
+          ],
+          "expectedEffect": "정통성 주장과 수락·거부를 처리, 영토/장교 이전은 공통 효과",
+          "owner": "이벤트·전쟁·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CONTINUITY_succession_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CONTINUITY_system_3_done",
+            "TFRKC_xfocus_CONTINUITY_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_CONTINUITY_effect"
+    },
+    {
+      "key": "TAEBAEK",
+      "name": "태백산군사평의회",
+      "tag": "KTM",
+      "stagedRegistryTag": "KTM",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "헌정세력 합류",
+          "flag": "TFRKC_xfocus_policy_TAEBAEK_A",
+          "node": "TFRKC_xfocus_TAEBAEK_route_a",
+          "commitEffect": "TFRKC_xfocus_set_TAEBAEK_A_effect"
+        },
+        {
+          "name": "독자 군사국가",
+          "flag": "TFRKC_xfocus_policy_TAEBAEK_B",
+          "node": "TFRKC_xfocus_TAEBAEK_route_b",
+          "commitEffect": "TFRKC_xfocus_set_TAEBAEK_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "isolated_units",
+          "purpose": "고립 부대 통합",
+          "conditions": [
+            "실제 원소속 부대·인물",
+            "보급 가능 경로",
+            "상대 동의 또는 귀순 조건"
+          ],
+          "expectedEffect": "실제 부대만 이전하고 원소속에서 차감",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_TAEBAEK_isolated_units_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_TAEBAEK_system_2_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "constitutional",
+          "purpose": "헌정세력과 합류 협의",
+          "conditions": [
+            "KCH 생존·비적대",
+            "장교회의 노선",
+            "상호 동의"
+          ],
+          "expectedEffect": "연락·공동전선·통합 여부를 별도 선택. 자동 합병 없음",
+          "owner": "이벤트·전쟁·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_TAEBAEK_constitutional_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_TAEBAEK_system_3_done",
+            "TFRKC_xfocus_TAEBAEK_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_TAEBAEK_effect"
+    },
+    {
+      "key": "FARMERS",
+      "name": "호남농민공동전선",
+      "tag": "KAF",
+      "stagedRegistryTag": "KAF",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "농민자치연방",
+          "flag": "TFRKC_xfocus_policy_FARMERS_A",
+          "node": "TFRKC_xfocus_FARMERS_route_a",
+          "commitEffect": "TFRKC_xfocus_set_FARMERS_A_effect"
+        },
+        {
+          "name": "전시농업국가",
+          "flag": "TFRKC_xfocus_policy_FARMERS_B",
+          "node": "TFRKC_xfocus_FARMERS_route_b",
+          "commitEffect": "TFRKC_xfocus_set_FARMERS_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "food_agreement",
+          "purpose": "식량 공급 협정",
+          "conditions": [
+            "실제 공급 여력",
+            "상대 생존",
+            "운송 가능",
+            "협정 비용"
+          ],
+          "expectedEffect": "공급자 비용과 수령자 효과·기한을 갖는 협정",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_FARMERS_food_agreement_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_FARMERS_system_2_done",
+            "TFRKC_xfocus_FARMERS_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "requisition",
+          "purpose": "강제수매 갈등",
+          "conditions": [
+            "수확/배급 상태",
+            "선택 노선",
+            "주민 반발"
+          ],
+          "expectedEffect": "수매 확대와 지지 상실을 함께 처리. 무한 식량 판매 금지",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_FARMERS_requisition_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_FARMERS_system_3_done",
+            "TFRKC_xfocus_FARMERS_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_FARMERS_effect"
+    },
+    {
+      "key": "COVENANT",
+      "name": "새벽언약회",
+      "tag": "KDC",
+      "stagedRegistryTag": "KDC",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "구호 공동체",
+          "flag": "TFRKC_xfocus_policy_COVENANT_A",
+          "node": "TFRKC_xfocus_COVENANT_route_a",
+          "commitEffect": "TFRKC_xfocus_set_COVENANT_A_effect"
+        },
+        {
+          "name": "종말론적 신정국가",
+          "flag": "TFRKC_xfocus_policy_COVENANT_B",
+          "node": "TFRKC_xfocus_COVENANT_route_b",
+          "commitEffect": "TFRKC_xfocus_set_COVENANT_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "relief_network",
+          "purpose": "구호시설 확대",
+          "conditions": [
+            "실제 비용",
+            "민간 수용 여력",
+            "시설 위치"
+          ],
+          "expectedEffect": "구호 제공과 공동체 지지, 비용·수용 제한을 함께 적용",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_COVENANT_relief_network_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_COVENANT_system_2_done",
+            "TFRKC_xfocus_COVENANT_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "authority",
+          "purpose": "교단 권력투쟁",
+          "conditions": [
+            "윤어게인 관계",
+            "교단 노선",
+            "공동체 선택"
+          ],
+          "expectedEffect": "종교적 권위와 대통령 지휘 충돌, 구호 자치 또는 신정 통제",
+          "owner": "이벤트·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_COVENANT_authority_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_COVENANT_system_3_done",
+            "TFRKC_xfocus_COVENANT_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_COVENANT_effect"
+    },
+    {
+      "key": "TAIWAN",
+      "name": "자유대만복국군",
+      "tag": "KTF",
+      "stagedRegistryTag": "KTF",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "한국 정착",
+          "flag": "TFRKC_xfocus_policy_TAIWAN_A",
+          "node": "TFRKC_xfocus_TAIWAN_route_a",
+          "commitEffect": "TFRKC_xfocus_set_TAIWAN_A_effect"
+        },
+        {
+          "name": "대만 귀환 준비",
+          "flag": "TFRKC_xfocus_policy_TAIWAN_B",
+          "node": "TFRKC_xfocus_TAIWAN_route_b",
+          "commitEffect": "TFRKC_xfocus_set_TAIWAN_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "recognition",
+          "purpose": "망명 정치조직 승인",
+          "conditions": [
+            "상대 생존·대만 관련 외교 상태",
+            "당사자 동의"
+          ],
+          "expectedEffect": "외교 승인과 정착 협의. 동맹 전체 참전 금지",
+          "owner": "이벤트·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_TAIWAN_recognition_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_TAIWAN_system_2_done",
+            "TFRKC_xfocus_TAIWAN_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "return",
+          "purpose": "귀환 원정 준비",
+          "conditions": [
+            "실제 항구·수송 능력",
+            "후원 동의",
+            "전후 상태"
+          ],
+          "expectedEffect": "귀환 준비의 비용·목표만 확정. 함대 생성·자동 대중전 없음",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_TAIWAN_return_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_TAIWAN_system_3_done",
+            "TFRKC_xfocus_TAIWAN_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_TAIWAN_effect"
+    },
+    {
+      "key": "DAEDEOK",
+      "name": "대덕기술관리국",
+      "tag": "KDT",
+      "stagedRegistryTag": "KDT",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "공공 연구체제",
+          "flag": "TFRKC_xfocus_policy_DAEDEOK_A",
+          "node": "TFRKC_xfocus_DAEDEOK_route_a",
+          "commitEffect": "TFRKC_xfocus_set_DAEDEOK_A_effect"
+        },
+        {
+          "name": "기술관료 통치",
+          "flag": "TFRKC_xfocus_policy_DAEDEOK_B",
+          "node": "TFRKC_xfocus_DAEDEOK_route_b",
+          "commitEffect": "TFRKC_xfocus_set_DAEDEOK_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "requisition_conflict",
+          "purpose": "청소년해방군과 징발·독립 갈등",
+          "conditions": [
+            "시설 실제 소유자",
+            "징발 상태",
+            "민간 연구진 선택"
+          ],
+          "expectedEffect": "조직 또는 독립국의 등장 분기. 영토/병력은 공통 효과",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_DAEDEOK_requisition_conflict_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_DAEDEOK_system_2_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "prototype_review",
+          "purpose": "무인기·전자전·시제품 심사",
+          "conditions": [
+            "실제 연구 능력·생산 비용",
+            "시험 성공/실패",
+            "사용 가능한 장비 정의"
+          ],
+          "expectedEffect": "실제 생산·시험 비용과 실패 위험. 무료 미정의 장비 생성 금지",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_DAEDEOK_prototype_review_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_DAEDEOK_system_3_done",
+            "TFRKC_xfocus_DAEDEOK_route_a_3_done",
+            "TFRKC_xfocus_DAEDEOK_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_DAEDEOK_effect"
+    },
+    {
+      "key": "RAIL",
+      "name": "대한철도공동체",
+      "tag": "KRL",
+      "stagedRegistryTag": "KRL",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "중립 교통연방",
+          "flag": "TFRKC_xfocus_policy_RAIL_A",
+          "node": "TFRKC_xfocus_RAIL_route_a",
+          "commitEffect": "TFRKC_xfocus_set_RAIL_A_effect"
+        },
+        {
+          "name": "철도 군벌",
+          "flag": "TFRKC_xfocus_policy_RAIL_B",
+          "node": "TFRKC_xfocus_RAIL_route_b",
+          "commitEffect": "TFRKC_xfocus_set_RAIL_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "transit",
+          "purpose": "유상 통행권과 호송",
+          "conditions": [
+            "실제 연결된 철도",
+            "요금·기간·거래 상대",
+            "중립 상태"
+          ],
+          "expectedEffect": "서로 동의한 통행과 호송 계약. 고립 거점 자동 연결 금지",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_RAIL_transit_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_RAIL_system_2_done",
+            "TFRKC_xfocus_RAIL_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "cutoff",
+          "purpose": "거점 단절과 운송 중단",
+          "conditions": [
+            "실제 보급 경로",
+            "적대·협정 상태",
+            "민간 피해"
+          ],
+          "expectedEffect": "단절을 실제 지도/전쟁 상태에 따라 처리. 무제한 봉쇄 금지",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_RAIL_cutoff_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_RAIL_system_3_done",
+            "TFRKC_xfocus_RAIL_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_RAIL_effect"
+    },
+    {
+      "key": "WHITE_NIGHT",
+      "name": "백야국가보안국",
+      "tag": "KBN",
+      "stagedRegistryTag": "KBN",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "민간정부에 권한 반환",
+          "flag": "TFRKC_xfocus_policy_WHITE_NIGHT_A",
+          "node": "TFRKC_xfocus_WHITE_NIGHT_route_a",
+          "commitEffect": "TFRKC_xfocus_set_WHITE_NIGHT_A_effect"
+        },
+        {
+          "name": "비밀 통치체제",
+          "flag": "TFRKC_xfocus_policy_WHITE_NIGHT_B",
+          "node": "TFRKC_xfocus_WHITE_NIGHT_route_b",
+          "commitEffect": "TFRKC_xfocus_set_WHITE_NIGHT_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "covert_contacts",
+          "purpose": "공작과 장교 포섭",
+          "conditions": [
+            "실제 대상 인물·충성·비용",
+            "대상 생존",
+            "중복/배신 방지"
+          ],
+          "expectedEffect": "성공·실패·노출 비용이 있는 포섭. 장군 복제 금지",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_WHITE_NIGHT_covert_contacts_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_WHITE_NIGHT_system_2_done",
+            "TFRKC_xfocus_WHITE_NIGHT_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "double_agents",
+          "purpose": "이중간첩과 기밀 공개",
+          "conditions": [
+            "노출 상태",
+            "반환/비밀통치 노선"
+          ],
+          "expectedEffect": "내부 위기와 민간 감독/비밀권력의 대가",
+          "owner": "이벤트·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_WHITE_NIGHT_double_agents_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_WHITE_NIGHT_system_3_done",
+            "TFRKC_xfocus_WHITE_NIGHT_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_WHITE_NIGHT_effect"
+    },
+    {
+      "key": "CHEONGSONG",
+      "name": "청송자유군",
+      "tag": "KCS",
+      "stagedRegistryTag": "KCS",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "약속한 사면 이행",
+          "flag": "TFRKC_xfocus_policy_CHEONGSONG_A",
+          "node": "TFRKC_xfocus_CHEONGSONG_route_a",
+          "commitEffect": "TFRKC_xfocus_set_CHEONGSONG_A_effect"
+        },
+        {
+          "name": "지휘부의 형량 통제",
+          "flag": "TFRKC_xfocus_policy_CHEONGSONG_B",
+          "node": "TFRKC_xfocus_CHEONGSONG_route_b",
+          "commitEffect": "TFRKC_xfocus_set_CHEONGSONG_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "amnesty",
+          "purpose": "사면에 따른 유상 충원과 약속",
+          "conditions": [
+            "성인 지원자",
+            "약속 누적·실제 공로",
+            "중복·재모집 제한"
+          ],
+          "expectedEffect": "사면 약속과 실제 충원·전후 이행 비용을 함께 관리",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CHEONGSONG_amnesty_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CHEONGSONG_system_2_done",
+            "TFRKC_xfocus_CHEONGSONG_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "sentences",
+          "purpose": "지휘부의 형량 통제",
+          "conditions": [
+            "노선과 약속 상태",
+            "교도관/수감자 관계"
+          ],
+          "expectedEffect": "공로 판정·사면 이행 또는 형량 통제 위기",
+          "owner": "이벤트·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CHEONGSONG_sentences_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CHEONGSONG_system_3_done",
+            "TFRKC_xfocus_CHEONGSONG_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_CHEONGSONG_effect"
+    },
+    {
+      "key": "IMPERIAL",
+      "name": "대한황실봉대회",
+      "tag": "KHC",
+      "stagedRegistryTag": "KHC",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "입헌군주국",
+          "flag": "TFRKC_xfocus_policy_IMPERIAL_A",
+          "node": "TFRKC_xfocus_IMPERIAL_route_a",
+          "commitEffect": "TFRKC_xfocus_set_IMPERIAL_A_effect"
+        },
+        {
+          "name": "황제 친정",
+          "flag": "TFRKC_xfocus_policy_IMPERIAL_B",
+          "node": "TFRKC_xfocus_IMPERIAL_route_b",
+          "commitEffect": "TFRKC_xfocus_set_IMPERIAL_B_effect"
+        },
+        {
+          "name": "백제 계승",
+          "flag": "TFRKC_xfocus_policy_IMPERIAL_C",
+          "node": "TFRKC_xfocus_IMPERIAL_route_c",
+          "commitEffect": "TFRKC_xfocus_set_IMPERIAL_C_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "lineage",
+          "purpose": "혈통 조작 폭로",
+          "conditions": [
+            "가상 군주만 사용",
+            "정책 확정 상태",
+            "증거 공개 여부"
+          ],
+          "expectedEffect": "입헌·친정·백제 노선별 정당화와 위기. 실존 황족 임의 추가 금지",
+          "owner": "이벤트·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_IMPERIAL_lineage_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_IMPERIAL_system_2_done",
+            "TFRKC_xfocus_IMPERIAL_route_a_3_done",
+            "TFRKC_xfocus_IMPERIAL_route_b_3_done",
+            "TFRKC_xfocus_IMPERIAL_route_c_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "defectors",
+          "purpose": "지역 귀순 협의",
+          "conditions": [
+            "실제 상대·지역",
+            "상대 붕괴/합의",
+            "부대 차감"
+          ],
+          "expectedEffect": "귀순을 실제 이전으로 처리. 공짜 코어·병력·영토 생성 금지",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_IMPERIAL_defectors_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_IMPERIAL_system_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_IMPERIAL_effect"
+    },
+    {
+      "key": "UNDERGROUND",
+      "name": "서울지하자치구",
+      "tag": null,
+      "stagedRegistryTag": null,
+      "assignment": "ORGANIZATION_DESIGN_ONLY",
+      "policy": [
+        {
+          "name": "지상과 자치 협약",
+          "flag": "TFRKC_xfocus_policy_UNDERGROUND_A",
+          "node": "TFRKC_xfocus_UNDERGROUND_route_a",
+          "commitEffect": "TFRKC_xfocus_set_UNDERGROUND_A_effect"
+        },
+        {
+          "name": "지상 진출",
+          "flag": "TFRKC_xfocus_policy_UNDERGROUND_B",
+          "node": "TFRKC_xfocus_UNDERGROUND_route_b",
+          "commitEffect": "TFRKC_xfocus_set_UNDERGROUND_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "stations",
+          "purpose": "비영토 조직의 역장회의",
+          "conditions": [
+            "실제 서울 지상 통제국",
+            "조직 활성화",
+            "호스트 변경 때 KEY별 상태 이관"
+          ],
+          "expectedEffect": "중복 지상 프로빈스 없이 조직 디시전으로 운영. 이 18노드는 조직 단계 설계로 제공",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_UNDERGROUND_stations_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_UNDERGROUND_system_2_done",
+            "TFRKC_xfocus_UNDERGROUND_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "surface",
+          "purpose": "자치 협정 또는 지상 진출",
+          "conditions": [
+            "지상 소유국 동의/갈등",
+            "실제 지상 거점 확보",
+            "전쟁 담당 공통 절차"
+          ],
+          "expectedEffect": "협정의 권리·비용 또는 조건부 봉기. 지하 조직의 가상 TAG 생성 금지",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_UNDERGROUND_surface_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_UNDERGROUND_system_3_done",
+            "TFRKC_xfocus_UNDERGROUND_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [
+        {
+          "title": "막차 뒤의 역장회의",
+          "desc": "지하철 직원과 시민 대피조직, 고립된 성인 군경이 역무실에 모입니다. 지상의 지도와 지하의 생활은 같은 종이에 그려지지 않습니다.",
+          "reward": "add_political_power = 20",
+          "key": "start",
+          "id": "TFRKC_xfocus_UNDERGROUND_start",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "parents": [],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_start_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_start",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_start_desc",
+          "generatedReward": "add_political_power = 20"
+        },
+        {
+          "title": "플랫폼의 잠자리",
+          "desc": "대피한 주민의 거처와 이동 필요를 기록합니다.",
+          "reward": "add_stability = 0.03",
+          "key": "civic_1",
+          "id": "TFRKC_xfocus_UNDERGROUND_civic_1",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 32,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_civic_1_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_civic_1",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_civic_1_desc",
+          "generatedReward": "add_stability = 0.03"
+        },
+        {
+          "title": "역무실의 생활망",
+          "desc": "구호와 전력, 위생의 연락을 조직 단계 계획으로 남깁니다.",
+          "reward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_system",
+          "key": "civic_2",
+          "id": "TFRKC_xfocus_UNDERGROUND_civic_2",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_civic_1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_civic_2_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_civic_2",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_civic_2_desc",
+          "generatedReward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_system"
+        },
+        {
+          "title": "역 이름으로 부르는 사람",
+          "desc": "표를 잃은 사람에게도 민원과 구호를 받을 이름을 남깁니다.",
+          "reward": "add_stability = 0.03 add_political_power = 15",
+          "key": "civic_3",
+          "id": "TFRKC_xfocus_UNDERGROUND_civic_3",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_civic_2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_civic_3_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_civic_3",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_civic_3_desc",
+          "generatedReward": "add_stability = 0.03 add_political_power = 15"
+        },
+        {
+          "title": "성인 경비조의 구역",
+          "desc": "전투·경비는 성인이 맡고 민간 대피 구역과 분리합니다.",
+          "reward": "army_experience = 8",
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "key": "military_1",
+          "id": "TFRKC_xfocus_UNDERGROUND_military_1",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_start"
+          ],
+          "ai": 60,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_military_1_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_military_1",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_military_1_desc",
+          "generatedReward": "army_experience = 8"
+        },
+        {
+          "title": "서로 들리는 무전",
+          "desc": "경비조의 연락과 후퇴·대피 절차를 맞춥니다.",
+          "reward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_wardens army_experience = 5",
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "key": "military_2",
+          "id": "TFRKC_xfocus_UNDERGROUND_military_2",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_military_1"
+          ],
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_military_2_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_military_2",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_military_2_desc",
+          "generatedReward": "if = { limit = { TFRKC_xfocus_campaign_trigger = yes } add_ideas = TFRKC_xfocus_UNDERGROUND_idea_wardens } army_experience = 5 custom_effect_tooltip = TFRKC_xfocus_UNDERGROUND_campaign_tt"
+        },
+        {
+          "title": "출입구의 책임",
+          "desc": "지상과 연결되는 창구의 경비와 민간 이동을 구분해 훈련합니다.",
+          "reward": "add_command_power = 10",
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "key": "military_3",
+          "id": "TFRKC_xfocus_UNDERGROUND_military_3",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_military_2"
+          ],
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_military_3_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_military_3",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_military_3_desc",
+          "generatedReward": "add_command_power = 10"
+        },
+        {
+          "title": "지상에 보내는 편지",
+          "desc": "지상 통제국과 대화할 대표의 권한을 정합니다.",
+          "reward": "add_political_power = 20",
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "key": "system_1",
+          "id": "TFRKC_xfocus_UNDERGROUND_system_1",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_start"
+          ],
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_system_1_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_system_1",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_system_1_desc",
+          "generatedReward": "add_political_power = 20"
+        },
+        {
+          "title": "지도에 겹치지 않는 자치",
+          "desc": "지상 영토를 복제하지 않고 조직과 주민의 권리를 기록합니다.",
+          "reward": "add_political_power = 25",
+          "hook": "stations",
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "key": "system_2",
+          "id": "TFRKC_xfocus_UNDERGROUND_system_2",
+          "x": 12,
+          "y": 2,
+          "cost": 2,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_system_1"
+          ],
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_system_2_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_system_2",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_system_2_desc",
+          "generatedReward": "add_political_power = 25 custom_effect_tooltip = TFRKC_xfocus_UNDERGROUND_stations_tt"
+        },
+        {
+          "title": "문을 열기 전의 조건",
+          "desc": "자치 협정과 지상 진출에 필요한 동의·거점·비용을 조사합니다.",
+          "reward": "army_experience = 8 add_political_power = 10",
+          "hook": "surface",
+          "key": "system_3",
+          "id": "TFRKC_xfocus_UNDERGROUND_system_3",
+          "x": 12,
+          "y": 3,
+          "cost": 3,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_system_2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_system_3_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_system_3",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_system_3_desc",
+          "generatedReward": "army_experience = 8 add_political_power = 10 custom_effect_tooltip = TFRKC_xfocus_UNDERGROUND_surface_tt"
+        },
+        {
+          "title": "계단 위로 이어지는 길",
+          "desc": "지상과 협약할지 지상 진출을 준비할지 역장회의가 정합니다.",
+          "reward": "add_political_power = 15",
+          "key": "council",
+          "id": "TFRKC_xfocus_UNDERGROUND_council",
+          "x": 18,
+          "y": 1,
+          "cost": 2,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_council_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_council",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_council_desc",
+          "generatedReward": "add_political_power = 15"
+        },
+        {
+          "title": "서로 다른 층의 협약",
+          "desc": "지상과 지하의 자치권과 민간 이동을 협정으로 보장할 노선을 택합니다.",
+          "reward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_autonomy",
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "key": "route_a",
+          "id": "TFRKC_xfocus_UNDERGROUND_route_a",
+          "x": 16,
+          "y": 2,
+          "cost": 3,
+          "route": "A",
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_council"
+          ],
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_xfocus_UNDERGROUND_route_b"
+          ],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes NOT = { OR = { has_country_flag = TFRKC_xfocus_policy_UNDERGROUND_B } }",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_route_a_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_route_a",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_route_a_desc",
+          "generatedReward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_autonomy TFRKC_xfocus_set_UNDERGROUND_A_effect = yes"
+        },
+        {
+          "title": "계단 위로",
+          "desc": "지상 진출을 준비합니다. 실제 봉기와 거점 이전은 비용과 전쟁 조건을 요구합니다.",
+          "reward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_surface",
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "key": "route_b",
+          "id": "TFRKC_xfocus_UNDERGROUND_route_b",
+          "x": 20,
+          "y": 2,
+          "cost": 3,
+          "route": "B",
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_council"
+          ],
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_xfocus_UNDERGROUND_route_a"
+          ],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes NOT = { OR = { has_country_flag = TFRKC_xfocus_policy_UNDERGROUND_A } }",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_route_b_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_route_b",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_route_b_desc",
+          "generatedReward": "add_ideas = TFRKC_xfocus_UNDERGROUND_idea_surface TFRKC_xfocus_set_UNDERGROUND_B_effect = yes"
+        },
+        {
+          "title": "열린 출입구의 규칙",
+          "desc": "양측 주민의 이동과 구호에 필요한 협약 조항을 정리합니다.",
+          "reward": "add_stability = 0.03 add_political_power = 15",
+          "key": "route_a_2",
+          "id": "TFRKC_xfocus_UNDERGROUND_route_a_2",
+          "x": 16,
+          "y": 3,
+          "cost": 2,
+          "route": "A",
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_route_a"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes NOT = { OR = { has_country_flag = TFRKC_xfocus_policy_UNDERGROUND_B } }",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_route_a_2_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_route_a_2",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_route_a_2_desc",
+          "generatedReward": "add_stability = 0.03 add_political_power = 15"
+        },
+        {
+          "title": "지상에서의 주소",
+          "desc": "조직이 지상의 행정을 맡을 때 필요한 명부를 준비합니다.",
+          "reward": "army_experience = 8 add_political_power = 10",
+          "key": "route_b_2",
+          "id": "TFRKC_xfocus_UNDERGROUND_route_b_2",
+          "x": 20,
+          "y": 3,
+          "cost": 2,
+          "route": "B",
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_route_b"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes NOT = { OR = { has_country_flag = TFRKC_xfocus_policy_UNDERGROUND_A } }",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_route_b_2_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_route_b_2",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_route_b_2_desc",
+          "generatedReward": "army_experience = 8 add_political_power = 10"
+        },
+        {
+          "title": "역장회의의 자치헌장",
+          "desc": "호스트가 바뀌어도 조직별 권리와 약속을 보존할 조항을 만듭니다.",
+          "reward": "add_political_power = 25 add_stability = 0.02",
+          "hook": "stations",
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "key": "route_a_3",
+          "id": "TFRKC_xfocus_UNDERGROUND_route_a_3",
+          "x": 16,
+          "y": 4,
+          "cost": 3,
+          "route": "A",
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_route_a_2"
+          ],
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes NOT = { OR = { has_country_flag = TFRKC_xfocus_policy_UNDERGROUND_B } }",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_route_a_3_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_route_a_3",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_route_a_3_desc",
+          "generatedReward": "add_political_power = 25 add_stability = 0.02 custom_effect_tooltip = TFRKC_xfocus_UNDERGROUND_stations_tt"
+        },
+        {
+          "title": "빛 아래의 책임",
+          "desc": "지상 진출 뒤 민간인에게 질 책임을 정리합니다. 조직이 곧 국가가 되었다고 자동 선언하지 않습니다.",
+          "reward": "add_political_power = 20 add_stability = 0.02",
+          "hook": "surface",
+          "key": "route_b_3",
+          "id": "TFRKC_xfocus_UNDERGROUND_route_b_3",
+          "x": 20,
+          "y": 4,
+          "cost": 3,
+          "route": "B",
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_route_b_2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes NOT = { OR = { has_country_flag = TFRKC_xfocus_policy_UNDERGROUND_A } }",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_route_b_3_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_route_b_3",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_route_b_3_desc",
+          "generatedReward": "add_political_power = 20 add_stability = 0.02 custom_effect_tooltip = TFRKC_xfocus_UNDERGROUND_surface_tt"
+        },
+        {
+          "title": "다음 열차를 기다리는 사람",
+          "desc": "자치구의 기록을 보존합니다. 비영토 단계의 실행과 보상은 조직 전용 절차를 따릅니다.",
+          "reward": "add_political_power = 20 add_stability = 0.02",
+          "key": "settlement",
+          "id": "TFRKC_xfocus_UNDERGROUND_settlement",
+          "x": 6,
+          "y": 6,
+          "cost": 3,
+          "parents": [
+            "TFRKC_xfocus_UNDERGROUND_civic_3",
+            "TFRKC_xfocus_UNDERGROUND_military_3",
+            "TFRKC_xfocus_UNDERGROUND_system_3"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 14,
+          "exclusive": [],
+          "orParents": [
+            "TFRKC_xfocus_UNDERGROUND_route_a_3",
+            "TFRKC_xfocus_UNDERGROUND_route_b_3"
+          ],
+          "condition": "has_country_flag = TFRKC_xfocus_identity_UNDERGROUND TFRKC_xfocus_country_ready_trigger = yes ",
+          "completionFlag": "TFRKC_xfocus_UNDERGROUND_settlement_done",
+          "titleKey": "TFRKC_xfocus_UNDERGROUND_settlement",
+          "descriptionKey": "TFRKC_xfocus_UNDERGROUND_settlement_desc",
+          "generatedReward": "add_political_power = 20 add_stability = 0.02"
+        }
+      ],
+      "bindingEffect": "TFRKC_xfocus_bind_UNDERGROUND_effect"
+    },
+    {
+      "key": "HOMECOMING",
+      "name": "망향군",
+      "tag": "KMH",
+      "stagedRegistryTag": "KMH",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "전후 복귀",
+          "flag": "TFRKC_xfocus_policy_HOMECOMING_A",
+          "node": "TFRKC_xfocus_HOMECOMING_route_a",
+          "commitEffect": "TFRKC_xfocus_set_HOMECOMING_A_effect"
+        },
+        {
+          "name": "대중국 복수전",
+          "flag": "TFRKC_xfocus_policy_HOMECOMING_B",
+          "node": "TFRKC_xfocus_HOMECOMING_route_b",
+          "commitEffect": "TFRKC_xfocus_set_HOMECOMING_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "peace",
+          "purpose": "강화협정 수용 또는 이탈",
+          "conditions": [
+            "실제 평화 협정·동맹",
+            "부대/민간의 입장",
+            "선택 노선"
+          ],
+          "expectedEffect": "강화 수용·협상 또는 별도 이탈 선택. 자동 선전포고 없음",
+          "owner": "이벤트·전쟁·스토리",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_HOMECOMING_peace_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_HOMECOMING_system_2_done",
+            "TFRKC_xfocus_HOMECOMING_route_a_3_done",
+            "TFRKC_xfocus_HOMECOMING_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "return_veterans",
+          "purpose": "귀환장병의 전후 복귀",
+          "conditions": [
+            "실제 성인 장병",
+            "복귀 비용·치료",
+            "복수 요구 상태"
+          ],
+          "expectedEffect": "실제 동원해제·재통합과 피로/복수 갈등 처리",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_HOMECOMING_return_veterans_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_HOMECOMING_system_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_HOMECOMING_effect"
+    },
+    {
+      "key": "CREDIT",
+      "name": "국가채권회수단",
+      "tag": "KBD",
+      "stagedRegistryTag": "KBD",
+      "assignment": "REGISTERED_COUNTRY",
+      "policy": [
+        {
+          "name": "채무 재조정",
+          "flag": "TFRKC_xfocus_policy_CREDIT_A",
+          "node": "TFRKC_xfocus_CREDIT_route_a",
+          "commitEffect": "TFRKC_xfocus_set_CREDIT_A_effect"
+        },
+        {
+          "name": "담보국가 건설",
+          "flag": "TFRKC_xfocus_policy_CREDIT_B",
+          "node": "TFRKC_xfocus_CREDIT_route_b",
+          "commitEffect": "TFRKC_xfocus_set_CREDIT_B_effect"
+        }
+      ],
+      "systems": [
+        {
+          "key": "war_loans",
+          "purpose": "유상 전쟁대출",
+          "conditions": [
+            "실제 자금·채무자 동의",
+            "상환 기간·한도",
+            "동일 대출 중복 금지"
+          ],
+          "expectedEffect": "실제 자금 이동과 채무 장부, 상환·연체 처리",
+          "owner": "이벤트·시스템",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CREDIT_war_loans_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CREDIT_system_2_done",
+            "TFRKC_xfocus_CREDIT_route_a_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        },
+        {
+          "key": "collateral",
+          "purpose": "채무불이행과 운영권",
+          "conditions": [
+            "유효 채권·불이행·상대 생존",
+            "담보 한도",
+            "기존 자산 소유"
+          ],
+          "expectedEffect": "운영권과 영토 소유권을 구분. 강제 영토 이전은 공통 효과",
+          "owner": "이벤트·전쟁",
+          "status": "REQUESTED_NOT_IMPLEMENTED",
+          "readyTrigger": "TFRKC_xfocus_CREDIT_collateral_ready_trigger",
+          "completedFlags": [
+            "TFRKC_xfocus_CREDIT_system_3_done",
+            "TFRKC_xfocus_CREDIT_route_b_3_done"
+          ],
+          "storyKeys": [],
+          "eventIds": [],
+          "effectIds": []
+        }
+      ],
+      "organizationNodes": [],
+      "bindingEffect": "TFRKC_xfocus_bind_CREDIT_effect"
+    }
+  ]
+}

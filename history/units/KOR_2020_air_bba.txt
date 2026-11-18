@@ -1,0 +1,102 @@
+﻿### Air OOB ###
+# KOR_CAS_equipment_1 : F-5E
+# KOR_CAS_equipment_2 : KF-16
+#  KOR_fighter_equipment_1 : FA-50
+#  KOR_fighter_equipment_2 : F-15K
+
+#  KOR_fighter_equipment_3 : KF-21 Borame
+#  KOR_fighter_equipment_4 : F-35 
+
+air_wings = {
+	1579 = { #Gyeonggi
+		small_plane_airframe_0 =  {
+			owner = "KOR" 
+			amount = 60
+			version_name = "F-5E/KF-5"
+		}
+		small_plane_cas_airframe_0 =  {
+			owner = "KOR" 
+			amount = 20
+			version_name = "F-4E"
+		}
+		attack_helicopter_equipment_1 = {
+			owner = "KOR" 
+			amount = 40
+		}
+		attack_helicopter_equipment_1 = {
+			owner = "USA" 
+			amount = 24
+		}
+	}
+	871 = { #Gangwon
+		small_plane_cas_airframe_1 =  {
+			owner = "KOR" 
+			amount = 40
+			version_name = "FA-50"
+		}
+		small_plane_airframe_0 =  {
+			owner = "KOR" 
+			amount = 40
+			version_name = "F-5E/KF-5"
+		}
+		attack_helicopter_equipment_1 = {
+			owner = "KOR" 
+			amount = 30
+		}
+		attack_helicopter_equipment_1 = {
+			owner = "USA" 
+			amount = 12
+		}
+	}
+	1710 = { #Chungcheong
+		small_plane_airframe_2 =  {
+			owner = "USA" #이거 제대로 되나? 
+			amount = 16
+			version_name = "F-35 Lightning II" #
+		}
+		small_plane_cas_airframe_1 =  {
+			owner = "KOR" 
+			amount = 100
+			version_name = "F-16PBU/KF-16"
+		}
+		small_plane_cas_airframe_1 =  {
+			owner = "KOR" 
+			amount = 67
+			version_name = "F-16PBU/KF-16"
+		}
+	}
+	1557 = { #Jeolla
+		small_plane_cas_airframe_1 =  {
+			owner = "KOR" 
+			amount = 60
+			version_name = "FA-50"
+		}
+	}	
+	870 = { #Gyeongbuk
+		small_plane_cas_airframe_1 =  {
+			owner = "KOR" 
+			amount = 40
+			version_name = "FA-50"
+		}
+	}	
+	1411 = { #Daegu
+		small_plane_airframe_1 =  {
+			owner = "KOR" 
+			amount = 59
+			version_name = "F-15K Slam Eagle"
+		}
+	}	
+}
+instant_effect = {
+	add_equipment_production = { #F-15K
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "KOR" 
+			version_name = "F-15K Slam Eagle"
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 50
+		industrial_manufacturer = mio:KOR_hanhwa_aerospace_organization
+	}
+}

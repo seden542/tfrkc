@@ -1,0 +1,23 @@
+# Atomic v5 replacement of legacy all-against-all and 53-state partition.
+TFRKC_prepare_partition_effect = { KOR = { TFRKC_rework_prepare_partition_effect = yes } }
+TFRKC_begin_civilwar_effect = { KOR = { TFRKC_rework_begin_wars_effect = yes } }
+TFRKC_unify_effect = {
+ if = { limit = { TFRKC_can_unify_trigger = yes NOT = { has_country_flag = TFRKC_unification_pending } NOT = { has_global_flag = TFRKC_unification_finalized } }
+  set_country_flag = TFRKC_unification_pending
+  country_event = { id = tfrkc.40 }
+ }
+}
+
+
+# Called by visible unification options. Do not inline the native finalizer here.
+TFRKC_queue_unification_completion_effect = {
+ if = { limit = {
+  exists = yes has_country_flag = TFRKC_unification_pending
+  NOT = { has_global_flag = TFRKC_unification_finalized }
+  NOT = { has_country_flag = TFRKC_unification_completion_queued }
+ }
+  set_country_flag = TFRKC_unification_completion_queued
+  log = "TFRKC_UNIFY_TRACE queued actor=[ROOT.GetTag]"
+  country_event = { id = tfrkc_war.30 hours = 1 }
+ }
+}

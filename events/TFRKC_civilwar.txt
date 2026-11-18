@@ -1,0 +1,144 @@
+# TFRKC_CITY_V4_REFERENCES
+add_namespace = tfrkc
+country_event = {
+ picture = GFX_TFRKC_story_outbreak
+ id = tfrkc.1 title = tfrkc.1.t desc = tfrkc.1.d is_triggered_only = yes fire_only_once = yes
+immediate = { TFRKC_request_prewar_choice_effect = yes }
+option = { name = tfrkc.1.o0    }
+}
+
+
+country_event = {
+ id = tfrkc.10
+ hidden = yes
+ is_triggered_only = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ immediate = {
+  TFRKC_normalize_prewar_choice_effect = yes
+  if = { limit = { has_country_flag = TFRKC_choice_ready }
+   if = { limit = { has_global_flag = TFRKC_partition_prepared }
+ TFRKC_begin_civilwar_effect = yes
+   if = { limit = { has_country_flag = TFRKC_choice_KCH } KCH = { change_tag_from = ROOT } }
+   if = { limit = { has_country_flag = TFRKC_choice_KYA } KYA = { change_tag_from = ROOT } }
+   if = { limit = { has_country_flag = TFRKC_choice_KRC } KRC = { change_tag_from = ROOT } }
+   if = { limit = { has_country_flag = TFRKC_choice_KLF } KLF = { change_tag_from = ROOT } }
+   if = { limit = { has_country_flag = TFRKC_choice_KWC } KWC = { change_tag_from = ROOT } }
+ }
+ else = { TFRKC_prepare_partition_effect = yes country_event = { id = tfrkc.10 days = 1 } }
+  }
+  else = { set_country_flag = TFRKC_start_waiting_for_choice TFRKC_request_prewar_choice_effect = yes }
+ }
+}
+
+country_event = {
+ picture = GFX_report_event_martial_law_notebook
+ id = tfrkc.90 title = tfrkc.90.t desc = tfrkc.90.d is_triggered_only = yes
+option = { name = tfrkc.90.o0   set_country_flag = TFRKC_start_waiting_for_choice
+ if = { limit = { has_country_flag = TFRKC_choice_ready } country_event = { id = tfrkc.10 days = 1 } }
+ else = { TFRKC_request_prewar_choice_effect = yes } }
+option = { name = tfrkc.90.o1    }
+}
+# RETIRED 20261117: old weakness/approval-based intervention is not an active route.
+country_event = { id = tfrkc.20 hidden = yes is_triggered_only = yes trigger = { always = no } }
+# RETIRED 20261117: old weakness/approval-based intervention is not an active route.
+country_event = { id = tfrkc.21 hidden = yes is_triggered_only = yes trigger = { always = no } }
+# RETIRED 20261117: old weakness/approval-based intervention is not an active route.
+country_event = { id = tfrkc.22 hidden = yes is_triggered_only = yes trigger = { always = no } }
+# RETIRED 20261117: old weakness/approval-based intervention is not an active route.
+country_event = { id = tfrkc.23 hidden = yes is_triggered_only = yes trigger = { always = no } }
+country_event = {
+ picture = GFX_TFRKC_story_outbreak
+ id = tfrkc.24 title = tfrkc.24.t desc = tfrkc.24.d is_triggered_only = yes
+option = { name = tfrkc.24.o0    }
+}
+country_event = { id = tfrkc.50 hidden = yes fire_only_once = yes trigger = { tag = KWC TFRKC_city_no_land_rivals_trigger = yes has_global_flag = TFRKC_civilwar_active country_exists = KPL has_war = no KPL = { has_war = no } NOT = { has_war_with = KPL } NOT = { country_exists = KOR } NOT = { country_exists = KCH } NOT = { country_exists = KYA } NOT = { country_exists = KRC } NOT = { country_exists = KLF } NOT = { country_exists = KSF } } mean_time_to_happen = { days = 1 } immediate = { KPL = { country_event = { id = tfrkc.51 } } } }
+country_event = {
+ picture = GFX_report_event_more_impeachment
+ id = tfrkc.51 title = tfrkc.51.t desc = tfrkc.51.d is_triggered_only = yes
+option = { trigger = { has_global_flag = TFRKC_civilwar_active country_exists = KWC country_exists = KPL } name = tfrkc.51.o0  ai_chance = { factor = 70 } KWC = { annex_country = { target = KPL transfer_troops = yes } } }
+option = { trigger = { has_global_flag = TFRKC_civilwar_active country_exists = KWC country_exists = KPL } name = tfrkc.51.o1  ai_chance = { factor = 30 } annex_country = { target = KWC transfer_troops = yes } }
+}
+# STAGED ONLY: replace the v4 tfrkc.39 block during the coordinated v5 cutover.
+# War owner supplies TFRKC_can_unify_trigger for the deployed map version.
+country_event = {
+ id = tfrkc.39
+ title = tfrkc.40.t
+ picture = GFX_report_event_kor_victory_after_1
+ # Automatic single window; the console may also call this ID safely.
+ trigger = {
+  TFRKC_can_unify_trigger = yes
+  NOT = { has_country_flag = TFRKC_unification_pending }
+  NOT = { has_global_flag = TFRKC_unification_finalized }
+ }
+ mean_time_to_happen = { days = 1 }
+ immediate = {
+  if = { limit = {
+   TFRKC_can_unify_trigger = yes
+   NOT = { has_country_flag = TFRKC_unification_pending }
+   NOT = { has_global_flag = TFRKC_unification_finalized }
+  } set_country_flag = TFRKC_unification_pending }
+ }
+ desc = { trigger = { tag = KWC } text = TFRKC_unification_KWC_d }
+ desc = { trigger = { tag = KLF } text = TFRKC_unification_KLF_d }
+ desc = { trigger = { tag = KRC } text = TFRKC_unification_KRC_d }
+ desc = { trigger = { tag = KCH } text = TFRKC_unification_KCH_d }
+ desc = { trigger = { tag = KYA } text = TFRKC_unification_KYA_d }
+ desc = { trigger = { tag = KOR } text = TFRKC_unification_KOR_d }
+ desc = { trigger = { NOT = { OR = { tag = KWC tag = KLF tag = KRC tag = KCH tag = KYA tag = KOR } } } text = tfrkc.40.d }
+ option = {
+ name = tfrkc.40.o0
+ trigger = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } }
+ ai_chance = { factor = 100 }
+ custom_effect_tooltip = TFRKC_unification_KOR_transfer_tt
+ hidden_effect = { if = { limit = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } } TFRKC_queue_unification_completion_effect = yes } }
+ }
+ # A console call or a stale popup must always have a safe, non-finalizing option.
+ option = {
+  name = TFRKC_unification_conditions_changed
+  trigger = { NOT = { AND = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } } } }
+  ai_chance = { factor = 100 }
+  hidden_effect = {
+   if = { limit = { NOT = { has_global_flag = TFRKC_unification_finalized } }
+    clr_country_flag = TFRKC_unification_pending
+   }
+  }
+ }
+}
+
+# Unification event block: merge into TFRKC_civilwar.txt only after the war-owned finalizer exists.
+country_event = {
+ id = tfrkc.40
+ title = tfrkc.40.t
+ picture = GFX_report_event_kor_victory_after_1
+ is_triggered_only = yes
+ trigger = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } }
+ desc = { trigger = { tag = KWC } text = TFRKC_unification_KWC_d }
+ desc = { trigger = { tag = KLF } text = TFRKC_unification_KLF_d }
+ desc = { trigger = { tag = KRC } text = TFRKC_unification_KRC_d }
+ desc = { trigger = { tag = KCH } text = TFRKC_unification_KCH_d }
+ desc = { trigger = { tag = KYA } text = TFRKC_unification_KYA_d }
+ desc = { trigger = { tag = KOR } text = TFRKC_unification_KOR_d }
+ desc = { trigger = { NOT = { OR = { tag = KWC tag = KLF tag = KRC tag = KCH tag = KYA tag = KOR } } } text = tfrkc.40.d }
+ option = {
+ name = tfrkc.40.o0
+ trigger = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } }
+ ai_chance = { factor = 100 }
+ custom_effect_tooltip = TFRKC_unification_KOR_transfer_tt
+ hidden_effect = { if = { limit = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } } TFRKC_queue_unification_completion_effect = yes } }
+ }
+ # A console call or a stale popup must always have a safe, non-finalizing option.
+ option = {
+  name = TFRKC_unification_conditions_changed
+  trigger = { NOT = { AND = { exists = yes has_country_flag = TFRKC_unification_pending NOT = { has_global_flag = TFRKC_unification_finalized } } } }
+  ai_chance = { factor = 100 }
+  hidden_effect = {
+   if = { limit = { NOT = { has_global_flag = TFRKC_unification_finalized } }
+    clr_country_flag = TFRKC_unification_pending
+   }
+  }
+ }
+}
+
+
+
+

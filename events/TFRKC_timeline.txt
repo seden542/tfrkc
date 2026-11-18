@@ -1,0 +1,68 @@
+add_namespace = tfrkc_timeline
+country_event = { id = tfrkc_timeline.1 title = TFRKC_TMP_1_t desc = TFRKC_TMP_1_d picture = GFX_report_event_kor_gwangju_riot is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } has_country_flag = KOR_yoon_taiwan_war_defeat NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_1 country_event = { id = tfrkc_timeline.2 days = 3 } }
+ option = { name = TFRKC_TMP_1_a }
+}
+country_event = { id = tfrkc_timeline.2 title = TFRKC_TMP_2_t desc = TFRKC_TMP_2_d picture = GFX_report_event_yoon_arrest is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_2 country_event = { id = tfrkc_timeline.3 days = 3 } }
+ option = { name = TFRKC_TMP_2_a }
+}
+country_event = { id = tfrkc_timeline.3 title = TFRKC_TMP_3_t desc = TFRKC_TMP_3_d picture = GFX_report_event_kor_gwangju_riot_2 is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_3 set_country_flag = TFRKC_national_unrest country_event = { id = tfrkc_timeline.4 days = 2 } if = { limit = { has_country_flag = TFRKC_timeline_test } country_event = { id = tfrkc_timeline.901 days = 3 } } TFRKC_request_prewar_choice_effect = yes }
+ option = { name = TFRKC_TMP_3_a }
+}
+country_event = { id = tfrkc_timeline.5 title = TFRKC_TMP_5_t desc = TFRKC_TMP_5_d picture = GFX_report_event_yoon_end is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_5 country_event = { id = tfrkc_timeline.6 days = 2 } }
+ option = { name = TFRKC_TMP_5_a }
+}
+country_event = { id = tfrkc_timeline.6 title = TFRKC_TMP_6_t desc = TFRKC_TMP_6_d picture = GFX_report_event_more_impeachment is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_6 country_event = { id = korea.256 } country_event = { id = tfrkc_timeline.7 days = 2 } }
+ option = { name = TFRKC_TMP_6_a }
+}
+country_event = { id = tfrkc_timeline.7 title = TFRKC_TMP_7_t desc = TFRKC_TMP_7_d picture = GFX_report_event_more_impeachment is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_7 country_event = { id = korea.257 } country_event = { id = tfrkc_timeline.8 days = 2 } }
+ option = { name = TFRKC_TMP_7_a }
+}
+country_event = { id = tfrkc_timeline.8 title = TFRKC_TMP_8_t desc = TFRKC_TMP_8_d picture = GFX_report_event_martial_law_smoke is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_8 country_event = { id = tfrkc_timeline.9 days = 2 } }
+ option = { name = TFRKC_TMP_8_a }
+}
+country_event = { id = tfrkc_timeline.9 title = TFRKC_TMP_9_t desc = TFRKC_TMP_9_d picture = GFX_TFRKC_story_return is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_9 country_event = { id = tfrkc_timeline.10 days = 2 } }
+ option = { name = TFRKC_TMP_9_a }
+}
+country_event = { id = tfrkc_timeline.10 title = TFRKC_TMP_10_t desc = TFRKC_TMP_10_d picture = GFX_TFRKC_story_daejeon is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_10 country_event = { id = tfrkc_timeline.11 days = 2 } }
+ option = { name = TFRKC_TMP_10_a }
+}
+country_event = { id = tfrkc_timeline.11 title = TFRKC_TMP_11_t desc = TFRKC_TMP_11_d picture = GFX_TFRKC_story_outbreak is_triggered_only = yes fire_only_once = yes
+ trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } }
+ immediate = { TFRKC_buildup_mark_main_effect = yes  set_country_flag = TFRKC_stage_11 set_country_flag = TFRKC_disarmament_refused
+ if = { limit = { has_country_flag = TFRKC_eligible has_country_flag = TFRKC_crisis_pending NOT = { has_country_flag = KOR_yoon_under_martial_law } } TFRKC_prepare_partition_effect = yes } }
+ option = { name = TFRKC_TMP_11_a }
+}
+country_event = { id = tfrkc_timeline.20 hidden = yes is_triggered_only = yes
+ immediate = {
+ set_country_flag = TFRKC_deadline_checked log = "TFRKC: calendar deadline checked"
+ if = { limit = { has_country_flag = TFRKC_timeline_test } country_event = { id = tfrkc_timeline.904 days = 1 } }
+ if = { limit = { has_country_flag = TFRKC_calendar_armed has_country_flag = TFRKC_eligible has_country_flag = TFRKC_crisis_pending has_country_flag = TFRKC_disarmament_refused NOT = { has_country_flag = KOR_yoon_under_martial_law } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ # Capture route verdict at deadline. Allegiance UI can only delay execution, never change verdict.
+ if = { limit = { NOT = { has_country_flag = TFRKC_choice_ready } } set_country_flag = TFRKC_choice_KOR set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress }
+ country_event = { id = tfrkc.10 }
+ }
+ clr_country_flag = TFRKC_calendar_armed
+ }
+}
+
+country_event = { id = tfrkc_timeline.4 title = TFRKC_TMP_4_t desc = TFRKC_TMP_4_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes fire_only_once = yes trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } } option = { name = TFRKC_TMP_4_a }  immediate = { TFRKC_buildup_mark_main_effect = yes } }
+
+country_event = { id = tfrkc_timeline.12 title = TFRKC_TMP_12_t desc = TFRKC_TMP_12_d picture = GFX_report_event_martial_law_ready is_triggered_only = yes fire_only_once = yes trigger = { tag = KOR NOT = { has_global_flag = TFRKC_civilwar_active } } option = { name = TFRKC_TMP_12_a }  immediate = { TFRKC_buildup_mark_main_effect = yes } }

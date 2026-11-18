@@ -1,0 +1,23 @@
+scripted_gui = {
+	TFR_catharsis_anarchy = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = "TFR_catharsis_anarchy_diplomacy_container"
+
+		visible = {
+			OR = {
+				TFR_catharsis_anarchy = yes
+				TFR_asian_anarchy = yes
+			}
+		}
+
+		properties = {
+			TFR_catharsis_anarchy_ZZZ = {
+				image = "[GetAnarchyGUIImage]"
+			}
+			TFR_catharsis_anarchy_diplomacy_animation = {
+				image = "[GetAnarchyGUIDiplomacyImage]"
+			}
+		}
+	}
+}

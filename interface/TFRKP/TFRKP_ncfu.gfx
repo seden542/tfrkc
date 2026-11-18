@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_military_ncfu_sits"
+		texturefile = "gfx/interface/GUI/military_ncfu/ncfu_sits.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_ncfu_icon"
+		texturefile = "gfx/interface/GUI/military_ncfu/nfcu_icon.png"
+	}
+}

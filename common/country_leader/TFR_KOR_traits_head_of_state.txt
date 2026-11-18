@@ -1,0 +1,295 @@
+leader_traits = {
+	kor_moon_jae_in_traits = {
+		random = no
+		stability_factor = 0.05
+		monthly_population = -0.005
+		social_liberal_drift = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_moon_jae_in_fail_traits = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.05
+		monthly_population = -0.005
+		hidden_modifier = {
+			resistance_growth = 0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_god_machine = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 0.15
+		stability_weekly = 0.01
+		offensive_war_stability_factor = 0.1
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.15
+		production_factory_start_efficiency_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_lee_jaming_traits = {
+		random = no
+		stability_factor = 0.05
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_buildings_factor = 0.05
+	}
+	kor_lee_jaming_2022_traits = {
+		random = no
+		war_support_factor = -0.05
+		production_speed_buildings_factor = 0.03
+	}
+	kor_lee_jaming_2022_true_traits = {
+		random = no
+		political_power_factor = 0.03
+		stability_factor = 0.07
+		production_factory_max_efficiency_factor = 0.1
+		production_speed_buildings_factor = 0.05
+	}
+	kor_lee_jaming_2022_fail_traits = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.1
+		political_power_factor = -0.05
+		production_speed_buildings_factor = -0.02
+	}
+	kor_lee_jaming_2022_fail_second_traits = {
+		random = no
+		stability_factor = -0.025
+		war_support_factor = -0.05
+		political_power_factor = -0.02
+		production_speed_buildings_factor = -0.01
+	}
+	kor_lee_jaming_2022_fail_third_traits = {
+		random = no
+		war_support_factor = 0.01
+		political_power_factor = 0.02
+		production_speed_buildings_factor = 0.01
+	}
+	kor_chu_mi_ae_traits = {
+		random = no
+		political_power_factor = 0.015
+		stability_factor = -0.02
+	}
+	kor_kim_moon_soo_traits = {
+		random = no
+		political_power_factor = 0.03
+		stability_factor = 0.02
+		surrender_limit = 0.02
+	}
+	kor_kim_moon_soo_communist_traits = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		surrender_limit = 0.03
+		social_democrat_drift = 0.01
+	}
+	kor_kim_jae_yeon_traits = {
+		random = no
+		political_power_cost = 0.1
+		stability_factor = 0.025
+	}
+	kor_kim_jae_yeon_traits_2 = {
+		random = no
+		political_power_factor = 0.03
+		stability_factor = 0.03
+		defensive_war_stability_factor = 0.1
+		poverty_development_monthly = 0.005
+	}
+	kor_kim_jae_yeon_traits_3 = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.03
+		defensive_war_stability_factor = 0.15
+		poverty_development_monthly = 0.01
+	}
+	kor_kim_jae_yeon_traits_4 = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		libertarian_socialist_drift = 0.01
+		defensive_war_stability_factor = 0.15
+		poverty_development_monthly = 0.015
+		foreign_minister_cost_factor = -0.15
+		theorist_minister_cost_factor = -0.15
+	}
+	kor_yoon_jong_oh_trait = {
+		random = no
+		political_power_factor = 0.03
+		libertarian_socialist_drift = 0.01
+		defensive_war_stability_factor = 0.2
+	}
+	kor_jang_hye_young_trait = {
+		random = no
+		stability_weekly = 0.001
+		social_democrat_drift = 0.01
+	}
+	kor_lee_baek_yoon_trait = {
+		random = no
+		stability_factor = -0.05
+		communist_drift = 0.01
+		poverty_development_monthly = 0.015
+	}
+	kor_goryeo_trait = {
+		random = no
+		stability_factor = 0.3
+		war_support_factor = 0.1
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15 
+		poverty_development_monthly = 0.01
+	}
+	kor_nam_yeong_shin_traits = {
+		random = no
+		war_support_factor = 0.03
+		army_core_defence_factor = 0.02
+	}
+	kor_yoon_eui_cheol_traits = {
+		random = no
+		stability_factor = -0.03
+		war_support_factor = 0.05
+		army_core_attack_factor = 0.03
+	}
+	kor_shin_won_shik_traits = {
+		random = no
+		stability_factor = -0.02
+		surrender_limit = 0.05
+	}
+	kor_cho_guk_traits = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.02
+		political_power_factor = 0.07
+	}
+	kor_cho_guk_father_traits = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.07
+		monthly_population = 0.005
+		political_power_factor = 0.1
+		authoritarian_democrat_drift = 0.01
+	}
+	kor_lee_jun_seok_traits = {
+		random = no
+		political_power_factor = 0.05
+		production_factory_start_efficiency_factor = 0.015
+	}
+	kor_lee_jun_seok_wandering_boy_traits = {
+		random = no
+		political_power_factor = -0.15
+		stability_factor = -0.05
+		production_factory_efficiency_gain_factor = -0.03
+		war_support_factor = 0.03
+		production_speed_arms_factory_factor = 0.03
+		military_development_monthly = 0.001
+	}
+	kor_lee_jun_seok_responsible_adult_traits = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.10
+		research_speed_factor = 0.12
+		production_factory_efficiency_gain_factor = 0.10
+		production_factory_max_efficiency_factor = 0.10
+		production_speed_buildings_factor = 0.05
+		academic_development_monthly = 0.005
+		society_development_monthly = 0.005
+	}
+	kor_lee_jun_seok_responsible_adult_inactive_traits = {
+		random = no
+	}
+	kor_kwak_sang_eon_traits = {
+		random = no
+		stability_factor = 0.07
+		monthly_population = 0.005
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_failed_yoon_tratis = {
+		random = no
+		stability_factor = -0.1
+		political_power_gain = -0.05
+		war_support_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_red_dragon_killer = {
+		random = no
+		political_power_gain = 0.10
+		production_factory_start_efficiency_factor = 0.035
+		production_speed_arms_factory_factor = 0.05
+		stability_factor = 0.05
+		war_support_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_yoon_traits = {
+		random = no
+		conservative_drift = 0.01
+		war_support_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_soldier_of_democracy = {
+		random = no
+		stability_factor = -0.25
+		nationalist_drift = 0.05
+		production_speed_arms_factory_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		political_power_factor = 0.15
+		war_support_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kor_yoon_tomorrow_president_trait = {
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.3
+		social_liberal_drift = 0.005
+		social_democrat_drift = 0.005
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PD1_lee_jae_yong_trait = {
+		random = no
+		research_speed_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.10
+		industrial_capacity_factory = 0.05
+		political_power_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PD1_chung_eui_sun_trait = {
+		random = no
+		production_factory_efficiency_gain_factor = 0.08
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		army_speed_factor = 0.05
+		political_power_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PD1_first_citizen_trait = {
+		random = no
+		custom_modifier_tooltip = PD1_first_citizen_trait_tt
+	}
+	pyj_dlp_trait = {
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.03
+	}
+}

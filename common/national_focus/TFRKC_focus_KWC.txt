@@ -1,0 +1,309 @@
+# Authored civil-war tree; assets are dependency references, no Workshop edits.
+focus_tree = {
+ id = TFRKC_focus_KWC_tree
+ country = { factor = 0 modifier = { add = 1000 tag = KWC NOT = { has_global_flag = TFRKC_civilwar_finished } OR = { has_country_flag = TFRKC_prewar_participant has_country_flag = TFRKC_participant } } }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = TFRKC_focus_KWC_start }
+
+ focus = {
+  id = TFRKC_focus_KWC_start
+  icon = GFX_KOR_lee_reds_focus_8
+  x = 6
+  y = 0
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 100 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_political_power = 25 add_stability = 0.03
+    set_country_flag = TFRKC_focus_KWC_start_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_a1
+  icon = GFX_KOR_lee_reds_focus_7
+  x = 0
+  y = 1
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_start }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_political_power = 30
+    set_country_flag = TFRKC_focus_KWC_a1_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_a2
+  icon = GFX_KOR_lee_reds_focus_12
+  x = 0
+  y = 2
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_a1 }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_ideas = TFRKC_focus_wc_grid
+    set_country_flag = TFRKC_focus_KWC_a2_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_a3
+  icon = GFX_KOR_lee_reds_focus_18
+  x = 0
+  y = 3
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_a2 }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_stability = 0.05
+    set_country_flag = TFRKC_focus_KWC_a3_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_m1
+  icon = GFX_KOR_military_common_1
+  x = 6
+  y = 1
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_start }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 65 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    army_experience = 10
+    set_country_flag = TFRKC_focus_KWC_m1_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_m2
+  icon = GFX_KOR_lee_reds_focus_9
+  x = 6
+  y = 2
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_m1 }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    if = { limit = { has_idea = TFRKC_workers_defence } swap_ideas = { remove_idea = TFRKC_workers_defence add_idea = TFRKC_focus_wc_command } }
+    set_country_flag = TFRKC_focus_KWC_m2_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_m3
+  icon = GFX_KOR_yoon_after_army_5
+  x = 6
+  y = 3
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_m2 }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_manpower = 700 army_experience = 8
+    set_country_flag = TFRKC_focus_KWC_m3_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_p1
+  icon = GFX_KOR_lee_reds_focus_5
+  x = 12
+  y = 1
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_start }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_political_power = 20
+    set_country_flag = TFRKC_focus_KWC_p1_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_pA
+  icon = GFX_KOR_lee_reds_focus_22
+  x = 10
+  y = 2
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_p1 }
+  mutually_exclusive = { focus = TFRKC_focus_KWC_pB }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 20 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_ideas = TFRKC_focus_wc_local
+    set_country_flag = TFRKC_focus_KWC_pA_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_pB
+  icon = GFX_KOR_lee_reds_focus_4
+  x = 14
+  y = 2
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_p1 }
+  mutually_exclusive = { focus = TFRKC_focus_KWC_pA }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 8 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_ideas = TFRKC_focus_wc_plan
+    set_country_flag = TFRKC_focus_KWC_pB_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_pA2
+  icon = GFX_KOR_lee_reds_focus_16
+  x = 10
+  y = 3
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_pA }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_political_power = 25 custom_effect_tooltip = TFRKC_focus_intervention_tt
+    set_country_flag = TFRKC_focus_KWC_pA2_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_pB2
+  icon = GFX_KOR_strengthening_international_cooperation
+  x = 14
+  y = 3
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_pB }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    army_experience = 8 add_political_power = 15 custom_effect_tooltip = TFRKC_focus_intervention_tt
+    set_country_flag = TFRKC_focus_KWC_pB2_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_logistics
+  icon = GFX_KOR_lee_reds_focus_6
+  x = 3
+  y = 4
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_a3 }
+  prerequisite = { focus = TFRKC_focus_KWC_m2 }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    army_experience = 8 add_stability = 0.02
+    set_country_flag = TFRKC_focus_KWC_logistics_done
+   }
+  }
+ }
+
+ focus = {
+  id = TFRKC_focus_KWC_charter
+  icon = GFX_KOR_lee_reds_focus_11
+  x = 6
+  y = 5
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KWC_logistics }
+  prerequisite = { focus = TFRKC_focus_KWC_m3 }
+  prerequisite = { focus = TFRKC_focus_KWC_pA2 focus = TFRKC_focus_KWC_pB2 }
+  available = { TFRKC_focus_wartime_trigger = yes  }
+  ai_will_do = { factor = 12 }
+  completion_reward = {
+   if = {
+    limit = { TFRKC_focus_wartime_trigger = yes  }
+    add_political_power = 30 custom_effect_tooltip = TFRKC_focus_postwar_tt
+    set_country_flag = TFRKC_focus_KWC_charter_done
+   }
+  }
+ }
+
+ # Postwar recovery is available here without replacing the winner tree.
+ shared_focus = TFRKC_focus_POST_inventory
+}

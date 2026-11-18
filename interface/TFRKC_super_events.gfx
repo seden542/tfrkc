@@ -1,0 +1,6 @@
+spriteTypes = {
+ spriteType = {
+  name = "GFX_TFRKC_SE_KOREAN_CIVILWAR"
+  texturefile = "gfx/super_events/korea_civil_war.png"
+ }
+}

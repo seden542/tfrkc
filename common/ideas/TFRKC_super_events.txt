@@ -1,0 +1,4 @@
+# TFRKP also supplies a hidden dummy idea for every super-event token.
+ideas = {
+ hidden_ideas = { TFRKC_SE_KOREAN_CIVILWAR = {} }
+}

@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_lee_nothing_democratic_party"
+    Progress = 0
+}   

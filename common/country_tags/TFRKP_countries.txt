@@ -1,0 +1,9 @@
+## TFRKP Others
+KPA = "countries/Korea DPR.txt"
+CNA = "countries/China.txt"
+JPN = "countries/Japan.txt"
+PD2 = "countries/TFRKP Yanbian Korean Autonomous Region.txt"
+PD3 = "countries/TFRKP Northeast Anti-Korean United Army.txt"
+PD4 = "countries/TFRKP Inner Mongolia.txt"
+PD5 = "countries/TFRKP Huabei.txt"
+ZZX = "countries/ZZZ_Anarchy.txt" #Anarchy Tag, must be last

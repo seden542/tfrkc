@@ -1,0 +1,7 @@
+TFRKC_war_pacing_eligible_trigger = {
+ exists = yes
+ has_country_flag = TFRKC_participant
+ has_global_flag = TFRKC_civilwar_active
+ NOT = { has_global_flag = TFRKC_civilwar_finished }
+ NOT = { tag = KNM }
+}

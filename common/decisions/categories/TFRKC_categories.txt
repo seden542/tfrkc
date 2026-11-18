@@ -1,0 +1,1 @@
+TFRKC_category = { icon = GFX_decision_category_political_actions visible = { OR = { has_country_flag = TFRKC_participant AND = { tag = KOR has_game_rule = { rule = TFRKC_development option = TFRKC_test_on } } } } }

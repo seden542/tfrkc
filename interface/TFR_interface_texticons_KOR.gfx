@@ -1,0 +1,1319 @@
+spriteTypes = {
+	### Game Rules
+	spriteType = {
+		name = "GFX_yoon_happy_route"
+		texturefile = "gfx/texticons/gamerules/yoon_happy_route.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yoon_martial_law_route"
+		texturefile = "gfx/texticons/gamerules/yoon_martial_law_route.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_happy_route"
+		texturefile = "gfx/texticons/gamerules/lee_happy_route.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_nothing_route"
+		texturefile = "gfx/texticons/gamerules/lee_nothing_route.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_army_route"
+		texturefile = "gfx/texticons/gamerules/lee_army_route.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_reds_route"
+		texturefile = "gfx/texticons/gamerules/lee_reds_route.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_coa_route"
+		texturefile = "gfx/texticons/gamerules/lee_coa_route.png"
+		legacy_lazy_load = no
+	}
+	### Bookmarks
+	spriteType = {
+		name = "GFX_TFRKP_route_lee_coliation"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_lee_coliation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_lee_army_revolution"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_lee_army_revolution.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_lee_communist_revolution"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_lee_communist_revolution.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_lee_victory"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_lee_victory.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_lee_nothing"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_lee_nothing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_yoon_victory"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_yoon_victory.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_yoon_martial_law"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_yoon_martial_law.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TFRKP_route_yoon_canon"
+		texturefile = "gfx/texticons/bookmarks/TFRKP_route_yoon_canon.png"
+		legacy_lazy_load = no
+	}
+	###
+	spriteType = {
+		name = "GFX_void_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/void_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_army_void_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/army_void_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Park_Won_Soon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Park_Won_Soon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Oh_Keo_don_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Oh_Keo_don_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Vacant_Mayor_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Vacant_Mayor_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Vacant_Busan_Mayor_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Vacant_Busan_Mayor_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Oh_Se_Hoon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Oh_Se_Hoon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Park_Heong_Joon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Park_Heong_Joon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_void_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/void_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_nak_gee_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/lee_nak_gee_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeong_wonoh_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeong_wonoh_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeon_jaesoo_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeon_jaesoo_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_park_joomin_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/park_joomin_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_jaesub_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_jaesub_Portrait.png"
+		legacy_lazy_load = no
+	}
+	### 포트레잇 필요 ###
+	spriteType = {
+		name = "GFX_park_minsik_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/park_minsik_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_choi_inho_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/choi_inho_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_seokjoon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_seokjoon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_cho_eunhee_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/cho_eunhee_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeong_taeheung_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeong_taeheung_Portrait.png"
+		legacy_lazy_load = no
+	}
+	######
+	spriteType = {
+		name = "GFX_chou_kyung_ho_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/chou_kyung_ho_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeon_han_gil_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeon_han_gil_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yoon_eui_cheol_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/yoon_eui_cheol_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_il_gu_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/lee_il_gu_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Cho_Kyoung_Tae_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Cho_Kyoung_Tae_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Ha_tae_kyung_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Ha_tae_kyung_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Kim_Tae_ho_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Kim_Tae_ho_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Chung_Jin_suk_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Chung_Jin_suk_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Hang_ming_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Hang_ming_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Moon_jae_ang_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Moon_jae_ang_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Lee_chang_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Lee_chang_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Kim_yo_jung_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Kim_yo_jung_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Yo_in_heung_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Yo_in_heung_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sohei_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Sohei_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Hisahito_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Hisahito_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_takeo_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/takeo_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_NationalAssembly_texticon"
+		texturefile = "gfx/texticons/KOR/NationalAssembly.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NA_minju_banner_texticon"
+		texturefile = "gfx/texticons/banners/NationalAssembly/NA_minju_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NA_ppp_banner_texticon"
+		texturefile = "gfx/texticons/banners/NationalAssembly/NA_ppp_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NA_third_banner_texticon"
+		texturefile = "gfx/texticons/banners/NationalAssembly/NA_third_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NA_jb_banner_texticon"
+		texturefile = "gfx/texticons/banners/NationalAssembly/NA_jb_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NA_non_banner_texticon"
+		texturefile = "gfx/texticons/banners/NationalAssembly/NA_non_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_DemocraticParty_texticon"
+		texturefile = "gfx/texticons/KOR/DemocraticParty.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BP_texticon"
+		texturefile = "gfx/texticons/KOR/BP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_RCP_texticon"
+		texturefile = "gfx/texticons/KOR/PPP_RCP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PDTO_texticon_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_PDTO_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_NCP_texticon"
+		texturefile = "gfx/texticons/KOR/PPP_NCP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ORP_texticon"
+		texturefile = "gfx/texticons/KOR/ORP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_HEO_texticon"
+		texturefile = "gfx/texticons/KOR/HEO.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BIP_texticon"
+		texturefile = "gfx/texticons/KOR/BIP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_GPK_texticon"
+		texturefile = "gfx/texticons/KOR/GPK.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_KSDP_texticon"
+		texturefile = "gfx/texticons/KOR/KSDP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_RKP_texticon"
+		texturefile = "gfx/texticons/KOR/RKP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ODP_texticon"
+		texturefile = "gfx/texticons/KOR/ODP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_texticon"
+		texturefile = "gfx/texticons/KOR/PPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LKP_texticon"
+		texturefile = "gfx/texticons/KOR/LKP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_UFP_texticon"
+		texturefile = "gfx/texticons/KOR/UFP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_KDLP_texticon" #원역사 민노당
+		texturefile = "gfx/texticons/KOR/KDLP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_DLP_texticon" #빨갱이 루트 통합좌빨정당
+		texturefile = "gfx/texticons/KOR/DLP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ESP_texticon" #
+		texturefile = "gfx/texticons/KOR/ESP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_NPP_texticon" #
+		texturefile = "gfx/texticons/KOR/NPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PeopleParty_texticon"
+		texturefile = "gfx/texticons/KOR/PeopleParty.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_JusticeParty_texticon"
+		texturefile = "gfx/texticons/KOR/JusticeParty.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_JP_texticon"
+		texturefile = "gfx/texticons/KOR/JP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_GJP_texticon"
+		texturefile = "gfx/texticons/KOR/GJP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_KDLP_texticon"
+		texturefile = "gfx/texticons/KOR/KDLP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LUP_texticon"
+		texturefile = "gfx/texticons/KOR/LUP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_RP_texticon"
+		texturefile = "gfx/texticons/KOR/RP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_TPP_texticon"
+		texturefile = "gfx/texticons/KOR/TPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPSK_texticon"
+		texturefile = "gfx/texticons/KOR/PPSK.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LP_texticon"
+		texturefile = "gfx/texticons/KOR/LP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PDP_texticon"
+		texturefile = "gfx/texticons/KOR/PDP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_WPK_after_texticon"
+		texturefile = "gfx/texticons/KOR/WPK_after.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_Independent_texticon"
+		texturefile = "gfx/texticons/KOR/Independent.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NIS_event_texticon"
+		texturefile = "gfx/texticons/KOR/NIS.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NIS_2_event_texticon"
+		texturefile = "gfx/texticons/KOR/NIS_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NIS_3_event_texticon"
+		texturefile = "gfx/texticons/KOR/NIS_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NIS_4_event_texticon"
+		texturefile = "gfx/texticons/KOR/NIS_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NIS_yoon_event_texticon"
+		texturefile = "gfx/texticons/KOR/NIS_yoon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_presidential_security_service_event_texticon"
+		texturefile = "gfx/texticons/KOR/presidential_security_service_event.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_defense_security_command_event_texticon"
+		texturefile = "gfx/texticons/KOR/defense_security_command_event.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_start_itjustgame_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_start_itjustgame.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_two_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_two.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_third_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_third.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_four_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_four.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_five_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_five.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_six_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_six.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_seven_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_seven.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_eight_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_eight.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_korea_1435_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_korea_1435.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_korea_1097_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_korea_1097.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_korea_1517_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_korea_1517.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_korea_1527_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_korea_1527.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_event_651_tooltip_texticon"
+		texturefile = "gfx/texticons/KOR/kor_event_651_tooltip.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_korea_1033_event_texticon"
+		texturefile = "gfx/texticons/KOR/kor_ending_korea_1033.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_nine_texticon"
+		textureFile = "gfx/texticons/KOR/kor_ending_nine.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_china_communist_texticon"
+		textureFile = "gfx/texticons/KOR/china_communist_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_ten_texticon"
+		textureFile = "gfx/texticons/KOR/kor_ending_ten.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_martial_law_command_event_texticon"
+		texturefile = "gfx/texticons/KOR/martial_law_command.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_martial_law_roh_sang_won_event_texticon"
+		texturefile = "gfx/texticons/KOR/martial_law_roh_sang_won.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_raj_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_raj.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_chi_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_chi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_pol_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_pol.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_aus_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_aus.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_egy_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_egy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_tur_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_tur.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_election_poster_texticon"
+		textureFile = "gfx/texticons/KOR/yoon_election_poster.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_election_poster_texticon"
+		textureFile = "gfx/texticons/KOR/lee_election_poster.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_sin_election_poster_texticon"
+		textureFile = "gfx/texticons/KOR/sin_election_poster.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_leftparty_texticon"
+		textureFile = "gfx/texticons/KOR/leftparty.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_propaganda1_texticon" #용을
+		textureFile = "gfx/texticons/KOR/kor_propaganda1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_propaganda2_texticon" #밝은 미래
+		textureFile = "gfx/texticons/KOR/kor_propaganda2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_propaganda3_texticon" #당신이
+		textureFile = "gfx/texticons/KOR/kor_propaganda3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_propaganda4_texticon" #국민의힘
+		textureFile = "gfx/texticons/KOR/kor_propaganda4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_lee_reddragon_texticon" #국민의힘
+		textureFile = "gfx/texticons/KOR/kor_lee_reddragon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_lee_war_texticon" #국민의힘
+		textureFile = "gfx/texticons/KOR/kor_lee_war.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_lee_real_korea_texticon" #국민의힘
+		textureFile = "gfx/texticons/KOR/kor_lee_real_korea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_chu_mie_personnel_disinfection_system" #국민의힘
+		textureFile = "gfx/texticons/KOR/debug/chu_mie_personnel_disinfection_system.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_second_river_miracle"
+		textureFile = "gfx/texticons/KOR/second_han_river_miracle.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_kor_coa_coin_icon" # 김문수 거국내각 코인.
+		texturefile = "gfx/texticons/KOR/kor_coa_coin_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_COA_coin_texticon" # 김문수 거국내각 코인.
+		texturefile = "gfx/texticons/KOR/kor_coa_coin_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_milta_army_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_milta_army.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_debt_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_debt_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_you_change_korea"
+		textureFile = "gfx/texticons/KOR/you_change_korea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_revolution"
+		textureFile = "gfx/texticons/KOR/revolutin_korea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_decision_pantarki_bar_icon"
+		textureFile = "gfx/texticons/KOR/decision_pantarki_bar_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_nuke_misile_texticon"
+		texturefile = "gfx/texticons/KOR/nuke_misile.png"
+		legacy_lazy_load = no
+	}
+	### 연합사 ###
+	spriteType = {
+		name = "GFX_robert_abrams_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/robert_abrams_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_USFK_vacant_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/USFK_vacant_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yoshida_yoshihide_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/yoshida_yoshihide_Portrait.png"
+		legacy_lazy_load = no
+	}
+	### 국회의장 ###
+	spriteType = {
+		name = "GFX_Moon_hee_sang_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Moon_hee_sang_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Park_byeong_seug_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Park_byeong_seug_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Kim_jin_pyo_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Kim_jin_pyo_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Woo_won_shik_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/Woo_won_shik_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeong_dong_yeong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeong_dong_yeong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_cho_jeong_shik_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/cho_jeong_shik_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_in_yeong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/lee_in_yeong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jang_dong_hyeok_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jang_dong_hyeok_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bae_hyeon_jin_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/bae_hyeon_jin_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeong_cheong_rae_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeong_cheong_rae_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeong_seong_ho_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeong_seong_ho_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_cho_seung_rae_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/cho_seung_rae_Portrait.png"
+		legacy_lazy_load = no
+	}
+	### 포트레잇 필요 ###
+	spriteType = {
+		name = "GFX_yoon_ho_jung_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/yoon_ho_jung_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_seol_hoon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/seol_hoon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kwon_yeong_se_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kwon_yeong_se_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hong_yeong_pyo_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/hong_yeong_pyo_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_ki_hyeon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_ki_hyeon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_hak_yong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_hak_yong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_roh_woon_rae_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/roh_woon_rae_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_an_kyu_baek_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/an_kyu_baek_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_tae_nyeon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_tae_nyeon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jeon_byung_heon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/jeon_byung_heon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_jong_min_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_jong_min_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_se_yeon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_se_yeon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_seon_dong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_seon_dong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_hak_yeong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/lee_hak_yeong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_min_hong_cheol_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/min_hong_cheol_Portrait.png"
+		legacy_lazy_load = no
+	}
+	######
+	spriteType = {
+		name = "GFX_joo_ho_yeong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/joo_ho_yeong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_park_ji_won_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/park_ji_won_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_song_yeong_gil_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/song_yeong_gil_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yoon_sang_hyeon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/yoon_sang_hyeon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yu_eui_dong_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/yu_eui_dong_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ahn_cheol_soo_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/ahn_cheol_soo_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_na_kyung_won_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/na_kyung_won_Portrait.png"
+		legacy_lazy_load = no
+	}
+	### 민주노동당 ###
+	spriteType = {
+		name = "GFX_kwon_young_gook_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kwon_young_gook_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_han_sang_gyun_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/han_sang_gyun_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kang_sung_hee_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kang_sung_hee_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_sim_sang_jung_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/sim_sang_jung_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kim_jong_hoon_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kim_jong_hoon_Portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kang_eun_mi_Portrait"
+		texturefile = "gfx/texticons/KOR/texticon_portraits/kang_eun_mi_Portrait.png"
+		legacy_lazy_load = no
+	}
+	###
+	spriteType = {
+		name = "GFX_cherry_thumbsup"
+		texturefile = "gfx/texticons/KOR/cherry_thumbsup.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_economy_banner"
+		texturefile = "gfx/texticons/KOR/KOR_lee_homeland_economy_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hankyoreh"
+		texturefile = "gfx/texticons/KOR/hankyoreh.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Chosun_Ilbo"
+		texturefile = "gfx/texticons/KOR/Chosun_Ilbo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_The_JoongAng"
+		texturefile = "gfx/texticons/KOR/The_JoongAng.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hankyoreh_white"
+		texturefile = "gfx/texticons/KOR/hankyoreh_white.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_The_JoongAng_white"
+		texturefile = "gfx/texticons/KOR/The_JoongAng_white.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Chosun_Ilbo_white"
+		texturefile = "gfx/texticons/KOR/Chosun_Ilbo_white.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Donga_Ilbo"
+		texturefile = "gfx/texticons/KOR/Donga_Ilbo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_lee_investing"
+		texturefile = "gfx/texticons/KOR/lee_investing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_newstapa"
+		texturefile = "gfx/texticons/KOR/newstapa.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LJS_www_viral"
+		texturefile = "gfx/texticons/KOR/LJS_www_viral.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_army_mainstream_texticon"
+		texturefile = "gfx/texticons/KOR/army_mainstream_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_army_nonmainstream_texticon"
+		texturefile = "gfx/texticons/KOR/army_nonmainstream_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_army_yushin_texticon"
+		texturefile = "gfx/texticons/KOR/army_yushin_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LJS_propel"
+		texturefile = "gfx/texticons/KOR/LJS_propel.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LJS_good"
+		texturefile = "gfx/texticons/KOR/LJS_good.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LJS_bad"
+		texturefile = "gfx/texticons/KOR/LJS_bad.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Workers_Solidarity"
+		texturefile = "gfx/texticons/KOR/Workers_Solidarity.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_tongilnews"
+		texturefile = "gfx/texticons/KOR/tongilnews.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_worknworld"
+		texturefile = "gfx/texticons/KOR/worknworld.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jajusibo"
+		texturefile = "gfx/texticons/KOR/jajusibo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_minplus"
+		texturefile = "gfx/texticons/KOR/minplus.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Vocie_of_people"
+		texturefile = "gfx/texticons/KOR/Vocie_of_people.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Neomeo"
+		texturefile = "gfx/texticons/KOR/Neomeo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_newscham"
+		texturefile = "gfx/texticons/KOR/newscham.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_president_influence"
+		texturefile = "gfx/texticons/KOR/president_influence.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_divide_bluehouse_1"
+		texturefile = "gfx/texticons/KOR/decision_divide_bluehouse_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_divide_bluehouse_2"
+		texturefile = "gfx/texticons/KOR/decision_divide_bluehouse_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_divide_gaw_1"
+		texturefile = "gfx/texticons/KOR/decision_divide_gaw_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_divide_gaw_2"
+		texturefile = "gfx/texticons/KOR/decision_divide_gaw_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_great_socity_choice"
+		texturefile = "gfx/texticons/KOR/KOR_lee_great_socity_choice.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_great_socity_check"
+		texturefile = "gfx/texticons/KOR/KOR_lee_great_socity_check.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_great_socity_anti"
+		texturefile = "gfx/texticons/KOR/KOR_lee_great_socity_anti.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ignorant_progress_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_ignorant_progress_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_democratization_aspiration_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_democratization_aspiration_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_thumb_up"
+		texturefile = "gfx/texticons/KOR/FMkorea_thumb_up.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_army_coin"
+		texturefile = "gfx/texticons/KOR/army_coin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_thumb_down"
+		texturefile = "gfx/texticons/KOR/FMkorea_thumb_down.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_JAM"
+		texturefile = "gfx/texticons/KOR/FMkorea_JAM.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_fuck"
+		texturefile = "gfx/texticons/KOR/FMkorea_JAM_fuck.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_egg"
+		texturefile = "gfx/texticons/KOR/FMkorea_egg.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_dog"
+		texturefile = "gfx/texticons/KOR/FMkorea_dog.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_dog2"
+		texturefile = "gfx/texticons/KOR/FMkorea_dog2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_dog3"
+		texturefile = "gfx/texticons/KOR/FMkorea_dog3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_FMkorea_best"
+		texturefile = "gfx/texticons/KOR/FMkorea_best.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_1"
+		texturefile = "gfx/texticons/KOR/BestKorea_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_2"
+		texturefile = "gfx/texticons/KOR/BestKorea_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_3"
+		texturefile = "gfx/texticons/KOR/BestKorea_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_4"
+		texturefile = "gfx/texticons/KOR/BestKorea_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_5"
+		texturefile = "gfx/texticons/KOR/BestKorea_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_6"
+		texturefile = "gfx/texticons/KOR/BestKorea_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_7"
+		texturefile = "gfx/texticons/KOR/BestKorea_7.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_8"
+		texturefile = "gfx/texticons/KOR/BestKorea_8.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_1"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_2"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_3"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_4"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_5"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_6"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_7"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_7.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_BestKorea_8"
+		texturefile = "gfx/texticons/KOR/JPN_BestKorea_8.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_BestKorea_9"
+		texturefile = "gfx/texticons/KOR/BestKorea_9.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PRK_kim_il_sung_yellow_texticon"
+		texturefile = "gfx/texticons/KOR/PRK_kim_il_sung_yellow_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_PRK_kim_il_sung_yellow_texticon"
+		texturefile = "gfx/texticons/KOR/JPN_PRK_kim_il_sung_yellow_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PRK_kim_jong_il_yellow_texticon"
+		texturefile = "gfx/texticons/KOR/PRK_kim_jong_il_yellow_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JPN_PRK_kim_jong_il_yellow_texticon"
+		texturefile = "gfx/texticons/KOR/JPN_PRK_kim_jong_il_yellow_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_democracy_value_texticon"
+		texturefile = "gfx/texticons/KOR/KOR_three_principles_democracy_value_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_eleven_texticon"
+		textureFile = "gfx/texticons/KOR/kor_ending_eleven.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_fourteen_texticon"
+		textureFile = "gfx/texticons/KOR/kor_ending_fourteen.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_seventeen_texticon"
+		textureFile = "gfx/texticons/KOR/kor_ending_seventeen.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_eighteen_texticon"
+		textureFile = "gfx/texticons/KOR/kor_ending_eighteen.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_kor_ending_han_sang_gyun"
+		textureFile = "gfx/texticons/KOR/texticon_portraits/KOR_han_sang_gyun_president.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_lee_baek_yoon"
+		textureFile = "gfx/texticons/KOR/texticon_portraits/KOR_lee_baek_yoon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_kang_sung_hee"
+		textureFile = "gfx/texticons/KOR/texticon_portraits/KOR_kang_sung_hee.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_ending_kwon_young_gook"
+		textureFile = "gfx/texticons/KOR/texticon_portraits/KOR_kwon_young_gook.png"
+		legacy_lazy_load = no
+	}
+}

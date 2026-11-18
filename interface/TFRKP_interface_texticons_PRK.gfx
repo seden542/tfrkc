@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_PRK_epidemic_supplies_texticon"
+		texturefile = "gfx/texticons/PRK/PRK_epidemic_supplies_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PRK_epidemic_infection_texticon"
+		texturefile = "gfx/texticons/PRK/PRK_epidemic_infection_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PRK_epidemic_containment_texticon"
+		texturefile = "gfx/texticons/PRK/PRK_epidemic_containment_texticon.png"
+		legacy_lazy_load = no
+	}
+}

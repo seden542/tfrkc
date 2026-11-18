@@ -1,0 +1,252 @@
+sang_bi_sadan_template_KOR = {
+
+	available_for = {
+		KOR
+	}
+
+	role = infantry
+
+	upgrade_prio = {
+		factor = 40
+
+		modifier = {
+			factor = 80
+		}
+	}
+
+	sang_bi_sadan_core = {
+
+		upgrade_prio = {
+			factor = 60
+
+			modifier = {
+				factor = 80
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				spaa_company = 1
+				military_police = 1
+				logistics_company = 1
+				armored_car_recon = 1
+			}
+
+			regiments = {
+				motorized = 7
+				mechanized = 1
+				light_mechanized = 1
+				modern_armor = 1
+				modern_sp_artillery_brigade = 2
+				motorized_rocket_brigade = 1 }
+		}
+	}
+}
+
+gigyehwa_sadan_template_KOR = {
+
+	available_for = {
+		KOR
+	}
+
+	role = modern_armor
+
+	upgrade_prio = {
+		factor = 40
+
+		modifier = {
+			factor = 80
+		}
+	}
+
+	gigyehwa_sadan_core = {
+
+		upgrade_prio = {
+			factor = 60
+
+			modifier = {
+				factor = 80
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				spaa_company = 1
+				military_police = 1
+				logistics_company = 1
+				armored_car_recon = 1
+			}
+
+			regiments = {
+				modern_armor = 5
+				mechanized = 4
+				modern_sp_artillery_brigade = 2
+				motorized_rocket_brigade = 1 }
+		}
+	}
+}
+
+po_byeong_yeodan_prevention_KOR = {
+
+	available_for = {
+		KOR
+	}
+
+	role = artillery
+
+	upgrade_prio = {
+		factor = 0
+
+		modifier = {
+			factor = 0
+		}
+	}
+
+	po_byeong_yeodan_core = {
+
+		upgrade_prio = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+			}
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				signal_company = 1
+				logistics_company = 1
+			}
+
+			regiments = {
+				modern_sp_artillery_brigade = 2
+			}
+		}
+	}
+}
+haebyong_sadan_template_KOR = {
+	available_for = {
+		KOR
+	}
+	role = marine
+	upgrade_prio = {
+		factor = 1
+	}
+	haebyong_sadan_core = {
+		upgrade_prio = {
+			factor = 1
+		}
+		target_template = {
+			support = {
+				engineer = 1
+				logistics_company = 1
+				military_police = 1
+				recon = 1
+				signal_company = 1
+			}
+			regiments = {
+				marine = 6
+				paratrooper = 3
+				modern_sp_artillery_brigade = 2
+				amphibious_mechanized = 1
+				modern_armor = 1
+			}
+		}
+	}
+}
+shinsokdaeung_sadan_template_KOR = {
+	available_for = {
+		KOR
+	}
+	role = paratrooper
+	upgrade_prio = {
+		factor = 0
+	}
+	shinsokdaeung_sadan_core = {
+		upgrade_prio = {
+			factor = 0
+		}
+		target_template = {
+			support = {
+				logistics_company = 1
+				helicopter_recon = 1
+				signal_company = 1
+			}
+			regiments = {
+				paratrooper = 6
+			}
+		}
+	}
+}
+gigap_yeodan_template_KOR = {
+	available_for = {
+		KOR
+	}
+	role = mechanized
+	upgrade_prio = {
+		factor = 1
+	}
+	gigap_yeodan_core = {
+		upgrade_prio = {
+			factor = 1
+		}
+		target_template = {
+			support = {
+				engineer = 1
+				spaa_company = 1
+				signal_company = 1
+				logistics_company = 1
+				light_tank_recon = 1
+			}
+			regiments = {
+				modern_armor = 3
+				mechanized = 2
+				modern_sp_artillery_brigade = 2
+			}
+		}
+	}
+}
+
+jiyeogbangwi_sadan_template_KOR = {
+
+	available_for = {
+		KOR
+	}
+
+	role = motorized
+
+	upgrade_prio = {
+		factor = 40
+		modifier = {
+			factor = 80
+		}
+	}
+
+	jiyeogbangwi_sadan_core = {
+		upgrade_prio = {
+			factor = 60
+			modifier = {
+				factor = 80
+			}
+		}
+
+		target_template = {
+			support = {
+				apc_company = 1
+				anti_air = 1
+				logistics_company = 1
+				military_police = 1
+				engineer = 1
+			}
+
+			regiments = {
+				motorized = 9
+				artillery_brigade = 1
+			}
+		}
+	}
+}

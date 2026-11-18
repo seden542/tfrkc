@@ -1,0 +1,23 @@
+ideas = { country = {
+TFRKC_government_disruption = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { recruitable_population_factor = -0.35
+ production_factory_efficiency_gain_factor = -0.15
+ political_power_gain = -0.3 } }
+TFRKC_frontier_burden = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = -0.1
+ supply_consumption_factor = 0.1 } }
+TFRKC_militia_divisions = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = -0.12
+ army_morale_factor = -0.08 } }
+TFRKC_fuel_shortage = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { fuel_gain_factor = -0.2
+ supply_consumption_factor = 0.15 } }
+TFRKC_liberation_coalition = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = -0.15
+ training_time_army_factor = 0.15 } }
+TFRKC_workers_defence = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_core_defence_factor = 0.1
+ army_org_factor = -0.18 } }
+TFRKC_local_fragmentation = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = -0.2
+ political_power_gain = -0.25 } }
+TFRKC_no_naval_war = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { industrial_capacity_dockyard = -1
+ naval_invasion_capacity = -1000 } }
+TFRKC_intervention_burden = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = -0.08
+ supply_consumption_factor = 0.08 } }
+TFRKC_joint_command = { picture = generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { army_org_factor = -0.15
+ supply_consumption_factor = 0.15 } }
+} }

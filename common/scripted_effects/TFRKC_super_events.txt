@@ -1,0 +1,28 @@
+# Actual hostilities, in KOR scope; never starts a war or changes its date.
+TFRKC_publish_civilwar_news_effect = {
+ if = {
+  limit = {
+   has_global_flag = TFRKC_civilwar_active
+   has_global_flag = TFRKC_rework_start_recorded
+   NOT = { has_global_flag = TFRKC_civilwar_news_published }
+  }
+  set_global_flag = TFRKC_civilwar_news_published
+  news_event = { id = tfrkc_super.1 hours = 1 }
+ }
+}
+
+# Use the upstream helper for both the window variable and scoped music.
+# v2 permits recovery in saves where the previous unregistered token was shown.
+TFRKC_open_civilwar_super_event_effect = {
+ if = {
+  limit = {
+   is_ai = no
+   NOT = { has_global_flag = super_events_off_flag }
+   NOT = { has_country_flag = TFRKC_civilwar_super_seen_v2 }
+  }
+  set_country_flag = TFRKC_civilwar_super_seen
+  set_country_flag = TFRKC_civilwar_super_seen_v2
+  set_temp_variable = { TFRKP_temp_super_event = token:TFRKC_SE_KOREAN_CIVILWAR }
+  TFRKP_fire_super_event = yes
+ }
+}

@@ -1,0 +1,6 @@
+capital = 1707
+set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
+set_popularities = { libertarian_socialist = 100 }
+set_stability = 0.4
+set_war_support = 0.6
+create_country_leader = { name = TFRKC_KLF_leader picture = "gfx/leaders/leader_unknown.dds" ideology = popular_front_socialism expire = "2050.1.1" }

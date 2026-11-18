@@ -1,0 +1,3171 @@
+spriteTypes = {
+	############
+	SpriteType = {
+		name = "GFX_KOR_lee_effect_complete"
+		texturefile = "gfx/interface/goals/KOR/BLANK_lee_effect_complete.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_fuckyou"
+		texturefile = "gfx/interface/goals/KOR/BLANK_lee_fuckyou.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_TFR_KR"
+		texturefile = "gfx/interface/goals/KOR/BLANK_KOR_TFR_KR.png"
+	}
+	############
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_happy_afterwar8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_happy_afterwar8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_bad_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_bad_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_bad_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_bad_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_bad_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_bad_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_bad_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_bad_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_dpk_bad_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_dpk_bad_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_light_afterwar8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_light_afterwar8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_2027_election"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_2027_election.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_democratic_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_democratic_party.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_people_power_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_people_power_party.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_pre_lee"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_pre_lee.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_only_me"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_only_me.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_economy_dp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_economy_dp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_candlelight_dp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_candlelight_dp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_our_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_our_ppp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_new_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_new_ppp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_attack_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_attack_ppp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_problem_is_economy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_problem_is_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_election_cheol_soo"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_election_cheol_soo.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_red_star_focus"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_red_star_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_24.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_chun_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_chun_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_happy_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_happy_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_happy_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_happy_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_happy_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_happy_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_happy_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_happy_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_happy_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_happy_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_happy_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_happy_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_bad_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_bad_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_bad_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_bad_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_bad_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_bad_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_bad_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_bad_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_bad_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_bad_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_nam_bad_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_nam_bad_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar2_fake"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar2_fake.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar_soldiers"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar_soldiers.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar_citizens"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar_citizens.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_army_happy_afterwar_new_korea"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_army_happy_afterwar_new_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_army_happy_afterwar_new_korea_kwak"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_army_happy_afterwar_new_korea_kwak.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_happy_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_happy_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_army_bad_afterwar_2nd_round"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_bad_afterwar_2nd_round.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_24.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_25"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_25.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_26"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_26.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_27"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_27.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_28"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_28.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_vic_kim_29"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_vic_kim_29.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_vic_kim_29_fail"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_vic_kim_29_fail.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_30"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_30.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_31"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_31.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_32"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_32.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_33"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_33.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_34"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_market_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_35"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_35.png"
+	}
+
+
+
+
+	
+	spriteType = {
+		name = "GFX_KOR_military_common_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_common_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_common_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_common_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_common_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_common_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_military_common_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_military_common_7.png"
+	}
+	############
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_24.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_25"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_25.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_focus_26"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_focus_26.png"
+	}
+	############
+	SpriteType = {
+		name = "GFX_KOR_lee_red_dpk_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_red_dpk_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_red_dpk_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_red_dpk_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_red_dpk_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_red_dpk_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_red_dpk_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_red_dpk_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_red_dpk_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_red_dpk_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_afterwar8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_afterwar8.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_afterwar9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_reds_afterwar9.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_afterwar9_pp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_reds_afterwar9_pp.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_afterwar9_jp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_reds_afterwar9_jp.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_afterwar9_lp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_reds_afterwar9_lp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_what_could_we_do"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_what_could_we_do.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_prepare_politic_bunk"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_prepare_politic_bunk.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_say_to_peoples"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_say_to_peoples.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_21st_president_election"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_21st_president_election.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_our_vicroty"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_our_vicroty.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_support_to_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_support_to_taiwan.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_disaster_capital"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_disaster_capital.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_march"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_march.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_dpk_focus_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_dpk_focus_23.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_nothing_dpk_focus_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_nothing_dpk_focus_24.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_nothing_dpk_focus_24_real"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_nothing_dpk_focus_24_real.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coa_afterwar8_alt"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coa_afterwar8_alt.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_24.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_focus_25" # 변동되는 포커스는 GFX_focus_KOR... 로 하기
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_25.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_focus_25_end"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_25_end.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_26"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_26.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_27"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_27.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_28"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_28.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_29"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_29.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_30"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_30.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_31"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_31.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_32"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_32.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_33"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_33.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_34"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_34.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_35"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_35.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_36"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_36.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_37"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_37.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_focus_38"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_reds_focus_38.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_reds_focus_38_real"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_lee_reds_focus_38_real_all_nounder.png"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_39"
+		texturefile = "gfx/interface/goals/KOR/BLANK_lee_no_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_40"
+		texturefile = "gfx/interface/goals/KOR/BLANK_lee_no_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_focus_41"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_focus_41.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_24.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_25"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_25.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_26"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_26.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_common_focus_27"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_27.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_using_vote_revolution"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_using_vote_revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_persuation_dpk"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_persuation_dpk.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_use_fucking_bullshits"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_use_fucking_bullshits.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_reds_purge_the_army"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_reds_purge_the_army.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_house_of_card"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_house_of_card.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_hard_march_to_future"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_hard_march_to_future.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_12.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_yec_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_yec_focus_12.png"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_lee_army_route_nam_focus_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_nam_focus_13.png"
+		legacy_lazy_load = no 
+		noOfFrames = 42
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_24.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_25"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_25.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_26"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_26.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_27"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_27.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_28"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_28.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_coa_route_29"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_coa_route_29.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_politic_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_politic_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_army_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_army_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_army_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_army_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_army_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_army_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_army_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_army_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_army_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_army_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_please_to_japan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_please_to_japan.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_east_asian_economic_league"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_east_asian_economic_league.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_our_diplomatical_disaster"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_our_diplomatical_disaster.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_prepare_to_chinese_invade"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_prepare_to_chinese_invade.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_election_of_2024"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_election_of_2024.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_nothing_ppp_focus_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_nothing_ppp_focus_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_vic_kim_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_vic_kim_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_4.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_5.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_6.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_7.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_8.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_9"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_9.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_10"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_10.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_11"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_11.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_12"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_12.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_13"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_13.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_14"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_14.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_15"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_15.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_16"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_16.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_17"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_17.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_18"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_18.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_19"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_19.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_20"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_20.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_21"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_21.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_22"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_22.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_23"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_23.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_24"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_24.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_25"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_25.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_victory_sup_26"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_victory_sup_26.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_hand_to_japan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_hand_to_japan.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_of_taiwan_democracy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_of_taiwan_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_defeat_economic_problem_china"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_economic_problem_china.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_stop_political_movement"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_stop_political_movement.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_scrap_the_dpk_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_scrap_the_dpk_ppp.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_establish_sconr"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_establish_sconr.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_promise_democracy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_promise_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_deny_crazy_guys"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_deny_crazy_guys.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_support_more_controlable"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_support_more_controlable.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_end_of_crush"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_end_of_crush.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_real_focus_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_real_focus_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_real_focus_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_real_focus_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_real_focus_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_real_focus_3.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_real_focus_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_real_focus_4.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_lee_real_focus_4_kono"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_real_focus_4_kono.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_army_route_national_revolution"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_national_revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_exert_influence_over_national_assembly"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_exert_influence_over_national_assembly.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_fake_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_fake_1.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_fake_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_fake_2.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_fake_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_fake_3.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_us_question"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_us_question.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_engage_us_corporations"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_engage_us_corporations.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_strong_in_crisis"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_strong_in_crisis.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_lee_after_pandemic"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_after_pandemic.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_lee_basic_income_experiment"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_basic_income_experiment.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_lee_korean_re100_industry"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_korean_re100_industry.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_lee_march_to_future"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_march_to_future.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_lee_crush_opposition"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_crush_opposition.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_lee_fake_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_fake_4.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_a_new"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_a_new.png"
+	} 
+	spriteType = {
+		name = "GFX_KOR_covid_crisis_materialized"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_covid_crisis_materialized.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_conducting"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_conducting.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_sending"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_sending.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_start"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_start.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_school"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_school_closure_order.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_strengthening_international_cooperation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_strengthening_international_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_covid_disaster"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_covid_disaster_relief_funds.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_support_for_mask"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_support_for_mask.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_successful_vaccine"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_successful_vaccine.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_discussion_of_covid_response"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_discussion_of_covid_response.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_hardline_response_measures"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_hardline_response_measures.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_complete_entry_ban"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_complete_entry_ban.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_police_force_strengthening"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_police_force_strengthening.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_mitigation_response_measures"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_mitigation_response_measures.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_partial_entry_ban"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_partial_entry_ban.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_public_opinion"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_public_opinion.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_dispatch_to_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_dispatch_to_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supply_for_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_supply_for_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_freedom_for_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_freedom_for_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_japan_together"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_korea_japan_together.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_jeju_train_center"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_jeju_train_center.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_army_for_freedom"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_army_for_freedom.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_more_weapon"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_more_weapon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_pdto_together"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_pdto_together.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_adjusting_oil_reserves"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_adjusting_oil_reserves.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_diversification_of_oil_imports"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_diversification_of_oil_imports.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_the_coming_economic_crisis"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_the_coming_economic_crisis.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_escorting_oil_fleets_in_the_gulf"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_escorting_oil_fleets_in_the_gulf.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_securing_interests_in_the_middle_east"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_securing_interests_in_the_middle_east.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_expansion_of_synthetic_fuel_program"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_expansion_of_synthetic_fuel_program.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_fourth_oil_shock"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_fourth_oil_shock.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_green_new_deal"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_green_new_deal.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_a_battleground_of_great_powers"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_a_battleground_of_great_powers.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_usfk_negotiations"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_usfk_negotiations.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_pressure_from_the_us"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_pressure_from_the_us.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_cooperative_vaccine_development"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_cooperative_vaccine_development.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_voices_from_the_middle_east"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_voices_from_the_middle_east.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_participation_in_the_middle_east_war"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_participation_in_the_middle_east_war.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_hand_in_hand"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_hand_in_hand.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_ministry_of_foreign_affairs_report"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_ministry_of_foreign_affairs_report.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_northern_diplomacy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_northern_diplomacy.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_attempt_to_resume_inter_korean_relations"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_attempt_to_resume_inter_korean_relations.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_china_diplomatic_talks"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_korea_china_diplomatic_talks.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_follow_up_measures"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_follow_up_measures.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_leader_ship"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_leader_ship.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youngsan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youngsan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_populace_first"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_populace_first.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_party_together"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_party_together.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_party_control"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_party_control.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_GTX"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_GTX.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_defeat_free_democracy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_defeat_free_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_easing_of_anti_Japanese"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_easing_of_anti_Japanese.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_public_unification"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_public_unification.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_new_order"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_new_order.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_tawian_tsmc"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_tawian_tsmc.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_soothe_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_soothe_party.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_anti_country"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_anti_country.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_tawian_people"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_tawian_people.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_enterprise_calmdown"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_enterprise_calmdown.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_japan_cooperation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_korea_japan_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_anti_community_upper"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_anti_community_upper.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_join_to_pec"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_join_to_pec.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_free_asia_cooperation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_free_asia_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_gwanghwamun"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_gwanghwamun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_eternal_president"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_eternal_president.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_new_town_campaign"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_new_town_campaign.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_great_asia_war"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_great_asia_war.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_light_work"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_light_work.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_gwanghwamun"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_gwanghwamun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_normalization"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_normalization.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_dark_work"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_dark_work.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_constitution_control"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_constitution_control.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_killing_chinese"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_killing_chinese.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_anti_communist_mission"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_anti_communist_mission.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_gwanghwamun"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_gwanghwamun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_women_duty"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_women_duty.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_yoons_think"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_yoons_think.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_history_rewrite"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_history_rewrite.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_big_father"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_big_father.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_passionate_korean"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_passionate_korean.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_return_doctor"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_return_doctor.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_time_to_work"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_time_to_work.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_nuke_for_green"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_nuke_for_green.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_socity"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_socity.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_after_pandemic"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_after_pandemic.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_time_to_work"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_time_to_work.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_home_mitigation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_home_mitigation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_cartel"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_cartel.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_police_department"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_police_department.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_putting_out_the_big_fire"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_putting_out_the_big_fire.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_voices_from_the_middle_east_fake"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_voices_from_the_middle_east_fake.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_follow_up_measures_fake"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_follow_up_measures_fake.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_koreajapan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_koreajapan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_ecnomic"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_ecnomic.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_youn_father"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_father.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_pdto_our_postion"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_pdto_our_postion.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_pdto_command"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_pdto_command.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_military_education"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_military_education.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_samchang"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_samchang.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_killing_internet"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_killing_internet.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_media_control"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_media_control.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_end_divide"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_end_divide.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_spring_seoul"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_spring_seoul.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_pdto_missile_command"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_pdto_missile_command.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_gori_plan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_gori_plan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_freedom_army"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_freedom_army.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_election_victory"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_election_victory.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_support_to_rich"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_support_to_rich.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_invisible_hand"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_invisible_hand.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_victoy_boom"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_victoy_boom.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_negotiations_china"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_negotiations_china.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_home_great_boom"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_home_great_boom.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_among_country"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_among_country.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_among_people"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_among_people.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_conservatives_renovation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_conservatives_renovation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_roh_moo_hyun"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_roh_moo_hyun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_victory_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_victory_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_home_deregulation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_home_deregulation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_pdto_securing_control"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_pdto_securing_control.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_proud_k_quarantine"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_proud_k_quarantine.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_citizens_please_be_reassured"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_citizens_please_be_reassured.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_intensive_care_hospitals"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_intensive_care_hospitals.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_declaration_of_emergency_quarantine_order"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_declaration_of_emergency_quarantine_order.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_implementation_of_nighttime_curfew"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_implementation_of_nighttime_curfew.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_depend_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_depend_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_people_power_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_people_power_party.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_democratic_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_democratic_party.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_attack_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_attack_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_2022_election"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_2022_election.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_cheol_soo"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_cheol_soo.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_middle_dp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_middle_dp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_new_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_new_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_left_dp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_left_dp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_candlelight_dp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_candlelight_dp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_our_ppp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_our_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_election_economy_dp"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_election_economy_dp.png"
+	}	
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_reserve_forces"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_reserve_forces.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_reserve_forces_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_reserve_forces_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_kill_chain"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_kill_chain.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_kill_chain_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_kill_chain_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_plan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_plan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_plan_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_plan_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_seoul_fortification"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_seoul_fortification.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_seoul_fortification_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_seoul_fortification_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_moving_industrial"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_moving_industrial.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_moving_industrial_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_moving_industrial_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_preparation_winter_war"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_preparation_winter_war.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_preparation_winter_war_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_preparation_winter_war_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_plan_sandong"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_plan_sandong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_plan_sandong_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_plan_sandong_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_wonsan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_wonsan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_wonsan_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_wonsan_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_sanhaekuan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_sanhaekuan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_sanhaekuan_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_sanhaekuan_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_chongjin"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_chongjin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_chongjin_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_chongjin_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_nk"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_nk.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_nk_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_nk_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_dawn_east_asia"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_dawn_east_asia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_dawn_east_asia_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_dawn_east_asia_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_prc"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_prc.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_attack_to_prc_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_attack_to_prc_reds.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_airforce_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_airforce_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_airforce_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_airforce_5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_airforce_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_airforce_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_airforce_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_airforce_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_7.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_army_upper"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_army_upper.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_airforce_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_airforce_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_airforce_0"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_airforce_0.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_0"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_0.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_navy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_navy.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_navy_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_navy_reds.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_5.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_faith_in_steel"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_faith_in_steel.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_faith_in_steel_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_faith_in_steel_reds.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_gasgas"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_gasgas.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_nakai_route"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_nakai_route.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_domestic_production"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_domestic_production.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_coming_china_ecnomic"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_coming_china_ecnomic.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_domestic_production2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_domestic_production2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_through_sanctions"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_through_sanctions.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_riot_subjugation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_riot_subjugation.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_korean"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_korean.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_korean_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_korean_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_chines_expulsion"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_chines_expulsion.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_chines_expulsion_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_chines_expulsion_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_sunrising_plan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_sunrising_plan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_sunrising_plan_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_sunrising_plan_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_stabilization_prk"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_stabilization_prk.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_stabilization_prk_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_stabilization_prk_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_partisan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_partisan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_partisan_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_partisan_reds.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_stabilization_manchuria"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_stabilization_manchuria.png"
+	}
+	spriteType = {
+		name = "GFX_focus_KOR_gwr_stabilization_manchuria_reds"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_focus_KOR_gwr_stabilization_manchuria_reds.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_navy_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_navy_6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_0"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_0.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_8.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_open_dream"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_open_dream.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_chung_arm"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_chung_arm.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_hack_kaun"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_hack_kaun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_national_education"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_national_education.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_democratic_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_democratic_party.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_emergency_legislation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_emergency_legislation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_local_war"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_local_war.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_tomorrow"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_tomorrow.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_glamorous_vacation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_glamorous_vacation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_fearmongering"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_fearmongering.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_nakai_route2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_nakai_route2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_after_army_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_after_army_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_help_to_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_help_to_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_weapon_up_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_weapon_up_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_build_up_taiwan"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_build_up_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_war_victory"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_war_victory.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_22_election"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_22_election.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_martial_law_success"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_martial_law_success.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_age_of_prosperity"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_age_of_prosperity.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution_6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution_6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution_5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution_5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_industrial_revolution"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_industrial_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_patriotism"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_patriotism.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_renovatioin_party"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_renovatioin_party.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_park_chung_hee_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_park_chung_hee_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_patriotism_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_patriotism_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_park_chung_hee_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_park_chung_hee_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_kimyoungsam_0"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_kimyoungsam_0.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_recreation_power"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_recreation_power.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_cooperation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_cooperation_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_cooperation_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_park_chung_hee"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_park_chung_hee.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_conservatism_mean"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_conservatism_mean.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_park_chung_hee_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_park_chung_hee_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_south_elite2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_south_elite2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_common_conservatism"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_common_conservatism.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_south_elite"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_south_elite.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_common_conservatism_0"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_common_conservatism_0.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_kimyoungsam_4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_kimyoungsam_4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_kimyoungsam_3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_kimyoungsam_3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_park_chung_hee_0"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_park_chung_hee_0.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_common_conservatism_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_common_conservatism_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_park_chung_hee_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_park_chung_hee_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_kimyoungsam"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_kimyoungsam.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_kimyoungsam_2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_kimyoungsam_2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_kimyoungsam_1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_kimyoungsam_1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_failed_military_law"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_failed_military_law.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_areest"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_arrest.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_demonstration"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_demonstration.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_impeachmen"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_impeachment.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_impeachmen_vote"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_youn_impeachment_vote.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_the_storm_is_coming"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_the_storm_is_coming.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_be_elected"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_be_elected.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_the_task"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_the_task.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_purging_insurrection"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_purging_insurrection.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_insurrection_special_counsel"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_insurrection_special_counsel.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_true_republic_of_korea"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_true_republic_of_korea.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_financial_revitalization"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_financial_revitalization.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_economic_recovery"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_economic_recovery.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_recovery_and_growth"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_recovery_and_growth.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_electoral_system_reform"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_electoral_system_reform.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_roundtable_meeting"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_roundtable_meeting.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_midnight_approaches"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_midnight_approaches.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_our_industry"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_our_industry.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_preparation_for_information_warfare"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_preparation_for_information_warfare.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_investment_expansion"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_investment_expansion.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_regional_industrial_complex"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_regional_industrial_complex.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_shipyard_construction"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_shipyard_construction.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_defense_industry_support"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defense_industry_support.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_ai_unmanned_technology"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_ai_unmanned_technology.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_aerial_weapons"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_aerial_weapons.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_judicial_reform"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_judicial_reform.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_relocation_of_national"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_relocation_of_national.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_defense_budget_increase"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defense_budget_increase.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_joining_the_pdto"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_joining_the_pdto.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_i_alone_am"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_i_alone_am.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_relocation_of_the_administrativ"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_relocation_of_the_administrativ.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_korean_style_iron_dome"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_korean_style_iron_dome.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_weapons_for_allies"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_weapons_for_allies.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_the_spearhead_of_democracy"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_the_spearhead_of_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_development_of_asymmetric_weapons"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_development_of_asymmetric_weapons.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_military_exercise"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_military_exercise.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_civil_defense_drill"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_civil_defense_drill.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_continuing_to_build_an_elite_military"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_continuing_to_build_an_elite_military.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_dismantle_the_prosecution"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_dismantle_the_prosecution.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_seoul_court_riot"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_seoul_court_riot.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_enactment_of_anti_discrimination_law"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_enactment_of_anti_discrimination_law.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_secure_ccourt"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_secure_ccourt.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_seoul_court_riot"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_seoul_court_riot.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_war_on_terror"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_war_on_terror.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_cooperation_with_chaebols"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_cooperation_with_chaebols.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_enemies_in_the_same_boat"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_enemies_in_the_same_boat.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_social_equality"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_social_equality.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_counter_politi_extrem"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_counter_politi_extrem.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_judgment_of_political_parties"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_judgment_of_political_parties.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_face_the_current_situation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_face_the_current_situation.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_chaebol_reform"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_chaebol_reform.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_emergency_election_fake"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_emergency_election_fake.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_one_milion_gigap"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_one_milion_gigap.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_back_san_huck"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_back_san_huck.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar7"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar7.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_canon_afterwar8"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_canon_afterwar8.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_light_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_light_afterwar5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_light_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_light_afterwar4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_light_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_light_afterwar3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_light_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_light_afterwar2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_light_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_light_afterwar1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar1"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar2"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar3"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar4"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar5"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar5.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_park_agi_new_age_town"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_park_agi_new_age_town.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_park_agi_electronic_yusin"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_park_agi_electronic_yusin.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_park_military_general"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_park_military_general.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_mat_afterwar6"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_mat_afterwar6.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_overseas_dispatch"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_overseas_dispatch.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_neutral"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_neutral.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_early_warning_support"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_early_warning_support.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_international_support"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_international_support.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_ideals_collapsed"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_ideals_collapsed.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_load_of_war"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_load_of_war.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_defeat_dead_of_president"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_defeat_dead_of_president.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_pdto_cooperation"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_pdto_cooperation.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_far_right_crackdown"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_far_right_crackdown.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_lng_ship_order"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_lng_ship_order.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_yeosu_petrochemical_reuse"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_yeosu_petrochemical_reuse.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_changwon_busan_wargoods"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_changwon_busan_wargoods.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_it_network_act_amendment"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_it_network_act_amendment.png"
+	}
+	SpriteType = {
+		name = "GFX_KOR_lee_taiwan_korea_separate"
+		texturefile = "gfx/interface/goals/KOR/focus_GFX_KOR_lee_taiwan_korea_separate.png"
+	}
+}

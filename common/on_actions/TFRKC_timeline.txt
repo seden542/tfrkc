@@ -1,0 +1,8 @@
+on_actions = { on_daily = { effect = { KOR = {
+ if = { limit = { has_country_flag = KOR_yoon_taiwan_war_defeat NOT = { has_country_flag = TFRKC_defeat_recorded } }
+ set_country_flag = TFRKC_defeat_recorded
+ set_variable = { TFRKC_defeat_date = global.date }
+ TFRKC_calendar_delay_effect = yes
+ if = { limit = { NOT = { has_country_flag = TFRKC_calendar_unsupported } } TFRKC_schedule_year_effect = yes }
+ }
+} } } }

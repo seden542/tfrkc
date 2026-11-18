@@ -1,0 +1,11 @@
+division_template = { name = "TFRKC Intervention Infantry" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
+units = {
+division = { name = "대한인민해방군 제1보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제2보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제3보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제4보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제5보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제6보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제7보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+division = { name = "대한인민해방군 제8보병여단" location = 13691 division_template = "TFRKC Intervention Infantry" start_experience_factor = 0.3 start_equipment_factor = 0.8 }
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+ spriteType = { name = "GFX_TFRKC_story_return" texturefile = "gfx/event_pictures/yoon_again_tfrkc.png" }
+ spriteType = { name = "GFX_TFRKC_story_daejeon" texturefile = "gfx/event_pictures/Daejeon_Metropolitan_Office_of_Education_Occupy.png" }
+ spriteType = { name = "GFX_TFRKC_story_outbreak" texturefile = "gfx/event_pictures/korea_civilwar_start.png" }
+ spriteType = { name = "GFX_TFRKC_story_navy" texturefile = "gfx/event_pictures/korea_navy_tfrkc.png" }
+}

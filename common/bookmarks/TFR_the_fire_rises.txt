@@ -1,0 +1,141 @@
+bookmarks = {
+	bookmark = {
+		name = "FIRE_NAME"
+		desc = "FIRE_NAME_DESC"
+		date = 2020.1.1.1
+		picture = "GFX_select_date_2020"
+		default_country = "KOR"
+		default = yes
+
+		filters = { label }
+		label_order = { kor_filter usa_filter jap_filter fra_filter ger_filter sov_filter prc_filter}
+
+		sort_unplayed_first = no            # defaults to yes: countries with unplayed content are listed first
+		include_majors_in_minor_list = no   # defaults to yes: when a filter is active, majors also show in the mini list
+		apply_filter_to_majors = yes        # defaults to no: when yes, the major row also respects the filter (only majors matching it are shown)
+		
+		KOR = {
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			version = base_game
+			label = { kor_filter }
+			ideas = {
+				KOR_dominance_of_chaebols
+				KOR_economic_bubble_idea
+				KOR_candlelight_idea
+			}
+			focuses = {
+				KOR_covid_crisis_materialized
+				KOR_a_new_decade_of_the_twentyonest_century
+				KOR_the_coming_economic_crisis
+			}
+		}
+
+		USA = {
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = conservative
+			version = base_game
+			label = { usa_filter }
+			ideas = {
+				USA_political_division
+				USA_world_police_idea
+				USA_political_establishment
+			}
+			focuses = {
+				USA_side_against_trump
+				USA_state_of_the_union
+				USA_side_with_trump
+			}
+		}
+		
+		JAP = {
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = conservative
+			version = base_game
+			label = { jap_filter }
+			ideas = {
+				JAP_japanese_pacifism_idea
+				JAP_aging_population_idea
+				JAP_keiretsu_control_idea
+			}
+			focuses = {
+				JAP_japan_on_the_world_stage
+				JAP_deal_with_the_pandemic
+				JAP_revise_article_9
+			}
+		}
+		
+		FRA = {
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			version = base_game
+			label = { fra_filter }
+			ideas = {
+				FRA_french_spirit_idea
+				FRA_mass_migration_idea
+				FRA_ENA_idea
+			}
+			focuses = {
+				FRA_criticize_the_eu
+				FRA_support_european_federalization
+				FRA_the_french_armed_forces
+			}
+		}
+		
+		GER = {
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = conservative
+			version = base_game
+			label = { ger_filter }
+			ideas = {
+				GER_german_legacy_idea
+				GER_bundeswehr_shortcomings_idea
+				GER_merkelreich_idea
+			}
+			focuses = {
+				GER_a_green_future
+				GER_align_to_the_right
+				GER_europe_united_strong
+			}
+		}
+		
+		SOV = {
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			version = base_game
+			label = { sov_filter }
+			ideas = {
+				SOV_heavy_sanctions 
+				SOV_kleptocratic_state 
+				SOV_The_Petrol_Economy
+			}
+			focuses = {
+				SOV_1000_years_of_putinism
+				SOV_the_russian_dream
+				SOV_sanction_proof_economy
+			}
+		}
+		
+		PRC = {
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communist
+			version = base_game
+			label = { prc_filter }
+			ideas = {
+				PRC_chinese_communist_party_idea
+				PRC_corrupt_bureaucracy_idea
+				PRC_coronavirus_pandemic_idea4
+			}
+			focuses = {
+				PRC_lockdown_wuhan
+				PRC_shake_up_the_politburo
+				PRC_finish_what_mao_started
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

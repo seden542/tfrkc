@@ -1,0 +1,6 @@
+capital = 1626
+set_politics = { ruling_party = conservative elections_allowed = no }
+set_popularities = { conservative = 100 }
+set_stability = 0.4
+set_war_support = 0.6
+create_country_leader = { name = TFRKC_KYA_leader picture = "gfx/leaders/leader_unknown.dds" ideology = judicial_conservatism expire = "2050.1.1" }

@@ -1,0 +1,3679 @@
+add_namespace = kor_news
+
+## 양안전 플라잉 타이거즈 ##
+news_event = {
+	id = kor_news.1
+	title = kor_news.1.t
+	desc = kor_news.1.desc
+	picture = GFX_news_event_kor_news_1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.1.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.1.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.1.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.2
+	title = kor_news.2.t
+	desc = kor_news.2.desc
+	picture = GFX_news_event_kor_news_2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.2.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.2.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.2.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.3
+	title = kor_news.3.t
+	desc = kor_news.3.desc
+	picture = GFX_news_event_kor_news_3
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.3.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.3.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.3.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.4
+	title = kor_news.4.t
+	desc = kor_news.4.desc
+	picture = GFX_news_event_kor_news_4
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.4.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.4.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.4.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.5
+	title = kor_news.5.t
+	desc = kor_news.5.desc
+	picture = GFX_news_event_kor_news_5
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.5.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.5.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.5.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.6
+	title = kor_news.6.t
+	desc = kor_news.6.desc
+	picture = GFX_news_event_kor_news_6
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.6.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.6.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.6.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.7
+	title = kor_news.7.t
+	desc = kor_news.7.desc
+	picture = GFX_news_event_kor_news_7
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.7.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.7.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.7.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.8
+	title = kor_news.8.t
+	desc = kor_news.8.desc
+	picture = GFX_news_event_kor_news_8
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.8.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.8.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.8.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_MARTIAL_LAW_YOON }
+			TFRKP_fire_super_event = yes
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.9
+	title = kor_news.9.t
+	desc = kor_news.9.desc
+	picture = GFX_news_event_kor_news_9
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.9.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.9.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.9.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.10
+	title = kor_news.10.t
+	desc = kor_news.10.desc
+	picture = GFX_news_event_kor_news_10
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.10.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.10.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.10.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.11
+	title = kor_news.11.t
+	desc = kor_news.11.desc
+	picture = GFX_news_event_kor_news_11
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.11.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.11.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.11.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.12
+	title = kor_news.12.t
+	desc = kor_news.12.desc
+	picture = GFX_news_event_kor_news_12
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.12.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.12.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.12.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.13
+	title = kor_news.13.t
+	desc = kor_news.13.desc
+	picture = GFX_news_event_kor_news_13
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = kor_news.13.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.13.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.13.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.14
+	title = kor_news.14.t
+	desc = kor_news.14.desc
+	picture = GFX_news_event_kor_news_14
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.14.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.14.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.14.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.15
+	title = kor_news.15.t
+	desc = kor_news.15.desc
+	picture = GFX_news_event_kor_news_15
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.15.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.15.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.15.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.16
+	title = kor_news.16.t
+	desc = kor_news.16.desc
+	picture = GFX_news_event_kor_news_16
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.16.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.16.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.16.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.17
+	title = kor_news.17.t
+	desc = kor_news.17.desc
+	picture = GFX_news_event_kor_news_17
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.17.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.17.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.17.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.18
+	title = kor_news.18.t
+	desc = kor_news.18.desc
+	picture = GFX_news_event_kor_news_18
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.18.o1
+		trigger = {
+			OR = {
+				is_in_faction_with = KOR
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.18.o2
+		trigger = {
+			OR = {
+				is_in_faction_with = PRC
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.18.o3
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+				is_in_faction_with = KOR
+				original_tag = KOR
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.19
+	title = kor_news.19.t
+	desc = kor_news.19.desc
+	picture = GFX_news_event_kor_news_19
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.19.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.19.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.19.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.20
+	title = kor_news.20.t
+	desc = kor_news.20.desc
+	picture = GFX_news_event_kor_news_20
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.20.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.20.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.20.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.21
+	title = kor_news.21.t
+	desc = kor_news.21.desc
+	picture = GFX_news_event_kor_news_21
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.21.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.21.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.21.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.22
+	title = kor_news.22.t
+	desc = kor_news.22.desc
+	picture = GFX_news_event_kor_news_22
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.22.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.22.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.22.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.23
+	title = kor_news.23.t
+	desc = kor_news.23.desc
+	picture = GFX_news_event_kor_news_23
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.23.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.23.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.23.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.24
+	title = kor_news.24.t
+	desc = kor_news.24.desc
+	picture = GFX_news_event_kor_news_24
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.24.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.24.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.24.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.25
+	title = kor_news.25.t
+	desc = kor_news.25.desc
+	picture = GFX_news_event_kor_news_25
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.25.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.25.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.25.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.26
+	title = kor_news.26.t
+	desc = kor_news.26.desc
+	picture = GFX_news_event_kor_news_26
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.26.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.26.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.26.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.27
+	title = kor_news.27.t
+	desc = kor_news.27.desc
+	picture = GFX_news_event_kor_news_27
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.27.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.27.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.27.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.28
+	title = kor_news.28.t
+	desc = kor_news.28.desc
+	picture = GFX_news_event_kor_news_28
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.28.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.28.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.28.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.29
+	title = kor_news.29.t
+	desc = kor_news.29.desc
+	picture = GFX_news_event_kor_news_29
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.29.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.29.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.29.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.30
+	title = kor_news.30.t
+	desc = kor_news.30.desc
+	picture = GFX_news_event_kor_news_30
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.30.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.30.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.30.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.31
+	title = kor_news.31.t
+	desc = kor_news.31.desc
+	picture = GFX_news_event_kor_news_31
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.31.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.31.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.31.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.32
+	title = kor_news.32.t
+	desc = kor_news.32.desc
+	picture = GFX_news_event_kor_news_32
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.32.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.32.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.32.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.33
+	title = kor_news.33.t
+	desc = kor_news.33.desc
+	picture = GFX_news_event_kor_news_33
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.33.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.33.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.33.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.34
+	title = kor_news.34.t
+	desc = kor_news.34.desc
+	picture = GFX_news_event_kor_news_34
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.34.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.34.o2
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.34.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+			}
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.35
+	title = kor_news.35.t
+	desc = kor_news.35.desc
+	picture = GFX_news_event_kor_news_35
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.35.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.35.o2
+		trigger = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.35.o3
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.35.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.36
+	title = kor_news.36.t
+	desc = kor_news.36.desc
+	picture = GFX_news_event_kor_news_36
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.36.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.36.o2
+		trigger = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.36.o3
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.36.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.37
+	title = kor_news.37.t
+	desc = kor_news.37.desc
+	picture = GFX_news_event_kor_news_37
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.37.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.37.o2
+		trigger = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.37.o3
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.37.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.38
+	title = kor_news.38.t
+	desc = kor_news.38.desc
+	picture = GFX_news_event_kor_news_38
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.38.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.38.o2
+		trigger = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.38.o3
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.38.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.39
+	title = kor_news.39.t
+	desc = kor_news.39.desc
+	picture = GFX_news_event_kor_news_39
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.39.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.39.o2
+		trigger = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.39.o3
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.39.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kor_news.40
+	title = kor_news.40.t
+	desc = kor_news.40.desc
+	picture = GFX_news_event_kor_news_40
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = kor_news.40.o1
+		trigger = {
+			OR = {
+				original_tag = KOR
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.40.o2
+		trigger = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.40.o3
+		trigger = {
+			OR = {
+				original_tag = PRC
+			}
+		}
+	}
+
+	option = {
+		name = kor_news.40.o3
+		trigger = {
+			NOT = {
+				original_tag = KOR
+				original_tag = JAP
+				original_tag = PRC
+			}
+		}
+	}
+
+	after = {
+		set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_ARMY_COUPDETAT }
+		TFRKP_fire_super_event = yes
+	}
+}
+
+news_event = {
+    id = kor_news.41
+    title = kor_news.41.t
+    desc = kor_news.41.desc
+    picture = GFX_news_event_kor_news_41
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.41.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.41.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.41.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.41.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.42
+    title = kor_news.42.t
+    desc = kor_news.42.desc
+    picture = GFX_news_event_kor_news_42
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.42.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.42.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.42.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.42.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.43
+    title = kor_news.43.t
+    desc = kor_news.43.desc
+    picture = GFX_news_event_kor_news_43
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.43.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.43.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.43.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.43.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.44
+    title = kor_news.44.t
+    desc = kor_news.44.desc
+    picture = GFX_news_event_kor_news_44
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.44.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.44.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.44.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.44.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.45
+    title = kor_news.45.t
+    desc = {
+		trigger = {
+			KOR = {
+				has_completed_focus = KOR_lee_army_route_yec_focus_1
+				NOT = { has_completed_focus = KOR_lee_army_route_yec_focus_5 }
+			}
+		}
+		text = kor_news.45.yec_prime.desc
+	}
+    desc = {
+		trigger = {
+			KOR = {
+				has_completed_focus = KOR_lee_army_route_yec_focus_1
+				has_completed_focus = KOR_lee_army_route_yec_focus_5
+			}
+		}
+		text = kor_news.45.yec.desc
+	}
+    desc = {
+		trigger = {
+			KOR = {
+				NOT = { has_completed_focus = KOR_lee_army_route_yec_focus_1 }
+			}
+		}
+		text = kor_news.45.desc
+	}
+    picture = GFX_news_event_kor_news_45
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.45.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.45.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.45.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.45.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.46
+    title = kor_news.46.t
+    desc = kor_news.46.desc
+    picture = GFX_news_event_kor_news_46
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.46.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.46.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.46.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.46.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.47
+    title = kor_news.47.t
+    desc = kor_news.47.desc
+    picture = GFX_news_event_kor_news_47
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.47.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.47.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.47.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.47.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.48
+    title = kor_news.48.t
+    desc = kor_news.48.desc
+    picture = GFX_news_event_kor_news_48
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.48.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.48.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.48.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.48.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.49
+    title = kor_news.49.t
+    desc = kor_news.49.desc
+    picture = GFX_news_event_kor_news_49
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.49.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.49.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.49.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.49.o3
+        trigger = {
+            NOT = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.50
+    title = kor_news.50.t
+    desc = kor_news.50.desc
+    picture = GFX_news_event_kor_news_50
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.50.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.50.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.50.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.50.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.51
+    title = kor_news.51.t
+    desc = kor_news.51.desc
+    picture = GFX_news_event_kor_news_51
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.51.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.51.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.51.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.51.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.52
+    title = kor_news.52.t
+    desc = kor_news.52.desc
+    picture = GFX_news_event_kor_news_52
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.52.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.52.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.52.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.52.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.53
+    title = kor_news.53.t
+    desc = kor_news.53.desc
+    picture = GFX_news_event_kor_news_53
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.53.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.53.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.53.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.53.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.54
+    title = kor_news.54.t
+    desc = kor_news.54.desc
+    picture = GFX_news_event_kor_news_54
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.54.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.54.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.54.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.54.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.55
+    title = kor_news.55.t
+    desc = kor_news.55.desc
+    picture = GFX_news_event_kor_news_45
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.55.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.55.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.55.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.55.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.56
+    title = kor_news.56.t
+    desc = kor_news.56.desc
+    picture = GFX_news_event_kor_news_56
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.56.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.56.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.56.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.56.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.57
+    title = kor_news.57.t
+    desc = kor_news.57.desc
+    picture = GFX_news_event_kor_news_57
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.57.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.57.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.57.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.57.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.58
+    title = kor_news.58.t
+    desc = kor_news.58.desc
+    picture = GFX_news_event_kor_news_32
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.58.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.58.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.58.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.58.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.59
+    title = kor_news.59.t
+    desc = kor_news.59.desc
+    picture = GFX_news_event_kor_news_59
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.59.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.59.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.59.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.59.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.60
+    title = kor_news.60.t
+    desc = kor_news.60.desc
+    picture = GFX_news_event_kor_news_60
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.60.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.60.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.60.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.60.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.61
+    title = kor_news.61.t
+    desc = kor_news.61.desc
+    picture = GFX_news_event_kor_news_61
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.61.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.61.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.61.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.61.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.62
+    title = kor_news.62.t
+    desc = kor_news.62.desc
+    picture = GFX_news_event_kor_news_62
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.62.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.62.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.62.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.62.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.63
+    title = kor_news.63.t
+    desc = kor_news.63.desc
+    picture = GFX_news_event_kor_news_63
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.63.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.63.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.63.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.63.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.64
+    title = kor_news.64.t
+    desc = kor_news.64.desc
+    picture = GFX_news_event_kor_news_64
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.64.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.64.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.64.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.64.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.65
+    title = kor_news.65.t
+    desc = kor_news.65.desc
+    picture = GFX_news_event_kor_news_65
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.65.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.65.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.65.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.65.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+news_event = {
+    id = kor_news.66
+    title = kor_news.66.t
+    desc = kor_news.66.desc
+    picture = GFX_news_event_kor_news_65
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.66.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.66.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.66.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.66.o5
+        trigger = {
+            OR = {
+                original_tag = PRK
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.66.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+                original_tag = PRK
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.67
+    title = kor_news.67.t
+    desc = kor_news.67.desc
+    picture = GFX_news_event_kor_news_65
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.67.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.67.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.67.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.67.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.68
+    title = kor_news.68.t
+    desc = kor_news.68.desc
+    picture = GFX_news_event_kor_news_65
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.68.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.68.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.68.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.68.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.69
+    title = kor_news.69.t
+    desc = kor_news.69.desc
+    picture = GFX_news_event_kor_news_65
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.69.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.69.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.69.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.69.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.70
+    title = kor_news.70.t
+    desc = kor_news.70.desc
+    picture = GFX_news_event_kor_news_70
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.70.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.70.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.70.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.70.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.71
+    title = kor_news.71.t
+    desc = kor_news.71.desc
+    picture = GFX_news_event_kor_news_71
+    major = yes
+
+    is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			KPA = {
+				retire_character = KPA_kim_jongun_char
+				KPA_cho_yongwon_char = {
+					promote_character = jucheism
+					promote_character = left_nationalism
+				}
+			}
+		}
+	}
+
+    option = {
+        name = kor_news.71.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.71.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.71.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.71.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.72
+    title = kor_news.72.t
+    desc = kor_news.72.desc
+    picture = GFX_news_event_kor_news_72
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.72.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.72.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.72.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.72.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+
+	after = {
+		hidden_effect = {
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_KOREAN_FEDERATION }
+			TFRKP_fire_super_event = yes
+		}
+	}
+}
+
+news_event = {
+    id = kor_news.73
+    title = kor_news.73.t
+    desc = kor_news.73.desc
+    picture = GFX_news_event_kor_news_73
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.73.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.73.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.73.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.73.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.74
+    title = kor_news.74.t
+    desc = kor_news.74.desc
+    picture = GFX_news_event_kor_news_74
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.74.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.74.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.74.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.74.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.75
+    title = kor_news.75.t
+    desc = kor_news.75.desc
+    picture = GFX_news_event_kor_news_75
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.75.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.75.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.75.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.75.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.76
+    title = kor_news.76.t
+    desc = kor_news.76.desc
+    picture = GFX_news_event_kor_news_76
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.76.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.76.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.76.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.76.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.77
+    title = kor_news.77.t
+    desc = kor_news.77.desc
+    picture = GFX_news_event_kor_news_3
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.77.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.77.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.77.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.77.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.78
+    title = kor_news.78.t
+    desc = kor_news.78.desc
+    picture = GFX_news_event_kor_news_78
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.78.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.78.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.78.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.78.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.79
+    title = kor_news.79.t
+    desc = kor_news.79.desc
+    picture = GFX_news_event_kor_news_79
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.79.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.79.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.79.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.79.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}
+
+news_event = {
+    id = kor_news.80
+    title = kor_news.80.t
+    desc = kor_news.80.desc
+    picture = GFX_news_event_kor_news_80
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = kor_news.80.o1
+        trigger = {
+            OR = {
+                original_tag = KOR
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.80.o2
+        trigger = {
+            OR = {
+                original_tag = JAP
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.80.o3
+        trigger = {
+            OR = {
+                original_tag = PRC
+            }
+        }
+    }
+
+    option = {
+        name = kor_news.80.o4
+        trigger = {
+            NOR = {
+                original_tag = KOR
+                original_tag = JAP
+                original_tag = PRC
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+# RETIRED in rework 2026-11-17. Definitions retained only for explicit legacy references.
+# Authored civil-war tree; assets are dependency references, no Workshop edits.
+focus_tree = {
+ id = TFRKC_focus_KPL_tree
+ country = { factor = 0 }
+ default = no
+ reset_on_civilwar = no
+ initial_show_position = { focus = TFRKC_focus_KPL_contact }
+
+ focus = {
+  id = TFRKC_focus_KPL_contact
+  icon = GFX_KOR_lee_army_route_common_focus_1
+  x = 3
+  y = 0
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available = { always = no }
+  ai_will_do = { factor = 100 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_focus_KPL_liaison
+  icon = GFX_KOR_lee_army_route_common_focus_1
+  x = 0
+  y = 1
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KPL_contact }
+  available = { always = no }
+  ai_will_do = { factor = 12 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_focus_KPL_civilian
+  icon = GFX_KOR_support_for_mask
+  x = 6
+  y = 1
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KPL_contact }
+  available = { always = no }
+  ai_will_do = { factor = 12 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_focus_KPL_settlement
+  icon = GFX_KOR_strengthening_international_cooperation
+  x = 3
+  y = 2
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_focus_KPL_liaison }
+  prerequisite = { focus = TFRKC_focus_KPL_civilian }
+  available = { always = no }
+  ai_will_do = { factor = 12 }
+  completion_reward = { }
+ }
+}

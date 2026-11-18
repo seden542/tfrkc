@@ -1,0 +1,7 @@
+TFRKC_normalize_prewar_choice_effect = {
+ if = { limit = { tag = KOR has_country_flag = TFRKC_choice_ready NOT = { OR = { has_country_flag = TFRKC_choice_KWC has_country_flag = TFRKC_choice_KLF has_country_flag = TFRKC_choice_KRC has_country_flag = TFRKC_choice_KCH has_country_flag = TFRKC_choice_KYA has_country_flag = TFRKC_choice_KOR } } NOT = { has_global_flag = TFRKC_civilwar_active } } clr_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress clr_country_flag = TFRKC_choice_KSF }
+}
+TFRKC_request_prewar_choice_effect = {
+ TFRKC_normalize_prewar_choice_effect = yes
+ if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } NOT = { has_country_flag = TFRKC_choice_in_progress } } set_country_flag = TFRKC_choice_in_progress country_event = { id = tfrkc_rework_choice.1 } }
+}

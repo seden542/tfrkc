@@ -1,0 +1,13 @@
+division_template = { name = "TFRKC city KCA 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC city KCA 1" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } }  }
+division_template = { name = "TFRKC city KCA 2" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } }  }
+units = {
+division = { name = "한국기업안보연합 제1전투단" location = 15183 division_template = "TFRKC city KCA 0" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제2전투단" location = 15117 division_template = "TFRKC city KCA 0" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제3전투단" location = 14241 division_template = "TFRKC city KCA 0" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제4전투단" location = 15183 division_template = "TFRKC city KCA 1" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제5전투단" location = 15117 division_template = "TFRKC city KCA 1" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제6전투단" location = 14241 division_template = "TFRKC city KCA 1" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제7전투단" location = 15183 division_template = "TFRKC city KCA 2" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+division = { name = "한국기업안보연합 제8전투단" location = 15117 division_template = "TFRKC city KCA 2" start_manpower_factor = 0.75 start_equipment_factor = 0.9 start_experience_factor = 0.55 }
+}

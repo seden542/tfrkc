@@ -1,0 +1,79 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_nis_dismantlement_progress_container"
+		size = { width = 482 height = 130 }
+
+		instantTextBoxType = {
+			name = "KOR_nis_dismantlement_progress_left_text"
+			position = { x = 20 y = 2 }
+			maxWidth = 180
+			font = "VCR02_16"
+			text = "KOR_nis_dismantlement_progress_left_text"
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KOR_nis_dismantlement_progress_right_text"
+			position = { x = 282 y = 2 }
+			maxWidth = 180
+			font = "VCR02_16"
+			text = "KOR_nis_dismantlement_progress_right_text"
+			format = center
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_nis_dismantlement_progress_frame"
+			spriteType = "GFX_PRC_control_bar_bg"
+			position = { x = 48 y = 28 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_nis_dismantlement_progress_bar"
+			spriteType = "GFX_TFR_control_bars"
+			pdx_tooltip = "KOR_nis_dismantlement_progress_gui_tooltip"
+			pdx_tooltip_delayed = "KOR_nis_dismantlement_progress_gui_desc"
+			position = { x = 51 y = 30 }
+		}
+
+		instantTextBoxType = {
+			name = "KOR_nis_dismantlement_progress_total_text"
+			position = { x = 0 y = 40 }
+			maxWidth = 482
+			font = "VCR02_16"
+			text = "KOR_nis_dismantlement_progress_total_text"
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KOR_nis_dismantlement_progress_public_text"
+			position = { x = 35 y = 76 }
+			maxWidth = 210
+			font = "VCR02_16"
+			text = "KOR_nis_dismantlement_progress_public_text"
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KOR_nis_dismantlement_progress_parliament_text"
+			position = { x = 282 y = 76 }
+			maxWidth = 220
+			font = "VCR02_16"
+			text = "KOR_nis_dismantlement_progress_parliament_text"
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KOR_nis_dismantlement_progress_threshold_text"
+			position = { x = 0 y = 104 }
+			maxWidth = 482
+			font = "VCR02_14"
+			text = "KOR_nis_dismantlement_progress_threshold_text"
+			format = center
+			alwaystransparent = yes
+		}
+	}
+}

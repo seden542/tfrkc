@@ -1,0 +1,11 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZSS security" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 ZSS mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "ZSS security 1" location = 14246 division_template = "TFRKC v5 ZSS security" start_manpower_factor = 0.7 start_equipment_factor = 0.75 start_experience_factor = 0.4 }
+ division = { name = "ZSS security 2" location = 15190 division_template = "TFRKC v5 ZSS security" start_manpower_factor = 0.7 start_equipment_factor = 0.75 start_experience_factor = 0.4 }
+ division = { name = "ZSS security 3" location = 15237 division_template = "TFRKC v5 ZSS security" start_manpower_factor = 0.7 start_equipment_factor = 0.75 start_experience_factor = 0.4 }
+ division = { name = "ZSS security 4" location = 15238 division_template = "TFRKC v5 ZSS security" start_manpower_factor = 0.7 start_equipment_factor = 0.75 start_experience_factor = 0.4 }
+ division = { name = "ZSS security 5" location = 15225 division_template = "TFRKC v5 ZSS security" start_manpower_factor = 0.7 start_equipment_factor = 0.75 start_experience_factor = 0.4 }
+ division = { name = "ZSS mobile 1" location = 15222 division_template = "TFRKC v5 ZSS mobile" start_manpower_factor = 0.7 start_equipment_factor = 0.75 start_experience_factor = 0.4 }
+}

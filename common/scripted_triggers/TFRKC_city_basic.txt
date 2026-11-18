@@ -1,0 +1,18 @@
+# Retired v4 API: no old tags or map allocation can be reactivated.
+TFRKC_city_no_land_rivals_trigger = { always = no }
+TFRKC_city_GWANGJU_can_release_trigger = { always = no }
+TFRKC_city_JEONJU_can_release_trigger = { always = no }
+TFRKC_city_CORPORATE_can_release_trigger = { always = no }
+TFRKC_city_CONTINUITY_can_release_trigger = { always = no }
+TFRKC_city_TAEBAEK_can_release_trigger = { always = no }
+TFRKC_city_FARMERS_can_release_trigger = { always = no }
+TFRKC_city_COVENANT_can_release_trigger = { always = no }
+TFRKC_city_TAIWAN_can_release_trigger = { always = no }
+TFRKC_city_DAEDEOK_can_release_trigger = { always = no }
+TFRKC_city_RAIL_can_release_trigger = { always = no }
+TFRKC_city_WHITE_NIGHT_can_release_trigger = { always = no }
+TFRKC_city_CHEONGSONG_can_release_trigger = { always = no }
+TFRKC_city_IMPERIAL_can_release_trigger = { always = no }
+TFRKC_city_HOMECOMING_can_release_trigger = { always = no }
+TFRKC_city_CREDIT_can_release_trigger = { always = no }
+TFRKC_city_no_other_land_country_trigger = { always = no }

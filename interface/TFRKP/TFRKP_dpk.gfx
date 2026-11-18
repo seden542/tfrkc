@@ -1,0 +1,141 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_bb_score_counter"
+	#	texturefile = "gfx/interface/GUI/baseball/score_counter_players.png"
+	#}
+	spriteType = { #
+		name = "GFX_KOR_dpk_progressbar_frame"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/bar_frame.png"
+	}
+	spriteType = { #
+		name = "GFX_KOR_dpk_progressbar_ruling_circle"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/bar_ruling_circle.png"
+	}
+	progressbartype = {
+		name = "GFX_KOR_dpk_progressbar"
+		textureFile1 = "gfx/interface/GUI/DPK_dynasty/bar_no.png"
+		textureFile2 = "gfx//interface/tiles//tiled_window_transparent.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 195 y = 26 } 
+		effectFile = "gfx/FX/progress.shader"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_KOR_dpk_progressbar_green"
+		textureFile1 = "gfx/interface/GUI/DPK_dynasty/bar_government.png"
+		textureFile2 = "gfx//interface/tiles//tiled_window_transparent.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 195 y = 26 } 
+		effectFile = "gfx/FX/progress.shader"
+		horizontal = yes
+	}
+	spriteType = { #
+		name = "GFX_KOR_gauge_lock"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/gauge_lock.png"
+	}
+	spriteType = { #
+		name = "GFX_KOR_gauge_bar_lock"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/bar_is_not.png"
+	}
+	spriteType = { #
+		name = "GFX_KOR_circle_pre_lee"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_pre_lee.png"
+	}
+	spriteType = { #
+		name = "GFX_KOR_circle_anti_lee"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_anti_lee.png"
+	}
+	spriteType = { #
+		name = "GFX_KOR_circle_anxious"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_anxious.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_circle_pre_lee_bottom_left"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_pre_lee_bottom_left.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_circle_pre_lee_bottom_right"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_pre_lee_bottom_right.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_circle_anti_lee_bottom_left"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_anti_lee_bottom_left.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_circle_anti_lee_bottom_right"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_anti_lee_bottom_right.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_circle_anxious_bottom_left"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_anxious_bottom_left.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_circle_anxious_bottom_right"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_circle_anxious_bottom_right.png"
+		transparencecheck = yes
+	}
+	spriteType = { #
+		name = "GFX_KOR_dpk_just_frame"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/just_frame.png"
+	}
+	spriteType = { #
+		name = "GFX_KOR_dpk_leader_frame"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/dpk_leader_frame.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_social_liberal_president_portrait_01"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_social_liberal_president_portrait_01.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_social_liberal_president_portrait_02"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_social_liberal_president_portrait_02.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_social_liberal_president_portrait_03"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_social_liberal_president_portrait_03.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_social_liberal_president_portrait_04"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_social_liberal_president_portrait_04.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_social_liberal_president_portrait_04_none"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_social_liberal_president_portrait_04_none.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_social_liberal_president_portrait_04_choguk"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_social_liberal_president_portrait_04_choguk.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_kim_dae_jung"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_kim_dae_jung.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_roh_moo_hyun"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_roh_moo_hyun.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_moon_jae_in"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_moon_jae_in.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_lee_jae_myung"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_lee_jae_myung.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_DPK_cho_guk"
+		texturefile = "gfx/interface/GUI/DPK_dynasty/KOR_DPK_cho_guk.png"
+		legacy_lazy_load = no
+	}
+}

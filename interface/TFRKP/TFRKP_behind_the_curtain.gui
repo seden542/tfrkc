@@ -1,0 +1,89 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_behind_the_curtain_container"
+		clipping = no
+		size = { width = 0 height = 345 }
+
+		containerWindowType = {
+			name = "KOR_BtC_triangle"
+			position = { x = 94 y = 20 }
+
+			iconType = {
+				name = "overlay"
+				quadTextureSprite = "GFX_KOR_behind_the_curtain_overlay"
+				position = { x = -83 y = -35 }
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "triangle"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_triangle_background"
+				#alwaystransparent = yes
+			}
+			iconType = {
+				name = "triangle_g"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_triangle_g"
+				# alwaystransparent = yes
+				pdx_tooltip = KOR_BtC_yushin_faction_desc
+			}
+			iconType = {
+				name = "triangle_r"
+				position = { x = 0 y = 2 }
+				spriteType = "GFX_triangle_r"
+				# alwaystransparent = yes
+				pdx_tooltip = KOR_BtC_nonmainstream_faction_desc
+			}
+			iconType = {
+				name = "triangle_b"
+				position = { x = 0 y = 2 }
+				spriteType = "GFX_triangle_b"
+				# alwaystransparent = yes
+				pdx_tooltip = KOR_BtC_mainstream_faction_desc
+			}
+
+			iconType = {
+				name = "curtain_warning_zone"
+				position = { x = 122 y = 150 }
+				spriteType = "GFX_KOR_behind_the_curtain_warning_zone"
+				pdx_tooltip = KOR_BtC_warning_zone_tt
+				pdx_tooltip_delayed = KOR_BtC_warning_zone_tt_delayed
+			}
+
+			iconType = {
+				name = "tendency_icon"
+				position = { x = 150 y = 178 }
+				spriteType = "GFX_KOR_behind_the_curtain_tendency_icon"
+				pdx_tooltip = KOR_BtC_tendency_icon_tt
+				pdx_tooltip_delayed = KOR_BtC_tendency_icon_tt_delayed
+			}
+
+			instantTextboxType = {
+				name = "yushin_text"
+				position = { x = 77 y = -20 }
+				maxWidth = 165
+				maxheight = 40
+				format = center
+				font = "VCR02_12"
+				text = "KOR_BtC_yushin_faction"
+			}
+			instantTextboxType = {
+				name = "nonmainstream_text"
+				position = { x = -75 y = 280 }
+				maxWidth = 120
+				format = center
+				font = "VCR02_12"
+				text = "KOR_BtC_nonmainstream_faction"
+			}
+			instantTextboxType = {
+				name = "mainstream_text"
+				position = { x = 275 y = 280 }
+				maxWidth = 120
+				format = center
+				font = "VCR02_12"
+				text = "KOR_BtC_mainstream_faction"
+			}
+		}
+	}
+}

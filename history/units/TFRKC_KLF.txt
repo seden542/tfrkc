@@ -1,0 +1,30 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KLF 3" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC KLF infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KLF armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "제32사단 이탈 제1전투단" location = 11977 division_template = "TFRKC KLF 3" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "제32사단 이탈 제2전투단" location = 15141 division_template = "TFRKC KLF 3" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "성인 귀환장병 의용여단" location = 15193 division_template = "TFRKC KLF 3" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "성인 청년의용 제1여단" location = 15194 division_template = "TFRKC KLF 3" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "성인 청년의용 제2여단" location = 7204 division_template = "TFRKC KLF 3" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "성인 청년의용 제3여단" location = 11992 division_template = "TFRKC KLF 3" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제1보병사단" location = 15116 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제2보병사단" location = 7175 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제3보병사단" location = 14238 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제4보병사단" location = 15183 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제5보병사단" location = 15117 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제6보병사단" location = 14239 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제7보병사단" location = 15184 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제8보병사단" location = 15142 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제9보병사단" location = 15181 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제10보병사단" location = 15177 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제11보병사단" location = 14228 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제12보병사단" location = 15173 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제13보병사단" location = 14226 division_template = "TFRKC KLF infantry_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제1기갑사단" location = 14232 division_template = "TFRKC KLF armored_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제2기갑사단" location = 14230 division_template = "TFRKC KLF armored_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제3기갑사단" location = 15175 division_template = "TFRKC KLF armored_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제4기갑사단" location = 15146 division_template = "TFRKC KLF armored_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+division = { name = "KLF 증편 제5기갑사단" location = 12085 division_template = "TFRKC KLF armored_division" start_experience_factor = 0.35 start_equipment_factor = 0.68 start_manpower_factor = 0.75 }
+}

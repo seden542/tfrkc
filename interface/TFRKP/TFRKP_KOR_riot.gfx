@@ -1,0 +1,182 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_riot_army"
+		texturefile = "gfx/interface/GUI/KOR_riot/army.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_busan"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_busan.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_chungbuk"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_chungbuk.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_chungnam"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_chungnam.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_daegu"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_daegu.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_daejeon"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_daejeon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_gangwon"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_gangwon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_gwangju"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_gwangju.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_gyeongbuk"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_gyeongbuk.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_gyeonggi"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_gyeonggi.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_gyeongnam"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_gyeongnam.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_incheon"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_incheon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_jeju"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_jeju.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_jeonbuk"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_jeonbuk.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_jeonnam"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_jeonnam.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_sejong"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_sejong.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_seoul"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_seoul.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_army_ulsan"
+		texturefile = "gfx/interface/GUI/KOR_riot/army_ulsan.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_busan"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_busan.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_chungbuk"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_chungbuk.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_chungnam"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_chungnam.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_daegu"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_daegu.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_daejeon"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_daejeon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_gangwon"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_gangwon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_gwangju"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_gwangju.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_gyeongbuk"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_gyeongbuk.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_gyeonggi"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_gyeonggi.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_gyeongnam"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_gyeongnam.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_incheon"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_incheon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_jeju"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_jeju.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_jeonbuk"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_jeonbuk.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_jeonnam"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_jeonnam.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_sejong"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_sejong.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_seoul"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_seoul.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_reds_ulsan"
+		texturefile = "gfx/interface/GUI/KOR_riot/reds_ulsan.png"
+		transparencecheck = yes
+	}
+}

@@ -1,0 +1,12 @@
+division_template = { name = "TFRKC city KCG 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC city KCG 1" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } }  }
+units = {
+division = { name = "광주시민방위정부 제1전투단" location = 14228 division_template = "TFRKC city KCG 0" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제2전투단" location = 15173 division_template = "TFRKC city KCG 0" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제3전투단" location = 14228 division_template = "TFRKC city KCG 0" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제4전투단" location = 15173 division_template = "TFRKC city KCG 0" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제5전투단" location = 14228 division_template = "TFRKC city KCG 0" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제6전투단" location = 15173 division_template = "TFRKC city KCG 0" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제7전투단" location = 14228 division_template = "TFRKC city KCG 1" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+division = { name = "광주시민방위정부 제8전투단" location = 15173 division_template = "TFRKC city KCG 1" start_manpower_factor = 0.8 start_equipment_factor = 0.65 start_experience_factor = 0.3 }
+}

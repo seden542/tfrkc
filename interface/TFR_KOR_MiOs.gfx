@@ -1,0 +1,67 @@
+spriteTypes = {
+	# MIOs
+	spriteType = { 
+		name = "GFX_idea_KOR_dasan"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_dasan.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_hanhwa"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_hanhwa.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_hdhyundai"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_hdhyundai.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_hj"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_hj.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_kai"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_kai.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_kia"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_kia.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_korean_air"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_korean_air.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_ls"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_ls.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_rotem"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_rotem.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_snt"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_snt.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_snt_dynamics"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_snt_dynamics.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_lig"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_lig.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_snt_motiv"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_snt_motiv.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_wia"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_wia.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_sk"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_sk.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_samyang_chemical"
+		texturefile = "gfx/interface/ideas/KOR/MIOs/KOR_samyang_chemical.png"
+	}
+}	

@@ -1,0 +1,7 @@
+division_template = { name = "TFRKC city KBN 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC city KBN 1" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } }  }
+units = {
+division = { name = "백야국가보안국 제1전투단" location = 15113 division_template = "TFRKC city KBN 0" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.8 }
+division = { name = "백야국가보안국 제2전투단" location = 15113 division_template = "TFRKC city KBN 0" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.8 }
+division = { name = "백야국가보안국 제3전투단" location = 15113 division_template = "TFRKC city KBN 1" start_manpower_factor = 0.7 start_equipment_factor = 0.9 start_experience_factor = 0.8 }
+}

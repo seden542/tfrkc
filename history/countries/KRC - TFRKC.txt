@@ -1,0 +1,6 @@
+capital = 1561
+set_politics = { ruling_party = nationalist elections_allowed = no }
+set_popularities = { nationalist = 100 }
+set_stability = 0.4
+set_war_support = 0.6
+create_country_leader = { name = KOR_nam_young_sin_char picture = "gfx/leaders/KOR/KOR_nam_young_sin_civilian.png" desc = KOR_nam_young_sin_char_desc traits = { kor_nam_yeong_shin_traits } ideology = military_junta expire = "2050.1.1" }

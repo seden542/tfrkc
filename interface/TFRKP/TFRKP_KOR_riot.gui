@@ -1,0 +1,354 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_riot_suppression_container"
+		clipping = no
+		size = { width = 500 height = 440 }
+
+		buttonType = {
+			name = "KOR_riot_busan_button_reds"
+			position = { x = 311 y = 237 }
+			spriteType = "GFX_KOR_riot_reds_busan"
+			pdx_tooltip = KOR_riot_busan_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_busan_button_army"
+			position = { x = 311 y = 237 }
+			spriteType = "GFX_KOR_riot_army_busan"
+			pdx_tooltip = KOR_riot_busan_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_chungbuk_button_reds"
+			position = { x = 222 y = 106 }
+			spriteType = "GFX_KOR_riot_reds_chungbuk"
+			pdx_tooltip = KOR_riot_chungbuk_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_chungbuk_button_army"
+			position = { x = 222 y = 106 }
+			spriteType = "GFX_KOR_riot_army_chungbuk"
+			pdx_tooltip = KOR_riot_chungbuk_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_chungnam_button_reds"
+			position = { x = 157 y = 120 }
+			spriteType = "GFX_KOR_riot_reds_chungnam"
+			pdx_tooltip = KOR_riot_chungnam_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_chungnam_button_army"
+			position = { x = 157 y = 120 }
+			spriteType = "GFX_KOR_riot_army_chungnam"
+			pdx_tooltip = KOR_riot_chungnam_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_daegu_button_reds"
+			position = { x = 285 y = 195 }
+			spriteType = "GFX_KOR_riot_reds_daegu"
+			pdx_tooltip = KOR_riot_daegu_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_daegu_button_army"
+			position = { x = 285 y = 195 }
+			spriteType = "GFX_KOR_riot_army_daegu"
+			pdx_tooltip = KOR_riot_daegu_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_daejeon_button_reds"
+			position = { x = 223 y = 162 }
+			spriteType = "GFX_KOR_riot_reds_daejeon"
+			pdx_tooltip = KOR_riot_daejeon_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_daejeon_button_army"
+			position = { x = 223 y = 162 }
+			spriteType = "GFX_KOR_riot_army_daejeon"
+			pdx_tooltip = KOR_riot_daejeon_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_gangwon_button_reds"
+			position = { x = 215 y = 10 }
+			spriteType = "GFX_KOR_riot_reds_gangwon"
+			pdx_tooltip = KOR_riot_gangwon_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_gangwon_button_army"
+			position = { x = 215 y = 10 }
+			spriteType = "GFX_KOR_riot_army_gangwon"
+			pdx_tooltip = KOR_riot_gangwon_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_gyeongbuk_button_reds"
+			position = { x = 252 y = 113 }
+			spriteType = "GFX_KOR_riot_reds_gyeongbuk"
+			pdx_tooltip = KOR_riot_gyeongbuk_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_gyeongbuk_button_army"
+			position = { x = 252 y = 113 }
+			spriteType = "GFX_KOR_riot_army_gyeongbuk"
+			pdx_tooltip = KOR_riot_gyeongbuk_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_gyeonggi_button_reds"
+			position = { x = 179 y = 33 }
+			spriteType = "GFX_KOR_riot_reds_gyeonggi"
+			pdx_tooltip = KOR_riot_gyeonggi_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_gyeonggi_button_army"
+			position = { x = 179 y = 33 }
+			spriteType = "GFX_KOR_riot_army_gyeonggi"
+			pdx_tooltip = KOR_riot_gyeonggi_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_gyeongnam_button_reds"
+			position = { x = 240 y = 203 }
+			spriteType = "GFX_KOR_riot_reds_gyeongnam"
+			pdx_tooltip = KOR_riot_gyeongnam_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_gyeongnam_button_army"
+			position = { x = 240 y = 203 }
+			spriteType = "GFX_KOR_riot_army_gyeongnam"
+			pdx_tooltip = KOR_riot_gyeongnam_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_incheon_button_reds"
+			position = { x = 159 y = 66 }
+			spriteType = "GFX_KOR_riot_reds_incheon"
+			pdx_tooltip = KOR_riot_incheon_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_incheon_button_army"
+			position = { x = 159 y = 66 }
+			spriteType = "GFX_KOR_riot_army_incheon"
+			pdx_tooltip = KOR_riot_incheon_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_jeju_button_reds"
+			position = { x = 159 y = 368 }
+			spriteType = "GFX_KOR_riot_reds_jeju"
+			pdx_tooltip = KOR_riot_jeju_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_jeju_button_army"
+			position = { x = 159 y = 368 }
+			spriteType = "GFX_KOR_riot_army_jeju"
+			pdx_tooltip = KOR_riot_jeju_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_jeonbuk_button_reds"
+			position = { x = 175 y = 183 }
+			spriteType = "GFX_KOR_riot_reds_jeonbuk"
+			pdx_tooltip = KOR_riot_jeonbuk_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_jeonbuk_button_army"
+			position = { x = 175 y = 183 }
+			spriteType = "GFX_KOR_riot_army_jeonbuk"
+			pdx_tooltip = KOR_riot_jeonbuk_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_jeonnam_button_reds"
+			position = { x = 144 y = 232 }
+			spriteType = "GFX_KOR_riot_reds_jeonnam"
+			pdx_tooltip = KOR_riot_jeonnam_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_jeonnam_button_army"
+			position = { x = 144 y = 232 }
+			spriteType = "GFX_KOR_riot_army_jeonnam"
+			pdx_tooltip = KOR_riot_jeonnam_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_gwangju_button_reds"
+			position = { x = 187 y = 248 }
+			spriteType = "GFX_KOR_riot_reds_gwangju"
+			pdx_tooltip = KOR_riot_gwangju_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_gwangju_button_army"
+			position = { x = 187 y = 248 }
+			spriteType = "GFX_KOR_riot_army_gwangju"
+			pdx_tooltip = KOR_riot_gwangju_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_sejong_button_reds"
+			position = { x = 215 y = 144 }
+			spriteType = "GFX_KOR_riot_reds_sejong"
+			pdx_tooltip = KOR_riot_sejong_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_sejong_button_army"
+			position = { x = 215 y = 144 }
+			spriteType = "GFX_KOR_riot_army_sejong"
+			pdx_tooltip = KOR_riot_sejong_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_seoul_button_reds"
+			position = { x = 194 y = 76 }
+			spriteType = "GFX_KOR_riot_reds_seoul"
+			pdx_tooltip = KOR_riot_seoul_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_seoul_button_army"
+			position = { x = 194 y = 76 }
+			spriteType = "GFX_KOR_riot_army_seoul"
+			pdx_tooltip = KOR_riot_seoul_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_riot_ulsan_button_reds"
+			position = { x = 321 y = 214 }
+			spriteType = "GFX_KOR_riot_reds_ulsan"
+			pdx_tooltip = KOR_riot_ulsan_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_ulsan_button_army"
+			position = { x = 321 y = 214 }
+			spriteType = "GFX_KOR_riot_army_ulsan"
+			pdx_tooltip = KOR_riot_ulsan_tt
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "KOR_riot_major_city_selector_title"
+			position = { x = 386 y = 12 }
+			maxWidth = 95
+			font = "VCR02_14"
+			text = "KOR_riot_major_city_selector_title"
+			format = center
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_riot_major_city_seoul_button"
+			position = { x = 388 y = 34 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_seoul_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_seoul_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_incheon_button"
+			position = { x = 388 y = 60 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_incheon_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_incheon_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_busan_button"
+			position = { x = 388 y = 86 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_busan_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_busan_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_daegu_button"
+			position = { x = 388 y = 112 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_daegu_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_daegu_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_ulsan_button"
+			position = { x = 388 y = 138 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_ulsan_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_ulsan_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_gwangju_button"
+			position = { x = 388 y = 164 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_gwangju_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_gwangju_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_daejeon_button"
+			position = { x = 388 y = 190 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_daejeon_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_daejeon_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_riot_major_city_sejong_button"
+			position = { x = 388 y = 216 }
+			quadTextureSprite = "GFX_standard_button_88"
+			buttonText = "KOR_riot_major_city_sejong_button"
+			buttonFont = "VCR02_14"
+			pdx_tooltip = KOR_riot_sejong_tt
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "KOR_riot_suppression_selected_text"
+			position = { x = 10 y = 378 }
+			maxWidth = 480
+			font = "VCR02_16"
+			text = "KOR_riot_suppression_selected_text"
+			alwaystransparent = yes
+		}
+	}
+}

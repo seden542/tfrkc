@@ -1,0 +1,51 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_kor"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_kor.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_kor_fid"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_kor_fid.png"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_lee_intro"
+		textureFile = "gfx/interface/lee_intro.png"
+	}
+	spriteType = {
+		name = "GFX_yoon_intro"
+		textureFile = "gfx/interface/yoon_intro.png"
+	}
+	spriteType = {
+		name = "GFX_frontend_update_image_next"
+		textureFile = "gfx/interface/TFR_Next_Update_Image.png"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Anarchy_ASIA_ZZZ"
+		textureFile = "gfx/interface/anarchy/Anarchy_ASIA_ZZZ.dds"
+		noOfFrames = 16
+		animation_rate_fps = 8
+		looping = yes
+		play_on_show = yes
+	}
+	spriteType = {
+		name = "GFX_Anarchy_diplo_animation_ASIA"
+		textureFile = "gfx/interface/anarchy/Anarchy_diplo_animation_ASIA.dds"
+	}
+	SpriteType = {
+		name = "GFX_Korea_BG"
+		texturefile = "gfx/interface/korea_bg.png"
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_gui_alert"
+		texturefile = "gfx/interface/gui_alert.dds"
+		noOfFrames = 10
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+}

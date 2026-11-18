@@ -1,0 +1,336 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_baseball_game_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 500 }
+
+		iconType = {
+			name = "KOR_baseball_concept_help"
+			spriteType = "GFX_help_button"
+			position = { x = 470 y = -30 }
+			pdx_tooltip = "KOR_baseball_concept_help_tooltip"
+		}
+
+		containerWindowType = {
+			name = "KOR_baseball_score_box"
+			position = { x = 2 y = 0 }
+			size = { width = 250 height = 280 }
+		
+			iconType = {
+				name = "baseball_score_counter"
+				spriteType = "GFX_bb_score_counter"
+				position = { x = 0 y = 0 }
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_total"
+				position = { x = 440 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_total_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_total"
+				position = { x = 440 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_total_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_1"
+				position = { x = 90 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_1_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_1"
+				position = { x = 90 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_1_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_2"
+				position = { x = 128 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_2_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_2"
+				position = { x = 128 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_2_text"
+			}
+			
+			
+			instantTextboxType = {
+				name = "KOR_up_score_3"
+				position = { x = 166 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_3_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_3"
+				position = { x = 166 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_3_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_4"
+				position = { x = 203 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_4_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_4"
+				position = { x = 203 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_4_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_5"
+				position = { x = 240 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_5_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_5"
+				position = { x = 240 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_5_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_6"
+				position = { x = 277 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_6_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_6"
+				position = { x = 277 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_6_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_7"
+				position = { x = 314 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_7_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_7"
+				position = { x = 314 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_7_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_8"
+				position = { x = 350 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_8_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_8"
+				position = { x = 350 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_8_text"
+			}
+			
+			instantTextboxType = {
+				name = "KOR_up_score_9"
+				position = { x = 388 y = 40 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_up_score_9_text"
+			}
+			instantTextboxType = {
+				name = "KOR_down_score_9"
+				position = { x = 388 y = 90 }
+				font = "VCR02_36"
+				maxWidth = 70
+				maxHeight = 16
+				format = center
+				text = "KOR_down_score_9_text"
+			}
+		}			
+		containerWindowType = {
+			name = "KOR_baseball_inning_box"
+			position = { x = 2 y = 150 }
+			iconType = {
+				name = "baseball_inning"
+				spriteType = "GFX_bb_inning"
+			}
+			instantTextboxType = {
+				name = "KOR_inning_title"
+				position = { x = 0 y = 10 }
+				font = "VCR02_16"
+				maxWidth = 165
+				maxHeight = 16
+				format = center
+				text = "KOR_baseball_state_title"
+			}
+			instantTextboxType = {
+				name = "KOR_inning_now_text"
+				position = { x = 0 y = 30 }
+				font = "VCR01_72_WT_glow"
+				maxWidth = 165
+				maxHeight = 16
+				format = center
+				text = "KOR_baseball_inning_text"
+			}
+			instantTextboxType = {
+				name = "KOR_inning_result_text"
+				position = { x = 0 y = 70 }
+				font = "VCR02_24"
+				maxWidth = 165
+				maxHeight = 16
+				format = center
+				text = "KOR_bb_now_game_count"
+			}
+			iconType = {
+				name = "baseball_inning_state"
+				position = { x = 60 y = 155 }
+				spriteType = "GFX_bb_inning_state"
+			}
+		}		
+		containerWindowType = {
+			name = "KOR_baseball_ingame_round_box"
+			position = { x = 170 y = 150 }
+			iconType = {
+				name = "baseball_background"
+				spriteType = "GFX_bb_base_background"
+				position = { x = 0 y = 0 }
+			}
+			buttonType = {
+				name = "KOR_ingame_home"
+				position = { x = 105 y = 185 }
+				spriteType = "GFX_bb_base_home"
+				#buttonFont = ""
+				#buttontext = ""
+				pdx_tooltip = "KOR_baseball_base_home"
+				#pdx_tooltip_delayed = ""
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "KOR_ingame_base_1"
+				position = { x = 185 y = 100 }
+				spriteType = "GFX_bb_base_normal"
+				#buttonFont = ""
+				#buttontext = ""
+				pdx_tooltip = "KOR_baseball_base_1"
+				pdx_tooltip_delayed = "KOR_baseball_base_1_tt"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "KOR_ingame_base_2"
+				position = { x = 105 y = 20 }
+				spriteType = "GFX_bb_base_normal"
+				#buttonFont = ""
+				#buttontext = ""
+				pdx_tooltip = "KOR_baseball_base_2"
+				pdx_tooltip_delayed = "KOR_baseball_base_2_tt"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "KOR_ingame_base_3"
+				position = { x = 25 y = 100 }
+				spriteType = "GFX_bb_base_normal"
+				#buttonFont = ""
+				#buttontext = ""
+				pdx_tooltip = "KOR_baseball_base_3"
+				pdx_tooltip_delayed = "KOR_baseball_base_3_tt"
+				#pdx_disabled_tooltip = ""
+			}
+		}		
+		containerWindowType = {
+			name = "KOR_baseball_out_count_box"
+			position = { x = 0 y = 0 }
+			iconType = {
+				name = "baseball_out_counter"
+				spriteType = "GFX_bb_out_counter"
+				position = { x = 415 y = 150 }
+			}
+			iconType = {
+				name = "baseball_out_count_1"
+				spriteType = "GFX_bb_out"
+				position = { x = 435 y = 200 }
+			}
+			iconType = {
+				name = "baseball_out_count_2"
+				spriteType = "GFX_bb_out"
+				position = { x = 435 y = 250 }
+			}
+			iconType = {
+				name = "baseball_out_count_3"
+				spriteType = "GFX_bb_out"
+				position = { x = 435 y = 300 }
+			}
+		}		
+		iconType = {
+			name = "baseball_banner_set"
+			spriteType = "GFX_bb_baseball_banner"
+			position = { x = 2 y = 380 }
+		}
+
+	}
+}

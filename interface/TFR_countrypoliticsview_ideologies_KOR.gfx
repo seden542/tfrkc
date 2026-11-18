@@ -1,0 +1,138 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_gwanghwamun_democracy"
+		texturefile = "gfx/interface/ideologies/gwanghwamun_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_judicial_conservatism"
+		texturefile = "gfx/interface/ideologies/judicial_conservatism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_judicial_authoritarianism"
+		texturefile = "gfx/interface/ideologies/judicial_authoritarianism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_KOR_military_junta"
+		texturefile = "gfx/interface/ideologies/KOR_military_junta.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_facade_democracy"
+		texturefile = "gfx/interface/ideologies/facade_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_facade_democracy_authoritarioan"
+		texturefile = "gfx/interface/ideologies/facade_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_facade_democracy_liberal"
+		texturefile = "gfx/interface/ideologies/facade_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_facade_democracy_conservative"
+		texturefile = "gfx/interface/ideologies/facade_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_yoonism"
+		texturefile = "gfx/interface/ideologies/yoonism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_yongsan_liberal_democracy"
+		texturefile = "gfx/interface/ideologies/yongsan_liberal_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_interim_democracy"
+		texturefile = "gfx/interface/ideologies/interim_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_interim_democracy_authoritarioan"
+		texturefile = "gfx/interface/ideologies/interim_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_leeism"
+		texturefile = "gfx/interface/ideologies/leeism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_neo_parkism"
+		texturefile = "gfx/interface/ideologies/neo_parkism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_legislative_pragmatism"
+		texturefile = "gfx/interface/ideologies/legislative_pragmatism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_sextonism"
+		texturefile = "gfx/interface/ideologies/sextonism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_sextonism_liberal"
+		texturefile = "gfx/interface/ideologies/sextonism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_reformical_democracy"
+		texturefile = "gfx/interface/ideologies/reformical_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_chogukism"
+		texturefile = "gfx/interface/ideologies/chogukism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_cooperative_democracy"
+		texturefile = "gfx/interface/ideologies/cooperative_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_cooperative_democracy_liberal"
+		texturefile = "gfx/interface/ideologies/cooperative_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_cooperative_democracy_market"
+		texturefile = "gfx/interface/ideologies/cooperative_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_progressive_democracy"
+		texturefile = "gfx/interface/ideologies/progressive_democracy.png" 
+	}
+	spriteType = {
+		name = "GFX_ideology_revolutionary_socialism"
+		texturefile = "gfx/interface/ideologies/revolutionary_socialism.png" 
+	}
+	spriteType = {
+		name = "GFX_ideology_dreaming_realism"
+		texturefile = "gfx/interface/ideologies/dreaming_realism.png" 
+	}
+	spriteType = {
+		name = "GFX_ideology_independent_democracy"
+		texturefile = "gfx/interface/ideologies/independent_democracy.png" #임시
+	}
+	spriteType = {
+		name = "GFX_ideology_independent_democracy_social_democrat"
+		texturefile = "gfx/interface/ideologies/independent_democracy.png" #임시
+	}
+	spriteType = {
+		name = "GFX_ideology_independent_democracy_communist"
+		texturefile = "gfx/interface/ideologies/independent_democracy.png" #임시
+	}
+	spriteType = {
+		name = "GFX_ideology_independent_democracy_totalitarian_socialist"
+		texturefile = "gfx/interface/ideologies/independent_democracy.png" #임시
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_conservatism"
+		texturefile = "gfx/interface/ideologies/korean_conservatism.png" 
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_social_liberal"
+		texturefile = "gfx/interface/ideologies/korean_social_liberal.png" 
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_social_democracy"
+		texturefile = "gfx/interface/ideologies/korean_social_democracy.png" 
+	}
+	spriteType = {
+		name = "GFX_ideology_KOR_national_spartanism"
+		texturefile = "gfx/interface/ideologies/KOR_national_spartanism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_KPA_jucheism"
+		texturefile = "gfx/interface/ideologies/KPA_jucheism.png" #임시
+	}
+}

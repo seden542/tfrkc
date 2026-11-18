@@ -1,0 +1,32 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 KCH mountain" regiments = { mountaineers = { x = 0 y = 0 } mountaineers = { x = 0 y = 1 } mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } artillery_brigade = { x = 1 y = 2 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 KCH armor" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+division_template = { name = "TFRKC v5 KCH mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "KCH mountain 1" location = 15140 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 2" location = 11958 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 3" location = 15205 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 4" location = 15223 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 5" location = 15090 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 6" location = 15228 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 7" location = 15098 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 8" location = 15206 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 9" location = 15202 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 10" location = 15204 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 11" location = 15192 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 12" location = 14248 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 13" location = 15241 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 14" location = 15200 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 15" location = 4004 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 16" location = 15157 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 17" location = 15214 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 18" location = 15229 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 19" location = 15201 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mountain 20" location = 15203 division_template = "TFRKC v5 KCH mountain" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH armor 1" location = 15208 division_template = "TFRKC v5 KCH armor" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH armor 2" location = 15140 division_template = "TFRKC v5 KCH armor" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH armor 3" location = 11958 division_template = "TFRKC v5 KCH armor" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mobile 1" location = 15205 division_template = "TFRKC v5 KCH mobile" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mobile 2" location = 15223 division_template = "TFRKC v5 KCH mobile" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+ division = { name = "KCH mobile 3" location = 15090 division_template = "TFRKC v5 KCH mobile" start_manpower_factor = 0.8 start_equipment_factor = 0.72 start_experience_factor = 0.6 }
+}

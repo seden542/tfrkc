@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-16",
+  "level": "STATIC_ONLY",
+  "checks": [
+    {
+      "name": "All dedicated Clausewitz files parse and installed/staged copies match",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing installed files preserved byte-for-byte",
+      "status": "PASS",
+      "detail": {
+        "preservedFiles": 364
+      }
+    },
+    {
+      "name": "Effective tree, focus, idea, scripted-trigger and scripted-effect IDs have no authored collisions",
+      "status": "PASS"
+    },
+    {
+      "name": "Preconditions exist within their assigned tree and contain no cycles",
+      "status": "PASS"
+    },
+    {
+      "name": "Both mutually exclusive routes reach their capstone; independent optional paths remain reachable",
+      "status": "PASS"
+    },
+    {
+      "name": "Layouts have no overlapping focus centers or prerequisite edges through another focus icon",
+      "status": "PASS"
+    },
+    {
+      "name": "Wartime availability and completion guards cover capitulation, loss of all owned territory and war ending",
+      "status": "PASS"
+    },
+    {
+      "name": "No unguarded state rewards, war declarations, annexations, faction entry, timers or intervention spawns in authored trees",
+      "status": "PASS"
+    },
+    {
+      "name": "All reward effects, custom triggers, idea modifiers and referenced ideas resolve against installed documentation/definitions",
+      "status": "PASS"
+    },
+    {
+      "name": "Every used icon/idea picture resolves in the effective load order to original TFR/TFRKP artwork",
+      "status": "PASS",
+      "detail": {
+        "uniqueSprites": 12
+      }
+    },
+    {
+      "name": "Korean localisation has BOM, unique effective keys, all descriptions/tooltips, valid quoting and balanced colour codes",
+      "status": "PASS",
+      "detail": {
+        "keys": 306
+      }
+    },
+    {
+      "name": "Per-tag trees outrank original KOR and legacy trees only after the existing partition; runtime is idempotent",
+      "status": "PASS",
+      "detail": {
+        "maxTransitionDelay": "next daily tick",
+        "originalBeforePartition": true
+      }
+    },
+    {
+      "name": "Original weak-start ideas are replaced conditionally and cleaned with all authored wartime modifiers after unification",
+      "status": "PASS"
+    },
+    {
+      "name": "AI prioritises a valid short opening focus and no dependent focus is incorrectly free-completed",
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "trees": 10,
+    "focuses": 112,
+    "ideas": 30
+  },
+  "inheritedParserLimitations": [
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/national_focus/TSR_lingguang_incident_joint_branch.txt",
+      "error": "Unexpected }"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/ideas/persia.txt",
+      "error": "Unclosed block"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/ideas/SOV.txt",
+      "error": "Unclosed block"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/ideas/switzerland.txt",
+      "error": "Unclosed block"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3350890356/common/ideas/TFR_ideas_GER.txt",
+      "error": "Unexpected }"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3350890356/common/ideas/TFR_ideas_SIG.txt",
+      "error": "Unexpected }"
+    }
+  ],
+  "unverified": [
+    "HOI4 startup and error.log after load",
+    "In-game tree screen and actual icon contrast",
+    "Daily on_action transition and cancellation in engine",
+    "Save/load and annexation during focus completion",
+    "AI choices, civil-war duration, inherited TFRKP bonuses and government survival in live play"
+  ]
+}

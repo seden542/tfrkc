@@ -1,0 +1,1050 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_special_strategic_materials_program_container"
+		size = { width = 500 height = 290 }
+		clipping = no
+
+		iconType = {
+			name = "KOR_special_strategic_materials_background"
+			position = { x = 15 y = -10 }
+			spriteType = "GFX_KOR_special_strategic_materials_background"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_current_route_text"
+			position = { x = 35 y = 13 }
+			font = "VCR02_18"
+			text = "KOR_special_strategic_materials_current_route_gui"
+			format = left
+			maxWidth = 460
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_stage_text"
+			position = { x = 35 y = 53 }
+			font = "VCR02_16"
+			text = "KOR_special_strategic_materials_stage_gui"
+			format = left
+			maxWidth = 460
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_special_strategic_materials_progressbar"
+			position = { x = 35 y = 81 }
+			spriteType = "GFX_KOR_dpk_progressbar_green"
+			pdx_tooltip = KOR_special_strategic_materials_progress_tt
+		}
+
+		iconType = {
+			name = "KOR_special_strategic_materials_progressbar_frame"
+			position = { x = 35 y = 81 }
+			spriteType = "GFX_KOR_dpk_progressbar_frame"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_progress_text"
+			position = { x = 235 y = 85 }
+			font = "VCR02_16"
+			text = "KOR_special_strategic_materials_progress_gui"
+			format = left
+			maxWidth = 100
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_expected_days_text"
+			position = { x = 35 y = 121 }
+			font = "VCR02_16"
+			text = "KOR_special_strategic_materials_expected_days_gui"
+			format = left
+			maxWidth = 300
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_factories_text"
+			position = { x = 35 y = 147 }
+			font = "VCR02_16"
+			text = "KOR_special_strategic_materials_factories_gui"
+			format = left
+			maxWidth = 300
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_biochemical_button"
+			position = { x = 18 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_biochemical_button
+			pdx_tooltip = KOR_special_strategic_materials_biochemical_button_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_corona_variant_button"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			pdx_tooltip = KOR_special_strategic_materials_corona_variant_button_tt
+			clicksound = click_default
+		}
+
+		# pdx_disabled_tooltip은 scripted localisation을 재평가하지 않으므로,
+		# 비활성 사유별 정적 툴팁 버튼을 원본 버튼 위에 겹쳐 표시한다.
+		buttonType = {
+			name = "KOR_ssm_bio_factory_block"
+			position = { x = 18 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_biochemical_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_insufficient_factories_tt
+		}
+
+		buttonType = {
+			name = "KOR_ssm_bio_route_block"
+			position = { x = 18 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_biochemical_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_route_locked_tt
+		}
+
+		buttonType = {
+			name = "KOR_ssm_corona_sign_block"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_signature_required_tt
+		}
+
+		buttonType = {
+			name = "KOR_ssm_corona_signing_block"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_signature_in_progress_tt
+		}
+
+		buttonType = {
+			name = "KOR_ssm_corona_route_block"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_route_locked_tt
+		}
+
+		buttonType = {
+			name = "KOR_ssm_corona_event_block"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_corona_variant_locked_tt
+		}
+
+		buttonType = {
+			name = "KOR_ssm_corona_factory_block"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 1
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_insufficient_factories_tt
+		}
+
+		# 선택 직후 원본 버튼이 비활성화되므로, 선택 색상은 고정 프레임 오버레이로 표시한다.
+		buttonType = {
+			name = "KOR_special_strategic_materials_biochemical_selected_overlay"
+			position = { x = 18 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 2
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_biochemical_button
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_corona_variant_selected_overlay"
+			position = { x = 258 y = 184 }
+			spriteType = "GFX_select_weapon_button"
+			frame = 3
+			size = { x = 222 y = 38 }
+			buttonFont = "VCR02_16"
+			buttonText = KOR_special_strategic_materials_corona_variant_button
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_mutually_exclusive_icon"
+			position = { x = 240 y = 195 }
+			spriteType = "GFX_mutually_exclusive_icon"
+			pdx_tooltip = KOR_special_strategic_materials_mutually_exclusive_tt
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_factory_control_text"
+			position = { x = 35 y = 251 }
+			font = "VCR02_14"
+			text = "KOR_special_strategic_materials_factory_control_gui"
+			format = left
+			maxWidth = 250
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_factory_decrease_button"
+			position = { x = 345 y = 243 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 55 y = 34 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_factory_decrease_button
+			pdx_tooltip = KOR_special_strategic_materials_factory_decrease_tt
+			pdx_disabled_tooltip = KOR_special_strategic_materials_factory_control_disabled_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_factory_increase_button"
+			position = { x = 420 y = 243 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 55 y = 34 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_factory_increase_button
+			pdx_tooltip = KOR_special_strategic_materials_factory_increase_tt
+			pdx_disabled_tooltip = KOR_special_strategic_materials_factory_control_disabled_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_control_room_open_button"
+			position = { x = 18 y = 235 }
+			spriteType = "GFX_KOR_special_strategic_materials_long_button"
+			size = { x = 462 y = 40 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_control_room_open_button
+			pdx_tooltip = KOR_special_strategic_materials_control_room_open_tt
+			clicksound = click_default
+		}
+
+		# 일급 기밀 버튼 바로 위에 나타나는 인라인 결재 패널.
+		containerWindowType = {
+			name = "KOR_ssm_signature_panel"
+			size = { width = 168 height = 162 }
+			position = { x = 285 y = 22 }
+			show_position = { x = 285 y = 22 }
+			hide_position = { x = 285 y = 200 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 150
+			fade_time = 150
+			fade_type = linear
+			clipping = no
+
+			iconType = {
+				name = "KOR_special_strategic_materials_signature_document_background"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_KOR_ssm_signature_bg"
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KOR_special_strategic_materials_signature_button"
+				position = { x = 40 y = 82 }
+				spriteType = "GFX_tiled_header_1"
+				size = { x = 80 y = 34 }
+				buttonFont = "VCR02_14"
+				buttonText = KOR_special_strategic_materials_signature_button
+				pdx_tooltip = KOR_special_strategic_materials_signature_button_tt
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "KOR_special_strategic_materials_signature_close_button"
+				position = { x = 122 y = 15 }
+				spriteType = "GFX_closebutton"
+				pdx_tooltip = KOR_special_strategic_materials_signature_close_tt
+				clicksound = click_close
+			}
+		}
+
+		# Toggling the container creates a real show event for the non-looping child.
+		# Frame 0 and the final frame are both fully transparent, so a failed start
+		# can never leave the document background permanently visible.
+		containerWindowType = {
+			name = "KOR_ssm_signature_completion_container"
+			size = { width = 168 height = 162 }
+			position = { x = 285 y = 22 }
+			clipping = no
+
+			iconType = {
+				name = "KOR_ssm_signature_completion_animation"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_KOR_ssm_signature_completion_animation"
+				alwaystransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_special_strategic_materials_control_room_window"
+		size = { width = 760 height = 640 }
+		orientation = center
+		origo = center
+		moveable = yes
+		clipping = no
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_pol_goal"
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_control_room_title"
+			position = { x = 20 y = 26 }
+			font = "VCR02_24"
+			text = "KOR_special_strategic_materials_control_room_title"
+			format = center
+			maxWidth = 720
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_control_room_close_button"
+			position = { x = 720 y = 12 }
+			spriteType = "GFX_closebutton"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_project_panel"
+			position = { x = 15 y = 75 }
+			size = { width = 730 height = 145 }
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_project_header"
+				position = { x = 15 y = 12 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_project_header"
+				maxWidth = 250
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_current_research_header"
+				position = { x = 285 y = 12 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_current_research_header"
+				maxWidth = 200
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_program_status_header"
+				position = { x = 500 y = 12 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_program_status_header"
+				maxWidth = 210
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_biochemical_project_text"
+				position = { x = 15 y = 48 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_biochemical_project_gui"
+				maxWidth = 255
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_corona_project_text"
+				position = { x = 15 y = 78 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_corona_project_gui"
+				maxWidth = 255
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_current_research_text"
+				position = { x = 285 y = 48 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_current_research_control_room_gui"
+				maxWidth = 200
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_program_status_text"
+				position = { x = 285 y = 78 }
+				font = "VCR02_14"
+				text = "KOR_special_strategic_materials_program_status_gui"
+				maxWidth = 205
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_isolation_facility_text"
+				position = { x = 500 y = 48 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_isolation_facility_gui"
+				maxWidth = 210
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_research_staff_text"
+				position = { x = 500 y = 78 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_research_staff_gui"
+				maxWidth = 140
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "KOR_special_strategic_materials_control_room_factory_decrease_button"
+				position = { x = 650 y = 72 }
+				spriteType = "GFX_tiled_header_1"
+				size = { x = 30 y = 28 }
+				buttonFont = "hoi_16mbs"
+				buttonText = KOR_special_strategic_materials_factory_decrease_button
+				pdx_tooltip = KOR_special_strategic_materials_factory_decrease_tt
+				pdx_disabled_tooltip = KOR_special_strategic_materials_factory_control_disabled_tt
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "KOR_special_strategic_materials_control_room_factory_increase_button"
+				position = { x = 690 y = 72 }
+				spriteType = "GFX_tiled_header_1"
+				size = { x = 30 y = 28 }
+				buttonFont = "hoi_16mbs"
+				buttonText = KOR_special_strategic_materials_factory_increase_button
+				pdx_tooltip = KOR_special_strategic_materials_factory_increase_tt
+				pdx_disabled_tooltip = KOR_special_strategic_materials_factory_control_disabled_tt
+				clicksound = click_default
+			}
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_experiment_panel"
+			position = { x = 15 y = 210 }
+			size = { width = 730 height = 145 }
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_experiment_stage_text"
+				position = { x = 15 y = 18 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_experiment_stage_gui"
+				maxWidth = 520
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "KOR_special_strategic_materials_bio_icon"
+				position = { x = 575 y = 15 }
+				spriteType = "GFX_KOR_special_strategic_materials_bio_icon"
+				scale = 0.24
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "KOR_special_strategic_materials_control_room_progressbar"
+				position = { x = 15 y = 50 }
+				spriteType = "GFX_KOR_dpk_progressbar_green"
+				pdx_tooltip = KOR_special_strategic_materials_progress_tt
+			}
+			iconType = {
+				name = "KOR_special_strategic_materials_control_room_progressbar_frame"
+				position = { x = 15 y = 50 }
+				spriteType = "GFX_KOR_dpk_progressbar_frame"
+				scale = 0.65
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_control_room_progress_text"
+				position = { x = 220 y = 54 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_progress_gui"
+				maxWidth = 90
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_accident_risk_text"
+				position = { x = 310 y = 54 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_accident_risk_gui"
+				maxWidth = 240
+				pdx_tooltip = KOR_special_strategic_materials_accident_risk_tt
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_weaponization_test_status_text"
+				position = { x = 15 y = 103 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_weaponization_test_gui"
+				maxWidth = 350
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "KOR_special_strategic_materials_weaponization_test_button"
+				position = { x = 385 y = 94 }
+				spriteType = "GFX_tiled_header_1"
+				size = { x = 145 y = 36 }
+				buttonFont = "hoi_16mbs"
+				buttonText = KOR_special_strategic_materials_weaponization_test_button
+				pdx_tooltip = KOR_special_strategic_materials_weaponization_test_tt
+				pdx_disabled_tooltip = KOR_special_strategic_materials_weaponization_test_disabled_tt
+				clicksound = click_default
+			}
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_expected_effects_panel"
+			position = { x = 15 y = 345 }
+			size = { width = 730 height = 210 }
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+			iconType = {
+				name = "KOR_special_strategic_materials_bio_second_icon"
+				position = { x = 585 y = 18 }
+				spriteType = "GFX_KOR_special_strategic_materials_bio_second_icon"
+				scale = 0.75
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_expected_effects_header"
+				position = { x = 15 y = 12 }
+				font = "VCR02_16"
+				text = "KOR_special_strategic_materials_expected_effects_header"
+				maxWidth = 540
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_variant_status_text"
+				position = { x = 15 y = 38 }
+				font = "VCR02_14"
+				text = "KOR_special_strategic_materials_variant_status_gui"
+				maxWidth = 540
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_selected_symptoms_text"
+				position = { x = 15 y = 64 }
+				font = "VCR02_14"
+				text = "KOR_special_strategic_materials_selected_symptoms_gui"
+				maxWidth = 540
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_expected_damage_header_text"
+				position = { x = 15 y = 92 }
+				font = "VCR02_14"
+				text = "KOR_special_strategic_materials_expected_damage_header"
+				maxWidth = 540
+				pdx_tooltip = KOR_special_strategic_materials_expected_damage_summary
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_confirmed_effects_text"
+				position = { x = 15 y = 116 }
+				font = "VCR02_12"
+				text = "KOR_special_strategic_materials_confirmed_effects_gui"
+				maxWidth = 700
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "KOR_special_strategic_materials_expected_damage_duration_text"
+				position = { x = 15 y = 182 }
+				font = "VCR02_12"
+				text = "KOR_special_strategic_materials_expected_damage_duration"
+				maxWidth = 700
+				alwaystransparent = yes
+			}
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_budget_button"
+			position = { x = 20 y = 570 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 165 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_budget_button
+			pdx_tooltip = KOR_special_strategic_materials_variant_configuration_open_tt
+			pdx_disabled_tooltip = KOR_special_strategic_materials_variant_configuration_open_disabled_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_test_approval_button"
+			position = { x = 205 y = 570 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 165 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_test_approval_button
+			pdx_tooltip = KOR_special_strategic_materials_bioweapon_production_tt
+			pdx_disabled_tooltip = KOR_special_strategic_materials_bioweapon_production_disabled_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_bioweapon_production_in_progress_button"
+			position = { x = 205 y = 570 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 165 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_bioweapon_production_in_progress_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_bioweapon_production_in_progress_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_staff_button"
+			position = { x = 390 y = 570 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 165 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_staff_button
+			pdx_tooltip = KOR_special_strategic_materials_bioweapon_use_tt
+			pdx_disabled_tooltip = KOR_special_strategic_materials_bioweapon_use_disabled_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_suspend_button"
+			position = { x = 575 y = 570 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 165 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_suspend_button
+			pdx_tooltip = KOR_special_strategic_materials_management_button_tt
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_special_strategic_materials_variant_configuration_window"
+		size = { width = 560 height = 420 }
+		orientation = center
+		origo = center
+		moveable = yes
+		clipping = no
+		fade_time = 150
+		fade_type = linear
+		click_to_front = yes
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_pol_goal"
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_variant_configuration_title"
+			position = { x = 20 y = 16 }
+			font = "hoi_24header"
+			text = "KOR_special_strategic_materials_variant_configuration_title"
+			format = center
+			maxWidth = 520
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_variant_configuration_close_button"
+			position = { x = 520 y = 12 }
+			spriteType = "GFX_closebutton"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_variant_configuration_desc"
+			position = { x = 25 y = 58 }
+			font = "VCR02_14"
+			text = "KOR_special_strategic_materials_variant_configuration_desc"
+			format = center
+			maxWidth = 510
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_variant_selection_count"
+			position = { x = 25 y = 88 }
+			font = "VCR02_16"
+			text = "KOR_special_strategic_materials_variant_selection_count_gui"
+			format = center
+			maxWidth = 510
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_cough_button"
+			position = { x = 30 y = 125 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_cough_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_vomiting_button"
+			position = { x = 290 y = 125 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_vomiting_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_immunosuppression_button"
+			position = { x = 30 y = 170 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_immunosuppression_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_inflammation_button"
+			position = { x = 290 y = 170 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_inflammation_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_systemic_infection_button"
+			position = { x = 30 y = 215 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_systemic_infection_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_internal_bleeding_button"
+			position = { x = 290 y = 215 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_internal_bleeding_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_necrosis_button"
+			position = { x = 30 y = 260 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_necrosis_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_hemorrhagic_shock_button"
+			position = { x = 290 y = 260 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_hemorrhagic_shock_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_adrenal_fatigue_button"
+			position = { x = 30 y = 305 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_adrenal_fatigue_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_symptom_sensory_paralysis_button"
+			position = { x = 290 y = 305 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_symptom_sensory_paralysis_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_limit_tt
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_cough_marker"
+			position = { x = 42 y = 136 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_vomiting_marker"
+			position = { x = 302 y = 136 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_immunosuppression_marker"
+			position = { x = 42 y = 181 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_inflammation_marker"
+			position = { x = 302 y = 181 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_systemic_infection_marker"
+			position = { x = 42 y = 226 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_internal_bleeding_marker"
+			position = { x = 302 y = 226 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_necrosis_marker"
+			position = { x = 42 y = 271 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_hemorrhagic_shock_marker"
+			position = { x = 302 y = 271 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_adrenal_fatigue_marker"
+			position = { x = 42 y = 316 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_pending_sensory_paralysis_marker"
+			position = { x = 302 y = 316 }
+			font = "VCR02_12"
+			text = "KOR_special_strategic_materials_symptom_selected_marker"
+			maxWidth = 45
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_special_strategic_materials_variant_configuration_cancel_button"
+			position = { x = 30 y = 365 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_variant_configuration_cancel_button
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_variant_configuration_confirm_button"
+			position = { x = 290 y = 365 }
+			spriteType = "GFX_tiled_header_1"
+			size = { x = 240 y = 38 }
+			buttonFont = "hoi_16mbs"
+			buttonText = KOR_special_strategic_materials_variant_configuration_confirm_button
+			pdx_disabled_tooltip = KOR_special_strategic_materials_variant_configuration_confirm_disabled_tt
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_special_strategic_materials_grouped_variant_configuration_window"
+		size = { width = 560 height = 675 }
+		orientation = center
+		origo = center
+		moveable = yes
+		clipping = no
+		fade_time = 150
+		fade_type = linear
+		click_to_front = yes
+		show_sound = menu_open_window
+
+		background = { name = "Background" quadTextureSprite = "GFX_tiled_window_pol_goal" }
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_grouped_variant_title"
+			position = { x = 20 y = 16 }
+			font = "hoi_24header"
+			text = "KOR_special_strategic_materials_variant_configuration_title"
+			format = center
+			maxWidth = 520
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_special_strategic_materials_grouped_variant_close_button"
+			position = { x = 520 y = 12 }
+			spriteType = "GFX_closebutton"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+		instantTextboxType = {
+			name = "KOR_special_strategic_materials_grouped_variant_desc"
+			position = { x = 25 y = 34 }
+			font = "VCR02_14"
+			text = "KOR_special_strategic_materials_grouped_variant_desc"
+			format = center
+			maxWidth = 510
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_group_one_panel"
+			position = { x = 20 y = 98 }
+			size = { width = 520 height = 120 }
+			background = { name = "Background" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_one_panel_title" position = { x = 15 y = 9 } font = "VCR02_16" text = "KOR_special_strategic_materials_group_one_title" maxWidth = 490 format = center alwaystransparent = yes }
+			buttonType = { name = "KOR_special_strategic_materials_group_one_cough_button" position = { x = 15 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_cough_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_one_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_one_vomiting_button" position = { x = 270 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_vomiting_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_two_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_one_immunosuppression_button" position = { x = 15 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_immunosuppression_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_three_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_one_inflammation_button" position = { x = 270 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_inflammation_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_four_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_one_cough_marker" position = { x = 27 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_one_vomiting_marker" position = { x = 282 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_one_immunosuppression_marker" position = { x = 27 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_one_inflammation_marker" position = { x = 282 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_group_two_panel"
+			position = { x = 20 y = 223 }
+			size = { width = 520 height = 120 }
+			background = { name = "Background" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_two_panel_title" position = { x = 15 y = 9 } font = "VCR02_16" text = "KOR_special_strategic_materials_group_two_title" maxWidth = 490 format = center alwaystransparent = yes }
+			buttonType = { name = "KOR_special_strategic_materials_group_two_systemic_infection_button" position = { x = 15 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_systemic_infection_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_five_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_two_internal_bleeding_button" position = { x = 270 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_internal_bleeding_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_six_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_two_necrosis_button" position = { x = 15 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_necrosis_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_seven_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_two_hemorrhagic_shock_button" position = { x = 270 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_hemorrhagic_shock_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_eight_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_two_systemic_infection_marker" position = { x = 27 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_two_internal_bleeding_marker" position = { x = 282 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_two_necrosis_marker" position = { x = 27 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_two_hemorrhagic_shock_marker" position = { x = 282 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_group_three_panel"
+			position = { x = 20 y = 348 }
+			size = { width = 520 height = 120 }
+			background = { name = "Background" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_three_panel_title" position = { x = 15 y = 9 } font = "VCR02_16" text = "KOR_special_strategic_materials_group_three_title" maxWidth = 490 format = center alwaystransparent = yes }
+			buttonType = { name = "KOR_special_strategic_materials_group_three_adrenal_fatigue_button" position = { x = 15 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_adrenal_fatigue_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_nine_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_three_sensory_paralysis_button" position = { x = 270 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_sensory_paralysis_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_ten_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_three_paranoia_button" position = { x = 15 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_paranoia_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_eleven_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_three_hypersensitivity_button" position = { x = 270 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_hypersensitivity_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_twelve_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_three_adrenal_fatigue_marker" position = { x = 27 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_three_sensory_paralysis_marker" position = { x = 282 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_three_paranoia_marker" position = { x = 27 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_three_hypersensitivity_marker" position = { x = 282 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+		}
+
+		containerWindowType = {
+			name = "KOR_special_strategic_materials_group_four_panel"
+			position = { x = 20 y = 473 }
+			size = { width = 520 height = 120 }
+			background = { name = "Background" quadTextureSprite = "GFX_tiled_window_thin_border2" }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_four_panel_title" position = { x = 15 y = 9 } font = "VCR02_16" text = "KOR_special_strategic_materials_group_four_title" maxWidth = 490 format = center alwaystransparent = yes }
+			buttonType = { name = "KOR_special_strategic_materials_group_four_unlock_button" position = { x = 115 y = 43 } spriteType = "GFX_tiled_header_1" size = { x = 290 y = 55 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_group_four_locked_button pdx_tooltip = KOR_special_strategic_materials_group_four_locked_button_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_four_irritable_bowel_syndrome_button" position = { x = 15 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_thirteen_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_four_sex_hormone_imbalance_button" position = { x = 270 y = 30 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_fourteen_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_four_alopecia_button" position = { x = 15 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_alopecia_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_fifteen_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			buttonType = { name = "KOR_special_strategic_materials_group_four_sexual_dysfunction_button" position = { x = 270 y = 75 } spriteType = "GFX_tiled_header_1" size = { x = 235 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_symptom_sexual_dysfunction_button pdx_tooltip = KOR_special_strategic_materials_variant_slot_sixteen_effect_tt pdx_disabled_tooltip = KOR_special_strategic_materials_symptom_selection_complete_tt clicksound = click_default }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_four_irritable_bowel_syndrome_marker" position = { x = 27 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_four_sex_hormone_imbalance_marker" position = { x = 282 y = 41 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_four_alopecia_marker" position = { x = 27 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+			instantTextboxType = { name = "KOR_special_strategic_materials_group_four_sexual_dysfunction_marker" position = { x = 282 y = 86 } font = "VCR02_12" text = "KOR_special_strategic_materials_symptom_selected_marker" maxWidth = 45 alwaystransparent = yes }
+		}
+
+		buttonType = { name = "KOR_special_strategic_materials_grouped_variant_cancel_button" position = { x = 30 y = 615 } spriteType = "GFX_tiled_header_1" size = { x = 240 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_variant_configuration_cancel_button clicksound = click_close }
+		buttonType = { name = "KOR_special_strategic_materials_grouped_variant_confirm_button" position = { x = 290 y = 615 } spriteType = "GFX_tiled_header_1" size = { x = 240 y = 38 } buttonFont = "hoi_16mbs" buttonText = KOR_special_strategic_materials_variant_configuration_confirm_button pdx_disabled_tooltip = KOR_special_strategic_materials_grouped_confirm_disabled_tt clicksound = click_default }
+
+	}
+
+	containerWindowType = {
+		name = "KOR_special_strategic_materials_keypad_window"
+		size = { width = 189 height = 270 }
+		position = { x = 375 y = 0 }
+		orientation = center
+		origo = center
+		moveable = no
+		clipping = no
+		fade_time = 100
+		fade_type = linear
+		click_to_front = yes
+		show_sound = menu_open_window
+
+		iconType = { name = "KOR_special_strategic_materials_keypad_background" position = { x = 0 y = 0 } spriteType = "GFX_KOR_special_strategic_materials_keypad_background" alwaystransparent = yes }
+
+		buttonType = { name = "KOR_special_strategic_materials_keypad_1_button" position = { x = 27 y = 21 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_1" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_2_button" position = { x = 76 y = 21 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_2" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_3_button" position = { x = 125 y = 21 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_3" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_4_button" position = { x = 27 y = 64 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_4" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_5_button" position = { x = 76 y = 64 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_5" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_6_button" position = { x = 125 y = 64 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_6" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_7_button" position = { x = 27 y = 107 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_7" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_8_button" position = { x = 76 y = 107 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_8" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_9_button" position = { x = 125 y = 107 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_9" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_star_button" position = { x = 27 y = 150 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_star" pdx_tooltip = KOR_special_strategic_materials_keypad_star_button_tt clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_0_button" position = { x = 76 y = 150 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_0" clicksound = click_default }
+		buttonType = { name = "KOR_special_strategic_materials_keypad_hash_button" position = { x = 125 y = 150 } spriteType = "GFX_KOR_special_strategic_materials_keypad_key_hash" pdx_tooltip = KOR_special_strategic_materials_keypad_hash_button_tt pdx_disabled_tooltip = KOR_special_strategic_materials_keypad_incomplete_tt clicksound = click_default }
+
+		instantTextboxType = { name = "KOR_special_strategic_materials_keypad_input_text" position = { x = 5 y = 235 } font = "VCR02_14" text = "KOR_special_strategic_materials_keypad_input_gui" format = center maxWidth = 179 fixedsize = yes alwaystransparent = yes }
+		instantTextboxType = { name = "KOR_special_strategic_materials_keypad_status_text" position = { x = 5 y = 252 } font = "VCR02_12" text = "KOR_special_strategic_materials_keypad_status_gui" format = center maxWidth = 179 fixedsize = yes alwaystransparent = yes }
+	}
+}

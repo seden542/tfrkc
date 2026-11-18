@@ -1,0 +1,160 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_KOR_unfinished_symphony_gui_window"
+		clipping = no
+		size = { width = 0 height = 850 }
+		
+		iconType = {
+			name = "pm_seal" 
+			position = { x = 35 y = 5 }
+			spriteType = "GFX_unfinished_symphony_KOR_pm_seal"
+			pdx_tooltip = KOR_prime_minister
+		}
+
+		iconType = {
+			name = "sub_pm_seal" 
+			position = { x = 200 y = 5 }
+			spriteType = "GFX_unfinished_symphony_KOR_sub_pm_seal"
+			pdx_tooltip = KOR_sub_pm
+		}
+		
+		iconType = {
+			name = "president_seal" 
+			position = { x = 348 y = 5 }
+			spriteType = "GFX_unfinished_symphony_KOR_president_seal"
+			pdx_tooltip = KOR_president
+		}
+
+		iconType = {
+			name = "portrait_kim_moonsoo" 
+			position = { x = 2 y = 120 }
+			spriteType = "GFX_unfinished_symphony_ministers_portrait_strip"
+			pdx_tooltip = KOR_kim_moonsoo_trait_info
+			pdx_tooltip_delayed = symphony_desc_kim
+			frame = 10
+		}
+		
+		iconType = {
+			name = "portrait_sub_pm" 
+			position = { x = 169 y = 120 }
+			spriteType = "GFX_unfinished_symphony_ministers_portrait_strip"
+		}
+		
+		iconType = {
+			name = "portrait_choo_miae" 
+			position = { x = 336 y = 120 }
+			spriteType = "GFX_unfinished_symphony_ministers_portrait_strip"
+			pdx_tooltip = KOR_choo_miae_trait_info
+			pdx_tooltip_delayed = symphony_desc_chu
+			frame = 11
+		}
+		
+		instantTextboxType = {
+			name = "kim_moon_soo_text"
+			position = { x = 1 y = 348 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "KOR_kim_moon_soo_char"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "sub_pm_text"
+			position = { x = 167 y = 348 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "KOR_vice_minister_name" #script loc
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "choo_miae_text"
+			position = { x = 334 y = 348 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "KOR_chu_mi_ae_char"
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "jeon_jae_soo_minister"
+			position = { x = 2 y = 390 }
+			spriteType = "GFX_jeon_jae_soo_minister"
+			pdx_tooltip = "jeon_jae_soo_minister_tt"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "kim_sang_wook_minister"
+			position = { x = 64 y = 390 }
+			spriteType = "GFX_kim_sang_wook_minister"
+			pdx_tooltip = "kim_sang_wook_minister_tt"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "kim_bu_gyeom_minister"
+			position = { x = 126 y = 390 }
+			spriteType = "GFX_kim_bu_gyeom_minister"
+			pdx_tooltip = "kim_bu_gyeom_minister_tt"
+			scale = 1
+		}
+
+		buttonType = {
+			name = "ha_tae_kyung_minister"
+			position = { x = 188 y = 390 }
+			spriteType = "GFX_ha_tae_kyung_minister"
+			pdx_tooltip = "ha_tae_kyung_minister_tt"
+			scale = 1
+		}
+
+		buttonType = {
+			name = "ahn_cheol_soo_minister"
+			position = { x = 250 y = 390 }
+			spriteType = "GFX_ahn_cheol_soo_minister"
+			pdx_tooltip = "ahn_cheol_soo_minister_tt"
+			scale = 1
+		}
+
+		buttonType = {
+			name = "cha_myeong_jin_minister"
+			position = { x = 312 y = 390 }
+			spriteType = "GFX_cha_myeong_jin_minister"
+			pdx_tooltip = "cha_myeong_jin_minister_tt"
+			scale = 1
+		}
+
+		buttonType = {
+			name = "kim_byeong_gi_minister"
+			position = { x = 374 y = 390 }
+			spriteType = "GFX_kim_byeong_gi_minister"
+			pdx_tooltip = "kim_byeong_gi_minister_tt"
+			scale = 1
+		}
+
+		buttonType = {
+			name = "im_jong_seok_minister"
+			position = { x = 436 y = 390 }
+			spriteType = "GFX_im_jong_seok_minister"
+			pdx_tooltip = "im_jong_seok_minister_tt"
+			scale = 1
+		}
+
+		instantTextboxType = {
+			name = "KOR_unfinished_symphony_text"
+			position = { x = 6 y = 470 }
+			font = "VCR02_12"
+			maxWidth = 490
+			maxHeight = 500
+			text = "KOR_unfinished_symphony_text"
+			alwaystransparent = yes
+		}
+
+	}
+}

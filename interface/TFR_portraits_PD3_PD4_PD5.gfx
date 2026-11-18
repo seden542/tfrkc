@@ -1,0 +1,21 @@
+spriteTypes = {
+	### PD3 ###
+	spriteType = {
+		name = GFX_portrait_PD3_wang_zexian_char_civilian_large
+		textureFile = "gfx/leaders/PD3/PD3_wang_zexian.png"
+	}
+	### PD4 ###
+	spriteType = {
+		name = GFX_portrait_PD4_eun_wookeun_char_civilian_large
+		textureFile = "gfx/leaders/PD4/PD4_eun_wookeun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_PD4_olhunud_daichin_char_civilian_large
+		textureFile = "gfx/leaders/PD4/PD4_olhunud_daichin.png"
+	}
+	### PD5 ###
+	spriteType = {
+		name = GFX_portrait_PD5_shin_jangsik_char_civilian_large
+		textureFile = "gfx/leaders/PD5/PD5_shin_jangsik.png"
+	}
+}

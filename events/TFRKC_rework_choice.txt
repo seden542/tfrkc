@@ -1,0 +1,77 @@
+add_namespace = tfrkc_rework_choice
+# 20261117: only the six currently playable countries. No map or military effects.
+country_event = { id = tfrkc_rework_choice.1 title = TFRKC_rework_choice_t desc = TFRKC_rework_choice_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ option = { name = TFRKC_rework_choice_choose_KWC ai_chance = { factor = 0 } hidden_effect = { if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ clr_country_flag = TFRKC_choice_KWC
+ clr_country_flag = TFRKC_choice_KLF
+ clr_country_flag = TFRKC_choice_KRC
+ clr_country_flag = TFRKC_choice_KCH
+ clr_country_flag = TFRKC_choice_KYA
+ clr_country_flag = TFRKC_choice_KOR
+ clr_country_flag = TFRKC_choice_KSF
+ set_country_flag = TFRKC_choice_KWC
+ set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress
+ if = { limit = { has_country_flag = TFRKC_start_waiting_for_choice } clr_country_flag = TFRKC_start_waiting_for_choice country_event = { id = tfrkc.10 days = 1 } }
+ } } }
+ option = { name = TFRKC_rework_choice_choose_KLF ai_chance = { factor = 0 } hidden_effect = { if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ clr_country_flag = TFRKC_choice_KWC
+ clr_country_flag = TFRKC_choice_KLF
+ clr_country_flag = TFRKC_choice_KRC
+ clr_country_flag = TFRKC_choice_KCH
+ clr_country_flag = TFRKC_choice_KYA
+ clr_country_flag = TFRKC_choice_KOR
+ clr_country_flag = TFRKC_choice_KSF
+ set_country_flag = TFRKC_choice_KLF
+ set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress
+ if = { limit = { has_country_flag = TFRKC_start_waiting_for_choice } clr_country_flag = TFRKC_start_waiting_for_choice country_event = { id = tfrkc.10 days = 1 } }
+ } } }
+ option = { name = TFRKC_rework_choice_choose_KRC ai_chance = { factor = 0 } hidden_effect = { if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ clr_country_flag = TFRKC_choice_KWC
+ clr_country_flag = TFRKC_choice_KLF
+ clr_country_flag = TFRKC_choice_KRC
+ clr_country_flag = TFRKC_choice_KCH
+ clr_country_flag = TFRKC_choice_KYA
+ clr_country_flag = TFRKC_choice_KOR
+ clr_country_flag = TFRKC_choice_KSF
+ set_country_flag = TFRKC_choice_KRC
+ set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress
+ if = { limit = { has_country_flag = TFRKC_start_waiting_for_choice } clr_country_flag = TFRKC_start_waiting_for_choice country_event = { id = tfrkc.10 days = 1 } }
+ } } }
+ option = { name = TFRKC_rework_choice_choose_KCH ai_chance = { factor = 0 } hidden_effect = { if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ clr_country_flag = TFRKC_choice_KWC
+ clr_country_flag = TFRKC_choice_KLF
+ clr_country_flag = TFRKC_choice_KRC
+ clr_country_flag = TFRKC_choice_KCH
+ clr_country_flag = TFRKC_choice_KYA
+ clr_country_flag = TFRKC_choice_KOR
+ clr_country_flag = TFRKC_choice_KSF
+ set_country_flag = TFRKC_choice_KCH
+ set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress
+ if = { limit = { has_country_flag = TFRKC_start_waiting_for_choice } clr_country_flag = TFRKC_start_waiting_for_choice country_event = { id = tfrkc.10 days = 1 } }
+ } } }
+ option = { name = TFRKC_rework_choice_choose_KYA ai_chance = { factor = 0 } hidden_effect = { if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ clr_country_flag = TFRKC_choice_KWC
+ clr_country_flag = TFRKC_choice_KLF
+ clr_country_flag = TFRKC_choice_KRC
+ clr_country_flag = TFRKC_choice_KCH
+ clr_country_flag = TFRKC_choice_KYA
+ clr_country_flag = TFRKC_choice_KOR
+ clr_country_flag = TFRKC_choice_KSF
+ set_country_flag = TFRKC_choice_KYA
+ set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress
+ if = { limit = { has_country_flag = TFRKC_start_waiting_for_choice } clr_country_flag = TFRKC_start_waiting_for_choice country_event = { id = tfrkc.10 days = 1 } }
+ } } }
+ option = { name = TFRKC_rework_choice_choose_KOR ai_chance = { factor = 100 } hidden_effect = { if = { limit = { tag = KOR NOT = { has_country_flag = TFRKC_choice_ready } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ clr_country_flag = TFRKC_choice_KWC
+ clr_country_flag = TFRKC_choice_KLF
+ clr_country_flag = TFRKC_choice_KRC
+ clr_country_flag = TFRKC_choice_KCH
+ clr_country_flag = TFRKC_choice_KYA
+ clr_country_flag = TFRKC_choice_KOR
+ clr_country_flag = TFRKC_choice_KSF
+ set_country_flag = TFRKC_choice_KOR
+ set_country_flag = TFRKC_choice_ready clr_country_flag = TFRKC_choice_in_progress
+ if = { limit = { has_country_flag = TFRKC_start_waiting_for_choice } clr_country_flag = TFRKC_start_waiting_for_choice country_event = { id = tfrkc.10 days = 1 } }
+ } } }
+}

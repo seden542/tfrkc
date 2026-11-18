@@ -1,0 +1,206 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_modifiers_KOR_seoul"
+		texturefile = "gfx/interface/state_modifiers/KOR_seoul.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_seoul2"
+		texturefile = "gfx/interface/state_modifiers/KOR_seoul2.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_busan"
+		texturefile = "gfx/interface/state_modifiers/KOR_busan.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_USFK"
+		texturefile = "gfx/interface/state_modifiers/KOR_USFK.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_PDTO"
+		texturefile = "gfx/interface/state_modifiers/KOR_PDTO.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_busan2"
+		texturefile = "gfx/interface/state_modifiers/KOR_busan2.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_busan3"
+		texturefile = "gfx/interface/state_modifiers/KOR_busan3.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_gwangju"
+		texturefile = "gfx/interface/state_modifiers/KOR_gwangju.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_ulsan"
+		texturefile = "gfx/interface/state_modifiers/KOR_ulsan.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_daegu"
+		texturefile = "gfx/interface/state_modifiers/KOR_daegu.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_daejeon"
+		texturefile = "gfx/interface/state_modifiers/KOR_daejeon.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_jeju"
+		texturefile = "gfx/interface/state_modifiers/KOR_jeju.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_incheon"
+		texturefile = "gfx/interface/state_modifiers/KOR_incheon.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_sejong"
+		texturefile = "gfx/interface/state_modifiers/KOR_sejong.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_PRK_pyongyang"
+		texturefile = "gfx/interface/state_modifiers/PRK_pyongyang.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_eastern_south_invest_company"
+		texturefile = "gfx/interface/state_modifiers/KOR_eastern_south_invest_company.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_western_south_modifier"
+		texturefile = "gfx/interface/state_modifiers/KOR_western_south_modifier.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_bio_attack"
+		texturefile = "gfx/interface/state_modifiers/KOR_bio_attack.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_last_city"
+		texturefile = "gfx/interface/state_modifiers/KOR_last_city.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_KOR_human_modification_dynamic"
+		texturefile = "gfx/interface/state_modifiers/KOR_human_modification_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_north_korea_civil_military"
+		texturefile = "gfx/interface/state_modifiers/KOR_north_korea_civil_military.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_nuke_korea"
+		texturefile = "gfx/interface/state_modifiers/KOR_nuke_korea.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_nuke_japan"
+		texturefile = "gfx/interface/state_modifiers/KOR_nuke_japan.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_nuke_prc_army"
+		texturefile = "gfx/interface/state_modifiers/KOR_nuke_prc_army.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_nuke_prk"
+		texturefile = "gfx/interface/state_modifiers/KOR_nuke_prk.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_nuke_kor_army"
+		texturefile = "gfx/interface/state_modifiers/KOR_nuke_kor_army.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_KOR_nuke_prc"
+		texturefile = "gfx/interface/state_modifiers/KOR_nuke_prc.png"
+	}
+	spriteType = { ## 기본적인것!! ##
+		name = "GFX_idea_KOR_PRC_modifier"
+		texturefile = "gfx/interface/state_modifiers/KOR_PRC_modifier.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_none"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_none.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_none_2"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_none_2.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_1"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_1.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_2"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_2.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_3"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_3.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_4"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_4.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_5"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_5.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_6"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_6.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_7"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_7.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_8"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_8.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_9"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_9.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_10"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_10.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_11"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_11.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_12"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_12.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_13"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_13.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_14"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_14.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_15"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_15.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_16"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_16.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_17"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_17.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_18"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_18.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_19"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_19.png"
+	}
+	spriteType = {
+		name = "GFX_modifier_GAW_plan_ongoing_20"
+		texturefile = "gfx/interface/state_modifiers/GAW_plan_ongoing_20.png"
+	}
+}

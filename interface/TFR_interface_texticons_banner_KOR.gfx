@@ -1,0 +1,1175 @@
+spriteTypes = {
+	# Decisions
+	spriteType = {
+		name = "GFX_KOR_saudi_volunteer_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_saudi_volunteer.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_coronavirus_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_coronavirus.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yhg"
+		textureFile = "gfx/texticons/banners/KOR/kor_yhg.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yongsan_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_yongsan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_nis_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_nis_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_blue_house"
+		textureFile = "gfx/texticons/banners/KOR/KOR_blue_house.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_yec_emergency"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_yec_emergency.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { 
+		name = "GFX_KOR_three_year_plan"
+		textureFile = "gfx/texticons/banners/KOR/KOR_three_year_plan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_taiwan_war_banner"
+		textureFile = "gfx/texticons/banners/KOR/GFX_KOR_taiwan_war_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_army_revolution_ideology_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_army_revolution_ideology_idea.png"
+		legacy_lazy_load = no
+	} 
+	spriteType = {
+		name = "GFX_KOR_national_assembly_new_category_decision"
+		textureFile = "gfx/texticons/banners/KOR/KOR_national_assembly_new.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_new"
+		textureFile = "gfx/texticons/banners/KOR/kor_new.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_white_terror"
+		textureFile = "gfx/texticons/banners/KOR/KOR_white_terror_decsion.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_network"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_network.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_diffusion"
+		textureFile = "gfx/texticons/banners/KOR/kor_diffusion.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ready"
+		textureFile = "gfx/texticons/banners/KOR/KOR_ready.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_bio_attack"
+		textureFile = "gfx/texticons/banners/KOR/KOR_bio_attack.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_martial_law"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_martial_law.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_reds_dprk_train"
+		textureFile = "gfx/texticons/banners/KOR/KOR_reds_dprk_train.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_campain_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_campain_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_major"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_major.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_seoul"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_seoul.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_factory"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_factory.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_KTX"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_KTX.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_green_energy"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_green_energy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_labor"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_labor.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_campain_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_campain_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_campain_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_campain_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_campain_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_campain_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_labor_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_labor_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_labor_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_labor_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_labor_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_labor_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_labor_4"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_labor_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_pdto_train"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_pdto_train.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_pdto_train_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_pdto_train_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_culture"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_culture.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_ignorant"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_ignorant.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_green_eco"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_green_eco.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_reds_dprk"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_reds_dprk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_ppp_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_ppp_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_dp_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_dp_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_kim_min.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min_dp_1"
+		textureFile = "gfx/texticons/banners/KOR/kor_lee_kim_min_dp_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min_dp_2"
+		textureFile = "gfx/texticons/banners/KOR/kor_lee_kim_min_dp_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min_dp_3"
+		textureFile = "gfx/texticons/banners/KOR/kor_lee_kim_min_dp_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min_campain_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_kim_min_campain_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min_campain_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_kim_min_campain_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kim_min_campain_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_kim_min_campain_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_yusin"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_yusin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_main"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_main.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_army_not_main"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_army_not_main.png"
+		legacy_lazy_load = no
+	}
+	# Ideologies
+	spriteType = {
+		name = "GFX_ideology_gwanghwamun_democracy_social_liberal_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_gwanghwamun_democracy_social_liberal_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_legislative_pragmatism_social_liberal_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_legislative_pragmatism_social_liberal_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_leeism_totalitarian_socialist_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_leeism_totalitarian_socialist_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_judicial_conservatism_conservative_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_judicial_conservatism_conservative_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_judicial_authoritarianism_authoritarian_democrat_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_judicial_authoritarianism_authoritarian_democrat_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_interim_democracy_conservative_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_interim_democracy_conservative_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_interim_democracy_authoritarioan_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_interim_democracy_authoritarioan_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_cyber_yushin_transhumanism_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_cyber_yushin_transhumanism_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_yongsan_liberal_democracy_nationalist_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_yongsan_liberal_democracy_nationalist_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_facade_democracy_nationalist_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_facade_democracy_nationalist_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_yoonism_conservative_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_yoonism_conservative_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_sextonism_conservative_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_sextonism_conservative_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_cooperative_democracy_conservative_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_cooperative_democracy_conservative_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_progressive_democracy_libertarian_socialist_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_progressive_democracy_libertarian_socialist_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_revolutionary_socialism_communist_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_revolutionary_socialism_communist_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_dreaming_realism_social_democrat_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_dreaming_realism_social_democrat_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_independent_democracy_libertarian_socialist_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_independent_democracy_libertarian_socialist_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_conservatism_conservative_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_korean_conservatism_conservative_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_reformical_democracy_social_liberal_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_reformical_democracy_social_liberal_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_chogukism_authoritarian_democrat_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_chogukism_authoritarian_democrat_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_social_liberal_social_liberal_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_korean_social_liberal_social_liberal_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_korean_social_democracy_social_democrat_banner"
+		textureFile = "gfx/texticons/banners/ideology/ideology_korean_social_democracy_social_democrat_banner.png"
+		legacy_lazy_load = no
+	}
+	# Others
+	spriteType = {
+		name = "GFX_KOR_yoon_path_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_yoon_path_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_path_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_path_banner.png"
+		legacy_lazy_load = no
+	}
+	###
+	spriteType = {
+		name = "GFX_KOR_yoon_path_banner_victory"
+		textureFile = "gfx/texticons/banners/KOR/KOR_yoon_path_banner_victory.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_path_banner_canon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_yoon_path_banner_canon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_path_banner_martial_law"
+		textureFile = "gfx/texticons/banners/KOR/KOR_yoon_path_banner_martial_law.png"
+		legacy_lazy_load = no
+	}
+	###
+	spriteType = {
+		name = "GFX_KOR_lee_path_banner_army_revolution"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_path_banner_army_revolution.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_path_banner_communist_revolution"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_path_banner_communist_revolution.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_path_banner_coliation"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_path_banner_coliation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_path_banner_nothing"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_path_banner_nothing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_path_banner_victory"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_path_banner_victory.png"
+		legacy_lazy_load = no
+	}
+	###
+	spriteType = {
+		name = "GFX_KOR_lee_coa_K2C1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_K2C1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_K2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_K2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_K21"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_K21.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_K9"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_K9.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_tael"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_tael.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_seoul"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_seoul.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_freedom"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_freedom.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_coa_chodangpa"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_coa_chodangpa.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_korea_agian"
+		textureFile = "gfx/texticons/banners/KOR/KOR_yoon_korea_agian.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_new_korea"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_new_korea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_bad"
+		textureFile = "gfx/texticons/banners/KOR/KOR_bad.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_kfx_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_kfx_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_kfx_banner_1_icon"
+		textureFile = "gfx/texticons/banners/KOR/kor_kfx_banner_1_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_kfx_banner_2_icon"
+		textureFile = "gfx/texticons/banners/KOR/kor_kfx_banner_2_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_kfx_banner_3_icon"
+		textureFile = "gfx/texticons/banners/KOR/kor_kfx_banner_3_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_kfx_banner_4_icon"
+		textureFile = "gfx/texticons/banners/KOR/kor_kfx_banner_4_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_kfx_banner_5_icon"
+		textureFile = "gfx/texticons/banners/KOR/kor_kfx_banner_5_icon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_death_banner"
+		textureFile = "gfx/texticons/banners/KOR/kor_death_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_deathgas"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_deathgas.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_nis_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_nis_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_anti_democratic_category"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_anti_democratic_category.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_whitegas"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_whitegas.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_tanhack"
+		textureFile = "gfx/texticons/banners/KOR/KOR_delete_yoon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ppp_inner_circle"
+		textureFile = "gfx/texticons/banners/KOR/KOR_ppp_inner_circle.png"
+		legacy_lazy_load = no
+	}
+	### 이재명 배너
+	spriteType = {
+		name = "GFX_KOR_lee_banner_sup_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_sup_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_sup_fuck_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_sup_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_supper_3"
+		textureFile = "gfx/texticons/banners/KOR/GFX_KOR_lee_banner_supper_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_core_4"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_core_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_next_5"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_next_5.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_6"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_6.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_7"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_7.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_8"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_8.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_banner_9"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_banner_9.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_105"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_105.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_4"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_12"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_12.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_1000"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_1000.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_1001"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_1001.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_the_end"
+		textureFile = "gfx/texticons/banners/KOR/KOR_the_end.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_nuke_descison"
+		textureFile = "gfx/texticons/banners/KOR/KOR_nuke_descison.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_economy_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_economy_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_economy_1_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_economy_1_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_megacity_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_megacity_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_megacity_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_megacity_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_megacity_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_megacity_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_megacity_4"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_megacity_4.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_1002"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_1002.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_dprk_1003"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_DPRK_1003.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_moonso_kospi"
+		textureFile = "gfx/texticons/banners/KOR/KOR_moonso_kospi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_moon_soo_president"
+		textureFile = "gfx/texticons/banners/KOR/KOR_moon_soo_president.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_kslv2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_kslv2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_falcon9"
+		textureFile = "gfx/texticons/banners/KOR/KOR_falcon9.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_falcon_heavy"
+		textureFile = "gfx/texticons/banners/KOR/KOR_falcon_heavy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_starship"
+		textureFile = "gfx/texticons/banners/KOR/KOR_starship.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_spaceman"
+		textureFile = "gfx/texticons/banners/KOR/KOR_spaceman.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lunagate"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lunagate.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_iss_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_iss_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_spacex_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_spacex_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_milta_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_milta_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_long_march"
+		textureFile = "gfx/texticons/banners/KOR/kor_long_march.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_dpk_divide_bluehouse_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_dpk_divide_bluehouse_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_dpk_divide_bluehouse_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_dpk_divide_bluehouse_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_dpk_divide_bluehouse_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_dpk_divide_bluehouse_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_military_ignorant_left_asset_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_military_ignorant_left_asset_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_military_ignorant_right_asset_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_military_ignorant_right_asset_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homelan_1_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homelan_1_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homelan_2_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homelan_2_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homelan_3_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homelan_3_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homelan_4_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homelan_4_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homelan_5_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homelan_5_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_banner_1"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_banner_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_banner_2"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_banner_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_banner_3"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_banner_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_banner_4"
+		textureFile = "gfx/texticons/banners/KOR/KOR_lee_homeland_banner_4.png"
+		legacy_lazy_load = no
+	}
+	#######
+	spriteType = {
+		name = "GFX_banner_KOR_dominance_of_chaebols"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_dominance_of_chaebols.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_aging_population_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_aging_population_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_economic_bubble_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_economic_bubble_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_imf_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_imf_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_reds_fake_prk_allies"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_reds_fake_prk_allies.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_reds_national_liberation_war"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_reds_national_liberation_war.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_candlelight_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_candlelight_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_people_democracy_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_people_democracy_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_idea_KOR_reds_peoples_nation"
+		textureFile = "gfx/texticons/banners/ideas/banner_idea_KOR_reds_peoples_nation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_conservation_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_conservation_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_imf_idea_2"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_imf_idea_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_oil_shock1"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_oil_shock1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_after_virus"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_after_virus.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_after_bubble_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_after_bubble_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_civil_unrest"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_civil_unrest.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_oil_import_diversification"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_oil_import_diversification.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_seoul"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_seoul.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_incheon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_incheon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_busan"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_busan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_daegu"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_daegu.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_ulsan"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_ulsan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_gwangju"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_gwangju.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_daejeon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_daejeon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_sejong"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_sejong.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_gyeonggi"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_gyeonggi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_gangwon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_gangwon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_chungbuk"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_chungbuk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_chungnam"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_chungnam.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_jeonbuk"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_jeonbuk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_jeonnam"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_jeonnam.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_gyeongbuk"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_gyeongbuk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_gyeongnam"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_gyeongnam.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_riot_banner_jeju"
+		textureFile = "gfx/texticons/banners/KOR/KOR_riot_banner_jeju.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_LJS_newness"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_LJS_newness.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_LJS_west"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_LJS_west.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_LJS_local"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_LJS_local.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_KOR_LJS_study"
+		textureFile = "gfx/texticons/banners/ideas/banner_KOR_LJS_study.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_PD1_korean_garrison_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_PD1_korean_garrison_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_PD1_chaebol_playground_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_PD1_chaebol_playground_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_banner_PD1_manchukuo_court_idea"
+		textureFile = "gfx/texticons/banners/ideas/banner_PD1_manchukuo_court_idea.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_gwangju_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_gwangju_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ulsan_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_ulsan_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_daegu_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_daegu_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_daejeon_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_daejeon_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_incheon_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_incheon_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_sejong_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_sejong_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_jeju_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_jeju_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_ulsan_state_modifier_banner"
+		textureFile = "gfx/texticons/banners/KOR/KOR_ulsan_state_modifier_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_campaign_roh_moo_hyun"
+		textureFile = "gfx/texticons/banners/KOR/KOR_three_principles_campaign_roh_moo_hyun.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_campaign_spread_truth"
+		textureFile = "gfx/texticons/banners/KOR/KOR_three_principles_campaign_spread_truth.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_campaign_national_subjectivity"
+		textureFile = "gfx/texticons/banners/KOR/KOR_three_principles_campaign_national_subjectivity.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_campaign_korean_products"
+		textureFile = "gfx/texticons/banners/KOR/KOR_three_principles_campaign_korean_products.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_campaign_one_peninsula"
+		textureFile = "gfx/texticons/banners/KOR/KOR_three_principles_campaign_one_peninsula.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_1088_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_korea_1088_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_594_a_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_korea_594_a_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_korea_594_b_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_korea_594_b_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_sejong_capital_promise_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_sejong_capital_promise_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_saemangeum_megacity_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_saemangeum_megacity_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_gwangju_complex_mall_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_gwangju_complex_mall_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_heuksan_airport_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_heuksan_airport_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_yeosu_high_value_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_yeosu_high_value_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_gunsan_logistics_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_gunsan_logistics_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_jeonbuk_finance_city_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_jeonbuk_finance_city_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_ktx_sejong_station_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_ktx_sejong_station_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_daejeon_science_capital_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_daejeon_science_capital_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_manufacturing_rebound_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_manufacturing_rebound_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_gyeonggi_semiconductor_belt_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_gyeonggi_semiconductor_belt_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_korean_rustbelt_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_korean_rustbelt_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_yeongil_ulleung_infra_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_yeongil_ulleung_infra_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_jeju_second_airport_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_jeju_second_airport_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_jeju_ai_testbed_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_jeju_ai_testbed_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_south_coast_data_centers_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_south_coast_data_centers_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_busan_global_idc_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_busan_global_idc_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_LJS_blue_marble_busan_data_zone_banner_texticon"
+		textureFile = "gfx/texticons/banners/KOR/KOR_LJS_blue_marble_busan_data_zone_banner.png"
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,3 @@
+TFRKP_project_A_available_trigger = { # DO NOT FIX IT. it will be compable with TFRKP 'Project A' submod.
+	always = no
+}

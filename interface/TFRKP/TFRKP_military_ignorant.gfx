@@ -1,0 +1,24 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_lee_military_ignorant_brain"
+		texturefile = "gfx/interface/GUI/military_ignorant/brain.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_military_ignorant_left_asset"
+		texturefile = "gfx/interface/GUI/military_ignorant/ignorance_left_asset.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_military_ignorant_right_asset"
+		texturefile = "gfx/interface/GUI/military_ignorant/ignorance_right_asset.png"
+	}
+	progressbartype = {
+		name = "GFX_KOR_lee_military_ignorant_brain_progress"
+		textureFile1 = "gfx/interface/GUI/military_ignorant/brain_ignorance.png"
+		textureFile2 = "gfx/interface/GUI/military_ignorant/brain_anti_ignorance.png"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		size = { x = 407 y = 310 }
+		effectFile = "gfx/FX/TFRKP_progress_top_down.shader"
+		horizontal = yes
+	}
+}

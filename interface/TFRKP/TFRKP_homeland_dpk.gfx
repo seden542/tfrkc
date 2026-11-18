@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_dpk_background"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_homeland_dpk_background.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_chaeng_texticon"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_homeland_chaeng_texticon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_homeland_texticon"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_homeland_homeland_texticon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_kimajoon_texticon"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_homeland_kimajoon_texticon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_moon_texticon"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_homeland_moon_texticon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_homeland_you_texticon"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_homeland_you_texticon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_pentagon_step_one"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_pentagon_step_one.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_pentagon_step_two"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_pentagon_step_two.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_pentagon_step_third"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_pentagon_step_third.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_pentagon_step_four"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_pentagon_step_four.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_pentagon_step_five"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_pentagon_step_five.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_lee_pentagon_basic_background"
+		texturefile = "gfx/interface/GUI/homeland_dpk/KOR_lee_pentagon_basic_background.png"
+	}
+}

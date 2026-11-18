@@ -1,0 +1,110 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_LJS_map_bg"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_map_bg.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_map_gyeonggi"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_gyeonggi.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LJS_map_gangwon"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_gangwon.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LJS_map_chungcheong"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_chungcheong.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LJS_map_jeolla"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_jeolla.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LJS_map_gyeongsang"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_gyeongsang.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LJS_map_jeju"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_jeju.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_LJS_icon_airport"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_airport.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_science"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_science.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_finance"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_finance.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_train"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_train.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_data"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_data.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_semiconductor"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_semiconductor.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_industry"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_industry.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_saemangeum"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_saemangeum.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_shopping"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_shopping.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_home"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_home.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_port"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_port.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_icon_capital"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_capital.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LJS_region_card"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_region_card.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_region_card_gyeonggi"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_region_card_gyeonggi.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_region_card_chungcheong"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_region_card_chungcheong.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_region_card_jeolla"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_region_card_jeolla.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_region_card_gyeongsang"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_region_card_gyeongsang.png"
+	}
+	spriteType = {
+		name = "GFX_LJS_region_card_jeju"
+		texturefile = "gfx/interface/gui/LJS_blue_marble/LJS_region_card_jeju.png"
+	}
+}

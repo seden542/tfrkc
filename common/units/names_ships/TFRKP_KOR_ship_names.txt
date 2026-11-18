@@ -1,0 +1,991 @@
+﻿KOR_DD_HISTORICAL = { #초계함(바닐라: 구축함)
+	name = NAME_THEME_TFRKP_KOR_PCC #NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer } 
+
+	prefix = "ROKS "
+	fallback_name = "ROKS PCC-%d" #Je%d Chogye-ham		
+
+	unique = {
+	}
+}	
+KOR_DD_HISTORICAL_2 = { #초계함(바닐라: 구축함)
+	name = NAME_THEME_TFRKP_KOR_PKG #NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer } 
+
+	prefix = "ROKS "
+	fallback_name = "ROKS PCC-%d" #Je%d Chogye-ham		
+
+	unique = {
+	}
+}	
+KOR_DE_HISTORICAL = { #연안초계함(바닐라: 호위구축함)
+	name = NAME_THEME_TFRKP_KOR_OPV #NAME_THEME_HISTORICAL_DE
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS OPV-%d" #Je%d Howi Guchuk-ham
+
+	unique = {
+	}
+}
+KOR_MINELAYERS_HISTORICAL = {
+	name = NAME_THEME_TFRKP_KOR_MLS #NAME_THEME_HISTORICAL_MINELAYERS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS MLS-%d" #Je%d Giluebuseol-ham
+
+	unique = {
+	}
+}
+
+KOR_CL_HISTORICAL = { #구축함(바닐라: 경순)
+	name = NAME_THEME_TFRKP_KOR_DD #NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS DD-%d" #Je%d Guchuk-ham
+
+	unique = { 
+	}
+}
+KOR_CL_HISTORICAL_2 = { #구축함(바닐라: 경순)
+	name = NAME_THEME_TFRKP_KOR_FF #NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS FF-%d" #Je%d Guchuk-ham
+
+	unique = { 
+	}
+}
+KOR_CL_HISTORICAL_3 = { #구축함(바닐라: 경순)
+	name = NAME_THEME_TFRKP_KOR_FFG #NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS FFG-%d" #Je%d Guchuk-ham
+
+	unique = { 
+		"FFG-822 Donghae" 
+		"FFG-823 Daejeon" 
+		"FFG-825 Pohang" 
+		"FFG-826 Cheonan" 
+		"FFG-827 Chuncheon" 
+		"FFG-828 Chungnam" 
+		"FFG-829 Gyeongbuk" 
+		"FFG-831 Jeonnam" 
+		"FFG-832 Daejeon" 
+		"FFG-833 Jeju" 
+		"FFG-835 Cheongju" 
+		"FFG-836 Ulsan" 
+		"FFG-837 Suwon" 
+		"FFG-838 Changwon" 
+		"FFG-839 Yongin" 
+		"FFG-841 Goyang" 
+		"FFG-842 Hwaseong" 
+		"FFG-843 Ansan" 
+		"FFG-845 Pyeongtaek" 
+		"FFG-846 Jeonju" 
+		"FFG-847 Bucheon" 
+		"FFG-848 Seongnam" 
+		"FFG-849 Namyangju" 
+		"FFG-851 Siheung" 
+		"FFG-852 Paju" 
+		"FFG-853 Gimpo" 
+		"FFG-855 Gimhae" 
+		"FFG-856 Hwanghae" 
+		"FFG-857 Hamnam" 
+		"FFG-858 Hambuk" 
+		"FFG-859 Pyeongnam" 
+		"FFG-861 Pyeongbuk" 
+		"FFG-862 Pyeongyang" 
+		"FFG-863 Nampo" 
+		"FFG-865 Gaeseong" 
+		"FFG-866 Najin" 
+		"FFG-867 Wonsan" 
+		"FFG-868 Haeju" 
+		"FFG-869 Sinuiju" 
+		"FFG-871 Heungnam" 
+		"FFG-872 Hamheung" 
+		"FFG-873 Cheongjin" 
+		"FFG-875 Anju" 
+		"FFG-876 Sariwon" 
+		"FFG-877 Suncheon" 
+		"FFG-878 Ganggye" 
+		"FFG-879 Hyesan" 
+		"FFG-881 Asan" 
+		"FFG-882 Hongseong"
+		"FFG-883"
+		"FFG-885"
+		"FFG-886"
+		"FFG-887"
+		"FFG-888"
+		"FFG-889"
+		"FFG-891"
+		"FFG-892"
+		"FFG-893"
+		"FFG-895"
+		"FFG-896"
+		"FFG-897"
+		"FFG-898"
+		"FFG-899"
+		"FFG-901"
+		"FFG-902"
+		"FFG-903"
+		"FFG-905"
+		"FFG-906"
+		"FFG-907"
+		"FFG-908"
+		"FFG-909"
+		"FFG-911"
+		"FFG-912"
+		"FFG-913"
+		"FFG-915"
+		"FFG-916"
+		"FFG-917"
+		"FFG-918"
+		"FFG-919"
+		"FFG-921"
+		"FFG-922"
+		"FFG-923"
+		"FFG-925"
+		"FFG-926"
+		"FFG-927"
+		"FFG-928"
+		"FFG-929"
+		"FFG-931"
+		"FFG-932"
+		"FFG-933"
+		"FFG-935"
+		"FFG-936"
+		"FFG-937"
+		"FFG-938"
+		"FFG-939"
+		"FFG-951"
+		"FFG-952"
+		"FFG-953"
+		"FFG-955"
+		"FFG-956"
+		"FFG-957"
+		"FFG-958"
+		"FFG-959"
+		"FFG-961"
+		"FFG-962"
+		"FFG-963"
+		"FFG-965"
+		"FFG-966"
+		"FFG-967"
+		"FFG-968"
+		"FFG-969"
+		"FFG-971"
+		"FFG-972"
+		"FFG-973"
+		"FFG-975"
+		"FFG-976"
+		"FFG-977"
+		"FFG-978"
+		"FFG-979"
+		"FFG-981"
+		"FFG-982"
+		"FFG-983"
+		"FFG-985"
+		"FFG-986"
+		"FFG-987"
+		"FFG-988"
+		"FFG-989"
+		"FFG-991"
+		"FFG-992"
+		"FFG-993"
+	}
+}
+KOR_CA_HISTORICAL = { #구축함(바닐라: 중순)
+	name = NAME_THEME_TFRKP_KOR_DDG #NAME_THEME_HISTORICAL_CA
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS DDG-%d" #Je%d Aegis Guchuk-ham
+
+	unique = { 
+		"DDG-995 Jeongjo the Great" 
+		"DDG-996 Dasan Jeong Yak-yong" 
+		"DDG-997 Kim Yu-sin" 
+		"DDG-998 Kim Gwan-chang" 
+		"DDG-999 Chungjanggong Gwon Yul" 
+		"DDG-1001 Gwak Jae-u" 
+		"DDG-1002 Chungmugong Kim Si-min" 
+		"DDG-1003 Taejo Yi Seong-gye" 
+		"DDG-1005 Taejong Yi Bang-won" 
+		"DDG-1006 King Geunchogo" 
+		"DDG-1007 King Taejong Muyeol" 
+		"DDG-1008 King Sinmun" 
+		"DDG-1009 Jeong Mong-ju" 
+		"DDG-1011 Isabu" 
+		"DDG-1012 Kim Yun-hu" 
+		"DDG-1013 Uiyeolgong Yi Ja-seong" 
+		"DDG-1015 Yangmugong Jeong Bong-su"	
+		"DDG-1016"
+		"DDG-1017"
+		"DDG-1018"
+		"DDG-1019"
+		"DDG-1021"
+		"DDG-1022"
+		"DDG-1023"
+		"DDG-1025"
+		"DDG-1026"
+		"DDG-1027"
+		"DDG-1028"
+		"DDG-1029"
+		"DDG-1031"
+		"DDG-1032"
+		"DDG-1033"
+		"DDG-1035"
+		"DDG-1036"
+		"DDG-1037"
+		"DDG-1038"
+		"DDG-1039"
+		"DDG-1051"
+		"DDG-1052"
+		"DDG-1053"
+		"DDG-1055"
+		"DDG-1056"
+		"DDG-1057"
+		"DDG-1058"
+		"DDG-1059"
+		"DDG-1061"
+		"DDG-1062"
+		"DDG-1063"
+		"DDG-1065"
+		"DDG-1066"
+		"DDG-1067"
+		"DDG-1068"
+		"DDG-1069"
+		"DDG-1071"
+		"DDG-1072"
+		"DDG-1073"
+		"DDG-1075"
+		"DDG-1076"
+		"DDG-1077"
+		"DDG-1078"
+		"DDG-1079"
+		"DDG-1081"
+		"DDG-1082"
+		"DDG-1083"
+		"DDG-1085"
+		"DDG-1086"
+		"DDG-1087"
+		"DDG-1088"
+		"DDG-1089"
+		"DDG-1091"
+		"DDG-1092"
+		"DDG-1093"
+		"DDG-1095"
+		"DDG-1096"
+		"DDG-1097"
+		"DDG-1098"
+		"DDG-1099"		
+	}
+}
+KOR_CA_HISTORICAL_2 = { #구축함(바닐라: 중순)
+	name = NAME_THEME_TFRKP_KOR_DDH #NAME_THEME_HISTORICAL_CA
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS DDH-%d" #Je%d Aegis Guchuk-ham
+
+	unique = { 
+	}
+}
+KOR_CG_HISTORICAL = { #순양함(바닐라: 전함)
+	name = NAME_THEME_TFRKP_KOR_CG
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS CG-%d" #Je%d Aegis Guchuk-ham
+
+	unique = { 
+		"CG-1101 Duman" 
+		"CG-1102 Nakdong" 
+		"CG-1103 Geumgang" 
+		"CG-1105 Yeongsan" 
+		"CG-1106 Seomjin" 
+		"CG-1107 Daedong" 
+		"CG-1108 Amnok" 
+		"CG-1109 Imjin" 
+		"CG-1111 Hangang" 
+		"CG-1112 Yeseong"
+		"CG-1113"
+		"CG-1115"
+		"CG-1116"
+		"CG-1117"
+		"CG-1118"
+		"CG-1119"
+		"CG-1121"
+		"CG-1122"
+		"CG-1123"
+		"CG-1125"
+		"CG-1126"
+		"CG-1127"
+		"CG-1128"
+		"CG-1129"
+		"CG-1131"
+		"CG-1132"
+		"CG-1133"
+		"CG-1135"
+		"CG-1136"
+		"CG-1137"
+		"CG-1138"
+		"CG-1139"
+		"CG-1151"
+		"CG-1152"
+		"CG-1153"
+		"CG-1155"
+		"CG-1156"
+		"CG-1157"
+		"CG-1158"
+		"CG-1159"
+		"CG-1161"
+		"CG-1162"
+		"CG-1163"
+		"CG-1165"
+		"CG-1166"
+		"CG-1167"
+		"CG-1168"
+		"CG-1169"
+		"CG-1171"
+		"CG-1172"
+		"CG-1173"
+		"CG-1175"
+		"CG-1176"
+		"CG-1177"
+		"CG-1178"
+		"CG-1179"
+		"CG-1181"
+		"CG-1182"
+		"CG-1183"
+		"CG-1185"
+		"CG-1186"
+		"CG-1187"
+		"CG-1188"
+		"CG-1189"
+		"CG-1191"
+		"CG-1192"
+		"CG-1193"
+		"CG-1195"
+		"CG-1196"
+		"CG-1197"
+		"CG-1198"
+		"CG-1199"
+		"CG-1201"
+		"CG-1202"
+		"CG-1203"
+		"CG-1205"
+		"CG-1206"
+		"CG-1207"
+		"CG-1208"
+		"CG-1209"
+		"CG-1211"
+		"CG-1212"
+		"CG-1213"
+		"CG-1215"
+		"CG-1216"
+		"CG-1217"
+		"CG-1218"
+		"CG-1219"
+		"CG-1221"
+		"CG-1222"
+		"CG-1223"
+		"CG-1225"
+		"CG-1226"
+		"CG-1227"
+		"CG-1228"
+		"CG-1229"
+		"CG-1231"
+		"CG-1232"
+		"CG-1233"
+		"CG-1235"
+		"CG-1236"
+		"CG-1237"
+		"CG-1238"
+		"CG-1239"
+		"CG-1251"
+		"CG-1252"
+		"CG-1253"
+		"CG-1255"
+		"CG-1256"
+		"CG-1257"
+		"CG-1258"
+		"CG-1259"
+		"CG-1261"
+		"CG-1262"
+		"CG-1263"
+		"CG-1265"
+		"CG-1266"
+		"CG-1267"
+		"CG-1268"
+		"CG-1269"
+		"CG-1271"
+		"CG-1272"
+		"CG-1273"
+		"CG-1275"
+		"CG-1276"
+		"CG-1277"		
+	}
+}
+KOR_CB_HISTORICAL = { #순양전함(바닐라: 초중전함)
+	name = NAME_THEME_TFRKP_KOR_CB
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS CB-%d" #Je%d Aegis Guchuk-ham
+
+	unique = { 
+		"CB-101 Dangun" 
+		"CB-102 Wanggeom" 
+		"CB-103 Hwanung" 
+		"CB-105 Hwanin" 
+		"CB-106 Sindansu" 
+		"CB-107 Ungnyeo"
+		"CB-108"
+		"CB-109"
+		"CB-111"
+		"CB-112"
+		"CB-113"
+		"CB-115"
+		"CB-116"
+		"CB-117"
+		"CB-118"
+		"CB-119"
+		"CB-121"
+		"CB-122"
+		"CB-123"
+		"CB-125"
+		"CB-126"
+		"CB-127"
+		"CB-128"
+		"CB-129"
+		"CB-131"
+		"CB-132"
+		"CB-133"
+		"CB-135"
+		"CB-136"
+		"CB-137"
+		"CB-138"
+		"CB-139"
+		"CB-151"
+		"CB-152"
+		"CB-153"
+		"CB-155"
+		"CB-156"
+		"CB-157"
+		"CB-158"
+		"CB-159"
+		"CB-161"
+		"CB-162"
+		"CB-163"
+		"CB-165"
+		"CB-166"
+		"CB-167"
+		"CB-168"
+		"CB-169"
+		"CB-171"
+		"CB-172"
+		"CB-173"
+		"CB-175"
+		"CB-176"
+		"CB-177"
+		"CB-178"
+		"CB-179"
+		"CB-181"
+		"CB-182"
+		"CB-183"
+		"CB-185"
+		"CB-186"
+		"CB-187"
+		"CB-188"
+		"CB-189"
+		"CB-191"
+		"CB-192"
+		"CB-193"
+		"CB-195"
+		"CB-196"
+		"CB-197"
+		"CB-198"
+		"CB-199"
+	}
+}
+
+KOR_BB_HISTORICAL = { #전함
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS BB-%d" #Je%d Jeon-ham		
+
+	unique = {
+	}
+}
+
+KOR_CV_HISTORICAL = { #항공모함
+	name = NAME_THEME_TFRKP_KOR_CV #NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS CV-%d" #Je%d Hanggong Mo-ham
+
+	unique = {
+		"CV-001 Baekdusan" 
+		"CV-002 Hallasan" 
+		"CV-003 Geumgangsan" 
+		"CV-005 Jirisan" 
+		"CV-006 Seoraksan" 
+		"CV-007 Myohyangsan"
+		"CV-008"
+		"CV-009"
+		"CV-011"
+		"CV-012"
+		"CV-013"
+		"CV-015"
+		"CV-016"
+		"CV-017"
+		"CV-018"
+		"CV-019"
+		"CV-021"
+		"CV-022"
+		"CV-023"
+		"CV-025"
+		"CV-026"
+		"CV-027"
+		"CV-028"
+		"CV-029"
+		"CV-031"
+		"CV-032"
+		"CV-033"
+		"CV-035"
+		"CV-036"
+		"CV-037"
+		"CV-038"
+		"CV-039"
+		"CV-051"
+		"CV-052"
+		"CV-053"
+		"CV-055"
+		"CV-056"
+		"CV-057"
+		"CV-058"
+		"CV-059"
+		"CV-061"
+		"CV-062"
+		"CV-063"
+		"CV-065"
+		"CV-066"
+		"CV-067"
+		"CV-068"
+		"CV-069"
+		"CV-071"
+		"CV-072"
+		"CV-073"
+		"CV-075"
+		"CV-076"
+		"CV-077"
+		"CV-078"
+		"CV-079"
+		"CV-081"
+		"CV-082"
+		"CV-083"
+		"CV-085"
+		"CV-086"
+		"CV-087"
+		"CV-088"
+		"CV-089"
+		"CV-091"
+		"CV-092"
+		"CV-093"
+		"CV-095"
+		"CV-096"
+		"CV-097"
+		"CV-098"
+		"CV-099"
+		"CV-101"
+		"CV-102"
+		"CV-103"
+		"CV-105"
+		"CV-106"
+		"CV-107"
+		"CV-108"
+		"CV-109"
+		"CV-111"
+		"CV-112"
+		"CV-113"
+		"CV-115"
+		"CV-116"
+		"CV-117"
+		"CV-118"
+		"CV-119"
+		"CV-121"
+		"CV-122"
+		"CV-123"
+		"CV-125"
+		"CV-126"
+		"CV-127"
+		"CV-128"
+		"CV-129"
+		"CV-131"
+		"CV-132"
+		"CV-133"
+		"CV-135"
+		"CV-136"
+		"CV-137"
+		"CV-138"
+		"CV-139"
+		"CV-151"
+		"CV-152"
+		"CV-153"
+		"CV-155"
+		"CV-156"
+		"CV-157"
+		"CV-158"
+		"CV-159"
+		"CV-161"
+		"CV-162"
+		"CV-163"
+		"CV-165"
+		"CV-166"
+		"CV-167"
+		"CV-168"
+		"CV-169"
+		"CV-171"
+		"CV-172"
+		"CV-173"
+		"CV-175"
+		"CV-176"
+		"CV-177"
+		"CV-178"
+		"CV-179"
+		"CV-181"
+		"CV-182"
+		"CV-183"
+		"CV-185"
+		"CV-186"
+		"CV-187"
+		"CV-188"
+		"CV-189"
+		"CV-191"
+		"CV-192"
+		"CV-193"
+		"CV-195"
+		"CV-196"
+		"CV-197"
+		"CV-198"
+		"CV-199"
+	}
+}
+
+KOR_CVL_HISTORICAL = { #헬기항모(바닐라: 경항공모함)
+	name = NAME_THEME_TFRKP_KOR_LPH #NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS LPH-%d" #Je%d Helicopter Hangmo
+
+	unique = {
+		"LPH-6113 Baengnyeongdo" 
+		"LPH-6115 Ulleungdo" 
+		"LPH-6116 Geojedo" 
+		"LPH-6117 Ganghwado" 
+		"LPH-6118 Chujado" 
+		"LPH-6119 Geomundo"
+		"LPH-6121"
+		"LPH-6122"
+		"LPH-6123"
+		"LPH-6125"
+		"LPH-6126"
+		"LPH-6127"
+		"LPH-6128"
+		"LPH-6129"
+		"LPH-6131"
+		"LPH-6132"
+		"LPH-6133"
+		"LPH-6135"
+		"LPH-6136"
+		"LPH-6137"
+		"LPH-6138"
+		"LPH-6139"
+		"LPH-6151"
+		"LPH-6152"
+		"LPH-6153"
+		"LPH-6155"
+		"LPH-6156"
+		"LPH-6157"
+		"LPH-6158"
+		"LPH-6159"
+		"LPH-6161"
+		"LPH-6162"
+		"LPH-6163"
+		"LPH-6165"
+		"LPH-6166"
+		"LPH-6167"
+		"LPH-6168"
+		"LPH-6169"
+		"LPH-6171"
+		"LPH-6172"
+		"LPH-6173"
+		"LPH-6175"
+		"LPH-6176"
+		"LPH-6177"
+		"LPH-6178"
+		"LPH-6179"
+		"LPH-6181"
+		"LPH-6182"
+		"LPH-6183"
+		"LPH-6185"
+		"LPH-6186"
+		"LPH-6187"
+		"LPH-6188"
+		"LPH-6189"
+		"LPH-6191"
+		"LPH-6192"
+		"LPH-6193"
+		"LPH-6195"
+		"LPH-6196"
+		"LPH-6197"
+		"LPH-6198"
+		"LPH-6199"		
+	}
+}
+
+### 잠수함 ###
+KOR_SS_HISTORICAL = {
+	name = NAME_THEME_TFRKP_KOR_SS
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS SS-%d"
+	
+	unique = {
+		"SS-085 An Mu" 
+		"SS-086 Sin Chae-ho" 
+		"SS-087 Jang Yeong-sil" 
+		"SS-088 Yi Yuk-sa" 
+		"SS-089 No Baek-rin" 
+		"SS-091 Jeon Bongjun" 
+		"SS-092 Jo So-ang" 
+		"SS-093 Han Yong-un" 
+		"SS-095 Yeo Woon-hyung" 
+		"SS-096 O Dong-jin" 
+		"SS-097 Son Byeong-hui" 
+		"SS-098 Seo Jae-pil" 
+		"SS-099 Kim Ok-gyun"
+		"SS-501"
+		"SS-502"
+		"SS-503"
+		"SS-505"
+		"SS-506"
+		"SS-507"
+		"SS-508"
+		"SS-509"
+		"SS-511"
+		"SS-512"
+		"SS-513"
+		"SS-515"
+		"SS-516"
+		"SS-517"
+		"SS-518"
+		"SS-519"
+		"SS-521"
+		"SS-522"
+		"SS-523"
+		"SS-525"
+		"SS-526"
+		"SS-527"
+		"SS-528"
+		"SS-529"
+		"SS-531"
+		"SS-532"
+		"SS-533"
+		"SS-535"
+		"SS-536"
+		"SS-537"
+		"SS-538"
+		"SS-539"
+		"SS-551"
+		"SS-552"
+		"SS-553"
+		"SS-555"
+		"SS-556"
+		"SS-557"
+		"SS-558"
+		"SS-559"
+		"SS-561"
+		"SS-562"
+		"SS-563"
+		"SS-565"
+		"SS-566"
+		"SS-567"
+		"SS-568"
+		"SS-569"
+		"SS-571"
+		"SS-572"
+		"SS-573"
+		"SS-575"
+		"SS-576"
+		"SS-577"
+		"SS-578"
+		"SS-579"
+		"SS-581"
+		"SS-582"
+		"SS-583"
+		"SS-585"
+		"SS-586"
+		"SS-587"
+		"SS-588"
+		"SS-589"
+		"SS-591"
+		"SS-592"
+		"SS-593"
+		"SS-595"
+		"SS-596"
+		"SS-597"
+		"SS-598"
+		"SS-599"
+	}
+}
+
+KOR_SSBN_HISTORICAL = {
+	name = NAME_THEME_TFRKP_KOR_SSBN
+
+	for_countries = { KOR }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "ROKS "
+	fallback_name = "ROKS SSBN-%d"
+	
+	unique = {
+		"SSBN-001 Yi Bongchang" 
+		"SSBN-002 Kim Koo" 
+		"SSBN-003 Kim Kyu-sik" 
+		"SSBN-004 Kim Sang-ohk" 
+		"SSBN-005 Lee Sang-seol" 
+		"SSBN-006 Yi Wi-jong" 
+		"SSBN-007 Ju Si-gyeong" 
+		"SSBN-008 Bak Eun-sik" 
+		"SSBN-009 " 
+		"SSBN-010 " 
+		"SSBN-011 " 
+		"SSBN-012 " 
+		"SSBN-013 "
+		"SSBN-014"
+		"SSBN-015"
+		"SSBN-016"
+		"SSBN-017"
+		"SSBN-018"
+		"SSBN-019"
+		"SSBN-020"
+		"SSBN-021"
+		"SSBN-022"
+		"SSBN-023"
+		"SSBN-024"
+		"SSBN-025"
+		"SSBN-026"
+		"SSBN-027"
+		"SSBN-028"
+		"SSBN-029"
+		"SSBN-030"
+		"SSBN-031"
+		"SSBN-032"
+		"SSBN-033"
+		"SSBN-034"
+		"SSBN-035"
+		"SSBN-036"
+		"SSBN-037"
+		"SSBN-038"
+		"SSBN-039"
+		"SSBN-040"
+		"SSBN-041"
+		"SSBN-042"
+		"SSBN-043"
+		"SSBN-044"
+		"SSBN-045"
+		"SSBN-046"
+		"SSBN-047"
+		"SSBN-048"
+		"SSBN-049"
+		"SSBN-050"
+	}
+}
+
+KOR_RIVER_MOUNTAIN = {
+	name = NAME_KOR_MOUNTAIN
+
+	for_countries = { KOR }
+
+	prefix = "ROKS "
+	type = ship
+
+	unique = {
+		"Paektu" "Halla" "Kumgang" "Myohyang" "T'aebaek" "Sorak" "Chiri" "Paegun" "Kaji" "Ogye" "Pongnae" "Kohon" "Ori" "Pongje" "Komma" "Osong" "Ponghwa" "Nungdong" "Woryo" "Pukhan" "Puram" "Pohyon" "Yudal" "Namhan" "Sonun" "Pisul" "Mani" "Pugak" "Songni" "Yongch'uk" "Illung" "Sobaek" "Surak" "Unmun" "Chungmi" "Odae" "Yonhwa" "Ch'oejong" "Ch'ongdae" "Obong" "T'onggo" "Homyong" "Hwangnyong" "Yongma" "Hambaek" "Ilja" "Mai" "Yongmun" "Hwawang" "Kyebang" "Songak" "Umyon" "Suri" "Chobong" "Soyo" "Umi" "Yonin" "Kaya" "Worak" "Unak" "Sanhwang" "Kyeryong" "Wolch'ul" "Illung" "Yongju" "Yumyong" "Myongji" "Pongdae" "Mudung" "Chogye" "Samak" "Taedok" "Inwang" "Chuwang" "Huksong" "Paengnyon" "Kwanak" "Chongbal" "Munsu" "Ch'onjang" "Kamak" "Ch'on'gwan" "Chuhul" "Yongch'uk" "Kyeyang" "Kungmang" "Kach'il" "Parae" "Munsu" "Sonja" "Yongmun" "Ungbok" "Koyang" "P'algong" "Nambyong" "Nomok" "Toktu" "Myojok" "Songnyong" "Paekchok" "Obong" "Odo" "Pigye" "Unjang" "Tokko" "Tosol" "Ch'oktae" "Pohyon" "Yongindung" "Nunggyong" "Kyonch'i" "Mindung" "Sangun" "Chiok" "Sumi" "Taemi" "Songje" "Hyongje" "Tokt'ae" "Hwangak" "Hwangmae" "Chuhul" "Medumak" "Ungsok" "Undal" "Maebong" "Worak" "Woram" "Sagum" "Manggyongdae" "Paegun" "Ch'onji" "Maehwa" "Pisul" "Kakhui" "Sonmi" "Hwangjang" "Munbok" "Tokhang" "Kanwol" "Hwaran" "Yonin" "T'onggo" "Mogu" "Orae" "Paekhwa" "Ch'wiso" "Songni" "Pokkye" "Sokpyong" "Madae" "Kari" "Kwangdok" "Udu" "Uisang" "Hyangno" "Changgun" "Kwimok" "Tumu" "Kohon" "Sahyang" "Kodu" "Choksang" "Hasol" "Hoemok" "Choryong" "Pongbok" "Kittae" "Sungdu" "Sillo" "Mullye" "Soktu" "Iman" "Posok" "Sipcha" "Songin" "Sisal" "Paektun" "Sinson" "Paenae" "Songju" "Yongsan" "Sinsonam" "Mayok" "Sanghae" "Mangdok" "Kama" "Kamaksam" "Map'ae" "Pyogam" "Pyongmu" "Siru" "Changsong" "Ssangdu" "Ch'onhwang" "Samgak" "Tokchu" "Yongam" "Sinson" "Saettung" "Kuwang" "Chuhaeng" "Makchang" "Ungbong" "Toil" "Kkoktu" "Samgang" "Worhangsam" "Akhwi" "Suri" "Memil" "Ch'onju" "Kakhul" "Changam" "Kamam" "Tungjan" "Sokhwa" "Chungmi" "Kodae" "Muhak" "Panam" "Pomam" "Sori" "Onggang" "Chungdae" "Hoemun" "Tojang" "Kumgwi" "Tansok" "Paktal" "Odu" "Tungji" "Pyongp'ung" "Songhak" "Ch'onsam" "Yomsu" "Sonam" "Chugum" "Noeam" "Tunch'ol" "Ch'onsong" "Paega" "Ojong" "Ch'ilbo" "Wolch'ul" "Pugam" "Cheam" "Ch'ondung" "Kapchang" "Maebong" "Pugwi" "Unju" "Hwain" "Chongsung" "Kumjong" "Pulmo" "Paktal" "Chungwon" "Waryong" "Sudok" "Moak" "Tongdae" "Songji" "Oso" "Odap" "Kuman" "Mangun" "Kalgyong" "Nunggol" "Pakchwi" "Tokchol" "Myonwi" "Pogae" "Kyemyong" "Yonyop" "Kari" "Kummul" "Yobun" "Pobae" "Agi" "Chijang" "Chaksong" "Kungmang" "Chagyak"  "Kamt'u" "Kumdan" "Poryon" "Ch'isul" "T'ongmyong" "Hanu" "Naejang" "Mandok" "Pihak" "P'arum" "Paengnyon" "Sonya" "Misung" "Hwawang" "Sonui" "Maebong" "Hwaya" "Pongdu" "Kujol" "Nagyong" "Kwallyong" "Chungbong" "Palgol" "Sobuk" "Yongch'wi" "Wangbang" "Kyegwan" "Kilmae" "Tongak" "Kwanum" "Tuak" "Chillak" "Kuksa" "Obi" "Noak" "Noum" "Ch'on'gwan" "Chebi" "Chuwang" "Kwangnyo" "Songju" "Yangja" "Malmok" "Kori" "Kiyang" "Tokka" "Taegum" "Turyun" "Chongjok" "Ch'opp'u" 
+ 	}
+}
+

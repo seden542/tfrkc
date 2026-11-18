@@ -1,0 +1,8 @@
+TFRKC_category = {
+ TFRKC_buildup_preview = {
+  icon = GFX_decision_generic_political_reform cost = 0
+  visible = { tag = KOR has_game_rule = { rule = TFRKC_development option = TFRKC_test_on } }
+  available = { always = yes } ai_will_do = { factor = 0 }
+  complete_effect = { country_event = { id = tfrkc_buildup_preview.1 } }
+ }
+}

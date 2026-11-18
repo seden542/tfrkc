@@ -1,0 +1,140 @@
+scripted_gui = {
+	start_menu = {
+		context_type = player_context
+		window_name = "startup_menu_"
+		visible = {
+			is_ai = no
+			check_variable = { show_up = 0 }
+		}
+		triggers = {
+			mod_info_click_enabled = {
+				check_variable = { show_up_info = 0 }
+			}
+			unit_balance_click_enabled = {
+				check_variable = { show_up_unit = 0 }
+			}
+			money_system_click_enabled = {
+				check_variable = { show_up_money = 0 }
+			}
+			credit_click_enabled = {
+				check_variable = { show_up_credit = 0 }
+			}
+			country_info_click_enabled = {
+				check_variable = { show_up_country = 0 }
+			}
+		}
+		effects = {
+			exitdbutton_start_click = {
+				set_variable = { show_up = 1 }
+			}
+			mod_info_click = {
+				set_variable = { show_up_info = 1 }
+				set_variable = { show_up_unit = 0 }
+				set_variable = { show_up_money = 0 }
+				set_variable = { show_up_credit = 0 }
+				set_variable = { show_up_country = 0 }
+			}
+			unit_balance_click = {
+				set_variable = { show_up_info = 0 }
+				set_variable = { show_up_unit = 1 }
+				set_variable = { show_up_money = 0 }
+				set_variable = { show_up_credit = 0 }
+				set_variable = { show_up_country = 0 }
+			}
+			money_system_click = {
+				set_variable = { show_up_info = 0 }
+				set_variable = { show_up_unit = 0 }
+				set_variable = { show_up_money = 1 }
+				set_variable = { show_up_credit = 0 }
+				set_variable = { show_up_country = 0 }
+			}
+			credit_click = {
+				set_variable = { show_up_info = 0 }
+				set_variable = { show_up_unit = 0 }
+				set_variable = { show_up_money = 0 }
+				set_variable = { show_up_credit = 1 }
+				set_variable = { show_up_country = 0 }
+			}
+			country_info_click = {
+				set_variable = { show_up_info = 0 }
+				set_variable = { show_up_unit = 0 }
+				set_variable = { show_up_money = 0 }
+				set_variable = { show_up_credit = 0 }
+				set_variable = { show_up_country = 1 }
+			}
+		}
+	}
+	mod_info_start = {
+		parent_window_name = startup_menu_
+		context_type = player_context
+		window_name = "mod_info_container"
+		ai_enabled = { always = no }
+		visible = {
+			is_ai = no
+			check_variable = { show_up_info = 1 }
+		}
+	}
+	mod_unit_start = {
+		parent_window_name = startup_menu_
+		context_type = player_context
+		window_name = "mod_unit_container"
+		ai_enabled = { always = no }
+		visible = {
+			is_ai = no
+			check_variable = { show_up_unit = 1 }
+		}
+	}
+	mod_money_start = {
+		parent_window_name = startup_menu_
+		context_type = player_context
+		window_name = "money_system_container"
+		ai_enabled = { always = no }
+		visible = {
+			is_ai = no
+			check_variable = { show_up_money = 1 }
+		}
+	}
+	mod_credit_start = {
+		parent_window_name = startup_menu_
+		context_type = player_context
+		window_name = "credits_container"
+		ai_enabled = { always = no }
+		visible = {
+			is_ai = no
+			check_variable = { show_up_credit = 1 }
+		}
+	}
+	mod_country_info_start = {
+		parent_window_name = startup_menu_
+		context_type = player_context
+		window_name = "country_info_container"
+		ai_enabled = { always = no }
+		visible = {
+			is_ai = no
+			check_variable = { show_up_country = 1 }
+		}
+		properties = { 
+			poster = { image = "[GET_BACKGROUND]" }
+		}
+		triggers = {
+			JAP_info_special_visible = { tag = JAP }
+			KOR_info_special_visible = { always = no }
+		}
+	}
+	open_startup_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "open_startup_screen_container"
+		ai_enabled = { always = no }
+		triggers = { 
+			open_startup_screen_button_click_enabled = { 
+				check_variable = { show_up = 1 }
+			}
+		}
+		effects = { 
+			open_startup_screen_button_click = { 
+				set_variable = { show_up = 0 }
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+technologies = {
+
+
+	tech_winter_infantry = {
+		research_cost = 1
+
+		allow = { always = no } #only added by effect
+
+		on_research_complete = {
+			custom_effect_tooltip = tech_winter_infantry_terrain_effect #TODO: remove if tech_effect terrain tooltips are fixed
+		}
+		show_effect_as_desc = yes
+
+		category_army = {
+			acclimatization_cold_climate_gain_factor = 0.10
+
+			hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+	}
+
+
+
+
+
+
+}

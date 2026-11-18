@@ -1,0 +1,26 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_military_national_council_of_unification_container"
+		clipping = no
+		size = { width = 0 height = 320 }
+
+		containerWindowType = {
+			name = "KOR_ncfu_real_container"
+			position = { x = 10 y = -15 }
+			iconType = {
+				name = "KOR_ncfu_sits"
+				quadTextureSprite = "GFX_KOR_military_ncfu_sits"
+				position = { x = 0 y = 11 }
+				#alwaystransparent = yes
+				pdx_tooltip = KOR_ncfu_sits_tt
+			}
+			iconType = {
+				name = "KOR_ncfu_logo"
+				quadTextureSprite = "GFX_KOR_military_ncfu_icon"
+				position = { x = 203 y = 220 }
+				pdx_tooltip = KOR_ncfu_logo_tt
+			}
+		}	
+    }
+}
+

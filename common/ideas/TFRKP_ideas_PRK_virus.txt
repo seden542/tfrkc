@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		PRK_epidemic_supply_requisition_disruption = {
+			picture = PRK_national_economic_reconstruction_dynamic
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+			}
+		}
+		PRK_military_medical_units_deployment_strain = {
+			picture = PRK_march_forward_korean_peoples_army_dynamic
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_org_regain = -0.05
+			}
+		}
+		PRK_koryo_medicine_production_disruption = {
+			picture = PRK_national_economic_reconstruction_dynamic
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+	}
+}

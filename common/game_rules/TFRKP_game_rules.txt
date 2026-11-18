@@ -1,0 +1,361 @@
+###########################
+###########################
+## TFRKP Custom Game Rules
+###########################
+###########################
+
+### Yoon Path ###
+# Happy Yoon
+TFRKP_2022_president_election = {
+	name = "TFRKP_2022_president_election"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2022_president_election_yoon
+		text = "TFRKP_2022_president_election_yoon_TXT"
+		desc = "TFRKP_2022_president_election_yoon_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2022_president_election_lee
+		text = "TFRKP_2022_president_election_lee_TXT"
+		desc = "TFRKP_2022_president_election_lee_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+TFRKP_2027_president_election_yoon = {
+	name = "TFRKP_2027_president_election_yoon"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_2027_president_election_yoon_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2027_president_election_yoon_1
+		text = "TFRKP_2027_president_election_yoon_1_TXT"
+		desc = "TFRKP_2027_president_election_yoon_1_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2027_president_election_yoon_2
+		text = "TFRKP_2027_president_election_yoon_2_TXT"
+		desc = "TFRKP_2027_president_election_yoon_2_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2027_president_election_yoon_3
+		text = "TFRKP_2027_president_election_yoon_3_TXT"
+		desc = "TFRKP_2027_president_election_yoon_3_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2027_president_election_yoon_4
+		text = "TFRKP_2027_president_election_yoon_4_TXT"
+		desc = "TFRKP_2027_president_election_yoon_4_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+TFRKP_2032_president_election_yoon = {
+	name = "TFRKP_2032_president_election_yoon"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_2032_president_election_yoon_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2032_president_election_yoon_1
+		text = "TFRKP_2032_president_election_yoon_1_TXT"
+		desc = "TFRKP_2032_president_election_yoon_1_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2032_president_election_yoon_2
+		text = "TFRKP_2032_president_election_yoon_2_TXT"
+		desc = "TFRKP_2032_president_election_yoon_2_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_2032_president_election_yoon_3
+		text = "TFRKP_2032_president_election_yoon_3_TXT"
+		desc = "TFRKP_2032_president_election_yoon_3_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Martial Yoon
+TFRKP_martial_law_yoon = {
+	name = "TFRKP_martial_law_yoon"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_martial_law_yoon_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_martial_law_yoon_fail
+		text = "TFRKP_martial_law_yoon_fail_TXT"
+		desc = "TFRKP_martial_law_yoon_fail_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_martial_law_yoon_success
+		text = "TFRKP_martial_law_yoon_success_TXT"
+		desc = "TFRKP_martial_law_yoon_success_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+### Lee Path ###
+# Before Cross-Strait War
+TFRKP_lee_intervene_to_taiwan = {
+	name = "TFRKP_lee_intervene_to_taiwan"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_intervene_to_taiwan_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_intervene_to_taiwan_go
+		text = "TFRKP_lee_intervene_to_taiwan_go_TXT"
+		desc = "TFRKP_lee_intervene_to_taiwan_go_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_intervene_to_taiwan_neutral
+		text = "TFRKP_lee_intervene_to_taiwan_neutral_TXT"
+		desc = "TFRKP_lee_intervene_to_taiwan_neutral_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# War Win - Happy Lee
+TFRKP_lee_happy_2032_president_election = {
+	name = "TFRKP_lee_happy_2032_president_election"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_happy_2032_president_election_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_happy_2032_president_election_park_chandae
+		text = "TFRKP_lee_happy_2032_president_election_park_chandae_TXT"
+		desc = "TFRKP_lee_happy_2032_president_election_park_chandae_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_happy_2032_president_election_chong_won_oh
+		text = "TFRKP_lee_happy_2032_president_election_chong_won_oh_TXT"
+		desc = "TFRKP_lee_happy_2032_president_election_chong_won_oh_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# War Win - Nothing do
+TFRKP_lee_nothing_ppp_pp_big_tent = {
+	name = "TFRKP_lee_nothing_ppp_pp_big_tent"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_nothing_ppp_pp_big_tent_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_nothing_ppp_pp_big_tent_accept
+		text = "TFRKP_lee_nothing_ppp_pp_big_tent_accept_TXT"
+		desc = "TFRKP_lee_nothing_ppp_pp_big_tent_accept_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_nothing_ppp_pp_big_tent_deny
+		text = "TFRKP_lee_nothing_ppp_pp_big_tent_deny_TXT"
+		desc = "TFRKP_lee_nothing_ppp_pp_big_tent_deny_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+TFRKP_lee_nothing_choguk_baseball_winner = {
+	name = "TFRKP_lee_nothing_choguk_baseball_winner"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_nothing_choguk_baseball_winner_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_nothing_choguk_baseball_winner_dpk
+		text = "TFRKP_lee_nothing_choguk_baseball_winner_dpk_TXT"
+		desc = "TFRKP_lee_nothing_choguk_baseball_winner_dpk_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_nothing_choguk_baseball_winner_ppp
+		text = "TFRKP_lee_nothing_choguk_baseball_winner_ppp_TXT"
+		desc = "TFRKP_lee_nothing_choguk_baseball_winner_ppp_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# War Lose - Coaliation
+TFRKP_lee_coaliation_factor = {
+	name = "TFRKP_lee_coaliation_factor"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_coaliation_factor_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_coaliation_factor_accepted
+		text = "TFRKP_lee_coaliation_factor_accepted_TXT"
+		desc = "TFRKP_lee_coaliation_factor_accepted_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_coaliation_factor_deny
+		text = "TFRKP_lee_coaliation_factor_deny_TXT"
+		desc = "TFRKP_lee_coaliation_factor_deny_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+TFRKP_lee_coaliation_minister_find = {
+	name = "TFRKP_lee_coaliation_minister_find"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_coaliation_minister_find_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_coaliation_minister_find_fail
+		text = "TFRKP_lee_coaliation_minister_find_fail_TXT"
+		desc = "TFRKP_lee_coaliation_minister_find_fail_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_coaliation_minister_find_success
+		text = "TFRKP_lee_coaliation_minister_find_success_TXT"
+		desc = "TFRKP_lee_coaliation_minister_find_success_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# War Lose - Reds
+TFRKP_lee_reds_lead_faction_of_party = {
+	name = "TFRKP_lee_reds_lead_faction_of_party"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_reds_lead_faction_of_party_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_reds_lead_faction_of_party_PP
+		text = "TFRKP_lee_reds_lead_faction_of_party_PP_TXT"
+		desc = "TFRKP_lee_reds_lead_faction_of_party_PP_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_reds_lead_faction_of_party_JP
+		text = "TFRKP_lee_reds_lead_faction_of_party_JP_TXT"
+		desc = "TFRKP_lee_reds_lead_faction_of_party_JP_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_reds_lead_faction_of_party_LP
+		text = "TFRKP_lee_reds_lead_faction_of_party_LP_TXT"
+		desc = "TFRKP_lee_reds_lead_faction_of_party_LP_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+TFRKP_lee_reds_bop_of_nation = {
+	name = "TFRKP_lee_reds_bop_of_nation"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_reds_bop_of_nation_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_reds_bop_of_nation_DLP
+		text = "TFRKP_lee_reds_bop_of_nation_DLP_TXT"
+		desc = "TFRKP_lee_reds_bop_of_nation_DLP_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_reds_bop_of_nation_PPP_DPK
+		text = "TFRKP_lee_reds_bop_of_nation_PPP_DPK_TXT"
+		desc = "TFRKP_lee_reds_bop_of_nation_PPP_DPK_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# War Lose - Army
+TFRKP_lee_army_lead_of_revolution = {
+	name = "TFRKP_lee_army_lead_of_revolution"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_army_lead_of_revolution_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_army_lead_of_revolution_NAM
+		text = "TFRKP_lee_army_lead_of_revolution_NAM_TXT"
+		desc = "TFRKP_lee_army_lead_of_revolution_NAM_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_army_lead_of_revolution_YOON
+		text = "TFRKP_lee_army_lead_of_revolution_YOON_TXT"
+		desc = "TFRKP_lee_army_lead_of_revolution_YOON_TXT_DESC"
+		allow_achievements = yes
+	}
+}
+
+TFRKP_lee_army_pigs = {
+	name = "TFRKP_lee_army_pigs"
+	group = "RULE_GROUP_EAST_ASIAN"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "TFRKP_lee_army_pigs_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_army_pigs_success
+		text = "TFRKP_lee_army_pigs_success_TXT"
+		desc = "TFRKP_lee_army_pigs_success_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TFRKP_lee_army_pigs_fail
+		text = "TFRKP_lee_army_pigs_fail_TXT"
+		desc = "TFRKP_lee_army_pigs_fail_TXT_DESC"
+		allow_achievements = yes
+	}
+}

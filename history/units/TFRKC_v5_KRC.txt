@@ -1,0 +1,56 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 KRC line" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 KRC armor" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+division_template = { name = "TFRKC v5 KRC mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "KRC line 1" location = 1100 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 2" location = 15311 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 3" location = 15314 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 4" location = 15340 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 5" location = 12089 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 6" location = 15363 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 7" location = 15289 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 8" location = 15291 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 9" location = 15263 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 10" location = 4103 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 11" location = 15313 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 12" location = 15337 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 13" location = 15130 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 14" location = 15316 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 15" location = 15088 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 16" location = 15364 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 17" location = 15339 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 18" location = 15444 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 19" location = 15290 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 20" location = 15308 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 21" location = 15315 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 22" location = 1081 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 23" location = 15362 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC line 24" location = 15089 division_template = "TFRKC v5 KRC line" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 1" location = 15285 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 2" location = 15185 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 3" location = 9936 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 4" location = 15445 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 5" location = 15443 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 6" location = 15288 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 7" location = 14240 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 8" location = 1100 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 9" location = 15311 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 10" location = 15314 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 11" location = 15340 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 12" location = 12089 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 13" location = 15363 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC armor 14" location = 15289 division_template = "TFRKC v5 KRC armor" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 1" location = 15291 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 2" location = 15263 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 3" location = 4103 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 4" location = 15313 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 5" location = 15337 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 6" location = 15130 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 7" location = 15316 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 8" location = 15088 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 9" location = 15364 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 10" location = 15339 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 11" location = 15444 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+ division = { name = "KRC mobile 12" location = 15290 division_template = "TFRKC v5 KRC mobile" start_manpower_factor = 0.9 start_equipment_factor = 0.9 start_experience_factor = 0.65 }
+}

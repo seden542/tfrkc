@@ -1,0 +1,8 @@
+division_template = { name = "TFRKC city KDT 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC city KDT 1" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } artillery_brigade = { x = 1 y = 0 } }  }
+units = {
+division = { name = "대덕기술관리국 제1전투단" location = 15193 division_template = "TFRKC city KDT 0" start_manpower_factor = 0.7 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+division = { name = "대덕기술관리국 제2전투단" location = 15193 division_template = "TFRKC city KDT 0" start_manpower_factor = 0.7 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+division = { name = "대덕기술관리국 제3전투단" location = 15193 division_template = "TFRKC city KDT 0" start_manpower_factor = 0.7 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+division = { name = "대덕기술관리국 제4전투단" location = 15193 division_template = "TFRKC city KDT 1" start_manpower_factor = 0.7 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+}

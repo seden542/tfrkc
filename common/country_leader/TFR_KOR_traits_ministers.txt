@@ -1,0 +1,41 @@
+leader_traits = {
+	KOR_faction_DPK = {
+		random = no
+	}
+	KOR_faction_RKP = {
+		random = no
+	}
+	KOR_faction_PPP = {
+		random = no
+	}
+	KOR_faction_PP = {
+		random = no
+	}
+	KOR_faction_TPP = {
+		random = no
+	}
+	KOR_faction_JP = {
+		random = no
+	}
+	KOR_faction_LP = {
+		random = no
+	}
+	KOR_faction_PLP = {
+		random = no
+	}
+	KOR_faction_PLP_TPP = {
+		random = no
+	}
+	KOR_faction_PLP_JP = {
+		random = no
+	}
+	KOR_faction_PLP_LP = {
+		random = no
+	}
+	KOR_faction_PLP_GP = {
+		random = no
+	}
+	KOR_faction_none = {
+		random = no
+	}
+}

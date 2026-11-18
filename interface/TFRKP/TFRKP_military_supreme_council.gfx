@@ -1,0 +1,103 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_supreme_council_supreme_council_bg"
+		texturefile = "gfx/interface/GUI/military_supreme_council/supreme_council_bg.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_loyalty_score"
+		texturefile = "gfx/interface/GUI/military_supreme_council/loyalty_score.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_loyalty_texticon"
+		texturefile = "gfx/interface/GUI/military_supreme_council/loyalty_score.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_picture_chun"
+		texturefile = "gfx/interface/GUI/military_supreme_council/picture_chun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_picture_park"
+		texturefile = "gfx/interface/GUI/military_supreme_council/picture_park.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_picture_rhee"
+		texturefile = "gfx/interface/GUI/military_supreme_council/picture_rhee.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_button_chun"
+		texturefile = "gfx/interface/GUI/military_supreme_council/button_chun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_button_park"
+		texturefile = "gfx/interface/GUI/military_supreme_council/button_park.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_button_rhee"
+		texturefile = "gfx/interface/GUI/military_supreme_council/button_rhee.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_quote_chun"
+		texturefile = "gfx/interface/GUI/military_supreme_council/quote_chun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_quote_park"
+		texturefile = "gfx/interface/GUI/military_supreme_council/quote_park.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_quote_rhee"
+		texturefile = "gfx/interface/GUI/military_supreme_council/quote_rhee.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_quote_chun_banned"
+		texturefile = "gfx/interface/GUI/military_supreme_council/quote_chun_banned.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_quote_park_banned"
+		texturefile = "gfx/interface/GUI/military_supreme_council/quote_park_banned.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_quote_rhee_banned"
+		texturefile = "gfx/interface/GUI/military_supreme_council/quote_rhee_banned.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_statue_chun"
+		texturefile = "gfx/interface/GUI/military_supreme_council/statue_chun.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_statue_park"
+		texturefile = "gfx/interface/GUI/military_supreme_council/statue_park.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_statue_rhee"
+		texturefile = "gfx/interface/GUI/military_supreme_council/statue_rhee.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_statue_chun_banned"
+		texturefile = "gfx/interface/GUI/military_supreme_council/statue_chun_banned.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_statue_park_banned"
+		texturefile = "gfx/interface/GUI/military_supreme_council/statue_park_banned.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_statue_rhee_banned"
+		texturefile = "gfx/interface/GUI/military_supreme_council/statue_rhee_banned.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_portrait_chun"
+		texturefile = "gfx/interface/GUI/military_supreme_council/portrait_chun.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_portrait_park"
+		texturefile = "gfx/interface/GUI/military_supreme_council/portrait_park.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_supreme_council_portrait_rhee"
+		texturefile = "gfx/interface/GUI/military_supreme_council/portrait_rhee.png"
+		legacy_lazy_load = no
+	}
+}

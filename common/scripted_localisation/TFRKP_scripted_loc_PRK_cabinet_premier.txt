@@ -1,0 +1,15 @@
+defined_text = {
+	name = TFRKP_prk_cabinet_premier_dynamic_loc
+
+	text = {
+		trigger = { date > 2024.12.23 }
+		localization_key = PRK_cabinet_premier_pak_tae_song_tt
+	}
+	text = {
+		trigger = { date > 2020.8.12 }
+		localization_key = PRK_cabinet_premier_kim_tok_hun_tt
+	}
+	text = {
+		localization_key = PRK_cabinet_premier_kim_jae_ryong_tt
+	}
+}

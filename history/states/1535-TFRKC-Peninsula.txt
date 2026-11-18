@@ -1,0 +1,20 @@
+state={
+	id = 1535
+	name = "STATE_1535"
+	
+	history = {
+owner = PRK
+add_core_of = PRK
+add_claim_by = KOR
+ buildings = {
+ infrastructure = 3
+4052 = { naval_base = 6 }
+ }
+victory_points = {13707 5}
+}
+	provinces = { 4052 13707 15164 15099 13714 }
+	manpower = 1235831
+	buildings_max_level_factor = 0.24543081
+	
+	state_category = suburb
+}

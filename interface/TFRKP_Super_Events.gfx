@@ -1,0 +1,39 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_MARTIAL_LAW_YOON"
+		texturefile = "gfx/super_events/super_KOR_martial_law_yoon.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_TAIWAN_ANNEX"
+		texturefile = "gfx/super_events/super_KOR_taiwan_annex.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_TAIWAN_INDEPENDENCE"
+		texturefile = "gfx/super_events/super_KOR_taiwan_independence.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_PDTO_WIN_LIGHT_YOON"
+		texturefile = "gfx/super_events/super_KOR_pdto_win_light_yoon.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_PDTO_WIN_MARTIAL_LAW_YOON"
+		texturefile = "gfx/super_events/super_KOR_pdto_win_martial_law_yoon.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_ARMY_COUPDETAT"
+		texturefile = "gfx/super_events/super_KOR_army_coupdetat.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_PDTO_WIN_ARMY"
+		texturefile = "gfx/super_events/super_KOR_pdto_win_army.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_PDTO_WIN_CHO_KUK"
+		texturefile = "gfx/super_events/super_KOR_pdto_win_cho_kuk.png"
+	}
+	spriteType = {
+		name = "GFX_TFR_SE_KOR_KOREAN_FEDERATION"
+		texturefile = "gfx/super_events/super_KOR_korean_federation.png"
+	}
+	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+}

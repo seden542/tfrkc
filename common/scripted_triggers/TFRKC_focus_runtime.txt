@@ -1,0 +1,18 @@
+# Focus eligibility only; never schedules or starts the war.
+TFRKC_focus_wartime_trigger = {
+ exists = yes
+ has_global_flag = TFRKC_civilwar_active
+ NOT = { has_global_flag = TFRKC_civilwar_finished }
+ has_capitulated = no
+ any_owned_state = { is_controlled_by = PREV }
+}
+TFRKC_focus_postwar_trigger = {
+ exists = yes
+ has_global_flag = TFRKC_civilwar_finished
+ has_country_flag = TFRKC_unifier
+ has_capitulated = no
+ any_owned_state = { is_controlled_by = PREV }
+ TFRKC_focus_v5_playable_trigger = yes }
+
+# Only the six currently playable countries have detailed focus content.
+TFRKC_focus_v5_playable_trigger = { OR = { tag = KWC tag = KLF tag = KRC tag = KCH tag = KYA tag = KOR } }

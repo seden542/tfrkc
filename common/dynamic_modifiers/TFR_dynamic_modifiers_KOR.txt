@@ -1,0 +1,1541 @@
+KOR_seoul_city = { # 서울(시작)
+	icon = GFX_modifiers_KOR_seoul
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.05
+	local_building_slots = 3
+	local_supplies = 0.1
+}
+KOR_seoul_city_army = { # 서울 군바리
+	icon = GFX_modifiers_KOR_seoul2
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.05
+	local_building_slots = 3
+	local_supplies = 0.1
+}
+
+KOR_busan_city = { # 기존 부산
+	icon = GFX_modifiers_KOR_busan
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.02
+	local_building_slots = 1
+	local_supplies = 0.03
+}
+KOR_busan_city_new = { # 부산 2023
+	icon = GFX_modifiers_KOR_busan2
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.02
+	local_building_slots = 1
+	local_supplies = 0.03
+}
+KOR_busan_city_army = { # 부산 군바리
+	icon = GFX_modifiers_KOR_busan3
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.02
+	local_building_slots = 1
+	local_supplies = 0.03
+}
+
+KOR_gwangju_city = { # 광주광역시
+	icon = GFX_modifiers_KOR_gwangju
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+KOR_ulsan_city = { # Ulsan Metropolitan City
+	icon = GFX_modifiers_KOR_ulsan
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+KOR_daegu_city = { # Daegu Metropolitan City
+	icon = GFX_modifiers_KOR_daegu
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+KOR_daejeon_city = { # Daejeon Metropolitan City
+	icon = GFX_modifiers_KOR_daejeon
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+KOR_jeju_special_self_governing_province = { # Jeju Special Self-Governing Province
+	icon = GFX_modifiers_KOR_jeju
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+KOR_incheon_city = { # Incheon Metropolitan City
+	icon = GFX_modifiers_KOR_incheon
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+KOR_sejong_special_city = { # Sejong Special Self-Governing City
+	icon = GFX_modifiers_KOR_sejong
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.03
+	local_building_slots = 1
+	local_supplies = 0.05
+}
+
+PRK_pyongyang_city = { # Pyongyang Directly Governed City
+	icon = GFX_modifiers_PRK_pyongyang
+	enable = { is_controlled_by = PRK }
+	remove_trigger = {
+		NOT = { is_owned_by = PRK }
+	}
+	mobilization_speed = 0.15
+	state_production_speed_buildings_factor = 0.07
+	local_building_slots = 2
+}
+
+PRK_national_economic_reconstruction_dynamic = { # Industrial Reconstruction
+	icon = GFX_idea_PRK_national_economic_reconstruction_dynamic
+	enable = { original_tag = PRK }
+	stability_factor = PRK_national_economic_reconstruction_stability_factor_var
+	production_speed_buildings_factor = PRK_national_economic_reconstruction_production_speed_buildings_factor_var
+	production_speed_infrastructure_factor = PRK_national_economic_reconstruction_production_speed_infrastructure_factor_var
+	industrial_capacity_factory = PRK_national_economic_reconstruction_industrial_capacity_factory_var
+	production_factory_efficiency_gain_factor = PRK_national_economic_reconstruction_production_factory_efficiency_gain_factor_var
+	production_factory_max_efficiency_factor = PRK_national_economic_reconstruction_production_factory_max_efficiency_factor_var
+	industrial_development_monthly = PRK_national_economic_reconstruction_industrial_development_monthly_var
+	farming_development_monthly = PRK_national_economic_reconstruction_farming_development_monthly_var
+}
+
+PRK_malignant_virus_dynamic = { # Fight Against the Malignant Virus
+	icon = GFX_idea_generic_covid
+	enable = { original_tag = PRK }
+	political_power_gain = PRK_virus_political_power_gain_var
+	stability_factor = PRK_virus_stability_factor_var
+	war_support_factor = PRK_virus_war_support_factor_var
+	consumer_goods_factor = PRK_virus_consumer_goods_factor_var
+	industrial_capacity_factory = PRK_virus_factory_output_factor_var
+	production_speed_buildings_factor = PRK_virus_construction_speed_factor_var
+	research_speed_factor = PRK_virus_research_speed_factor_var
+	society_development_monthly = PRK_virus_society_development_monthly_var
+	custom_modifier_tooltip = PRK_malignant_virus_dynamic_tooltip
+}
+
+PRK_march_forward_korean_peoples_army_dynamic = { # March Forward, Korean People's Army
+	icon = GFX_idea_PRK_march_forward_korean_peoples_army_dynamic
+	enable = { original_tag = PRK }
+	army_attack_factor = PRK_march_forward_korean_peoples_army_attack_factor_var
+	army_defence_factor = PRK_march_forward_korean_peoples_army_defence_factor_var
+	battalion_upkeep_factor = PRK_march_forward_korean_peoples_army_battalion_upkeep_factor_var
+	army_org_factor = PRK_march_forward_korean_peoples_army_army_org_factor_var
+	army_morale_factor = PRK_march_forward_korean_peoples_army_army_morale_factor_var
+	land_reinforce_rate = PRK_march_forward_korean_peoples_army_land_reinforce_rate_var
+	air_strategic_bomber_bombing_factor = PRK_march_forward_korean_peoples_army_strategic_bombing_factor_var
+	air_bombing_targetting = PRK_march_forward_korean_peoples_army_bombing_targetting_var
+	air_attack_factor = PRK_march_forward_korean_peoples_army_air_attack_factor_var
+	air_mission_efficiency = PRK_march_forward_korean_peoples_army_air_mission_efficiency_var
+	navy_org_factor = PRK_march_forward_korean_peoples_army_navy_org_factor_var
+	naval_damage_factor = PRK_march_forward_korean_peoples_army_naval_damage_factor_var
+	rocket_attack_factor = PRK_march_forward_korean_peoples_army_rocket_attack_factor_var
+	production_speed_rocket_site_factor = PRK_march_forward_korean_peoples_army_production_speed_rocket_site_factor_var
+	nuclear_production_factor = PRK_march_forward_korean_peoples_army_nuclear_production_factor_var
+	army_artillery_attack_factor = PRK_march_forward_korean_peoples_army_artillery_attack_factor_var
+	army_artillery_defence_factor = PRK_march_forward_korean_peoples_army_artillery_defence_factor_var
+	planning_speed = PRK_march_forward_korean_peoples_army_planning_speed_var
+	max_planning_factor = PRK_march_forward_korean_peoples_army_max_planning_factor_var
+}
+
+KOR_USFK_dynamic = { #주한미군기지(초기)
+	icon = GFX_modifiers_KOR_USFK
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	army_core_defence_factor = 0.1
+	army_org_factor = 0.1
+}
+
+KOR_USFK_vacant_dynamic = { #주한미군기지(공석)
+	icon = GFX_modifiers_KOR_USFK
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+}
+
+KOR_PDTO_dynamic = { #태평양방위조약군기지(후기)
+	icon = GFX_modifiers_KOR_PDTO
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	army_core_defence_factor = 0.1
+	army_org_factor = 0.1
+}
+
+KOR_last_city_dynamic = { #최전방
+	icon = GFX_modifiers_KOR_last_city
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	army_core_defence_factor = 0.1
+	army_org_factor = 0.1
+}
+
+KOR_north_korea_civil_military = { #북한군민정청
+	icon = GFX_modifier_KOR_north_korea_civil_military
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	compliance_growth = 0.1
+	resistance_decay = 0.05
+}
+
+KOR_saudi_volunteer_dynamic = {
+	enable = {
+		original_tag = KOR
+	}
+	stability_factor = KOR_saudi_volunteer_stability_factor
+	war_support_factor = KOR_saudi_volunteer_war_support_factor
+}
+
+KOR_bio_attack_dynamic = {
+	icon = GFX_modifiers_KOR_bio_attack
+	enable = {
+		always = yes
+	}
+	army_org_factor = -0.2
+	army_core_attack_factor = -0.15
+	army_armor_defence_factor = -0.15
+	mobilization_speed = -0.1
+	army_morale_factor = -0.3
+	army_speed_factor = -0.3
+}
+
+KOR_configured_bioweapon_attack_dynamic = {
+	icon = GFX_idea_KOR_configured_bioweapon_attack
+	enable = {
+		always = yes
+	}
+	army_org_factor = KOR_configured_bioweapon_army_org_factor_var
+	army_morale_factor = KOR_configured_bioweapon_army_morale_factor_var
+	supply_consumption_factor = KOR_configured_bioweapon_supply_consumption_factor_var
+	attrition = KOR_configured_bioweapon_attrition_var
+	recruitable_population_factor = KOR_configured_bioweapon_recruitable_population_factor_var
+	mobilization_speed = KOR_configured_bioweapon_mobilization_speed_var
+	land_reinforce_rate = KOR_configured_bioweapon_land_reinforce_rate_var
+	stability_factor = KOR_configured_bioweapon_stability_factor_var
+	industrial_capacity_factory = KOR_configured_bioweapon_industrial_capacity_factory_var
+	army_defence_factor = KOR_configured_bioweapon_army_defence_factor_var
+	production_speed_buildings_factor = KOR_configured_bioweapon_production_speed_buildings_factor_var
+	political_power_factor = KOR_configured_bioweapon_political_power_factor_var
+	production_factory_efficiency_gain_factor = KOR_configured_bioweapon_production_factory_efficiency_gain_factor_var
+	planning_speed = KOR_configured_bioweapon_planning_speed_var
+	war_support_factor = KOR_configured_bioweapon_war_support_factor_var
+}
+
+KOR_nuke_korea = { #한국인 생존자집단
+	icon = GFX_modifier_KOR_nuke_korea
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_korea_one = { #한국인 생존자집단(문재인)
+	icon = GFX_modifier_KOR_nuke_korea
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_korea_two = { #한국인 생존자집단(문재인)
+	icon = GFX_modifier_KOR_nuke_korea
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_korea_third = { #한국인 생존자집단(문재인)
+	icon = GFX_modifier_KOR_nuke_korea
+	enable = {
+		always = yes
+	}
+}
+
+## 일본 ##
+KOR_nuke_japan = { #일본인 생존자집단
+	icon = GFX_modifier_KOR_nuke_japan
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_japan_one = { #일본인 생존자집단
+	icon = GFX_modifier_KOR_nuke_japan
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_japan_two = { #일본인 생존자집단
+	icon = GFX_modifier_KOR_nuke_japan
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_japan_third = { #일본인 생존자집단
+	icon = GFX_modifier_KOR_nuke_japan
+	enable = {
+		always = yes
+	}
+}
+
+##중국
+KOR_nuke_prc_army = { #중국인민해방군 잔존군
+	icon = GFX_modifier_KOR_nuke_prc_army
+	enable = {
+		always = yes
+	}
+}
+
+KOR_nuke_prc = { #중국계 생존자집단
+	icon = GFX_modifier_KOR_nuke_prc
+	enable = {
+		always = yes
+	}
+}
+
+KOR_nuke_prc_one = { #중국계 생존자집단 리창
+	icon = GFX_modifier_KOR_nuke_prc
+	enable = {
+		always = yes
+	}
+}
+
+##북한
+KOR_nuke_prk = { #이북 생존자집단
+	icon = GFX_modifier_KOR_nuke_prk
+	enable = {
+		always = yes
+	}
+}
+KOR_nuke_prk_one = { #이북 생존자집단
+	icon = GFX_modifier_KOR_nuke_prk
+	enable = {
+		always = yes
+	}
+}
+
+KOR_nuke_kor_army = { #국군 잔존군
+	icon = GFX_modifier_KOR_nuke_kor_army
+	enable = {
+		always = yes
+	}
+}
+
+KOR_army_nuclear_cost_dynamic = {
+	icon = GFX_idea_KOR_army_nuclear_cost_dynamic
+	enable = { original_tag = KOR }
+	civilian_factory_use = KOR_army_nuclear_factory_cost
+	research_speed_factor = KOR_army_nuclear_cost
+	custom_modifier_tooltip = KOR_army_nuclear_program_progress_tt
+}
+
+KOR_special_strategic_materials_factory_commitment_dynamic = {
+	icon = GFX_idea_generic_covid
+	enable = { original_tag = KOR }
+	civilian_factory_use = KOR_special_strategic_materials_factories_var
+}
+
+KOR_special_strategic_materials_bioweapon_production_dynamic = {
+	icon = GFX_idea_KOR_configured_bioweapon_attack
+	enable = { original_tag = KOR }
+	industrial_capacity_factory = -0.10
+	production_factory_max_efficiency_factor = -0.15
+	production_factory_efficiency_gain_factor = -0.15
+	stability_factor = -0.05
+}
+
+KOR_secretly_great_military_network_dynamic = {
+	icon = GFX_idea_KOR_secretly_great_military_network_idea
+	enable = { original_tag = KOR }
+	intelligence_agency_defense = 0.10
+	intel_network_gain_factor = 0.10
+	enemy_operative_capture_chance_factor = 0.10
+	army_org_factor = 0.03
+	planning_speed = 0.05
+	resistance_growth = -0.05
+	research_speed_factor = KOR_special_strategic_materials_research_speed_factor_var
+}
+
+KOR_coronavirus_dynamic = {
+	icon = GFX_idea_generic_covid
+	enable = { original_tag = KOR }
+	political_power_gain = KOR_coronavirus_political_power_gain
+	stability_factor = KOR_coronavirus_stability_factor
+	expense_growth_factor = KOR_coronavirus_expense_growth_factor
+	society_development_monthly = KOR_coronavirus_society_development_monthl
+	industrial_capacity_factory = KOR_coronavirus_industrial_capacity_factory
+	income_growth_factor = KOR_coronavirus_income_growth_factor
+	custom_modifier_tooltip = KOR_coronavirus_dynamic_tooltip
+}
+
+KOR_coronavirus_dissatisfaction_dynamic = {
+	enable = { original_tag = KOR }
+	stability_factor = KOR_coronavirus_dissatisfaction_stability_factor
+}
+
+## 대아대전
+KOR_great_asian_war_dynamic = { #Great Asian War
+	enable = { original_tag = KOR }
+	icon = GFX_idea_KOR_great_asian_war_dynamic_idea
+
+	### Start ###
+	war_support_factor = KOR_great_asian_war_dynamic_war_support_factor_dynamic_var
+	conscription_factor = KOR_great_asian_war_dynamic_conscription_factor_dynamic_var
+
+	### Focus Using ###
+	# Kill Chain
+	air_superiority_efficiency = KOR_great_asian_war_dynamic_air_superiority_efficiency_var
+	ground_attack_factor = KOR_great_asian_war_dynamic_ground_attack_factor_var
+	air_strategic_bomber_bombing_factor = KOR_great_asian_war_dynamic_air_strategic_bomber_bombing_factor_var
+
+	# Seoul Fortification
+	production_speed_bunker_factor = KOR_great_asian_war_dynamic_production_speed_bunker_factor_var
+
+	# Winter War
+	max_planning_factor = KOR_great_asian_war_dynamic_max_planning_factor_var
+	winter_attrition_factor = KOR_great_asian_war_dynamic_winter_attrition_factor_var
+
+	# Dawn of East Asia
+	industrial_capacity_factory = KOR_great_asian_war_dynamic_industrial_capacity_factory_var
+	production_factory_max_efficiency_factor = KOR_great_asian_war_dynamic_production_factory_max_efficiency_factor_var
+	army_morale_factor = KOR_great_asian_war_dynamic_army_morale_factor_var
+
+	# Götterdämmerung
+	navy_capital_ship_attack_factor = KOR_great_asian_war_dynamic_navy_capital_ship_attack_factor_var
+	navy_capital_ship_defence_factor = KOR_great_asian_war_dynamic_navy_capital_ship_defence_factor_var
+	navy_screen_attack_factor = KOR_great_asian_war_dynamic_navy_screen_attack_factor_var
+	navy_screen_defence_factor = KOR_great_asian_war_dynamic_navy_screen_defence_factor_var
+	screening_efficiency = KOR_great_asian_war_dynamic_screening_efficiency_var
+	navy_org_factor = KOR_great_asian_war_dynamic_navy_org_factor_var
+
+	# Faith in Steel
+	army_core_attack_factor = KOR_great_asian_war_dynamic_army_core_attack_factor_var
+	army_core_defence_factor = KOR_great_asian_war_dynamic_army_core_defence_factor_var
+
+	###KOR_great_asian_war_dynamic__var
+
+}
+
+## 임시코드임
+
+KOR_martial_law_dynamic = {
+	icon = GFX_idea_KOR_martial_law_dynamic
+	enable = { original_tag = KOR }
+
+	political_power_cost = KOR_korea_revival_political_power_cost_dynamic_var
+	political_power_factor = KOR_korea_revival_political_power_factor_dynamic_var
+	political_power_gain = KOR_korea_revival_political_power_gain_dynamic_var
+	trade_opinion_factor = KOR_korea_revival_trade_opinion_factor_dynamic_var
+	send_volunteer_factor = KOR_korea_revival_send_volunteer_factor_dynamic_var
+	stability_factor = KOR_korea_revival_stability_factor_dynamic_var
+	war_support_factor = KOR_korea_revival_war_support_factor_dynamic_var
+	conversion_cost_mil_to_civ_factor = KOR_korea_revival_conversion_cost_mil_to_civ_factor_dynamic_var
+	army_attack_factor = KOR_korea_revival_army_attack_factor_dynamic_var
+	party_popularity_stability_factor = KOR_korea_revival_party_popularity_stability_factor_dynamic_var
+	army_core_defence_factor = KOR_korea_revival_army_core_defence_factor_dynamic_var
+	research_speed_factor = KOR_korea_revival_research_speed_factor_dynamic_var
+	line_change_production_efficiency_factor = KOR_korea_revival_line_change_production_efficiency_factor_dynamic_var
+	production_oil_factor = KOR_korea_revival_production_oil_factor_dynamic_var
+	production_speed_office_park_factor = KOR_korea_revival_production_speed_office_park_factor_dynamic_var
+	production_cost_infrastructure_factor = KOR_korea_revival_production_cost_infrastructure_factor_dynamic_var
+	production_speed_arms_factory_factor = KOR_korea_revival_production_speed_arms_factory_factor_dynamic_var
+	production_speed_synthetic_refinery_factor = KOR_korea_revival_production_speed_synthetic_refinery_factor_dynamic_var
+	industrial_capacity_dockyard = KOR_korea_revival_industrial_capacity_dockyard_dynamic_var
+	industrial_capacity_factory = KOR_korea_revival_industrial_capacity_factory_dynamic_var
+	production_speed_industrial_complex_factor = KOR_korea_revival_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_rail_way_factor = KOR_korea_revival_production_speed_rail_way_factor_dynamic_var
+	enemy_operative_capture_chance_factor = KOR_korea_revival_enemy_operative_capture_chance_factor_dynamic_var
+	enemy_operative_intel_extraction_rate = KOR_korea_revival_enemy_operative_intel_extraction_rate_dynamic_var
+	production_speed_buildings_factor = KOR_korea_revival_production_speed_buildings_factor_dynamic_var
+	production_factory_start_efficiency_factor = KOR_korea_revival_production_factory_start_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = KOR_korea_revival_production_factory_efficiency_gain_factor_dynamic_var
+	production_factory_max_efficiency_factor = KOR_korea_revival_production_factory_max_efficiency_factor_dynamic_var
+	production_speed_infrastructure_factor = KOR_korea_revival_production_speed_infrastructure_factor_dynamic_var
+	compliance_growth = KOR_korea_revival_compliance_growth_dynamic_var
+	resistance_growth = KOR_korea_revival_resistance_growth_dynamic_var
+	communist_drift = KOR_korea_revival_communist_drift_dynamic_var
+	totalitarian_socialist_drift = KOR_korea_revival_totalitarian_socialist_drift_dynamic_var
+	social_democrat_drift = KOR_korea_revival_social_democrat_drift_dynamic_var
+	social_liberal_drift = KOR_korea_revival_social_liberal_drift_dynamic_var
+	authoritarian_democrat_drift = KOR_korea_revival_authoritarian_democrat_drift_dynamic_var
+	libertarian_socialist_drift = KOR_korea_revival_libertarian_socialist_drift_dynamic_var
+	fascist_drift = KOR_korea_revival_fascist_drift_dynamic_var
+	national_socialist_drift = KOR_korea_revival_national_socialist_drift_dynamic_var
+	business_value_factor = KOR_korea_revival_business_value_factor_dynamic_var
+	personal_expense_factor = KOR_korea_revival_personal_expense_factor_dynamic_var
+	society_development_monthly = KOR_korea_revival_society_development_monthly_dynamic_var
+	academic_development_monthly = KOR_korea_revival_academic_development_monthly_dynamic_var
+	industrial_development_monthly = KOR_korea_revival_industrial_development_monthly_dynamic_var
+	military_development_monthly = KOR_korea_revival_military_development_monthly_dynamic_var
+	poverty_development_monthly = KOR_korea_revival_poverty_development_monthly_dynamic_var
+	farming_development_monthly = KOR_korea_revival_farming_development_monthly_dynamic_var
+	consumer_goods_factor = KOR_korea_revival_consumer_goods_factor_dynamic_var
+	army_morale_factor = KOR_korea_revival_army_morale_factor_dynamic_var
+	income_growth_factor = KOR_korea_revival_income_growth_factor_dynamic_var
+	conscription = KOR_korea_revival_conscription_dynamic_var
+	conscription_factor = KOR_korea_revival_conscription_factor_dynamic_var
+	personal_value_factor = KOR_korea_revival_personal_value_factor_dynamic_var
+	intelligence_agency_defense = KOR_korea_revival_intelligence_agency_defense_dynamic_var
+	experience_gain_army_unit_factor = KOR_korea_revival_experience_gain_army_unit_factor_dynamic_var
+	max_commander_army_size = KOR_korea_revival_max_commander_army_size_dynamic_var
+	drift_defence_factor = KOR_korea_revival_drift_defence_factor_dynamic_var
+	monthly_population = KOR_korea_revival_monthly_population_dynamic_var
+	army_chief_cost_factor = KOR_korea_revival_army_chief_cost_factor_dynamic_var
+	navy_chief_cost_factor = KOR_korea_revival_navy_chief_cost_factor_dynamic_var
+	air_chief_cost_factor = KOR_korea_revival_air_chief_cost_factor_dynamic_var
+	high_command_cost_factor = KOR_korea_revival_high_command_cost_factor_dynamic_var
+	foreign_minister_cost_factor = KOR_korea_revival_foreign_minister_cost_factor_dynamic_var
+	economic_minister_cost_factor = KOR_korea_revival_economic_minister_cost_factor_dynamic_var
+	interior_minister_cost_factor = KOR_korea_revival_interior_minister_cost_factor_dynamic_var
+	intelligence_minister_cost_factor = KOR_korea_revival_intelligence_minister_cost_factor_dynamic_var
+	theorist_minister_cost_factor = KOR_korea_revival_theorist_minister_cost_factor_dynamic_var
+	crypto_strength = KOR_korea_revival_crypto_strength_dynamic_var
+	nationalist_drift = KOR_korea_revival_nationalist_drift_dynamic_var
+	army_org_factor = KOR_korea_revival_army_org_factor_dynamic_var
+	expense_growth_factor = KOR_korea_revival_expense_growth_factor_dynamic_var
+	mobilization_speed = KOR_korea_revival_mobilization_speed_dynamic_var
+	experience_gain_army_factor = KOR_korea_revival_experience_gain_army_factor_dynamic_var
+	initiative_factor = KOR_korea_revival_initiative_factor_dynamic_var
+	max_planning_factor = KOR_korea_revival_max_planning_factor_dynamic_var
+	planning_speed = KOR_korea_revival_planning_speed_dynamic_var
+	battalion_upkeep_factor = KOR_korea_revival_battalion_upkeep_factor_dynamic_var
+	surrender_limit = KOR_korea_revival_surrender_limit_dynamic_var
+	army_core_attack_factor = KOR_korea_revival_army_core_attack_factor_dynamic_var
+	army_defence_factor = KOR_korea_revival_army_defence_factor_dynamic_var
+	army_speed_factor = KOR_korea_revival_army_speed_factor_dynamic_var
+	experience_loss_factor = KOR_korea_revival_experience_loss_factor_dynamic_var
+	resistance_decay = KOR_korea_revival_resistance_decay_dynamic_var
+	inflation_monthly_factor = KOR_korea_revival_inflation_monthly_factor_dynamic_var
+	stability_weekly = KOR_korea_revival_stability_weekly_dynamic_var
+}
+
+KOR_yoon_park_chung_hee_dynamic_modifir = {
+	icon = GFX_idea_KOR_yoon_park_chung_hee_idea
+	enable = { original_tag = KOR }
+
+	line_change_production_efficiency_factor = KOR_yoon_park_chung_hee_line_change_production_efficiency_factor_dynamic_var
+	production_factory_efficiency_gain_factor = KOR_yoon_park_chung_hee_production_factory_efficiency_gain_factor_dynamic_var
+	production_lack_of_resource_penalty_factor = KOR_yoon_park_chung_hee_production_lack_of_resource_penalty_factor_dynamic_var
+	industrial_capacity_factory = KOR_yoon_park_chung_hee_industrial_capacity_factory_dynamic_var
+	income_growth_factor = KOR_yoon_park_chung_hee_income_growth_factor_dynamic_var
+	party_popularity_stability_factor = KOR_yoon_park_chung_hee_party_popularity_stability_factor_dynamic_var
+	society_development_monthly = KOR_yoon_park_chung_hee_society_development_monthly_dynamic_var
+	stability_factor = KOR_yoon_park_chung_hee_stability_factor_dynamic_var
+	political_power_gain = KOR_yoon_park_chung_hee_political_power_gain_dynamic_var
+	war_support_factor = KOR_yoon_park_chung_hee_war_support_factor_dynamic_var
+	industrial_development_monthly = KOR_yoon_park_chung_hee_industrial_development_monthly_dynamic_var
+	military_development_monthly = KOR_yoon_park_chung_hee_military_development_monthly_dynamic_var
+	expense_growth_factor = KOR_yoon_park_chung_hee_expense_growth_factor_dynamic_var
+	production_speed_arms_factory_factor = KOR_yoon_park_chung_hee_production_speed_arms_factory_factor_dynamic_var
+	research_speed_factor = KOR_yoon_park_chung_hee_research_speed_factor_dynamic_var
+}
+
+KOR_yoon_kimyoungsam_dynamic_modifir = {
+	icon = GFX_idea_KOR_yoon_kimyoungsam_idea
+	enable = { original_tag = KOR }
+
+	income_growth_factor = KOR_yoon_kimyoungsam_income_growth_factor_dynamic_var
+	business_value_factor = KOR_yoon_kimyoungsam_business_value_factor_dynamic_var
+	society_development_monthly = KOR_yoon_kimyoungsam_society_development_monthly_dynamic_var
+	stability_factor = KOR_yoon_kimyoungsam_stability_factor_dynamic_var
+	academic_development_monthly = KOR_yoon_kimyoungsam_academic_development_monthly_dynamic_var
+	research_speed_factor = KOR_yoon_kimyoungsam_research_speed_factor_dynamic_var
+}
+
+KOR_lee_new_socity_dynamic_modifir = {
+	icon = GFX_idea_KOR_lee_new_socity_idea
+	enable = { original_tag = KOR }
+
+	poverty_development_monthly = 0.02
+
+	drift_defence_factor = KOR_lee_new_drift_defence_factor_dynamic_var
+	political_power_gain = KOR_lee_new_political_power_gain_dynamic_var
+	income_growth_factor = KOR_lee_new_socity_income_growth_factor_dynamic_var
+	business_value_factor = KOR_lee_new_socity_business_value_factor_dynamic_var
+	personal_expense_factor = KOR_lee_new_socity_personal_expense_factor_dynamic_var
+	society_development_monthly = KOR_lee_new_socity_society_development_monthly_dynamic_var
+	academic_development_monthly = KOR_lee_new_socity_academic_development_monthly_dynamic_var
+	industrial_development_monthly = KOR_lee_new_socity_industrial_development_monthly_dynamic_var
+	stability_factor = KOR_lee_new_socity_stability_factor_dynamic_var
+	compliance_growth = KOR_lee_new_socity_compliance_growth_dynamic_var
+	production_speed_buildings_factor = KOR_lee_new_socity_production_speed_buildings_factor_dynamic_var
+	social_democrat_drift = KOR_lee_new_socity_social_democrat_drift_dynamic_var #정의당
+	social_liberal_drift = KOR_lee_new_socity_social_liberal_drift_dynamic_var #민주당
+	libertarian_socialist_drift = KOR_lee_new_socity_libertarian_socialist_drift_dynamic_var #로동당
+}
+
+KOR_yoon_common_conservatism_dynamic_modifir = {
+	icon = GFX_idea_KOR_yoon_common_conservatism_dynamic_modifir_idea
+	enable = { original_tag = KOR }
+
+	poverty_development_monthly = KOR_yoon_common_conservatism_poverty_development_monthly_dynamic_var
+	stability_factor = KOR_yoon_common_conservatism_stability_factor_dynamic_var
+	personal_value_factor = KOR_yoon_common_conservatism_personal_value_factor_dynamic_var
+	academic_development_monthly = KOR_yoon_common_conservatism_academic_development_monthly_dynamic_var
+}
+
+KOR_yoon_roka_dynamic_modifir = {
+	icon = GFX_idea_KOR_yoon_roka_dynamic_modifir_idea
+	enable = { original_tag = KOR }
+
+	army_org_factor = KOR_roka_army_org_factor_dynamic_var
+	battalion_upkeep_factor = KOR_roka_battalion_upkeep_factor_dynamic_var
+	army_attack_factor = KOR_roka_army_attack_factor_dynamic_var
+	army_defence_factor = KOR_roka_army_defence_factor_dynamic_var
+	army_armor_attack_factor = KOR_roka_army_armor_attack_factor_dynamic_var
+	army_armor_defence_factor = KOR_roka_army_armor_defence_factor_dynamic_var
+	air_defence_factor = KOR_roka_air_defence_factor_dynamic_var
+	consumer_goods_factor = KOR_roka_consumer_goods_factor_dynamic_var
+	income_growth_factor = KOR_roka_income_growth_factor_dynamic_var
+	navy_carrier_air_attack_factor = KOR_roka_navy_carrier_air_attack_factor_dynamic_var
+	navy_carrier_air_targetting_factor = KOR_roka_navy_carrier_air_targetting_factor_dynamic_var
+	recruitable_population_factor = KOR_roka_recruitable_population_factor_dynamic_var
+	mobilization_speed = KOR_roka_mobilization_speed_dynamic_var
+	military_development_monthly = KOR_roka_military_development_monthly_dynamic_var
+	planning_speed = KOR_roka_planning_speed_dynamic_var
+	air_mission_efficiency = KOR_roka_air_mission_efficiency_dynamic_var
+	air_attack_factor = KOR_roka_air_attack_factor_dynamic_var
+	air_intercept_efficiency = KOR_roka_air_intercept_efficiency_dynamic_var
+}
+
+KOR_army_reform_dynamic_modifier = {
+	icon = GFX_decision_icon_KOR_lee_army_innovation_icon
+	enable = { original_tag = KOR }
+
+	army_speed_factor = KOR_army_reform_army_speed_factor_var
+	experience_gain_army_unit_factor = KOR_army_reform_experience_gain_army_unit_factor_var
+	army_infantry_defence_factor = KOR_army_reform_army_infantry_defence_factor_var
+	
+	army_org_factor = KOR_army_reform_army_org_factor_var
+	initiative_factor = KOR_army_reform_initiative_factor_var
+	
+	army_attack_factor = KOR_army_reform_army_attack_factor_var
+	army_defence_factor = KOR_army_reform_army_defence_factor_var
+	breakthrough_factor = KOR_army_reform_breakthrough_factor_var
+	
+	experience_gain_army_factor = KOR_army_reform_experience_gain_army_factor_var
+	planning_speed = KOR_army_reform_planning_speed_var
+	max_planning_factor = KOR_army_reform_max_planning_factor_var
+}
+
+KOR_pdto_integrated_army_dynamic = {
+	icon = GFX_idea_KOR_pdto_integrated_army_idea
+	enable = { original_tag = KOR }
+
+	army_org_factor = KOR_pdto_army_org_factor_dynamic_var
+	supply_consumption_factor = KOR_pdto_supply_consumption_factor_dynamic_var
+	experience_gain_army_factor = KOR_pdto_experience_gain_army_factor_dynamic_var
+	amphibious_invasion = KOR_pdto_amphibious_invasion_dynamic_var
+	army_attack_factor = KOR_pdto_army_attack_factor_dynamic_var
+	max_planning_factor = KOR_pdto_max_planning_factor_dynamic_var
+	land_reinforce_rate = KOR_pdto_land_reinforce_rate_dynamic_var
+	battalion_upkeep_factor = KOR_pdto_battalion_upkeep_factor_dynamic_var
+	navy_capital_ship_attack_factor = KOR_pdto_navy_capital_ship_attack_factor_dynamic_var
+	navy_screen_defence_factor = KOR_pdto_navy_screen_defence_factor_dynamic_var
+	air_strategic_bomber_bombing_factor = KOR_pdto_air_strategic_bomber_bombing_factor_dynamic_var
+}
+
+KOR_saudi_debuff_states_dynamic = {
+	icon = GFX_modifiers_unplanned_offensive
+	remove_trigger = { }
+	attacker_modifier = yes
+
+	army_attack_factor = -9.99
+	army_defence_factor = -9.99
+	army_attack_speed_factor = -9.99
+	# army_org_factor = -99.9
+}
+
+KOR_space_age_dynamic = {
+	icon = GFX_idea_KOR_space_age_dynamic
+	enable = { original_tag = KOR }
+	production_speed_buildings_factor = KOR_korean_space_age_production_speed_buildings_factor_dynamic
+	production_factory_efficiency_gain_factor = KOR_korean_space_age_production_factory_efficiency_gain_factor_dynamic
+	industrial_capacity_factory = KOR_korean_space_age_industrial_capacity_factory_dynamic
+	society_development_monthly = KOR_korean_space_age_society_development_monthly_dynamic
+	academic_development_monthly = KOR_korean_space_age_academic_development_monthly_dynamic
+	political_power_factor = KOR_korean_space_age_political_power_factor_dynamic
+	production_lack_of_resource_penalty_factor = KOR_korean_space_age_production_lack_of_resource_penalty_factor_dynamic
+	consumer_goods_factor = KOR_korean_space_age_consumer_goods_factor_dynamic
+	industrial_capacity_dockyard = KOR_korean_space_age_industrial_capacity_dockyard_dynamic
+	research_speed_factor = KOR_korean_space_age_research_speed_factor_dynamic
+	expense_growth_factor = KOR_korean_space_age_expense_growth_factor_dynamic
+	income_growth_factor = KOR_korean_space_age_income_growth_factor_dynamic
+	inflation_monthly = KOR_korean_space_age_inflation_monthly_dynamic
+	business_value_factor = KOR_korean_space_age_business_value_factor_dynamic
+	out_of_supply_factor = KOR_korean_space_age_out_of_supply_factor_dynamic
+	production_speed_infrastructure_factor = KOR_korean_space_age_production_speed_infrastructure_factor_dynamic
+	intel_from_operatives_factor = KOR_korean_space_age_intel_from_operatives_factor_dynamic
+}
+
+KOR_great_leap_dynamic = {
+	icon = GFX_idea_KOR_youn_ecnomic_idea
+	enable = { original_tag = KOR }
+
+	production_factory_efficiency_gain_factor = KOR_korean_great_leap_production_factory_efficiency_gain_factor_dynamic
+	income_growth_factor = KOR_korean_great_leap_income_growth_factor_dynamic
+	industrial_development_monthly = KOR_korean_great_leap_industrial_development_monthly_dynamic
+	society_development_monthly = KOR_korean_great_leap_society_development_monthly_dynamic
+	industrial_capacity_factory = KOR_korean_great_leap_industrial_capacity_factor_dynamic
+	production_lack_of_resource_penalty_factor = KOR_korean_great_leap_production_lack_of_resource_penalty_factor_dynamic
+	business_value_factor = KOR_korean_great_leap_business_value_factor_dynamic
+	tax_business_rate_factor = KOR_korean_great_leap_tax_business_rate_factor_dynamic
+	poverty_development_monthly = KOR_korean_great_leap_poverty_development_monthly_dynamic
+	production_speed_arms_factory_factor = KOR_korean_great_leap_production_speed_arms_factory_factor_dynamic
+	academic_development_monthly = KOR_korean_great_leap_academic_development_monthly_dynamic
+	expense_growth_factor = KOR_korean_great_leap_expense_growth_factor_dynamic
+	research_speed_factor = KOR_korean_great_leap_research_speed_factor_dynamic
+
+}
+
+KOR_LJS_newness_dynamic = {
+	icon = GFX_idea_KOR_LJS_main
+	enable = { original_tag = KOR }
+
+	production_factory_efficiency_gain_factor = KOR_LJS_newness_production_factory_efficiency_gain_factor_dynamic
+	income_growth_factor = KOR_LJS_newness_income_growth_factor_dynamic
+	industrial_development_monthly = KOR_LJS_newness_industrial_development_monthly_dynamic
+	society_development_monthly = KOR_LJS_newness_society_development_monthly_dynamic
+	industrial_capacity_factory = KOR_LJS_newness_industrial_capacity_factor_dynamic
+	business_value_factor = KOR_LJS_newness_business_value_factor_dynamic
+	tax_business_rate_factor = KOR_LJS_newness_tax_business_rate_factor_dynamic
+	poverty_development_monthly = KOR_LJS_newness_poverty_development_monthly_dynamic
+	production_speed_arms_factory_factor = KOR_LJS_newness_production_speed_arms_factory_factor_dynamic
+	academic_development_monthly = KOR_LJS_newness_academic_development_monthly_dynamic
+	expense_growth_factor = KOR_LJS_newness_expense_growth_factor_dynamic
+	research_speed_factor = KOR_LJS_newness_research_speed_factor_dynamic
+	production_factory_max_efficiency_factor = KOR_LJS_newness_production_factory_max_efficiency_factor_dynamic
+	production_speed_buildings_factor = KOR_LJS_newness_production_speed_buildings_factor_dynamic
+	political_power_factor = KOR_LJS_newness_political_power_factor_dynamic
+	personal_value_factor = KOR_LJS_newness_personal_value_factor_dynamic
+	political_power_gain = KOR_LJS_newness_political_power_gain_dynamic
+	production_lack_of_resource_penalty_factor = KOR_LJS_newness_production_lack_of_resource_penalty_factor_dynamic
+	stability_factor = KOR_LJS_newness_stability_factor_dynamic
+	tax_personal_rate_factor = KOR_LJS_newness_tax_personal_rate_factor_dynamic
+	inflation_monthly = KOR_LJS_newness_inflation_monthly_dynamic
+	military_development_monthly = KOR_LJS_newness_military_development_monthly_dynamic
+	war_support_factor = KOR_LJS_newness_war_support_factor_dynamic
+	experience_gain_factor = KOR_LJS_newness_experience_gain_factor_dynamic
+	army_attack_factor = KOR_LJS_newness_army_attack_factor_dynamic
+	army_defence_factor = KOR_LJS_newness_army_defence_factor_dynamic
+	army_org_factor = KOR_LJS_newness_army_org_factor_dynamic
+	planning_speed = KOR_LJS_newness_planning_speed_dynamic
+	market_liberal_drift = KOR_LJS_newness_market_liberal_drift_dynamic
+	personal_expense_factor = KOR_LJS_newness_personal_expense_factor_dynamic
+
+}
+
+KOR_LJS_asia_pacific_trade_dynamic = {
+	icon = GFX_idea_KOR_LJS_west
+	enable = { original_tag = KOR }
+
+	trade_opinion_factor = KOR_LJS_asia_pacific_trade_opinion_factor_dynamic
+	political_power_gain = KOR_LJS_asia_pacific_trade_political_power_gain_dynamic
+	stability_factor = KOR_LJS_asia_pacific_trade_stability_factor_dynamic
+	war_support_factor = KOR_LJS_asia_pacific_trade_war_support_factor_dynamic
+	income_growth_factor = KOR_LJS_asia_pacific_trade_income_growth_factor_dynamic
+	production_lack_of_resource_penalty_factor = KOR_LJS_asia_pacific_trade_production_lack_of_resource_penalty_factor_dynamic
+	industrial_capacity_dockyard = KOR_LJS_asia_pacific_trade_industrial_capacity_dockyard_dynamic
+	navy_org_factor = KOR_LJS_asia_pacific_trade_navy_org_factor_dynamic
+	experience_gain_navy_factor = KOR_LJS_asia_pacific_trade_experience_gain_navy_factor_dynamic
+}
+
+KOR_LJS_academic_dynamic = {
+	icon = GFX_idea_KOR_LJS_study
+	enable = { original_tag = KOR }
+
+	production_factory_efficiency_gain_factor = KOR_LJS_academic_production_factory_efficiency_gain_factor_dynamic
+	income_growth_factor = KOR_LJS_academic_income_growth_factor_dynamic
+	industrial_development_monthly = KOR_LJS_academic_industrial_development_monthly_dynamic
+	society_development_monthly = KOR_LJS_academic_society_development_monthly_dynamic
+	industrial_capacity_factory = KOR_LJS_academic_industrial_capacity_factor_dynamic
+	business_value_factor = KOR_LJS_academic_business_value_factor_dynamic
+	tax_business_rate_factor = KOR_LJS_academic_tax_business_rate_factor_dynamic
+	poverty_development_monthly = KOR_LJS_academic_poverty_development_monthly_dynamic
+	production_speed_arms_factory_factor = KOR_LJS_academic_production_speed_arms_factory_factor_dynamic
+	academic_development_monthly = KOR_LJS_academic_academic_development_monthly_dynamic
+	expense_growth_factor = KOR_LJS_academic_expense_growth_factor_dynamic
+	research_speed_factor = KOR_LJS_academic_research_speed_factor_dynamic
+	production_factory_max_efficiency_factor = KOR_LJS_academic_production_factory_max_efficiency_factor_dynamic
+	production_speed_buildings_factor = KOR_LJS_academic_production_speed_buildings_factor_dynamic
+	political_power_factor = KOR_LJS_academic_political_power_factor_dynamic
+	personal_value_factor = KOR_LJS_academic_personal_value_factor_dynamic
+	political_power_gain = KOR_LJS_academic_political_power_gain_dynamic
+	production_lack_of_resource_penalty_factor = KOR_LJS_academic_production_lack_of_resource_penalty_factor_dynamic
+	stability_factor = KOR_LJS_academic_stability_factor_dynamic
+	tax_personal_rate_factor = KOR_LJS_academic_tax_personal_rate_factor_dynamic
+	inflation_monthly = KOR_LJS_academic_inflation_monthly_dynamic
+	military_development_monthly = KOR_LJS_academic_military_development_monthly_dynamic
+	war_support_factor = KOR_LJS_academic_war_support_factor_dynamic
+	experience_gain_factor = KOR_LJS_academic_experience_gain_factor_dynamic
+	social_liberal_drift = KOR_LJS_academic_social_liberal_drift_dynamic
+	personal_expense_factor = KOR_LJS_academic_personal_expense_factor_dynamic
+
+}
+
+KOR_LJS_local_dynamic = {
+	icon = GFX_idea_KOR_LJS_local
+	enable = { original_tag = KOR }
+
+	production_factory_efficiency_gain_factor = KOR_LJS_local_production_factory_efficiency_gain_factor_dynamic
+	income_growth_factor = KOR_LJS_local_income_growth_factor_dynamic
+	industrial_development_monthly = KOR_LJS_local_industrial_development_monthly_dynamic
+	society_development_monthly = KOR_LJS_local_society_development_monthly_dynamic
+	industrial_capacity_factory = KOR_LJS_local_industrial_capacity_factor_dynamic
+	business_value_factor = KOR_LJS_local_business_value_factor_dynamic
+	tax_business_rate_factor = KOR_LJS_local_tax_business_rate_factor_dynamic
+	poverty_development_monthly = KOR_LJS_local_poverty_development_monthly_dynamic
+	production_speed_arms_factory_factor = KOR_LJS_local_production_speed_arms_factory_factor_dynamic
+	academic_development_monthly = KOR_LJS_local_academic_development_monthly_dynamic
+	expense_growth_factor = KOR_LJS_local_expense_growth_factor_dynamic
+	research_speed_factor = KOR_LJS_local_research_speed_factor_dynamic
+	production_factory_max_efficiency_factor = KOR_LJS_local_production_factory_max_efficiency_factor_dynamic
+	production_speed_buildings_factor = KOR_LJS_local_production_speed_buildings_factor_dynamic
+	political_power_factor = KOR_LJS_local_political_power_factor_dynamic
+	personal_value_factor = KOR_LJS_local_personal_value_factor_dynamic
+	political_power_gain = KOR_LJS_local_political_power_gain_dynamic
+	production_lack_of_resource_penalty_factor = KOR_LJS_local_production_lack_of_resource_penalty_factor_dynamic
+	stability_factor = KOR_LJS_local_stability_factor_dynamic
+	tax_personal_rate_factor = KOR_LJS_local_tax_personal_rate_factor_dynamic
+	inflation_monthly = KOR_LJS_local_inflation_monthly_dynamic
+	military_development_monthly = KOR_LJS_local_military_development_monthly_dynamic
+	war_support_factor = KOR_LJS_local_war_support_factor_dynamic
+	experience_gain_factor = KOR_LJS_local_experience_gain_factor_dynamic
+	social_liberal_drift = KOR_LJS_local_social_liberal_drift_dynamic
+	personal_expense_factor = KOR_LJS_local_personal_expense_factor_dynamic
+
+}
+
+KOR_behind_the_curtain_buff_dynamic = {
+	enable = { original_tag = KOR }
+
+	stability_factor = KOR_BtC_stability_factor
+	war_support_factor = KOR_BtC_war_support_factor
+	industrial_capacity_factory = KOR_BtC_industrial_capacity_factory
+	army_attack_factor = KOR_BtC_army_attack_factor
+}
+
+KOR_human_modification_dynamic = {
+	enable = { original_tag = KOR }
+	icon = GFX_modifiers_KOR_human_modification_dynamic
+
+	# 기본 훈련 체계
+	stability_factor = KOR_human_modification_stability_factor_var
+	minimum_training_level = KOR_human_modification_minimum_training_level_var
+	training_time_army_factor = KOR_human_modification_training_time_army_factor_var
+	coordination_bonus = KOR_human_modification_coordination_bonus_var
+	special_forces_cap = KOR_human_modification_special_forces_cap_var
+	battalion_upkeep_factor = KOR_human_modification_battalion_upkeep_factor_var
+	aircraft_upkeep_factor = KOR_human_modification_aircraft_upkeep_factor_var
+	ship_upkeep_factor = KOR_human_modification_ship_upkeep_factor_var
+	military_development_monthly = KOR_human_modification_military_development_monthly_var
+
+	# 정신전력 및 정치 동원
+	political_power_factor = KOR_human_modification_political_power_factor_var
+	war_support_factor = KOR_human_modification_war_support_factor_var
+	planning_speed = KOR_human_modification_planning_speed_var
+
+	# 전투 역량
+	army_org_factor = KOR_human_modification_army_org_factor_var
+	army_morale_factor = KOR_human_modification_army_morale_factor_var
+	experience_gain_army_factor = KOR_human_modification_experience_gain_army_factor_var
+	army_attack_factor = KOR_human_modification_army_attack_factor_var
+	army_defence_factor = KOR_human_modification_army_defence_factor_var
+	breakthrough_factor = KOR_human_modification_breakthrough_factor_var
+	army_speed_factor = KOR_human_modification_army_speed_factor_var
+	land_night_attack = KOR_human_modification_land_night_attack_var
+	dig_in_speed_factor = KOR_human_modification_dig_in_speed_factor_var
+	max_dig_in_factor = KOR_human_modification_max_dig_in_factor_var
+
+	# 전시 생산
+	industrial_capacity_factory = KOR_human_modification_industrial_capacity_factory_var
+	production_factory_max_efficiency_factor = KOR_human_modification_production_factory_max_efficiency_factor_var
+	consumer_goods_factor = KOR_human_modification_consumer_goods_factor_var
+}
+
+
+KOR_time_of_cho_guk_dynamic = { # Cho Guk Modifier
+	enable = { original_tag = KOR }
+	icon = GFX_idea_KOR_time_of_cho_guk_dynamic_idea
+	
+	# 정치
+	political_power_factor = KOR_time_of_cho_guk_dynamic_political_power_factor_var
+	stability_factor = KOR_time_of_cho_guk_dynamic_stability_factor_var
+	war_support_factor = KOR_time_of_cho_guk_dynamic_war_support_factor_var
+	poverty_development_monthly = KOR_time_of_cho_guk_dynamic_poverty_development_monthly_var
+	personal_value_factor = KOR_time_of_cho_guk_dynamic_personal_value_factor_var
+	
+	# 산업
+	line_change_production_efficiency_factor = KOR_time_of_cho_guk_dynamic_line_change_production_efficiency_factor_var
+	production_factory_efficiency_gain_factor = KOR_time_of_cho_guk_dynamic_production_factory_efficiency_gain_factor_var
+	production_factory_max_efficiency_factor = KOR_time_of_cho_guk_dynamic_production_factory_max_efficiency_factor_var
+	research_speed_factor = KOR_time_of_cho_guk_dynamic_research_speed_factor_var
+	
+	# 감시
+	intel_network_gain_factor = KOR_time_of_cho_guk_dynamic_intel_network_gain_factor_var
+	crypto_strength = KOR_time_of_cho_guk_dynamic_crypto_strength_var
+	intelligence_agency_defense = KOR_time_of_cho_guk_dynamic_intelligence_agency_defense_var
+	enemy_operative_capture_chance_factor = KOR_time_of_cho_guk_dynamic_enemy_operative_capture_chance_factor_var
+	resistance_growth = KOR_time_of_cho_guk_dynamic_resistance_growth_var
+	
+	# 군대
+	army_core_attack_factor = KOR_time_of_cho_guk_dynamic_army_core_attack_factor_var
+	army_core_defence_factor = KOR_time_of_cho_guk_dynamic_army_core_defence_factor_var
+	army_org_factor = KOR_time_of_cho_guk_dynamic_army_org_factor_var
+	army_morale_factor = KOR_time_of_cho_guk_dynamic_army_morale_factor_var
+	max_planning_factor = KOR_time_of_cho_guk_dynamic_max_planning_factor_var
+}
+
+## 임시코드임, 밑에 있는 코드에서 모디파이어 값을 찾아서 임의로 지정하면됨
+
+KOR_taiwan_state_dynamic = { #Chinese Experiment
+	enable = { original_tag = KOR }
+	icon = GFX_idea_KOR_taiwan_state_dynamic_idea
+
+	#Political
+	political_power_factor = KOR_science_technocratic_state_political_power_factor_dynamic_var
+	political_power_gain = KOR_science_technocratic_state_political_power_gain_dynamic_var
+	stability_factor = KOR_science_technocratic_state_stability_factor_dynamic_var
+	war_support_factor = KOR_science_technocratic_state_war_support_factor_dynamic_var
+	weekly_bombing_war_support = KOR_science_technocratic_state_weekly_bombing_war_support_dynamic_var
+	weekly_casualties_war_support = KOR_science_technocratic_state_weekly_casualties_war_support_dynamic_var
+	weekly_convoys_war_support = KOR_science_technocratic_state_weekly_convoys_war_support_dynamic_var
+	party_popularity_stability_factor = KOR_science_technocratic_state_party_popularity_stability_factor_dynamic_var
+	surrender_limit = KOR_science_technocratic_state_surrender_limit_dynamic_var
+	monthly_population = KOR_science_technocratic_state_monthly_population_dynamic_var
+
+	#Popularities
+	drift_defence_factor = KOR_science_technocratic_state_drift_defence_factor_dynamic_var
+	communist_drift = KOR_science_technocratic_state_communist_drift_dynamic_var
+	totalitarian_socialist_drift = KOR_science_technocratic_state_totalitarian_socialist_drift_dynamic_var
+	social_democrat_drift = KOR_science_technocratic_state_social_democrat_drift_dynamic_var
+	social_liberal_drift = KOR_science_technocratic_state_social_liberal_drift_dynamic_var
+	authoritarian_democrat_drift = KOR_science_technocratic_state_authoritarian_democrat_drift_dynamic_var
+	libertarian_socialist_drift = KOR_science_technocratic_state_libertarian_socialist_drift_dynamic_var
+	nationalist_drift = KOR_science_technocratic_state_nationalist_drift_dynamic_var
+	fascist_drift = KOR_science_technocratic_state_fascist_drift_dynamic_var
+	national_socialist_drift = KOR_science_technocratic_state_fascist_drift_dynamic_var
+
+	#Advisors
+	army_chief_cost_factor = KOR_science_technocratic_state_army_chief_cost_factor_dynamic_var
+	navy_chief_cost_factor = KOR_science_technocratic_state_navy_chief_cost_factor_dynamic_var
+	air_chief_cost_factor = KOR_science_technocratic_state_air_chief_cost_factor_dynamic_var
+	high_command_cost_factor = KOR_science_technocratic_state_high_command_cost_factor_dynamic_var
+	foreign_minister_cost_factor = KOR_science_technocratic_state_foreign_minister_cost_factor_dynamic_var
+	economic_minister_cost_factor = KOR_science_technocratic_state_economic_minister_cost_factor_dynamic_var
+	interior_minister_cost_factor = KOR_science_technocratic_state_interior_minister_cost_factor_dynamic_var
+	intelligence_minister_cost_factor = KOR_science_technocratic_state_intelligence_minister_cost_factor_dynamic_var
+	theorist_minister_cost_factor = KOR_science_technocratic_state_theorist_minister_cost_factor_dynamic_var
+
+	#Resistance/Intel
+	compliance_growth = KOR_science_technocratic_state_compliance_growth_dynamic_var # 순응도 증가
+	resistance_growth = KOR_science_technocratic_state_resistance_growth_dynamic_var
+	resistance_decay = KOR_science_technocratic_state_resistance_decay_dynamic_var
+	crypto_strength = KOR_science_technocratic_state_crypto_strength_dynamic_var
+	enemy_operative_capture_chance_factor = KOR_science_technocratic_state_enemy_operative_capture_chance_factor_dynamic_var
+	enemy_operative_intel_extraction_rate = KOR_science_technocratic_state_enemy_operative_intel_extraction_rate_dynamic_var
+	intelligence_agency_defense = KOR_science_technocratic_state_intelligence_agency_defense_dynamic_var # 방첩활동
+	army_intel_to_others = KOR_science_technocratic_state_army_intel_to_others_dynamic_var
+	airforce_intel_to_others = KOR_science_technocratic_state_airforce_intel_to_others_dynamic_var
+	navy_intel_to_others = KOR_science_technocratic_state_navy_intel_to_others_dynamic_var
+	civilian_intel_to_others = KOR_science_technocratic_state_civilian_intel_to_others_dynamic_var # 타국으로 가는 민간정보
+	root_out_resistance_effectiveness_factor = KOR_science_technocratic_state_root_out_resistance_effectiveness_factor_dynamic_var
+	intel_network_gain_factor = KOR_science_technocratic_state_intel_network_gain_factor_dynamic_var
+	agency_upgrade_time = KOR_science_technocratic_state_agency_upgrade_time_dynamic_var
+	resistance_target = KOR_science_technocratic_state_resistance_target_dynamic_var
+	resistance_damage_to_garrison = KOR_science_technocratic_state_resistance_damage_to_garrison_dynamic_var
+	required_garrison_factor = KOR_science_technocratic_state_required_garrison_factor_dynamic_var
+	operative_slot = KOR_science_technocratic_state_operative_slot_dynamic_var
+	enemy_operative_recruitment_chance = KOR_science_technocratic_state_enemy_operative_recruitment_chance_dynamic_var
+	intel_from_operatives_factor = KOR_science_technocratic_state_intel_from_operatives_factor_dynamic_var
+
+	#Production/Industry
+	line_change_production_efficiency_factor = KOR_science_technocratic_state_line_change_production_efficiency_factor_dynamic_var
+	industrial_capacity_dockyard = KOR_science_technocratic_state_industrial_capacity_dockyard_dynamic_var
+	industrial_capacity_factory = KOR_science_technocratic_state_industrial_capacity_factory_dynamic_var
+	production_factory_efficiency_gain_factor = KOR_science_technocratic_state_production_factory_efficiency_gain_factor_dynamic_var
+	production_factory_max_efficiency_factor = KOR_science_technocratic_state_production_factory_max_efficiency_factor_dynamic_var
+	production_oil_factor = KOR_science_technocratic_state_production_oil_factor_dynamic_var
+	research_speed_factor = KOR_science_technocratic_state_research_speed_factor_dynamic_var
+
+	#Construction
+	consumer_goods_factor = KOR_science_technocratic_state_consumer_goods_factor_dynamic_var
+	production_speed_buildings_factor = KOR_science_technocratic_state_production_speed_buildings_factor_dynamic_var
+	production_speed_industrial_complex_factor = KOR_science_technocratic_state_production_speed_industrial_complex_factor_dynamic_var
+	production_speed_office_park_factor = KOR_science_technocratic_state_production_speed_office_park_factor_dynamic_var
+	production_speed_arms_factory_factor = KOR_science_technocratic_state_production_speed_arms_factory_factor_dynamic_var
+	production_speed_infrastructure_factor = KOR_science_technocratic_state_production_speed_infrastructure_factor_dynamic_var
+	production_cost_infrastructure_factor = KOR_science_technocratic_state_production_cost_infrastructure_factor_dynamic_var
+	conversion_cost_mil_to_civ_factor = KOR_science_technocratic_state_conversion_cost_mil_to_civ_factor_dynamic_var
+	production_speed_nuclear_reactor_factor = KOR_science_technocratic_state_production_speed_nuclear_reactor_factor_dynamic_var
+
+	#Economy/Money
+	personal_value_factor = KOR_science_technocratic_state_personal_value_factor_dynamic_var
+	business_value_factor = KOR_science_technocratic_state_business_value_factor_dynamic_var
+	personal_expense_factor = KOR_science_technocratic_state_personal_expense_factor_dynamic_var
+	income_growth_factor = KOR_science_technocratic_state_income_growth_factor_dynamic_var
+	expense_growth_factor = KOR_science_technocratic_state_expense_growth_factor_dynamic_var
+	inflation_monthly_factor = KOR_science_technocratic_state_inflation_monthly_factor_dynamic_var
+
+	#Development
+	society_development_monthly = KOR_science_technocratic_state_society_development_monthly_dynamic_var
+	academic_development_monthly = KOR_science_technocratic_state_academic_development_monthly_dynamic_var
+	industrial_development_monthly = KOR_science_technocratic_state_industrial_development_monthly_dynamic_var
+	military_development_monthly = KOR_science_technocratic_state_military_development_monthly_dynamic_var
+	poverty_development_monthly = KOR_science_technocratic_state_poverty_development_monthly_dynamic_var
+	farming_development_monthly = KOR_science_technocratic_state_farming_development_monthly_dynamic_var
+
+	#Military/Conscription
+	army_attack_factor = KOR_science_technocratic_state_army_attack_factor_dynamic_var
+	army_defence_factor = KOR_science_technocratic_state_army_defence_factor_dynamic_var
+	army_core_attack_factor = KOR_science_technocratic_state_army_core_attack_factor_dynamic_var
+	army_core_defence_factor = KOR_science_technocratic_state_army_core_defence_factor_dynamic_var
+	army_org_factor = KOR_science_technocratic_state_army_org_factor_dynamic_var
+	army_morale_factor = KOR_science_technocratic_state_army_morale_factor_dynamic_var
+	army_speed_factor = KOR_science_technocratic_state_army_speed_factor_dynamic_var
+	initiative_factor = KOR_science_technocratic_state_initiative_factor_dynamic_var
+	max_planning_factor = KOR_science_technocratic_state_max_planning_factor_dynamic_var
+	planning_speed = KOR_science_technocratic_state_planning_speed_dynamic_var
+	experience_gain_army_factor = KOR_science_technocratic_state_experience_gain_army_factor_dynamic_var
+	experience_gain_army_unit_factor = KOR_science_technocratic_state_experience_gain_army_unit_factor_dynamic_var
+	experience_loss_factor = KOR_science_technocratic_state_experience_loss_factor_dynamic_var
+	conscription = KOR_science_technocratic_state_conscription_dynamic_var
+	conscription_factor = KOR_science_technocratic_state_conscription_factor_dynamic_var
+	mobilization_speed = KOR_science_technocratic_state_mobilization_speed_dynamic_var
+	max_commander_army_size = KOR_science_technocratic_state_max_commander_army_size_dynamic_var
+	battalion_upkeep_factor = KOR_science_technocratic_state_battalion_upkeep_factor_dynamic_var
+	pocket_penalty = KOR_science_technocratic_state_pocket_penalty_dynamic_var
+	air_detection = KOR_science_technocratic_air_detection_dynamic_var
+	spotting_chance = KOR_science_technocratic_spotting_chance_dynamic_var
+	recon_factor = KOR_science_technocratic_recon_factor_dynamic_var
+	coordination_bonus = KOR_science_technocratic_coordination_bonus_dynamic_var
+	breakthrough_factor = KOR_science_technocratic_breakthrough_factor_dynamic_var # 돌파
+}
+
+###대아대전 지역 보너스
+
+KOR_PRC_modifier = {
+	icon = GFX_idea_KOR_PRC_modifier
+	compliance_growth = 0.15
+	resistance_growth = -0.15
+	required_garrison_factor = -0.15
+}
+
+KOR_PRK_modifier = {
+	compliance_growth = 0.5
+	resistance_growth = -0.10
+	required_garrison_factor = -0.10
+}
+
+KOR_bukhagui_korea_tech_gap_dynamic = {
+	enable = { original_tag = KOR }
+	icon = GFX_idea_KOR_prc_tech_idea
+
+	research_speed_factor = KOR_bukhagui_korea_research_speed_factor_var
+	industrial_capacity_factory = KOR_bukhagui_korea_industrial_capacity_factory_var
+}
+
+KOR_bukhagui_prc_tech_gap_dynamic = {
+	enable = { original_tag = PRC }
+	icon = GFX_idea_KOR_prc_tech_idea
+
+	research_speed_factor = KOR_bukhagui_prc_research_speed_factor_var
+	industrial_capacity_factory = KOR_bukhagui_prc_industrial_capacity_factory_var
+}
+
+KOR_democratic_pentarchy_dynamic = {
+	enable = { original_tag = KOR }
+	icon = GFX_decision_icon_KOR_lee_pantarki_icon
+
+	surrender_limit = KOR_democratic_pentarchy_surrender_limit_var
+	research_speed_factor = KOR_democratic_pentarchy_research_speed_factor_var
+	line_change_production_efficiency_factor = KOR_democratic_pentarchy_production_efficiency_retention_var
+	stability_factor = KOR_democratic_pentarchy_stability_factor_var
+	resistance_target = KOR_democratic_pentarchy_resistance_target_var
+	political_power_factor = KOR_democratic_pentarchy_political_power_factor_var
+	war_support_factor = KOR_democratic_pentarchy_war_support_factor_var
+	recruitable_population_factor = KOR_democratic_pentarchy_recruitable_population_factor_var
+	non_core_manpower = KOR_democratic_pentarchy_non_core_manpower_var
+	production_factory_efficiency_gain_factor = KOR_democratic_pentarchy_production_efficiency_gain_factor_var
+	consumer_goods_factor = KOR_democratic_pentarchy_consumer_goods_factor_var
+	industrial_capacity_factory = KOR_democratic_pentarchy_industrial_capacity_factory_var
+	industrial_capacity_dockyard = KOR_democratic_pentarchy_industrial_capacity_dockyard_var
+	army_core_attack_factor = KOR_democratic_pentarchy_army_core_attack_factor_var
+	army_attack_factor = KOR_democratic_pentarchy_army_attack_factor_var
+	training_time_factor = KOR_democratic_pentarchy_training_time_factor_var
+}
+
+KOR_military_supreme_council_dynamic = {
+	enable = { original_tag = KOR }
+	icon = GFX_idea_KOR_military_supreme_council_dynamic
+
+	custom_modifier_tooltip = KOR_military_supreme_council_stage_dynamic_tt
+	custom_modifier_tooltip = KOR_military_supreme_council_dynamic_future_tt
+	stability_factor = KOR_military_supreme_council_stability_factor_var
+	research_speed_factor = KOR_military_supreme_council_research_speed_factor_var
+	academic_development_monthly = KOR_military_supreme_council_academic_development_monthly_var
+	consumer_goods_factor = KOR_military_supreme_council_consumer_goods_factor_var
+	production_speed_buildings_factor = KOR_military_supreme_council_production_speed_buildings_factor_var
+	industrial_development_monthly = KOR_military_supreme_council_industrial_development_monthly_var
+	production_speed_infrastructure_factor = KOR_military_supreme_council_production_speed_infrastructure_factor_var
+	production_factory_efficiency_gain_factor = KOR_military_supreme_council_production_factory_efficiency_gain_factor_var
+	production_factory_max_efficiency_factor = KOR_military_supreme_council_production_factory_max_efficiency_factor_var
+	political_power_factor = KOR_military_supreme_council_political_power_factor_var
+	intel_network_gain_factor = KOR_military_supreme_council_intel_network_gain_factor_var
+	intelligence_agency_defense = KOR_military_supreme_council_intelligence_agency_defense_var
+	enemy_operative_capture_chance_factor = KOR_military_supreme_council_enemy_operative_capture_chance_factor_var
+	industrial_capacity_factory = KOR_military_supreme_council_industrial_capacity_factory_var
+	industrial_capacity_dockyard = KOR_military_supreme_council_industrial_capacity_dockyard_var
+}
+KOR_cho_guk_democracy_dynamic = {
+	enable = { original_tag = KOR }
+	icon = GFX_idea_KOR_cho_guk_democracy_dynamic
+	stability_factor = KOR_cho_guk_democracy_stability_factor_var
+	political_power_factor = KOR_cho_guk_democracy_political_power_factor_var
+	intel_network_gain_factor = KOR_cho_guk_democracy_intel_network_gain_factor_var
+	intelligence_agency_defense = KOR_cho_guk_democracy_intelligence_agency_defense_var
+	enemy_operative_capture_chance_factor = KOR_cho_guk_democracy_enemy_operative_capture_chance_factor_var
+	resistance_growth = KOR_cho_guk_democracy_resistance_growth_var
+	industrial_capacity_factory = KOR_cho_guk_democracy_industrial_capacity_factory_var
+	production_factory_efficiency_gain_factor = KOR_cho_guk_democracy_production_factory_efficiency_gain_factor_var
+}
+KOR_yec_satellite_production_factory_commitment_dynamic = {
+	icon = GFX_KOR_yec_production
+	enable = {
+		original_tag = KOR
+	}
+	civilian_factory_use = KOR_yec_satellite_factories_committed_var
+	custom_modifier_tooltip = KOR_yec_satellite_production_factory_commitment_tt
+}
+
+KOR_yec_satellite_maintenance_factory_commitment_dynamic = {
+	icon = GFX_KOR_yec_satellite_status
+	enable = {
+		original_tag = KOR
+	}
+	civilian_factory_use = KOR_yec_maintenance_factories_committed_var
+	custom_modifier_tooltip = KOR_yec_satellite_maintenance_factory_commitment_tt
+}
+
+KOR_yec_satellite_status_optimal_dynamic = {
+	icon = GFX_idea_KOR_yec_satellite_status_dynamic
+	enable = {
+		original_tag = KOR
+	}
+	custom_modifier_tooltip = KOR_yec_satellite_status_optimal_dynamic_tt
+}
+
+KOR_yec_satellite_status_normal_dynamic = {
+	icon = GFX_idea_KOR_yec_satellite_status_dynamic
+	enable = {
+		original_tag = KOR
+	}
+	custom_modifier_tooltip = KOR_yec_satellite_status_normal_dynamic_tt
+}
+
+KOR_yec_satellite_status_degraded_dynamic = {
+	icon = GFX_idea_KOR_yec_satellite_status_dynamic
+	enable = {
+		original_tag = KOR
+	}
+	custom_modifier_tooltip = KOR_yec_satellite_status_degraded_dynamic_tt
+}
+
+KOR_yec_satellite_status_critical_dynamic = {
+	icon = GFX_idea_KOR_yec_satellite_status_dynamic
+	enable = {
+		original_tag = KOR
+	}
+	custom_modifier_tooltip = KOR_yec_satellite_status_critical_dynamic_tt
+}
+
+KOR_yec_satellite_status_disabled_dynamic = {
+	icon = GFX_idea_KOR_yec_satellite_status_dynamic
+	enable = {
+		original_tag = KOR
+	}
+	custom_modifier_tooltip = KOR_yec_satellite_status_disabled_dynamic_tt
+}
+
+KOR_yec_civil_emp_state_dynamic = {
+	icon = GFX_idea_KOR_coa_following_fate_idea
+	enable = {
+		always = yes
+	}
+	state_production_speed_buildings_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_industrial_complex_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_arms_factory_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_dockyard_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_infrastructure_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_rail_way_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_supply_node_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_bunker_factor = KOR_yec_emp_state_penalty_var
+	state_repair_speed_coastal_bunker_factor = KOR_yec_emp_state_penalty_var
+	supply_factor = KOR_yec_emp_state_penalty_var
+}
+
+KOR_yec_military_emp_state_dynamic = {
+	icon = GFX_idea_KOR_coa_following_fate_idea
+	enable = {
+		always = yes
+	}
+	army_org_factor = KOR_yec_emp_state_military_penalty_var
+	local_org_regain = KOR_yec_emp_state_military_penalty_var
+	planning_speed = KOR_yec_emp_state_military_penalty_var
+	mobilization_speed = KOR_yec_emp_state_military_penalty_var
+}
+
+
+### GAW Modifier ###
+
+KOR_gaw_plan_ongoing_country_PDTO_modifier = {
+	enable = { 
+		always = yes
+	}
+	remove_trigger = {
+		AND = {
+			NOT = {
+				is_in_faction_with = KOR
+			}
+			NOT = {
+				original_tag = KOR
+			}
+		}
+	}
+	icon = GFX_modifier_GAW_plan_ongoing
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Jocker 
+	air_cas_present_factor = GAW_plan_ongoing_air_cas_present_factor_var #0.25
+	air_strategic_bomber_bombing_factor = GAW_plan_ongoing_air_strategic_bomber_bombing_factor_var #0.25
+}
+
+
+KOR_gaw_plan_ongoing_state_PDTO_modifier_1 = {
+	enable = { 
+		OR = { is_in_faction_with = KOR original_tag = KOR }
+	}
+	remove_trigger = {
+		AND = {
+			NOT = {
+				is_in_faction_with = KOR
+			}
+			NOT = {
+				original_tag = KOR
+			}
+		}
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_1
+	#custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	air_cas_present_factor = 0.25
+	air_cas_efficiency = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_2 = {
+	enable = { 
+		OR = { is_in_faction_with = KOR original_tag = KOR }
+	}
+	remove_trigger = {
+		AND = {
+			NOT = {
+				is_in_faction_with = KOR
+			}
+			NOT = {
+				original_tag = KOR
+			}
+		}
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_2
+	#custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	air_strategic_bomber_bombing_factor = 0.25
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_3 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_3
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_infantry_attack_factor = 0.15
+	motorized_attack_factor = 0.1
+	mechanized_attack_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_4 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_4
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_infantry_defence_factor = 0.15
+	motorized_defence_factor = 0.1
+	mechanized_defence_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_5 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_5
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	modifier_army_sub_unit_infantry_max_org_factor = 0.1
+	modifier_army_sub_unit_motorized_max_org_factor = 0.1
+	modifier_army_sub_unit_mechanized_max_org_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_6 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_6
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	modifier_army_sub_unit_infantry_speed_factor = 0.15
+	modifier_army_sub_unit_motorized_speed_factor = 0.1
+	modifier_army_sub_unit_mechanized_speed_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_7 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_7
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_artillery_attack_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_8 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_8
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_artillery_defence_factor = 0.15
+	
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_9 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_9
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	modifier_army_sub_unit_artillery_max_org_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_10 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_10
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	modifier_army_sub_unit_artillery_speed_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_11 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_11
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_armor_attack_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_12 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_12
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_armor_defence_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_13 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_13
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	modifier_army_sub_unit_armor_max_org_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_14 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_14
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	army_armor_speed_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_15 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_15
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	special_forces_attack_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_16 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_16
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	special_forces_defence_factor = 0.15
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_17 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_17
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	special_forces_no_supply_grace = 72
+	special_forces_out_of_supply_factor = -0.25
+	modifier_army_sub_unit_category_special_forces_max_org_factor = 0.1
+}
+KOR_gaw_plan_ongoing_state_PDTO_modifier_18 = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing_18
+	custom_modifier_tooltip = GAW_plan_ongoing_is_pdto_ruling_tt
+	# Normal
+	modifier_army_sub_unit_category_special_forces_speed_factor = 0.15
+}
+
+KOR_gaw_plan_ongoing_state_PDTO_modifier = {
+	enable = { 
+		always = yes
+	}
+	icon = GFX_modifier_GAW_plan_ongoing
+	# Normal
+	army_infantry_attack_factor = GAW_plan_ongoing_army_infantry_attack_factor_var #0.15
+	motorized_attack_factor = GAW_plan_ongoing_motorized_attack_factor_var #0.1
+	mechanized_attack_factor = GAW_plan_ongoing_mechanized_attack_factor_var #0.1
+	
+	army_infantry_defence_factor = GAW_plan_ongoing_army_infantry_defence_factor_var
+	motorized_defence_factor = GAW_plan_ongoing_motorized_defence_factor_var
+	mechanized_defence_factor = GAW_plan_ongoing_mechanized_defence_factor_var
+	
+	modifier_army_sub_unit_infantry_max_org_factor = GAW_plan_ongoing_modifier_army_sub_unit_infantry_max_org_factor_var
+	modifier_army_sub_unit_motorized_max_org_factor = GAW_plan_ongoing_modifier_army_sub_unit_motorized_max_org_factor_var
+	modifier_army_sub_unit_mechanized_max_org_factor = GAW_plan_ongoing_modifier_army_sub_unit_mechanized_max_org_factor_var
+	
+	modifier_army_sub_unit_infantry_speed_factor = GAW_plan_ongoing_modifier_army_sub_unit_infantry_speed_factor_var
+	modifier_army_sub_unit_motorized_speed_factor = GAW_plan_ongoing_modifier_army_sub_unit_motorized_speed_factor_var
+	modifier_army_sub_unit_mechanized_speed_factor = GAW_plan_ongoing_modifier_army_sub_unit_mechanized_speed_factor_var
+	
+	army_artillery_attack_factor = GAW_plan_ongoing_army_artillery_attack_factor_var
+	
+	army_artillery_defence_factor = GAW_plan_ongoing_army_artillery_defence_factor_var
+	
+	modifier_army_sub_unit_artillery_max_org_factor = GAW_plan_ongoing_modifier_army_sub_unit_artillery_max_org_factor_var
+	
+	modifier_army_sub_unit_artillery_speed_factor = GAW_plan_ongoing_modifier_army_sub_unit_artillery_speed_factor_var
+	
+	army_armor_attack_factor = GAW_plan_ongoing_army_armor_attack_factor_var
+	
+	army_armor_defence_factor = GAW_plan_ongoing_army_armor_defence_factor_var
+	
+	modifier_army_sub_unit_armor_max_org_factor = GAW_plan_ongoing_modifier_army_sub_unit_armor_max_org_factor_var
+	
+	army_armor_speed_factor = GAW_plan_ongoing_army_armor_speed_factor_var
+	
+	special_forces_attack_factor = GAW_plan_ongoing_special_forces_attack_factor_var
+	
+	special_forces_defence_factor = GAW_plan_ongoing_special_forces_defence_factor_var
+	
+	special_forces_no_supply_grace = GAW_plan_ongoing_special_forces_no_supply_grace_var
+	special_forces_out_of_supply_factor = GAW_plan_ongoing_special_forces_out_of_supply_factor_var
+	modifier_army_sub_unit_category_special_forces_max_org_factor = GAW_plan_ongoing_modifier_army_sub_unit_category_special_forces_max_org_factor_var
+	
+	modifier_army_sub_unit_category_special_forces_speed_factor = GAW_plan_ongoing_modifier_army_sub_unit_category_special_forces_speed_factor_var
+}
+
+### EADI? plan
+KOR_gaw_plan_ongoing_state_EADI_modifier = {
+	enable = { 
+		ROOT = {
+			controller = {
+				is_in_faction_with = PRC 
+			}
+		}
+	}
+	icon = GFX_modifier_GAW_plan_ongoing
+}
+KOR_eastern_south_invest_company = { # 동남투자공사
+	icon = GFX_modifiers_KOR_eastern_south_invest_company
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	state_production_speed_buildings_factor = 0.1
+	business_value_factor = 0.1	
+	personal_value_factor = 0.05	
+	custom_modifier_tooltip = KOR_eastern_south_invest_company_TT
+}
+KOR_western_south_modifier = { #ㄹㅇ 호남에 지역감정 없음; 저 전라도 좋아함 그냥 내가 쌍도 사람이라 경상도에 좀 많이 주고 싶을 뿐..
+	icon = GFX_modifiers_KOR_western_south_modifier
+	enable = { is_controlled_by = KOR }
+	remove_trigger = {
+		NOT = { is_owned_by = KOR }
+	}
+	local_building_slots = 1
+	local_supplies = 0.1
+	custom_modifier_tooltip = KOR_western_south_modifier_TT
+}

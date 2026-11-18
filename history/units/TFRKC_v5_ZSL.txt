@@ -1,0 +1,14 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZSL militia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC v5 ZSL armor" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+division_template = { name = "TFRKC v5 ZSL mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "ZSL militia 1" location = 15344 division_template = "TFRKC v5 ZSL militia" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL militia 2" location = 15329 division_template = "TFRKC v5 ZSL militia" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL militia 3" location = 15330 division_template = "TFRKC v5 ZSL militia" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL militia 4" location = 15326 division_template = "TFRKC v5 ZSL militia" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL militia 5" location = 15303 division_template = "TFRKC v5 ZSL militia" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL militia 6" location = 14242 division_template = "TFRKC v5 ZSL militia" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL armor 1" location = 15277 division_template = "TFRKC v5 ZSL armor" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+ division = { name = "ZSL mobile 1" location = 15293 division_template = "TFRKC v5 ZSL mobile" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.4 }
+}

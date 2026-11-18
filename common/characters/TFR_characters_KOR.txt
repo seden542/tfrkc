@@ -1,0 +1,2119 @@
+characters={
+	#######################
+	### Country Leaders ###
+	#######################
+	KOR_moon_jae_in_char = {
+		name = KOR_moon_jae_in_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_moon_jae_in_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = KOR_moon_jae_in_char_desc
+			traits={ kor_moon_jae_in_traits }
+			ideology = gwanghwamun_democracy
+		}
+	}
+	KOR_lee_jae_myung_char = {
+		name = KOR_lee_jae_myung_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_jae_myung_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = KOR_lee_jae_myung_char_desc
+			traits = { kor_lee_jaming_traits }
+			ideology = legislative_pragmatism
+		}
+	}
+	KOR_yoon_suk_yeol_char = {
+		name = KOR_yoon_suk_yeol_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yoon_suk_yeol_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = KOR_yoon_suk_yeol_char_desc
+			traits = { kor_yoon_traits }
+			ideology = judicial_conservatism
+		}
+	}
+	KOR_sim_sang_jung_char = {
+		name = KOR_sim_sang_jung_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_sim_sang_jung_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = dreaming_realism
+		}
+	}
+	KOR_sohn_hak_kyu_char = {
+		name = KOR_sohn_hak_kyu_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_sohn_hak_kyu_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = civic_nationalism
+		}
+	}
+	KOR_hwang_kyo_ahn_char = {
+		name = KOR_hwang_kyo_ahn_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_hwang_kyo_ahn_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = korean_conservatism
+		}
+	}
+	KOR_cho_won_jin_char = {
+		name = KOR_cho_won_jin_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_cho_won_jin_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+	}
+	KOR_kang_ki_hoon_char = {
+		name = KOR_kang_ki_hoon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kang_ki_hoon_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = classical_fascism
+		}
+	}
+	KOR_ryu_seung_gu_char = {
+		name = KOR_ryu_seung_gu_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_ryu_seung_gu_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = neonazism
+		}
+	}
+	KOR_lee_sang_kyu_char = {
+		name = KOR_lee_sang_kyu_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_sang_kyu_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = progressive_democracy
+		}
+	}
+	KOR_na_do_won_char = {
+		name = KOR_na_do_won_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_na_do_won_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = revolutionary_socialism
+		}
+	}
+	KOR_lee_sang_hoon_char = {
+		name = KOR_lee_sang_hoon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_sang_hoon_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = jucheism
+		}
+	}
+	KOR_outlawed_char = {
+		name = KOR_outlawed_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_outlawed_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	KOR_ahn_cheol_soo_char = {
+		name = KOR_ahn_cheol_soo_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_ahn_cheol_soo_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+	}
+	KOR_lee_jun_seok_char = {
+		name = KOR_lee_jun_seok_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_jun_seok_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = korean_conservatism
+		}
+	}
+	KOR_han_dong_hoon_char = {
+		name = KOR_han_dong_hoon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_han_dong_hoon_char_civilian_large
+			}
+		}
+	}
+	KOR_yoon_sang_hyun_char = {
+		name = KOR_yoon_sang_hyun_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yoon_sang_hyun_char_civilian_large
+			}
+		}
+	}
+	KOR_na_kyung_won_char = {
+		name = KOR_na_kyung_won_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_na_kyung_won_char_civilian_large
+			}
+		}
+	}
+	KOR_chang_je_won_char = {
+		name = KOR_chang_Je_won_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_chang_je_won_char_civilian_large
+			}
+		}
+	}
+	KOR_kim_min_seok_char = {
+		name = KOR_kim_min_seok_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_min_seok_char_civilian_large
+			}
+		}
+	}
+	KOR_chu_mi_ae_char = {
+		name = KOR_chu_mi_ae_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_chu_mi_ae_char_civilian_large
+			}
+		}
+	}
+	KOR_cho_guk_char = {
+		name = KOR_cho_guk_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_cho_guk_char_civilian_large
+			}
+		}
+	}
+	KOR_park_yong_jin_char = {
+		name = KOR_park_yong_jin_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_park_yong_jin_char_civilian_large
+			}
+		}
+	}
+	KOR_hwang_un_ha_char = {
+		name = KOR_hwang_un_ha_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_hwang_un_ha_char_civilian_large
+			}
+		}
+	}
+	KOR_chong_won_oh_char = {
+		name = KOR_chong_won_oh_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_chong_won_oh_char_civilian_large
+			}
+		}
+	}
+	KOR_park_beom_kye_char = {
+		name = KOR_park_beom_kye_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_park_beom_kye_char_civilian_large
+			}
+		}
+	}
+	KOR_kim_joon_hyung_char = {
+		name = KOR_kim_joon_hyung_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_joon_hyung_char_civilian_large
+			}
+		}
+	}
+	KOR_kim_moon_soo_char = {
+		name = KOR_kim_moon_soo_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_moon_soo_char_civilian_large
+			}
+		}
+	}
+	KOR_im_jong_seok_char = {
+		name = KOR_im_jong_seok_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_im_jong_seok_char_civilian_large
+			}
+		}
+	}
+	KOR_won_hee_ryong_char = {
+		name = KOR_won_hee_ryong_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_won_hee_ryong_char_civilian_large
+			}
+		}
+	}
+	KOR_yoon_eui_cheol_char = {
+		name = KOR_yoon_eui_cheol_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yoon_eui_cheol_char_civilian_large
+			}
+			army = {
+				large = GFX_portrait_KOR_yoon_eui_cheol_char_army_large
+				small = GFX_idea_KOR_yoon_eui_cheol
+			}
+		}
+		corps_commander = {
+			desc = KOR_yoon_eui_cheol_corps_commander_desc
+			traits = {
+				harsh_leader
+				armor_officer
+				old_guard
+				politically_connected
+			}
+			visible = {
+				KOR = {
+					NOT = {
+						has_country_flag = KOR_yoon_eui_cheol_retired_flag
+					}
+				}
+			}	
+			skill = 3
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KOR_kim_yong_woo_char = {
+		name = KOR_kim_yong_woo_char
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_kim_yong_woo_char_army_large
+				small = GFX_idea_KOR_kim_yong_woo
+			}
+		}
+		field_marshal = {
+			desc = KOR_kim_yong_woo_char_desc
+			traits = {
+				infantry_officer
+				inflexible_strategist
+				career_officer
+				organizer
+			}
+			visible = {
+				KOR = {
+					has_country_flag = KOR_retired_generals_are_comming_flag
+				}
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	KOR_park_chan_ju_char = {
+		name = KOR_park_chan_ju_char
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_park_chan_ju_char_army_large
+				small = GFX_idea_KOR_park_chan_ju
+			}
+		}
+		corps_commander = {
+			desc = KOR_park_chan_ju_char_desc
+			traits = {
+				old_guard
+				brilliant_strategist
+				harsh_leader
+				politically_connected
+				trait_reckless
+				armor_officer
+			}
+			visible = {
+				KOR = {
+					has_country_flag = KOR_retired_generals_are_comming_flag
+				}
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_chun_ha_ram_char = {
+		name = KOR_chun_ha_ram_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_chun_ha_ram_char_civilian_large
+			}
+		}
+	}
+	KOR_song_yeong_gil_char = {
+		name = KOR_song_yeong_gil_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_song_yeong_gil_char_civilian_large
+			}
+		}
+	}
+	KOR_park_chan_dae_char = {
+		name = KOR_park_chan_dae_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_park_chan_dae_char_civilian_large
+			}
+		}
+	}
+	KOR_park_joo_min_char = {
+		name = KOR_park_joo_min_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_park_joo_min_char_civilian_large
+			}
+		}
+	}
+	KOR_kim_jae_yeon_char = {
+		name = KOR_kim_jae_yeon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_jae_yeon_char_civilian_large
+			}
+		}
+	}
+	KOR_yoon_jong_o_char = {
+		name = KOR_yoon_jong_o_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yoon_jong_o_char_civilian_large
+			}
+		}
+	}
+	KOR_jang_hye_young_char = {
+		name = KOR_jang_hye_young_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_jang_hye_young_char_civilian_large
+			}
+		}
+	}
+	KOR_lee_baek_yoon_char = {
+		name = KOR_lee_baek_yoon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_baek_yoon_char_civilian_large
+			}
+		}
+	}
+	KOR_han_sang_gyun_char = {
+		name = KOR_han_sang_gyun_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_han_sang_gyun_char_civilian_large
+			}
+		}
+	}
+	KOR_kwon_yong_gook_char = {
+		name = KOR_kwon_yong_gook_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kwon_yong_gook_char_civilian_large
+			}
+		}
+	}
+	KOR_kang_sung_hee_char = {
+		name = KOR_kang_sung_hee_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kang_sung_hee_char_civilian_large
+			}
+		}
+	}
+	KOR_huh_kyung_young_char = {
+		name = KOR_huh_kyung_young_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_huh_kyung_young_char_civilian_large
+			}
+		}
+	}
+	KOR_jang_dong_hyeok_char = {
+		name = KOR_jang_dong_hyeok_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_jang_dong_hyeok_char_civilian_large
+			}
+		}
+	}
+	KOR_shin_won_sik_char = {
+		name = KOR_shin_won_sik_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_shin_won_sik_char_civilian_large
+			}
+		}
+	}
+	KOR_kim_byeong_joo_char = {
+		name = KOR_kim_byeong_joo_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_byeong_joo_char_civilian_large
+			}
+		}
+	}
+	KOR_lee_chang_yong_char = {
+		name = KOR_lee_chang_yong_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_chang_yong_char_civilian_large
+			}
+		}
+	}
+	KOR_kwak_sang_eon_char = {
+		name = KOR_kwak_sang_eon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kwak_sang_eon_char_civilian_large
+			}
+		}
+	}
+	KOR_min_hyung_bae_char = {
+		name = KOR_min_hyung_bae_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_min_hyung_bae_char_civilian_large
+			}
+		}
+	}
+	KOR_choe_kang_wook_char = {
+		name = KOR_choe_kang_wook_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_choe_kang_wook_char_civilian_large
+			}
+		}
+	}
+	KOR_jeong_chung_rae_char = {
+		name = KOR_jeong_chung_rae_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_jeong_chung_rae_char_civilian_large
+			}
+		}
+	}
+	KOR_chung_jin_suk_char = {
+		name = KOR_chung_jin_suk_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_chung_jin_suk_char_civilian_large
+			}
+		}
+	}
+	KOR_kwon_seong_dong_char = {
+		name = KOR_kwon_seong_dong_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kwon_seong_dong_char_civilian_large
+			}
+		}
+	}
+	KOR_joo_ho_young_char = {
+		name = KOR_joo_ho_young_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_joo_ho_young_char_civilian_large
+			}
+		}
+	}
+	KOR_kim_gi_hyeon_char = {
+		name = KOR_kim_gi_hyeon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_gi_hyeon_char_civilian_large
+			}
+		}
+	}
+	KOR_yun_jae_ok_char = {
+		name = KOR_yun_jae_ok_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yun_jae_ok_char_civilian_large
+			}
+		}
+	}
+	KOR_yu_eui_dong_char = {
+		name = KOR_yu_eui_dong_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_yu_eui_dong_char_civilian_large
+			}
+		}
+	}
+	KOR_yi_won_char = {
+		name="KOR_yi_won_char"
+		portraits={
+			civilian={
+				large="GFX_portrait_KOR_yi_won_char_civilian_large"
+			}
+		}
+	}
+	KOR_yi_yeongju_char = {
+		name="KOR_yi_yeongju_char"
+		portraits={
+			civilian={
+				large="GFX_portrait_KOR_yi_yeongju_char_civilian_large"
+			}
+		}
+	}
+	KOR_yi_seok_char = {
+		name="KOR_yi_seok_char"
+		portraits={
+			civilian={
+				large="GFX_portrait_KOR_yi_seok_char_civilian_large"
+			}
+		}
+	}
+	KOR_yi_won_joon_char = {
+		name="KOR_yi_won_joon_char"
+		portraits={
+			civilian={
+				large="GFX_portrait_KOR_yi_won_joon_char_civilian_large"
+			}
+		}
+	}
+	KOR_vacant_char = {
+		name = KOR_vacant_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_vacant_char_civilian_large
+			}
+		}
+		country_leader = { ideology = centrist }
+		country_leader = { ideology = social_democracy }
+		country_leader = { ideology = civic_nationalism }
+		country_leader = { ideology = neoconservative }
+		country_leader = { ideology = ultra_conservatism }
+		country_leader = { ideology = classical_fascism }
+		country_leader = { ideology = neonazism }
+		country_leader = { ideology = reformist_socialism }
+		country_leader = { ideology = marxism_leninism }
+		country_leader = { ideology = jucheism }
+	}
+	KOR_federation_char = {
+		name = KOR_federation_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_federation_char_civilian_large
+			}
+		}
+	}
+	KOR_KSDLP_char = {
+		name = KOR_KSDLP_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_federation_char_civilian_large
+			}
+		}
+	}
+	KOR_han_duck_soo_char = {
+		name = KOR_han_duck_soo_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_han_duck_soo_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = KOR_han_duck_soo_char_desc
+			ideology = interim_democracy
+		}
+	}
+	KOR_choi_sang_muk_char = {
+		name = KOR_choi_sang_muk_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_choi_sang_muk_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = KOR_choi_sang_muk_char_desc
+			ideology = interim_democracy
+		}
+	}
+	KOR_lee_ju_ho_char = {
+		name = KOR_lee_ju_ho_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_lee_ju_ho_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = KOR_lee_ju_ho_char_desc
+			ideology = interim_democracy
+		}
+	}
+	KOR_ai_park_chung_hee_char = {
+		name = KOR_ai_park_chung_hee_char
+		portraits = {
+			civilian = {
+				large = GFX_KOR_ai_park_chunghee_gif
+			}
+		}
+		country_leader = {
+			desc = KOR_ai_park_chung_hee_char_desc
+			ideology = neo_parkism
+			traits = { kor_god_machine }
+		}
+	}
+	KOR_lee_nak_yon_char = {
+		name = KOR_lee_nak_yon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_ai_park_chung_hee_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = civic_nationalism
+		}
+	}
+
+	KOR_kim_min_soo_char = {
+		name = KOR_kim_min_soo_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_min_soo_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = yoonism
+		}
+	}
+
+	KOR_cho_kyoung_tae_char = {
+		name = KOR_cho_kyoung_tae_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_cho_kyoung_tae_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = yoonism
+		}
+	}
+
+	KOR_kim_jae_sub_char = {
+		name = KOR_kim_jae_sub_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_kim_jae_sub_char_civilian_large
+			}
+		}
+		country_leader = {
+			ideology = yoonism
+		}
+	}
+
+	
+	################
+	### 최고사령부 ###
+	################
+	KOR_nam_young_sin_char = {
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_nam_young_sin_char_army_small
+				large = GFX_portrait_KOR_nam_young_sin_char_army_large
+			}
+		}
+		advisor = {
+			desc = KOR_nam_young_sin_corps_commander_desc
+			slot = army_chief
+			idea_token = KOR_nam_young_sin_army_chief
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			desc = KOR_nam_young_sin_corps_commander_desc
+			traits = {
+				organizer
+				career_officer
+				organisational_leader
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	KOR_park_an_soo_char = {
+		name = KOR_park_an_soo_char
+		portraits = {
+			army = {
+				large = GFX_portrait_KOR_park_an_soo_char_army_large
+				small = GFX_portrait_KOR_park_an_soo_char_army_small
+			}
+		}
+		advisor={
+			desc = KOR_park_an_soo_char_desc
+			slot = high_command
+			idea_token = KOR_park_an_soo_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_planning_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal = {
+			desc = KOR_park_an_soo_char_desc
+			traits = {
+				organisational_leader
+				infantry_leader
+				infantry_expert
+				politically_connected
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	KOR_an_jun_suck_char = {
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_an_jun_suck_char_army_small
+				large = GFX_portrait_KOR_an_jun_suck_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_an_jun_suck_char_desc
+			slot = army_chief
+			idea_token = KOR_an_jun_suck_army_chief
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal = {
+			desc = KOR_an_jun_suck_char_desc
+			traits = {
+				infantry_officer
+				organizer
+				unyielding_defender
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 2
+		}
+	}
+	
+	KOR_macarthur_char = { ## 전뇌화 맥아더
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_an_jun_suck_char_army_small
+				large = GFX_portrait_KOR_mac_char_army_large
+			}
+		}
+	}
+	
+	KOR_lee_joung_soo_char = {
+		portraits={
+			army={
+				large= GFX_portrait_KOR_han_min_goo_char_army_large
+				small= GFX_portrait_KOR_han_min_goo_char_army_small
+			}	
+			civilian = {
+				large= GFX_portrait_KOR_han_min_goo_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_lee_joung_soo_char_desc
+			slot = high_command
+			idea_token = KOR_lee_joung_soo_high_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_shellfire_determine_victory
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	################
+	### Generals ###
+	################
+	KOR_chae_myeong_sin_char = { #전뇌화 채명신 
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_an_jun_suck_char_army_small
+				large = GFX_portrait_KOR_chae_char_army_large
+			}
+		}
+	}
+	KOR_lee_doo_hee_char = {
+		name = KOR_lee_doo_hee_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_lee_doo_hee_char_army_small
+				large = GFX_portrait_KOR_lee_doo_hee_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_lee_doo_hee_char_desc
+			slot = army_chief
+			idea_token = KOR_lee_doo_hee_army_chief
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_maneuver_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_lee_doo_hee_char_desc
+			traits = { 
+				panzer_leader
+				skilled_staffer
+				bearer_of_artillery
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	KOR_chang_kwang_sun_char = {
+		name = KOR_chang_kwang_sun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_chang_kwang_sun_char_army_small
+				large = GFX_portrait_KOR_chang_kwang_sun_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_chang_kwang_sun_char_desc
+			slot = high_command
+			idea_token = KOR_chang_kwang_sun_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_chang_kwang_sun_char_desc
+			traits = {
+				infantry_leader
+				infantry_expert
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	KOR_sin_hee_heun_char = {
+		name = KOR_sin_hee_heun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_sin_hee_heun_char_army_small
+				large = GFX_portrait_KOR_sin_hee_heun_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_sin_hee_heun_char_desc
+			slot = high_command
+			idea_token = KOR_sin_hee_heun_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_sin_hee_heun_char_desc
+			traits = {
+				organizer
+				inspirational_leader
+				organisational_leader
+				trait_reckless
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	KOR_lee_gu_jun_char = {
+		name = KOR_lee_gu_jun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_lee_gu_jun_char_army_small
+				large = GFX_portrait_KOR_lee_gu_jun_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_lee_gu_jun_char_desc
+			traits = {
+				bearer_of_artillery
+				trait_engineer
+				fortress_buster
+				trait_reckless
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_ho_kang_soo_char = {
+		name = KOR_ho_kang_soo_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_ho_kang_soo_char_army_small
+				large = GFX_portrait_KOR_ho_kang_soo_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_ho_kang_soo_char_desc
+			slot = high_command
+			idea_token = KOR_ho_kang_soo_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_ho_kang_soo_char_desc
+			traits = {
+				panzer_expert
+				panzer_leader
+				offensive_doctrine
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	KOR_soo_yung_min_char = {
+		name = KOR_soo_yung_min_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_soo_yung_min_char_army_small
+				large = GFX_portrait_KOR_soo_young_min_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_soo_yung_min_char_desc
+			slot = army_chief
+			idea_token = KOR_soo_yung_min_army_chief
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_soo_yung_min_char_desc
+			traits = {
+				naval_invader
+				commando
+				career_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	KOR_moon_sangho_char = {
+		name = KOR_moon_sangho_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_moon_sangho_char_army_small
+				large = GFX_portrait_KOR_moon_sangho_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_moon_sangho_char_desc
+			slot = high_command
+			idea_token = KOR_moon_sangho_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_morale_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_moon_sangho_char_desc
+			traits = {
+				hidden_sympathies
+				brilliant_strategist
+				unyielding_defender
+				career_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_yeo_inhyung_char = {
+		name = KOR_yeo_inhyung_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_yeo_inhyung_char_army_small
+				large = GFX_portrait_KOR_yeo_inhyung_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_yeo_inhyung_char_desc
+			traits = {
+				politically_connected
+				hidden_sympathies
+				infantry_officer
+				expert_improviser
+				career_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	KOR_kuak_jong_kun_char = {
+		name = KOR_kuak_jong_kun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kuak_jong_kun_char_army_small
+				large = GFX_portrait_KOR_kuak_jong_kun_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_kuak_jong_kun_char_desc
+			traits = {
+				organisational_leader
+				infantry_leader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	KOR_lee_jin_woo_char = {
+		name = KOR_lee_jin_woo_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_lee_jin_woo_char_army_small
+				large = GFX_portrait_KOR_lee_jin_woo_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_lee_jin_woo_char_desc
+			traits = {
+				trait_reckless
+				organisational_leader
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_park_jae_yeol_char = {
+		name = KOR_park_jae_yeol_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_park_jae_yeol_char_army_small
+				large = GFX_portrait_KOR_park_jae_yeol_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_park_jae_yeol_char_desc
+			traits = {
+				guerilla_fighter
+				panzer_leader
+				skilled_staffer
+				hidden_sympathies
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_im_seong_geun_char = {
+		name = KOR_im_seong_geun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_im_seong_geun_char_army_small
+				large = GFX_portrait_KOR_im_seong_geun_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_im_seong_geun_char_desc
+			slot = high_command
+			idea_token = KOR_im_seong_geun_command
+			ledger = army
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_amphibious_assault_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			desc = KOR_im_seong_geun_char_desc
+			traits = {
+				harsh_leader
+				politically_connected
+				trait_reckless
+				naval_invader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	KOR_kang_Ho_pill_char = {
+		name = KOR_kang_Ho_pill_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kang_Ho_pill_char_army_small
+				large = GFX_portrait_KOR_kang_Ho_pill_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_kang_Ho_pill_char_desc
+			traits = {
+				unyielding_defender
+				combined_arms_expert
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_kim_heun_tee_char = {
+		name = KOR_kim_heun_tee_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_im_seong_geun_char_army_small
+				large = GFX_portrait_KOR_kim_heun_tee_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_kim_heun_tee_char_desc
+			traits = {
+				commando
+				organisational_leader
+				urban_assault_specialist
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KOR_park_jeong_hwan_char = {
+		name = KOR_park_jeong_hwan_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_park_jeong_hwan_char_army_small
+				large = GFX_portrait_KOR_park_jeong_hwan_char_army_large
+			}
+		}
+		field_marshal = {
+			desc = KOR_park_jeong_hwan_char_desc
+			traits = {
+				infantry_leader
+				infantry_officer
+				charismatic
+				organisational_leader
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill_skill = 3
+		}
+	}
+
+	KOR_ahn_byung_seok_char = {
+		name = KOR_ahn_byung_seok_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_ahn_byung_seok_char_army_small
+				large = GFX_portrait_KOR_ahn_byung_seok_char_army_large
+			}
+		}
+		field_marshal = {
+			desc = KOR_ahn_byung_seok_char_desc
+			traits = {
+				coalition_evaluator
+				career_officer
+				organisational_leader
+				charismatic
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	KOR_jeon_dong_jin_char = {
+		name = KOR_jeon_dong_jin_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_jeon_dong_jin_char_army_small
+				large = GFX_portrait_KOR_jeon_dong_jin_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_jeon_dong_jin_char_desc
+			traits = {
+				offensive_doctrine
+				career_officer
+				aggressive_assault_leader
+				brilliant_strategist
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	KOR_son_sik_char = {
+		name = KOR_son_sik_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_son_sik_char_army_small
+				large = GFX_portrait_KOR_son_sik_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_son_sik_char_desc
+			traits = {
+				defensive_doctrine
+				career_officer
+				unyielding_defender
+				infantry_leader
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	KOR_jung_jin_pal_char = {
+		name = KOR_jung_jin_pal_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_jung_jin_pal_char_army_small
+				large = GFX_portrait_KOR_jung_jin_pal_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_jung_jin_pal_char_desc
+			traits = {
+				brilliant_strategist
+				career_officer
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	KOR_won_cheon_hee_char = {
+		name = KOR_won_cheon_hee_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_won_cheon_hee_char_army_small
+				large = GFX_portrait_KOR_won_cheon_hee_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_won_cheon_hee_char_desc
+			traits = {
+				trickster
+				career_officer
+				politically_connected
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+
+	KOR_eom_yong_jin_char = {
+		name = KOR_eom_yong_jin_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_eom_yong_jin_char_army_small
+				large = GFX_portrait_KOR_eom_yong_jin_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_eom_yong_jin_char_desc
+			traits = {
+				logistics_wizard
+				career_officer
+				organizer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+
+	KOR_kim_do_gyun_char = {
+		name = KOR_kim_do_gyun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kim_do_gyun_char_army_small
+				large = GFX_portrait_KOR_kim_do_gyun_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_kim_do_gyun_char_desc
+			traits = {
+				urban_assault_specialist
+				career_officer
+				unyielding_defender
+			}
+			skill = 3
+			attack = 2
+			defense = 3
+			planning = 3
+			logistics = 2
+		}
+	}
+	
+	#### Navy ####
+
+	KOR_kang_dong_gil_char = {
+		name = KOR_kang_dong_gil_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kang_dong_gil_char_army_small
+				large = GFX_portrait_KOR_kang_dong_gil_char_army_large
+			}
+		}
+		navy_leader = {
+			desc = KOR_kang_dong_gil_char_desc
+			traits = { 
+				superior_tactician 
+				marksman
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+
+	KOR_choi_sung_hyuk_char = {
+		name = KOR_choi_sung_hyuk_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_choi_sung_hyuk_char_army_small
+				large = GFX_portrait_KOR_choi_sung_hyuk_char_army_large
+			}
+		}
+		navy_leader = {
+			desc = KOR_choi_sung_hyuk_char_desc
+			traits = { 
+				blockade_runner 
+				bold 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+
+	KOR_hwang_sun_woo_char = {
+		name = KOR_hwang_sun_woo_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_hwang_sun_woo_char_army_small
+				large = GFX_portrait_KOR_hwang_sun_woo_char_army_large
+			}
+		}
+		navy_leader = {
+			desc = KOR_hwang_sun_woo_char_desc
+			traits = { 
+				superior_tactician 
+				fleet_protector
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	KOR_kim_seong_hak_char = {
+		name = KOR_kim_seong_hak_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kim_seong_hak_char_army_small
+				large = GFX_portrait_KOR_kim_seong_hak_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_kim_seong_hak_char_desc
+			slot = navy_chief
+			idea_token = KOR_kim_seong_hak_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_naval_aviation_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_kim_seong_hak_char_desc
+			traits = { superior_tactician blockade_runner bold }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	KOR_lee_seong_yul_char = {
+		name = KOR_lee_seong_yul_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_lee_seong_yul_char_army_small
+				large = GFX_portrait_KOR_lee_seong_yul_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_lee_seong_yul_char_desc
+			slot = navy_chief
+			idea_token = KOR_lee_seong_yul_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_fleet_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_lee_seong_yul_char_desc
+			traits = { spotter inshore_fighter green_water_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 1
+		}
+	}
+	KOR_kim_in_ho_char = {
+		name = KOR_kim_in_ho_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kim_in_ho_char_army_small
+				large = GFX_portrait_KOR_kim_in_ho_char_army_large
+			}
+		}
+		navy_leader = {
+			desc = KOR_kim_in_ho_char_desc
+			traits = { ironside destroyer_leader blue_water_exper }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+		}
+	}
+
+	KOR_lee_jong_ho_char = {
+		name = KOR_lee_jong_ho_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_lee_jong_ho_char_army_small
+				large = GFX_portrait_KOR_lee_jong_ho_char_army_large
+			}
+		}
+		advisor = {
+			desc = KOR_lee_jong_ho_char_desc
+			slot = navy_chief
+			idea_token = KOR_lee_jong_ho_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_submarine_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_lee_jong_ho_char_desc
+			traits = {
+				seawolf
+				spotter
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 2
+		}
+	}
+	KOR_yang_yong_mo_char = {
+		name = KOR_yang_yong_mo_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_yang_yong_mo_char_army_small
+				large = GFX_portrait_KOR_yang_yong_mo_char_army_large
+			}
+		}
+		advisor = {
+			desc = KOR_yang_yong_mo_char_desc
+			slot = navy_chief
+			idea_token = KOR_yang_yong_mo_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_yang_yong_mo_char_desc
+			traits = {
+				superior_tactician
+				spotter
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+	KOR_kim_kyung_ryul_char = {
+		name = KOR_kim_kyung_ryul_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kim_kyung_ryul_char_army_small
+				large = GFX_portrait_KOR_kim_kyung_ryul_char_army_large
+			}
+		}
+		advisor = {
+			desc = KOR_kim_kyung_ryul_char_desc
+			slot = navy_chief
+			idea_token = KOR_kim_kyung_ryul_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_kim_kyung_ryul_char_desc
+			traits = {
+				ironside
+				spotter
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+
+	KOR_you_kun_jong_char = {
+		name = KOR_you_kun_jong_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_you_kun_jong_char_army_small
+				large = GFX_portrait_KOR_you_kun_jong_char_army_large
+			}
+		}
+		navy_leader = {
+			desc = KOR_you_kun_jong_char_desc
+			traits = { lone_wolf superior_tactician }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	KOR_an_sang_min_char = {
+		name = KOR_an_sang_min_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_an_sang_min_char_army_small
+				large = GFX_portrait_KOR_an_sang_min_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_an_sang_min_char_desc
+			slot = high_command
+			idea_token = KOR_an_sang_min_command
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_fleet_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_an_sang_min_char_desc
+			traits = { fleet_protector cruiser_captain safety_first }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	KOR_chnag_seong_kun_char = {
+		name = KOR_chnag_seong_kun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_chnag_seong_kun_char_army_small
+				large = GFX_portrait_KOR_chnag_seong_kun_char_army_large
+			}
+		}
+		advisor={
+			desc = KOR_chnag_seong_kun_char_desc
+			slot = high_command
+			idea_token = KOR_chnag_seong_kun_command
+			ledger = navy
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			desc = KOR_chnag_seong_kun_char_desc
+			traits = { seawolf silent_hunter concealment_expert }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+	# Airforce
+	KOR_jung_sanghwa_char = {
+		name = KOR_jung_sanghwa_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_jung_sanghwa_army_small
+			}
+		}
+		advisor = {
+			desc = KOR_jung_sanghwa_char_desc
+			slot = air_chief
+			idea_token = KOR_jung_sanghwa_air_chief
+			ledger = air
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KOR_son_seokrak_char = {
+		name = KOR_son_seokrak_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_son_seokrak_army_small
+			}
+		}
+		advisor = {
+			desc = KOR_son_seokrak_char_desc
+			slot = air_chief
+			idea_token = KOR_son_seokrak_air_chief
+			ledger = air
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KOR_lee_young_su_char = {
+		name = KOR_lee_young_su_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_lee_young_su_army_small
+			}
+		}
+		advisor = {
+			desc = KOR_lee_young_su_char_desc
+			slot = air_chief
+			idea_token = KOR_lee_young_su_air_chief
+			ledger = air
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KOR_park_giwan_char = {
+		name = KOR_park_giwan_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_park_giwan_army_small
+			}
+		}
+		advisor={
+			desc = KOR_park_giwan_char_desc
+			slot = high_command
+			idea_token = KOR_park_giwan_command
+			ledger = air
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				air_air_superiority_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	################
+	################
+	## New Generals
+	################
+	################
+	
+	#Army
+	KOR_kang_shin_cheol_char = {
+		name = KOR_kang_shin_cheol_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kang_shin_cheol_char_army_small
+				large = GFX_portrait_KOR_kang_shin_cheol_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_kang_shin_cheol_char_desc
+			traits = {
+				career_officer
+				trait_cautious
+				inflexible_strategist
+				organizer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KOR_go_chang_jun_char = {
+		name = KOR_go_chang_jun_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_go_chang_jun_char_army_small
+				large = GFX_portrait_KOR_go_chang_jun_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_go_chang_jun_char_desc
+			traits = {
+				career_officer
+				infantry_officer
+				infantry_leader
+				trickster
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	KOR_kim_seung_gyeom_char = {
+		name = KOR_kim_seung_gyeom_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kim_seung_gyeom_char_army_small
+				large = GFX_portrait_KOR_kim_seung_gyeom_char_army_large
+			}
+		}
+		corps_commander = {
+			desc = KOR_kim_seung_gyeom_char_desc
+			traits = {
+				career_officer
+				inflexible_strategist
+				infantry_officer
+				armor_officer
+				trickster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	#Navy
+	KOR_kim_myeong_soo_char = {
+		name = KOR_kim_myeong_soo_char
+		portraits = {
+			army = {
+				small = GFX_portrait_KOR_kim_myeong_soo_char_army_small
+				large = GFX_portrait_KOR_kim_myeong_soo_char_army_large
+			}
+		}
+		navy_leader = {
+			desc = KOR_kim_myeong_soo_char_desc
+			traits = { silent_hunter lone_wolf safety_first }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}
+	}
+	
+	################
+	### Anothers ###
+	################
+
+	CNA_vacant_char = {
+		name = KOR_vacant_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CNA_vacant_char_civilian_large
+			}
+		}
+		country_leader = { ideology = maoism }
+	}
+	JPN_vacant_char = {
+		name = KOR_vacant_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JPN_vacant_char_civilian_large
+			}
+		}
+		country_leader = { ideology = ultra_conservatism }
+	}
+	ZZX_anarchy_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+			}
+			army = {
+				large = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+			}
+		}
+		country_leader = {
+			desc = ZZZ_anarchy_char_desc
+			ideology = left_anarchist
+		}
+	}
+}

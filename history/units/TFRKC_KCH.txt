@@ -1,0 +1,25 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KCH 8" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } } }
+division_template = { name = "TFRKC KCH 4" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } }
+division_template = { name = "TFRKC KCH infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KCH armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "제7사단 전방 전투단" location = 15090 division_template = "TFRKC KCH 8" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "제15사단 전방 전투단" location = 15192 division_template = "TFRKC KCH 8" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "제21사단 전방 전투단" location = 13689 division_template = "TFRKC KCH 8" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "동부전선 경비여단" location = 1148 division_template = "TFRKC KCH 4" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "전방 보급로 방위여단" location = 15110 division_template = "TFRKC KCH 4" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제1보병사단" location = 14248 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제2보병사단" location = 15191 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제3보병사단" location = 15140 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제4보병사단" location = 15156 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제5보병사단" location = 13688 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제6보병사단" location = 15098 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제7보병사단" location = 11958 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제8보병사단" location = 4004 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제9보병사단" location = 15157 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제10보병사단" location = 15143 division_template = "TFRKC KCH infantry_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제1기갑사단" location = 12011 division_template = "TFRKC KCH armored_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제2기갑사단" location = 7021 division_template = "TFRKC KCH armored_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KCH 증편 제3기갑사단" location = 10036 division_template = "TFRKC KCH armored_division" start_experience_factor = 0.4 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+}

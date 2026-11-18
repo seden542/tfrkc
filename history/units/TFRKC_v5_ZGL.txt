@@ -1,0 +1,10 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZGL security" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 ZGL mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "ZGL security 1" location = 15216 division_template = "TFRKC v5 ZGL security" start_manpower_factor = 0.7 start_equipment_factor = 0.7 start_experience_factor = 0.4 }
+ division = { name = "ZGL security 2" location = 1148 division_template = "TFRKC v5 ZGL security" start_manpower_factor = 0.7 start_equipment_factor = 0.7 start_experience_factor = 0.4 }
+ division = { name = "ZGL security 3" location = 15110 division_template = "TFRKC v5 ZGL security" start_manpower_factor = 0.7 start_equipment_factor = 0.7 start_experience_factor = 0.4 }
+ division = { name = "ZGL security 4" location = 15242 division_template = "TFRKC v5 ZGL security" start_manpower_factor = 0.7 start_equipment_factor = 0.7 start_experience_factor = 0.4 }
+ division = { name = "ZGL mobile 1" location = 15255 division_template = "TFRKC v5 ZGL mobile" start_manpower_factor = 0.7 start_equipment_factor = 0.7 start_experience_factor = 0.4 }
+}

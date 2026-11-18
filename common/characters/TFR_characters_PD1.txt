@@ -1,0 +1,150 @@
+characters={
+	PD1_tae_yeongho_char = {
+		name = PD1_tae_yeongho_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_tae_yeongho_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD1_tae_yeongho_char_desc
+			ideology = centrist
+		}
+		country_leader = {
+			desc = PD1_tae_yeongho_char_desc
+			ideology = constitutionalist
+		}
+		country_leader = {
+			desc = PD1_tae_yeongho_char_desc
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			desc = PD1_tae_yeongho_char_desc
+			ideology = military_junta
+		}
+		country_leader = {
+			desc = PD1_tae_yeongho_char_desc
+			ideology = classical_fascism
+		}
+	}
+	PD1_yang_mujin_char = {
+		name = PD1_yang_mujin_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_yang_mujin_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD1_yang_mujin_char_desc
+			ideology = centrist
+		}
+		country_leader = {
+			desc = PD1_yang_mujin_char_desc
+			ideology = constitutionalist
+		}
+		country_leader = {
+			desc = PD1_yang_mujin_char_desc
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			desc = PD1_yang_mujin_char_desc
+			ideology = military_junta
+		}
+		country_leader = {
+			desc = PD1_yang_mujin_char_desc
+			ideology = classical_fascism
+		}
+	}
+	PD1_xu_yanpu_char = {
+		name = PD1_xu_yanpu_char
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_PD1_xu_yanpu_char_civilian_large"
+			}
+		}
+	}
+	PD1_an_jun_seok_char = {
+		name = PD1_an_jun_seok_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_an_jun_seok_char_civilian_large
+			}
+		}
+	}
+	PD1_kim_dong_yeon_char = {
+		name = PD1_kim_dong_yeon_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_kim_dong_yeon_char_civilian_large
+			}
+		}
+	}
+	PD1_hong_kyung_char = {
+		name = PD1_hong_kyung_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_hong_kyung_char_civilian_large
+			}
+		}
+	}
+	PD1_yoo_si_min_char = {
+		name = PD1_yoo_si_min_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_yoo_si_min_char_civilian_large
+			}
+		}
+	}
+	PD1_lee_jae_yong_char = {
+		name = PD1_lee_jae_yong_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_lee_jae_yong_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD1_lee_jae_yong_char_desc
+			ideology = corporatocracy
+			traits = { PD1_lee_jae_yong_trait }
+		}
+	}
+	PD1_chung_eui_sun_char = {
+		name = PD1_chung_eui_sun_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_chung_eui_sun_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD1_chung_eui_sun_char_desc
+			ideology = corporatocracy
+			traits = { PD1_chung_eui_sun_trait }
+		}
+	}
+	PD1_korea_economic_association_char = {
+		name = PD1_korea_economic_association_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_korea_economic_association_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD1_korea_economic_association_char_desc
+			ideology = corporatocracy
+			traits = { }
+		}
+	}
+	PD1_development_legislative_council_char = {
+		name = PD1_development_legislative_council_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD1_development_legislative_council_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD1_development_legislative_council_char_desc
+			ideology = corporatocracy
+			traits = { }
+		}
+	}
+}

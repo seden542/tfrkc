@@ -1,0 +1,48 @@
+characters={
+	KPA_kim_jongun_char={ 
+		name = KPA_kim_jongun_char
+		portraits={
+			civilian={
+				large=GFX_portrait_KPA_kim_jongun
+			}
+		}
+		country_leader={
+			ideology = jucheism
+			desc = "KPA_kim_jongun_char_desc"
+			traits={ hos_cult_of_personality }
+		}	
+		country_leader={
+			ideology = left_nationalism
+			desc = "KPA_kim_jongun_char_desc"
+			traits={ hos_cult_of_personality }
+		}
+	}
+	KPA_cho_yongwon_char={ 
+		name = KPA_cho_yongwon_char
+		portraits={
+			civilian={
+				large=GFX_portrait_KPA_cho_yongwon
+			}
+		}
+		country_leader={
+			ideology = jucheism
+			desc = "KPA_cho_yongwon_char_desc"
+			traits={ }
+		}	
+		country_leader={
+			ideology = left_nationalism
+			desc = "KPA_cho_yongwon_char_desc"
+			traits={ }
+		}
+	}
+	KPA_workers_party_of_korea={
+		portraits={
+			civilian={
+				large="gfx/leaders/PRK/PRK_kwp_council.png"
+			}
+		}
+		country_leader={
+			ideology=jucheism
+		}
+	}
+}

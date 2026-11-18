@@ -1,0 +1,768 @@
+focus_tree = {
+	id = TFR_tree_PD1_manchukuo
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 1000
+			tag = PD1
+			has_country_flag = PD1_korea_economic_association_leader_flag
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 50 }
+
+	focus = {
+		id = PD1_manchukuo_new_opportunity
+		icon = GFX_PD1_manchukuo_default_focus
+		x = 10
+		y = 0
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = PD1_manchukuo_new_opportunity_tt
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_control_in_the_name_of_reconstruction
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_new_opportunity }
+		relative_position_id = PD1_manchukuo_new_opportunity
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_expand_police_affairs_department
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_new_opportunity }
+		relative_position_id = PD1_manchukuo_new_opportunity
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_convene_development_legislative_council
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_control_in_the_name_of_reconstruction }
+		prerequisite = { focus = PD1_manchukuo_expand_police_affairs_department }
+		relative_position_id = PD1_manchukuo_new_opportunity
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = PD1_manchukuo_convene_development_legislative_council_tt
+			hidden_effect = {
+				PD1_development_legislative_council_char = {
+					promote_character = corporatocracy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_convene_development_legislative_council }
+		mutually_exclusive = {
+			focus = PD1_manchukuo_chung_eui_sun_chief_administrator
+		}
+		relative_position_id = PD1_manchukuo_convene_development_legislative_council
+		x = -6
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = PD1_manchukuo_lee_jae_yong_leader_tt
+			hidden_effect = {
+				PD1_lee_jae_yong_char = {
+					promote_character = corporatocracy
+				}
+				set_country_flag = PD1_lee_jae_yong_chief_administrator_flag
+			}
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_convene_development_legislative_council }
+		mutually_exclusive = {
+			focus = PD1_manchukuo_lee_jae_yong_chief_administrator
+		}
+		relative_position_id = PD1_manchukuo_convene_development_legislative_council
+		x = 6
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = PD1_manchukuo_chung_eui_sun_leader_tt
+			hidden_effect = {
+				PD1_chung_eui_sun_char = {
+					promote_character = corporatocracy
+				}
+				set_country_flag = PD1_chung_eui_sun_chief_administrator_flag
+			}
+		}
+	}
+
+	# Lee Jae-yong branch
+	focus = {
+		id = PD1_manchukuo_employment_is_innovation
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_lee_jae_yong_chief_administrator }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			set_temp_variable = { academic_development_var_temp = 0.05 }
+			add_academic_development = yes
+			set_temp_variable = { society_development_var_temp = 0.05 }
+			add_society_development = yes
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_samsung_blueprint
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_lee_jae_yong_chief_administrator }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			add_ideas = PD1_complete_technocracy_idea
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_expand_research_complexes
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_employment_is_innovation }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = -3
+		y = 2
+		cost = 5
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_relocate_headquarters
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_employment_is_innovation }
+		prerequisite = { focus = PD1_manchukuo_samsung_blueprint }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+			1413 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_expand_production_lines
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_samsung_blueprint }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = 3
+		y = 2
+		cost = 5
+
+		completion_reward = {
+			set_temp_variable = { industrial_development_var_temp = 0.05 }
+			add_industrial_development = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_institutionalize_super_gap
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_expand_research_complexes }
+		prerequisite = { focus = PD1_manchukuo_relocate_headquarters }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = -2
+		y = 3
+		cost = 5
+
+		completion_reward = {
+			add_ideas = PD1_national_automated_information_accounting_network_idea
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_seize_the_singularity
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_relocate_headquarters }
+		prerequisite = { focus = PD1_manchukuo_expand_production_lines }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = 2
+		y = 3
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = PD1_manchukuo_seize_the_singularity_tt
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_reject_supreme_council_demands
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_institutionalize_super_gap }
+		prerequisite = { focus = PD1_manchukuo_seize_the_singularity }
+		relative_position_id = PD1_manchukuo_lee_jae_yong_chief_administrator
+		x = 0
+		y = 4
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	# Chung Eui-sun branch
+	focus = {
+		id = PD1_manchukuo_by_the_hands_of_workers
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_chung_eui_sun_chief_administrator }
+		mutually_exclusive = { focus = PD1_manchukuo_intelligent_automobiles }
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_intelligent_automobiles
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_chung_eui_sun_chief_administrator }
+		mutually_exclusive = { focus = PD1_manchukuo_by_the_hands_of_workers }
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_human_modification
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_by_the_hands_of_workers }
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = -2
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_human_replacement
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_intelligent_automobiles }
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = 2
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_union_of_nerves_and_steel
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_human_modification }
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = -3
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_under_fathers_shadow
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = {
+			focus = PD1_manchukuo_human_modification
+			focus = PD1_manchukuo_human_replacement
+		}
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = 0
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_heart_of_the_unmanned_factory
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_human_replacement }
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = 3
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_accept_supreme_council_demands
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_under_fathers_shadow }
+		prerequisite = {
+			focus = PD1_manchukuo_union_of_nerves_and_steel
+			focus = PD1_manchukuo_heart_of_the_unmanned_factory
+		}
+		relative_position_id = PD1_manchukuo_chung_eui_sun_chief_administrator
+		x = 0
+		y = 4
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_mend_the_cracks
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = {
+			focus = PD1_manchukuo_lee_jae_yong_chief_administrator
+			focus = PD1_manchukuo_chung_eui_sun_chief_administrator
+		}
+		relative_position_id = PD1_manchukuo_convene_development_legislative_council
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_expand_garrison
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_mend_the_cracks }
+		relative_position_id = PD1_manchukuo_mend_the_cracks
+		x = -1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_sunshine_policy
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_mend_the_cracks }
+		relative_position_id = PD1_manchukuo_mend_the_cracks
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_reassure_homeland
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_expand_garrison }
+		relative_position_id = PD1_manchukuo_expand_garrison
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			transfer_state = 1425
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_quell_the_flames
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_sunshine_policy }
+		relative_position_id = PD1_manchukuo_sunshine_policy
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_manchuria_is_safe
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_reassure_homeland }
+		prerequisite = { focus = PD1_manchukuo_quell_the_flames }
+		relative_position_id = PD1_manchukuo_mend_the_cracks
+		x = 0
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_light_over_the_songhua_river
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = {
+			focus = PD1_manchukuo_reject_supreme_council_demands
+			focus = PD1_manchukuo_accept_supreme_council_demands
+			focus = PD1_manchukuo_manchuria_is_safe
+		}
+		relative_position_id = PD1_manchukuo_convene_development_legislative_council
+		x = 0
+		y = 6
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_aggressive_expansion_policy
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_light_over_the_songhua_river }
+		mutually_exclusive = { focus = PD1_manchukuo_status_quo_policy }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_status_quo_policy
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_light_over_the_songhua_river }
+		mutually_exclusive = { focus = PD1_manchukuo_aggressive_expansion_policy }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = 3
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_relocate_defense_companies
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_aggressive_expansion_policy }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = -4
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_establish_gendarmerie
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_aggressive_expansion_policy }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = 0
+		y = 2
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_sweep_the_reds
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_relocate_defense_companies }
+		prerequisite = { focus = PD1_manchukuo_establish_gendarmerie }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = -2
+		y = 3
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_break_from_colonial_historiography
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_sweep_the_reds }
+		mutually_exclusive = { focus = PD1_manchukuo_draw_the_line }
+		relative_position_id = PD1_manchukuo_sweep_the_reds
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_draw_the_line
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_sweep_the_reds }
+		mutually_exclusive = { focus = PD1_manchukuo_break_from_colonial_historiography }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = 0
+		y = 4
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_money_can_do_anything
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_break_from_colonial_historiography }
+		relative_position_id = PD1_manchukuo_break_from_colonial_historiography
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_secure_profits_in_manchuria
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_break_from_colonial_historiography }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = -2
+		y = 5
+		cost = 5
+
+		completion_reward = {
+			if = {
+				limit = {
+					APF = { exists = yes }
+					NOT = { has_war_with = APF }
+				}
+				declare_war_on = { target = APF type = annex_everything }
+			}
+			if = {
+				limit = {
+					BDG = { exists = yes }
+					NOT = { has_war_with = BDG }
+				}
+				declare_war_on = { target = BDG type = annex_everything }
+			}
+			if = {
+				limit = {
+					A78 = { exists = yes }
+					NOT = { has_war_with = A78 }
+				}
+				declare_war_on = { target = A78 type = annex_everything }
+			}
+			if = {
+				limit = {
+					MST = { exists = yes }
+					NOT = { has_war_with = MST }
+				}
+				declare_war_on = { target = MST type = annex_everything }
+			}
+			if = {
+				limit = {
+					A81 = { exists = yes }
+					NOT = { has_war_with = A81 }
+				}
+				declare_war_on = { target = A81 type = annex_everything }
+			}
+			if = {
+				limit = {
+					NMA = { exists = yes }
+					NOT = { has_war_with = NMA }
+				}
+				declare_war_on = { target = NMA type = annex_everything }
+			}
+		}
+	}
+
+	focus = {
+		id = PD1_manchukuo_beyond_shanhaiguan
+		icon = GFX_PD1_manchukuo_default_focus
+		prerequisite = { focus = PD1_manchukuo_money_can_do_anything }
+		prerequisite = { focus = PD1_manchukuo_secure_profits_in_manchuria }
+		relative_position_id = PD1_manchukuo_light_over_the_songhua_river
+		x = -4
+		y = 6
+		cost = 5
+
+		completion_reward = {
+			if = {
+				limit = {
+					PRC = { exists = yes }
+					NOT = { has_war_with = PRC }
+				}
+				declare_war_on = {
+					target = PRC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NCA = { exists = yes }
+					NOT = { has_war_with = NCA }
+				}
+				declare_war_on = {
+					target = NCA
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					SHA = { exists = yes }
+					NOT = { has_war_with = SHA }
+				}
+				declare_war_on = {
+					target = SHA
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					A83 = { exists = yes }
+					NOT = { has_war_with = A83 }
+				}
+				declare_war_on = {
+					target = A83
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NTT = { exists = yes }
+					NOT = { has_war_with = NTT }
+				}
+				declare_war_on = {
+					target = NTT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FAL = { exists = yes }
+					NOT = { has_war_with = FAL }
+				}
+				declare_war_on = {
+					target = FAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					RGT = { exists = yes }
+					NOT = { has_war_with = RGT }
+				}
+				declare_war_on = {
+					target = RGT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					CAG = { exists = yes }
+					NOT = { has_war_with = CAG }
+				}
+				declare_war_on = {
+					target = CAG
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					MSC = { exists = yes }
+					NOT = { has_war_with = MSC }
+				}
+				declare_war_on = {
+					target = MSC
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

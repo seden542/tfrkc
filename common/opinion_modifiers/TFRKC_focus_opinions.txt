@@ -1,0 +1,1 @@
+opinion_modifiers = { TFRKC_focus_exclusion_opinion = { value = -20 } }

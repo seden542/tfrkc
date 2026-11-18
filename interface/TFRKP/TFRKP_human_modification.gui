@@ -1,0 +1,108 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_human_modification_container"
+		clipping = no
+		size = { width = 500 height = 330 }
+
+		iconType = {
+			name = "KOR_human_modification_background"
+			position = { x = 95 y = 8 }
+			spriteType = "GFX_KOR_human_all_part"
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_human_head_button_available"
+			position = { x = 216 y = 58 }
+			spriteType = "GFX_KOR_human_head"
+			frame = 2
+			pdx_tooltip = KOR_human_modification_head_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_human_head_button_completed"
+			position = { x = 216 y = 58 }
+			spriteType = "GFX_KOR_human_head"
+			frame = 1
+			pdx_tooltip = KOR_human_modification_head_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_human_body_button_available"
+			position = { x = 209 y = 87 }
+			spriteType = "GFX_KOR_human_body"
+			frame = 2
+			pdx_tooltip = KOR_human_modification_body_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_human_body_button_completed"
+			position = { x = 209 y = 87 }
+			spriteType = "GFX_KOR_human_body"
+			frame = 1
+			pdx_tooltip = KOR_human_modification_body_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_human_left_arm_button_available"
+			position = { x = 121 y = 58 }
+			spriteType = "GFX_KOR_human_left_arm"
+			frame = 2
+			pdx_tooltip = KOR_human_modification_left_arm_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_human_left_arm_button_completed"
+			position = { x = 121 y = 58 }
+			spriteType = "GFX_KOR_human_left_arm"
+			frame = 1
+			pdx_tooltip = KOR_human_modification_left_arm_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_human_right_arm_button_available"
+			position = { x = 266 y = 58 }
+			spriteType = "GFX_KOR_human_right_arm"
+			frame = 2
+			pdx_tooltip = KOR_human_modification_right_arm_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_human_right_arm_button_completed"
+			position = { x = 266 y = 58 }
+			spriteType = "GFX_KOR_human_right_arm"
+			frame = 1
+			pdx_tooltip = KOR_human_modification_right_arm_tt
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "KOR_human_leg_button_available"
+			position = { x = 162 y = 173 }
+			spriteType = "GFX_KOR_human_leg"
+			frame = 2
+			pdx_tooltip = KOR_human_modification_leg_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_human_leg_button_completed"
+			position = { x = 162 y = 173 }
+			spriteType = "GFX_KOR_human_leg"
+			frame = 1
+			pdx_tooltip = KOR_human_modification_leg_tt
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "KOR_human_modification_selected_text"
+			position = { x = 10 y = 294 }
+			maxWidth = 460
+			font = "VCR02_16"
+			text = "KOR_human_modification_selected_text"
+			alwaystransparent = yes
+		}
+	}
+}

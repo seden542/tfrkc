@@ -1,0 +1,88 @@
+﻿l_korean:
+ the_fire_rises_korea_plus:0 "The Fire Rises: Korea Plus 도전과제"
+ 
+ ### 도전과제 ###
+ ## 원스타 ##
+ # 윤석열
+ TFRKP_achieve_ending_yoon_canon_NAME:0 "당신에게 드리는 장미꽃 한 송이"
+ TFRKP_achieve_ending_yoon_canon_DESC:0 "타오르는 불길 속에서 대한민국의 민주주의를 수호하십시오."
+ 
+ TFRKP_achieve_ending_yoon_martial_law_NAME:0 "임을 위한 행진"
+ TFRKP_achieve_ending_yoon_martial_law_DESC:0 "자유민주주의를 수호하고 북한의 침공으로부터 3천 리 강토를 지키십시오."
+ 
+ TFRKP_achieve_ending_yoon_martial_law_nuke_NAME:0 "폴아웃"
+ TFRKP_achieve_ending_yoon_martial_law_nuke_DESC:0 "동북아시아 문명을 핵전쟁으로 괴멸시키십시오."
+ 
+ TFRKP_achieve_ending_yoon_happy_NAME:0 "동양 자유의 등불"
+ TFRKP_achieve_ending_yoon_happy_DESC:0 "대아대전에서 승리를 거머쥐고 동방의 새로운 강국이 되십시오."
+ 
+ TFRKP_achieve_ending_yoon_gaka_NAME:0 "각하.exe"
+ TFRKP_achieve_ending_yoon_gaka_DESC:0 "§L보안 경고 위협이 감지되었습니다. 악성 김재규가 시스템에서 발견되었습니다. 즉시 격리 조치를 수행합니다.§!\n\n전뇌화로 부활시킨 선대 지도자를 대통령으로 집권시키고, 대아대전에서 승리하라."
+ 
+ # 이재명
+ TFRKP_achieve_ending_lee_happy_NAME:0 "우리도 이뤄내 보세"
+ TFRKP_achieve_ending_lee_happy_DESC:0 "대만에 개입해 승리하고, 김민석 경로에서 대한민국의 강역을 만주로 확장하십시오."
+ 
+ TFRKP_achieve_ending_lee_free_ppp_happy_NAME:0 "봄" 
+ TFRKP_achieve_ending_lee_free_ppp_happy_DESC:0 "어둠이 물러나 해가 뜨는 것이 아니라, 해가 뜨기 때문에 어둠이 밀려나는 것입니다."
+ 
+ TFRKP_achieve_ending_lee_free_dpk_happy_NAME:0 "그가 지켜본다"
+ TFRKP_achieve_ending_lee_free_dpk_happy_DESC:0 "§1벽 너머를 바라보십시오.§!"
+ 
+ TFRKP_achieve_ending_lee_army_nam_happy_NAME:0 "서울의 봄"
+ TFRKP_achieve_ending_lee_army_nam_happy_DESC:0 "대아대전에서 승리한 후 국가재건최고회의를 해산시키고, 대한민국 민주주의를 부활시키십시오."
+ 
+ TFRKP_achieve_ending_lee_army_nam_bad_NAME:0 "여기서 보니까 도시가 마치 빛의 감옥처럼 보여"
+ TFRKP_achieve_ending_lee_army_nam_bad_DESC:0 "대아대전에서 승리한 후 국가재건최고회의를 존속시키고, 기업국가 남만주를 건설하십시오.\n\n§L"저 직사각형 안에는 각자의 고민들로 꽉 채운 불빛들이 새어 나와 외로움이 서울의 밤을 장식하고 있어".§!"
+
+ 
+ TFRKP_achieve_ending_lee_army_yec_happy_NAME:0 "총구에 꽃을 꽂아라"
+ TFRKP_achieve_ending_lee_army_yec_happy_DESC:0 "윤의철을 상대로 또 다른 혁명을 일으키십시오."
+ 
+ TFRKP_achieve_ending_lee_army_yec_bad_NAME:0 "선을 넘어버리면 더 이상 돌아올 수 없어"
+ TFRKP_achieve_ending_lee_army_yec_bad_DESC:0 "모두가 진정으로 행복한 대한민국을 만드십시오. 그리고 또 다른 무기가 해금됩니다."
+ 
+ TFRKP_achieve_ending_lee_reds_dpk_NAME:0 "뜨거웠던 여름밤은 가고 남은 건 볼품없지만"
+ TFRKP_achieve_ending_lee_reds_dpk_DESC:0 "꿈을 포기하십시오.\n\n§L또 다시 찾아오는 누군갈 위해서 남겨두겠소.§!"
+ 
+ TFRKP_achieve_ending_lee_reds_pp_NAME:0 "형제 상봉"
+ TFRKP_achieve_ending_lee_reds_pp_DESC:0 "누구의 예속에도 묶이지 않은 자유로운 한반도를 만들어 내십시오.\n\n§L임진강 물은 푸르고 도도히 흐르네.§!"
+ 
+ TFRKP_achieve_ending_lee_reds_jp_NAME:0 "진짜 용사"
+ TFRKP_achieve_ending_lee_reds_jp_DESC:0 "미뤄왔던 정의를 모두 실현하고 대한민국을 완전히 개혁해 내십시오.\n\n§L그들이라면 그렇게 했을테니까요.§!"
+ 
+ TFRKP_achieve_ending_lee_reds_lp_NAME:0 "찬란한 내일로"
+ TFRKP_achieve_ending_lee_reds_lp_DESC:0 "과거를 극복하고 역사의 내일을 향해 나아가십시오.\n\n§L불행하기만 한 인생이 세상에 어딨어?§!"
+ 
+ TFRKP_achieve_ending_lee_coa_ending_NAME:0 "함께하면 승리하리!"
+ TFRKP_achieve_ending_lee_coa_ending_DESC:0 "거국연정 경로에서, 대한민국을 지켜내십시오.\n\n§L너는 나의 메아리고\n그런 마음 한 줌이야\n때가 되면 내 마음에\n축제처럼 열릴 거야§!"
+ 
+ ## 투스타 ##
+ TFRKP_achieve_normal_sons_of_pacific_NAME:0 "태평양의 아들들"
+ TFRKP_achieve_normal_sons_of_pacific_DESC:0 "태평양의 아들들은 자유롭게 살아가리!"
+ 
+ TFRKP_achieve_normal_kill_reds_NAME:0 "때려 죽일 빨갱이들"
+ TFRKP_achieve_normal_kill_reds_DESC:0 "민주노동당 경로에서 법률 제정을 통해 나라를 최대한 망치십시오.\n\n§L종북, 종북, 하더니 진짜 나라를 북괴처럼 만들어 버렸습니다. 빨갱이 이 미친 새끼들.§!"
+ 
+ TFRKP_achieve_normal_army_got_fucked_NAME:0 "충무공이 눈물 흘리겠다"
+ TFRKP_achieve_normal_army_got_fucked_DESC:0 "'가만히 있으면 반이라도 간다'는 말은 이러라고 있는 게 아닐 텐데요."
+ 
+ ## 쓰리스타 ##
+ TFRKP_achieve_normal_k_pandemic_NAME:0 "자랑스러운 K-방역"
+ TFRKP_achieve_normal_k_pandemic_DESC:0 "당신은 방역의 신입니다. 현실보다 대략 3배 이상 좋은 결과를 내었습니다."
+ 
+ TFRKP_achieve_normal_luanox_of_diplomancy_NAME:0 "외교 천재"
+ TFRKP_achieve_normal_luanox_of_diplomancy_DESC:0 "친구보다 좋은 건 더 많은 친구죠."
+ 
+ TFRKP_achieve_normal_fly_of_icarus_NAME:0 "태양을 향해"
+ TFRKP_achieve_normal_fly_of_icarus_DESC:0 "김민석 경로에서, '이카루스의 비행'을 10단계로 마무리하십시오."
+ 
+ TFRKP_achieve_normal_house_of_card_NAME:0 "모래 위에 지은 집"
+ TFRKP_achieve_normal_house_of_card_DESC:0 "비가 내려 홍수가 나고 바람이 불어 그 집에 몰아치자 집은 크게 무너졌다."
+ 
+ ## 포스타 ##
+ TFRKP_achieve_normal_malatang_is_korean_NAME:0 "마라탕은 조선 음식"
+ TFRKP_achieve_normal_malatang_is_korean_DESC:0 "대한민국으로, 사천에 실제로 군대를 주둔하십시오."
+ 
+ TFRKP_achieve_normal_real_kk_NAME:0 "ㄹㅇㅋㅋ만 치세요"
+ TFRKP_achieve_normal_real_kk_DESC:0 "여러분. 세상은 키보드 밖에 있어요."

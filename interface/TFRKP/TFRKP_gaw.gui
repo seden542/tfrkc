@@ -1,0 +1,769 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFRKP_GAW_show_button_container"
+		size = { width = 95 height = 95 }
+		clipping = no
+		moveable = no
+		position = { x = 715 y = 2 }
+
+		background = {
+			name = "TFRKP_GAW_show_button_bg"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "view"
+			position = { x = 7 y = 10 }
+			size = { width = 60 height = 60 }
+			spriteType = "GFX_GAW_war_theme_logo"
+			pdx_tooltip = ""
+			pdx_tooltip_delayed = ""
+		}
+	}
+
+	containerWindowType = {
+		name = "TFRKP_GAW_main_window_container"
+		size = { width = 1261 height = 925 }
+		position = { x = 540 y = 110 }
+		fade_time = 280
+		fade_type = linear
+		moveable = yes
+		clipping = no
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_GAW_background"
+		}
+
+		buttonType = {
+			name = "close"
+			spriteType = "GFX_GAW_war_theme_logo_large"
+			position = { x = 515 y = -5 }
+			clicksound = click_close
+			pdx_tooltip = "GAW_close_tt"
+			shortcut = "ESCAPE"
+		}
+		buttonType = {
+			name = "GAW_ongoing_oplan_button"
+			spriteType = "GFX_GAW_ongoing_oplan"
+			position = { x = 40 y = 175 }
+			pdx_tooltip = "GAW_ongoing_oplan_tt"
+		}
+		iconType = {
+			name = "GAW_pdto_bg"
+			spriteType = "GFX_GAW_pdto_bg"
+			position = { x = 822 y = 553 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "GAW_text_left"
+			spriteType = "GFX_GAW_text_left"
+			position = { x = 35 y = 80 }
+			pdx_tooltip = "GAW_text_left_tt"
+		}
+		iconType = {
+			name = "GAW_text_right"
+			spriteType = "GFX_GAW_text_right"
+			position = { x = 735 y = 80 }
+			pdx_tooltip = "GAW_text_right_tt"
+		}
+		buttonType = {
+			name = "GAW_background_square"
+			spriteType = "GFX_GAW_background_square"
+			position = { x = 23 y = 170 }
+		}
+		### Real Map Mode ###
+		iconType = {
+			name = "GAW_mapborder"
+			spriteType = "GFX_GAW_mapborder"
+			position = { x = 25 y = 160 }
+			alwaystransparent = yes
+		}
+		containerWindowType = {
+			name = "GAW_maps_container"
+			buttonType = {
+				name = "GAW_north_korea_button"
+				position = { x = 905 y = 373 }
+				spriteType = "GFX_GAW_northkorea_n"
+				pdx_tooltip = "GAW_north_korea_button_tt"
+				pdx_tooltip_delayed = "GAW_north_korea_button_tt_delayed"
+				pdx_disabled_tooltip = GAW_north_korea_button_tt_disabled
+			}
+			buttonType = {
+				name = "GAW_jiandao_button"
+				position = { x = 890 y = 330 }
+				spriteType = "GFX_GAW_jiandao_n"
+				pdx_tooltip = "GAW_jiandao_button_tt"
+				pdx_tooltip_delayed = "GAW_jiandao_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_manchuria_button"
+				position = { x = 761 y = 176 }
+				spriteType = "GFX_GAW_manchuria_n"
+				pdx_tooltip = "GAW_manchuria_button_tt"
+				pdx_tooltip_delayed = "GAW_manchuria_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_huabei_button"
+				position = { x = 612 y = 320 }
+				spriteType = "GFX_GAW_huabei_n"
+				pdx_tooltip = "GAW_huabei_button_tt"
+				pdx_tooltip_delayed = "GAW_huabei_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_jiangdong_button"
+				position = { x = 748 y = 563 }
+				spriteType = "GFX_GAW_jiangdong_n"
+				pdx_tooltip = "GAW_jiangdong_button_tt"
+				pdx_tooltip_delayed = "GAW_jiangdong_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_huazhong_button"
+				position = { x = 655 y = 608 }
+				spriteType = "GFX_GAW_huazhong_n"
+				pdx_tooltip = "GAW_huazhong_button_tt"
+				pdx_tooltip_delayed = "GAW_huazhong_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_liangguang_button"
+				position = { x = 583 y = 749 }
+				spriteType = "GFX_GAW_liangguang_n"
+				pdx_tooltip = "GAW_liangguang_button_tt"
+				pdx_tooltip_delayed = "GAW_liangguang_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_xinan_button"
+				position = { x = 453 y = 681 }
+				spriteType = "GFX_GAW_xinan_n"
+				pdx_tooltip = "GAW_xinan_button_tt"
+				pdx_tooltip_delayed = "GAW_xinan_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_sichuan_button"
+				position = { x = 472 y = 574 }
+				spriteType = "GFX_GAW_sichuan_n"
+				pdx_tooltip = "GAW_sichuan_button_tt"
+				pdx_tooltip_delayed = "GAW_sichuan_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_xibei_button"
+				position = { x = 410 y = 395 }
+				spriteType = "GFX_GAW_xibei_n"
+				pdx_tooltip = "GAW_xibei_button_tt"
+				pdx_tooltip_delayed = "GAW_xibei_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_bianjing_button"
+				position = { x = 126 y = 241 }
+				spriteType = "GFX_GAW_bianjing_n"
+				pdx_tooltip = "GAW_bianjing_button_tt"
+				pdx_tooltip_delayed = "GAW_bianjing_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_taiwan_button"
+				position = { x = 874 y = 759 }
+				spriteType = "GFX_GAW_taiwan_n"
+				pdx_tooltip = "GAW_taiwan_button_tt"
+				pdx_tooltip_delayed = "GAW_taiwan_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_north_india_button"
+				position = { x = 25 y = 421 }
+				spriteType = "GFX_GAW_north_india_n"
+				pdx_tooltip = "GAW_north_india_button_tt"
+				pdx_tooltip_delayed = "GAW_north_india_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			buttonType = {
+				name = "GAW_SEA_button"
+				position = { x = 342 y = 691 }
+				spriteType = "GFX_GAW_SEA_n"
+				pdx_tooltip = "GAW_SEA_button_tt"
+				pdx_tooltip_delayed = "GAW_SEA_button_tt_delayed"
+				#pdx_disabled_tooltip = ""
+			}
+			iconType = {
+				name = "GAW_mongolia_annexed"
+				spriteType = "GFX_GAW_none"
+				position = { x = 383 y = 210 }
+			}
+		}
+		iconType = {
+			name = "GAW_scroll_1"
+			spriteType = "GFX_GAW_scroll_1"
+			size = { width = 240 height = 30 }
+			position = { x = 25 y = 880 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "GAW_scroll_2"
+			spriteType = "GFX_GAW_scroll_2"
+			size = { width = 240 height = 30 }
+			position = { x = 265 y = 880 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "GAW_scroll_3"
+			spriteType = "GFX_GAW_scroll_3"
+			size = { width = 240 height = 30 }
+			position = { x = 505 y = 880 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "GAW_scroll_4"
+			spriteType = "GFX_GAW_scroll_4"
+			size = { width = 240 height = 30 }
+			position = { x = 745 y = 880 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "GAW_scroll_5"
+			spriteType = "GFX_GAW_scroll_5"
+			size = { width = 240 height = 30 }
+			position = { x = 985 y = 880 }
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_GAW_plan_ongoing_window_container"
+		position = { x = 540 y = 280 }
+		size = { width = 1000 height = 660 }
+		fade_time = 280
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		iconType = {
+			name = "GAW_background_plan"
+			spriteType = "GFX_GAW_background_plan"
+			position = { x = 0 y = -5 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "GAW_background_mahjong"
+			spriteType = "GFX_GAW_background_mahjong"
+			position = { x = 0 y = 285 }
+			alwaystransparent = yes
+		}
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		buttonType = {
+			name = "close"
+			spriteType = "GFX_closebutton"
+			position = { x = 955 y = 10 }
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+		containerWindowType = {
+			name = "GAW_plan_name_container"
+			instantTextboxType = {
+				name = "GAW_plan_name_text"
+				position = { x = 250 y = 30 }
+				font = "VCR02_36"
+				maxWidth = 500
+				maxHeight = 16
+				format = center
+				text = "GAW_plan_name_text_title"
+			}
+		}
+		containerWindowType = {
+			name = "GAW_seleted_goal_container"
+			size = { width = 800 height = 200 }
+			position = { x = 100 y = 80 }
+
+			instantTextboxType = {
+				name = "GAW_plan_goal_name"
+				position = { x = 20 y = 30 }
+				font = "VCR02_24"
+				maxWidth = 500
+				maxHeight = 200
+				format = left
+				text = GAW_plan_goal_name_text
+			}
+			instantTextboxType = {
+				name = "GAW_plan_goal_desc"
+				position = { x = 20 y = 90 }
+				font = "VCR02_18"
+				maxWidth = 760
+				maxHeight = 200
+				format = left
+				text = GAW_plan_goal_desc_text
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_bg_translucent"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "GAW_card_click_container"
+			size = { width = 300 height = 230 }
+			position = { x = 100 y = 335 }
+			instantTextboxType = {
+				name = "GAW_card_slot_name"
+				position = { x = 9 y = 35 }
+				font = "VCR02_24"
+				maxWidth = 280
+				maxHeight = 200
+				format = center
+				text = GAW_card_slot_name_text
+			}
+			buttonType = {
+				name = "GAW_card_setting_1"
+				spriteType = "GFX_GAW_card_none"
+				position = { x = 30 y = 75 }
+				pdx_tooltip = GAW_card_setting_1_text
+			}
+			buttonType = {
+				name = "GAW_card_setting_2"
+				spriteType = "GFX_GAW_card_none"
+				position = { x = 170 y = 75 }
+				pdx_tooltip = GAW_card_setting_2_text
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_mini_tooltip"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "GAW_card_chip_container"
+			size = { width = 450 height = 230 }
+			position = { x = 450 y = 335 }
+			instantTextboxType = {
+				name = "GAW_now_chip_title_name"
+				position = { x = 80 y = 35 }
+				font = "VCR02_24"
+				maxWidth = 280
+				maxHeight = 200
+				format = center
+				text = GAW_now_chip_title_text
+			}
+			instantTextboxType = {
+				name = "GAW_now_chip_count_name"
+				position = { x = 80 y = 60 }
+				font = "VCR02_18"
+				maxWidth = 280
+				maxHeight = 200
+				format = center
+				text = GAW_now_chip_count_text
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_mini_tooltip"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "GAW_chip_1"
+				spriteType = "GFX_GAW_chip_1"
+				position = { x = 0 y = 110 }
+				pdx_tooltip = GAW_chip_1_tt
+				pdx_disabled_tooltip = GAW_chip_1_tt_not
+			}
+			buttonType = {
+				name = "GAW_chip_2"
+				spriteType = "GFX_GAW_chip_2"
+				position = { x = 108 y = 110 }
+				pdx_tooltip = GAW_chip_2_tt
+				pdx_disabled_tooltip = GAW_chip_2_tt_not
+			}
+			buttonType = {
+				name = "GAW_chip_3"
+				spriteType = "GFX_GAW_chip_3"
+				position = { x = 216 y = 110 }
+				pdx_tooltip = GAW_chip_3_tt
+				pdx_disabled_tooltip = GAW_chip_3_tt_not
+			}
+			buttonType = {
+				name = "GAW_chip_4"
+				spriteType = "GFX_GAW_chip_4"
+				position = { x = 324 y = 110 }
+				pdx_tooltip = GAW_chip_4_tt
+				pdx_disabled_tooltip = GAW_chip_4_tt_not
+			}
+		}
+		containerWindowType = {
+			name = "GAW_draw_card_container"
+			buttonType = {
+				name = "GAW_draw_card_button"
+				spriteType = "GFX_tiled_header_1"
+				size = { width = 250 height = 40 }
+				position = { x = 545 y = 565 }
+				buttonFont = "hoi_16mbs"
+				buttonText = GAW_draw_card_text
+				pdx_tooltip = GAW_draw_card_text_tt
+				pdx_tooltip_delayed = GAW_random_probability_tt
+				pdx_disabled_tooltip = GAW_draw_card_text_tt_not
+			}
+		}
+		buttonType = {
+			name = "GAW_card_setting_end_button"
+			spriteType = "GFX_tiled_header_1"
+			size = { width = 200 height = 40 }
+			position = { x = 150 y = 565 }
+			buttonFont = "hoi_16mbs"
+			buttonText = GAW_card_setting_end_button_text
+			pdx_tooltip = GAW_card_setting_end_button_tt
+			pdx_disabled_tooltip = GAW_card_setting_end_button_tt_not
+		}
+	}
+
+	containerWindowType = {
+		name = "TFRKP_GAW_card_select_window_container"
+		position = { x = 550 y = 100 }
+		size = { width = 857 height = 715 }
+		hide_position = { x = 550 y = -1000 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		moveable = yes
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		containerWindowType = {
+			name = "GAW_card_title_container"
+			position = { x = 0 y = 0 }
+			size = { width = 857 height = 40 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_tiled_header_1" # GFX_tiled_header_1
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "GAW_card_title"
+				position = { x = 0 y = 4 }
+				borderSize = { x = 0 y = 0 }
+				text = "GAW_card_title_text"
+				font = "VCR02_24"
+				format = center
+				maxWidth = 850
+			}
+
+			buttonType = {
+				name = "GAW_card_close"
+				position = { x = -36 y = 4 }
+				spriteType = "GFX_closebutton"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+				shortcut = "ESCAPE"
+				orientation = UPPER_RIGHT
+			}
+		}
+		background = {
+			name = "GAW_card_Background"
+			size = { width = 855 height = 100%% }
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		containerWindowType = {
+			name = "background_container"
+			position = { x = 7 y = 40 }
+			size = { width = 840 height = 98%% }
+			verticalScrollbar = "right_vertical_slider_2"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_paper_bg2" # GFX_tiled_paper_bg2
+				position = { x = 0 y = -2 }
+			}
+
+			iconType = {
+				name = "GAW_random_probability"
+				spriteType = "GFX_GAW_random_icon"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "GAW_random_probability_tt"
+			}
+
+			iconType = {
+				name = "GAW_background_jocker"
+				spriteType = "GFX_GAW_background_jocker"
+				position = { x = 660 y = 0 }
+				#alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "GAW_background_chip"
+				spriteType = "GFX_GAW_background_chips"
+				position = { x = 720 y = 170 }
+				#alwaystransparent = yes
+			}
+
+			gridboxtype = {
+				name = "GAW_card_container_gridbox"
+				position = { x = 130 y = 20 }
+				slotsize = { width = 119 height = 154 }
+				max_slots_horizontal = 6
+			}
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_GAW_card_button_container"
+		size = { width = 99 height = 144 }
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "GAW_card_button"
+			spriteType = "GFX_GAW_card_jocker"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = GAW_card_button_text
+			pdx_tooltip_delayed = GAW_card_button_text_delayed
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_GAW_exp_select_popup_window"
+		size = { width = 480 height=322 }
+		orientation = center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_pol_goal"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 10 y = 16 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = { x = 0 y = 10 }
+			text = GAW_experience_select_title_text
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = GAW_experience_select_description_text
+			maxWidth = 430
+			maxHeight = 155
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "GAW_exp_army_button"
+			position = { x=80 y=200 }
+			spriteType = "GFX_tiled_header_1"
+			size = { width = 90 height = 40 }
+			buttonText = "GAW_EXP_ARMY_TEXT"
+			buttonFont = "hoi_16mbs"
+		}
+
+		buttonType = {
+			name = "GAW_exp_navy_button"
+			position = { x=200 y=200 }
+			spriteType = "GFX_tiled_header_1"
+			size = { width = 90 height = 40 }
+			buttonText = "GAW_EXP_NAVY_TEXT"
+			buttonFont = "hoi_16mbs"
+		}
+
+		buttonType = {
+			name = "GAW_exp_air_button"
+			position = { x=320 y=200 }
+			spriteType = "GFX_tiled_header_1"
+			size = { width = 90 height = 40 }
+			buttonText = "GAW_EXP_AIR_TEXT"
+			buttonFont = "hoi_16mbs"
+		}
+
+		buttonType = {
+			name = "decline_button"
+			position = { x=80 y=250 }
+			quadTextureSprite = "GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "accept_button"
+			position = { x=260 y=250 }
+			quadTextureSprite = "GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+	}
+	containerWindowType = {
+		name = "TFRKP_GAW_card_show_window_container"
+		size = { width = 840 height = 156 }
+		position = { x = 0 y = 0 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "GAW_card_on_active"
+			quadTextureSprite = "GFX_plp_focus_on_active"
+			size = { width = 840 height = 156 }
+			position = { x = -5 y = 0 }
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "GAW_card_header"
+			position = { x = 18 y = 12 }
+			font = "VCR02_26"
+			text = "GAW_card_name"
+			maxWidth = 500
+			maxHeight = 20
+			format = left
+		}
+
+		iconType = {
+			name = "GAW_card_icon"
+			spriteType = "GFX_plp_test_focus_banner"
+			position = { x = 380 y = 5 }
+			#alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "GAW_card_select_button"
+			spriteType = "GFX_unitlist_unitinfo_button_plp"
+			position = { x=11 y=107 }
+			buttonFont = "VCR02_12"
+			buttonText = "GAW_card_select_button_text"
+			pdx_tooltip = plp_focus_select_tooltip
+			pdx_disabled_tooltip = plp_focus_select_already_tooltip
+		}
+
+		buttonType = {
+			name = "GAW_card_end_button"
+			spriteType = "GFX_unitlist_unitinfo_button_plp"
+			position = { x=111 y=107 }
+			buttonFont = "VCR02_12"
+			buttonText = "GAW_card_end_button_text"
+			pdx_tooltip = plp_focus_end_tooltip
+			pdx_disabled_tooltip = plp_focus_end_do_all_tooltip
+		}
+
+		buttonType = {
+			name = "GAW_card_mine_button"
+			spriteType = "GFX_unitlist_unitinfo_button_plp"
+			position = { x=211 y=107 }
+			buttonFont = "VCR02_12"
+			buttonText = "GAW_card_mine_button_text"
+			pdx_tooltip = plp_focus_mine_tooltip
+			pdx_disabled_tooltip = plp_focus_mine_do_all_tooltip
+		}
+
+		instantTextboxType = {
+			name = "GAW_card_txt"
+			position = { x = 18 y = 45 }
+			font = "VCR02_18"
+			text = "GAW_card_desc"
+			maxWidth = 700
+			maxHeight = 40
+			format = left
+		}
+		instantTextboxType = {
+			name = "GAW_card_txt_2"
+			position = { x = 485 y = 12 }
+			font = "VCR02_24"
+			text = "GAW_card_leading_party"
+			maxWidth = 200
+			maxHeight = 20
+			format = right
+		}
+	}
+
+	containerWindowType = {
+		name = "TFRKP_GAW_plan_set_end_popup_window"
+		size = { width = 480 height=322 }
+		orientation = center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_pol_goal"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 10 y = 16 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = { x = 0 y = 10 }
+			text = "GAW_plan_set_end_title_text"
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = GAW_plan_set_end_description_text
+			maxWidth = 430
+			maxHeight = 155
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "decline_button"
+			position = { x=90 y=250 }
+			quadTextureSprite = "GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "accept_button"
+			position = { x=260 y=250 }
+			quadTextureSprite = "GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+	}
+}

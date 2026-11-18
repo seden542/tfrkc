@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-16",
+  "level": "STATIC_AND_SCRIPT_SIMULATION_ONLY",
+  "checks": [
+    {
+      "name": "16 trees, 291 focus definitions and 65 ideas parse; installed and src files agree",
+      "status": "PASS"
+    },
+    {
+      "name": "Previous focus package is preserved; concurrent map/event/war work is not overwritten",
+      "status": "PASS",
+      "detail": {
+        "previousFocusFilesUnchanged": 18,
+        "otherOwnerChanges": [
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1503-TFRKC.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1504-TFRKC.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1509-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1512-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1513-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1514-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1517-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1524-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1541-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1542-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/1545-TFRKC-Peninsula.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/525-Chungcheong.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/869-Jeolla.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/history/states/870-Gyeongsang.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/map/buildings.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/map/railways.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/map/strategicregions/186-Korea.txt",
+          "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc/map/unitstacks.txt"
+        ]
+      }
+    },
+    {
+      "name": "No effective authored tree/focus/idea/effect/trigger ID collisions",
+      "status": "PASS"
+    },
+    {
+      "name": "All prerequisite references exist in the same tree; dependency graph is acyclic",
+      "status": "PASS"
+    },
+    {
+      "name": "Every political route reaches settlement without requiring a mutually exclusive route",
+      "status": "PASS"
+    },
+    {
+      "name": "No focus center overlaps or prerequisite edges crossing other focus icons",
+      "status": "PASS"
+    },
+    {
+      "name": "Policy commitment locks opposite routes and opposite policy ideas never stack",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate completion or valid organization-state bypass cannot replay political power or experience rewards",
+      "status": "PASS"
+    },
+    {
+      "name": "Late entry and post-war domestic progress have no date or global-opening deadline",
+      "status": "PASS"
+    },
+    {
+      "name": "Annexed, capitulated or fully displaced actors receive no completion rewards",
+      "status": "PASS"
+    },
+    {
+      "name": "Wartime-only ideas activate only for actual participants and are removed after the campaign",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual deployed tags bind only their intended country; underground cannot bind to its host",
+      "status": "PASS",
+      "detail": {
+        "boundCountries": 15,
+        "organizationOnly": [
+          "UNDERGROUND"
+        ]
+      }
+    },
+    {
+      "name": "No direct war/territory/factory/manpower spawning or unresolved event/effect calls",
+      "status": "PASS"
+    },
+    {
+      "name": "Native rewards and idea modifiers exist in installed HOI4 documentation",
+      "status": "PASS"
+    },
+    {
+      "name": "All focus titles/descriptions, idea text and tooltips have unique BOM Korean localisation and balanced colours",
+      "status": "PASS",
+      "detail": {
+        "keys": 776
+      }
+    },
+    {
+      "name": "Actual load-order graphics match the original TFRKP textures",
+      "status": "PASS",
+      "detail": {
+        "sprites": 12
+      }
+    },
+    {
+      "name": "System requests expose real ready triggers; organization policies are KEY-scoped and cannot give host-wide ideas",
+      "status": "PASS",
+      "detail": {
+        "systems": 32,
+        "organizationDesignNodes": 18
+      }
+    },
+    {
+      "name": "AI starts with short independent recovery and has nonzero weights for all reachable alternatives",
+      "status": "PASS"
+    }
+  ],
+  "branches": [
+    {
+      "key": "GWANGJU",
+      "route": "A",
+      "name": "지방분권 공화국",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "GWANGJU",
+      "route": "B",
+      "name": "강력한 비상정부",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "JEONJU",
+      "route": "A",
+      "name": "민주적 혁명",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "JEONJU",
+      "route": "B",
+      "name": "영구혁명과 숙청",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CORPORATE",
+      "route": "A",
+      "name": "기업 간 협약",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CORPORATE",
+      "route": "B",
+      "name": "단일 기업의 국가 장악",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CONTINUITY",
+      "route": "A",
+      "name": "서울 정부 지원",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CONTINUITY",
+      "route": "B",
+      "name": "정통성 승계 주장",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "TAEBAEK",
+      "route": "A",
+      "name": "헌정세력 합류",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "TAEBAEK",
+      "route": "B",
+      "name": "독자 군사국가",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "FARMERS",
+      "route": "A",
+      "name": "농민자치연방",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "FARMERS",
+      "route": "B",
+      "name": "전시농업국가",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "COVENANT",
+      "route": "A",
+      "name": "구호 공동체",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "COVENANT",
+      "route": "B",
+      "name": "종말론적 신정국가",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "TAIWAN",
+      "route": "A",
+      "name": "한국 정착",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "TAIWAN",
+      "route": "B",
+      "name": "대만 귀환 준비",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "DAEDEOK",
+      "route": "A",
+      "name": "공공 연구체제",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "DAEDEOK",
+      "route": "B",
+      "name": "기술관료 통치",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "RAIL",
+      "route": "A",
+      "name": "중립 교통연방",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "RAIL",
+      "route": "B",
+      "name": "철도 군벌",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "WHITE_NIGHT",
+      "route": "A",
+      "name": "민간정부에 권한 반환",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "WHITE_NIGHT",
+      "route": "B",
+      "name": "비밀 통치체제",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CHEONGSONG",
+      "route": "A",
+      "name": "약속한 사면 이행",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CHEONGSONG",
+      "route": "B",
+      "name": "지휘부의 형량 통제",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "IMPERIAL",
+      "route": "A",
+      "name": "입헌군주국",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "IMPERIAL",
+      "route": "B",
+      "name": "황제 친정",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "IMPERIAL",
+      "route": "C",
+      "name": "백제 계승",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "UNDERGROUND",
+      "route": "A",
+      "name": "지상과 자치 협약",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "UNDERGROUND",
+      "route": "B",
+      "name": "지상 진출",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "HOMECOMING",
+      "route": "A",
+      "name": "전후 복귀",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "HOMECOMING",
+      "route": "B",
+      "name": "대중국 복수전",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CREDIT",
+      "route": "A",
+      "name": "채무 재조정",
+      "reachable": 15,
+      "days": 231
+    },
+    {
+      "key": "CREDIT",
+      "route": "B",
+      "name": "담보국가 건설",
+      "reachable": 15,
+      "days": 231
+    }
+  ],
+  "summary": {
+    "focuses": 291,
+    "trees": 16,
+    "registeredCountryTrees": 15,
+    "organizationDesignNodes": 18,
+    "ideas": 65,
+    "politicalPaths": 33
+  },
+  "inheritedParserLimitations": [
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/national_focus/TSR_lingguang_incident_joint_branch.txt",
+      "limitation": "Unexpected }"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/ideas/persia.txt",
+      "limitation": "Unclosed block"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/ideas/SOV.txt",
+      "limitation": "Unclosed block"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV/common/ideas/switzerland.txt",
+      "limitation": "Unclosed block"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3350890356/common/ideas/TFR_ideas_GER.txt",
+      "limitation": "Unexpected }"
+    },
+    {
+      "file": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3350890356/common/ideas/TFR_ideas_SIG.txt",
+      "limitation": "Unexpected }"
+    }
+  ],
+  "unverified": [
+    "Engine loading and focus screens for this package",
+    "Actual national emergence and system decisions owned by event/war team",
+    "Organization->country state transfer in engine",
+    "Live AI choice, battle balance, save/load and cancellation timing"
+  ]
+}

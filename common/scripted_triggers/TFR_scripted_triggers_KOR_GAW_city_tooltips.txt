@@ -1,0 +1,540 @@
+pdto_side = {
+	OR = {
+		tag = KOR
+		tag = JAP
+		has_country_flag = pdto_member
+		is_ally_with = KOR
+		is_ally_with = JAP
+	}
+}
+
+eadi_side = {
+	OR = {
+		tag = PRC
+		has_country_flag = eadi_member
+		is_ally_with = PRC
+	}
+}
+
+GAW_city_pyongyang_pdto_controlled = {
+	any_state = {
+		state = 1043
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_pyongyang_eadi_controlled = {
+	any_state = {
+		state = 1043
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_pyongyang_ever_captured = {
+	KOR = { has_country_flag = GAW_city_pyongyang_captured_flag }
+}
+
+GAW_city_wonsan_pdto_controlled = {
+	any_state = {
+		state = 1042
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_wonsan_eadi_controlled = {
+	any_state = {
+		state = 1042
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_wonsan_ever_captured = {
+	KOR = { has_country_flag = GAW_city_wonsan_captured_flag }
+}
+
+GAW_city_chongjin_pdto_controlled = {
+	any_state = {
+		state = 874
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_chongjin_eadi_controlled = {
+	any_state = {
+		state = 874
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_chongjin_ever_captured = {
+	KOR = { has_country_flag = GAW_city_chongjin_captured_flag }
+}
+
+GAW_city_dandong_pdto_controlled = {
+	any_state = {
+		state = 1413
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_dandong_eadi_controlled = {
+	any_state = {
+		state = 1413
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_dandong_ever_captured = {
+	KOR = { has_country_flag = GAW_city_dandong_captured_flag }
+}
+
+GAW_city_yanbian_pdto_controlled = {
+	any_state = {
+		state = 1415
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_yanbian_eadi_controlled = {
+	any_state = {
+		state = 1415
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_yanbian_ever_captured = {
+	KOR = { has_country_flag = GAW_city_yanbian_captured_flag }
+}
+
+GAW_city_shenyang_pdto_controlled = {
+	any_state = {
+		state = 716
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_shenyang_eadi_controlled = {
+	any_state = {
+		state = 716
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_shenyang_ever_captured = {
+	KOR = { has_country_flag = GAW_city_shenyang_captured_flag }
+}
+
+GAW_city_harbin_pdto_controlled = {
+	any_state = {
+		state = 717
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_harbin_eadi_controlled = {
+	any_state = {
+		state = 717
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_harbin_ever_captured = {
+	KOR = { has_country_flag = GAW_city_harbin_captured_flag }
+}
+
+GAW_city_beijing_pdto_controlled = {
+	any_state = {
+		state = 608
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_beijing_eadi_controlled = {
+	any_state = {
+		state = 608
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_beijing_ever_captured = {
+	KOR = { has_country_flag = GAW_city_beijing_captured_flag }
+}
+
+GAW_city_jinan_pdto_controlled = {
+	any_state = {
+		state = 597
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_jinan_eadi_controlled = {
+	any_state = {
+		state = 597
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_jinan_ever_captured = {
+	KOR = { has_country_flag = GAW_city_jinan_captured_flag }
+}
+
+GAW_city_shanghai_pdto_controlled = {
+	any_state = {
+		state = 1215
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_shanghai_eadi_controlled = {
+	any_state = {
+		state = 1215
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_shanghai_ever_captured = {
+	KOR = { has_country_flag = GAW_city_shanghai_captured_flag }
+}
+
+GAW_city_nanjing_pdto_controlled = {
+	any_state = {
+		state = 1222
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_nanjing_eadi_controlled = {
+	any_state = {
+		state = 1222
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_nanjing_ever_captured = {
+	KOR = { has_country_flag = GAW_city_nanjing_captured_flag }
+}
+
+GAW_city_wuhan_pdto_controlled = {
+	any_state = {
+		state = 1211
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_wuhan_eadi_controlled = {
+	any_state = {
+		state = 1211
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_wuhan_ever_captured = {
+	KOR = { has_country_flag = GAW_city_wuhan_captured_flag }
+}
+
+GAW_city_changde_pdto_controlled = {
+	any_state = {
+		state = 602
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_changde_eadi_controlled = {
+	any_state = {
+		state = 602
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_changde_ever_captured = {
+	KOR = { has_country_flag = GAW_city_changde_captured_flag }
+}
+
+GAW_city_guangzhou_pdto_controlled = {
+	any_state = {
+		state = 592
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_guangzhou_eadi_controlled = {
+	any_state = {
+		state = 592
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_guangzhou_ever_captured = {
+	KOR = { has_country_flag = GAW_city_guangzhou_captured_flag }
+}
+
+GAW_city_nanning_pdto_controlled = {
+	any_state = {
+		state = 594
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_nanning_eadi_controlled = {
+	any_state = {
+		state = 594
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_nanning_ever_captured = {
+	KOR = { has_country_flag = GAW_city_nanning_captured_flag }
+}
+
+GAW_city_kunming_pdto_controlled = {
+	any_state = {
+		state = 1196
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_kunming_eadi_controlled = {
+	any_state = {
+		state = 1196
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_kunming_ever_captured = {
+	KOR = { has_country_flag = GAW_city_kunming_captured_flag }
+}
+
+GAW_city_guiyang_pdto_controlled = {
+	any_state = {
+		state = 603
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_guiyang_eadi_controlled = {
+	any_state = {
+		state = 603
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_guiyang_ever_captured = {
+	KOR = { has_country_flag = GAW_city_guiyang_captured_flag }
+}
+
+GAW_city_chengdu_pdto_controlled = {
+	any_state = {
+		state = 605
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_chengdu_eadi_controlled = {
+	any_state = {
+		state = 605
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_chengdu_ever_captured = {
+	KOR = { has_country_flag = GAW_city_chengdu_captured_flag }
+}
+
+GAW_city_chongqing_pdto_controlled = {
+	any_state = {
+		state = 1189
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_chongqing_eadi_controlled = {
+	any_state = {
+		state = 1189
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_chongqing_ever_captured = {
+	KOR = { has_country_flag = GAW_city_chongqing_captured_flag }
+}
+
+GAW_city_xian_pdto_controlled = {
+	any_state = {
+		state = 622
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_xian_eadi_controlled = {
+	any_state = {
+		state = 622
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_xian_ever_captured = {
+	KOR = { has_country_flag = GAW_city_xian_captured_flag }
+}
+
+GAW_city_lanzhou_pdto_controlled = {
+	any_state = {
+		state = 283
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_lanzhou_eadi_controlled = {
+	any_state = {
+		state = 283
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_lanzhou_ever_captured = {
+	KOR = { has_country_flag = GAW_city_lanzhou_captured_flag }
+}
+
+GAW_city_urumqi_pdto_controlled = {
+	any_state = {
+		state = 1165
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_urumqi_eadi_controlled = {
+	any_state = {
+		state = 1165
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_urumqi_ever_captured = {
+	KOR = { has_country_flag = GAW_city_urumqi_captured_flag }
+}
+
+GAW_city_lhasa_pdto_controlled = {
+	any_state = {
+		state = 1156
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_lhasa_eadi_controlled = {
+	any_state = {
+		state = 1156
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_lhasa_ever_captured = {
+	KOR = { has_country_flag = GAW_city_lhasa_captured_flag }
+}
+
+GAW_city_taipei_pdto_controlled = {
+	any_state = {
+		state = 1148
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_taipei_eadi_controlled = {
+	any_state = {
+		state = 1148
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_taipei_ever_captured = {
+	KOR = { has_country_flag = GAW_city_taipei_captured_flag }
+}
+
+GAW_city_kaohsiung_pdto_controlled = {
+	any_state = {
+		state = 1150
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_kaohsiung_eadi_controlled = {
+	any_state = {
+		state = 1150
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_kaohsiung_ever_captured = {
+	KOR = { has_country_flag = GAW_city_kaohsiung_captured_flag }
+}
+
+GAW_city_new_delhi_pdto_controlled = {
+	any_state = {
+		state = 1379
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_new_delhi_eadi_controlled = {
+	any_state = {
+		state = 1379
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_new_delhi_ever_captured = {
+	KOR = { has_country_flag = GAW_city_new_delhi_captured_flag }
+}
+
+GAW_city_calcutta_pdto_controlled = {
+	any_state = {
+		state = 431
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_calcutta_eadi_controlled = {
+	any_state = {
+		state = 431
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_calcutta_ever_captured = {
+	KOR = { has_country_flag = GAW_city_calcutta_captured_flag }
+}
+
+GAW_city_naypyidaw_pdto_controlled = {
+	any_state = {
+		state = 640
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_naypyidaw_eadi_controlled = {
+	any_state = {
+		state = 640
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_naypyidaw_ever_captured = {
+	KOR = { has_country_flag = GAW_city_naypyidaw_captured_flag }
+}
+
+GAW_city_hanoi_pdto_controlled = {
+	any_state = {
+		state = 671
+		controller = { pdto_side = yes }
+	}
+}
+
+GAW_city_hanoi_eadi_controlled = {
+	any_state = {
+		state = 671
+		controller = { eadi_side = yes }
+	}
+}
+
+GAW_city_hanoi_ever_captured = {
+	KOR = { has_country_flag = GAW_city_hanoi_captured_flag }
+}
+

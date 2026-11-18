@@ -1,0 +1,272 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_yec_space_revolution_container"
+		size = { width = 502 height = 495 }
+		clipping = no
+		iconType = {
+			name = "KOR_yec_satellite_background"
+			position = { x = 4 y = 2 }
+			spriteType = "GFX_KOR_yec_satellite_background"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_earth_back"
+			position = { x = 126 y = 44 }
+			spriteType = "GFX_KOR_yec_earth_back"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_orbit_line"
+			position = { x = 56 y = 94 }
+			spriteType = "GFX_KOR_yec_orbit_line"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_satellite_animation"
+			position = { x = 35 y = 64 }
+			spriteType = "GFX_KOR_yec_satellite_animation"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_earth_front"
+			position = { x = 126 y = 44 }
+			spriteType = "GFX_KOR_yec_earth_front"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_yec_satellite_count_text"
+			position = { x = 150 y = 308 }
+			font = "VCR02_18"
+			text = "KOR_yec_satellite_count_gui"
+			format = center
+			maxWidth = 200
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_production_progressbar"
+			position = { x = 145 y = 328 }
+			spriteType = "GFX_KOR_dpk_progressbar_green"
+			pdx_tooltip = KOR_yec_production_progress_tt
+		}
+		iconType = {
+			name = "KOR_yec_production_progressbar_frame"
+			position = { x = 145 y = 328 }
+			spriteType = "GFX_KOR_dpk_progressbar_frame"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_yec_production_progress_text"
+			position = { x = 348 y = 332 }
+			font = "VCR02_14"
+			text = "KOR_yec_production_progress_gui"
+			format = left
+			maxWidth = 120
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_yec_production_panel"
+			position = { x = 221 y = 352 }
+			spriteType = "GFX_KOR_yec_button_large"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_status_panel"
+			position = { x = 365 y = 361 }
+			spriteType = "GFX_KOR_yec_button_small"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_production_icon"
+			position = { x = 264 y = 371 }
+			spriteType = "GFX_KOR_yec_production"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_yec_factory_decrease_button"
+			position = { x = 233 y = 391 }
+			spriteType = "GFX_KOR_yec_minus"
+			pdx_tooltip = KOR_yec_factory_decrease_tt
+			pdx_disabled_tooltip = KOR_yec_factory_adjust_disabled_tt
+			clicksound = click_default
+		}
+		instantTextboxType = {
+			name = "KOR_yec_factory_count_text"
+			position = { x = 278 y = 398 }
+			font = "VCR02_18"
+			text = "KOR_yec_factory_count_gui"
+			format = center
+			maxWidth = 42
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_yec_factory_increase_button"
+			position = { x = 335 y = 391 }
+			spriteType = "GFX_KOR_yec_plus"
+			pdx_tooltip = KOR_yec_factory_increase_tt
+			pdx_disabled_tooltip = KOR_yec_factory_adjust_disabled_tt
+			clicksound = click_default
+		}
+		iconType = {
+			name = "KOR_yec_status_icon"
+			position = { x = 379 y = 369 }
+			spriteType = "GFX_KOR_yec_satellite_status"
+			pdx_tooltip = KOR_yec_availability_tt
+		}
+		instantTextboxType = {
+			name = "KOR_yec_availability_text"
+			position = { x = 365 y = 412 }
+			font = "VCR02_18"
+			text = "KOR_yec_availability_gui"
+			format = center
+			maxWidth = 126
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_yec_status_text"
+			position = { x = 365 y = 428 }
+			font = "VCR02_14"
+			text = "KOR_yec_status_gui"
+			format = center
+			maxWidth = 126
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_yec_production_start_button"
+			position = { x = 232 y = 450 }
+			spriteType = "GFX_KOR_yec_button_right"
+			buttonFont = "VCR02_14"
+			buttonText = KOR_yec_production_start_button
+			pdx_tooltip = KOR_yec_production_start_tt
+			pdx_disabled_tooltip = KOR_yec_production_start_disabled_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_yec_maintenance_start_button"
+			position = { x = 368 y = 450 }
+			spriteType = "GFX_KOR_yec_button_left"
+			buttonFont = "VCR02_14"
+			buttonText = KOR_yec_maintenance_start_button
+			pdx_tooltip = KOR_yec_maintenance_start_tt
+			pdx_disabled_tooltip = KOR_yec_maintenance_start_disabled_tt
+			clicksound = click_default
+		}
+		iconType = {
+			name = "KOR_yec_night_background"
+			position = { x = 7 y = 2 }
+			spriteType = "GFX_KOR_yec_night_background"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_yec_target_east_button"
+			position = { x = 273 y = 177 }
+			spriteType = "GFX_KOR_yec_target_east"
+			pdx_tooltip = KOR_yec_target_east_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_yec_target_west_button"
+			position = { x = 34 y = 74 }
+			spriteType = "GFX_KOR_yec_target_west"
+			pdx_tooltip = KOR_yec_target_west_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_yec_target_north_button"
+			position = { x = 217 y = 36 }
+			spriteType = "GFX_KOR_yec_target_north"
+			pdx_tooltip = KOR_yec_target_north_tt
+			clicksound = click_default
+		}
+		iconType = {
+			name = "KOR_yec_clouds"
+			position = { x = 13 y = 12 }
+			spriteType = "GFX_KOR_yec_clouds"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_yec_selected_theatre_text"
+			position = { x = 223 y = 343 }
+			font = "VCR02_14"
+			text = "KOR_yec_selected_theatre_gui"
+			format = center
+			maxWidth = 270
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_yec_emp_bottom_panel"
+			position = { x = 223 y = 353 }
+			spriteType = "GFX_KOR_yec_night_large_button"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_yec_civil_emp_attack_button"
+			position = { x = 235 y = 362 }
+			spriteType = "GFX_KOR_yec_civil_emp"
+			pdx_tooltip = KOR_yec_civil_emp_attack_button_tt
+			pdx_disabled_tooltip = KOR_yec_civil_emp_attack_button_disabled_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_yec_military_emp_attack_button"
+			position = { x = 363 y = 362 }
+			spriteType = "GFX_KOR_yec_military_emp"
+			pdx_tooltip = KOR_yec_military_emp_attack_button_tt
+			pdx_disabled_tooltip = KOR_yec_military_emp_attack_button_disabled_tt
+			clicksound = click_default
+		}
+		iconType = {
+			name = "KOR_yec_civil_emp_label_panel"
+			position = { x = 235 y = 450 }
+			spriteType = "GFX_KOR_yec_night_button"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_yec_military_emp_label_panel"
+			position = { x = 365 y = 450 }
+			spriteType = "GFX_KOR_yec_night_button"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_yec_civil_emp_label"
+			position = { x = 235 y = 458 }
+			font = "VCR02_14"
+			text = "KOR_yec_civil_emp_label"
+			format = center
+			maxWidth = 124
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_yec_military_emp_label"
+			position = { x = 365 y = 458 }
+			font = "VCR02_14"
+			text = "KOR_yec_military_emp_label"
+			format = center
+			maxWidth = 124
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "KOR_yec_toggle_page_button"
+			position = { x = 2 y = 352 }
+			spriteType = "GFX_KOR_yec_toggle"
+			pdx_tooltip = KOR_yec_toggle_page_tt
+			clicksound = click_default
+		}
+		iconType = {
+			name = "KOR_yec_space_revolution_help"
+			spriteType = "GFX_help_button"
+			position = { x = 470 y = 3 }
+			pdx_tooltip = "KOR_yec_space_revolution_help_tooltip"
+		}
+	}
+}

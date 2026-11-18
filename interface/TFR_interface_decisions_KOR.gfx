@@ -1,0 +1,1247 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_save_the_korea_category"
+		texturefile = "gfx/interface/decisions/KOR/KOR_icarus_dec_categories.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_icarus_dec_categories"
+		texturefile = "gfx/interface/decisions/KOR/KOR_icarus_dec_categories.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_icarus_pol"
+		texturefile = "gfx/interface/decisions/KOR/KOR_icarus_pol.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_icarus_mil"
+		texturefile = "gfx/interface/decisions/KOR/KOR_icarus_mil.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_icarus_labor"
+		texturefile = "gfx/interface/decisions/KOR/KOR_icarus_labor.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_icarus_eco"
+		texturefile = "gfx/interface/decisions/KOR/KOR_icarus_eco.png"
+	}
+	##
+	spriteType = {
+		name = "GFX_decision_KOR_saudi_volunteer"
+		texturefile = "gfx/interface/decisions/KOR/KOR_saudi_volunteer.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_coronavirus"
+		texturefile = "gfx/interface/decisions/KOR/KOR_coronavirus.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_national_assembly"
+		texturefile = "gfx/interface/decisions/KOR/KOR_national_assembly.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_moonso_kospi"
+		texturefile = "gfx/interface/decisions/KOR/KOR_moonso_kospi.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_moonso_kospi_monetary_policy"
+		texturefile = "gfx/interface/decisions/KOR/KOR_moonso_kospi_monetary_policy.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_moonso_kospi_tax_cut"
+		texturefile = "gfx/interface/decisions/KOR/KOR_moonso_kospi_tax_cut.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_moonso_kospi_corporate_support"
+		texturefile = "gfx/interface/decisions/KOR/KOR_moonso_kospi_corporate_support.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kim_moonsoo_president_category"
+		texturefile = "gfx/interface/decisions/KOR/KOR_kim_moonsoo_president_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kim_moonsoo_law_making"
+		texturefile = "gfx/interface/decisions/KOR/KOR_kim_moonsoo_law_making.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kim_moonsoo_dpk"
+		texturefile = "gfx/interface/decisions/KOR/KOR_kim_moonsoo_dpk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kim_moonsoo_ppp"
+		texturefile = "gfx/interface/decisions/KOR/KOR_kim_moonsoo_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_national_conference_for_unification_category"
+		texturefile = "gfx/interface/decisions/KOR/KOR_national_conference_for_unification_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_coronavirus_dissatisfaction"
+		textureFile = "gfx/interface/decisions/KOR/KOR_coronavirus_dissatisfaction_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_coronavirus_death"
+		textureFile = "gfx/interface/decisions/KOR/KOR_KOR_coronavirus_death_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_reds_army"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_reds_army_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nuke_category_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nuke_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nuke_make_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nuke_make_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nuke_lunch_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nuke_lunch_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_youngsan"
+		textureFile = "gfx/interface/decisions/KOR/KOR_youngsan.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_build"
+		textureFile = "gfx/interface/decisions/KOR/KOR_build.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_PDTO_campain"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_PDTO_campain.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_dp_choice"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_dp_choice.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_HD"
+		textureFile = "gfx/interface/decisions/KOR/HD.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_HJ"
+		textureFile = "gfx/interface/decisions/KOR/HJ.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_LIG"
+		textureFile = "gfx/interface/decisions/KOR/LIG.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_infra"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_infra.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_after_plan_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_after_plan_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_hanhwa"
+		textureFile = "gfx/interface/decisions/KOR/hanhwa.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_hyundai"
+		textureFile = "gfx/interface/decisions/KOR/hyundai.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KAI_dron"
+		textureFile = "gfx/interface/decisions/KOR/KAI_dron.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_PDTO_VIT"
+		textureFile = "gfx/interface/decisions/KOR/PDTO_VIT.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_PDTO_THI"
+		textureFile = "gfx/interface/decisions/KOR/PDTO_THI.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_PDTO_MLA"
+		textureFile = "gfx/interface/decisions/KOR/PDTO_MLA.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_PDTO_IND"
+		textureFile = "gfx/interface/decisions/KOR/PDTO_IND.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_dp_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_dp_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kari"
+		textureFile = "gfx/interface/decisions/KOR/KOR_kari.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_taiwan"
+		textureFile = "gfx/interface/decisions/KOR/KOR_taiwan.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_soju"
+		textureFile = "gfx/interface/decisions/KOR/KOR_soju.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_heavy_weapon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_heavy_weapon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_K2"
+		textureFile = "gfx/interface/decisions/KOR/KOR_K2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_K9"
+		textureFile = "gfx/interface/decisions/KOR/KOR_K9.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_taiwan_defend"
+		textureFile = "gfx/interface/decisions/KOR/KOR_taiwan_defend.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_securing"
+		textureFile = "gfx/interface/decisions/KOR/KOR_securing.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_ready"
+		textureFile = "gfx/interface/decisions/KOR/KOR_ready.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_control"
+		textureFile = "gfx/interface/decisions/KOR/KOR_control.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_martial_dec"
+		textureFile = "gfx/interface/decisions/KOR/KOR_martial_dec.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_martial_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_martial_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_make_national_low_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_make_national_low_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_cajole_dp_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_cajole_dp_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_university_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_university_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_A_class_treatment_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_A_class_treatment_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_cajole_ppp_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_cajole_ppp_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_antipart_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_antipart_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_attack_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_attack_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_Return_to_work_low_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_Return_to_work_low_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_mega_city_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_mega_city_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_raillway_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_raillway_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_arms_factory_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_arms_factory_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_dockyard_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_dockyard_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_energy_farm_2_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_energy_farm_2_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_energy_farm_1_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_energy_farm_1_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_saudi_volunteer_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_saudi_volunteer_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_biochemical_weapons_our_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_biochemical_weapons_our_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_biochemical_weapons_prc_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_biochemical_weapons_prc_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_biochemical_weapons_prk_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_biochemical_weapons_prk_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_biochemical_weapons_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_biochemical_weapons_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_K2C1_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_K2C1_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_warrior_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_warrior_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_K9A2_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_K9A2_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_anti_dron_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_anti_dron_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_k2_4_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_k2_4_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_behoo_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_behoo_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_K21_make_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_K21_make_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_phone_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_phone_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_foreign_office_improve_north_korea_relations"
+		textureFile = "gfx/interface/decisions/KOR/KOR_foreign_office_improve_north_korea_relations.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_foreign_office_usa_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_foreign_office_usa_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_foreign_office_china_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_foreign_office_china_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_foreign_office_japan_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_foreign_office_japan_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_foreign_office_korea_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_foreign_office_korea_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_america_civil_war_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_america_civil_war_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_peoples_labor_party_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_peoples_labor_party_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_behind_the_curtain_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_behind_the_curtain_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_choguk_baseball_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_choguk_baseball_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_imf_crisis_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_imf_crisis_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_imf_crisis_2_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_imf_crisis_2_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_imf_crisis_3_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_imf_crisis_3_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_coperation_dp_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_coperation_dp_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_deny_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_deny_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_agi_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_agi_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_agi_serect_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_agi_serect_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_the_task_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_the_task_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_serch_weapon_investigate_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_serch_weapon_investigate_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_extrme_investigate_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_extrme_investigate_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_extrme_investigate_second_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_extrme_investigate_second_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_war_investigate_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_war_investigate_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_investigate_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_investigate_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_ppp_investigate_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_ppp_investigate_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_reform_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_reform_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_agricultural_support_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_agricultural_support_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_support_people_second_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_support_people_second_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_support_people_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_support_people_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_emergency_economy_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_emergency_economy_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_new_contracts_people_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_new_contracts_people_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_yoon_inne_circle"
+		textureFile = "gfx/interface/decisions/KOR/KOR_yoon_inne_circle.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_mat_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_mat_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_PPP_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_PPP_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_light_icon" #촛불시위확대 
+		textureFile = "gfx/interface/decisions/KOR/KOR_light_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_police_icon" #경비인력강화
+		textureFile = "gfx/interface/decisions/KOR/KOR_police_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_handock_icon" #한덕수
+		textureFile = "gfx/interface/decisions/KOR/KOR_handock_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_parkan_icon" #박안수
+		textureFile = "gfx/interface/decisions/KOR/KOR_parkan_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_moonsang_icon" #문상호
+		textureFile = "gfx/interface/decisions/KOR/KOR_moonsang_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_leejin_icon" #이진우
+		textureFile = "gfx/interface/decisions/KOR/KOR_leejin_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_yoing_icon" #여인형
+		textureFile = "gfx/interface/decisions/KOR/KOR_yoing_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_progressfree_icon" #진보의 자유
+		textureFile = "gfx/interface/decisions/KOR/KOR_progressfree_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_progressfree_icon" #서부지법
+		textureFile = "gfx/interface/decisions/KOR/KOR_progressfree_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_protect_dec_icon" #신변보호조치
+		textureFile = "gfx/interface/decisions/KOR/KOR_protect_dec_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_chaesang_icon" #최상목
+		textureFile = "gfx/interface/decisions/KOR/KOR_chaesang_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_civil_factory" #경제디시전 민간공장
+		textureFile = "gfx/interface/decisions/KOR/kor_civil_factory.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_arms_factory" #경제디시전 군수공장
+		textureFile = "gfx/interface/decisions/KOR/kor_arms_factory.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_megacity_factory" #경제디시전 메가시티
+		textureFile = "gfx/interface/decisions/KOR/kor_megacity_factory.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_dockyard" #경제디시전 조선소
+		textureFile = "gfx/interface/decisions/KOR/kor_dockyard.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_campain" #경제디시전 캠패인
+		textureFile = "gfx/interface/decisions/KOR/kor_campain.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_infra" #경제디시전 인프라
+		textureFile = "gfx/interface/decisions/KOR/kor_infra.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_lee_army" #이재명 공장
+		textureFile = "gfx/interface/decisions/KOR/kor_lee_army.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kor_lee_civil" #이재명 군공
+		textureFile = "gfx/interface/decisions/KOR/kor_lee_civil.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_reds_plan" #이재명 군공
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_reds_plan.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_young_man_house" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_young_man_house_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_work_sqare" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_work_sqare_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_gonggong_boyuk" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_gonggong_boyuk_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_jeonse_sagi" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_jeonse_sagi_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_chulsan_hyuga" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_chulsan_hyuga_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_dolbom_servive" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_dolbom_servive_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_tesla" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_tesla_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_rock" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_rock_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_north" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_north_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_intel" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_intel_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_amer" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_amer_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_invite_industries_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_invite_industries_icon.png"
+	}
+	spriteType = { 
+		name = "GFX_decision_icon_KOR_timer_kospi"
+		textureFile = "gfx/interface/decisions/KOR/KOR_timer_kospi.png"
+	}
+	spriteType = { 
+		name = "GFX_decision_icon_KOR_lee_kfxx_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_kfxx_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_kfxx_project_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_kfxx_project_category.png"
+	}
+	spriteType = { 
+		name = "GFX_decision_icon_KOR_lee_pantarki_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_pantarki_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_invite_industries_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_invite_industries_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_culture_support_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_culture_support_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_culture_support_2_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_culture_support_2__icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_culture_support_3_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_culture_support_3_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_culture_support_4_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_culture_support_4_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_reds_rail_descion_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_reds_rail_descion.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_reds_army_dprk_descion_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_reds_army_dprk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_reds_army_dprk_two_descion_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_reds_army_dprk_two.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_www_viral" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_www_viral.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_www_viral_instagram" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_www_viral_instagram.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_www_viral_sns" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_www_viral_sns.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_www_viral_internet_community" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_www_viral_internet_community.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_unfinished_symphony" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_unfinished_symphony.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_innovation_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_innovation_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_dogpig_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_dogpig_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_in_the_ruins_cate" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_in_the_ruins_cate.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_in_the_ruins_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_in_the_ruins_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_1_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_2_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_3_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_4_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_4.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_5_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_5.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_6_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_6.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_descion_iocn_7_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_descion_iocn_7.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_descion_icon_1_icon" #공장
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_descion_icon_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_descion_icon_2_icon" #민생
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_descion_icon_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_descion_icon_3_icon" #철도
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_descion_icon_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_descion_icon_4_icon" #무기
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_descion_icon_4.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_coa_descion_icon_4_icon" #무기
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_coa_descion_icon_4.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_pdto_traing_descion_icon_1" #PDTO훈련 김문수
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_pdto_traing_descion_icon_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_pdto_traing_descion_icon_2" #PDTO훈련 군부
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_pdto_traing_descion_icon_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_yushin_desc" #유신회
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_yushin_desc.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_nonmainstream_desc" #비주류
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_nonmainstream_desc.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_mainstream_desc" #주류
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_mainstream_desc.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_youn_human_icon" #주류
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_youn_human_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_timer_dpk" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_timer_dpk.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_timer_ppp" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_timer_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_democratic_party_dynasty_category" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_democratic_party_dynasty_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_pdto_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_pdto_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_KOR_lee_PDTO_category" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_PDTO_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_ppp_1" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_ppp_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_ppp_2" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_ppp_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_ppp_3" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_ppp_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_dpk_1" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_dpk_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_dpk_2" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_dpk_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_bb_dpk_3" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_bb_dpk_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_underground_red_1" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_underground_red_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_underground_red_2" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_underground_red_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_underground_red_3" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_underground_red_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_underground_red_4" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_underground_red_4.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_underground_red_5" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_underground_red_5.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_1" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_2" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_3" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_4" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_4.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_newness_category" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_newness_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_prc_tech" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_prc_tech.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_homeland_megacity_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_homeland_megacity_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_homeland_leagar_1_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_homeland_legar_1_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_homeland_leagar_2_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_homeland_legar_2_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_homeland_leagar_3_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_homeland_legar_3_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_homeland_leagar_4_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_homeland_legar_4_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_prc_tech_category" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_prc_tech_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_falcon_heavy_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_falcon_heavy_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_falcon9_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_falcon9_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lunagate_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_lunagate_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_milta_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_milta_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nuri_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_nuri_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_spacex_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_spacex_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_starship_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_starship_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_acdemic_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_acdemic_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_pre_lee_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_pre_lee_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_pre_lee_support_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_pre_lee_support_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_pre_lee_getoff_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_pre_lee_getoff_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_anti_lee_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_anti_lee_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_anti_lee_support_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_anti_lee_support_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_anti_lee_getoff_icon" 
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_anti_lee_getoff_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_anxious_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_anxious_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_anxious_support_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_anxious_support_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_faction_anxious_getoff_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_faction_anxious_getoff_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_homland_trademark_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_homland_trademark_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_antidemocritic_category_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_antidemocritic_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_antidemocritic_ppp_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_antidemocritic_ppp.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_antidemocritic_dp_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_antidemocritic_dp.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_martial_law_election_countdown_mission"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_martial_law_election_countdown_mission.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_martial_law_election_countdown_mission"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_martial_law_election_countdown_mission.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_great_socity_cateogry"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_great_socity_cateogry.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_great_socity_descision_1"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_great_socity_descision_1.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_great_socity_descision_2"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_great_socity_descision_2.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_great_socity_descision_3"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_great_socity_descision_3.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_party_influence_auto_upgrade_timeout"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_party_influence_auto_upgrade_timeout.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_pp_upgrade"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_pp_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_pp_attack"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_pp_attack.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_jp_upgrade"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_jp_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_jp_attack"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_jp_attack.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_lp_upgrade"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_lp_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_lp_attack"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_lp_attack.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_kim_trait_upgrade"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_kim_trait_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_focus_trigger_decision"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_focus_trigger_decision.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_focus_trigger_decision_auto"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_focus_trigger_decision_auto.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_president_influence_timer"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_president_influence_timer.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_plp_party_head_change_timeout"
+		textureFile = "gfx/interface/decisions/KOR/KOR_plp_party_head_change_timeout.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_national_riot_suppression_category_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_national_riot_suppression_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_national_riot_suppression_desc_icon"
+		textureFile = "gfx/interface/decisions/KOR/KOR_national_riot_suppression_desc_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_defreform_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_defreform_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_ignorant_media"
+		textureFile = "gfx/interface/decisions/KOR/KOR_ignorant_media_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_ignorant_education"
+		textureFile = "gfx/interface/decisions/KOR/KOR_ignorant_education_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_ignorant_control"
+		textureFile = "gfx/interface/decisions/KOR/KOR_ignorant_control_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_white_terror_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_white_terror_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_white_terror_case_file"
+		textureFile = "gfx/interface/decisions/KOR/KOR_white_terror_case_file_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_white_terror_raid"
+		textureFile = "gfx/interface/decisions/KOR/KOR_white_terror_raid_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_korea_major_surgery_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_korea_major_surgery_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_dismantlement_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_dismantlement_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_dismantlement_deadline"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_dismantlement_deadline_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_moves_mission"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_moves_mission_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_opposition_moves"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_opposition_moves_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_insurrection_files"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_insurrection_files_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_institutional_decision"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_institutional_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_nis_civil_society"
+		textureFile = "gfx/interface/decisions/KOR/KOR_nis_civil_society_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_human_modification_head"
+		textureFile = "gfx/interface/decisions/KOR/KOR_human_modification_head_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_human_modification_right_arm"
+		textureFile = "gfx/interface/decisions/KOR/KOR_human_modification_right_arm_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_human_modification_left_arm"
+		textureFile = "gfx/interface/decisions/KOR/KOR_human_modification_left_arm_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_human_modification_body"
+		textureFile = "gfx/interface/decisions/KOR/KOR_human_modification_body_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_human_modification_leg"
+		textureFile = "gfx/interface/decisions/KOR/KOR_human_modification_leg_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_freedom_propaganda"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_freedom_propaganda_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_freedom_development"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_freedom_development_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_freedom_policy"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_freedom_policy_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_prosperity"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_prosperity_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_development"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_development_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_policy"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_policy_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_stability"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_stability_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_stability_development"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_stability_development_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_stability_policy"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_stability_policy_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_military_supreme_council_loyalty"
+		textureFile = "gfx/interface/decisions/KOR/KOR_military_supreme_council_loyalty_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_three_principles"
+		textureFile = "gfx/interface/decisions/KOR/KOR_three_principles.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_three_principles_people"
+		textureFile = "gfx/interface/decisions/KOR/KOR_three_principles_people_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_three_principles_nation"
+		textureFile = "gfx/interface/decisions/KOR/KOR_three_principles_nation_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_three_principles_democracy"
+		textureFile = "gfx/interface/decisions/KOR/KOR_three_principles_democracy_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_pivot_to_local"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_pivot_to_local.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_airport"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_airport.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_finance"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_finance.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_port"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_port.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_science"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_science.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_semiconductor"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_semiconductor.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_shopping"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_shopping.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_industry"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_industry.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_LJS_misc"
+		textureFile = "gfx/interface/decisions/KOR/KOR_LJS_misc.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_yec_emergency_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_yec_emergency_category_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_army_yec_emergency"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_army_yec_emergency_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_yec_space_revolution_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_yec_space_revolution_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_victory_culture_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_victory_culture_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_reds_dprk_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_reds_dprk_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_kimminseok_korea_war_confrontation_category"
+		textureFile = "gfx/interface/decisions/KOR/kimminseok_korea_war_confrontation_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_trade_network_diversification_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_trade_network_diversification_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_beyond_seoul_republic_category"
+		textureFile = "gfx/interface/decisions/KOR/KOR_beyond_seoul_republic_category.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_icon_KOR_lee_political_negotiation_mission"
+		textureFile = "gfx/interface/decisions/KOR/KOR_lee_political_negotiation_mission_icon.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_icon_KOR_defense_reform_weapon_development"
+		textureFile = "gfx/interface/decisions/KOR/KOR_defense_reform_weapon_development.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_defense_reform_training"
+		textureFile = "gfx/interface/decisions/KOR/KOR_defense_reform_training.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_defense_reform_institutional_reform"
+		textureFile = "gfx/interface/decisions/KOR/KOR_defense_reform_institutional_reform.png"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_KOR_defense_reform_force_enhancement"
+		textureFile = "gfx/interface/decisions/KOR/KOR_defense_reform_force_enhancement.png"
+	}
+
+	# Categories
+	spriteType = {
+		name = "GFX_decision_cat_KOR_LJS_world_wide_web" 
+		textureFile = "gfx/interface/decisions/KOR/categories/KOR_LJS_world_wide_web.png"
+	}
+}

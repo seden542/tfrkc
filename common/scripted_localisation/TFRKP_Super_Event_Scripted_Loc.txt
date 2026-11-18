@@ -1,0 +1,31 @@
+defined_text = {
+	name = TFRKPGetSuperEventImage
+
+	### DEFAULT ###
+	text = {
+		localization_key = "GFX_[?TFRKP_super_event.GetTokenKey]"
+	}
+}
+
+defined_text = {
+	name = TFRKPGetSuperEventTitle
+
+	### DEFAULT ###
+	text = {
+		localization_key = "[?TFRKP_super_event.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = {
+	name = TFRKPGetSuperEventOption
+
+	### DEFAULT ###
+	text = { localization_key = "[?TFRKP_super_event.GetTokenKey]_A" }
+}
+
+defined_text = {
+	name = TFRKPGetSuperEventDesc
+
+	### DEFAULT ###
+	text = { localization_key = "[?TFRKP_super_event.GetTokenKey]_D" }
+}

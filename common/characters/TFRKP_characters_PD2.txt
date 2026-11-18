@@ -1,0 +1,42 @@
+characters = {
+	PD2_hong_kyung_char = {
+		name = PD2_hong_kyung_char
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_PD2_hong_kyung_char_civilian_large"
+			}
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = left_centrist
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = centrist
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = constitutionalist
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = military_junta
+		}
+		country_leader = {
+			desc = PD2_hong_kyung_char_desc
+			ideology = classical_fascism
+		}
+	}
+}

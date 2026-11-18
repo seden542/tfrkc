@@ -1,0 +1,6100 @@
+defined_text = {
+	name = GetKORSaudiWarDissatisfactionLevel
+
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_saudi_dissatisfaction > 0.6 }
+		}
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_saudi_dissatisfaction > 0.3 }
+		}
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_saudi_dissatisfaction > 0 }
+		}
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_low
+	}
+	text = {
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_low
+	}
+}
+
+defined_text = {
+	name = GetKORSaudiWarDissatisfactionUSALevel
+
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_saudi_dissatisfaction_USA > 0.6 }
+		}
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_saudi_dissatisfaction_USA > 0.3 }
+		}
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_saudi_dissatisfaction_USA > 0 }
+		}
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_low
+	}
+	text = {
+		localization_key = TFR_KOR_saudi_dissatisfaction_level_low
+	}
+}
+
+defined_text = {
+	name = GetKORCoronavirusVaccineLevel
+
+	text = {
+		trigger = {
+			has_country_flag = KOR_coronavirus_vaccine_researched
+		}
+		localization_key = TFR_KOR_coronavirus_vaccine_level_complete
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_vaccine_var > 81 }
+		}
+		localization_key = TFR_KOR_coronavirus_vaccine_level_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_vaccine_var > 61 }
+		}
+		localization_key = TFR_KOR_coronavirus_vaccine_level_medium_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_vaccine_var > 41 }
+		}
+		localization_key = TFR_KOR_coronavirus_vaccine_level_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_vaccine_var > 21 }
+		}
+		localization_key = TFR_KOR_coronavirus_vaccine_level_medium_low
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_vaccine_var > 0 }
+		}
+		localization_key = TFR_KOR_coronavirus_vaccine_level_low
+	}
+	text = {
+		localization_key = TFR_KOR_coronavirus_vaccine_level_default
+	}
+}
+
+defined_text = {
+	name = GetKORCoronavirusDissatisfactionLevel
+
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_dissatisfaction_var > 60 }
+		}
+		localization_key = TFR_KOR_coronavirus_dissatisfaction_level_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_dissatisfaction_var > 30 }
+		}
+		localization_key = TFR_KOR_coronavirus_dissatisfaction_level_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_dissatisfaction_var > 0 }
+		}
+		localization_key = TFR_KOR_coronavirus_dissatisfaction_level_low
+	}
+	text = {
+		localization_key = TFR_KOR_coronavirus_dissatisfaction_level_low
+	}
+}
+
+defined_text = {
+	name = GetKORCoronavirusInfectionLevel
+
+	text = {
+		trigger = {
+			AND = {
+				has_country_flag = KOR_coronavirus_vaccine_researched
+				check_variable = { KOR.KOR_coronavirus_infection_var = 0 }
+			}
+		}
+		localization_key = TFR_KOR_coronavirus_infection_level_complete
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_infection_var > 76 }
+		}
+		localization_key = TFR_KOR_coronavirus_infection_level_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_infection_var > 51 }
+		}
+		localization_key = TFR_KOR_coronavirus_infection_level_medium_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_infection_var > 26 }
+		}
+		localization_key = TFR_KOR_coronavirus_infection_level_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR.KOR_coronavirus_infection_var > 0 }
+		}
+		localization_key = TFR_KOR_coronavirus_infection_level_low
+	}
+	text = {
+		localization_key = TFR_KOR_coronavirus_infection_level_low
+	}
+}
+
+defined_text = {
+	name = GetKORCoronaVirusPlayerStat
+	text = {
+		trigger = {
+			KOR = { is_ai = no }
+		}
+		localization_key = KOR_coronavirus_player_stat_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetKorAscendedAdvisorName1
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 2 }
+		}
+		localization_key = KOR_Hong_joon_pyo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 3 }
+		}
+		localization_key = KOR_yoon_sang_hyun
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 4 }
+		}
+		localization_key = KOR_choo_kyung_ho
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 5 }
+		}
+		localization_key = KOR_ahn_cheol_soo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 6 }
+		}
+		localization_key = KOR_kim_chong_in
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 7 }
+		}
+		localization_key = KOR_lee_sang_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 8 }
+		}
+		localization_key = KOR_yoo_seong_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 9 }
+		}
+		localization_key = KOR_han_dong_hoon
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 10 }
+		}
+		localization_key = KOR_chang_Je_won
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 11 }
+		}
+		localization_key = KOR_lee_jun_seok_char
+	}
+}
+
+defined_text = {
+	name = GetKorAscendedAdvisorName2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 2 }
+		}
+		localization_key = KOR_Hong_joon_pyo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 3 }
+		}
+		localization_key = KOR_yoon_sang_hyun
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 4 }
+		}
+		localization_key = KOR_choo_kyung_ho
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 5 }
+		}
+		localization_key = KOR_ahn_cheol_soo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 6 }
+		}
+		localization_key = KOR_kim_chong_in
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 7 }
+		}
+		localization_key = KOR_lee_sang_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 8 }
+		}
+		localization_key = KOR_yoo_seong_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 9 }
+		}
+		localization_key = KOR_han_dong_hoon
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 10 }
+		}
+		localization_key = KOR_chang_Je_won
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 11 }
+		}
+		localization_key = KOR_lee_jun_seok_char
+	}
+}
+
+defined_text = {
+	name = GetKorAscendedAdvisorName3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 2 }
+		}
+		localization_key = KOR_Hong_joon_pyo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 3 }
+		}
+		localization_key = KOR_yoon_sang_hyun
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 4 }
+		}
+		localization_key = KOR_choo_kyung_ho
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 5 }
+		}
+		localization_key = KOR_ahn_cheol_soo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 6 }
+		}
+		localization_key = KOR_kim_chong_in
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 7 }
+		}
+		localization_key = KOR_lee_sang_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 8 }
+		}
+		localization_key = KOR_yoo_seong_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 9 }
+		}
+		localization_key = KOR_han_dong_hoon
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 10 }
+		}
+		localization_key = KOR_chang_Je_won
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 11 }
+		}
+		localization_key = KOR_lee_jun_seok_char
+	}
+}
+
+defined_text = {
+	name = GetTFRKORAscendedAdvisorTrait1
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 0 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	# 홍준표 - 2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 2 }
+			has_idea = KOR_Hong_joon_pyo_ns
+		}
+		localization_key = KOR_ministry_of_justice
+	}
+
+	# 윤상현 - 3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 3 }
+			has_idea = KOR_yoon_sang_hyun_ns
+		}
+		localization_key = KOR_ministry_of_foreign_affairs
+	}
+
+	# 추경호 - 4
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 4 }
+			has_idea = KOR_choo_kyung_ho_ns
+		}
+		localization_key = KOR_ministry_of_economy
+	}
+
+	# 안철수 - 5
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 5 }
+			has_idea = KOR_ahn_cheol_soo_ns
+		}
+		localization_key = KOR_ministry_of_science
+	}
+
+	# 김종인 - 6
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 6 }
+			has_idea = KOR_kim_chong_in_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 이상민 - 7
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 7 }
+			has_idea = KOR_lee_sang_min_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 유승민 - 8
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 8 }
+			has_idea = KOR_yoo_seong_min_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 한동훈 - 9
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 9 }
+			has_idea = KOR_han_dong_hoon_ns
+		}
+		localization_key = KOR_ministry_of_justice
+	}
+
+	# 장제원 - 10
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 10 }
+			has_idea = KOR_chang_Je_won_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 이준석 - 11
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 11 }
+			has_idea = KOR_lee_jun_seok_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+}
+defined_text = {
+	name = GetTFRKORAscendedAdvisorTrait1_idea_desc
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 0 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	# 홍준표 - 2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 2 }
+			has_idea = KOR_Hong_joon_pyo_ns
+		}
+		localization_key =  idea_desc|KOR_Hong_joon_pyo_ns
+	}
+
+	# 윤상현 - 3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 3 }
+			has_idea = KOR_yoon_sang_hyun_ns
+		}
+		localization_key =  idea_desc|KOR_yoon_sang_hyun_ns
+	}
+
+	# 추경호 - 4
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 4 }
+			has_idea = KOR_choo_kyung_ho_ns
+		}
+		localization_key = idea_desc|KOR_choo_kyung_ho_ns
+	}
+
+	# 안철수 - 5
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 5 }
+			has_idea = KOR_ahn_cheol_soo_ns
+		}
+		localization_key =  idea_desc|KOR_ahn_cheol_soo_ns
+	}
+
+	# 김종인 - 6
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 6 }
+			has_idea = KOR_kim_chong_in_ns
+		}
+		localization_key = idea_desc|KOR_kim_chong_in_ns
+	}
+
+	# 이상민 - 7
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 7 }
+			has_idea = KOR_lee_sang_min_ns
+		}
+		localization_key = idea_desc|KOR_lee_sang_min_ns
+	}
+
+	# 유승민 - 8
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 8 }
+			has_idea = KOR_yoo_seong_min_ns
+		}
+		localization_key = idea_desc|KOR_yoo_seong_min_ns
+	}
+
+	# 한동훈 - 9
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 9 }
+			has_idea = KOR_han_dong_hoon_ns
+		}
+		localization_key = idea_desc|KOR_han_dong_hoon_ns
+	}
+
+	# 장제원 - 10
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 10 }
+			has_idea = KOR_chang_Je_won_ns
+		}
+		localization_key =  idea_desc|KOR_chang_Je_won_ns
+	}
+
+	# 이준석 - 11
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_1 = 11 }
+			has_idea = KOR_lee_jun_seok_ns
+		}
+		localization_key =  idea_desc|KOR_lee_jun_seok_ns
+	}
+}
+
+defined_text = {
+	name = GetTFRKORAscendedAdvisorTrait2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 0 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	# 홍준표 - 2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 2 }
+			has_idea = KOR_Hong_joon_pyo_ns
+		}
+		localization_key = KOR_ministry_of_justice
+	}
+
+	# 윤상현 - 3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 3 }
+			has_idea = KOR_yoon_sang_hyun_ns
+		}
+		localization_key = KOR_ministry_of_foreign_affairs
+	}
+
+	# 추경호 - 4
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 4 }
+			has_idea = KOR_choo_kyung_ho_ns
+		}
+		localization_key = KOR_ministry_of_economy
+	}
+
+	# 안철수 - 5
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 5 }
+			has_idea = KOR_ahn_cheol_soo_ns
+		}
+		localization_key = KOR_ministry_of_science
+	}
+
+	# 김종인 - 6
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 6 }
+			has_idea = KOR_kim_chong_in_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 이상민 - 7
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 7 }
+			has_idea = KOR_lee_sang_min_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 유승민 - 8
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 8 }
+			has_idea = KOR_yoo_seong_min_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 한동훈 - 9
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 9 }
+			has_idea = KOR_han_dong_hoon_ns
+		}
+		localization_key = KOR_ministry_of_justice
+	}
+
+	# 장제원 - 10
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 10 }
+			has_idea = KOR_chang_Je_won_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 이준석 - 11
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 11 }
+			has_idea = KOR_lee_jun_seok_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+}
+defined_text = {
+	name = GetTFRKORAscendedAdvisorTrait2_idea_desc
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 0 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	# 홍준표 - 2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 2 }
+			has_idea = KOR_Hong_joon_pyo_ns
+		}
+		localization_key =  idea_desc|KOR_Hong_joon_pyo_ns
+	}
+
+	# 윤상현 - 3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 3 }
+			has_idea = KOR_yoon_sang_hyun_ns
+		}
+		localization_key =  idea_desc|KOR_yoon_sang_hyun_ns
+	}
+
+	# 추경호 - 4
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 4 }
+			has_idea = KOR_choo_kyung_ho_ns
+		}
+		localization_key = idea_desc|KOR_choo_kyung_ho_ns
+	}
+
+	# 안철수 - 5
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 5 }
+			has_idea = KOR_ahn_cheol_soo_ns
+		}
+		localization_key =  idea_desc|KOR_ahn_cheol_soo_ns
+	}
+
+	# 김종인 - 6
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 6 }
+			has_idea = KOR_kim_chong_in_ns
+		}
+		localization_key = idea_desc|KOR_kim_chong_in_ns
+	}
+
+	# 이상민 - 7
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 7 }
+			has_idea = KOR_lee_sang_min_ns
+		}
+		localization_key = idea_desc|KOR_lee_sang_min_ns
+	}
+
+	# 유승민 - 8
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 8 }
+			has_idea = KOR_yoo_seong_min_ns
+		}
+		localization_key = idea_desc|KOR_yoo_seong_min_ns
+	}
+
+	# 한동훈 - 9
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 9 }
+			has_idea = KOR_han_dong_hoon_ns
+		}
+		localization_key = idea_desc|KOR_han_dong_hoon_ns
+	}
+
+	# 장제원 - 10
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 10 }
+			has_idea = KOR_chang_Je_won_ns
+		}
+		localization_key =  idea_desc|KOR_chang_Je_won_ns
+	}
+
+	# 이준석 - 11
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_2 = 11 }
+			has_idea = KOR_lee_jun_seok_ns
+		}
+		localization_key =  idea_desc|KOR_lee_jun_seok_ns
+	}
+}
+
+defined_text = {
+	name = GetTFRKORAscendedAdvisorTrait3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 0 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	# 홍준표 - 2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 2 }
+			has_idea = KOR_Hong_joon_pyo_ns
+		}
+		localization_key = KOR_ministry_of_justice
+	}
+
+	# 윤상현 - 3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 3 }
+			has_idea = KOR_yoon_sang_hyun_ns
+		}
+		localization_key = KOR_ministry_of_foreign_affairs
+	}
+
+	# 추경호 - 4
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 4 }
+			has_idea = KOR_choo_kyung_ho_ns
+		}
+		localization_key = KOR_ministry_of_economy
+	}
+
+	# 안철수 - 5
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 5 }
+			has_idea = KOR_ahn_cheol_soo_ns
+		}
+		localization_key = KOR_ministry_of_science
+	}
+
+	# 김종인 - 6
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 6 }
+			has_idea = KOR_kim_chong_in_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 이상민 - 7
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 7 }
+			has_idea = KOR_lee_sang_min_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 유승민 - 8
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 8 }
+			has_idea = KOR_yoo_seong_min_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 한동훈 - 9
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 9 }
+			has_idea = KOR_han_dong_hoon_ns
+		}
+		localization_key = KOR_ministry_of_justice
+	}
+
+	# 장제원 - 10
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 10 }
+			has_idea = KOR_chang_Je_won_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+
+	# 이준석 - 11
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 11 }
+			has_idea = KOR_lee_jun_seok_ns
+		}
+		localization_key = KOR_ministry_of_interior_and_safety
+	}
+}
+defined_text = {
+	name = GetTFRKORAscendedAdvisorTrait3_idea_desc
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 0 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 1 }
+		}
+		localization_key = TFR_KOR_ascended_advisor_empty_key
+	}
+
+	# 홍준표 - 2
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 2 }
+			has_idea = KOR_Hong_joon_pyo_ns
+		}
+		localization_key =  idea_desc|KOR_Hong_joon_pyo_ns
+	}
+
+	# 윤상현 - 3
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 3 }
+			has_idea = KOR_yoon_sang_hyun_ns
+		}
+		localization_key =  idea_desc|KOR_yoon_sang_hyun_ns
+	}
+
+	# 추경호 - 4
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 4 }
+			has_idea = KOR_choo_kyung_ho_ns
+		}
+		localization_key = idea_desc|KOR_choo_kyung_ho_ns
+	}
+
+	# 안철수 - 5
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 5 }
+			has_idea = KOR_ahn_cheol_soo_ns
+		}
+		localization_key =  idea_desc|KOR_ahn_cheol_soo_ns
+	}
+
+	# 김종인 - 6
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 6 }
+			has_idea = KOR_kim_chong_in_ns
+		}
+		localization_key = idea_desc|KOR_kim_chong_in_ns
+	}
+
+	# 이상민 - 7
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 7 }
+			has_idea = KOR_lee_sang_min_ns
+		}
+		localization_key = idea_desc|KOR_lee_sang_min_ns
+	}
+
+	# 유승민 - 8
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 8 }
+			has_idea = KOR_yoo_seong_min_ns
+		}
+		localization_key = idea_desc|KOR_yoo_seong_min_ns
+	}
+
+	# 한동훈 - 9
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 9 }
+			has_idea = KOR_han_dong_hoon_ns
+		}
+		localization_key = idea_desc|KOR_han_dong_hoon_ns
+	}
+
+	# 장제원 - 10
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 10 }
+			has_idea = KOR_chang_Je_won_ns
+		}
+		localization_key =  idea_desc|KOR_chang_Je_won_ns
+	}
+
+	# 이준석 - 11
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascended_advisor_3 = 11 }
+			has_idea = KOR_lee_jun_seok_ns
+		}
+		localization_key =  idea_desc|KOR_lee_jun_seok_ns
+	}
+}
+
+defined_text = {
+	name = GetTFRKORAscendingAdvisorName
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 2 }
+		}
+		localization_key = KOR_Hong_joon_pyo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 3 }
+		}
+		localization_key = KOR_yoon_sang_hyun
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 4 }
+		}
+		localization_key = KOR_choo_kyung_ho
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 5 }
+		}
+		localization_key = KOR_ahn_cheol_soo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 6 }
+		}
+		localization_key = KOR_kim_chong_in
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 7 }
+		}
+		localization_key = KOR_lee_sang_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 8 }
+		}
+		localization_key = KOR_yoo_seong_min
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 9 }
+		}
+		localization_key = KOR_han_dong_hoon
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 10 }
+		}
+		localization_key = KOR_chang_Je_won
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_ascending_advisor = 11 }
+		}
+		localization_key = KOR_lee_jun_seok_char
+	}
+}
+
+
+defined_text = {
+	name = GetTFRKOR_PPP_party_leader_name
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 1 }
+		}
+		localization_key = KOR_kweon_seong_dong
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 2 }
+		}
+		localization_key = KOR_choo_kyung_ho
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 3 }
+		}
+		localization_key = KOR_joo_ho_young
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 4 }
+		}
+		localization_key = KOR_ahn_cheol_soo
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 5 }
+		}
+		localization_key = KOR_none_floor_leader
+	}
+}
+defined_text = {
+	name = GetTFRKOR_PPP_party_leader_ideaDesc
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 1 }
+		}
+		localization_key = idea_desc|KOR_kweon_seong_dong_ppp_ns
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 2 }
+		}
+		localization_key =  idea_desc|KOR_choo_kyung_ho_ppp_ns
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 3 }
+		}
+		localization_key = idea_desc|KOR_joo_ho_young_ppp_ns
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 4 }
+		}
+		localization_key = idea_desc|KOR_ahn_cheol_soo_ppp_ns
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_1 = 5 }
+		}
+		localization_key = KOR_none_floor_leader
+	}
+}
+defined_text = {
+	name = GetTFRKOR_PPP_floor_leader_name
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 1 }
+		}
+		localization_key = KOR_none_floor_leader
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 2 }
+		}
+		localization_key = KOR_kim_eun_hye
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 3 }
+		}
+		localization_key = KOR_song_eon_seok
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 4 }
+		}
+		localization_key = KOR_yu_eui_dong
+	}
+}
+defined_text = {
+	name = GetTFRKOR_PPP_floor_leader_ideaDesc
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 1 }
+		}
+		localization_key = KOR_none_floor_leader
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 2 }
+		}
+		localization_key =  idea_desc|KOR_kim_eun_hye_ppp_ns
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 3 }
+		}
+		localization_key = idea_desc|KOR_song_eon_seok_ppp_ns
+	}
+	text = {
+		trigger = {
+			check_variable = { TFR_KOR_PPP_inner_circle_2 = 4 }
+		}
+		localization_key = idea_desc|KOR_yu_eui_dong_ppp_ns
+	}
+}
+
+defined_text = {
+	name = GetNatAsmPartyName
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 1 }
+		}
+		localization_key = KOR_DP_Party_text
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 2 }
+		}
+		localization_key = KOR_PPP_Party_text
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 3 }
+		}
+		localization_key = KOR_JP_Party_text
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 4 }
+		}
+		localization_key = KOR_BP_Party_text
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 5 }
+		}
+		localization_key = KOR_Ind_Party_text
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+defined_text = {
+	name = GetNatAsmPartyDesc
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 1 }
+		}
+		localization_key = KOR_DP_Party_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 2 }
+		}
+		localization_key = KOR_PPP_Party_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 3 }
+		}
+		localization_key = KOR_JP_Party_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 4 }
+		}
+		localization_key = KOR_BP_Party_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 5 }
+		}
+		localization_key = KOR_Ind_Party_desc
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+defined_text = {
+	name = GetKORNatAsmSeatsDynamic
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 1 }
+		}
+		localization_key = KOR_NatAsm_DP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 2 }
+		}
+		localization_key = KOR_NatAsm_PPP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 3 }
+		}
+		localization_key = KOR_NatAsm_JP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 4 }
+		}
+		localization_key = KOR_NatAsm_PP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 5 }
+		}
+		localization_key = KOR_NatAsm_Ind_seats
+	}
+}
+defined_text = {
+	name = KOR_yoon_ai_delete_category_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = KOR_agi_one
+					has_country_flag = KOR_agi_two
+					has_country_flag = KOR_agi_third
+				}
+			}
+		}
+		localization_key = KOR_yoon_ai_delete_category_desc_scripted_loc1
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_agi_one
+		}
+		localization_key = KOR_yoon_ai_delete_desc_scripted_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_agi_one
+			has_country_flag = KOR_agi_two
+		}
+		localization_key = KOR_yoon_ai_delete_desc_scripted_loc3
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_agi_one
+			has_country_flag = KOR_agi_two
+			has_country_flag = KOR_agi_third
+		}
+		localization_key = KOR_yoon_ai_delete_desc_scripted_loc4
+	}
+}
+
+defined_text = {
+	name = GetThridPresidentPPP
+	text = {
+		trigger = {
+			OR = {
+				has_idea = KOR_choo_kyung_ho_ppp_ns
+				has_idea = KOR_kweon_seong_dong_ppp_ns
+			}
+		}
+		localization_key = KOR_kim_min_soo_char
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_joo_ho_young_ppp_ns
+		}
+		localization_key = KOR_cho_kyoung_tae_char
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_ahn_cheol_soo_ppp_ns
+		}
+		localization_key = KOR_kim_jae_sub_char
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_idea = KOR_choo_kyung_ho_ppp_ns
+				has_idea = KOR_kweon_seong_dong_ppp_ns
+				has_idea = KOR_joo_ho_young_ppp_ns
+				has_idea = KOR_ahn_cheol_soo_ppp_ns
+			}
+		}
+		localization_key = KOR_cho_kyoung_tae_char #Nothing
+	}
+}
+
+
+### Lee Path
+defined_text = {
+	name = FocusGoToASIName
+	text = {
+		trigger = {
+			KOR_is_lee_path = yes
+		}
+		localization_key = KOR_yoon_age_of_prosperity_3_lee
+	}
+	text = {
+		trigger = {
+			NOT = {
+				KOR_is_lee_path = yes
+			}
+		}
+		localization_key = KOR_yoon_age_of_prosperity_3_no_lee
+	}
+}
+defined_text = {
+	name = FocusGoToASIDesc
+	text = {
+		trigger = {
+			KOR_is_lee_path = yes
+		}
+		localization_key = KOR_yoon_age_of_prosperity_3_desc_lee
+	}
+	text = {
+		trigger = {
+			NOT = {
+				KOR_is_lee_path = yes
+			}
+		}
+		localization_key = KOR_yoon_age_of_prosperity_3_desc_no_lee
+	}
+}
+defined_text = {
+	name = GetCoaVM
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 2 }
+		}
+		localization_key = jeon_jae_soo_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 3 }
+		}
+		localization_key = kim_sang_wook_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 4 }
+		}
+		localization_key = kim_bu_gyeom_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 5 }
+		}
+		localization_key = ha_tae_kyung_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 6 }
+		}
+		localization_key = ahn_cheol_soo_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 7 }
+		}
+		localization_key = cha_myeong_jin_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 8 }
+		}
+		localization_key = kim_byeong_gi_minister_name
+	}
+	text = {
+		trigger = {
+			check_variable = { sub_pm_var = 9 }
+		}
+		localization_key = im_jong_seok_minister_name
+	}
+	text = {
+		localization_key = KOR_vacant_char
+	}
+}
+
+defined_text = {
+	name = GetBtCWinningFaction
+	text = {
+		trigger = {
+			check_variable = { KOR_BtC_winning_faction = KOR_BtC_mainstream_faction }
+		}
+		localization_key = KOR_BtC_mainstream_faction_color
+	}
+	text = {
+		trigger = {
+		    check_variable = { KOR_BtC_winning_faction = KOR_BtC_nonmainstream_faction }
+		}
+		localization_key = KOR_BtC_nonmainstream_faction_color
+	}
+	text = {
+		trigger = {
+		    check_variable = { KOR_BtC_winning_faction = KOR_BtC_yushin_faction }
+		}
+		localization_key = KOR_BtC_yushin_faction_color
+	}
+}
+
+defined_text = {
+	name = GetBtcMainstreamFactionNoWinning
+	text = {
+		trigger = {
+			NOT = {
+				check_variable = { KOR_BtC_winning_faction = KOR_BtC_mainstream_faction }
+			}
+		}
+		localization_key = KOR_BtC_mainstream_faction_no_winnig
+	}
+}
+
+defined_text = {
+	name = GetDocumentName
+	text = {
+		localization_key = KOR_Documents_[?documents_val]
+	}
+}
+
+defined_text = {
+	name = GetKORPDTOCohesionLevel
+	text = {
+		trigger = {
+			check_variable = { KOR_pdto_cohesion_var < 41 }
+		}
+		localization_key = KOR_pdto_cohesion_level_low
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_pdto_cohesion_var > 40 }
+			check_variable = { KOR_pdto_cohesion_var < 61 }
+		}
+		localization_key = KOR_pdto_cohesion_level_mid
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_pdto_cohesion_var > 60 }
+			check_variable = { KOR_pdto_cohesion_var < 81 }
+		}
+		localization_key = KOR_pdto_cohesion_level_high
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_pdto_cohesion_var > 80 }
+		}
+		localization_key = KOR_pdto_cohesion_level_absolute
+	}
+}
+
+defined_text = {
+	name = GetKORLeeNewRepublicReformPhase
+	text = {
+		trigger = {
+			check_variable = { KOR_lee_reform_completion_var < 25 }
+		}
+		localization_key = KOR_lee_new_republic_phase_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_lee_reform_completion_var > 24 }
+			check_variable = { KOR_lee_reform_completion_var < 50 }
+		}
+		localization_key = KOR_lee_new_republic_phase_25
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_lee_reform_completion_var > 49 }
+			check_variable = { KOR_lee_reform_completion_var < 75 }
+		}
+		localization_key = KOR_lee_new_republic_phase_50
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_lee_reform_completion_var > 74 }
+			check_variable = { KOR_lee_reform_completion_var < 100 }
+		}
+		localization_key = KOR_lee_new_republic_phase_75
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_lee_reform_completion_var > 99 }
+		}
+		localization_key = KOR_lee_new_republic_phase_100
+	}
+}
+
+defined_text = {
+	name = GetKORLeeEstablishmentResistanceEffect
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_lee_establishment_resistance_var < 1 }
+			}
+		}
+		localization_key = KOR_lee_establishment_resistance_effect_none
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_lee_establishment_resistance_var > 0 }
+				check_variable = { KOR_lee_establishment_resistance_var < 4 }
+			}
+		}
+		localization_key = KOR_lee_establishment_resistance_effect_1
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_lee_establishment_resistance_var > 3 }
+				check_variable = { KOR_lee_establishment_resistance_var < 7 }
+			}
+		}
+		localization_key = KOR_lee_establishment_resistance_effect_2
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_lee_establishment_resistance_var > 6 }
+			}
+		}
+		localization_key = KOR_lee_establishment_resistance_effect_3
+	}
+}
+
+defined_text = {
+	name = GetKORBukhaguiTechGapStatus
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var < 10 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_status_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 9 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 20 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_status_10
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 19 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 30 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_status_20
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 29 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 40 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_status_30
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 39 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 50 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_status_40
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 49 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_status_50
+	}
+}
+
+defined_text = {
+	name = GetKORBukhaguiTechGapModifierEffect
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var < 10 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_modifier_effect_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 9 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 20 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_modifier_effect_10
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 19 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 30 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_modifier_effect_20
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 29 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 40 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_modifier_effect_30
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 39 }
+			check_variable = { KOR_bukhagui_tech_gap_var < 50 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_modifier_effect_40
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bukhagui_tech_gap_var > 49 }
+		}
+		localization_key = KOR_bukhagui_tech_gap_modifier_effect_50
+	}
+}
+
+defined_text = {
+	name = GetKORTaipeiTaiwanGuardianStatus
+	text = {
+		trigger = {
+			CHI = { controls_state = 1148 }
+		}
+		localization_key = KOR_taiwan_guardian_status_pdto_control
+	}
+	text = {
+		trigger = {
+			PRC = { controls_state = 1148 }
+		}
+		localization_key = KOR_taiwan_guardian_status_prc_control
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_status_contested
+	}
+}
+
+defined_text = {
+	name = GetKORTainanTaiwanGuardianStatus
+	text = {
+		trigger = {
+			CHI = { controls_state = 1150 }
+		}
+		localization_key = KOR_taiwan_guardian_status_pdto_control
+	}
+	text = {
+		trigger = {
+			PRC = { controls_state = 1150 }
+		}
+		localization_key = KOR_taiwan_guardian_status_prc_control
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_status_contested
+	}
+}
+
+defined_text = {
+	name = GetKORTaichungTaiwanGuardianStatus
+	text = {
+		trigger = {
+			CHI = { controls_state = 1149 }
+		}
+		localization_key = KOR_taiwan_guardian_status_pdto_control
+	}
+	text = {
+		trigger = {
+			PRC = { controls_state = 1149 }
+		}
+		localization_key = KOR_taiwan_guardian_status_prc_control
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_status_contested
+	}
+}
+
+defined_text = {
+	name = GetKOROkinawaTaiwanGuardianStatus
+	text = {
+		trigger = {
+			JAP = { controls_state = 526 }
+		}
+		localization_key = KOR_taiwan_guardian_okinawa_status_jap_control
+	}
+	text = {
+		trigger = {
+			PRC = { controls_state = 526 }
+		}
+		localization_key = KOR_taiwan_guardian_okinawa_status_prc_control
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_status_contested
+	}
+}
+
+defined_text = {
+	name = GetKORTaiwanGuardianPublicOpinionStatus
+	text = {
+		trigger = {
+			KOR = {
+				NOT = { has_completed_focus = KOR_lee_overseas_dispatch }
+			}
+		}
+		localization_key = KOR_taiwan_guardian_public_opinion_hidden
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_taiwan_guardian_public_opinion_var < 6 }
+			}
+		}
+		localization_key = KOR_taiwan_guardian_public_opinion_stage_1
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_taiwan_guardian_public_opinion_var > 5 }
+				check_variable = { KOR_taiwan_guardian_public_opinion_var < 11 }
+			}
+		}
+		localization_key = KOR_taiwan_guardian_public_opinion_stage_2
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_taiwan_guardian_public_opinion_var > 10 }
+			}
+		}
+		localization_key = KOR_taiwan_guardian_public_opinion_stage_3
+	}
+}
+
+defined_text = {
+	name = GetKORTaiwanGuardianArmyStatus
+	text = {
+		trigger = {
+			KOR = {
+				has_completed_focus = KOR_lee_overseas_dispatch
+			}
+		}
+		localization_key = KOR_taiwan_guardian_army_status_taiwan
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_army_status_dmz
+	}
+}
+
+defined_text = {
+	name = GetKORTaiwanGuardianNavyStatus
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_taiwan_guardian_navy_operation_timer_var > 0 }
+			}
+		}
+		localization_key = KOR_taiwan_guardian_navy_status_operation
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_navy_status_docked
+	}
+}
+
+defined_text = {
+	name = GetKORTaiwanGuardianAirForceStatus
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_taiwan_guardian_air_operation_timer_var > 0 }
+			}
+		}
+		localization_key = KOR_taiwan_guardian_air_force_status_operation
+	}
+	text = {
+		localization_key = KOR_taiwan_guardian_air_force_status_docked
+	}
+}
+
+defined_text = {
+	name = KOR_lee_reds_afterwar9_name
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_PP_PP_route
+			}
+		}
+		localization_key = KOR_lee_reds_afterwar9_pp
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_PP_JP_route
+			}
+		}
+		localization_key = KOR_lee_reds_afterwar9_jp
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_PP_LP_route
+			}
+		}
+		localization_key = KOR_lee_reds_afterwar9_lp
+	}
+	text = {
+		localization_key = KOR_lee_reds_afterwar9_fallback
+	}
+}
+
+defined_text = {
+	name = GetKORKariLEOStatus
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_kari_leo_military_satellite_var > 0 }
+				check_variable = { KOR_kari_leo_space_station_stage_var > 2 }
+			}
+		}
+		localization_key = KOR_kari_leo_status_military_satellite_and_space_station_complete
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { KOR_kari_leo_military_satellite_var > 0 }
+				check_variable = { KOR_kari_leo_space_station_stage_var > 0 }
+			}
+		}
+		localization_key = KOR_kari_leo_status_military_satellite_and_space_station
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_leo_military_satellite_var > 0 } }
+		}
+		localization_key = KOR_kari_leo_status_military_satellite
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_leo_space_station_stage_var > 2 } }
+		}
+		localization_key = KOR_kari_leo_status_space_station_complete
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_leo_space_station_stage_var > 0 } }
+		}
+		localization_key = KOR_kari_leo_status_space_station
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_leo_success_flag }
+		}
+		localization_key = KOR_kari_orbit_status_active
+	}
+	text = {
+		localization_key = KOR_kari_orbit_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORKariGEOStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_manned_space_exploration_ongoing_flag }
+		}
+		localization_key = KOR_kari_manned_space_exploration_ongoing_status
+	}
+	text = {
+		localization_key = KOR_kari_manned_space_exploration_empty_status
+	}
+}
+
+defined_text = {
+	name = GetKORKariLagrangeStatus
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_lunar_gateway_stage_var > 3 } }
+		}
+		localization_key = KOR_kari_lagrange_status_lunar_gateway_complete
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_lunar_gateway_stage_var > 2 } }
+		}
+		localization_key = KOR_kari_lagrange_status_lunar_gateway_fuel
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_lunar_gateway_stage_var > 1 } }
+		}
+		localization_key = KOR_kari_lagrange_status_lunar_gateway_habitation
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_lunar_gateway_stage_var > 0 } }
+		}
+		localization_key = KOR_kari_lagrange_status_lunar_gateway_main
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_lagrange_success_flag }
+		}
+		localization_key = KOR_kari_orbit_status_active
+	}
+	text = {
+		localization_key = KOR_kari_orbit_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORKariLunarOrbitStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_lunar_orbit_success_flag }
+		}
+		localization_key = KOR_kari_orbit_status_active
+	}
+	text = {
+		localization_key = KOR_kari_lunar_surface_status_near_future
+	}
+}
+
+defined_text = {
+	name = GetKORKariCurrentLauncher
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_current_launcher_starship_flag }
+		}
+		localization_key = KOR_kari_launcher_starship
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_current_launcher_falcon_heavy_flag }
+		}
+		localization_key = KOR_kari_launcher_falcon_heavy
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_current_launcher_falcon9_flag }
+		}
+		localization_key = KOR_kari_launcher_falcon9
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_current_launcher_nuri_flag }
+		}
+		localization_key = KOR_kari_launcher_nuri
+	}
+	text = {
+		localization_key = KOR_kari_launcher_none
+	}
+}
+
+defined_text = {
+	name = GetKORKariDevelopingLauncher
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_developing_starship_flag }
+		}
+		localization_key = KOR_kari_developing_starship
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_developing_falcon_heavy_flag }
+		}
+		localization_key = KOR_kari_developing_falcon_heavy
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_developing_falcon9_flag }
+		}
+		localization_key = KOR_kari_developing_falcon9
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_kari_developing_nuri_flag }
+		}
+		localization_key = KOR_kari_developing_nuri
+	}
+	text = {
+		localization_key = KOR_kari_developing_none
+	}
+}
+
+defined_text = {
+	name = GetKORKariAcademicCapacityStatus
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_academic_capacity_var > 99 } }
+		}
+		localization_key = KOR_kari_academic_capacity_status_100
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_academic_capacity_var > 79 } }
+		}
+		localization_key = KOR_kari_academic_capacity_status_80
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_academic_capacity_var > 59 } }
+		}
+		localization_key = KOR_kari_academic_capacity_status_60
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_academic_capacity_var > 39 } }
+		}
+		localization_key = KOR_kari_academic_capacity_status_40
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kari_academic_capacity_var > 19 } }
+		}
+		localization_key = KOR_kari_academic_capacity_status_20
+	}
+	text = {
+		localization_key = KOR_kari_academic_capacity_status_0
+	}
+}
+
+defined_text = {
+	name = GetKORHumanModificationSelectedPart
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_head_flag }
+		}
+		localization_key = KOR_human_modification_selected_head
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_body_flag }
+		}
+		localization_key = KOR_human_modification_selected_body
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_left_arm_flag }
+		}
+		localization_key = KOR_human_modification_selected_left_arm
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_right_arm_flag }
+		}
+		localization_key = KOR_human_modification_selected_right_arm
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_leg_flag }
+		}
+		localization_key = KOR_human_modification_selected_leg
+	}
+	text = {
+		localization_key = KOR_human_modification_selected_none
+	}
+}
+
+defined_text = {
+	name = GetKORHumanModificationSelectedProgress
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_head_flag }
+		}
+		localization_key = KOR_human_modification_progress_head
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_body_flag }
+		}
+		localization_key = KOR_human_modification_progress_body
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_left_arm_flag }
+		}
+		localization_key = KOR_human_modification_progress_left_arm
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_right_arm_flag }
+		}
+		localization_key = KOR_human_modification_progress_right_arm
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_human_modification_selected_leg_flag }
+		}
+		localization_key = KOR_human_modification_progress_leg
+	}
+	text = {
+		localization_key = KOR_human_modification_progress_none
+	}
+}
+
+defined_text = {
+	name = GetKORRiotSuppressionSelectedRegion
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_busan_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_busan
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_chungbuk_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_chungbuk
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_chungnam_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_chungnam
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_daegu_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_daegu
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_daejeon_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_daejeon
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gangwon_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_gangwon
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gwangju_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_gwangju
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gyeongbuk_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_gyeongbuk
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gyeonggi_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_gyeonggi
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gyeongnam_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_gyeongnam
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_incheon_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_incheon
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_jeju_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_jeju
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_jeonbuk_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_jeonbuk
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_jeonnam_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_jeonnam
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_sejong_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_sejong
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_seoul_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_seoul
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_ulsan_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_ulsan
+	}
+	text = {
+		localization_key = KOR_riot_suppression_selected_none
+	}
+}
+
+defined_text = {
+	name = GetKORRiotSuppressionSelectedResistance
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_busan_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_busan
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_chungbuk_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_chungbuk
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_chungnam_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_chungnam
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_daegu_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_daegu
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_daejeon_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_daejeon
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gangwon_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_gangwon
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gwangju_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_gwangju
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gyeongbuk_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_gyeongbuk
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gyeonggi_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_gyeonggi
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_gyeongnam_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_gyeongnam
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_incheon_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_incheon
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_jeju_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_jeju
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_jeonbuk_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_jeonbuk
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_jeonnam_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_jeonnam
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_sejong_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_sejong
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_seoul_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_seoul
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_riot_suppression_selected_ulsan_flag }
+		}
+		localization_key = KOR_riot_suppression_selected_resistance_ulsan
+	}
+	text = {
+		localization_key = KOR_riot_suppression_selected_resistance_none
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkEmptyStatus
+	text = {
+		trigger = {
+			KOR = {
+				NOT = { has_country_flag = KOR_trade_network_japan_active_flag }
+				NOT = { has_country_flag = KOR_trade_network_australia_active_flag }
+				NOT = { has_country_flag = KOR_trade_network_india_active_flag }
+				NOT = { has_country_flag = KOR_trade_network_southeast_asia_active_flag }
+				NOT = { has_country_flag = KOR_trade_network_south_america_active_flag }
+				NOT = { has_country_flag = KOR_trade_network_middle_east_active_flag }
+			}
+		}
+		localization_key = KOR_trade_network_status_none
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkJapanStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_trade_network_japan_active_flag }
+		}
+		localization_key = KOR_trade_network_status_japan
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkAustraliaStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_trade_network_australia_active_flag }
+		}
+		localization_key = KOR_trade_network_status_australia
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkIndiaStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_trade_network_india_active_flag }
+		}
+		localization_key = KOR_trade_network_status_india
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkSoutheastAsiaStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_trade_network_southeast_asia_active_flag }
+		}
+		localization_key = KOR_trade_network_status_southeast_asia
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkSouthAmericaStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_trade_network_south_america_active_flag }
+		}
+		localization_key = KOR_trade_network_status_south_america
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = GetKORTradeNetworkMiddleEastStatus
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_trade_network_middle_east_active_flag }
+		}
+		localization_key = KOR_trade_network_status_middle_east
+	}
+	text = {
+		localization_key = KOR_trade_network_status_empty
+	}
+}
+
+defined_text = {
+	name = KOR_lee_defeat_economic_problem_china_Descriptions
+	text = {
+		trigger = {
+			has_country_flag = KOR_lee_has_intervened_in_taiwan_flag
+		}
+		localization_key = KOR_lee_defeat_economic_problem_china_supported_desc
+	}
+	text = {
+		localization_key = KOR_lee_defeat_economic_problem_china_neutral_desc
+	}
+}
+
+defined_text = {
+	name = GetKORCOACoinDisplay
+	text = {
+		localization_key = KOR_coa_coin_display
+	}
+}
+
+defined_text = {
+	name = GetKORKFXXProjectStage
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kfxx_project_days_var > 799 } }
+		}
+		localization_key = KOR_kfxx_project_stage_basic_design
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kfxx_project_days_var > 499 } }
+		}
+		localization_key = KOR_kfxx_project_stage_detailed_design
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kfxx_project_days_var > 299 } }
+		}
+		localization_key = KOR_kfxx_project_stage_prototyping
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kfxx_project_days_var > 99 } }
+		}
+		localization_key = KOR_kfxx_project_stage_flight_test
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_kfxx_project_days_var > 0 } }
+		}
+		localization_key = KOR_kfxx_project_stage_deployment
+	}
+	text = {
+		localization_key = KOR_kfxx_project_stage_deployed
+	}
+}
+
+defined_text = {
+	name = GetKORNISDismantlementSupportBar
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 199 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_200
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 179 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_180
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 159 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_160
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 139 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_140
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 119 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_120
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 99 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_100
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 79 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_80
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 59 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_60
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 39 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_40
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_nis_dismantlement_total_support_var > 19 } }
+		}
+		localization_key = KOR_nis_dismantlement_support_bar_20
+	}
+	text = {
+		localization_key = KOR_nis_dismantlement_support_bar_0
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_plan_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_plan_reds
+	}
+	text = {
+		localization_key = KOR_gwr_plan_common
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_plan_desc_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_plan_reds_desc
+	}
+	text = {
+		localization_key = KOR_gwr_plan_common_desc
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_chines_expulsion_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_chines_expulsion_reds
+	}
+	text = {
+		localization_key = KOR_gwr_chines_expulsion_common
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_chines_expulsion_desc_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_chines_expulsion_reds_desc
+	}
+	text = {
+		localization_key = KOR_gwr_chines_expulsion_common_desc
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_partisan_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_partisan_reds
+	}
+	text = {
+		localization_key = KOR_gwr_partisan_common
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_partisan_desc_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_partisan_reds_desc
+	}
+	text = {
+		localization_key = KOR_gwr_partisan_common_desc
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_stabilization_prk_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_stabilization_prk_reds
+	}
+	text = {
+		localization_key = KOR_gwr_stabilization_prk_common
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_stabilization_prk_desc_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_stabilization_prk_reds_desc
+	}
+	text = {
+		localization_key = KOR_gwr_stabilization_prk_common_desc
+	}
+}
+
+defined_text = {
+	name = KOR_gwr_attack_to_nk_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_attack_to_nk_reds
+	}
+	text = {
+		localization_key = KOR_gwr_attack_to_nk_common
+	}
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsRoute
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_special_strategic_materials_biochemical_route_flag }
+		}
+		localization_key = KOR_special_strategic_materials_route_biochemical
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag }
+		}
+		localization_key = KOR_special_strategic_materials_route_corona_variant
+	}
+	text = {
+		localization_key = KOR_special_strategic_materials_route_unselected
+	}
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsBiochemicalButtonText
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag }
+		}
+		localization_key = KOR_special_strategic_materials_biochemical_button_locked
+	}
+	text = {
+		localization_key = KOR_special_strategic_materials_biochemical_button_unlocked
+	}
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsCoronaVariantButtonText
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag }
+		}
+		localization_key = KOR_special_strategic_materials_corona_variant_button_unlocked
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_special_strategic_materials_biochemical_route_flag }
+		}
+		localization_key = KOR_special_strategic_materials_corona_variant_button_locked
+	}
+	text = {
+		trigger = {
+			KOR = { NOT = { has_country_flag = KOR_korea_887_fired_flag } }
+		}
+		localization_key = KOR_special_strategic_materials_corona_variant_button_locked
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_korea_887_fired_flag }
+		}
+		localization_key = KOR_special_strategic_materials_corona_variant_button_unlocked
+	}
+	text = {
+		localization_key = KOR_special_strategic_materials_corona_variant_button_unlocked
+	}
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantGroupOneTitle
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_group_one_title
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_group_one_title }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantGroupTwoTitle
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_group_two_title
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_group_two_title }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantGroupThreeTitle
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_group_three_title
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_group_three_title }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantGroupFourTitle
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_group_four_title
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_group_four_title }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotOneText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_explosive_rage
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_cough }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotTwoText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_inhibitory_control_loss
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_vomiting }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotThreeText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_threat_misidentification
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_immunosuppression }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFourText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_persistent_pursuit
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_inflammation }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFiveText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_auditory_hypersensitivity
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_systemic_infection }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotSixText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_photosensitivity
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_internal_bleeding }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotSevenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_pain_dissociation
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_necrosis }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotEightText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_insomniac_arousal
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_hemorrhagic_shock }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotNineText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_language_collapse
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_adrenal_fatigue }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotTenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_orofacial_dyskinesia
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_sensory_paralysis }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotElevenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_convulsive_gait
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_paranoia }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotTwelveText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_autonomic_storm
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_hypersensitivity }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotThirteenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_delayed_reanimation
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_irritable_bowel_syndrome }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFourteenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_postmortem_stimulus_tracking
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_sex_hormone_imbalance }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFifteenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_feeding_automatism
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_alopecia }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotSixteenText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_putrefactive_motor_persistence
+	}
+	text = { localization_key = KOR_special_strategic_materials_biochemical_sexual_dysfunction }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotOneTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_explosive_rage_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_cough_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotTwoTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_inhibitory_control_loss_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_vomiting_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotThreeTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_threat_misidentification_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_immunosuppression_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFourTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_persistent_pursuit_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_inflammation_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFiveTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_auditory_hypersensitivity_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_systemic_infection_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotSixTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_photosensitivity_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotSevenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_pain_dissociation_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_necrosis_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotEightTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_insomniac_arousal_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotNineTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_language_collapse_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotTenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_orofacial_dyskinesia_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotElevenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_convulsive_gait_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_paranoia_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotTwelveTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_autonomic_storm_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_hypersensitivity_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotThirteenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_delayed_reanimation_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFourteenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_postmortem_stimulus_tracking_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotFifteenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_feeding_automatism_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_alopecia_effect_tt }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantSlotSixteenTooltip
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_corona_putrefactive_motor_persistence_effect_tt
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_sexual_dysfunction_effect_tt }
+}
+
+defined_text = {
+	name = KOR_gwr_attack_to_nk_desc_local
+	text = {
+		trigger = {
+			KOR = { KOR_is_PP_path = yes }
+		}
+		localization_key = KOR_gwr_attack_to_nk_reds_desc
+	}
+	text = {
+		localization_key = KOR_gwr_attack_to_nk_common_desc
+	}
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsStage
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+		}
+		localization_key = KOR_special_strategic_materials_stage_completed
+	}
+	text = {
+		trigger = {
+			KOR = { NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag } }
+		}
+		localization_key = KOR_special_strategic_materials_stage_unselected
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 5 } }
+		}
+		localization_key = KOR_special_strategic_materials_stage_five
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 4 } }
+		}
+		localization_key = KOR_special_strategic_materials_stage_four
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 3 } }
+		}
+		localization_key = KOR_special_strategic_materials_stage_three
+	}
+	text = {
+		trigger = {
+			KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 2 } }
+		}
+		localization_key = KOR_special_strategic_materials_stage_two
+	}
+	text = {
+		localization_key = KOR_special_strategic_materials_stage_one
+	}
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsBiochemicalStatus
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_biochemical_developed_flag } }
+		localization_key = KOR_special_strategic_materials_project_completed
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_biochemical_route_flag } }
+		localization_key = KOR_special_strategic_materials_project_researching
+	}
+	text = { localization_key = KOR_special_strategic_materials_project_planned }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsCoronaVariantStatus
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_developed_flag } }
+		localization_key = KOR_special_strategic_materials_project_completed
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_project_researching
+	}
+	text = { localization_key = KOR_special_strategic_materials_project_planned }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsProgramStatus
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_completed_flag } }
+		localization_key = KOR_special_strategic_materials_program_status_completed
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_route_selected_flag } }
+		localization_key = KOR_special_strategic_materials_program_status_researching
+	}
+	text = { localization_key = KOR_special_strategic_materials_program_status_waiting }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsExperimentStage
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_completed_flag } }
+		localization_key = KOR_special_strategic_materials_experiment_completed
+	}
+	text = {
+		trigger = { KOR = { NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag } } }
+		localization_key = KOR_special_strategic_materials_experiment_unselected
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 5 } } }
+		localization_key = KOR_special_strategic_materials_experiment_stage_five
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 4 } } }
+		localization_key = KOR_special_strategic_materials_experiment_stage_four
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 3 } } }
+		localization_key = KOR_special_strategic_materials_experiment_stage_three
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_stage_var = 2 } } }
+		localization_key = KOR_special_strategic_materials_experiment_stage_two
+	}
+	text = { localization_key = KOR_special_strategic_materials_experiment_stage_one }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsWeaponizationTestStatus
+	text = {
+		trigger = { KOR = { NOT = { has_country_flag = KOR_special_strategic_materials_route_selected_flag } } }
+		localization_key = KOR_special_strategic_materials_test_status_unselected
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_stage_var < 3 } } }
+		localization_key = KOR_special_strategic_materials_test_status_stage_locked
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_test_cooldown_var > 99 } } }
+		localization_key = KOR_special_strategic_materials_test_status_ready
+	}
+	text = { localization_key = KOR_special_strategic_materials_test_status_cooldown }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsCoughButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_cough_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_cough_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_cough_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVomitingButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_vomiting_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_vomiting_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_vomiting_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsImmunosuppressionButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_immunosuppression_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_immunosuppression_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_immunosuppression_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsInflammationButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_inflammation_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_inflammation_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_inflammation_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsSystemicInfectionButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_systemic_infection_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_systemic_infection_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_systemic_infection_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsInternalBleedingButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_internal_bleeding_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsNecrosisButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_necrosis_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_necrosis_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_necrosis_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsHemorrhagicShockButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_hemorrhagic_shock_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsAdrenalFatigueButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_adrenal_fatigue_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsSensoryParalysisButtonText
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_pending_symptom_sensory_paralysis_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_button_selected
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_button }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsKeypadInput
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var = 0 } } }
+		localization_key = KOR_special_strategic_materials_keypad_input_empty
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var = 1 } } }
+		localization_key = KOR_special_strategic_materials_keypad_input_one
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var = 2 } } }
+		localization_key = KOR_special_strategic_materials_keypad_input_two
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_keypad_digit_count_var = 3 } } }
+		localization_key = KOR_special_strategic_materials_keypad_input_three
+	}
+	text = { localization_key = KOR_special_strategic_materials_keypad_input_four }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsKeypadStatus
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_keypad_access_denied_flag } }
+		localization_key = KOR_special_strategic_materials_keypad_status_denied
+	}
+	text = { localization_key = KOR_special_strategic_materials_keypad_status_ready }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsSymptomConfigurationStatus
+	text = {
+		trigger = { KOR = { NOT = { has_country_flag = KOR_special_strategic_materials_symptom_configuration_confirmed_flag } } }
+		localization_key = KOR_special_strategic_materials_symptoms_not_configured
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSymptomSlotOne
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 1 } } }
+		localization_key = KOR_special_strategic_materials_symptom_cough_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 2 } } }
+		localization_key = KOR_special_strategic_materials_symptom_vomiting_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 3 } } }
+		localization_key = KOR_special_strategic_materials_symptom_immunosuppression_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 4 } } }
+		localization_key = KOR_special_strategic_materials_symptom_inflammation_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 5 } } }
+		localization_key = KOR_special_strategic_materials_symptom_systemic_infection_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 6 } } }
+		localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 7 } } }
+		localization_key = KOR_special_strategic_materials_symptom_necrosis_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 8 } } }
+		localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 9 } } }
+		localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 10 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 11 } } }
+		localization_key = KOR_special_strategic_materials_symptom_paranoia_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 12 } } }
+		localization_key = KOR_special_strategic_materials_symptom_hypersensitivity_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 13 } } }
+		localization_key = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 14 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 15 } } }
+		localization_key = KOR_special_strategic_materials_symptom_alopecia_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_one_var = 16 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sexual_dysfunction_display
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSymptomSlotTwo
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 1 } } }
+		localization_key = KOR_special_strategic_materials_symptom_cough_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 2 } } }
+		localization_key = KOR_special_strategic_materials_symptom_vomiting_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 3 } } }
+		localization_key = KOR_special_strategic_materials_symptom_immunosuppression_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 4 } } }
+		localization_key = KOR_special_strategic_materials_symptom_inflammation_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 5 } } }
+		localization_key = KOR_special_strategic_materials_symptom_systemic_infection_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 6 } } }
+		localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 7 } } }
+		localization_key = KOR_special_strategic_materials_symptom_necrosis_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 8 } } }
+		localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 9 } } }
+		localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 10 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 11 } } }
+		localization_key = KOR_special_strategic_materials_symptom_paranoia_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 12 } } }
+		localization_key = KOR_special_strategic_materials_symptom_hypersensitivity_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 13 } } }
+		localization_key = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 14 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 15 } } }
+		localization_key = KOR_special_strategic_materials_symptom_alopecia_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_two_var = 16 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sexual_dysfunction_display
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSymptomSlotThree
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 1 } } }
+		localization_key = KOR_special_strategic_materials_symptom_cough_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 2 } } }
+		localization_key = KOR_special_strategic_materials_symptom_vomiting_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 3 } } }
+		localization_key = KOR_special_strategic_materials_symptom_immunosuppression_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 4 } } }
+		localization_key = KOR_special_strategic_materials_symptom_inflammation_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 5 } } }
+		localization_key = KOR_special_strategic_materials_symptom_systemic_infection_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 6 } } }
+		localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 7 } } }
+		localization_key = KOR_special_strategic_materials_symptom_necrosis_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 8 } } }
+		localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 9 } } }
+		localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 10 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 11 } } }
+		localization_key = KOR_special_strategic_materials_symptom_paranoia_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 12 } } }
+		localization_key = KOR_special_strategic_materials_symptom_hypersensitivity_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 13 } } }
+		localization_key = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 14 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 15 } } }
+		localization_key = KOR_special_strategic_materials_symptom_alopecia_display
+	}
+	text = {
+		trigger = { KOR = { check_variable = { KOR_special_strategic_materials_confirmed_symptom_slot_three_var = 16 } } }
+		localization_key = KOR_special_strategic_materials_symptom_sexual_dysfunction_display
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsExpectedEffectsHeader
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag } }
+		localization_key = KOR_special_strategic_materials_expected_effects_header_corona
+	}
+	text = { localization_key = KOR_special_strategic_materials_expected_effects_header_biochemical }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsVariantStatus
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_configuration_confirmed_flag } }
+		localization_key = KOR_special_strategic_materials_variant_status_confirmed
+	}
+	text = { localization_key = KOR_special_strategic_materials_variant_status_configuring }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedCoughEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_cough_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_cough_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_cough_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_cough_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedVomitingEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_vomiting_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_vomiting_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_vomiting_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_vomiting_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedImmunosuppressionEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_immunosuppression_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_immunosuppression_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_immunosuppression_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_immunosuppression_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedInflammationEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_inflammation_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_inflammation_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_inflammation_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_inflammation_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSystemicInfectionEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_systemic_infection_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_systemic_infection_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_systemic_infection_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_systemic_infection_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedInternalBleedingEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_internal_bleeding_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_internal_bleeding_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_internal_bleeding_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedNecrosisEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_necrosis_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_necrosis_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_necrosis_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_necrosis_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedHemorrhagicShockEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_hemorrhagic_shock_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_hemorrhagic_shock_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_hemorrhagic_shock_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedAdrenalFatigueEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_adrenal_fatigue_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_adrenal_fatigue_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_adrenal_fatigue_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSensoryParalysisEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_sensory_paralysis_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_sensory_paralysis_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_sensory_paralysis_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedParanoiaEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_paranoia_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_paranoia_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_paranoia_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_paranoia_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedHypersensitivityEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_hypersensitivity_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_hypersensitivity_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_hypersensitivity_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_hypersensitivity_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedIrritableBowelSyndromeEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_irritable_bowel_syndrome_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSexHormoneImbalanceEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_sex_hormone_imbalance_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedAlopeciaEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_alopecia_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_alopecia_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_alopecia_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_alopecia_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = GetKORSpecialStrategicMaterialsConfirmedSexualDysfunctionEffect
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_special_strategic_materials_corona_variant_route_flag
+				has_country_flag = KOR_special_strategic_materials_symptom_sexual_dysfunction_flag
+			}
+		}
+		localization_key = KOR_special_strategic_materials_symptom_sexual_dysfunction_corona_effect_summary
+	}
+	text = {
+		trigger = { KOR = { has_country_flag = KOR_special_strategic_materials_symptom_sexual_dysfunction_flag } }
+		localization_key = KOR_special_strategic_materials_symptom_sexual_dysfunction_effect_summary
+	}
+	text = { localization_key = KOR_special_strategic_materials_symptom_display_blank }
+}
+
+defined_text = {
+	name = KOR_lee_defeat_election_of_2024_local
+	text = {
+		trigger = { 
+			KOR = { 
+				has_country_flag = KOR_election_of_NA_2024 
+			}
+		}
+		localization_key = KOR_lee_defeat_election_of_2024_after
+	}
+	text = { localization_key = KOR_lee_defeat_election_of_2024_common }
+}
+defined_text = {
+	name = KOR_lee_defeat_election_of_2024_desc_local
+	text = {
+		trigger = { 
+			KOR = { 
+				has_country_flag = KOR_election_of_NA_2024 
+			}
+		}
+		localization_key = KOR_lee_defeat_election_of_2024_desc_after
+	}
+	text = { localization_key = KOR_lee_defeat_election_of_2024_desc_common }
+}
+
+defined_text = {
+	name = KOR_seoul_city_mayor_local
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_martial_law
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_void
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_jeong_taeheung
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_jeong_taeheung
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_kim_jaesub
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_kim_jaesub
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_park_joomin
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_park_joomin
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_jeong_cheongrae
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_jeong_cheongrae
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_cho_eunhee
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_cho_eunhee
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_lee_nakyeon
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_lee_nakyeon
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_jeong_wonoh
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_jeong_wonoh
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_oh_sehoon
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_oh_sehoon
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_seoul_mayor_park_wonsoon
+			}
+		}
+		localization_key = KOR_seoul_city_mayor_park_wonsoon
+	}
+	text = { 
+		localization_key = KOR_seoul_city_mayor_vacant 
+	}
+}
+
+defined_text = {
+	name = KOR_busan_city_mayor_local
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_martial_law
+			}
+		}
+		localization_key = KOR_busan_city_mayor_void
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_jeon_hangil
+			}
+		}
+		localization_key = KOR_busan_city_mayor_jeon_hangil
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_kim_seokjoon
+			}
+		}
+		localization_key = KOR_busan_city_mayor_kim_seokjoon
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_choi_inho
+			}
+		}
+		localization_key = KOR_busan_city_mayor_choi_inho
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_park_minsik
+			}
+		}
+		localization_key = KOR_busan_city_mayor_park_minsik
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_cho_gyeongtae
+			}
+		}
+		localization_key = KOR_busan_city_mayor_cho_gyeongtae
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_jeon_jaesoo
+			}
+		}
+		localization_key = KOR_busan_city_mayor_jeon_jaesoo
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_park_hyeongjoon
+			}
+		}
+		localization_key = KOR_busan_city_mayor_park_heongjoon
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_busan_mayor_oh_keodon
+			}
+		}
+		localization_key = KOR_busan_city_mayor_oh_keodon
+	}
+	text = { 
+		localization_key = KOR_busan_city_mayor_vacant 
+	}
+}
+
+defined_text = {
+	name = GetSCStatue
+	### 이승만 ###
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 1 }
+			has_country_flag = KOR_rhee_statue_banned
+		}
+		localization_key = GFX_KOR_supreme_council_statue_rhee_banned
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 1 }
+		}
+		localization_key = GFX_KOR_supreme_council_statue_rhee
+	}
+	### 박정희 ###
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 2 }
+			has_country_flag = KOR_park_statue_banned
+		}
+		localization_key = GFX_KOR_supreme_council_statue_park_banned
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 2 }
+		}
+		localization_key = GFX_KOR_supreme_council_statue_park
+	}
+	### 전두환 ###
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 3 }
+			has_country_flag = KOR_chun_statue_banned
+		}
+		localization_key = GFX_KOR_supreme_council_statue_chun_banned
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 3 }
+		}
+		localization_key = GFX_KOR_supreme_council_statue_chun
+	}
+	### Fallback (박정희) ###
+	text = { 
+		localization_key = GFX_KOR_supreme_council_statue_park 
+	}
+}
+defined_text = {
+	name = GetSCQuote
+	### 이승만 ###
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 1 }
+			has_country_flag = KOR_rhee_statue_banned
+		}
+		localization_key = GFX_KOR_supreme_council_quote_rhee_banned
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 1 }
+		}
+		localization_key = GFX_KOR_supreme_council_quote_rhee
+	}
+	### 박정희 ###
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 2 }
+			has_country_flag = KOR_park_statue_banned
+		}
+		localization_key = GFX_KOR_supreme_council_quote_park_banned
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 2 }
+		}
+		localization_key = GFX_KOR_supreme_council_quote_park
+	}
+	### 전두환 ###
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 3 }
+			has_country_flag = KOR_chun_statue_banned
+		}
+		localization_key = GFX_KOR_supreme_council_quote_chun_banned
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_council_show_var = 3 }
+		}
+		localization_key = GFX_KOR_supreme_council_quote_chun
+	}
+	### Fallback (박정희) ###
+	text = { 
+		localization_key = GFX_KOR_supreme_council_quote_park 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_lee_junseok_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_lee_jun_seok
+		}
+		localization_key = KOR_aai_lee_jun_seok_after
+	}
+	text = { 
+		localization_key = KOR_aai_lee_jun_seok_decision 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_lee_junseok_desc_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_lee_jun_seok
+		}
+		localization_key = KOR_aai_lee_jun_seok_after_desc
+	}
+	text = { 
+		localization_key = KOR_aai_lee_jun_seok_decision_desc 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_cheon_ha_ram_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_cheon_ha_ram
+		}
+		localization_key = KOR_aai_cheon_ha_ram_after
+	}
+	text = { 
+		localization_key = KOR_aai_cheon_ha_ram_decision 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_cheon_ha_ram_desc_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_cheon_ha_ram
+		}
+		localization_key = KOR_aai_cheon_ha_ram_after_desc
+	}
+	text = { 
+		localization_key = KOR_aai_cheon_ha_ram_decision_desc 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_lee_nak_yon_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_lee_nak_yon
+		}
+		localization_key = KOR_aai_lee_nak_yon_after
+	}
+	text = { 
+		localization_key = KOR_aai_lee_nak_yon_decision 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_lee_nak_yon_desc_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_lee_nak_yon
+		}
+		localization_key = KOR_aai_lee_nak_yon_after_desc
+	}
+	text = { 
+		localization_key = KOR_aai_lee_nak_yon_decision_desc 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_han_dong_hun_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_han_dong_hun
+		}
+		localization_key = KOR_aai_han_dong_hun_after
+	}
+	text = { 
+		localization_key = KOR_aai_han_dong_hun_decision 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_han_dong_hun_desc_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_han_dong_hun
+		}
+		localization_key = KOR_aai_han_dong_hun_after_desc
+	}
+	text = { 
+		localization_key = KOR_aai_han_dong_hun_decision_desc 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_kim_min_seok_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_kim_min_seok
+		}
+		localization_key = KOR_aai_kim_min_seok_after
+	}
+	text = { 
+		localization_key = KOR_aai_kim_min_seok_decision 
+	}
+}
+
+defined_text = {
+	name = KOR_aai_kim_min_seok_desc_local
+	text = {
+		trigger = {
+			has_country_flag = KOR_antidemocratic_activity_indicted_kim_min_seok
+		}
+		localization_key = KOR_aai_kim_min_seok_after_desc
+	}
+	text = { 
+		localization_key = KOR_aai_kim_min_seok_decision_desc 
+	}
+}
+defined_text = {
+	name = GetBaseballFirstState
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_1_var = 1 }
+		}
+		localization_key = KOR_base_state_1_dpk
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_1_var = 2 }
+		}
+		localization_key = KOR_base_state_1_ppp
+	}
+	text = {
+		localization_key = KOR_base_state_1_none
+	}
+}
+defined_text = {
+	name = GetBaseballSecondState
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_2_var = 1 }
+		}
+		localization_key = KOR_base_state_2_dpk
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_2_var = 2 }
+		}
+		localization_key = KOR_base_state_2_ppp
+	}
+	text = {
+		localization_key = KOR_base_state_1_none
+	}
+}
+defined_text = {
+	name = GetBaseballThirdState
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_3_var = 1 }
+		}
+		localization_key = KOR_base_state_3_dpk
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_3_var = 2 }
+		}
+		localization_key = KOR_base_state_3_ppp
+	}
+	text = {
+		localization_key = KOR_base_state_1_none
+	}
+}
+
+defined_text = {
+	name = GetBaseImageFirst
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_1_var = 1 }
+		}
+		localization_key = GFX_bb_base_normal_player
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_1_var = 2 }
+		}
+		localization_key = GFX_bb_base_normal_ai
+	}
+	text = {
+		localization_key = GFX_bb_base_normal
+	}
+}
+defined_text = {
+	name = GetBaseImageSecond
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_2_var = 1 }
+		}
+		localization_key = GFX_bb_base_normal_player
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_2_var = 2 }
+		}
+		localization_key = GFX_bb_base_normal_ai
+	}
+	text = {
+		localization_key = GFX_bb_base_normal
+	}
+}
+defined_text = {
+	name = GetBaseImageThird
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_3_var = 1 }
+		}
+		localization_key = GFX_bb_base_normal_player
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_bb_base_3_var = 2 }
+		}
+		localization_key = GFX_bb_base_normal_ai
+	}
+	text = {
+		localization_key = GFX_bb_base_normal
+	}
+}
+defined_text = {
+	name = GetBBGameStateText
+	text = {
+		trigger = {
+			check_variable = { KOR_base_up_total_score_var > KOR_base_down_total_score_var } # 조혁당 승
+		}
+		localization_key = KOR_bb_now_game_winner_dpk
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_base_up_total_score_var < KOR_base_down_total_score_var } # 조혁당 패
+		}
+		localization_key = KOR_bb_now_game_winner_ppp
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_base_up_total_score_var = KOR_base_down_total_score_var } # 무승부
+		}
+		localization_key = KOR_bb_now_game_winner_drow
+	}
+}
+defined_text = {
+	name = GetKORDPKCycleTT
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { # 친명
+					KOR_DPK_cycle_var = 1
+				}
+			}
+		}
+		localization_key = "KOR_DPK_cycle_pre_lee"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { # 비명
+					KOR_DPK_cycle_var = 2
+				}
+			}
+		}
+		localization_key = "KOR_DPK_cycle_anti_lee"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { # 혼란기
+					KOR_DPK_cycle_var = 3
+				}
+			}
+		}
+		localization_key = "KOR_DPK_cycle_anxious"
+	}
+	text = { #Fallback
+		localization_key = "KOR_DPK_cycle_fallback"
+	}
+}
+defined_text = {
+	name = GetKORDPKCycleGFX
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { # 친명
+					KOR_DPK_cycle_var = 1
+				}
+			}
+		}
+		localization_key = "GFX_KOR_circle_pre_lee"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { # 비명
+					KOR_DPK_cycle_var = 2
+				}
+			}
+		}
+		localization_key = "GFX_KOR_circle_anti_lee"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { # 혼란기
+					KOR_DPK_cycle_var = 3
+				}
+			}
+		}
+		localization_key = "GFX_KOR_circle_anxious"
+	}
+	text = { #Fallback
+		localization_key = "GFX_KOR_circle_pre_lee"
+	}
+}
+
+
+defined_text = {
+	name = GetSocLibPresident04DPK_GFX
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_second_president_DPK_22
+			}
+		}
+		localization_key = "GFX_KOR_DPK_social_liberal_president_portrait_04"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_lee_nothing_2032_election
+				has_country_flag = KOR_lee_DPK_path
+			}
+		}
+		localization_key = "GFX_KOR_DPK_social_liberal_president_portrait_04_choguk"
+	}
+	text = {
+		localization_key = "GFX_KOR_DPK_social_liberal_president_portrait_04_none"
+	}
+}	
+defined_text = {
+	name = GetSocLibPresident04DPK
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_second_president_DPK_22
+			}
+		}
+		localization_key = "KOR_social_liberal_president_04_tt_lee"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_lee_nothing_2032_election
+				has_country_flag = KOR_lee_DPK_path
+			}
+		}
+		localization_key = "KOR_social_liberal_president_04_tt_cho"
+	}
+	text = {
+		localization_key = "KOR_social_liberal_president_04_tt_nothing"
+	}
+}	
+defined_text = {
+	name = GetSocLibPresident04DPK_delayed
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_second_president_DPK_22
+			}
+		}
+		localization_key = "KOR_social_liberal_president_04_delayed_tt_lee"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				has_country_flag = KOR_lee_nothing_2032_election
+				has_country_flag = KOR_lee_DPK_path
+			}
+		}
+		localization_key = "KOR_social_liberal_president_04_delayed_tt_cho"
+	}
+	text = {
+		localization_key = "KOR_social_liberal_president_04_delayed_tt_nothing"
+	}
+}	
+
+#### Party Leader
+
+defined_text = {
+	name = GetKORDPKLeaderGFX
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 1 #박찬대
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_park_chan_dae_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 2 #정청래
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_jeong_chung_rae_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 3 #조국
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_cho_guk_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 4 #송영길
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_song_yeong_gik_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 5 #정성호
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_jung_sung_ho_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 6 #조정식
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_cho_jeong_sik_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 7 #김용만
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_kim_yong_man_dpk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 8 #황운하
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_hwang_un_ha_dpk"
+	}
+	text = {
+		localization_key = "GFX_portrait_nothing"
+	}
+}
+
+defined_text = {
+	name = GetKORDPKLeaderNameDesc
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 1 #박찬대
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_park_chan_dae"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 2 #정청래
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_jung_cheong_rae"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 3 #조국
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_cho_guk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 4 #송영길
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_song_yeong_gil"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 5 #정성호
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_jung_sung_ho"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 6 #조정식
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_cho_jeong_sik"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 7 #김용만
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_kim_yong_man"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					DPKPartyLeader_var = 8 #황운하
+				}
+			}
+		}
+		localization_key = "KOR_DPK_hop_hwang_un_ha"
+	}
+	text = {
+		localization_key = "KOR_DPK_hop_none"
+	}
+}
+
+defined_text = {
+	name = GetKORDemocraticPillarsJeongCheongRaeEffect
+	text = {
+		trigger = {
+			KOR = { has_completed_focus = KOR_lee_nothing_dpk_focus_9 }
+		}
+		localization_key = KOR_democratic_pillars_jeong_cheong_rae_effect_desc_tt
+	}
+	text = {
+		localization_key = KOR_democratic_pillars_jeong_cheong_rae_requirement_desc_tt
+	}
+}
+
+defined_text = {
+	name = GetKORDemocraticPillarsYooSiMinEffect
+	text = {
+		trigger = {
+			KOR = { has_completed_focus = KOR_lee_nothing_dpk_focus_19 }
+		}
+		localization_key = KOR_democratic_pillars_yoo_si_min_effect_desc_tt
+	}
+	text = {
+		localization_key = KOR_democratic_pillars_yoo_si_min_requirement_desc_tt
+	}
+}
+
+defined_text = {
+	name = GetKORDemocraticPillarsKimEoJunEffect
+	text = {
+		trigger = {
+			KOR = { has_country_flag = KOR_democratic_pillars_kim_eo_jun_media_agenda_completed_flag }
+		}
+		localization_key = KOR_democratic_pillars_kim_eo_jun_effect_desc_tt
+	}
+	text = {
+		localization_key = KOR_democratic_pillars_kim_eo_jun_requirement_desc_tt
+	}
+}
+
+defined_text = {
+	name = GetKORDemocraticPillarsMoonJaeInEffect
+	text = {
+		trigger = {
+			KOR = { has_completed_focus = KOR_lee_nothing_dpk_focus_16 }
+		}
+		localization_key = KOR_democratic_pillars_moon_jae_in_effect_desc_tt
+	}
+	text = {
+		localization_key = KOR_democratic_pillars_moon_jae_in_requirement_desc_tt
+	}
+}
+
+defined_text = {
+	name = GetKORDemocraticPillarsChoGukEffect
+	text = {
+		trigger = {
+			KOR = { has_completed_focus = KOR_lee_nothing_dpk_focus_24 }
+		}
+		localization_key = KOR_democratic_pillars_cho_guk_effect_desc_tt
+	}
+	text = {
+		localization_key = KOR_democratic_pillars_cho_guk_requirement_desc_tt
+	}
+}
+defined_text = {
+	name = GetLJSwwwheader
+	text = {
+		trigger = { has_country_flag = TFR_KOR_LJS_www_instagram_visible }
+		localization_key = LJS_www_instagram_header
+	}
+	text = {
+		trigger = { has_country_flag = TFR_KOR_LJS_www_dc_visible }
+		localization_key = LJS_www_dc_header
+	}
+	text = { localization_key = LJS_www_header_default }
+}
+
+
+defined_text = {
+	name = GetKORPLPHeadFaction
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { #
+					PLPHeadFaction_var = 1
+				}
+			}
+		}
+		localization_key = "GFX_PLP_head_faction_PP"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { #
+					PLPHeadFaction_var = 2
+				}
+			}
+		}
+		localization_key = "GFX_PLP_head_faction_jp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { #
+					PLPHeadFaction_var = 3
+				}
+			}
+		}
+		localization_key = "GFX_PLP_head_faction_lp"
+	}
+	text = { #지도계파 없음
+		localization_key = "GFX_PLP_head_faction_nothing"
+	}
+}
+defined_text = {
+	name = GetPLPHeadFactionName
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { #
+					PLPHeadFaction_var = 1
+				}
+			}
+		}
+		localization_key = "PLP_head_faction_PP_text"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { #
+					PLPHeadFaction_var = 2
+				}
+			}
+		}
+		localization_key = "PLP_head_faction_jp_text"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = { #
+					PLPHeadFaction_var = 3
+				}
+			}
+		}
+		localization_key = "PLP_head_faction_lp_text"
+	}
+	text = { #지도계파 없음
+		localization_key = "PLP_head_faction_nothing_text"
+	}
+}
+
+defined_text = {
+	name = GetKORPLPLeaderGFX
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 1
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_yoon_jong_o_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 2
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_sim_sang_jung_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 3
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_lee_baek_yoon_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 4
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_yoon_hee_suk_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 5
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_kim_jun_woo_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 6
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_jang_ji_hwa_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 7
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_kim_jong_min_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 8
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_jang_hye_young_plp"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 9
+				}
+			}
+		}
+		localization_key = "GFX_portrait_KOR_lee_baek_yoon_plp"
+	}
+	text = {
+		localization_key = "GFX_portrait_nothing"
+	}
+}
+
+defined_text = {
+	name = GetKORPLPLeaderNameDesc
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 1
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_yoon_jong_o"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 2
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_sim_sang_jung"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 3
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_lee_baek_yoon"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 4
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_yoon_hee_suk"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 5
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_kim_jun_woo"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 6
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_jang_ji_hwa"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 7
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_kim_jong_min"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 8
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_jang_hye_young"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 9
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_lee_baek_yoon"
+	}
+	text = {
+		localization_key = "KOR_PLP_hop_none"
+	}
+}
+
+defined_text = {
+	name = GetPLPPartyLeaderDesc
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 1
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_yoon_jong_o_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 2
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_sim_sang_jung_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 3
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_lee_baek_yoon_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 4
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_yoon_hee_suk_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 5
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_kim_jun_woo_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 6
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_jang_ji_hwa_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 7
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_kim_jong_min_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 8
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_jang_hye_young_desc"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					PLPPartyLeader_var = 9
+				}
+			}
+		}
+		localization_key = "KOR_PLP_hop_lee_baek_yoon_4_desc"
+	}
+	text = {
+		localization_key = "KOR_PLP_hop_none_desc"
+	}
+}
+
+defined_text = {
+	name = GetGFXPRESIDENTINFLOC
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					KOR_PLP_president_influence_var = 0
+				}
+			}
+		}
+		localization_key = "GFX_KOR_PLP_president_influence_back"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					KOR_PLP_president_influence_var = 1
+				}
+			}
+		}
+		localization_key = "GFX_KOR_PLP_president_influence_color1"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					KOR_PLP_president_influence_var = 2
+				}
+			}
+		}
+		localization_key = "GFX_KOR_PLP_president_influence_color2"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					KOR_PLP_president_influence_var = 3
+				}
+			}
+		}
+		localization_key = "GFX_KOR_PLP_president_influence_color3"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					KOR_PLP_president_influence_var = 4
+				}
+			}
+		}
+		localization_key = "GFX_KOR_PLP_president_influence_color4"
+	}
+	text = {
+		trigger = {
+			KOR = {
+				check_variable = {
+					KOR_PLP_president_influence_var = 5
+				}
+			}
+		}
+		localization_key = "GFX_KOR_PLP_president_influence_color5"
+	}
+}
+
+defined_text = {
+	name = GetPLPfocusname
+	text = { trigger = { check_variable = { plp_focus_array^idx = 1 } } localization_key = plp_focus_name_1 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 2 } } localization_key = plp_focus_name_2 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 3 } } localization_key = plp_focus_name_3 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 4 } } localization_key = plp_focus_name_4 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 5 } } localization_key = plp_focus_name_5 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 6 } } localization_key = plp_focus_name_6 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 7 } } localization_key = plp_focus_name_7 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 8 } } localization_key = plp_focus_name_8 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 9 } } localization_key = plp_focus_name_9 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 10 } } localization_key = plp_focus_name_10 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 11 } } localization_key = plp_focus_name_11 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 12 } } localization_key = plp_focus_name_12 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 13 } } localization_key = plp_focus_name_13 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 14 } } localization_key = plp_focus_name_14 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 15 } } localization_key = plp_focus_name_15 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 16 } } localization_key = plp_focus_name_16 }
+}
+
+defined_text = {
+	name = GetPLPfocusdesc
+	text = { trigger = { check_variable = { plp_focus_array^idx = 1 } } localization_key = plp_focus_desc_1 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 2 } } localization_key = plp_focus_desc_2 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 3 } } localization_key = plp_focus_desc_3 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 4 } } localization_key = plp_focus_desc_4 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 5 } } localization_key = plp_focus_desc_5 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 6 } } localization_key = plp_focus_desc_6 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 7 } } localization_key = plp_focus_desc_7 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 8 } } localization_key = plp_focus_desc_8 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 9 } } localization_key = plp_focus_desc_9 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 10 } } localization_key = plp_focus_desc_10 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 11 } } localization_key = plp_focus_desc_11 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 12 } } localization_key = plp_focus_desc_12 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 13 } } localization_key = plp_focus_desc_13 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 14 } } localization_key = plp_focus_desc_14 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 15 } } localization_key = plp_focus_desc_15 }
+	text = { trigger = { check_variable = { plp_focus_array^idx = 16 } } localization_key = plp_focus_desc_16 }
+}
+
+defined_text = {
+	name = GetPLPfocusleadingparty
+	text = { trigger = { KOR_PLP_is_pp_focus_trigger = yes } localization_key = KOR_PLP_faction_text_pp } #진보당계
+	text = { trigger = { KOR_PLP_is_jp_focus_trigger = yes } localization_key = KOR_PLP_faction_text_jp } #정의당계
+	text = { trigger = { KOR_PLP_is_lp_focus_trigger = yes } localization_key = KOR_PLP_faction_text_lp } #좌단위
+	text = { trigger = { KOR_PLP_is_common_focus_trigger = yes } localization_key = KOR_PLP_factions_text_all } #공통
+	# 정당 등록 필요
+}
+
+defined_text = {
+    name = GetPLPselectedfocusname
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 1 } }  localization_key = "plp_focus_name_1" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 2 } }  localization_key = "plp_focus_name_2" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 3 } }  localization_key = "plp_focus_name_3" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 4 } }  localization_key = "plp_focus_name_4" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 5 } }  localization_key = "plp_focus_name_5" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 6 } }  localization_key = "plp_focus_name_6" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 7 } }  localization_key = "plp_focus_name_7" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 8 } }  localization_key = "plp_focus_name_8" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 9 } }  localization_key = "plp_focus_name_9" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 10 } } localization_key = "plp_focus_name_10" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 11 } } localization_key = "plp_focus_name_11" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 12 } } localization_key = "plp_focus_name_12" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 13 } } localization_key = "plp_focus_name_13" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 14 } } localization_key = "plp_focus_name_14" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 15 } } localization_key = "plp_focus_name_15" }
+    text = { trigger = { check_variable = { KOR_plp_focus_selected = 16 } } localization_key = "plp_focus_name_16" }
+    text = { localization_key = "PLP_NO_FOCUS" }
+}
+
+defined_text = {
+	name = GetKORPLPfocusGFX
+	text = { trigger = { check_variable = { plp_focus_array^idx = 1 } } localization_key = GFX_plp_focus_banner_1 } #진보당계
+	text = { trigger = { check_variable = { plp_focus_array^idx = 2 } } localization_key = GFX_plp_focus_banner_2 } #진보당계
+	text = { trigger = { check_variable = { plp_focus_array^idx = 3 } } localization_key = GFX_plp_focus_banner_3 } #정의당계
+	text = { trigger = { check_variable = { plp_focus_array^idx = 4 } } localization_key = GFX_plp_focus_banner_4 } #정의당계
+	text = { trigger = { check_variable = { plp_focus_array^idx = 5 } } localization_key = GFX_plp_focus_banner_5 } #좌단위
+	text = { trigger = { check_variable = { plp_focus_array^idx = 6 } } localization_key = GFX_plp_focus_banner_6 } #좌단위
+	text = { trigger = { check_variable = { plp_focus_array^idx = 7 } } localization_key = GFX_plp_focus_banner_7 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 8 } } localization_key = GFX_plp_focus_banner_8 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 9 } } localization_key = GFX_plp_focus_banner_9 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 10 } } localization_key = GFX_plp_focus_banner_10 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 11 } } localization_key = GFX_plp_focus_banner_11 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 12 } } localization_key = GFX_plp_focus_banner_12 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 13 } } localization_key = GFX_plp_focus_banner_13 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 14 } } localization_key = GFX_plp_focus_banner_14 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 15 } } localization_key = GFX_plp_focus_banner_15 } #공통
+	text = { trigger = { check_variable = { plp_focus_array^idx = 16 } } localization_key = GFX_plp_focus_banner_16 } #공통
+	# 정당 등록 필요
+	text = { localization_key = GFX_plp_test_focus_banner } #공통
+}
+defined_text = {
+	name = GetPLPChangeLeadFaction
+	text = {
+		trigger = {
+			check_variable = { KOR_lead_faction_temp_var = 1 } 
+		}
+		localization_key = KOR_PLP_faction_text_pp_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_lead_faction_temp_var = 2 } 
+		}
+		localization_key = KOR_PLP_faction_text_jp_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_lead_faction_temp_var = 3 } 
+		}
+		localization_key = KOR_PLP_faction_text_lp_tt
+	}
+	# 정당 등록 필요
+}
+
+defined_text = {
+	name = GetPLPheadofLineHeadName
+	text = { trigger = { check_variable = { PLPHeadFaction_var = 1 } } localization_key = KOR_PLP_faction_text_pp } #진보당계
+	text = { trigger = { check_variable = { PLPHeadFaction_var = 2 } } localization_key = KOR_PLP_faction_text_jp } #정의당계
+	text = { trigger = { check_variable = { PLPHeadFaction_var = 3 } } localization_key = KOR_PLP_faction_text_lp } #좌단위
+	# 정당 등록 필요
+}
+defined_text = {
+	name = GetKORAntidemocraticActivityVerdicts
+
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_acquitted
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_acquitted
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_acquitted
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_acquitted
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_acquitted
+			}
+		}
+		localization_key = KOR_antidemocratic_activity_verdicts_tt
+	}
+	text = {
+		localization_key = KOR_antidemocratic_activity_no_verdicts_tt
+	}
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityLeeJunSeokVerdictLine
+
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_acquitted
+			}
+		}
+		localization_key = KOR_antidemocratic_activity_lee_jun_seok_verdict_line_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityCheonHaRamVerdictLine
+
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_acquitted
+			}
+		}
+		localization_key = KOR_antidemocratic_activity_cheon_ha_ram_verdict_line_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityHanDongHunVerdictLine
+
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_acquitted
+			}
+		}
+		localization_key = KOR_antidemocratic_activity_han_dong_hun_verdict_line_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityKimMinSeokVerdictLine
+
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_acquitted
+			}
+		}
+		localization_key = KOR_antidemocratic_activity_kim_min_seok_verdict_line_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityLeeNakYonVerdictLine
+
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_20_years
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_10_years
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_3_years
+				has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_acquitted
+			}
+		}
+		localization_key = KOR_antidemocratic_activity_lee_nak_yon_verdict_line_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityLeeJunSeokVerdict
+
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_20_years }
+		localization_key = KOR_antidemocratic_activity_verdict_20_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_10_years }
+		localization_key = KOR_antidemocratic_activity_verdict_10_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_3_years }
+		localization_key = KOR_antidemocratic_activity_verdict_3_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_jun_seok_verdict_acquitted }
+		localization_key = KOR_antidemocratic_activity_verdict_acquitted_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityCheonHaRamVerdict
+
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_20_years }
+		localization_key = KOR_antidemocratic_activity_verdict_20_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_10_years }
+		localization_key = KOR_antidemocratic_activity_verdict_10_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_3_years }
+		localization_key = KOR_antidemocratic_activity_verdict_3_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_cheon_ha_ram_verdict_acquitted }
+		localization_key = KOR_antidemocratic_activity_verdict_acquitted_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityHanDongHunVerdict
+
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_20_years }
+		localization_key = KOR_antidemocratic_activity_verdict_20_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_10_years }
+		localization_key = KOR_antidemocratic_activity_verdict_10_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_3_years }
+		localization_key = KOR_antidemocratic_activity_verdict_3_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_han_dong_hun_verdict_acquitted }
+		localization_key = KOR_antidemocratic_activity_verdict_acquitted_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityKimMinSeokVerdict
+
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_20_years }
+		localization_key = KOR_antidemocratic_activity_verdict_20_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_10_years }
+		localization_key = KOR_antidemocratic_activity_verdict_10_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_3_years }
+		localization_key = KOR_antidemocratic_activity_verdict_3_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_kim_min_seok_verdict_acquitted }
+		localization_key = KOR_antidemocratic_activity_verdict_acquitted_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORAntidemocraticActivityLeeNakYonVerdict
+
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_20_years }
+		localization_key = KOR_antidemocratic_activity_verdict_20_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_10_years }
+		localization_key = KOR_antidemocratic_activity_verdict_10_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_3_years }
+		localization_key = KOR_antidemocratic_activity_verdict_3_years_tt
+	}
+	text = {
+		trigger = { has_country_flag = KOR_antidemocratic_activity_lee_nak_yon_verdict_acquitted }
+		localization_key = KOR_antidemocratic_activity_verdict_acquitted_tt
+	}
+	text = { localization_key = KOR_antidemocratic_activity_no_verdicts_tt }
+}
+
+defined_text = {
+	name = GetKORYECSatelliteStatus
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_satellite_availability_var > 89 }
+		}
+		localization_key = KOR_yec_satellite_status_optimal
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_satellite_availability_var > 69 }
+		}
+		localization_key = KOR_yec_satellite_status_normal
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_satellite_availability_var > 49 }
+		}
+		localization_key = KOR_yec_satellite_status_degraded
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_satellite_availability_var > 29 }
+		}
+		localization_key = KOR_yec_satellite_status_critical
+	}
+	text = {
+		localization_key = KOR_yec_satellite_status_disabled
+	}
+}
+
+defined_text = {
+	name = GetKORYECProductionStatus
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_satellite_production_active_flag
+		}
+		localization_key = KOR_yec_production_status_active
+	}
+	text = {
+		localization_key = KOR_yec_production_status_idle
+	}
+}
+
+defined_text = {
+	name = GetKORYECMaintenanceStatus
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_maintenance_active_flag
+		}
+		localization_key = KOR_yec_maintenance_status_active
+	}
+	text = {
+		localization_key = KOR_yec_maintenance_status_idle
+	}
+}
+
+defined_text = {
+	name = GetKORYECEmpTheatre
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_emp_theatre_var = 1 }
+		}
+		localization_key = KOR_yec_emp_theatre_west
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_emp_theatre_var = 2 }
+		}
+		localization_key = KOR_yec_emp_theatre_east
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_emp_theatre_var = 3 }
+		}
+		localization_key = KOR_yec_emp_theatre_north
+	}
+	text = {
+		localization_key = KOR_yec_emp_theatre_none
+	}
+}
+
+defined_text = {
+	name = GetKORYECCurrentPage
+	text = {
+		trigger = {
+			check_variable = { KOR_yec_space_page_var = 0 }
+		}
+		localization_key = KOR_yec_current_page_satellite
+	}
+	text = {
+		localization_key = KOR_yec_current_page_emp
+	}
+}
+
+defined_text = {
+	name = GetKORYECEmpWartimeWarning
+	text = {
+		trigger = {
+			PRC = {
+				exists = yes
+				has_war_with = ROOT
+			}
+		}
+		localization_key = KOR_yec_emp_wartime_warning_empty
+	}
+	text = {
+		localization_key = KOR_yec_emp_wartime_warning
+	}
+}
+
+defined_text = {
+	name = GetKORYECCivilEmpCost
+	text = {
+		trigger = {
+			KOR_yec_has_civil_emp_cost_trigger = yes
+		}
+		localization_key = KOR_yec_civil_emp_cost_available
+	}
+	text = {
+		localization_key = KOR_yec_civil_emp_cost_blocked
+	}
+}
+
+defined_text = {
+	name = GetKORYECMilitaryEmpCost
+	text = {
+		trigger = {
+			KOR_yec_has_military_emp_cost_trigger = yes
+		}
+		localization_key = KOR_yec_military_emp_cost_available
+	}
+	text = {
+		localization_key = KOR_yec_military_emp_cost_blocked
+	}
+}
+
+defined_text = {
+	name = GetKORYECTargetWestGFX
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_emp_west_blackout_flag
+		}
+		localization_key = "GFX_KOR_yec_target_west_blackout"
+	}
+	text = {
+		localization_key = "GFX_KOR_yec_target_west"
+	}
+}
+
+defined_text = {
+	name = GetKORYECTargetEastGFX
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_emp_east_blackout_flag
+		}
+		localization_key = "GFX_KOR_yec_target_east_blackout"
+	}
+	text = {
+		localization_key = "GFX_KOR_yec_target_east"
+	}
+}
+
+defined_text = {
+	name = GetKORYECTargetNorthGFX
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_emp_north_blackout_flag
+		}
+		localization_key = "GFX_KOR_yec_target_north_blackout"
+	}
+	text = {
+		localization_key = "GFX_KOR_yec_target_north"
+	}
+}
+
+defined_text = {
+	name = GetKORYECCivilEmpCooldown
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_civil_emp_cooldown_flag
+		}
+		localization_key = KOR_yec_civil_emp_cooldown_text
+	}
+	text = {
+		localization_key = KOR_yec_emp_cooldown_empty
+	}
+}
+
+defined_text = {
+	name = GetKORYECMilitaryEmpCooldown
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_military_emp_cooldown_flag
+		}
+		localization_key = KOR_yec_military_emp_cooldown_text
+	}
+	text = {
+		localization_key = KOR_yec_emp_cooldown_empty
+	}
+}
+
+defined_text = {
+	name = GetKORYECCivilEmpLabel
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_civil_emp_cooldown_flag
+		}
+		localization_key = KOR_yec_civil_emp_label_cooldown
+	}
+	text = {
+		localization_key = KOR_yec_civil_emp_label_ready
+	}
+}
+
+defined_text = {
+	name = GetKORYECMilitaryEmpLabel
+	text = {
+		trigger = {
+			has_country_flag = KOR_yec_military_emp_cooldown_flag
+		}
+		localization_key = KOR_yec_military_emp_label_cooldown
+	}
+	text = {
+		localization_key = KOR_yec_military_emp_label_ready
+	}
+}
+
+# 총선/개헌 시스템 스크립티드 로컬라이제이션
+
+# 상단 타이틀 (페이즈별)
+defined_text = {
+	name = GetTFRKPRegiondevTitle
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } } localization_key = TFRKP_regiondev_title_p2 }
+	text = { localization_key = TFRKP_regiondev_title_p1 }
+}
+
+# 헤더 (1페이즈: 선택 지역 / 2페이즈: 현재 쟁점)
+defined_text = {
+	name = GetTFRKPRegiondevHeader
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } check_variable = { KOR_constitution_issue = 1 } NOT = { has_country_flag = TFRKP_constitution_done_flag } } localization_key = TFRKP_const_issue_1 }
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } check_variable = { KOR_constitution_issue = 2 } } localization_key = TFRKP_const_issue_2 }
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } check_variable = { KOR_constitution_issue = 3 } } localization_key = TFRKP_const_issue_3 }
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } NOT = { has_country_flag = TFRKP_constitution_done_flag } } localization_key = TFRKP_const_issue_4 }
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } } localization_key = TFRKP_const_issue_done }
+	text = { trigger = { check_variable = { KOR_regiondev_selected = 1 } } localization_key = TFRKP_regiondev_header_r1 }
+	text = { trigger = { check_variable = { KOR_regiondev_selected = 2 } } localization_key = TFRKP_regiondev_header_r2 }
+	text = { trigger = { check_variable = { KOR_regiondev_selected = 3 } } localization_key = TFRKP_regiondev_header_r3 }
+	text = { trigger = { check_variable = { KOR_regiondev_selected = 4 } } localization_key = TFRKP_regiondev_header_r4 }
+	text = { trigger = { check_variable = { KOR_regiondev_selected = 5 } } localization_key = TFRKP_regiondev_header_r5 }
+	text = { localization_key = TFRKP_regiondev_header_none }
+}
+
+# 의제 버튼 텍스트 (페이즈/쟁점별)
+defined_text = {
+	name = GetTFRKPAgendaText1
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 1 } } localization_key = TFRKP_campaign_1 }
+	text = { trigger = { check_variable = { KOR_constitution_issue = 1 } } localization_key = TFRKP_const_opt_1a }
+	text = { trigger = { check_variable = { KOR_constitution_issue = 2 } } localization_key = TFRKP_const_opt_2a }
+	text = { trigger = { check_variable = { KOR_constitution_issue = 3 } } localization_key = TFRKP_const_opt_3a }
+	text = { localization_key = TFRKP_const_opt_4a }
+}
+defined_text = {
+	name = GetTFRKPAgendaText2
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 1 } } localization_key = TFRKP_campaign_2 }
+	text = { localization_key = TFRKP_const_opt_keep }
+}
+defined_text = {
+	name = GetTFRKPAgendaText3
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 1 } } localization_key = TFRKP_campaign_3 }
+	text = { localization_key = TFRKP_const_opt_defer }
+}
+
+# 개헌 요점 4줄 (선택 결과 기록)
+defined_text = {
+	name = GetTFRKPConstSum1
+	text = { trigger = { check_variable = { KOR_constitution_choice^1 = 1 } } localization_key = TFRKP_const_sum_1a }
+	text = { trigger = { check_variable = { KOR_constitution_choice^1 = 2 } } localization_key = TFRKP_const_sum_keep_1 }
+	text = { trigger = { check_variable = { KOR_constitution_choice^1 = 3 } } localization_key = TFRKP_const_sum_defer_1 }
+	text = { localization_key = TFRKP_const_sum_pending }
+}
+defined_text = {
+	name = GetTFRKPConstSum2
+	text = { trigger = { check_variable = { KOR_constitution_choice^2 = 1 } } localization_key = TFRKP_const_sum_2a }
+	text = { trigger = { check_variable = { KOR_constitution_choice^2 = 2 } } localization_key = TFRKP_const_sum_keep_2 }
+	text = { trigger = { check_variable = { KOR_constitution_choice^2 = 3 } } localization_key = TFRKP_const_sum_defer_2 }
+	text = { localization_key = TFRKP_const_sum_pending }
+}
+defined_text = {
+	name = GetTFRKPConstSum3
+	text = { trigger = { check_variable = { KOR_constitution_choice^3 = 1 } } localization_key = TFRKP_const_sum_3a }
+	text = { trigger = { check_variable = { KOR_constitution_choice^3 = 2 } } localization_key = TFRKP_const_sum_keep_3 }
+	text = { trigger = { check_variable = { KOR_constitution_choice^3 = 3 } } localization_key = TFRKP_const_sum_defer_3 }
+	text = { localization_key = TFRKP_const_sum_pending }
+}
+defined_text = {
+	name = GetTFRKPConstSum4
+	text = { trigger = { check_variable = { KOR_constitution_choice^4 = 1 } } localization_key = TFRKP_const_sum_4a }
+	text = { trigger = { check_variable = { KOR_constitution_choice^4 = 2 } } localization_key = TFRKP_const_sum_keep_4 }
+	text = { trigger = { check_variable = { KOR_constitution_choice^4 = 3 } } localization_key = TFRKP_const_sum_defer_4 }
+	text = { localization_key = TFRKP_const_sum_pending }
+}
+
+# 상태줄
+defined_text = {
+	name = GetTFRKPRegiondevStatus
+	text = { trigger = { has_country_flag = TFRKP_constitution_locked_flag check_variable = { KOR_regiondev_phase = 2 } } localization_key = TFRKP_status_const_locked }
+	text = { trigger = { has_country_flag = TFRKP_constitution_done_flag check_variable = { KOR_regiondev_phase = 2 } } localization_key = TFRKP_status_const_done }
+	text = { trigger = { check_variable = { KOR_regiondev_phase = 2 } } localization_key = TFRKP_status_const_review }
+	text = { trigger = { has_country_flag = TFRKP_regiondev_supermajority_flag } localization_key = TFRKP_status_election_super }
+	text = { trigger = { has_country_flag = TFRKP_regiondev_election_done_flag } localization_key = TFRKP_status_election_fail }
+	text = { trigger = { check_variable = { KOR_regiondev_active_region > 0 } } localization_key = TFRKP_status_campaign_active }
+	text = { localization_key = TFRKP_status_campaign_idle }
+}
+
+# 진행 중인 지역/유세 이름
+defined_text = {
+	name = GetTFRKPRegiondevActiveName
+	text = { trigger = { check_variable = { KOR_regiondev_active_region = 1 } } localization_key = TFRKP_regiondev_region_1 }
+	text = { trigger = { check_variable = { KOR_regiondev_active_region = 2 } } localization_key = TFRKP_regiondev_region_2 }
+	text = { trigger = { check_variable = { KOR_regiondev_active_region = 3 } } localization_key = TFRKP_regiondev_region_3 }
+	text = { trigger = { check_variable = { KOR_regiondev_active_region = 4 } } localization_key = TFRKP_regiondev_region_4 }
+	text = { trigger = { check_variable = { KOR_regiondev_active_region = 5 } } localization_key = TFRKP_regiondev_region_5 }
+	text = { localization_key = TFRKP_regiondev_header_none }
+}
+defined_text = {
+	name = GetTFRKPCampaignName
+	text = { trigger = { check_variable = { KOR_regiondev_active_agenda = 1 } } localization_key = TFRKP_campaign_1 }
+	text = { trigger = { check_variable = { KOR_regiondev_active_agenda = 2 } } localization_key = TFRKP_campaign_2 }
+	text = { localization_key = TFRKP_campaign_3 }
+}
+
+# TFR Korea Plus - 개혁 탭 스크립티드 로컬라이제이션
+# 선택된 탭(KOR_reform_tab)에 따라 다른 로컬 키를 반환
+
+# 탭별 설명문
+defined_text = {
+	name = GetTFRKPReformTabDesc
+	text = {
+		trigger = {
+			check_variable = { KOR_reform_tab = 1 }
+		}
+		localization_key = TFRKP_reform_tab_desc_political
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_reform_tab = 2 }
+		}
+		localization_key = TFRKP_reform_tab_desc_defense
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_reform_tab = 3 }
+		}
+		localization_key = TFRKP_reform_tab_desc_economy
+	}
+	# 폴백 (변수 미설정 시)
+	text = {
+		localization_key = TFRKP_reform_tab_desc_political
+	}
+}
+
+# 탭별 이름 (제목 등에 쓰고 싶을 때)
+defined_text = {
+	name = GetTFRKPReformTabName
+	text = {
+		trigger = {
+			check_variable = { KOR_reform_tab = 1 }
+		}
+		localization_key = TFRKP_reform_tab_name_political
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_reform_tab = 2 }
+		}
+		localization_key = TFRKP_reform_tab_name_defense
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_reform_tab = 3 }
+		}
+		localization_key = TFRKP_reform_tab_name_economy
+	}
+	text = {
+		localization_key = TFRKP_reform_tab_name_political
+	}
+}
+defined_text = { #대통령 선택한거
+	name = GetTFRKPKIMMINSEOKconstitution1
+	text = { trigger = { check_variable = { KOR_constitution_choice^1 = 1 } } localization_key = TFRKP_const_sum_1a_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^1 = 2 } } localization_key = TFRKP_const_sum_keep_1_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^1 = 3 } } localization_key = TFRKP_const_sum_defer_1_ending }
+}
+defined_text = { #총리 선출
+	name = GetTFRKPKIMMINSEOKconstitution2
+	text = { trigger = { check_variable = { KOR_constitution_choice^2 = 1 } } localization_key = TFRKP_const_sum_2a_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^2 = 2 } } localization_key = TFRKP_const_sum_keep_2_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^2 = 3 } } localization_key = TFRKP_const_sum_defer_2_ending }
+}
+defined_text = { #감사원 독립
+	name = GetTFRKPKIMMINSEOKconstitution3
+	text = { trigger = { check_variable = { KOR_constitution_choice^3 = 1 } } localization_key = TFRKP_const_sum_3a_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^3 = 2 } } localization_key = TFRKP_const_sum_keep_3_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^3 = 3 } } localization_key = TFRKP_const_sum_defer_3_ending }
+}
+defined_text = { #지방분권
+	name = GetTFRKPKIMMINSEOKconstitution4
+	text = { trigger = { check_variable = { KOR_constitution_choice^4 = 1 } } localization_key = TFRKP_const_sum_4a_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^4 = 2 } } localization_key = TFRKP_const_sum_keep_4_ending }
+	text = { trigger = { check_variable = { KOR_constitution_choice^4 = 3 } } localization_key = TFRKP_const_sum_defer_4_ending }
+}
+
+# TFR Korea Plus - 이카루스의 비상 스크립티드 로컬라이제이션
+# 고도(KOR_icarus_altitude)에 따라 단계 이름/설명 반환
+
+defined_text = {
+	name = GetTFRKPIcarusStageName
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 0 } } localization_key = TFRKP_icarus_stage_name_0 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 1 } } localization_key = TFRKP_icarus_stage_name_1 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 2 } } localization_key = TFRKP_icarus_stage_name_2 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 3 } } localization_key = TFRKP_icarus_stage_name_3 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 4 } } localization_key = TFRKP_icarus_stage_name_4 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 5 } } localization_key = TFRKP_icarus_stage_name_5 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 6 } } localization_key = TFRKP_icarus_stage_name_6 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 7 } } localization_key = TFRKP_icarus_stage_name_7 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 8 } } localization_key = TFRKP_icarus_stage_name_8 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 9 } } localization_key = TFRKP_icarus_stage_name_9 }
+	text = { localization_key = TFRKP_icarus_stage_name_10 }
+}
+
+defined_text = {
+	name = GetTFRKPIcarusStageDesc
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 0 } } localization_key = TFRKP_icarus_stage_desc_0 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 1 } } localization_key = TFRKP_icarus_stage_desc_1 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 2 } } localization_key = TFRKP_icarus_stage_desc_2 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 3 } } localization_key = TFRKP_icarus_stage_desc_3 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 4 } } localization_key = TFRKP_icarus_stage_desc_4 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 5 } } localization_key = TFRKP_icarus_stage_desc_5 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 6 } } localization_key = TFRKP_icarus_stage_desc_6 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 7 } } localization_key = TFRKP_icarus_stage_desc_7 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 8 } } localization_key = TFRKP_icarus_stage_desc_8 }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 9 } } localization_key = TFRKP_icarus_stage_desc_9 }
+	text = { localization_key = TFRKP_icarus_stage_desc_10 }
+}
+
+# 현재 적용 중인 국민정신 이름
+defined_text = {
+	name = GetTFRKPIcarusSpiritName
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 0 } } localization_key = TFRKP_icarus_spirit_none_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 1 } } localization_key = KOR_icarus_flight_1_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 2 } } localization_key = KOR_icarus_flight_2_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 3 } } localization_key = KOR_icarus_flight_3_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 4 } } localization_key = KOR_icarus_flight_4_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 5 } } localization_key = KOR_icarus_flight_5_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 6 } } localization_key = KOR_icarus_flight_6_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 7 } } localization_key = KOR_icarus_flight_7_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 8 } } localization_key = KOR_icarus_flight_8_scloc }
+	text = { trigger = { check_variable = { KOR_icarus_altitude = 9 } } localization_key = KOR_icarus_flight_9_scloc }
+	text = { localization_key = KOR_icarus_flight_10_scloc }
+}

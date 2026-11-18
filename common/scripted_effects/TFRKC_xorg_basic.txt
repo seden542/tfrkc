@@ -1,0 +1,112 @@
+TFRKC_xorg_register_GWANGJU_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_GWANGJU_actor } clr_country_flag = TFRKC_xorg_GWANGJU_actor clr_country_flag = TFRKC_xfocus_organization_GWANGJU }
+ set_country_flag = TFRKC_xorg_GWANGJU_actor
+ if = { limit = { NOT = { tag = KCG } } set_country_flag = TFRKC_xfocus_organization_GWANGJU }
+ clr_global_flag = TFRKC_xorg_GWANGJU_pending
+ set_global_flag = TFRKC_xorg_GWANGJU_registered
+}
+TFRKC_xorg_register_JEONJU_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_JEONJU_actor } clr_country_flag = TFRKC_xorg_JEONJU_actor clr_country_flag = TFRKC_xfocus_organization_JEONJU }
+ set_country_flag = TFRKC_xorg_JEONJU_actor
+ if = { limit = { NOT = { tag = KJR } } set_country_flag = TFRKC_xfocus_organization_JEONJU }
+ clr_global_flag = TFRKC_xorg_JEONJU_pending
+ set_global_flag = TFRKC_xorg_JEONJU_registered
+}
+TFRKC_xorg_register_CORPORATE_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_CORPORATE_actor } clr_country_flag = TFRKC_xorg_CORPORATE_actor clr_country_flag = TFRKC_xfocus_organization_CORPORATE }
+ set_country_flag = TFRKC_xorg_CORPORATE_actor
+ if = { limit = { NOT = { tag = KCA } } set_country_flag = TFRKC_xfocus_organization_CORPORATE }
+ clr_global_flag = TFRKC_xorg_CORPORATE_pending
+ set_global_flag = TFRKC_xorg_CORPORATE_registered
+}
+TFRKC_xorg_register_CONTINUITY_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_CONTINUITY_actor } clr_country_flag = TFRKC_xorg_CONTINUITY_actor clr_country_flag = TFRKC_xfocus_organization_CONTINUITY }
+ set_country_flag = TFRKC_xorg_CONTINUITY_actor
+ if = { limit = { NOT = { tag = KSC } } set_country_flag = TFRKC_xfocus_organization_CONTINUITY }
+ clr_global_flag = TFRKC_xorg_CONTINUITY_pending
+ set_global_flag = TFRKC_xorg_CONTINUITY_registered
+}
+TFRKC_xorg_register_TAEBAEK_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_TAEBAEK_actor } clr_country_flag = TFRKC_xorg_TAEBAEK_actor clr_country_flag = TFRKC_xfocus_organization_TAEBAEK }
+ set_country_flag = TFRKC_xorg_TAEBAEK_actor
+ if = { limit = { NOT = { tag = KTM } } set_country_flag = TFRKC_xfocus_organization_TAEBAEK }
+ clr_global_flag = TFRKC_xorg_TAEBAEK_pending
+ set_global_flag = TFRKC_xorg_TAEBAEK_registered
+}
+TFRKC_xorg_register_FARMERS_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_FARMERS_actor } clr_country_flag = TFRKC_xorg_FARMERS_actor clr_country_flag = TFRKC_xfocus_organization_FARMERS }
+ set_country_flag = TFRKC_xorg_FARMERS_actor
+ if = { limit = { NOT = { tag = KAF } } set_country_flag = TFRKC_xfocus_organization_FARMERS }
+ clr_global_flag = TFRKC_xorg_FARMERS_pending
+ set_global_flag = TFRKC_xorg_FARMERS_registered
+}
+TFRKC_xorg_register_COVENANT_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_COVENANT_actor } clr_country_flag = TFRKC_xorg_COVENANT_actor clr_country_flag = TFRKC_xfocus_organization_COVENANT }
+ set_country_flag = TFRKC_xorg_COVENANT_actor
+ if = { limit = { NOT = { tag = KDC } } set_country_flag = TFRKC_xfocus_organization_COVENANT }
+ clr_global_flag = TFRKC_xorg_COVENANT_pending
+ set_global_flag = TFRKC_xorg_COVENANT_registered
+}
+TFRKC_xorg_register_TAIWAN_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_TAIWAN_actor } clr_country_flag = TFRKC_xorg_TAIWAN_actor clr_country_flag = TFRKC_xfocus_organization_TAIWAN }
+ set_country_flag = TFRKC_xorg_TAIWAN_actor
+ if = { limit = { NOT = { tag = KTF } } set_country_flag = TFRKC_xfocus_organization_TAIWAN }
+ clr_global_flag = TFRKC_xorg_TAIWAN_pending
+ set_global_flag = TFRKC_xorg_TAIWAN_registered
+}
+TFRKC_xorg_register_DAEDEOK_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_DAEDEOK_actor } clr_country_flag = TFRKC_xorg_DAEDEOK_actor clr_country_flag = TFRKC_xfocus_organization_DAEDEOK }
+ set_country_flag = TFRKC_xorg_DAEDEOK_actor
+ if = { limit = { NOT = { tag = KDT } } set_country_flag = TFRKC_xfocus_organization_DAEDEOK }
+ clr_global_flag = TFRKC_xorg_DAEDEOK_pending
+ set_global_flag = TFRKC_xorg_DAEDEOK_registered
+}
+TFRKC_xorg_register_RAIL_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_RAIL_actor } clr_country_flag = TFRKC_xorg_RAIL_actor clr_country_flag = TFRKC_xfocus_organization_RAIL }
+ set_country_flag = TFRKC_xorg_RAIL_actor
+ if = { limit = { NOT = { tag = KRL } } set_country_flag = TFRKC_xfocus_organization_RAIL }
+ clr_global_flag = TFRKC_xorg_RAIL_pending
+ set_global_flag = TFRKC_xorg_RAIL_registered
+}
+TFRKC_xorg_register_WHITE_NIGHT_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_WHITE_NIGHT_actor } clr_country_flag = TFRKC_xorg_WHITE_NIGHT_actor clr_country_flag = TFRKC_xfocus_organization_WHITE_NIGHT }
+ set_country_flag = TFRKC_xorg_WHITE_NIGHT_actor
+ if = { limit = { NOT = { tag = KBN } } set_country_flag = TFRKC_xfocus_organization_WHITE_NIGHT }
+ clr_global_flag = TFRKC_xorg_WHITE_NIGHT_pending
+ set_global_flag = TFRKC_xorg_WHITE_NIGHT_registered
+}
+TFRKC_xorg_register_CHEONGSONG_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_CHEONGSONG_actor } clr_country_flag = TFRKC_xorg_CHEONGSONG_actor clr_country_flag = TFRKC_xfocus_organization_CHEONGSONG }
+ set_country_flag = TFRKC_xorg_CHEONGSONG_actor
+ if = { limit = { NOT = { tag = KCS } } set_country_flag = TFRKC_xfocus_organization_CHEONGSONG }
+ clr_global_flag = TFRKC_xorg_CHEONGSONG_pending
+ set_global_flag = TFRKC_xorg_CHEONGSONG_registered
+}
+TFRKC_xorg_register_IMPERIAL_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_IMPERIAL_actor } clr_country_flag = TFRKC_xorg_IMPERIAL_actor clr_country_flag = TFRKC_xfocus_organization_IMPERIAL }
+ set_country_flag = TFRKC_xorg_IMPERIAL_actor
+ if = { limit = { NOT = { tag = KHC } } set_country_flag = TFRKC_xfocus_organization_IMPERIAL }
+ clr_global_flag = TFRKC_xorg_IMPERIAL_pending
+ set_global_flag = TFRKC_xorg_IMPERIAL_registered
+}
+TFRKC_xorg_register_HOMECOMING_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_HOMECOMING_actor } clr_country_flag = TFRKC_xorg_HOMECOMING_actor clr_country_flag = TFRKC_xfocus_organization_HOMECOMING }
+ set_country_flag = TFRKC_xorg_HOMECOMING_actor
+ if = { limit = { NOT = { tag = KMH } } set_country_flag = TFRKC_xfocus_organization_HOMECOMING }
+ clr_global_flag = TFRKC_xorg_HOMECOMING_pending
+ set_global_flag = TFRKC_xorg_HOMECOMING_registered
+}
+TFRKC_xorg_register_CREDIT_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_CREDIT_actor } clr_country_flag = TFRKC_xorg_CREDIT_actor clr_country_flag = TFRKC_xfocus_organization_CREDIT }
+ set_country_flag = TFRKC_xorg_CREDIT_actor
+ if = { limit = { NOT = { tag = KBD } } set_country_flag = TFRKC_xfocus_organization_CREDIT }
+ clr_global_flag = TFRKC_xorg_CREDIT_pending
+ set_global_flag = TFRKC_xorg_CREDIT_registered
+}
+TFRKC_xorg_register_UNDERGROUND_effect = {
+ every_country = { limit = { has_country_flag = TFRKC_xorg_UNDERGROUND_actor } clr_country_flag = TFRKC_xorg_UNDERGROUND_actor clr_country_flag = TFRKC_xfocus_organization_UNDERGROUND }
+ set_country_flag = TFRKC_xorg_UNDERGROUND_actor
+ set_country_flag = TFRKC_xfocus_organization_UNDERGROUND
+ clr_global_flag = TFRKC_xorg_UNDERGROUND_pending
+ set_global_flag = TFRKC_xorg_UNDERGROUND_registered
+}

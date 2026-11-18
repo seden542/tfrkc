@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_KOR_WPSC_faction"
+		texturefile = "gfx/interface/factions/GFX_KOR_WPSC_Member.png"
+	}
+}

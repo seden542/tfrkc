@@ -1,0 +1,129 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_yec_satellite_background"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/satellite_background.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_earth_back"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/earth_back.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_earth_front"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/earth_front.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_orbit_line"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/orbit_line.png"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_yec_satellite_animation"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/satellite_animation.png"
+		legacy_lazy_load = no
+		noOfFrames = 32
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_production"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/production.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_satellite_status"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/satellite_status.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_plus"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/plus.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_minus"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/minus.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_button_left"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/button_left.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_button_right"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/button_right.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_button_large"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/button_large.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_button_small"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/button_small.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_toggle"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/toggle.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_yec_night_background"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/night_background_dark.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_clouds"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/clouds.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_target_east"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/target_east_lit.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_target_east_blackout"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/target_east_blackout.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_target_west"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/target_west_lit.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_target_west_blackout"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/target_west_blackout.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_target_north"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/target_north_lit.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_target_north_blackout"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/target_north_blackout.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_civil_emp"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/civil_emp.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_military_emp"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/military_emp.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_night_button"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/night_button.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_KOR_yec_night_large_button"
+		texturefile = "gfx/interface/GUI/yec_space_revolution/night_large_button.png"
+	}
+}

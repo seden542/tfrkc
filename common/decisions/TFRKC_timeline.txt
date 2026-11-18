@@ -1,0 +1,10 @@
+TFRKC_category = {
+ TFRKC_timeline_status = {
+ visible = { tag = KOR has_country_flag = TFRKC_proclamation_recorded NOT = { has_country_flag = TFRKC_deadline_checked } }
+ available = { always = no }
+ cost = 0
+ }
+ TFRKC_story_test_preview = { icon = GFX_decision_generic_political_reform visible = { tag = KOR has_game_rule = { rule = TFRKC_development option = TFRKC_test_on } } available = { always = yes } cost = 0 ai_will_do = { factor = 0 } complete_effect = { country_event = { id = tfrkc_timeline.911 } } }
+ TFRKC_story_test_failure = { icon = GFX_decision_generic_political_reform visible = { tag = KOR has_game_rule = { rule = TFRKC_development option = TFRKC_test_on } } available = { NOT = { has_country_flag = TFRKC_proclamation_recorded } NOT = { has_country_flag = TFRKC_stage_1 } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } } cost = 0 ai_will_do = { factor = 0 } complete_effect = { clr_country_flag = TFRKC_test_success country_event = { id = tfrkc_timeline.900 } } }
+ TFRKC_story_test_success = { icon = GFX_decision_generic_political_reform visible = { tag = KOR has_game_rule = { rule = TFRKC_development option = TFRKC_test_on } } available = { NOT = { has_country_flag = TFRKC_proclamation_recorded } NOT = { has_country_flag = TFRKC_stage_1 } NOT = { has_global_flag = TFRKC_civilwar_active } NOT = { has_global_flag = TFRKC_civilwar_finished } } cost = 0 ai_will_do = { factor = 0 } complete_effect = { set_country_flag = TFRKC_test_success country_event = { id = tfrkc_timeline.900 } } }
+}

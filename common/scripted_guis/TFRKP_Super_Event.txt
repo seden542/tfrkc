@@ -1,0 +1,24 @@
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+scripted_gui = {
+	TFRKP_Super_Event = {
+		context_type = player_context
+		window_name = "TFRKP_Super_Event"
+		dirty = TFRKP_super_event
+
+		visible = {
+			is_ai = no
+			has_variable = TFRKP_super_event
+			NOT = { has_global_flag = super_events_off_flag }
+		}
+
+		properties = {
+			SE_image = { image = "[TFRKPGetSuperEventImage]" }
+		}
+
+		effects = {
+			TFRKP_Super_Event_Option_click = {
+				clear_variable = TFRKP_super_event
+			}
+		}
+	}
+}

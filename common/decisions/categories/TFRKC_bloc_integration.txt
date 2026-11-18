@@ -1,0 +1,1 @@
+TFRKC_bloc_integration_category = { icon = generic_political_discourse visible = { has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } TFRKC_rework_map_ready_trigger = yes OR = { tag = KWC tag = KRC tag = KOR tag = KYA } } }

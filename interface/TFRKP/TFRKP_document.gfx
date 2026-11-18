@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_documents_button"
+		textureFile = "gfx/interface/documents_button.png"
+	}
+	spriteType = {
+		name = "GFX_fbi_button"
+		textureFile = "gfx/interface/fbi_button.dds"
+	}
+}

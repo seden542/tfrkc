@@ -1,0 +1,23 @@
+
+state={
+	id = 527
+	name = "STATE_527"
+	
+	resources = { tungsten = 3 steel = 10 }
+
+	history = {
+owner = PRK
+ buildings = {
+ infrastructure = 2
+11835 = { naval_base = 1 }
+ }
+victory_points = { 11835 3 }
+add_core_of = PRK
+add_claim_by = KOR
+}
+
+	provinces = { 15134 11835 15170 13720 15083 912 }
+	manpower = 1613348
+	buildings_max_level_factor = 0.59125964
+	state_category = town
+}

@@ -1,0 +1,7 @@
+# Country scope; may also be called by future faction-entry events.
+TFRKC_apply_war_pacing_effect = {
+ if = { limit = {
+  TFRKC_war_pacing_eligible_trigger = yes
+  NOT = { has_dynamic_modifier = { modifier = TFRKC_protracted_civilwar } }
+ } add_dynamic_modifier = { modifier = TFRKC_protracted_civilwar } }
+}

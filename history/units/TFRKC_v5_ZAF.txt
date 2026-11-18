@@ -1,0 +1,8 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZAF security" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+units = {
+ division = { name = "ZAF security 1" location = 15336 division_template = "TFRKC v5 ZAF security" start_manpower_factor = 0.8 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+ division = { name = "ZAF security 2" location = 15338 division_template = "TFRKC v5 ZAF security" start_manpower_factor = 0.8 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+ division = { name = "ZAF security 3" location = 15331 division_template = "TFRKC v5 ZAF security" start_manpower_factor = 0.8 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+ division = { name = "ZAF security 4" location = 11977 division_template = "TFRKC v5 ZAF security" start_manpower_factor = 0.8 start_equipment_factor = 0.85 start_experience_factor = 0.6 }
+}

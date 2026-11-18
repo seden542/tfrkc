@@ -1,0 +1,5 @@
+﻿
+focus = {
+    current = "KOR_lee_reds_focus_41"
+    Progress = 0
+}   

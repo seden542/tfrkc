@@ -1,0 +1,103 @@
+### TFR 본편 파일 리플레이스용 effects 모음 ###
+TFRKP_news_pdto_victory_effect = { # news.414
+	hidden_effect = {
+		### Operation End ###
+		KOR = {
+			clr_country_flag = TFRKP_show_GAW_GUI
+			KOR_ending_country_cosmetic_tag_effect = yes
+			if = {
+				limit = {
+					has_country_flag = KOR_lee_PPP_path
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		### Korea Original Super Events ###
+		# KOR - Route
+		if = {
+			limit = {	
+				tag = KOR
+				KOR = {
+					has_country_flag = KOR_yoon_winter_republic
+				}
+			}
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_PDTO_WIN_MARTIAL_LAW_YOON }
+			TFRKP_fire_super_event = yes
+		}
+		else_if = {
+			limit = {
+				tag = KOR
+				KOR = {
+					has_country_flag = KOR_lee_national_revolution_route
+				}
+			}
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_PDTO_WIN_ARMY }
+			TFRKP_fire_super_event = yes
+		}
+		else_if = {
+			limit = {
+				tag = KOR
+				KOR = {
+					has_country_flag = KOR_lee_DPK_path
+					NOT = {
+						has_country_flag = KOR_dpk_cho_korea_fail_flag
+					}
+				}
+			}
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_PDTO_WIN_CHO_KUK }
+			TFRKP_fire_super_event = yes
+		}
+		# KOR - Common
+		else_if = {
+			limit = {	
+				tag = KOR
+				KOR = {
+					NOT = { has_country_flag = KOR_yoon_winter_republic }
+					NOT = { has_country_flag = KOR_lee_national_revolution_route }
+				}
+			}
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_PDTO_WIN_LIGHT_YOON }
+			TFRKP_fire_super_event = yes
+		}
+		
+		### Another Countries ###
+		if = {
+			limit = {	
+				NOT = { tag = KOR }
+			}
+			set_temp_variable = { TFRKP_temp_super_event = token:TFR_SE_KOR_PDTO_WIN_LIGHT_YOON }
+			TFRKP_fire_super_event = yes
+		}	
+	}
+}
+
+TFRKP_GAW_timer_clear_effect = { # PRK pyongyang effect
+	PRC = {
+		remove_mission = PRC_korean_war_joining
+		declare_war_on = {
+			target = KOR
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+		PRC = {
+			add_to_faction = PRK
+		}
+		PRK = {
+			set_country_flag = eadi_member
+		}
+		news_event = news.346
+		country_event = {
+			id = china.1008
+			hours = 6
+		}
+		effect_tooltip = {
+			activate_mission = PRC_GAW_war_exhaustion
+		}
+		hidden_effect = {
+			PRC_gaw_start = yes
+		}
+	}
+}

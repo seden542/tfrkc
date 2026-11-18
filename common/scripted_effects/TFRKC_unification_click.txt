@@ -1,0 +1,262 @@
+# Winner keeps its real TAG, player, characters, focus tree and existing army/air force.
+# Compatibility API retained for old events/saves; it no longer transfers anything to KOR.
+TFRKC_finalize_unification_as_KOR_effect = { TFRKC_finalize_unification_effect = yes }
+TFRKC_finalize_unification_effect = {
+ if = { limit = {
+  exists = yes has_country_flag = TFRKC_unification_pending
+  TFRKC_can_unify_trigger = yes
+  NOT = { has_global_flag = TFRKC_unification_finalized }
+ }
+  log = "TFRKC_UNIFY_TRACE retained_tag_begin actor=[ROOT.GetTag]"
+  set_global_flag = TFRKC_unification_finalized
+  set_global_flag = TFRKC_civilwar_finished
+  clr_global_flag = TFRKC_civilwar_active
+  clr_country_flag = TFRKC_unification_pending
+  clr_country_flag = TFRKC_unification_completion_queued
+  set_country_flag = TFRKC_preserve_unifier_tree
+  set_country_flag = TFRKC_participant
+  set_country_flag = TFRKC_unifier
+  if = { limit = { OR = { tag = KWC tag = KPL } } set_country_flag = TFRKC_align_EADI }
+  # Cosmetic localisation only; the original country and all of its roles remain alive.
+  set_cosmetic_tag = TFRKC_unified_KOR
+  if = { limit = { tag = KOR } set_country_flag = TFRKC_victory_origin_KOR set_cosmetic_tag = TFRKC_unified_KOR }
+  if = { limit = { tag = KWC } set_country_flag = TFRKC_victory_origin_KWC set_cosmetic_tag = TFRKC_unified_KWC }
+  if = { limit = { tag = KLF } set_country_flag = TFRKC_victory_origin_KLF set_cosmetic_tag = TFRKC_unified_KLF }
+  if = { limit = { tag = KRC } set_country_flag = TFRKC_victory_origin_KRC set_cosmetic_tag = TFRKC_unified_KRC }
+  if = { limit = { tag = KCH } set_country_flag = TFRKC_victory_origin_KCH set_cosmetic_tag = TFRKC_unified_KCH }
+  if = { limit = { tag = KYA } set_country_flag = TFRKC_victory_origin_KYA set_cosmetic_tag = TFRKC_unified_KYA }
+  log = "TFRKC_UNIFY_TRACE integrate_navy actor=[ROOT.GetTag]"
+  if = { limit = { country_exists = KNM }
+   KNM = {
+    transfer_units_fraction = { target = ROOT size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 }
+    every_navy_leader = { set_nationality = ROOT }
+   }
+   annex_country = { target = KNM transfer_troops = yes }
+  }
+  leave_faction = yes
+  set_rule = { can_join_factions = yes can_not_declare_war = no }
+  clr_country_flag = TFRKC_naval_neutrality
+  remove_ideas = TFRKC_no_naval_war
+  set_country_flag = TFRKC_postwar_connection_ready
+  add_stability = 0.15
+  1547 = { add_core_of = ROOT }
+  1564 = { add_core_of = ROOT }
+  1567 = { add_core_of = ROOT }
+  1568 = { add_core_of = ROOT }
+  1412 = { add_core_of = ROOT }
+  1569 = { add_core_of = ROOT }
+  1570 = { add_core_of = ROOT }
+  1571 = { add_core_of = ROOT }
+  1572 = { add_core_of = ROOT }
+  1573 = { add_core_of = ROOT }
+  1516 = { add_core_of = ROOT }
+  1574 = { add_core_of = ROOT }
+  1575 = { add_core_of = ROOT }
+  1576 = { add_core_of = ROOT }
+  1577 = { add_core_of = ROOT }
+  1578 = { add_core_of = ROOT }
+  1509 = { add_core_of = ROOT }
+  1579 = { add_core_of = ROOT }
+  1580 = { add_core_of = ROOT }
+  869 = { add_core_of = ROOT }
+  1581 = { add_core_of = ROOT }
+  1582 = { add_core_of = ROOT }
+  1583 = { add_core_of = ROOT }
+  1584 = { add_core_of = ROOT }
+  1525 = { add_core_of = ROOT }
+  1507 = { add_core_of = ROOT }
+  1540 = { add_core_of = ROOT }
+  1585 = { add_core_of = ROOT }
+  1563 = { add_core_of = ROOT }
+  1513 = { add_core_of = ROOT }
+  1586 = { add_core_of = ROOT }
+  1587 = { add_core_of = ROOT }
+  1588 = { add_core_of = ROOT }
+  1589 = { add_core_of = ROOT }
+  1590 = { add_core_of = ROOT }
+  1591 = { add_core_of = ROOT }
+  1592 = { add_core_of = ROOT }
+  1593 = { add_core_of = ROOT }
+  1594 = { add_core_of = ROOT }
+  1559 = { add_core_of = ROOT }
+  1595 = { add_core_of = ROOT }
+  1596 = { add_core_of = ROOT }
+  1597 = { add_core_of = ROOT }
+  1598 = { add_core_of = ROOT }
+  1599 = { add_core_of = ROOT }
+  1411 = { add_core_of = ROOT }
+  1600 = { add_core_of = ROOT }
+  1601 = { add_core_of = ROOT }
+  1602 = { add_core_of = ROOT }
+  1603 = { add_core_of = ROOT }
+  1604 = { add_core_of = ROOT }
+  1605 = { add_core_of = ROOT }
+  525 = { add_core_of = ROOT }
+  1549 = { add_core_of = ROOT }
+  1548 = { add_core_of = ROOT }
+  1606 = { add_core_of = ROOT }
+  1607 = { add_core_of = ROOT }
+  1608 = { add_core_of = ROOT }
+  1609 = { add_core_of = ROOT }
+  1512 = { add_core_of = ROOT }
+  1515 = { add_core_of = ROOT }
+  1610 = { add_core_of = ROOT }
+  1539 = { add_core_of = ROOT }
+  1551 = { add_core_of = ROOT }
+  1611 = { add_core_of = ROOT }
+  1612 = { add_core_of = ROOT }
+  1613 = { add_core_of = ROOT }
+  1614 = { add_core_of = ROOT }
+  1615 = { add_core_of = ROOT }
+  1537 = { add_core_of = ROOT }
+  1616 = { add_core_of = ROOT }
+  1617 = { add_core_of = ROOT }
+  1618 = { add_core_of = ROOT }
+  1619 = { add_core_of = ROOT }
+  1620 = { add_core_of = ROOT }
+  1621 = { add_core_of = ROOT }
+  1622 = { add_core_of = ROOT }
+  1623 = { add_core_of = ROOT }
+  1624 = { add_core_of = ROOT }
+  1625 = { add_core_of = ROOT }
+  1409 = { add_core_of = ROOT }
+  1626 = { add_core_of = ROOT }
+  1627 = { add_core_of = ROOT }
+  1628 = { add_core_of = ROOT }
+  1552 = { add_core_of = ROOT }
+  1629 = { add_core_of = ROOT }
+  1630 = { add_core_of = ROOT }
+  1565 = { add_core_of = ROOT }
+  1546 = { add_core_of = ROOT }
+  1506 = { add_core_of = ROOT }
+  1631 = { add_core_of = ROOT }
+  1041 = { add_core_of = ROOT }
+  1632 = { add_core_of = ROOT }
+  1633 = { add_core_of = ROOT }
+  1634 = { add_core_of = ROOT }
+  1635 = { add_core_of = ROOT }
+  1636 = { add_core_of = ROOT }
+  1637 = { add_core_of = ROOT }
+  1638 = { add_core_of = ROOT }
+  1639 = { add_core_of = ROOT }
+  1640 = { add_core_of = ROOT }
+  1641 = { add_core_of = ROOT }
+  1642 = { add_core_of = ROOT }
+  1643 = { add_core_of = ROOT }
+  1644 = { add_core_of = ROOT }
+  1553 = { add_core_of = ROOT }
+  1645 = { add_core_of = ROOT }
+  1505 = { add_core_of = ROOT }
+  1646 = { add_core_of = ROOT }
+  1647 = { add_core_of = ROOT }
+  1648 = { add_core_of = ROOT }
+  1649 = { add_core_of = ROOT }
+  1650 = { add_core_of = ROOT }
+  1651 = { add_core_of = ROOT }
+  1554 = { add_core_of = ROOT }
+  1514 = { add_core_of = ROOT }
+  1652 = { add_core_of = ROOT }
+  1653 = { add_core_of = ROOT }
+  1654 = { add_core_of = ROOT }
+  1655 = { add_core_of = ROOT }
+  1656 = { add_core_of = ROOT }
+  1524 = { add_core_of = ROOT }
+  1657 = { add_core_of = ROOT }
+  1658 = { add_core_of = ROOT }
+  1659 = { add_core_of = ROOT }
+  1660 = { add_core_of = ROOT }
+  1661 = { add_core_of = ROOT }
+  1662 = { add_core_of = ROOT }
+  1663 = { add_core_of = ROOT }
+  1664 = { add_core_of = ROOT }
+  1665 = { add_core_of = ROOT }
+  1666 = { add_core_of = ROOT }
+  1667 = { add_core_of = ROOT }
+  1510 = { add_core_of = ROOT }
+  1668 = { add_core_of = ROOT }
+  1669 = { add_core_of = ROOT }
+  1508 = { add_core_of = ROOT }
+  1670 = { add_core_of = ROOT }
+  1671 = { add_core_of = ROOT }
+  1542 = { add_core_of = ROOT }
+  1672 = { add_core_of = ROOT }
+  1673 = { add_core_of = ROOT }
+  1538 = { add_core_of = ROOT }
+  1410 = { add_core_of = ROOT }
+  1674 = { add_core_of = ROOT }
+  1675 = { add_core_of = ROOT }
+  1676 = { add_core_of = ROOT }
+  1545 = { add_core_of = ROOT }
+  1677 = { add_core_of = ROOT }
+  1678 = { add_core_of = ROOT }
+  1543 = { add_core_of = ROOT }
+  1679 = { add_core_of = ROOT }
+  1680 = { add_core_of = ROOT }
+  1681 = { add_core_of = ROOT }
+  871 = { add_core_of = ROOT }
+  1682 = { add_core_of = ROOT }
+  1683 = { add_core_of = ROOT }
+  1556 = { add_core_of = ROOT }
+  1684 = { add_core_of = ROOT }
+  1685 = { add_core_of = ROOT }
+  1686 = { add_core_of = ROOT }
+  1687 = { add_core_of = ROOT }
+  1503 = { add_core_of = ROOT }
+  1688 = { add_core_of = ROOT }
+  1689 = { add_core_of = ROOT }
+  1690 = { add_core_of = ROOT }
+  1691 = { add_core_of = ROOT }
+  1560 = { add_core_of = ROOT }
+  1558 = { add_core_of = ROOT }
+  1692 = { add_core_of = ROOT }
+  1693 = { add_core_of = ROOT }
+  1694 = { add_core_of = ROOT }
+  1544 = { add_core_of = ROOT }
+  1695 = { add_core_of = ROOT }
+  1696 = { add_core_of = ROOT }
+  1697 = { add_core_of = ROOT }
+  1698 = { add_core_of = ROOT }
+  1699 = { add_core_of = ROOT }
+  1700 = { add_core_of = ROOT }
+  1701 = { add_core_of = ROOT }
+  1702 = { add_core_of = ROOT }
+  1703 = { add_core_of = ROOT }
+  1704 = { add_core_of = ROOT }
+  1705 = { add_core_of = ROOT }
+  1706 = { add_core_of = ROOT }
+  1707 = { add_core_of = ROOT }
+  1708 = { add_core_of = ROOT }
+  1709 = { add_core_of = ROOT }
+  1566 = { add_core_of = ROOT }
+  1550 = { add_core_of = ROOT }
+  1710 = { add_core_of = ROOT }
+  1711 = { add_core_of = ROOT }
+  1712 = { add_core_of = ROOT }
+  1713 = { add_core_of = ROOT }
+  1714 = { add_core_of = ROOT }
+  1561 = { add_core_of = ROOT }
+  1715 = { add_core_of = ROOT }
+  1716 = { add_core_of = ROOT }
+  1717 = { add_core_of = ROOT }
+  1718 = { add_core_of = ROOT }
+  1541 = { add_core_of = ROOT }
+  1517 = { add_core_of = ROOT }
+  1555 = { add_core_of = ROOT }
+  1719 = { add_core_of = ROOT }
+  870 = { add_core_of = ROOT }
+  1562 = { add_core_of = ROOT }
+  1720 = { add_core_of = ROOT }
+  1721 = { add_core_of = ROOT }
+  1722 = { add_core_of = ROOT }
+  1557 = { add_core_of = ROOT }
+  1723 = { add_core_of = ROOT }
+  1724 = { add_core_of = ROOT }
+  1725 = { add_core_of = ROOT }
+  1726 = { add_core_of = ROOT }
+  1504 = { add_core_of = ROOT }
+  1727 = { add_core_of = ROOT }
+  1728 = { add_core_of = ROOT }
+  1729 = { add_core_of = ROOT }
+  log = "TFRKC_UNIFY_TRACE retained_tag_finished actor=[ROOT.GetTag]"
+ }
+}

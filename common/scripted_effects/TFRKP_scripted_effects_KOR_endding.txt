@@ -1,0 +1,378 @@
+KOR_ending_check_effect = {
+	if = { # Army Route Endding Set
+		limit = {
+			KOR_is_army_path = yes
+		}
+		### Game Rules ###
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = TFRKP_lee_army_pigs
+					option = TFRKP_lee_army_pigs_success
+				}
+			}
+			set_country_flag = KOR_set_new_regime_flag
+			set_country_flag = KOR_purge_chinese_communists_flag
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = TFRKP_lee_army_pigs
+					option = TFRKP_lee_army_pigs_fail
+				}
+			}
+			set_variable = { KOR_lee_military_ignorant_var = 0 }
+			KOR_lee_army_ignorant_clamp = yes
+		}
+
+		### Setting Start ###
+		if = {
+			limit = {
+				KOR_army_stupid_success = yes
+			}
+			set_country_flag = KOR_army_ending_stupid_success_flag
+		}
+		else = {
+			set_country_flag = KOR_army_ending_stupid_failed_flag
+		}
+	}
+
+	### Real Focus Load Flag ###
+	set_country_flag = KOR_yoon_mtl_focus_unlock
+	mark_focus_tree_layout_dirty = yes
+}
+PD1_social_liberal_leader_effect = {
+	PD1 = {
+		PD1_yang_mujin_char = {
+			promote_character = centrist
+			promote_character = constitutionalist
+			promote_character = ultra_conservatism
+			promote_character = military_junta
+			promote_character = classical_fascism
+		}
+	}
+}
+PD1_corporatocracy_leader_effect = {
+	if = {
+		limit = {
+			PD1 = {
+				exists = no
+			}
+		}
+		KOR = {
+			puppet = PD1
+		}
+	}
+	PD1 = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		change_government_type_corporate_council = yes
+		change_economy_type_oligopolistic_capitalism = yes
+		set_popularities = {
+			authoritarian_democrat = 60
+			nationalist = 40
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = PD1_authoritarian_democrat_party_chaebol_long
+			name = PD1_authoritarian_democrat_party_chaebol
+		}
+		set_party_name = {
+			ideology = nationalist
+			long_name = PD1_nationalist_party_korean_garrison_long
+			name = PD1_nationalist_party_korean_garrison
+		}
+		kill_country_leader = yes
+		PD1_korea_economic_association_char = {
+			promote_character = corporatocracy
+		}
+		set_country_flag = PD1_korea_economic_association_leader_flag
+		set_cosmetic_tag = PD1_manchukuo
+		load_focus_tree = TFR_tree_PD1_manchukuo
+	}
+}
+KOR_ending_country_cosmetic_tag_effect = {
+	if = {
+		limit = {
+			KOR_is_army_path = yes
+		}
+		set_cosmetic_tag = KOR_army_revolution
+	}
+	else_if = {
+		limit = {
+			KOR_is_PP_path = yes
+			NOT = {
+				has_country_flag = KOR_PP_DPK_route
+			}
+		}
+		set_cosmetic_tag = KOR_ppp_revolution_1
+	}
+	else_if = {
+		limit = {
+			KOR_is_yoon_declare_martial_law = yes
+		}
+		set_cosmetic_tag = KOR_yoon_father
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KOR_lee_dpk_cho_korea_flag
+		}
+		set_cosmetic_tag = KOR_cho_kuk_korea
+	}
+	# PD1 Cosmetic Tag
+	if = {
+		limit = {
+			KOR_is_army_path = yes
+		}
+		if = {
+			limit = {
+				PD1 = {
+					exists = no
+				}
+			}
+			KOR = {
+				puppet = PD1
+			}
+		}
+		PD1 = {
+			set_cosmetic_tag = PD1_nam_military_administration
+			if = {
+				limit = {
+					NOT = { has_country_flag = PD1_an_jun_seok_initialized_flag }
+				}
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = no
+				}
+				kill_country_leader = yes
+				PD1_an_jun_seok_char = {
+					add_country_leader_role = {
+						country_leader = {
+							desc = PD1_an_jun_seok_char_desc
+							ideology = military_junta
+							traits = { }
+						}
+						promote_leader = yes
+					}
+				}
+				set_country_flag = PD1_an_jun_seok_initialized_flag
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			KOR = {
+				has_country_flag = KOR_lee_progress_party_route
+			}
+		}
+		if = {
+			limit = {
+				PD1 = {
+					exists = no
+				}
+			}
+			KOR = {
+				puppet = PD1
+			}
+		}
+		PD1 = {
+			set_cosmetic_tag = PD1_PDTO
+			set_party_name = {
+				ideology = nationalist
+				long_name = PD1_nationalist_party_long
+				name = PD1_nationalist_party
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PD1_libertarian_socialist_party_northeast_resistance_long
+				name = PD1_libertarian_socialist_party_northeast_resistance
+			}
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			set_popularities = {
+				nationalist = 80
+				libertarian_socialist = 20
+			}
+			transfer_state = 1413
+			transfer_state = 1417
+			transfer_state = 1414
+			if = {
+				limit = {
+					NOT = { has_country_flag = PD1_pdto_xu_yanpu_initialized_flag }
+				}
+				kill_country_leader = yes
+				PD1_xu_yanpu_char = {
+					add_country_leader_role = {
+						country_leader = {
+							desc = PD1_xu_yanpu_char_desc
+							ideology = military_junta
+							traits = { }
+						}
+						promote_leader = yes
+					}
+				}
+				set_country_flag = PD1_pdto_xu_yanpu_initialized_flag
+			}
+		}
+
+		1415 = { add_core_of = PD2 }
+		1416 = { add_core_of = PD2 }
+
+		if = {
+			limit = {
+				PD2 = { exists = no }
+			}
+			KOR = {
+				transfer_state = 1415
+				transfer_state = 1416
+				puppet = PD2
+			}
+		}
+		PD2 = {
+			transfer_state = 1415
+			transfer_state = 1416
+		}
+	}
+	else_if = {
+		limit = {
+			KOR = {
+				has_country_flag = KOR_lee_dpk_cho_korea_flag
+				has_country_flag = KOR_lee_taiwan_war_victory_supported
+			}
+		}
+		if = {
+			limit = {
+				PD1 = {
+					exists = no
+				}
+			}
+			KOR = {
+				puppet = PD1
+			}
+		}
+		PD1 = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = PD1_manchuria_social_correction_pilot_zone_established_v1 }
+				}
+				set_cosmetic_tag = PD1_south_manchuria_social_correction_bureau
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = PD1_authoritarian_democrat_party_social_correction_bureau_long
+					name = PD1_authoritarian_democrat_party_social_correction_bureau
+				}
+			}
+			transfer_state = 1413
+			transfer_state = 1417
+			transfer_state = 1414
+			transfer_state = 1415
+			transfer_state = 1416
+			if = {
+				limit = {
+					NOT = { has_character = PD1_yoo_si_min_char }
+				}
+				recruit_character = PD1_yoo_si_min_char
+			}
+			if = {
+				limit = {
+					has_character = PD1_tae_yeongho_char
+					NOT = { has_country_flag = PD1_tae_yeongho_chogukism_overlap_removed_v1 }
+				}
+				PD1_tae_yeongho_char = {
+					remove_country_leader_role = {
+						ideology = ultra_conservatism
+					}
+				}
+				set_country_flag = PD1_tae_yeongho_chogukism_overlap_removed_v1
+			}
+			# Save migration from the former social-liberal version.
+			if = {
+				limit = {
+					has_country_flag = PD1_yoo_si_min_leader_role_added_v1
+				}
+				PD1_yoo_si_min_char = {
+					remove_country_leader_role = {
+						ideology = centrist
+					}
+				}
+				clr_country_flag = PD1_yoo_si_min_leader_role_added_v1
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = PD1_yoo_si_min_chogukism_leader_role_added_v1 }
+				}
+				add_country_leader_role = {
+					character = PD1_yoo_si_min_char
+					promote_leader = yes
+					country_leader = {
+						desc = PD1_yoo_si_min_char_desc
+						ideology = chogukism
+						traits = { PD1_first_citizen_trait }
+					}
+				}
+				set_country_flag = PD1_yoo_si_min_chogukism_leader_role_added_v1
+			}
+			promote_character = {
+				character = PD1_yoo_si_min_char
+				ideology = chogukism
+			}
+			set_popularities = {
+				authoritarian_democrat = 100
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			KOR = {
+				has_country_flag = KOR_lee_taiwan_war_victory_supported
+			}
+		}
+		if = {
+			limit = {
+				PD1 = {
+					exists = no
+				}
+			}
+			KOR = {
+				puppet = PD1
+			}
+		}
+		PD1 = {
+			set_cosmetic_tag = PD1_LEE
+			transfer_state = 1413
+			transfer_state = 1417
+			transfer_state = 1414
+			transfer_state = 1415
+			transfer_state = 1416
+		}
+	}
+}
+KOR_ending_after_gaw_map_effect = {
+	876 = {
+		set_demilitarized_zone = no
+	}
+	648 = {
+		set_demilitarized_zone = no
+	}
+	JAP = { transfer_state = 876 }
+	every_country = {
+		limit = {
+			owns_state = 1451
+		}
+		transfer_state = 648
+	}
+	CHI = {
+		transfer_state = 524
+		transfer_state = 1148
+		transfer_state = 1149
+		transfer_state = 1150
+	}
+}

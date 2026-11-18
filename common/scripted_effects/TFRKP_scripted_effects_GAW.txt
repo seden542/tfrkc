@@ -1,0 +1,999 @@
+GAW_reset_all_ongoing_effect = {
+	set_variable = { var_GAW_border_nk = 0 }
+	set_variable = { var_GAW_border_gd = 0 }
+	set_variable = { var_GAW_border_mc = 0 }
+	set_variable = { var_GAW_border_hb = 0 }
+	set_variable = { var_GAW_border_jd = 0 }
+	set_variable = { var_GAW_border_lg = 0 }
+	set_variable = { var_GAW_border_hz = 0 }
+	set_variable = { var_GAW_border_xn = 0 }
+	set_variable = { var_GAW_border_sc = 0 }
+	set_variable = { var_GAW_border_xb = 0 }
+	set_variable = { var_GAW_border_bj = 0 }
+	set_variable = { var_GAW_border_tw = 0 }
+	set_variable = { var_GAW_border_ni = 0 }
+	set_variable = { var_GAW_border_sea = 0 }
+}
+GAW_remove_now_plan_effect = {
+	hidden_effect = {
+		GAW_reset_all_ongoing_effect = yes
+		set_variable = { var_GAW_card_1_select = 0 }
+		set_variable = { var_GAW_card_2_select = 0 }
+		
+		### Normal ###
+		every_state = {
+			limit = {
+				OR = {
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_3 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_4 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_5 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_6 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_7 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_8 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_9 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_10 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_11 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_12 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_13 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_14 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_15 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_16 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_17 }
+					has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_18 }
+				}
+			}
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_1 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_2 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_3 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_4 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_5 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_6 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_7 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_8 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_9 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_10 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_11 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_12 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_13 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_14 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_15 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_16 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_17 }
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_18 }
+		}
+		# Card 3
+		set_variable = { GAW_plan_ongoing_army_infantry_attack_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_motorized_attack_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_mechanized_attack_factor_var = 0 }
+		
+		# Card 4
+		set_variable = { GAW_plan_ongoing_army_infantry_defence_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_motorized_defence_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_mechanized_defence_factor_var = 0 }
+		
+		# Card 5
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_infantry_max_org_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_motorized_max_org_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_mechanized_max_org_factor_var = 0 }
+		
+		# Card 6
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_infantry_speed_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_motorized_speed_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_mechanized_speed_factor_var = 0 }
+		
+		# Card 7
+		set_variable = { GAW_plan_ongoing_army_artillery_attack_factor_var = 0 }
+		
+		# Card 8
+		set_variable = { GAW_plan_ongoing_army_artillery_defence_factor_var = 0 }
+		
+		# Card 9
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_artillery_max_org_factor_var = 0 }
+		
+		# Card 10
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_artillery_speed_factor_var = 0 }
+		
+		# Card 11
+		set_variable = { GAW_plan_ongoing_army_armor_attack_factor_var = 0 }
+		
+		# Card 12
+		set_variable = { GAW_plan_ongoing_army_armor_defence_factor_var = 0 }
+		
+		# Card 13
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_armor_max_org_factor_var = 0 }
+		
+		# Card 14
+		set_variable = { GAW_plan_ongoing_army_armor_speed_factor_var = 0 }
+		
+		# Card 15
+		set_variable = { GAW_plan_ongoing_special_forces_attack_factor_var = 0 }
+		
+		# Card 16
+		set_variable = { GAW_plan_ongoing_special_forces_defence_factor_var = 0 }
+		
+		# Card 17
+		set_variable = { GAW_plan_ongoing_special_forces_no_supply_grace_var = 0 }
+		set_variable = { GAW_plan_ongoing_special_forces_out_of_supply_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_category_special_forces_max_org_factor_var = 0 }
+		
+		# Card 18
+		set_variable = { GAW_plan_ongoing_modifier_army_sub_unit_category_special_forces_speed_factor_var = 0 }
+		
+		
+		### Jocker ###
+		every_country = {
+			limit = {
+				has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_1 }
+			}
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_1 }
+		}
+		every_country = {
+			limit = {
+				has_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_2 }
+			}
+			remove_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_2 }
+		}
+		set_variable = { GAW_plan_ongoing_air_cas_present_factor_var = 0 }
+		set_variable = { GAW_plan_ongoing_air_strategic_bomber_bombing_factor_var = 0 }
+		
+		### Special ###
+		remove_ideas = GAW_attack_the_north_korea
+		remove_ideas = GAW_plan_ongoing_none_attack
+		remove_ideas = GAW_plan_ongoing_none_defence
+	}
+}
+GAW_add_chip_effect = {
+	add_to_variable = { GAW_operation_chip_var = GAW_operation_chip_var_temp }
+	custom_effect_tooltip = GAW_add_chip_effect_tt
+}
+GAW_set_plan_modifier_effect = {
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 3 }
+					check_variable = { var_GAW_card_2_select = 3 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_3 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_infantry_attack_factor_var = 0.15 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_motorized_attack_factor_var = 0.1 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_mechanized_attack_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 4 }
+					check_variable = { var_GAW_card_2_select = 4 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_4 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_infantry_defence_factor_var = 0.15 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_motorized_defence_factor_var = 0.1 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_mechanized_defence_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 5 }
+					check_variable = { var_GAW_card_2_select = 5 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_5 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_infantry_max_org_factor_var = 0.1 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_motorized_max_org_factor_var = 0.1 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_mechanized_max_org_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 6 }
+					check_variable = { var_GAW_card_2_select = 6 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_6 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_infantry_speed_factor_var = 0.15 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_motorized_speed_factor_var = 0.1 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_mechanized_speed_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 7 }
+					check_variable = { var_GAW_card_2_select = 7 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_7 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_artillery_attack_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 8 }
+					check_variable = { var_GAW_card_2_select = 8 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_8 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_artillery_defence_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 9 }
+					check_variable = { var_GAW_card_2_select = 9 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_9 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_artillery_max_org_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 10 }
+					check_variable = { var_GAW_card_2_select = 10 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_10 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_artillery_speed_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 11 }
+					check_variable = { var_GAW_card_2_select = 11 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_11 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_armor_attack_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 12 }
+					check_variable = { var_GAW_card_2_select = 12 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_12 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_armor_defence_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 13 }
+					check_variable = { var_GAW_card_2_select = 13 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_13 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_armor_max_org_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 14 }
+					check_variable = { var_GAW_card_2_select = 14 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_14 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_army_armor_speed_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 15 }
+					check_variable = { var_GAW_card_2_select = 15 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_15 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_special_forces_attack_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 16 }
+					check_variable = { var_GAW_card_2_select = 16 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_16 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_special_forces_defence_factor_var = 0.15 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 17 }
+					check_variable = { var_GAW_card_2_select = 17 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_17 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_special_forces_no_supply_grace_var = 72 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_special_forces_out_of_supply_factor_var = -0.25 } }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_category_special_forces_max_org_factor_var = 0.1 } }
+	}
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 18 }
+					check_variable = { var_GAW_card_2_select = 18 }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_18 scope = KOR days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_modifier_army_sub_unit_category_special_forces_speed_factor_var = 0.15 } }
+	}
+}
+GAW_set_the_plan_effect = {
+	country_event = korea.965
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 1 }
+					check_variable = { var_GAW_card_2_select = 1 }
+				}
+			}
+		}
+		### Jocker ###
+		every_country = {
+			limit = {
+				OR = { is_in_faction_with = KOR original_tag = KOR }
+			}
+			add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_1 days = 60 }
+		}
+		#add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_1 days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_air_cas_present_factor_var = 0.25 } }
+	}
+	
+	if = {
+		limit = {
+			KOR = {
+				OR = {
+					check_variable = { var_GAW_card_1_select = 2 }
+					check_variable = { var_GAW_card_2_select = 2 }
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				OR = { is_in_faction_with = KOR original_tag = KOR }
+			}
+			add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_2 days = 60 }
+		}
+		### Jocker ###
+		#add_dynamic_modifier = { modifier = KOR_gaw_plan_ongoing_state_PDTO_modifier_2 days = 60 }
+		#KOR = { set_variable = {  GAW_plan_ongoing_air_strategic_bomber_bombing_factor_var = 0.25 } }
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_card_1_select = 0 }
+		}
+		add_ideas = GAW_plan_ongoing_none_attack
+	}	
+	if = {
+		limit = {
+			check_variable = { var_GAW_card_2_select = 0 }
+		}
+		add_ideas = GAW_plan_ongoing_none_defence
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_nk = 1 } 
+		}
+		set_variable = { var_GAW_border_nk = 2 } 
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_gd = 1 } 
+		}
+		set_variable = { var_GAW_border_gd = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_jiandao = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_mc = 1 } 
+		}
+		set_variable = { var_GAW_border_mc = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_manchuria = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_hb = 1 } 
+		}
+		set_variable = { var_GAW_border_hb = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_huabei = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_jd = 1 } 
+		}
+		set_variable = { var_GAW_border_jd = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_jiangdong = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_lg = 1 } 
+		}
+		set_variable = { var_GAW_border_lg = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_liangguang = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_hz = 1 } 
+		}
+		set_variable = { var_GAW_border_hz = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_huazhong = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_xn = 1 } 
+		}
+		set_variable = { var_GAW_border_xn = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_xinan = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_sc = 1 } 
+		}
+		set_variable = { var_GAW_border_sc = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_sichuan = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_xb = 1 } 
+		}
+		set_variable = { var_GAW_border_xb = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_xibei = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_bj = 1 } 
+		}
+		set_variable = { var_GAW_border_bj = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_bianjing = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_tw = 1 } 
+		}
+		set_variable = { var_GAW_border_tw = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_taiwan = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_ni = 1 } 
+		}
+		set_variable = { var_GAW_border_ni = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_north_india = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { var_GAW_border_sea = 1 } 
+		}
+		set_variable = { var_GAW_border_sea = 2 } 
+		every_state = {
+			limit = {
+				GAW_is_SEA = yes
+			}
+			GAW_set_plan_modifier_effect = yes
+		}
+	}
+}
+GAW_reset_all_selection_effect = {
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_nk = 2 } }
+		}
+		set_variable = { var_GAW_border_nk = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_gd = 2 } }
+		}
+		set_variable = { var_GAW_border_gd = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_mc = 2 } }
+		}
+		set_variable = { var_GAW_border_mc = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_hb = 2 } }
+		}
+		set_variable = { var_GAW_border_hb = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_jd = 2 } }
+		}
+		set_variable = { var_GAW_border_jd = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_lg = 2 } }
+		}
+		set_variable = { var_GAW_border_lg = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_hz = 2 } }
+		}
+		set_variable = { var_GAW_border_hz = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_xn = 2 } }
+		}
+		set_variable = { var_GAW_border_xn = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_sc = 2 } }
+		}
+		set_variable = { var_GAW_border_sc = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_xb = 2 } }
+		}
+		set_variable = { var_GAW_border_xb = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_bj = 2 } }
+		}
+		set_variable = { var_GAW_border_bj = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_tw = 2 } }
+		}
+		set_variable = { var_GAW_border_tw = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_ni = 2 } }
+		}
+		set_variable = { var_GAW_border_ni = 0 }
+	}
+	if = {
+		limit = {
+			NOT = { check_variable = { var_GAW_border_sea = 2 } }
+		}
+		set_variable = { var_GAW_border_sea = 0 }
+	}
+}
+GAW_remove_card_click_effect = {
+	clr_country_flag = GAW_card_select_1_flag
+	clr_country_flag = GAW_card_select_2_flag
+}
+GAW_debug_clear_all_card = {
+	set_variable = { TFRKP_GAW_card_have_dirty = 0 }
+	set_variable = { TFRKP_GAW_card_debug_next_var = 1 }
+
+	add_to_variable = { TFRKP_GAW_card_have_dirty = 1 }
+	clear_array = TFRKP_GAW_card_have_array
+}
+GAW_debug_add_card_1 = {
+	add_to_variable = { TFRKP_GAW_card_have_dirty = 1 } # 카드 보유고 # 무조건 1
+	if = {
+		limit = {
+			NOT = { check_variable = { TFRKP_GAW_card_debug_next_var > 0 } }
+		}
+		set_variable = { TFRKP_GAW_card_debug_next_var = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { TFRKP_GAW_card_debug_next_var > 18 }
+		}
+		set_variable = { TFRKP_GAW_card_debug_next_var = 1 }
+	}
+	add_to_array = { TFRKP_GAW_card_have_array = TFRKP_GAW_card_debug_next_var } # 실제 카드
+	add_to_variable = { TFRKP_GAW_card_debug_next_var = 1 }
+	if = {
+		limit = {
+			check_variable = { TFRKP_GAW_card_debug_next_var > 18 }
+		}
+		set_variable = { TFRKP_GAW_card_debug_next_var = 1 }
+	}
+}
+GAW_add_random_card_effect = {
+	add_to_variable = { TFRKP_GAW_card_have_dirty = 1 }
+	random_list = {
+		# 조커
+		4000 = { add_to_array = { TFRKP_GAW_card_have_array = 1 } scoped_sound_effect = HOI4_ui_award_tier_02 }
+		2000 = { add_to_array = { TFRKP_GAW_card_have_array = 2 } scoped_sound_effect = HOI4_ui_award_tier_02 }
+		# 보병
+		7125 = { add_to_array = { TFRKP_GAW_card_have_array = 3 } scoped_sound_effect = tno_page_flip }
+		7125 = { add_to_array = { TFRKP_GAW_card_have_array = 4 } scoped_sound_effect = tno_page_flip }
+		7125 = { add_to_array = { TFRKP_GAW_card_have_array = 5 } scoped_sound_effect = tno_page_flip }
+		7125 = { add_to_array = { TFRKP_GAW_card_have_array = 6 } scoped_sound_effect = tno_page_flip }
+		# 포병
+		6125 = { add_to_array = { TFRKP_GAW_card_have_array = 7 } scoped_sound_effect = tno_page_flip }
+		6125 = { add_to_array = { TFRKP_GAW_card_have_array = 8 } scoped_sound_effect = tno_page_flip }
+		6125 = { add_to_array = { TFRKP_GAW_card_have_array = 9 } scoped_sound_effect = tno_page_flip }
+		6125 = { add_to_array = { TFRKP_GAW_card_have_array = 10 } scoped_sound_effect = tno_page_flip }
+		# 전차
+		4625 = { add_to_array = { TFRKP_GAW_card_have_array = 11 } scoped_sound_effect = tno_page_flip }
+		4625 = { add_to_array = { TFRKP_GAW_card_have_array = 12 } scoped_sound_effect = tno_page_flip }
+		4625 = { add_to_array = { TFRKP_GAW_card_have_array = 13 } scoped_sound_effect = tno_page_flip }
+		4625 = { add_to_array = { TFRKP_GAW_card_have_array = 14 } scoped_sound_effect = tno_page_flip }
+		# 특수전
+		5625 = { add_to_array = { TFRKP_GAW_card_have_array = 15 } scoped_sound_effect = tno_page_flip }
+		5625 = { add_to_array = { TFRKP_GAW_card_have_array = 16 } scoped_sound_effect = tno_page_flip }
+		5625 = { add_to_array = { TFRKP_GAW_card_have_array = 17 } scoped_sound_effect = tno_page_flip }
+		5625 = { add_to_array = { TFRKP_GAW_card_have_array = 18 } scoped_sound_effect = tno_page_flip }
+	}
+}
+GAW_debug_remove_card_1 = {
+	add_to_variable = { TFRKP_GAW_card_have_dirty = 1 } # 카드 보유고 # 무조건 1
+	remove_from_array = { TFRKP_GAW_card_have_array = 1 } # 실제 카드
+}
+GAW_start_north_korea_plan = {
+	hidden_effect = {
+		set_variable = { var_GAW_border_nk = 2 }
+		set_variable = { var_GAW_card_1_select = 19 } # NA
+		set_variable = { var_GAW_card_2_select = 20 } # ND
+		add_ideas = GAW_attack_the_north_korea
+	}
+	if = {
+		limit = {
+			PRK = {
+				exists = no
+			}
+		}
+		GAW_remove_now_plan_effect = yes
+	}
+}
+GAW_start_setting_effect = {
+	custom_effect_tooltip = GAW_start_setting_effect_tt
+	set_country_flag = TFRKP_show_GAW_GUI
+	GAW_start_north_korea_plan = yes
+}
+
+GAW_set_plan_random_name_effect = {
+	random_list = {
+		10 = { set_variable = { GAW_plan_random_name_var = 1 } set_country_flag = GAW_plan_random_name_1_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_1_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 2 } set_country_flag = GAW_plan_random_name_2_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_2_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 3 } set_country_flag = GAW_plan_random_name_3_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_3_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 4 } set_country_flag = GAW_plan_random_name_4_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_4_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 5 } set_country_flag = GAW_plan_random_name_5_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_5_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 6 } set_country_flag = GAW_plan_random_name_6_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_6_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 7 } set_country_flag = GAW_plan_random_name_7_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_7_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 8 } set_country_flag = GAW_plan_random_name_8_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_8_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 9 } set_country_flag = GAW_plan_random_name_9_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_9_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 10 } set_country_flag = GAW_plan_random_name_10_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_10_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 11 } set_country_flag = GAW_plan_random_name_11_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_11_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 12 } set_country_flag = GAW_plan_random_name_12_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_12_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 13 } set_country_flag = GAW_plan_random_name_13_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_13_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 14 } set_country_flag = GAW_plan_random_name_14_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_14_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 15 } set_country_flag = GAW_plan_random_name_15_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_15_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 16 } set_country_flag = GAW_plan_random_name_16_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_16_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 17 } set_country_flag = GAW_plan_random_name_17_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_17_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 18 } set_country_flag = GAW_plan_random_name_18_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_18_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 19 } set_country_flag = GAW_plan_random_name_19_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_19_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 20 } set_country_flag = GAW_plan_random_name_20_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_20_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 21 } set_country_flag = GAW_plan_random_name_21_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_21_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 22 } set_country_flag = GAW_plan_random_name_22_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_22_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 23 } set_country_flag = GAW_plan_random_name_23_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_23_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 24 } set_country_flag = GAW_plan_random_name_24_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_24_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 25 } set_country_flag = GAW_plan_random_name_25_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_25_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 26 } set_country_flag = GAW_plan_random_name_26_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_26_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 27 } set_country_flag = GAW_plan_random_name_27_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_27_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 28 } set_country_flag = GAW_plan_random_name_28_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_28_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 29 } set_country_flag = GAW_plan_random_name_29_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_29_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 30 } set_country_flag = GAW_plan_random_name_30_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_30_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 31 } set_country_flag = GAW_plan_random_name_31_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_31_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 32 } set_country_flag = GAW_plan_random_name_32_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_32_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 33 } set_country_flag = GAW_plan_random_name_33_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_33_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 34 } set_country_flag = GAW_plan_random_name_34_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_34_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 35 } set_country_flag = GAW_plan_random_name_35_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_35_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 36 } set_country_flag = GAW_plan_random_name_36_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_36_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 37 } set_country_flag = GAW_plan_random_name_37_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_37_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 38 } set_country_flag = GAW_plan_random_name_38_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_38_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 39 } set_country_flag = GAW_plan_random_name_39_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_39_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 40 } set_country_flag = GAW_plan_random_name_40_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_40_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 41 } set_country_flag = GAW_plan_random_name_41_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_41_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 42 } set_country_flag = GAW_plan_random_name_42_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_42_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 43 } set_country_flag = GAW_plan_random_name_43_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_43_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 44 } set_country_flag = GAW_plan_random_name_44_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_44_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 45 } set_country_flag = GAW_plan_random_name_45_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_45_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 46 } set_country_flag = GAW_plan_random_name_46_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_46_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 47 } set_country_flag = GAW_plan_random_name_47_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_47_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 48 } set_country_flag = GAW_plan_random_name_48_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_48_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 49 } set_country_flag = GAW_plan_random_name_49_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_49_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 50 } set_country_flag = GAW_plan_random_name_50_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_50_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 51 } set_country_flag = GAW_plan_random_name_51_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_51_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 52 } set_country_flag = GAW_plan_random_name_52_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_52_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 53 } set_country_flag = GAW_plan_random_name_53_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_53_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 54 } set_country_flag = GAW_plan_random_name_54_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_54_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 55 } set_country_flag = GAW_plan_random_name_55_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_55_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 56 } set_country_flag = GAW_plan_random_name_56_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_56_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 57 } set_country_flag = GAW_plan_random_name_57_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_57_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 58 } set_country_flag = GAW_plan_random_name_58_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_58_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 59 } set_country_flag = GAW_plan_random_name_59_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_59_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 60 } set_country_flag = GAW_plan_random_name_60_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_60_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 61 } set_country_flag = GAW_plan_random_name_61_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_61_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 62 } set_country_flag = GAW_plan_random_name_62_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_62_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 63 } set_country_flag = GAW_plan_random_name_63_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_63_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 64 } set_country_flag = GAW_plan_random_name_64_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_64_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 65 } set_country_flag = GAW_plan_random_name_65_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_65_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 66 } set_country_flag = GAW_plan_random_name_66_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_66_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 67 } set_country_flag = GAW_plan_random_name_67_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_67_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 68 } set_country_flag = GAW_plan_random_name_68_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_68_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 69 } set_country_flag = GAW_plan_random_name_69_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_69_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 70 } set_country_flag = GAW_plan_random_name_70_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_70_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 71 } set_country_flag = GAW_plan_random_name_71_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_71_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 72 } set_country_flag = GAW_plan_random_name_72_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_72_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 73 } set_country_flag = GAW_plan_random_name_73_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_73_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 74 } set_country_flag = GAW_plan_random_name_74_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_74_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 75 } set_country_flag = GAW_plan_random_name_75_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_75_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 76 } set_country_flag = GAW_plan_random_name_76_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_76_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 77 } set_country_flag = GAW_plan_random_name_77_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_77_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 78 } set_country_flag = GAW_plan_random_name_78_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_78_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 79 } set_country_flag = GAW_plan_random_name_79_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_79_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 80 } set_country_flag = GAW_plan_random_name_80_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_80_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 81 } set_country_flag = GAW_plan_random_name_81_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_81_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 82 } set_country_flag = GAW_plan_random_name_82_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_82_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 83 } set_country_flag = GAW_plan_random_name_83_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_83_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 84 } set_country_flag = GAW_plan_random_name_84_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_84_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 85 } set_country_flag = GAW_plan_random_name_85_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_85_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 86 } set_country_flag = GAW_plan_random_name_86_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_86_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 87 } set_country_flag = GAW_plan_random_name_87_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_87_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 88 } set_country_flag = GAW_plan_random_name_88_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_88_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 89 } set_country_flag = GAW_plan_random_name_89_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_89_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 90 } set_country_flag = GAW_plan_random_name_90_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_90_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 91 } set_country_flag = GAW_plan_random_name_91_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_91_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 92 } set_country_flag = GAW_plan_random_name_92_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_92_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 93 } set_country_flag = GAW_plan_random_name_93_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_93_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 94 } set_country_flag = GAW_plan_random_name_94_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_94_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 95 } set_country_flag = GAW_plan_random_name_95_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_95_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 96 } set_country_flag = GAW_plan_random_name_96_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_96_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 97 } set_country_flag = GAW_plan_random_name_97_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_97_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 98 } set_country_flag = GAW_plan_random_name_98_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_98_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 99 } set_country_flag = GAW_plan_random_name_99_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_99_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 100 } set_country_flag = GAW_plan_random_name_100_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_100_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 101 } set_country_flag = GAW_plan_random_name_101_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_101_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 102 } set_country_flag = GAW_plan_random_name_102_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_102_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 103 } set_country_flag = GAW_plan_random_name_103_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_103_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 104 } set_country_flag = GAW_plan_random_name_104_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_104_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 105 } set_country_flag = GAW_plan_random_name_105_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_105_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 106 } set_country_flag = GAW_plan_random_name_106_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_106_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 107 } set_country_flag = GAW_plan_random_name_107_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_107_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 108 } set_country_flag = GAW_plan_random_name_108_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_108_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 109 } set_country_flag = GAW_plan_random_name_109_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_109_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 110 } set_country_flag = GAW_plan_random_name_110_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_110_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 111 } set_country_flag = GAW_plan_random_name_111_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_111_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 112 } set_country_flag = GAW_plan_random_name_112_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_112_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 113 } set_country_flag = GAW_plan_random_name_113_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_113_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 114 } set_country_flag = GAW_plan_random_name_114_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_114_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 115 } set_country_flag = GAW_plan_random_name_115_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_115_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 116 } set_country_flag = GAW_plan_random_name_116_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_116_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 117 } set_country_flag = GAW_plan_random_name_117_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_117_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 118 } set_country_flag = GAW_plan_random_name_118_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_118_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 119 } set_country_flag = GAW_plan_random_name_119_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_119_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 120 } set_country_flag = GAW_plan_random_name_120_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_120_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 121 } set_country_flag = GAW_plan_random_name_121_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_121_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 122 } set_country_flag = GAW_plan_random_name_122_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_122_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 123 } set_country_flag = GAW_plan_random_name_123_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_123_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 124 } set_country_flag = GAW_plan_random_name_124_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_124_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 125 } set_country_flag = GAW_plan_random_name_125_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_125_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 126 } set_country_flag = GAW_plan_random_name_126_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_126_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 127 } set_country_flag = GAW_plan_random_name_127_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_127_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 128 } set_country_flag = GAW_plan_random_name_128_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_128_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 129 } set_country_flag = GAW_plan_random_name_129_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_129_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 130 } set_country_flag = GAW_plan_random_name_130_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_130_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 131 } set_country_flag = GAW_plan_random_name_131_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_131_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 132 } set_country_flag = GAW_plan_random_name_132_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_132_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 133 } set_country_flag = GAW_plan_random_name_133_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_133_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 134 } set_country_flag = GAW_plan_random_name_134_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_134_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 135 } set_country_flag = GAW_plan_random_name_135_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_135_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 136 } set_country_flag = GAW_plan_random_name_136_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_136_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 137 } set_country_flag = GAW_plan_random_name_137_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_137_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 138 } set_country_flag = GAW_plan_random_name_138_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_138_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 139 } set_country_flag = GAW_plan_random_name_139_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_139_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 140 } set_country_flag = GAW_plan_random_name_140_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_140_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 141 } set_country_flag = GAW_plan_random_name_141_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_141_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 142 } set_country_flag = GAW_plan_random_name_142_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_142_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 143 } set_country_flag = GAW_plan_random_name_143_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_143_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 144 } set_country_flag = GAW_plan_random_name_144_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_144_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 145 } set_country_flag = GAW_plan_random_name_145_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_145_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 146 } set_country_flag = GAW_plan_random_name_146_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_146_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 147 } set_country_flag = GAW_plan_random_name_147_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_147_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 148 } set_country_flag = GAW_plan_random_name_148_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_148_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 149 } set_country_flag = GAW_plan_random_name_149_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_149_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 150 } set_country_flag = GAW_plan_random_name_150_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_150_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 151 } set_country_flag = GAW_plan_random_name_151_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_151_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 152 } set_country_flag = GAW_plan_random_name_152_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_152_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 153 } set_country_flag = GAW_plan_random_name_153_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_153_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 154 } set_country_flag = GAW_plan_random_name_154_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_154_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 155 } set_country_flag = GAW_plan_random_name_155_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_155_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 156 } set_country_flag = GAW_plan_random_name_156_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_156_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 157 } set_country_flag = GAW_plan_random_name_157_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_157_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 158 } set_country_flag = GAW_plan_random_name_158_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_158_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 159 } set_country_flag = GAW_plan_random_name_159_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_159_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 160 } set_country_flag = GAW_plan_random_name_160_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_160_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 161 } set_country_flag = GAW_plan_random_name_161_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_161_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 162 } set_country_flag = GAW_plan_random_name_162_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_162_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 163 } set_country_flag = GAW_plan_random_name_163_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_163_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 164 } set_country_flag = GAW_plan_random_name_164_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_164_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 165 } set_country_flag = GAW_plan_random_name_165_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_165_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 166 } set_country_flag = GAW_plan_random_name_166_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_166_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 167 } set_country_flag = GAW_plan_random_name_167_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_167_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 168 } set_country_flag = GAW_plan_random_name_168_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_168_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 169 } set_country_flag = GAW_plan_random_name_169_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_169_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 170 } set_country_flag = GAW_plan_random_name_170_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_170_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 171 } set_country_flag = GAW_plan_random_name_171_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_171_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 172 } set_country_flag = GAW_plan_random_name_172_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_172_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 173 } set_country_flag = GAW_plan_random_name_173_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_173_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 174 } set_country_flag = GAW_plan_random_name_174_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_174_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 175 } set_country_flag = GAW_plan_random_name_175_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_175_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 176 } set_country_flag = GAW_plan_random_name_176_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_176_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 177 } set_country_flag = GAW_plan_random_name_177_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_177_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 178 } set_country_flag = GAW_plan_random_name_178_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_178_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 179 } set_country_flag = GAW_plan_random_name_179_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_179_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 180 } set_country_flag = GAW_plan_random_name_180_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_180_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 181 } set_country_flag = GAW_plan_random_name_181_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_181_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 182 } set_country_flag = GAW_plan_random_name_182_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_182_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 183 } set_country_flag = GAW_plan_random_name_183_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_183_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 184 } set_country_flag = GAW_plan_random_name_184_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_184_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 185 } set_country_flag = GAW_plan_random_name_185_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_185_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 186 } set_country_flag = GAW_plan_random_name_186_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_186_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 187 } set_country_flag = GAW_plan_random_name_187_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_187_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 188 } set_country_flag = GAW_plan_random_name_188_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_188_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 189 } set_country_flag = GAW_plan_random_name_189_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_189_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 190 } set_country_flag = GAW_plan_random_name_190_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_190_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 191 } set_country_flag = GAW_plan_random_name_191_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_191_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 192 } set_country_flag = GAW_plan_random_name_192_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_192_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 193 } set_country_flag = GAW_plan_random_name_193_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_193_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 194 } set_country_flag = GAW_plan_random_name_194_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_194_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 195 } set_country_flag = GAW_plan_random_name_195_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_195_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 196 } set_country_flag = GAW_plan_random_name_196_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_196_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 197 } set_country_flag = GAW_plan_random_name_197_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_197_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 198 } set_country_flag = GAW_plan_random_name_198_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_198_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 199 } set_country_flag = GAW_plan_random_name_199_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_199_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 200 } set_country_flag = GAW_plan_random_name_200_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_200_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 201 } set_country_flag = GAW_plan_random_name_201_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_201_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 202 } set_country_flag = GAW_plan_random_name_202_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_202_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 203 } set_country_flag = GAW_plan_random_name_203_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_203_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 204 } set_country_flag = GAW_plan_random_name_204_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_204_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 205 } set_country_flag = GAW_plan_random_name_205_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_205_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 206 } set_country_flag = GAW_plan_random_name_206_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_206_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 207 } set_country_flag = GAW_plan_random_name_207_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_207_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 208 } set_country_flag = GAW_plan_random_name_208_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_208_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 209 } set_country_flag = GAW_plan_random_name_209_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_209_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 210 } set_country_flag = GAW_plan_random_name_210_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_210_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 211 } set_country_flag = GAW_plan_random_name_211_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_211_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 212 } set_country_flag = GAW_plan_random_name_212_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_212_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 213 } set_country_flag = GAW_plan_random_name_213_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_213_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 214 } set_country_flag = GAW_plan_random_name_214_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_214_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 215 } set_country_flag = GAW_plan_random_name_215_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_215_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 216 } set_country_flag = GAW_plan_random_name_216_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_216_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 217 } set_country_flag = GAW_plan_random_name_217_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_217_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 218 } set_country_flag = GAW_plan_random_name_218_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_218_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 219 } set_country_flag = GAW_plan_random_name_219_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_219_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 220 } set_country_flag = GAW_plan_random_name_220_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_220_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 221 } set_country_flag = GAW_plan_random_name_221_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_221_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 222 } set_country_flag = GAW_plan_random_name_222_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_222_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 223 } set_country_flag = GAW_plan_random_name_223_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_223_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 224 } set_country_flag = GAW_plan_random_name_224_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_224_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 225 } set_country_flag = GAW_plan_random_name_225_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_225_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 226 } set_country_flag = GAW_plan_random_name_226_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_226_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 227 } set_country_flag = GAW_plan_random_name_227_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_227_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 228 } set_country_flag = GAW_plan_random_name_228_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_228_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 229 } set_country_flag = GAW_plan_random_name_229_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_229_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 230 } set_country_flag = GAW_plan_random_name_230_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_230_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 231 } set_country_flag = GAW_plan_random_name_231_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_231_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 232 } set_country_flag = GAW_plan_random_name_232_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_232_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 233 } set_country_flag = GAW_plan_random_name_233_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_233_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 234 } set_country_flag = GAW_plan_random_name_234_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_234_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 235 } set_country_flag = GAW_plan_random_name_235_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_235_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 236 } set_country_flag = GAW_plan_random_name_236_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_236_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 237 } set_country_flag = GAW_plan_random_name_237_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_237_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 238 } set_country_flag = GAW_plan_random_name_238_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_238_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 239 } set_country_flag = GAW_plan_random_name_239_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_239_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 240 } set_country_flag = GAW_plan_random_name_240_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_240_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 241 } set_country_flag = GAW_plan_random_name_241_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_241_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 242 } set_country_flag = GAW_plan_random_name_242_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_242_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 243 } set_country_flag = GAW_plan_random_name_243_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_243_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 244 } set_country_flag = GAW_plan_random_name_244_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_244_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 245 } set_country_flag = GAW_plan_random_name_245_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_245_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 246 } set_country_flag = GAW_plan_random_name_246_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_246_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 247 } set_country_flag = GAW_plan_random_name_247_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_247_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 248 } set_country_flag = GAW_plan_random_name_248_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_248_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 249 } set_country_flag = GAW_plan_random_name_249_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_249_flag } }
+		10 = { set_variable = { GAW_plan_random_name_var = 250 } set_country_flag = GAW_plan_random_name_250_flag modifier = { add = -10 has_country_flag = GAW_plan_random_name_250_flag } }
+	}
+	add_to_variable = { GAW_plan_random_name_count_var = 1 }
+}

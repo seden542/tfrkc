@@ -1,0 +1,10 @@
+characters={
+	PRK_kim_yojong_char = {
+		name = PRK_kim_yojong_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PRK_kim_yojong_char_civilian_large
+			}
+		}
+	}
+}

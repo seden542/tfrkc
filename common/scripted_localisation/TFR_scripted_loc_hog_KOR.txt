@@ -1,0 +1,109 @@
+defined_text = {
+	name = TFRKP_head_of_gov_dynamic_loc
+	### Ingame
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_kim_moon_soo_flag
+		}
+		localization_key = "KOR_hog_kim_moon_soo"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_kim_moon_soo_communist_flag
+		}
+		localization_key = "KOR_hog_kim_moon_soo_communist"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_im_jong_seok_flag
+		}
+		localization_key = "KOR_hog_im_jong_seok"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_kim_bu_gyeom_flag
+		}
+		localization_key = "KOR_hog_kim_bu_gyeom"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_ha_tae_kyung_flag
+		}
+		localization_key = "KOR_hog_ha_tae_kyung"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_nam_yeong_shin_flag
+		}
+		localization_key = "KOR_hog_nam_yeong_shin"
+	}
+	### Just Submod
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_yi_won_emperor_flag
+		}
+		localization_key = "KOR_hog_yi_won_emperor"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_yi_yeongju_emperor_flag
+		}
+		localization_key = "KOR_hog_yi_yeongju_emperor"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_yi_seok_emperor_flag
+		}
+		localization_key = "KOR_hog_yi_seok_emperor"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_hog_yi_won_joon_emperor_flag
+		}
+		localization_key = "KOR_hog_yi_won_joon_emperor"
+	}
+	### None
+	text = {
+		localization_key = "KOR_hog_vacant"
+	}
+}
+defined_text = {
+	name = TFRKP_hog_korea_name_loc
+	### Ingame
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_korea_name_goryeo_flag
+		}
+		localization_key = "KOR_hog_name_goryeo"
+	}
+	### Just Submod
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_korea_name_eok_flag
+		}
+		localization_key = "KOR_hog_name_eok"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = KOR_korea_name_sok_flag
+		}
+		localization_key = "KOR_hog_name_sok"
+	}
+	### None
+	text = {
+		localization_key = "KOR_hog_name_rok"
+	}
+}

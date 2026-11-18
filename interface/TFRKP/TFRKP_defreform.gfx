@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TFRKP_defreform_bg"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_bg.png"
+	}
+	spriteType = {
+		name = "GFX_TFRKP_defreform_logo_plate"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_logo_plate.png"
+	}
+	spriteType = {
+		name = "GFX_TFRKP_defreform_hanzi"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_hanzi.png"
+	}
+	# 토큰 (2프레임: 1=빈 것 / 2=보유)
+	spriteType = {
+		name = "GFX_TFRKP_defreform_token"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_token.png"
+		noOfFrames = 2
+	}
+	# 진척도/신뢰도 바 (21프레임, 프레임당 200x10)
+	spriteType = {
+		name = "GFX_TFRKP_defreform_progress_bar"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_progress_bar.png"
+		noOfFrames = 21
+	}
+	spriteType = {
+		name = "GFX_TFRKP_defreform_trust_bar"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_trust_bar.png"
+		noOfFrames = 21
+	}
+	# 선전 포스터 (각 3프레임: 기본/선택/호버, 프레임당 130x150)
+	spriteType = {
+		name = "GFX_TFRKP_defreform_poster_welfare"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_poster_welfare.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_TFRKP_defreform_poster_equip"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_poster_equip.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_TFRKP_defreform_poster_training"
+		texturefile = "gfx/interface/GUI/kimminseok_reform/defreform_poster_training.png"
+		noOfFrames = 3
+	}
+}

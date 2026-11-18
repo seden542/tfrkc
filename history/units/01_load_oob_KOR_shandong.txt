@@ -1,0 +1,75 @@
+﻿division_template = {
+	name = "Shandong Bobyeong Sadan"
+	division_names_group = KOR_INF_01
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }		
+		modern_armor = { x = 4 y = 0 }
+	}
+	
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
+		engineer = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location = 1104
+		division_template = "Shandong Bobyeong Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location = 1104
+		division_template = "Shandong Bobyeong Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 14981
+		division_template = "Shandong Bobyeong Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 56
+		}
+		location = 10000
+		division_template = "Shandong Bobyeong Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 10000
+		division_template = "Shandong Bobyeong Sadan"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}	
+}

@@ -1,0 +1,1022 @@
+capital = 1041 #Seoul
+
+oob = "KOR_2020"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "KOR_2000_naval_mtg"
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_air_oob = "KOR_2020_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		aa_hmg = 1
+		engines_1 = 1
+		engines_2 = 1
+		early_bombs = 1
+		guided_bombs = 1
+		aircraft_construction = 1
+		survivability_studies = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_medium_airframe = 1
+		iw_large_airframe = 1
+		short_range_missiles = 1
+		anti_ship_missiles = 1
+		photo_reconnaisance = 1
+	}
+	else = {
+		set_air_oob = "KOR_2020_air_legacy"
+		set_technology = {
+			CAS1 = 1
+			CAS2 = 1
+			cv_CAS1 = 1
+			fighter1 = 1
+			fighter2 = 1
+			fighter3 = 1
+			cv_fighter1 = 1
+			cv_fighter2 = 1
+			naval_bomber1 = 1
+			naval_bomber2 = 1
+			naval_bomber3 = 1
+			cv_naval_bomber1 = 1
+			strategic_bomber1 = 1
+			strategic_bomber2 = 1
+			tactical_bomber1 = 1
+			transport_plane2 = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		main_battle_tank1 = 1
+		main_battle_tank2 = 1
+		main_battle_tank3 = 1
+		light_tank1 = 1
+		mechanised_infantry1 = 1
+		mechanised_infantry2 = 1
+		light_mechanized_infantry1 = 1
+		light_mechanized_infantry2 = 1
+
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		legacy_armor_designs = 1
+		gwtank_chassis = 1
+		basic_medium_tank_chassis = 1
+		improved_medium_tank_chassis = 1
+		auto_loader_tech = 1
+		third_gen_nv_tech = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+		heat_tech = 1
+		apds_tech = 1
+		turret_mounted_mg_tech = 1
+		apfsds_tech = 1
+		heatfs_tech = 1
+	}
+}
+
+set_grand_doctrine = nato_western_doctrine #NATO 교리
+set_grand_doctrine = new_fleet_in_being #현존함대
+set_grand_doctrine = counter_air_operations #제공작전
+
+set_research_slots = 4
+set_convoys = 580
+set_stability = 0.4
+set_war_support = 0.4
+
+KOR_init_NatAsm = yes
+
+# 민주당 왕조주기
+KOR_dpk_gui_start_effect = yes
+set_variable = { KOR_lee_government_stability_max_var = 100 }
+
+#군대 신뢰
+set_variable = { KOR_army_morale = 30 }
+set_variable = { KOR_army_reform = 0 }
+set_variable = { KOR_army_trust = 20 }
+
+# 윤핵관용 변수
+set_variable = { TFR_KOR_ascended_advisor_1 = 1 }
+set_variable = { TFR_KOR_ascended_advisor_2 = 1 }
+set_variable = { TFR_KOR_ascended_advisor_3 = 1 }
+
+set_variable = { TFR_KOR_PPP_inner_circle_1 = 1 }
+set_variable = { TFR_KOR_PPP_inner_circle_2 = 1 }
+
+send_embargo = PRK
+# Country Leaders
+recruit_character = KOR_moon_jae_in_char
+recruit_character = KOR_hwang_kyo_ahn_char
+recruit_character = KOR_lee_jae_myung_char
+recruit_character = KOR_sim_sang_jung_char
+recruit_character = KOR_sohn_hak_kyu_char
+recruit_character = KOR_cho_won_jin_char
+recruit_character = KOR_kang_ki_hoon_char
+recruit_character = KOR_ryu_seung_gu_char
+recruit_character = KOR_lee_sang_kyu_char
+recruit_character = KOR_na_do_won_char
+recruit_character = KOR_lee_sang_hoon_char
+recruit_character = KOR_outlawed_char
+recruit_character = KOR_yoon_suk_yeol_char
+recruit_character = KOR_ahn_cheol_soo_char
+recruit_character = KOR_lee_jun_seok_char
+recruit_character = KOR_han_dong_hoon_char
+recruit_character = KOR_yoon_sang_hyun_char
+recruit_character = KOR_na_kyung_won_char
+recruit_character = KOR_chang_Je_won_char
+recruit_character = KOR_jang_dong_hyeok_char
+recruit_character = KOR_han_duck_soo_char
+recruit_character = KOR_choi_sang_muk_char
+recruit_character = KOR_lee_ju_ho_char
+recruit_character = KOR_kim_min_seok_char
+recruit_character = KOR_ai_park_chung_hee_char
+recruit_character = KOR_lee_nak_yon_char
+recruit_character = KOR_kim_min_soo_char
+recruit_character = KOR_cho_kyoung_tae_char
+recruit_character = KOR_kim_jae_sub_char
+recruit_character = KOR_chu_mi_ae_char
+recruit_character = KOR_cho_guk_char
+recruit_character = KOR_kim_joon_hyung_char
+recruit_character = KOR_park_yong_jin_char
+recruit_character = KOR_hwang_un_ha_char
+recruit_character = KOR_chong_won_oh_char
+recruit_character = KOR_park_beom_kye_char
+recruit_character = KOR_kim_moon_soo_char
+recruit_character = KOR_im_jong_seok_char
+recruit_character = KOR_won_hee_ryong_char
+recruit_character = KOR_yoon_eui_cheol_char
+recruit_character = KOR_kim_yong_woo_char
+recruit_character = KOR_park_chan_ju_char
+recruit_character = KOR_chun_ha_ram_char
+recruit_character = KOR_song_yeong_gil_char
+recruit_character = KOR_park_chan_dae_char
+recruit_character = KOR_park_joo_min_char
+recruit_character = KOR_kim_jae_yeon_char
+recruit_character = KOR_yoon_jong_o_char
+recruit_character = KOR_jang_hye_young_char
+recruit_character = KOR_lee_baek_yoon_char
+recruit_character = KOR_han_sang_gyun_char
+recruit_character = KOR_kwon_yong_gook_char
+recruit_character = KOR_kang_sung_hee_char
+recruit_character = KOR_shin_won_sik_char
+recruit_character = KOR_kim_byeong_joo_char
+recruit_character = KOR_lee_chang_yong_char
+recruit_character = KOR_kwak_sang_eon_char
+recruit_character = KOR_min_hyung_bae_char
+recruit_character = KOR_choe_kang_wook_char
+recruit_character = KOR_jeong_chung_rae_char
+recruit_character = KOR_chung_jin_suk_char
+recruit_character = KOR_kwon_seong_dong_char
+recruit_character = KOR_joo_ho_young_char
+recruit_character = KOR_kim_gi_hyeon_char
+recruit_character = KOR_yun_jae_ok_char
+recruit_character = KOR_yu_eui_dong_char
+recruit_character = KOR_yi_won_char
+recruit_character = KOR_yi_yeongju_char
+recruit_character = KOR_yi_seok_char
+recruit_character = KOR_yi_won_joon_char
+recruit_character = KOR_huh_kyung_young_char
+recruit_character = KOR_federation_char
+recruit_character = KOR_KSDLP_char
+recruit_character = KOR_vacant_char
+# Generals
+recruit_character = KOR_an_jun_suck_char
+recruit_character = KOR_nam_young_sin_char
+recruit_character = KOR_lee_doo_hee_char
+recruit_character = KOR_chang_kwang_sun_char
+recruit_character = KOR_sin_hee_heun_char
+recruit_character = KOR_lee_gu_jun_char
+recruit_character = KOR_ho_kang_soo_char
+recruit_character = KOR_soo_yung_min_char
+recruit_character = KOR_moon_sangho_char
+recruit_character = KOR_yeo_inhyung_char
+recruit_character = KOR_im_seong_geun_char
+recruit_character = KOR_park_an_soo_char
+recruit_character = KOR_kuak_jong_kun_char
+recruit_character = KOR_lee_jin_woo_char
+recruit_character = KOR_kim_heun_tee_char
+recruit_character = KOR_kang_Ho_pill_char
+recruit_character = KOR_chnag_seong_kun_char
+recruit_character = KOR_park_jae_yeol_char
+recruit_character = KOR_kang_shin_cheol_char
+recruit_character = KOR_go_chang_jun_char
+recruit_character = KOR_kim_seung_gyeom_char
+recruit_character = KOR_chae_myeong_sin_char
+recruit_character = KOR_macarthur_char
+recruit_character = KOR_you_kun_jong_char
+recruit_character = KOR_park_jeong_hwan_char
+recruit_character = KOR_jeon_dong_jin_char
+recruit_character = KOR_son_sik_char
+recruit_character = KOR_ahn_byung_seok_char
+recruit_character = KOR_jung_jin_pal_char
+recruit_character = KOR_won_cheon_hee_char
+recruit_character = KOR_eom_yong_jin_char
+recruit_character = KOR_kim_do_gyun_char
+# Admirals
+recruit_character = KOR_kim_in_ho_char
+recruit_character = KOR_lee_seong_yul_char
+recruit_character = KOR_kim_seong_hak_char
+recruit_character = KOR_lee_jong_ho_char
+recruit_character = KOR_yang_yong_mo_char
+recruit_character = KOR_kim_kyung_ryul_char
+recruit_character = KOR_an_sang_min_char
+recruit_character = KOR_kim_myeong_soo_char
+recruit_character = KOR_kang_dong_gil_char
+recruit_character = KOR_choi_sung_hyuk_char
+recruit_character = KOR_hwang_sun_woo_char
+# Airforce Advisors
+recruit_character = KOR_jung_sanghwa_char
+recruit_character = KOR_park_giwan_char
+recruit_character = KOR_lee_young_su_char
+recruit_character = KOR_son_seokrak_char
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	upgraded_infantry_weapons1 = 1
+	infantry_weapons3 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	infantry_rifle_upgrade2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	night_vision = 1
+	night_vision2 = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	camouflage2 = 1
+	marines = 1
+	tech_mountaineers = 1
+	tech_rangers = 1
+	paratroopers = 1
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	amphibious_mechanized_infantry = 1
+
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+
+	## Armor ##
+
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
+	tank_destroyer1 = 1
+	self_propelled_aa1 = 1
+	amphibious_tank1 = 1
+	amphibious_mechanized_infantry1 = 1
+
+	## Air ##
+	attack_helicopter_1 = 1
+	utility_helicopter_1 = 1
+
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	basic_train = 1
+
+	## Doctrines ##
+	mobile_warfare = 1
+	fleet_in_being = 1
+	formation_flying = 1
+
+	#전자공학
+	tech_20_nanometer_mosfet = 1
+	tech_10_nm_mosfets = 1
+	tech_5_nm_mosfets = 1
+	radio_detection = 1
+	power_plants = 1
+	power_plants1 = 1
+	nuclear_reactors = 1
+	energy_farms = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		aa_hmg = 1
+		engines_1 = 1
+		engines_2 = 1
+		early_bombs = 1
+		guided_bombs = 1
+		aircraft_construction = 1
+		survivability_studies = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_medium_airframe = 1
+		basic_medium_airframe = 1
+		iw_large_airframe = 1
+		basic_large_airframe = 1
+	}
+	else = {
+		set_technology = {
+			CAS1 = 1
+			CAS2 = 1
+			fighter1 = 1
+			fighter2 = 1
+			fighter3 = 1
+			naval_bomber1 = 1
+			naval_bomber2 = 1
+			naval_bomber3 = 1
+			strategic_bomber1 = 1
+			strategic_bomber2 = 1
+			strategic_bomber3 = 1
+			tactical_bomber1 = 1
+			transport_plane2 = 1
+		}
+	}
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		improved_heavy_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_carrier = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		#basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+add_ideas = {
+	#KOR_gdp_fix
+	KOR_dominance_of_chaebols
+	KOR_aging_population_idea
+	KOR_economic_bubble_idea
+	KOR_imf_idea
+	KOR_candlelight_idea
+
+	KOR_lee_nak_yon_HM
+	KOR_kang_kyung_hwa_FM
+	KOR_hong_nam_gi_EM
+	KOR_jin_young_IM
+	KOR_chung_eui_yong_IntelM
+	KOR_jeong_kyeong_doo_TM
+
+	KOR_safety_law
+	KOR_police_law
+	high_racial_integration
+	high_supervision
+	high_prison
+	KOR_korean_welfare
+	KOR_mobilization_hard_laws
+	KOR_only_male_service
+	KOR_korean_education
+	KOR_korean_immigration
+	KOR_social_agent_law
+	KOR_equal_female
+	higher_trade
+	high_poverty
+	high_industry
+}
+
+give_military_access = USA
+
+add_opinion_modifier = {
+	target = JAP
+	modifier = TFRKP_past_japanese_war_crimes #past_japanese_war_crimes
+}
+
+add_opinion_modifier = {
+	target = PRK
+	modifier = rival
+}
+
+add_opinion_modifier = {
+	target = PRK
+	modifier = rival_trade
+}
+
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2017.5.9"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	libertarian_socialist = 1
+	social_democrat = 4
+	social_liberal = 48
+	market_liberal = 6
+	conservative = 40
+	authoritarian_democrat = 1
+}
+
+add_offsite_building = { type = arms_factory level = 5 }
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_intelligence_agency = yes
+}
+
+# Seoul Mayor
+set_country_flag = KOR_seoul_mayor_park_wonsoon
+
+# Busan Mayor
+set_country_flag = KOR_busan_mayor_oh_keodon
+
+# Assembley
+### 2020.1.1 Start Party: DPK, ODP, PPP, JP, PP 
+
+#민주당계
+set_variable = { NA_show_DPK = 1 } # 더불어민주당
+set_variable = { NA_show_ODP = 1 } # 열린민주당
+set_variable = { NA_show_RKP = 0 } # 조국혁신당 # 미존재
+#보수정당
+set_variable = { NA_show_PPP = 1 } # 자한당
+set_variable = { NA_show_ORP = 0 } # 우리공화당 # 의석 X
+#진보정당
+set_variable = { NA_show_JP = 1 } # 정의당
+set_variable = { NA_show_TPP = 0 } # 민중당(진보당) # 의석 X
+set_variable = { NA_show_LP = 0 } # 노동당 # 의석 X
+set_variable = { NA_show_KSDP = 0 } # 사회민주당 # 의석 X
+set_variable = { NA_show_GPK = 0 } # 녹색당 # 의석 X
+set_variable = { NA_show_BIP = 0 } # 기본소득당 # 의석 X
+set_variable = { NA_show_PDP = 0 } # 민민당 # 의석 X # 이새끼들이 의석 먹으면 나라 망한 거임
+#제3지대
+set_variable = { NA_show_PP = 1 } # 바른미래당(국민의당)
+set_variable = { NA_show_RP = 0 } # 개혁신당 # 미존재
+set_variable = { NA_show_LUP = 0 } # 자유통일당 # 의석 X # 이새끼들이 의석 먹으면 나라 망한 거임
+set_variable = { NA_show_HEO = 0 } # 국가혁명당 # 의석 X # 이새끼들이 의석 먹으면 나라 망한 거임
+
+set_country_flag = speaker_moon_hee_sang # 국회의장 문희상
+
+country_event = { id = korea.21 days = 3 }      # 시작 외교 관계 이벤트
+country_event = { id = korea.2 days = 10 }      # 코로나 시작 이벤트
+country_event = { id = korea.782 days = 13 }      # 정세균 취임
+country_event = { id = korea.1159 days = 15 }   # 코로나 반응
+country_event = { id = korea.28 days = 47 }     # 미래통합당으로 당명 변경
+country_event = { id = korea.79 days = 54 }     # 국민의당으로 당명 변경
+country_event = { id = korea.23 days = 70 }     # 오일 쇼크 시작
+country_event = { id = korea.54 days = 73 }     # 코로나 집단 감염
+country_event = { id = korea.70 days = 95 }     # 사우디 보고서
+country_event = { id = korea.86 days = 100 }    # 코로나 집단 감염(사우디)
+country_event = { id = korea.266 days = 113 }   # 오거돈 사퇴
+country_event = { id = korea.84 days = 139 }    # 코로나 집단 감염(이태원)
+country_event = { id = korea.200 days = 149 }   # 탈주자
+country_event = { id = korea.15 days = 190 }    # 국정원 보고서
+country_event = { id = korea.265 days = 192 }   # 박원순 사망
+country_event = { id = korea.85 days = 225 }    # 코로나 집단 감염(전광훈)
+country_event = { id = korea.29 days = 245 }    # 국민의힘으로 당명 변경
+country_event = { id = korea.210 days = 370 }   # 조선로동당
+country_event = { id = korea.270 days = 444 }   # 윤석열의 정계진출
+country_event = { id = korea.159 days = 460 }   # 재보궐선거
+country_event = { id = korea.247 days = 480 }   # 랄로
+country_event = { id = korea.783 days = 499 }   # 김부겸 취임
+country_event = { id = korea.55 days = 650 }    # 미국기업
+country_event = { id = korea.169 days = 677 }   # 블두순 출시
+country_event = { id = korea.1374 days = 692 } # 전두환 사망
+country_event = { id = korea.74 days = 700 }    # 대통령 선거
+country_event = { id = korea.73 days = 870 }    # 대만 보고서
+country_event = { id = korea.908 days = 951 }   # 강남 폭우
+country_event = { id = korea.204 days = 956 }   # 쿠바 수교
+country_event = { id = korea.207 days = 992 }   # 북괴포격
+country_event = { id = korea.209 days = 1000 }  # 오물풍선
+country_event = { id = korea.208 days = 1226 }  # 뭔 미사일
+country_event = { id = korea.205 days = 1744 }  # 한강, 노벨문학상
+country_event = { id = korea.95 days = 1998 }   # 한일국교정상화 60주년
+country_event = { id = korea.907 days = 2093 }  # 달려라 달려 홍민택아
+country_event = { id = korea.906 days = 2262 }  # 크래프톤-한화
+news_event = { id = kor_news.61 days = 2007 } #북한의 새로운 경제?
+news_event = { id = kor_news.60 days = 2490 } #북한 콩 초콜뤳
+
+##수학능력시험
+
+country_event = { id = korea.217 days = 337 } #21수능
+country_event = { id = korea.218 days = 687 } #22수능
+country_event = { id = korea.219 days = 1051 } #23수능
+country_event = { id = korea.220 days = 1415 } #24수능
+country_event = { id = korea.221 days = 1779 } #25수능
+country_event = { id = korea.258 days = 2143 } #26수능
+country_event = { id = korea.262 days = 2507 } #27수능
+country_event = { id = korea.263 days = 2871 } #28수능
+
+### VARIANTS ###
+# 2000 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	## Corvettes ##
+	create_equipment_variant = { #Corvette 2
+		name = "Donghae-class"
+		type = ship_hull_light_1
+		name_group = KOR_DD_HISTORICAL #고증(PCC)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_early_ship_PCC0_medium"
+	}
+
+	## Frigates ##
+	create_equipment_variant = { #Frigate 2
+		name = "Ulsan-class"
+		type = ship_hull_cruiser_1
+		name_group = KOR_CL_HISTORICAL_2 #고증(FF)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_early_ship_PCC_medium"
+
+	}
+
+	##호위함##
+	create_equipment_variant = { #Frigate 2
+		name = "Incheon-class"
+		type = ship_hull_cruiser_1
+		name_group = KOR_CL_HISTORICAL_3 #고증(FFG)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_secondaries_2
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_early_ship_hull_light_medium"
+
+	}
+
+	## Destroyers ##
+	create_equipment_variant = { #Destroyer 1
+		name = "Chungbuk-class"
+		type = ship_hull_cruiser_1
+		name_group = KOR_CL_HISTORICAL #고증(DD)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = yes
+
+	}
+	create_equipment_variant = {
+		name = "Gwanggaeto the Great-class"
+		type = ship_hull_cruiser_1
+		name_group = KOR_CA_HISTORICAL_2 #고증(DDH)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_early_ship_DD0_medium"
+
+	}
+	create_equipment_variant = {
+		name = "Sejong the great-Class"
+		type = ship_hull_cruiser_2
+		name_group = KOR_CA_HISTORICAL #고증(DDG)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_medium_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_2
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		icon = "GFX_KOR_basic_ship_hull_cruiser_medium"
+
+	}
+	create_equipment_variant = {
+		name = "Chungmugong Yi sun sin-class"
+		type = ship_hull_cruiser_1
+		name_group = KOR_CA_HISTORICAL_2 #고증(DDH)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_2
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_early_ship_hull_cruiser_medium"
+
+	}
+	create_equipment_variant = {
+		name = "Daegu-class"
+		type = ship_hull_cruiser_2
+		name_group = KOR_CL_HISTORICAL_3 #고증(FFG)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_2
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_basic_ship_hull_light_medium"
+
+	}
+
+	## 초계함 ##
+	create_equipment_variant = { #Corvette 2
+		name = "Pohang-class"
+		type = ship_hull_light_1
+		name_group = KOR_DD_HISTORICAL #고증(PCC)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		icon = "GFX_KOR_early_ship_PCC2_medium"
+	}
+	create_equipment_variant = { #Corvette 2
+		name = "Yoon Youngha-class"
+		type = ship_hull_light_2
+		name_group = KOR_DD_HISTORICAL_2 #고증(PKG)
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+		icon = "GFX_KOR_early_ship_PKMR_medium"
+	}
+
+	##헬기항모##
+	create_equipment_variant = {
+		name = "Dokdo-Class"
+		type = ship_hull_carrier_conversion_ca
+		name_group = KOR_CVL_HISTORICAL #고증(LPH)
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = empty
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_airplane_launcher_2
+		}
+	}
+
+	## Submarines ##
+	create_equipment_variant = { #Nuclear Sub 2
+		name = "Jang Bogo-Class"
+		type = ship_hull_submarine_1
+		name_group = KOR_SS_HISTORICAL #고증(SS)
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = { #Nuclear Sub 2
+		name = "Son won il-Class"
+		type = ship_hull_submarine_1
+		name_group = KOR_SS_HISTORICAL #고증(SS)
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = { #Nuclear Sub 2
+		name = "Dosan An chang ho-Class"
+		type = ship_hull_submarine_2
+		name_group = KOR_SS_HISTORICAL #고증(SS)
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			mid_1_custom_slot = ship_radar_1
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "F-5E/KF-5"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			fixed_auxiliary_weapon_slot_2 = empty
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		obsolete = yes
+		icon = "GFX_KOR_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "F-4E"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		obsolete = yes
+		icon = "GFX_KOR_iw_small_airframe_medium"
+	}
+	create_equipment_variant = {
+		name = "F-15K Slam Eagle"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = hmg_defense_turret
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_KOR_CAS3_medium"
+
+	}
+	create_equipment_variant = {
+		name = "F-16PBU/KF-16"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = hmg_defense_turret
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_KOR_basic_small_airframe_medium"
+	}
+
+	create_equipment_variant = {
+		name = "FA-50"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = hmg_defense_turret
+			special_type_slot_3 = empty
+		}
+		obsolete = yes
+		icon = "GFX_KOR_CAS2_medium"
+
+	}
+
+	create_equipment_variant = {
+		name = "P-8"
+		type = large_plane_maritime_patrol_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			fixed_auxiliary_weapon_slot_2 = empty
+			engine_type_slot = engine_2_3x
+			special_type_slot_1 = fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+		}
+		icon = "GFX_JAP_maritime_patrol_plane_medium"
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "M48A5K 'Patton'"
+		type = modern_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = smoke_launchers
+			special_type_slot_5 = gunner_nv_2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_KOR_main_battle_tank1_medium"
+	}
+	create_equipment_variant = {
+		name = "K-1E1 '88 tank'"
+		type = modern_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = smoke_launchers
+			special_type_slot_5 = gunner_thermal_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+		icon = "GFX_KOR_main_battle_tank2_medium"
+	}
+	create_equipment_variant = {
+		name = "K-1A1/A2 '88 tank'"
+		type = modern_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = smoke_launchers
+			special_type_slot_5 = gunner_thermal_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+		icon = "GFX_KOR_main_battle_tank3_medium"
+	}
+	create_equipment_variant = {
+		name = "K-2 'Black Panther'"
+		type = modern_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = smoke_launchers
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = sloped_armor
+			special_type_slot_4 = tank_radio_1
+			#
+			special_type_slot_5 = gunner_thermal_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+	}
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1500
+	producer = KOR
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 200
+	producer = KOR
+}

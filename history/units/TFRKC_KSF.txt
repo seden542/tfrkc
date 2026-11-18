@@ -1,0 +1,18 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KSF 3" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC KSF infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KSF armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "민족정화전선 이탈군 전투단" location = 14244 division_template = "TFRKC KSF 3" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "민족정화전선 제1무장대" location = 15189 division_template = "TFRKC KSF 3" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "민족정화전선 제2무장대" location = 14244 division_template = "TFRKC KSF 3" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제1보병사단" location = 15189 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제2보병사단" location = 14244 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제3보병사단" location = 15189 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제4보병사단" location = 14244 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제5보병사단" location = 15189 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제6보병사단" location = 14244 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제7보병사단" location = 15189 division_template = "TFRKC KSF infantry_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제1기갑사단" location = 14244 division_template = "TFRKC KSF armored_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+division = { name = "KSF 증편 제2기갑사단" location = 15189 division_template = "TFRKC KSF armored_division" start_experience_factor = 0.25 start_equipment_factor = 0.55 start_manpower_factor = 0.65 }
+}

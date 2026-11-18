@@ -1,0 +1,45 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KYA 6" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
+division_template = { name = "TFRKC KYA 3" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC KYA infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KYA armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "제39사단 가담 전투단" location = 4056 division_template = "TFRKC KYA 6" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "제53사단 가담 전투단" location = 15100 division_template = "TFRKC KYA 6" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "제50사단 윤어게인 분파" location = 14235 division_template = "TFRKC KYA 3" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "윤어게인 정규군 혼성전투단" location = 15180 division_template = "TFRKC KYA 6" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "윤어게인 제1민병여단" location = 15179 division_template = "TFRKC KYA 3" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "윤어게인 제2민병여단" location = 14234 division_template = "TFRKC KYA 3" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "윤어게인 제3민병여단" location = 15101 division_template = "TFRKC KYA 3" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "윤어게인 제4민병여단" location = 4086 division_template = "TFRKC KYA 3" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제1보병사단" location = 14227 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제2보병사단" location = 15174 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제3보병사단" location = 15172 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제4보병사단" location = 12060 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제5보병사단" location = 15145 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제6보병사단" location = 10085 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제7보병사단" location = 15128 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제8보병사단" location = 15087 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제9보병사단" location = 1054 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제10보병사단" location = 14229 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제11보병사단" location = 7121 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제12보병사단" location = 15182 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제13보병사단" location = 11912 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제14보병사단" location = 14237 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제15보병사단" location = 15137 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제16보병사단" location = 12089 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제17보병사단" location = 4103 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제18보병사단" location = 15102 division_template = "TFRKC KYA infantry_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제1기갑사단" location = 15147 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제2기갑사단" location = 15112 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제3기갑사단" location = 14233 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제4기갑사단" location = 15178 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제5기갑사단" location = 4056 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제6기갑사단" location = 15100 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제7기갑사단" location = 14235 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제8기갑사단" location = 15180 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제9기갑사단" location = 15179 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제10기갑사단" location = 14234 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제11기갑사단" location = 15101 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KYA 증편 제12기갑사단" location = 4086 division_template = "TFRKC KYA armored_division" start_experience_factor = 0.5 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+}

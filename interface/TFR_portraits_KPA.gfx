@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_KPA_kim_jongun
+		textureFile = "gfx/leaders/PRK/PRK_kim_jong_un.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KPA_kim_jongun_army
+		textureFile = "gfx/leaders/KPA/KPA_kim_jongun_army.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KPA_kim_jongun_korean
+		textureFile = "gfx/leaders/KPA/KPA_kim_jongun_korean.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KPA_cho_yongwon
+		textureFile = "gfx/leaders/KPA/KPA_cho_yongwon.png"
+	}
+}

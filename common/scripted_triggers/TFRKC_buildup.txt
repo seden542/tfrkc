@@ -1,0 +1,33 @@
+# Narrative gates only; never alter the martial-law readiness or calendar.
+TFRKC_buildup_live_trigger = {
+ tag = KOR exists = yes has_country_flag = TFRKC_stage_1
+ NOT = { has_global_flag = TFRKC_civilwar_active }
+ NOT = { has_global_flag = TFRKC_civilwar_finished }
+ NOT = { has_country_flag = TFRKC_deadline_checked }
+ # Original korea.202 records success immediately with this existing flag.
+ NOT = { has_country_flag = KOR_yoon_under_martial_law }
+ OR = { NOT = { has_country_flag = TFRKC_proclamation_recorded } has_country_flag = TFRKC_calendar_armed has_country_flag = TFRKC_crisis_pending }
+}
+TFRKC_buildup_slot_trigger = {
+ TFRKC_buildup_live_trigger = yes
+ OR = { NOT = { has_country_flag = TFRKC_buildup_main_marked } NOT = { check_variable = { var = TFRKC_buildup_main_day value = global.num_days compare = equals } } }
+ OR = { NOT = { has_country_flag = TFRKC_buildup_shown_any } check_variable = { var = global.num_days value = TFRKC_buildup_next_day compare = greater_than_or_equals } }
+}
+TFRKC_buildup_1_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_1_seen } has_country_flag = TFRKC_stage_1 NOT = { has_country_flag = TFRKC_stage_3 } NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_2_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_2_seen } has_country_flag = TFRKC_stage_1 NOT = { has_country_flag = TFRKC_stage_3 } NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_3_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_3_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_4_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_4_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_5_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_5_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_6_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_6_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_7_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_7_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_8_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_8_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_9_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_9_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_10_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_10_seen } has_country_flag = TFRKC_national_unrest NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+TFRKC_buildup_11_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_11_seen } has_country_flag = TFRKC_stage_12 has_country_flag = TFRKC_calendar_armed NOT = { has_country_flag = KOR_yoon_failed_coup } NOT = { has_country_flag = TFRKC_stage_5 } }
+TFRKC_buildup_12_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_12_seen } has_country_flag = TFRKC_stage_12 has_country_flag = TFRKC_calendar_armed NOT = { has_country_flag = KOR_yoon_failed_coup } NOT = { has_country_flag = TFRKC_stage_5 } }
+TFRKC_buildup_13_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_13_seen } has_country_flag = TFRKC_stage_5 has_country_flag = TFRKC_crisis_pending NOT = { has_country_flag = TFRKC_stage_7 } }
+TFRKC_buildup_14_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_14_seen } has_country_flag = TFRKC_stage_7 has_country_flag = TFRKC_crisis_pending NOT = { has_country_flag = TFRKC_stage_8 } }
+TFRKC_buildup_15_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_15_seen } has_country_flag = TFRKC_stage_8 has_country_flag = TFRKC_crisis_pending NOT = { has_country_flag = TFRKC_stage_9 } }
+TFRKC_buildup_16_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_16_seen } has_country_flag = TFRKC_stage_9 has_country_flag = TFRKC_crisis_pending NOT = { has_country_flag = TFRKC_stage_10 } }
+TFRKC_buildup_17_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_17_seen } has_country_flag = TFRKC_stage_10 has_country_flag = TFRKC_crisis_pending NOT = { has_country_flag = TFRKC_stage_11 } }
+TFRKC_buildup_18_ready_trigger = { TFRKC_buildup_slot_trigger = yes NOT = { has_country_flag = TFRKC_buildup_18_seen } has_country_flag = TFRKC_stage_11 has_country_flag = TFRKC_crisis_pending }

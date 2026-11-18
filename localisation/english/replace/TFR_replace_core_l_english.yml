@@ -1,0 +1,40 @@
+﻿l_english:
+ QUIT_DESC: "Will you temporarily postpone something that is truly inevitable?\n\nWould you like to return to the world in your fantasy?"
+ RESIGN_DESC: "Returning to the past will save nothing. This process cannot be reversed.  \n\nAre you sure you wish to proceed?"
+ FE_SELECT_SCENARIO: "A world that changes itself"
+ CONTINUOUS_FOCUS_TREE_HEADER: ""
+ CONTINUOUS_FOCUS_TREE_DESC: ""
+ CONTINUOUS_FOCUS_LOCKED_DESC: ""
+ CONTINUOUS_FOCUS_UNLOCKED_DESC: ""
+ LOADING_MAP_SPRITES: "Meeting up at Lotteria..." #
+ LOAD_INIT: "The flames are rising..." # 
+ LOAD_EVENTS: "Planning a disaster..." #
+ LOAD_GFX: "Dividing the people..." #
+ LOADING_GUI: "Burning the world..."  #
+ LOADING_HISTORY: "Writing history anew..." #
+ CREATING_CHKSUM: "Interfering with development..." #
+ LOADING_DATABASES: "Accumulating dollars..." #
+ LOAD_FLAGS: "Cutting the R&D budget..." #
+ PRECALC_NAVAL_DIST: "Watching the blazing world..." #
+ LOAD_GFX_PDXMAP_SHADERS: "Exercising influence over the media..." 
+ LOAD_GFX_PDXMAP_TERRAIN: "Reorganizing the cabinet..." #
+ LOAD_GFX_PDXMAP_BORDERS: "Signing up for PDTO..." #
+ LOAD_GFX_PDXMAP_TEXTURES: "Accepting refugees..." #
+ LOAD_GFX_PDXMAP_TREES: "Undergoing economic sanctions..." #
+ LOAD_GFX_PDXMAP_RIVERS: "Dispersing the protesters..." #
+ LOAD_GFX_PDXMAP_STATIC_OBJECTS: "Preparing for martial law..." #
+ INIT_MAP_LOGIC: "Deconstructing democracy..." #
+ INIT_GAMESTATE: "Crossing the 38th parallel..." #
+ NAVAL_COMBAT_SHIP_STRENGTH: "£strenght_texticon Durability: $STR|%Y$"
+ NAVAL_COMBAT_SHIP_ORGANIZATION_FACTOR: "- £organization_texticon Organization: $ORG|%Y$"
+ UNIT_ORG: "£organization_texticon Organization: $VALUE|H$"
+ ARMY_UNIT_ORG: "£organization_texticon Organization: $VALUE|%H$"
+ COMBAT_ATTACK_BUFF: "£attack_texticon Attack" 
+ COMBAT_DEFENSE_BUFF: "£defence_texticon Defense"
+ COMBAT_BREAKTHROUGH_BUFF: "Breakthrough £breakthrough_texticon"
+ COMBAT_ENTRENCHMENT_BUFF: "£dig_in_texticon Trench"
+ ORG_DAMAGE_MULTIPLIER: "£organization_texticon Organization damage"
+ STR_DAMAGE_MULTIPLIER: "£strenght_texticon Strength Damage"
+ WAR_SUPPORT_REDUCTION_ON_DAMAGE: "£war_support_texticon War Support Reduction from Damage"
+ ACHIEVEMENT_UNLOCKED_WHEN: "§СPrecondition:§!"
+ EFFECT_ACTIVATE_TARGETED_DECISION: "Activate Decision: $NAME|H$"

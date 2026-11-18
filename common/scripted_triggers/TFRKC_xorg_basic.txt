@@ -1,0 +1,16 @@
+TFRKC_xorg_GWANGJU_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_GWANGJU_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_JEONJU_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_JEONJU_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_CORPORATE_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_CORPORATE_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_CONTINUITY_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_CONTINUITY_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_TAEBAEK_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_TAEBAEK_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_FARMERS_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_FARMERS_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_COVENANT_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_COVENANT_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_TAIWAN_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_TAIWAN_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_DAEDEOK_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_DAEDEOK_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_RAIL_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_RAIL_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_WHITE_NIGHT_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_WHITE_NIGHT_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_CHEONGSONG_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_CHEONGSONG_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_IMPERIAL_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_IMPERIAL_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_HOMECOMING_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_HOMECOMING_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_CREDIT_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_CREDIT_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }
+TFRKC_xorg_UNDERGROUND_actor_trigger = { exists = yes has_country_flag = TFRKC_xorg_UNDERGROUND_actor has_global_flag = TFRKC_civilwar_active NOT = { has_global_flag = TFRKC_civilwar_finished } }

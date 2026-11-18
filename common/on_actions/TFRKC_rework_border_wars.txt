@@ -1,0 +1,4 @@
+on_actions = { on_daily = { effect = {
+ TFRKC_rework_refresh_border_wars_effect = yes
+ # Refresh controlled-territory adjacency after conquest; no stale start-neighbour list.
+} } }

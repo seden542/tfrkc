@@ -1,0 +1,129 @@
+@tier1_cp_cap_increase = 10
+@tier2_cp_cap_increase = 20
+@tier3_cp_cap_increase = 30
+
+@tier1_cp_cost = 0
+@tier2_cp_cost = 0
+@tier3_cp_cost = 0
+
+@experience_gain_low = 0.04
+@experience_gain_medium = 0.07
+@experience_gain_high = 0.1
+
+@chief_experience_gain_low = 0.1
+@chief_experience_gain_medium = 0.2
+@chief_experience_gain_high = 0.3
+leader_traits = {
+	#Defense Minister
+	chung_arm_pa = {
+		sprite = 14
+		war_support_factor = 0.05
+		political_power_gain = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yoon_suck_pa = {
+		sprite = 1
+		training_time_army_factor = 0.03
+		political_power_gain = 0.1
+		experience_gain_army_factor = 0.05
+		command_cap_increase = @tier1_cp_cap_increase
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chung_su_pa = {
+		sprite = 1
+		training_time_army_factor = 0.03
+		political_power_gain = 0.3
+		command_cap_increase = @tier1_cp_cap_increase
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	######
+	# 윤핵관 #
+	######
+	KOR_ppp_sadan_faction = {
+		random = no
+
+		political_power_factor = 0.05
+	}
+
+	KOR_ppp_party_leadership_faction = {
+		random = no
+		war_support_weekly = 0.001
+	}
+
+	KOR_ppp_Non_faction = {
+		random = no
+		stability_weekly = 0.001
+	}
+
+	KOR_ppp_reformist = { random = no }
+	KOR_ppp_center = { random = no }
+	KOR_ppp_hardliner = { random = no }
+
+	KOR_choo_kyung_ho_trait = {
+		random = no
+
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.015
+	}
+
+	KOR_chang_Je_won_trait = {
+		random = no
+		
+		stability_factor = 0.015
+		political_power_factor = 0.05
+	}
+	KOR_yoon_sang_hyun_trait = {
+		random = no
+		
+		war_support_factor = 0.03
+	}
+	KOR_yoo_seong_min_trait = {
+		random = no
+		
+		stability_factor = 0.015
+		political_power_factor = 0.1
+	}
+	KOR_Hong_joon_pyo_trait = {
+		random = no
+
+		political_power_factor = 0.1
+	}
+	KOR_ahn_cheol_soo_trait = {
+		random = no
+
+		stability_factor = 0.015
+		research_speed_factor = 0.05
+	}
+	KOR_kim_chong_in_trait = {
+		random = no
+
+		political_power_factor = 0.05
+		stability_factor = 0.025
+	}
+	KOR_han_dong_hoon_trait = {
+		random = no
+		
+		stability_factor = -0.015
+		political_power_factor = 0.15
+	}
+	KOR_lee_sang_min_trait = {
+		random = no
+		
+		stability_factor = 0.05
+		political_power_factor = -0.05
+	}
+	KOR_lee_jun_seok_trait = {
+		random = no
+		
+		stability_weekly = -0.001
+		political_power_gain = 0.2
+		party_popularity_stability_factor = 0.05
+	}
+}

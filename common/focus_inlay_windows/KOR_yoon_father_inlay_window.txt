@@ -1,0 +1,15 @@
+KOR_yoon_father_inlay_window = {
+	window_name = TFR_KOR_yoon_father_inner_circle_gui_window
+	internal = no
+	visible = {
+		KOR_is_yoon_path = yes
+		KOR_is_yoon_declare_martial_law = yes
+		has_country_flag = KOR_yoon_winter_republic
+		NOT = { has_country_flag = KOR_yoon_mtl_focus_unlock }
+	}
+	scripted_images = {
+		yoon_father_icon = {
+			GFX_KOR_yoon_father_icon = yes
+		}
+	}
+}

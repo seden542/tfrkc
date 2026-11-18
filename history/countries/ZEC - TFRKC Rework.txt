@@ -1,0 +1,5 @@
+# Technical placeholder; ideology and command personalities are not canon.
+capital = 1661
+set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+set_popularities = { authoritarian_democrat = 100 }
+create_country_leader = { name = TFRKC_REWORK_ZEC_leader picture = "gfx/leaders/leader_unknown.dds" ideology = judicial_authoritarianism expire = "2050.1.1" }

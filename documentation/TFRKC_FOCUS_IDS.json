@@ -1,0 +1,2669 @@
+{
+  "date": "2026-11-16",
+  "mod": "C:/Users/L/Documents/Paradox Interactive/Hearts of Iron IV/mod/tfrkc",
+  "kp": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195",
+  "tfr": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3350890356",
+  "game": "C:/Program Files (x86)/Steam/steamapps/common/Hearts of Iron IV",
+  "trees": [
+    {
+      "tag": "KOR",
+      "name": "대한민국 정부",
+      "id": "TFRKC_focus_KOR_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KOR_start",
+          "key": "start",
+          "title": "정부는 여기에 있습니다",
+          "desc": "전주에서 숨진 열세 명과 전국의 혼란 끝에 이주호 권한대행에게 남은 것은 국가의 직인과 비어 가는 사무실입니다. 오늘 발송할 공문부터 정리하겠습니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 35 add_stability = 0.02",
+          "parents": [],
+          "ai": 100,
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_a1",
+          "key": "a1",
+          "title": "내일의 배급표",
+          "desc": "수도에 남은 사람에게 정통성은 식량을 대신하지 못합니다. 배급소와 보관 창고를 연결해 오늘의 줄이 내일도 이어지게 해야 합니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_stability = 0.04",
+          "parents": [
+            "TFRKC_focus_KOR_start"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "ai": 35,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_a2",
+          "key": "a2",
+          "title": "가로등 아래의 순찰",
+          "desc": "군대를 새로 만들 수는 없어도 피난민 숙소와 배급소의 순찰은 정리할 수 있습니다. 총성 뒤에도 주민이 돌아갈 길을 남겨야 합니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_stability = 0.03 add_war_support = -0.01",
+          "parents": [
+            "TFRKC_focus_KOR_a1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_a3",
+          "key": "a3",
+          "title": "도착하는 공문",
+          "desc": "명부와 창고 장부를 맞춥니다. 행정망의 본격 복구는 기존 전시 행정 복구 디시전이 담당하며, 중점은 그 비용을 마련합니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_political_power = 40 custom_effect_tooltip = TFRKC_focus_administration_tt",
+          "parents": [
+            "TFRKC_focus_KOR_a2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_m1",
+          "key": "m1",
+          "title": "남아 있는 지휘관들",
+          "desc": "중앙기관을 지킨 병력은 적고 전선은 깁니다. 연락이 되는 지휘관을 모아 서로의 담당 구역부터 확인합니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 8",
+          "parents": [
+            "TFRKC_focus_KOR_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 60,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_m2",
+          "key": "m2",
+          "title": "다시 쓰는 복무명부",
+          "desc": "복무 가능한 성인 예비역 가운데 자발적으로 응한 인원을 실제 보충 명부에 올립니다. 수백 명을 모으는 일이 지금 정부에는 하나의 작전입니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_manpower = 600",
+          "parents": [
+            "TFRKC_focus_KOR_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_m3",
+          "key": "m3",
+          "title": "고쳐 쓰는 국가",
+          "desc": "정비창과 군수 계약을 연결합니다. 생산 기반이 부족한 정부는 버려진 장비를 고쳐 쓰며 생산 효율을 조금씩 회복합니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_gov_repair",
+          "parents": [
+            "TFRKC_focus_KOR_m2"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_p1",
+          "key": "p1",
+          "title": "헌법에 남은 빈칸",
+          "desc": "비상권한을 어떻게 사용할지 정해야 합니다. 누구도 이주호 권한대행에게 백지 위임장을 준 것은 아닙니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20",
+          "parents": [
+            "TFRKC_focus_KOR_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_pA",
+          "key": "pA",
+          "title": "기록되는 결재",
+          "desc": "지방 대표의 이의와 감사 기록을 남깁니다. 서명이 늦어져도 정부가 지키려는 제도를 먼저 지울 수는 없습니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_gov_civil",
+          "parents": [
+            "TFRKC_focus_KOR_p1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KOR_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_pB",
+          "key": "pB",
+          "title": "한시적 긴급예산",
+          "desc": "군수 주문이 심사를 기다리는 동안 전선이 무너집니다. 긴급 절차를 열되 그 대가인 불신을 감수합니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_gov_emergency",
+          "parents": [
+            "TFRKC_focus_KOR_p1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_focus_KOR_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_pA2",
+          "key": "pA2",
+          "title": "이름을 지우지 않는 장부",
+          "desc": "지원 대상의 이름과 이의 제기를 보존합니다. 행정 복구가 서류 밖의 사람에게도 도달해야 합니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_stability = 0.03 add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KOR_pA"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_pB2",
+          "key": "pB2",
+          "title": "먼저 보내는 납품서",
+          "desc": "군수 주문의 우선순위를 명확히 합니다. 새 공장이 생기지는 않지만 정비와 보급 담당자의 경험은 쌓입니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "army_experience = 8",
+          "parents": [
+            "TFRKC_focus_KOR_pB"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_logistics",
+          "key": "logistics",
+          "title": "끊어지지 않는 배급선",
+          "desc": "남은 병력과 배급 담당자가 같은 지도를 씁니다. 국가를 되찾기 전에 오늘의 보급로부터 잃지 않아야 합니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_gov_supply",
+          "parents": [
+            "TFRKC_focus_KOR_a3",
+            "TFRKC_focus_KOR_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_charter",
+          "key": "charter",
+          "title": "다시 국가가 되기까지",
+          "desc": "중앙정부라는 이름은 아직 약속에 가깝습니다. 통일 뒤 행정과 헌정 복원을 이어 갈 초안을 남기며, 현재의 전쟁을 끝냈다고 선언하지는 않습니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_political_power = 30 add_stability = 0.03 custom_effect_tooltip = TFRKC_focus_postwar_tt",
+          "parents": [
+            "TFRKC_focus_KOR_logistics",
+            "TFRKC_focus_KOR_m3"
+          ],
+          "orParents": [
+            "TFRKC_focus_KOR_pA2",
+            "TFRKC_focus_KOR_pB2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_diplomacy",
+          "key": "diplomacy",
+          "title": "외교행낭을 지키다",
+          "desc": "대사관에 정부의 존속과 지원 물자의 관리 절차를 알립니다. 국제적 승인과 실제 원조 여부는 각국의 판단에 달려 있습니다.",
+          "x": 18,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20 custom_effect_tooltip = TFRKC_focus_aid_tt",
+          "parents": [
+            "TFRKC_focus_KOR_start"
+          ],
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_pdto",
+          "key": "pdto",
+          "title": "일본과 맞추는 부품표",
+          "desc": "일본 중심 PDTO 측에 전달할 정비 규격과 물자 요청서를 정리합니다. 기존 일본 지원 사건의 결정을 존중하며 동맹 가입이나 참전을 요청하지 않습니다.",
+          "x": 17,
+          "y": 2,
+          "cost": 2,
+          "reward": "army_experience = 5 add_political_power = 15 custom_effect_tooltip = TFRKC_focus_pdto_tt",
+          "parents": [
+            "TFRKC_focus_KOR_diplomacy"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_nato",
+          "key": "nato",
+          "title": "유럽으로 보내는 전문",
+          "desc": "미국과 캐나다가 빠진 NATO의 유럽 측 연락 창구에 민간 보호와 지원 관리 자료를 보냅니다. 일본과의 부품 협의와 별도로 처리합니다.",
+          "x": 20,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_political_power = 25 add_stability = 0.01 custom_effect_tooltip = TFRKC_focus_nato_tt",
+          "parents": [
+            "TFRKC_focus_KOR_diplomacy"
+          ],
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KOR_joint",
+          "key": "joint",
+          "title": "별개의 지휘부, 같은 전선",
+          "desc": "헌정수호연합은 정부의 부속 부대가 아닙니다. 각자의 지휘권을 인정한 채 연락 장교와 보급 보고 형식을 맞춥니다.",
+          "x": 18,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 8 custom_effect_tooltip = TFRKC_focus_joint_tt",
+          "parents": [
+            "TFRKC_focus_KOR_pdto",
+            "TFRKC_focus_KOR_nato"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "available": "KCH = { exists = yes has_capitulated = no } is_in_faction_with = KCH NOT = { has_war_with = KCH }",
+          "exclusive": [],
+          "orParents": []
+        }
+      ]
+    },
+    {
+      "tag": "KCH",
+      "name": "헌정수호연합",
+      "id": "TFRKC_focus_KCH_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KCH_start",
+          "key": "start",
+          "title": "총구 앞의 헌법",
+          "desc": "정부의 초기 동맹이지만 우리의 지휘권은 독립되어 있습니다. 헌법을 지킨다는 말을 부대의 행동 지침으로 바꿔야 합니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 30 army_experience = 5",
+          "parents": [],
+          "ai": 100,
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_a1",
+          "key": "a1",
+          "title": "초당적 연락망",
+          "desc": "정당의 깃발을 접으라고 요구하는 대신 합의할 수 있는 최소 원칙을 적습니다. 연합은 같은 생각을 가진 사람만으로 유지되지 않습니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_stability = 0.04",
+          "parents": [
+            "TFRKC_focus_KCH_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_a2",
+          "key": "a2",
+          "title": "후방의 문을 열다",
+          "desc": "강원도의 병원과 창고를 민간 연락위원회에 연결합니다. 군사적 필요가 주민의 삶을 전부 대체하지 않게 해야 합니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_ch_civil",
+          "parents": [
+            "TFRKC_focus_KCH_a1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_a3",
+          "key": "a3",
+          "title": "공동전선 연락실",
+          "desc": "정부와 연락할 준비를 마칩니다. 정부가 사라지거나 동맹이 깨져도 우리의 연락 체계와 작전 기록은 남습니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "army_experience = 8 custom_effect_tooltip = TFRKC_focus_joint_tt",
+          "parents": [
+            "TFRKC_focus_KCH_a2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_m1",
+          "key": "m1",
+          "title": "비울 수 없는 초소",
+          "desc": "후방 내전이 시작되어도 전방 경계의 책임은 남습니다. 부대 위치와 보급 수요를 다시 점검합니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 10",
+          "parents": [
+            "TFRKC_focus_KCH_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 65,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_m2",
+          "key": "m2",
+          "title": "교대되는 경계선",
+          "desc": "기존 경계 병력의 교대와 보급 일정을 정비해 두 방향을 지키는 부담을 줄입니다. 전방을 포기하는 명령은 아닙니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_frontier_burden } swap_ideas = { remove_idea = TFRKC_frontier_burden add_idea = TFRKC_focus_ch_front } }",
+          "parents": [
+            "TFRKC_focus_KCH_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_m3",
+          "key": "m3",
+          "title": "성인 예비역의 복귀",
+          "desc": "방어 임무를 맡을 성인 예비역을 제한적으로 보충합니다. 경계선을 지키는 병력을 모두 후방으로 돌릴 수는 없습니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_manpower = 800",
+          "parents": [
+            "TFRKC_focus_KCH_m2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_p1",
+          "key": "p1",
+          "title": "누가 군을 통제하는가",
+          "desc": "정부의 명령과 현장의 판단이 다를 때 무엇을 우선할지 정합니다. 동맹의 승리만으로 이 질문이 해결되지는 않습니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20",
+          "parents": [
+            "TFRKC_focus_KCH_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_pA",
+          "key": "pA",
+          "title": "민간의 감사 아래",
+          "desc": "민간 대표의 감사를 받아들여 지휘권의 책임을 명확히 합니다. 작전 결정을 설명할 시간도 예산에 포함해야 합니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_ch_oversight",
+          "parents": [
+            "TFRKC_focus_KCH_p1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KCH_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_pB",
+          "key": "pB",
+          "title": "작전권을 유보하다",
+          "desc": "현장 지휘관의 판단을 앞세우고 민간 협의는 뒤따르게 합니다. 빨라진 명령을 바라보는 주민의 불안을 감수합니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_ch_autonomy",
+          "parents": [
+            "TFRKC_focus_KCH_p1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_focus_KCH_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_pA2",
+          "key": "pA2",
+          "title": "헌정복원의 조건",
+          "desc": "민간 통제와 권리 회복을 전후 협상의 기준으로 기록합니다. 이 기록은 즉시 정부에 합병되거나 전쟁을 선포하는 명령이 아닙니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_political_power = 30 custom_effect_tooltip = TFRKC_focus_constitutional_tt",
+          "parents": [
+            "TFRKC_focus_KCH_pA"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_pB2",
+          "key": "pB2",
+          "title": "독립지휘의 조건",
+          "desc": "독립 지휘권의 범위와 전후 협상 요구를 적습니다. 정부 동맹 승리 뒤 통합 또는 전쟁의 선택은 기존 사건이 처리합니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "army_experience = 8 custom_effect_tooltip = TFRKC_focus_constitutional_tt",
+          "parents": [
+            "TFRKC_focus_KCH_pB"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_logistics",
+          "key": "logistics",
+          "title": "두 전선의 보급표",
+          "desc": "전방과 내전 부대가 같은 물자를 두 번 청구하지 않도록 장부를 맞춥니다. 장교들이 줄어든 혼선을 훈련에 반영합니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 8 add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KCH_a3",
+            "TFRKC_focus_KCH_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KCH_charter",
+          "key": "charter",
+          "title": "이긴 뒤에도 남는 질문",
+          "desc": "전쟁 중 작성한 헌정복원 원칙을 보관합니다. 승전이 민간의 통치권을 자동으로 보장하지 않는다는 사실을 연합도 알고 있습니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_stability = 0.03 custom_effect_tooltip = TFRKC_focus_postwar_tt custom_effect_tooltip = TFRKC_focus_constitutional_tt",
+          "parents": [
+            "TFRKC_focus_KCH_logistics",
+            "TFRKC_focus_KCH_m3"
+          ],
+          "orParents": [
+            "TFRKC_focus_KCH_pA2",
+            "TFRKC_focus_KCH_pB2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": []
+        }
+      ]
+    },
+    {
+      "tag": "KYA",
+      "name": "국가수호위원회·윤어게인",
+      "id": "TFRKC_focus_KYA_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KYA_start",
+          "key": "start",
+          "title": "대통령의 직접 명령",
+          "desc": "귀환 작전으로 구출된 윤석열이 직접 지휘합니다. 같은 대통령을 따른다는 사실만으로 정규군과 거리의 조직이 같은 조직이 되지는 않았습니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 30 add_war_support = 0.02",
+          "parents": [],
+          "icon": "GFX_KOR_yoon_yoons_think",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_a1",
+          "key": "a1",
+          "title": "부산의 집무실",
+          "desc": "비상통치 선언을 행정으로 바꿉니다. 연설대 뒤편에는 출근하지 않은 공무원의 책상이 남아 있습니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_political_power = 30",
+          "parents": [
+            "TFRKC_focus_KYA_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_a2",
+          "key": "a2",
+          "title": "경상의 교대표",
+          "desc": "집회 참가 인원만큼 생산량이 늘지는 않습니다. 노동자의 교대와 원료 운송을 우선해 공장의 가동을 유지합니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_ya_factory",
+          "parents": [
+            "TFRKC_focus_KYA_a1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_a3",
+          "key": "a3",
+          "title": "오늘도 열리는 시장",
+          "desc": "시장과 병원에 민간 물자가 닿게 합니다. 충성을 외치는 일과 저녁거리를 구하는 일 사이의 틈을 조금 줄입니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_stability = 0.04 add_war_support = -0.01",
+          "parents": [
+            "TFRKC_focus_KYA_a2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_m1",
+          "key": "m1",
+          "title": "서로 다른 제복",
+          "desc": "가담 정규군과 민병대의 위치를 파악합니다. 보고서의 병력 수가 같은 사람을 두 번 세지 않도록 해야 합니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 10",
+          "parents": [
+            "TFRKC_focus_KYA_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 70,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_m2",
+          "key": "m2",
+          "title": "하나의 작전명령서",
+          "desc": "윤석열의 직접 지휘 아래 보고 양식을 통일합니다. 계파의 믿음까지 하나로 만들었다고 선언하지는 않습니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_militia_divisions } swap_ideas = { remove_idea = TFRKC_militia_divisions add_idea = TFRKC_focus_ya_command } }",
+          "parents": [
+            "TFRKC_focus_KYA_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_m3",
+          "key": "m3",
+          "title": "성인 지원병의 편제",
+          "desc": "성인 지원자 가운데 복무 가능한 인원을 정규 편제와 연결합니다. 충성의 크기가 숙련도를 대신하지 않게 훈련합니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_manpower = 900 army_experience = 5",
+          "parents": [
+            "TFRKC_focus_KYA_m2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_p1",
+          "key": "p1",
+          "title": "위원회의 세 목소리",
+          "desc": "대통령 충성파와 종교적 구국파, 청년 강경파가 서로 다른 구원을 말합니다. 비상통치의 연단을 누구에게 먼저 내줄지 결정합니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20",
+          "parents": [
+            "TFRKC_focus_KYA_start"
+          ],
+          "icon": "GFX_KOR_yoon_yoons_think",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_pA",
+          "key": "pA",
+          "title": "충성에도 서열이 있다",
+          "desc": "대통령 충성파와 정규 지휘계통을 앞세웁니다. 거리에 먼저 섰던 동지들이 이제 출입증을 기다립니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_ya_cadre",
+          "parents": [
+            "TFRKC_focus_KYA_p1"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KYA_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_pB",
+          "key": "pB",
+          "title": "구국의 연단",
+          "desc": "종교적 구국파와 성인 청년 강경파의 집회를 넓힙니다. 불붙은 연단의 열기를 행정이 따라가지 못합니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_ya_crusade",
+          "parents": [
+            "TFRKC_focus_KYA_p1"
+          ],
+          "icon": "GFX_KOR_yoon_yoons_think",
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_focus_KYA_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_pA2",
+          "key": "pA2",
+          "title": "결재선의 맨 위",
+          "desc": "결정은 다시 윤석열에게 올라갑니다. 위원회의 직제가 정돈될수록 지지자의 발언 순서는 뒤로 밀립니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_political_power = 35",
+          "parents": [
+            "TFRKC_focus_KYA_pA"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_pB2",
+          "key": "pB2",
+          "title": "기도와 구호 사이",
+          "desc": "다른 믿음과 목표를 가진 계파가 대통령의 명령 아래 공동 선전을 만듭니다. 불일치는 지워지지 않고 잠시 연단 뒤로 물러납니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_war_support = 0.03 add_stability = -0.01",
+          "parents": [
+            "TFRKC_focus_KYA_pB"
+          ],
+          "icon": "GFX_KOR_yoon_yoons_think",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_logistics",
+          "key": "logistics",
+          "title": "물류는 구호를 모른다",
+          "desc": "공장 출하와 전선 청구를 같은 장부에 적습니다. 운전기사는 구호의 크기보다 목적지와 출발 시간을 필요로 합니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 8 add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KYA_a3",
+            "TFRKC_focus_KYA_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KYA_charter",
+          "key": "charter",
+          "title": "비상은 언제 끝나는가",
+          "desc": "비상통치의 지속을 정당화할 원칙을 작성합니다. 대통령의 명령을 따르는 연합 안에서도 전후의 모습까지 합의된 것은 아닙니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_political_power = 30 custom_effect_tooltip = TFRKC_focus_postwar_tt",
+          "parents": [
+            "TFRKC_focus_KYA_logistics",
+            "TFRKC_focus_KYA_m3"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "orParents": [
+            "TFRKC_focus_KYA_pA2",
+            "TFRKC_focus_KYA_pB2"
+          ],
+          "exclusive": []
+        }
+      ]
+    },
+    {
+      "tag": "KRC",
+      "name": "국가재건최고회의",
+      "id": "TFRKC_focus_KRC_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KRC_start",
+          "key": "start",
+          "title": "장막 밖의 최고회의",
+          "desc": "계엄 이후 윤석열과 기존 정치권을 끌어내리려 비밀리에 모인 조직이 모습을 드러냅니다. 이제 명령서에는 조직의 이름을 적어야 합니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 30 add_stability = 0.02",
+          "parents": [],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_a1",
+          "key": "a1",
+          "title": "군정청의 서식",
+          "desc": "비밀 연락망으로는 도시를 운영할 수 없습니다. 군정청의 접수 창구와 민원 처리부터 만듭니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_stability = 0.04",
+          "parents": [
+            "TFRKC_focus_KRC_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_a2",
+          "key": "a2",
+          "title": "기술관료를 부르다",
+          "desc": "생산 가능한 수량과 수송 가능한 거리를 말해 줄 사람을 회의에 들입니다. 계급장이 없는 사람의 반대도 들어야 합니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_rc_tech",
+          "parents": [
+            "TFRKC_focus_KRC_a1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_a3",
+          "key": "a3",
+          "title": "산업계와 맺는 계약",
+          "desc": "징발 대신 납기와 대금을 적은 계약서를 씁니다. 나라를 재건하겠다는 명령에 누가 비용을 내는지 남깁니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_political_power = 30 add_stability = 0.02",
+          "parents": [
+            "TFRKC_focus_KRC_a2"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_m1",
+          "key": "m1",
+          "title": "기동부대 점호",
+          "desc": "최고회의에 합류한 부대의 지휘와 정비 상태를 조사합니다. 서류 속의 전차와 출동 가능한 전차는 다릅니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 12",
+          "parents": [
+            "TFRKC_focus_KRC_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 70,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_m2",
+          "key": "m2",
+          "title": "출동 가능한 전차",
+          "desc": "정비와 연료 배분을 집중해 기존 부족을 일부 줄입니다. 전차나 연료를 새로 만들어 내는 조치는 아닙니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_fuel_shortage } swap_ideas = { remove_idea = TFRKC_fuel_shortage add_idea = TFRKC_focus_rc_fuel } }",
+          "parents": [
+            "TFRKC_focus_KRC_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_m3",
+          "key": "m3",
+          "title": "같은 무전망",
+          "desc": "기동부대의 보고와 화력 요청을 맞춥니다. 서로 다른 부대가 같은 도로로 한꺼번에 몰려들지 않게 합니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "army_experience = 15",
+          "parents": [
+            "TFRKC_focus_KRC_m2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_p1",
+          "key": "p1",
+          "title": "재건이라는 이름",
+          "desc": "원본에서 육군참모총장과 야전 지휘관으로 설정된 남영신이 최고회의를 이끕니다. 그를 중심으로 한 재건 노선과 강경 군정파의 우선순위가 갈립니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20",
+          "parents": [
+            "TFRKC_focus_KRC_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_pA",
+          "key": "pA",
+          "title": "남영신의 일정표",
+          "desc": "행정 회복과 전문인력 협력을 앞세웁니다. 군의 명령을 사회가 감당할 수 있는 일정으로 고쳐 써야 합니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_rc_nam",
+          "parents": [
+            "TFRKC_focus_KRC_p1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KRC_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_pB",
+          "key": "pB",
+          "title": "국가를 정렬하라",
+          "desc": "강경 군정파는 사회 전체에 전장의 규율을 요구합니다. 반대 의견을 침묵시킨 비용이 생산과 민심에 돌아옵니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_rc_hard",
+          "parents": [
+            "TFRKC_focus_KRC_p1"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_focus_KRC_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_pA2",
+          "key": "pA2",
+          "title": "민간 전문가의 자리",
+          "desc": "장교 옆에 기술자와 행정가의 의자를 놓습니다. 누가 회의에 앉았는지 기록하는 작은 변화부터 시작합니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_stability = 0.03 add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KRC_pA"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_pB2",
+          "key": "pB2",
+          "title": "명령의 유효기간",
+          "desc": "강경파는 군정의 지속을 전제한 체계를 정리합니다. 효율이라는 말로 미뤄진 자유가 사라지는 것은 아닙니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_war_support = 0.03 add_stability = -0.02 army_experience = 8",
+          "parents": [
+            "TFRKC_focus_KRC_pB"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_logistics",
+          "key": "logistics",
+          "title": "정비창의 우선순위",
+          "desc": "차량 가동과 부품 회수를 함께 계획합니다. 이동하지 못한 장비를 기동전의 성과로 셀 수는 없습니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 10 add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KRC_a3",
+            "TFRKC_focus_KRC_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KRC_charter",
+          "key": "charter",
+          "title": "재건의 다음 장",
+          "desc": "군정이 무엇을 되돌려 놓고 무엇을 남길지 전후 계획에 적습니다. 최고회의는 윤석열의 명령을 대신 전달하는 조직이 아닙니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_political_power = 30 custom_effect_tooltip = TFRKC_focus_postwar_tt",
+          "parents": [
+            "TFRKC_focus_KRC_logistics",
+            "TFRKC_focus_KRC_m3"
+          ],
+          "orParents": [
+            "TFRKC_focus_KRC_pA2",
+            "TFRKC_focus_KRC_pB2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": []
+        }
+      ]
+    },
+    {
+      "tag": "KLF",
+      "name": "청소년해방군",
+      "id": "TFRKC_focus_KLF_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KLF_start",
+          "key": "start",
+          "title": "다음 세대에게는",
+          "desc": "우리가 겪었던 억압을 다음 세대에게 넘기지 않겠다는 약속으로 모였습니다. 성인 전투부대와 청소년 권리 당사자의 역할부터 분명히 합니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 30 add_stability = 0.03",
+          "parents": [],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_a1",
+          "key": "a1",
+          "title": "동네마다 열린 회의",
+          "desc": "성인 청년 활동가와 지역 주민이 행정의 빈자리를 메웁니다. 해방이라는 말이 쓰레기 수거와 진료 시간에도 닿아야 합니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_stability = 0.04",
+          "parents": [
+            "TFRKC_focus_KLF_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_a2",
+          "key": "a2",
+          "title": "빈방에 놓인 식탁",
+          "desc": "빈 기숙사와 공공시설을 임시 거처로 연결합니다. 주거의 권리는 전후의 공약이기 전에 오늘 밤의 문제입니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_lf_housing",
+          "parents": [
+            "TFRKC_focus_KLF_a1"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_a3",
+          "key": "a3",
+          "title": "배움과 노동의 권리",
+          "desc": "학비와 임금, 노동시간의 실태를 수집해 개혁 초안을 만듭니다. 전쟁이 끝나기를 기다리는 동안에도 누군가는 하루를 잃습니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_political_power = 30 add_stability = 0.02",
+          "parents": [
+            "TFRKC_focus_KLF_a2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_m1",
+          "key": "m1",
+          "title": "어른들이 맡을 전선",
+          "desc": "성인 대학생·청년노동자·귀환장병·예비역을 군사 편제에 등록합니다. 미성년자는 전투 편제에 포함하지 않습니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 10",
+          "parents": [
+            "TFRKC_focus_KLF_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 65,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_m2",
+          "key": "m2",
+          "title": "의용군 지휘규정",
+          "desc": "성인 전투부대의 지휘와 자치기구의 권한을 구분합니다. 군사적 책임을 학생자치에 떠넘기지 않아야 합니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_liberation_coalition } swap_ideas = { remove_idea = TFRKC_liberation_coalition add_idea = TFRKC_focus_lf_command } }",
+          "parents": [
+            "TFRKC_focus_KLF_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_m3",
+          "key": "m3",
+          "title": "돌아온 장병의 경험",
+          "desc": "복무 경험이 있는 성인 지원자가 훈련과 보충을 돕습니다. 다음 세대의 권리를 지키는 일은 어른의 책임입니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "army_experience = 8 add_manpower = 800",
+          "parents": [
+            "TFRKC_focus_KLF_m2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_p1",
+          "key": "p1",
+          "title": "해방의 속도",
+          "desc": "개혁파는 절차를, 급진파는 당장 바뀌는 삶을 말합니다. 같은 약속을 향하는 서로 다른 속도에 선택이 필요합니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20",
+          "parents": [
+            "TFRKC_focus_KLF_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_pA",
+          "key": "pA",
+          "title": "합의가 남기는 길",
+          "desc": "학생자치와 노동 대표, 지역 주민의 합의를 거칩니다. 느린 회의가 누군가를 다시 침묵시키지 않도록 합니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_lf_reform",
+          "parents": [
+            "TFRKC_focus_KLF_p1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KLF_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_pB",
+          "key": "pB",
+          "title": "지금 바꾸는 삶",
+          "desc": "성인 활동가가 즉각적인 작업장과 주거 개혁을 밀어붙입니다. 속도를 얻는 만큼 충분히 듣지 못한 사람의 불안을 감수합니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_lf_radical",
+          "parents": [
+            "TFRKC_focus_KLF_p1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_focus_KLF_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_pA2",
+          "key": "pA2",
+          "title": "거부할 수 있는 권리",
+          "desc": "학생자치의 참여와 불참을 모두 보장합니다. 해방의 조직도 당사자를 대신해 영원히 말할 수는 없습니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_stability = 0.04 add_war_support = -0.01",
+          "parents": [
+            "TFRKC_focus_KLF_pA"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_pB2",
+          "key": "pB2",
+          "title": "개혁의 현장위원회",
+          "desc": "주거와 일터의 요구를 전시 배분에 반영합니다. 늘어난 처리 업무와 갈등을 감당할 실무자를 확보합니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_political_power = 35 add_stability = -0.01",
+          "parents": [
+            "TFRKC_focus_KLF_pB"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_logistics",
+          "key": "logistics",
+          "title": "급식소와 보급소",
+          "desc": "민간 급식과 성인 부대의 보급 청구를 구분해 이중 배분을 줄입니다. 아이의 식탁을 전선의 창고로 취급하지 않습니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 8 add_stability = 0.02",
+          "parents": [
+            "TFRKC_focus_KLF_a3",
+            "TFRKC_focus_KLF_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KLF_charter",
+          "key": "charter",
+          "title": "넘겨주지 않을 것들",
+          "desc": "교육과 주거, 일터의 권리를 전후 확장안에 묶습니다. 다음 세대는 우리의 전쟁을 물려받을 의무가 없습니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_political_power = 30 custom_effect_tooltip = TFRKC_focus_postwar_tt",
+          "parents": [
+            "TFRKC_focus_KLF_logistics",
+            "TFRKC_focus_KLF_m3"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "orParents": [
+            "TFRKC_focus_KLF_pA2",
+            "TFRKC_focus_KLF_pB2"
+          ],
+          "exclusive": []
+        }
+      ]
+    },
+    {
+      "tag": "KWC",
+      "name": "전국노동자평의회",
+      "id": "TFRKC_focus_KWC_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KWC_start",
+          "key": "start",
+          "title": "교대종은 울려야 한다",
+          "desc": "작업장이 멎으면 전선도 식탁도 멎습니다. 평의회의 첫 임무는 승리를 선언하는 일이 아니라 다음 교대를 여는 일입니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 25 add_stability = 0.03",
+          "parents": [],
+          "icon": "GFX_KOR_domestic_production",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_a1",
+          "key": "a1",
+          "title": "작업장 사이의 전화",
+          "desc": "각 공장과 동네 평의회를 연결합니다. 자기 공장을 아는 사람들이 서로의 부족도 알게 되어야 합니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_political_power = 30",
+          "parents": [
+            "TFRKC_focus_KWC_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_a2",
+          "key": "a2",
+          "title": "전력과 식량의 순서",
+          "desc": "발전소와 식량 수송의 교대를 우선합니다. 모든 회의가 열려 있어도 전등이 꺼지면 표결을 읽을 수 없습니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_wc_grid",
+          "parents": [
+            "TFRKC_focus_KWC_a1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_a3",
+          "key": "a3",
+          "title": "임금 대신 배급만 남지 않게",
+          "desc": "전시 배급과 생활 요구를 함께 접수합니다. 생산을 지킨다는 이유로 생산하는 사람의 삶을 뒤로 미루지 않아야 합니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_stability = 0.05",
+          "parents": [
+            "TFRKC_focus_KWC_a2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_m1",
+          "key": "m1",
+          "title": "산업지대의 방위대",
+          "desc": "성인 노동자 방위조직의 위치와 무전 주파수를 정리합니다. 공장 밖에서 싸우려면 익숙한 교대와 다른 질서가 필요합니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 10",
+          "parents": [
+            "TFRKC_focus_KWC_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 65,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_m2",
+          "key": "m2",
+          "title": "서로의 담장을 지키다",
+          "desc": "방위평의회를 연결해 기존 지휘 혼선을 줄입니다. 작업장 방어에 강한 성격은 그대로 유지합니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_workers_defence } swap_ideas = { remove_idea = TFRKC_workers_defence add_idea = TFRKC_focus_wc_command } }",
+          "parents": [
+            "TFRKC_focus_KWC_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_m3",
+          "key": "m3",
+          "title": "성인 예비역의 작업복",
+          "desc": "복무 경험이 있는 성인 노동자가 보충 인원을 훈련합니다. 생산 교대를 완전히 비우지 않는 범위에서 지원자를 받습니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_manpower = 700 army_experience = 8",
+          "parents": [
+            "TFRKC_focus_KWC_m2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_p1",
+          "key": "p1",
+          "title": "누가 할당량을 정하는가",
+          "desc": "자치와 전시 계획이 충돌합니다. 외부 지원 논쟁과 별개로 우리의 생산을 누가 결정할지 먼저 답해야 합니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 20",
+          "parents": [
+            "TFRKC_focus_KWC_start"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_pA",
+          "key": "pA",
+          "title": "현장의 거부권",
+          "desc": "생산 할당에 작업장 대표의 동의를 요구합니다. 자치의 회복은 빠른 군수 증산보다 우선합니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_wc_local",
+          "parents": [
+            "TFRKC_focus_KWC_p1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KWC_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_pB",
+          "key": "pB",
+          "title": "전시 생산배정국",
+          "desc": "중앙 배정으로 병목을 줄입니다. 더 많은 군수 납품이 현장의 결정권 축소와 함께 옵니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_wc_plan",
+          "parents": [
+            "TFRKC_focus_KWC_p1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "ai": 8,
+          "exclusive": [
+            "TFRKC_focus_KWC_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_pA2",
+          "key": "pA2",
+          "title": "지원에도 서명이 필요하다",
+          "desc": "중국 중심 EADI의 지원 제안도 평의회의 공개 기록에 남깁니다. 위기와 중국·북한의 결정이 없는 한 개입군은 오지 않습니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_political_power = 25 custom_effect_tooltip = TFRKC_focus_intervention_tt",
+          "parents": [
+            "TFRKC_focus_KWC_pA"
+          ],
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_pB2",
+          "key": "pB2",
+          "title": "바깥과 협상할 대표",
+          "desc": "대외 협상 대표를 선임하되 개입의 조건을 새로 쓰지 않습니다. 이 중점으로 중국이나 북한에 종속되거나 파견군이 생성되지는 않습니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "army_experience = 8 add_political_power = 15 custom_effect_tooltip = TFRKC_focus_intervention_tt",
+          "parents": [
+            "TFRKC_focus_KWC_pB"
+          ],
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_logistics",
+          "key": "logistics",
+          "title": "기차 시간과 교대 시간",
+          "desc": "군수 수송과 민간 운송의 청구서를 맞춥니다. 생산된 물자가 도착하지 않는다면 생산 통계는 벽의 숫자일 뿐입니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 8 add_stability = 0.02",
+          "parents": [
+            "TFRKC_focus_KWC_a3",
+            "TFRKC_focus_KWC_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KWC_charter",
+          "key": "charter",
+          "title": "전쟁 뒤의 작업장",
+          "desc": "전후의 자치와 생산 운영안을 보존합니다. 외부 지원을 받는지와 노동자가 스스로 결정하는지는 같은 질문이 아닙니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_political_power = 30 custom_effect_tooltip = TFRKC_focus_postwar_tt",
+          "parents": [
+            "TFRKC_focus_KWC_logistics",
+            "TFRKC_focus_KWC_m3"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "orParents": [
+            "TFRKC_focus_KWC_pA2",
+            "TFRKC_focus_KWC_pB2"
+          ],
+          "exclusive": []
+        }
+      ]
+    },
+    {
+      "tag": "KSF",
+      "name": "민족정화전선",
+      "id": "TFRKC_focus_KSF_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KSF_start",
+          "key": "start",
+          "title": "완장을 하나로",
+          "desc": "지도부는 서로 다른 무장조직을 구원의 이름으로 묶습니다. 완장의 색이 같아져도 이웃을 의심하는 눈빛은 그대로입니다.",
+          "x": 6,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_political_power = 25 add_war_support = 0.02",
+          "parents": [],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_a1",
+          "key": "a1",
+          "title": "검문소의 장부",
+          "desc": "강압적인 검문으로 지역을 통제합니다. 사라진 통행인만큼 공장으로 향하는 숙련공과 식량 수송도 줄어듭니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 1,
+          "reward": "add_ideas = TFRKC_focus_sf_control add_stability = -0.02",
+          "parents": [
+            "TFRKC_focus_KSF_start"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_a2",
+          "key": "a2",
+          "title": "멎어 가는 작업대",
+          "desc": "이탈한 기술자의 자리는 충성 서약으로 채워지지 않습니다. 남은 설비와 인력을 확인하는 데에도 정치적 비용이 듭니다.",
+          "x": 0,
+          "y": 2,
+          "cost": 2,
+          "reward": "add_political_power = 20 add_stability = -0.01",
+          "parents": [
+            "TFRKC_focus_KSF_a1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_a3",
+          "key": "a3",
+          "title": "고립된 창구",
+          "desc": "외교적 고립 속에서 지역 창구를 유지합니다. 배타적 통제는 일본·독일·영국·중국의 신뢰를 떨어뜨리고, 민간의 불안도 깊어집니다.",
+          "x": 0,
+          "y": 3,
+          "cost": 3,
+          "reward": "add_political_power = 15 add_stability = -0.02 if = { limit = { country_exists = JAP } JAP = { add_opinion_modifier = { target = ROOT modifier = TFRKC_focus_exclusion_opinion } } } if = { limit = { country_exists = GER } GER = { add_opinion_modifier = { target = ROOT modifier = TFRKC_focus_exclusion_opinion } } } if = { limit = { country_exists = ENG } ENG = { add_opinion_modifier = { target = ROOT modifier = TFRKC_focus_exclusion_opinion } } } if = { limit = { country_exists = PRC } PRC = { add_opinion_modifier = { target = ROOT modifier = TFRKC_focus_exclusion_opinion } } }",
+          "parents": [
+            "TFRKC_focus_KSF_a2"
+          ],
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_m1",
+          "key": "m1",
+          "title": "무장조직의 서열",
+          "desc": "각 조직의 지휘권을 조사합니다. 서로를 감시하는 병력이 같은 전선을 움직이려면 명령의 순서를 정해야 합니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 1,
+          "reward": "army_experience = 10",
+          "parents": [
+            "TFRKC_focus_KSF_start"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 60,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_m2",
+          "key": "m2",
+          "title": "단일한 완장",
+          "desc": "지휘계를 정리해 기존의 파편화를 일부 줄입니다. 내부의 의심과 행정 손실은 계속 남습니다.",
+          "x": 6,
+          "y": 2,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_local_fragmentation } swap_ideas = { remove_idea = TFRKC_local_fragmentation add_idea = TFRKC_focus_sf_command } }",
+          "parents": [
+            "TFRKC_focus_KSF_m1"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_m3",
+          "key": "m3",
+          "title": "부서진 명령의 복창",
+          "desc": "보고와 후퇴 절차를 훈련합니다. 전투 경험은 늘지만 이웃을 적으로 부르는 정치가 장비와 보충을 대신하지는 못합니다.",
+          "x": 6,
+          "y": 3,
+          "cost": 3,
+          "reward": "army_experience = 15",
+          "parents": [
+            "TFRKC_focus_KSF_m2"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_p1",
+          "key": "p1",
+          "title": "구원의 경계선",
+          "desc": "선전부는 배제의 기준을 넓히자고 하고 실무자는 사람이 필요하다고 말합니다. 어느 쪽도 잃은 신뢰를 쉽게 되돌릴 수는 없습니다.",
+          "x": 12,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KSF_start"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_pA",
+          "key": "pA",
+          "title": "좁아지는 우리",
+          "desc": "선전 방송은 속삭입니다. §R그들은 우리 민족이 아닙니다. 그렇지 않습니까?§! 정권의 자기기만은 결속을 부추기는 동시에 숙련인력과 민심을 내쫓습니다.",
+          "x": 10,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_sf_purge",
+          "parents": [
+            "TFRKC_focus_KSF_p1"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "ai": 5,
+          "exclusive": [
+            "TFRKC_focus_KSF_pB"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_pB",
+          "key": "pB",
+          "title": "필요한 사람들의 예외",
+          "desc": "정비공과 배급 담당자에게 선전의 예외를 허용합니다. 경제의 손실 일부를 줄이는 대신 강경 지지층이 지도부를 의심합니다.",
+          "x": 14,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_ideas = TFRKC_focus_sf_pragmatic",
+          "parents": [
+            "TFRKC_focus_KSF_p1"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "ai": 20,
+          "exclusive": [
+            "TFRKC_focus_KSF_pA"
+          ],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_pA2",
+          "key": "pA2",
+          "title": "방송이 끝난 거리",
+          "desc": "배제의 선전을 되풀이합니다. 전쟁지지도는 오르지만 사람들은 내일 자신이 호명될까 두려워합니다.",
+          "x": 10,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_war_support = 0.04 add_stability = -0.03",
+          "parents": [
+            "TFRKC_focus_KSF_pA"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_pB2",
+          "key": "pB2",
+          "title": "장부에 남겨 둔 이름",
+          "desc": "배급과 정비에 필요한 사람의 이름을 남깁니다. 선전의 순수성을 잃는다는 비난을 무릅쓰고 행정의 붕괴를 조금 늦춥니다.",
+          "x": 14,
+          "y": 3,
+          "cost": 2,
+          "reward": "add_stability = 0.02 add_war_support = -0.02",
+          "parents": [
+            "TFRKC_focus_KSF_pB"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_logistics",
+          "key": "logistics",
+          "title": "통제선 너머의 납품서",
+          "desc": "검문 절차를 정리해 전선 청구의 혼선을 줄입니다. 이미 잃은 신뢰와 인력을 되돌려 주는 서류는 없습니다.",
+          "x": 3,
+          "y": 4,
+          "cost": 2,
+          "reward": "army_experience = 8 add_political_power = 10",
+          "parents": [
+            "TFRKC_focus_KSF_a3",
+            "TFRKC_focus_KSF_m2"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KSF_charter",
+          "key": "charter",
+          "title": "구원 뒤에 남는 국가",
+          "desc": "승리 뒤 운영할 국가의 윤곽을 적습니다. 사람을 지우며 내세운 구원이 사람 없이 작동할 수 없다는 모순은 남습니다.",
+          "x": 6,
+          "y": 5,
+          "cost": 3,
+          "reward": "add_political_power = 20 custom_effect_tooltip = TFRKC_focus_postwar_tt",
+          "parents": [
+            "TFRKC_focus_KSF_logistics",
+            "TFRKC_focus_KSF_m3"
+          ],
+          "icon": "GFX_KOR_yoon_constitution_control",
+          "orParents": [
+            "TFRKC_focus_KSF_pA2",
+            "TFRKC_focus_KSF_pB2"
+          ],
+          "exclusive": []
+        }
+      ]
+    },
+    {
+      "tag": "KNM",
+      "name": "해군 중립사령부",
+      "id": "TFRKC_focus_KNM_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KNM_rescue",
+          "key": "rescue",
+          "title": "구조 신호에 응답하라",
+          "desc": "내전의 편을 고르는 대신 조난 신호에 응답합니다. 제주·울릉도·독도와 피난민 보호라는 임무는 교전 명령을 필요로 하지 않습니다.",
+          "x": 3,
+          "y": 0,
+          "cost": 1,
+          "reward": "add_stability = 0.03 navy_experience = 5",
+          "parents": [],
+          "icon": "GFX_KOR_support_for_mask",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KNM_shelter",
+          "key": "shelter",
+          "title": "섬의 임시 거처",
+          "desc": "제주의 민간 거처와 의료 연락을 정리합니다. 울릉도·독도의 지도 프로빈스를 새로 만들거나 영토를 이전하지 않습니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_stability = 0.05",
+          "parents": [
+            "TFRKC_focus_KNM_rescue"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KNM_maintenance",
+          "key": "maintenance",
+          "title": "정박 중의 정비",
+          "desc": "구조와 구호 항로에 나설 함정의 안전 점검을 시행합니다. 함정 생산과 상륙 제한을 풀거나 내전 참전을 유도하지 않습니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_ideas = TFRKC_focus_navy_rescue",
+          "parents": [
+            "TFRKC_focus_KNM_rescue"
+          ],
+          "icon": "GFX_KOR_domestic_production",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KNM_ledger",
+          "key": "ledger",
+          "title": "돌려줄 함대의 장부",
+          "desc": "정비 기록과 피난민 명부를 정리합니다. 통일 후 함대의 국가 통합은 기존 전쟁 담당 효과가 처리하며 중립 방침은 영구 제한이 아닙니다.",
+          "x": 3,
+          "y": 2,
+          "cost": 3,
+          "reward": "add_political_power = 25 navy_experience = 8 custom_effect_tooltip = TFRKC_focus_navy_tt",
+          "parents": [
+            "TFRKC_focus_KNM_shelter",
+            "TFRKC_focus_KNM_maintenance"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "exclusive": [],
+          "orParents": []
+        }
+      ]
+    },
+    {
+      "tag": "KPL",
+      "name": "대한인민해방군",
+      "id": "TFRKC_focus_KPL_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_KPL_contact",
+          "key": "contact",
+          "title": "서로 다른 명령서",
+          "desc": "중국·북한의 결정을 거쳐 이미 파견된 부대가 연락 체계를 확인합니다. 이 트리는 개입을 새로 시작하거나 추가 부대를 소환하지 않습니다.",
+          "x": 3,
+          "y": 0,
+          "cost": 1,
+          "reward": "army_experience = 8 custom_effect_tooltip = TFRKC_focus_intervention_tt",
+          "parents": [],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KPL_liaison",
+          "key": "liaison",
+          "title": "공동지휘 연락망",
+          "desc": "파견군과 남측 협력세력 사이의 보고를 맞춰 기존 공동지휘 부담을 일부 줄입니다. 서로의 전후 목표가 같아졌다고 말하지는 않습니다.",
+          "x": 0,
+          "y": 1,
+          "cost": 2,
+          "reward": "if = { limit = { has_idea = TFRKC_joint_command } swap_ideas = { remove_idea = TFRKC_joint_command add_idea = TFRKC_focus_pl_liaison } }",
+          "parents": [
+            "TFRKC_focus_KPL_contact"
+          ],
+          "icon": "GFX_KOR_lee_army_route_common_focus_1",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KPL_civilian",
+          "key": "civilian",
+          "title": "민간 수송과의 분리",
+          "desc": "민간 운송과 군수 청구를 구분합니다. 협력하는 주민이 모두 같은 정치적 목표를 지녔다고 간주할 수는 없습니다.",
+          "x": 6,
+          "y": 1,
+          "cost": 2,
+          "reward": "add_stability = 0.03 add_political_power = 15",
+          "parents": [
+            "TFRKC_focus_KPL_contact"
+          ],
+          "icon": "GFX_KOR_support_for_mask",
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_KPL_settlement",
+          "key": "settlement",
+          "title": "승리 뒤의 협의서",
+          "desc": "공동전선의 전후 협의 자료를 정리합니다. 평의회와 파견군의 권력 정리는 기존 사건이 담당하고 이 중점은 어느 쪽도 합병하지 않습니다.",
+          "x": 3,
+          "y": 2,
+          "cost": 3,
+          "reward": "army_experience = 8 custom_effect_tooltip = TFRKC_focus_workers_settlement_tt",
+          "parents": [
+            "TFRKC_focus_KPL_liaison",
+            "TFRKC_focus_KPL_civilian"
+          ],
+          "icon": "GFX_KOR_strengthening_international_cooperation",
+          "exclusive": [],
+          "orParents": []
+        }
+      ]
+    },
+    {
+      "tag": "POST",
+      "name": "통일 이후 확장 기반",
+      "id": "TFRKC_focus_POST_tree",
+      "focuses": [
+        {
+          "id": "TFRKC_focus_POST_inventory",
+          "key": "inventory",
+          "title": "남겨진 국가의 목록",
+          "desc": "통일 판정과 함대 통합은 이미 끝났습니다. 전쟁 중 작성한 각 세력의 초안을 보존하고 남은 행정 업무부터 조사합니다.",
+          "x": 3,
+          "y": 0,
+          "cost": 3,
+          "reward": "add_political_power = 25 custom_effect_tooltip = TFRKC_focus_extension_tt",
+          "parents": [],
+          "icon": "GFX_KOR_lee_army_route_common_focus_2",
+          "ai": 100,
+          "exclusive": [],
+          "orParents": []
+        },
+        {
+          "id": "TFRKC_focus_POST_civilian",
+          "key": "civilian",
+          "title": "평시로 돌아가는 창구",
+          "desc": "민원 창구와 전시 배급 기록을 정리합니다. 장기 정치 노선과 국제전 연결은 후속 개발 영역이며 이 중점은 새로운 전쟁을 시작하지 않습니다.",
+          "x": 3,
+          "y": 1,
+          "cost": 5,
+          "reward": "add_stability = 0.03",
+          "parents": [
+            "TFRKC_focus_POST_inventory"
+          ],
+          "icon": "GFX_KOR_lee_army_route_promise_democracy",
+          "exclusive": [],
+          "orParents": []
+        }
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "id": "TFRKC_focus_gov_supply",
+      "title": "수도의 배급망",
+      "desc": "배급표 한 장이 닿는 거리를 조금씩 늘립니다. 전선의 규모까지 늘릴 수는 없습니다.",
+      "modifier": {
+        "supply_consumption_factor": -0.04
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_gov_repair",
+      "title": "잔류 정비인력",
+      "desc": "새 공장을 세울 여력은 없습니다. 남은 작업대에서 고장 난 장비부터 고칩니다.",
+      "modifier": {
+        "production_factory_efficiency_gain_factor": 0.04,
+        "industrial_capacity_factory": 0.02
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_gov_civil",
+      "title": "기록되는 비상권한",
+      "desc": "민간의 이의 제기와 회계 감사를 남기는 행정입니다. 결재는 느려져도 정부가 누구에게 답해야 하는지는 분명해집니다.",
+      "modifier": {
+        "stability_factor": 0.03,
+        "political_power_gain": -0.05
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_gov_emergency",
+      "title": "한시적 긴급예산",
+      "desc": "예산 심사를 줄여 군수 주문을 앞당깁니다. 국가가 살아남은 뒤 갚아야 할 정치적 빚도 늘어납니다.",
+      "modifier": {
+        "industrial_capacity_factory": 0.04,
+        "stability_factor": -0.03
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_ch_front",
+      "title": "교대되는 경계선",
+      "desc": "북방 경계를 유지하면서 후방에 투입할 부대를 교대합니다. 두 전선을 함께 짊어진 부담은 남습니다.",
+      "modifier": {
+        "army_org_factor": -0.06,
+        "supply_consumption_factor": 0.06
+      },
+      "picture": "KOR_army_noman_idea"
+    },
+    {
+      "id": "TFRKC_focus_ch_civil",
+      "title": "민간 연락위원회",
+      "desc": "군사적 독립을 유지하면서 작전의 목적을 민간 대표에게 설명합니다.",
+      "modifier": {
+        "stability_factor": 0.03,
+        "planning_speed": -0.03
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_ch_oversight",
+      "title": "감사받는 지휘권",
+      "desc": "주민 대표와 법률가의 감사를 받아들입니다. 정치적 신뢰를 얻는 대신 결정 절차를 감수합니다.",
+      "modifier": {
+        "political_power_gain": 0.1,
+        "planning_speed": -0.05
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_ch_autonomy",
+      "title": "작전권 유보",
+      "desc": "현장 지휘관의 결정을 우선합니다. 빠른 작전은 민간 통제의 불안을 함께 남깁니다.",
+      "modifier": {
+        "planning_speed": 0.08,
+        "stability_factor": -0.04
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_ya_command",
+      "title": "조율되는 충성",
+      "desc": "대통령의 직접 지휘 아래 민병대와 정규군의 보고 형식을 맞췄습니다. 같은 목적을 믿는 정도까지 같아지지는 않았습니다.",
+      "modifier": {
+        "army_org_factor": -0.07,
+        "army_morale_factor": -0.04
+      },
+      "picture": "KOR_army_noman_idea"
+    },
+    {
+      "id": "TFRKC_focus_ya_factory",
+      "title": "경상 공업의 교대표",
+      "desc": "공장 가동을 유지하려면 집회에 나오지 못하는 노동자도 필요합니다.",
+      "modifier": {
+        "industrial_capacity_factory": 0.04,
+        "production_factory_efficiency_gain_factor": 0.03
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_ya_cadre",
+      "title": "충성의 서열",
+      "desc": "대통령 충성파가 정규 지휘계통을 장악합니다. 정돈된 명령 밖으로 밀려난 동지들의 불만이 쌓입니다.",
+      "modifier": {
+        "army_morale_factor": 0.04,
+        "political_power_gain": 0.1,
+        "stability_factor": -0.03
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_ya_crusade",
+      "title": "구국 연단",
+      "desc": "종교적 구국파와 청년 강경파의 연단을 넓힙니다. 열기는 높아지지만 행정은 다시 구호를 기다립니다.",
+      "modifier": {
+        "war_support_factor": 0.06,
+        "political_power_gain": -0.12,
+        "industrial_capacity_factory": -0.02
+      },
+      "picture": "KOR_after_bubble_defeat_idea"
+    },
+    {
+      "id": "TFRKC_focus_rc_fuel",
+      "title": "출동 가능한 전차",
+      "desc": "연료와 부품을 모아 가동률을 회복합니다. 물자가 모자란다는 사실까지 사라지지는 않습니다.",
+      "modifier": {
+        "fuel_gain_factor": -0.12,
+        "supply_consumption_factor": 0.08
+      },
+      "picture": "KOR_army_noman_idea"
+    },
+    {
+      "id": "TFRKC_focus_rc_tech",
+      "title": "기술관료 실무반",
+      "desc": "군인의 명령을 생산 가능한 수량으로 고쳐 쓰는 사람들이 회의에 들어왔습니다.",
+      "modifier": {
+        "production_factory_efficiency_gain_factor": 0.05,
+        "political_power_gain": -0.05
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_rc_nam",
+      "title": "재건의 일정표",
+      "desc": "남영신 중심의 노선은 행정 복구와 민간 전문인력의 협력을 앞세웁니다. 군정이 끝날 날짜는 아직 비어 있습니다.",
+      "modifier": {
+        "industrial_capacity_factory": 0.04,
+        "stability_factor": 0.02
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_rc_hard",
+      "title": "명령으로 세운 질서",
+      "desc": "강경 군정파는 전장의 속도를 국가의 속도로 삼습니다. 반대 의견을 지운 자리에 생산 차질과 불신이 남습니다.",
+      "modifier": {
+        "army_org_factor": 0.04,
+        "industrial_capacity_factory": -0.04,
+        "stability_factor": -0.04
+      },
+      "picture": "KOR_after_bubble_defeat_idea"
+    },
+    {
+      "id": "TFRKC_focus_lf_command",
+      "title": "성인 의용군 지휘부",
+      "desc": "성인 대학생·청년노동자·귀환장병·예비역의 지휘와 학생자치의 권한을 구분합니다.",
+      "modifier": {
+        "army_org_factor": -0.08,
+        "training_time_army_factor": 0.08
+      },
+      "picture": "KOR_army_noman_idea"
+    },
+    {
+      "id": "TFRKC_focus_lf_housing",
+      "title": "빈방과 식탁",
+      "desc": "기숙사와 지역 급식소가 피난민의 거처가 됩니다. 돌봄에 들어가는 비용도 공동체가 나눕니다.",
+      "modifier": {
+        "stability_factor": 0.04,
+        "industrial_capacity_factory": -0.02
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_lf_reform",
+      "title": "합의하는 해방",
+      "desc": "선출된 자치기구와 노동 대표의 동의를 거쳐 개혁합니다. 합의에는 시간이 필요합니다.",
+      "modifier": {
+        "political_power_gain": 0.12,
+        "planning_speed": -0.04
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_lf_radical",
+      "title": "지금 바꾸는 삶",
+      "desc": "성인 활동가들이 즉각적인 작업장·주거 개혁을 추진합니다. 돌이킬 틈 없는 속도가 지지와 혼란을 함께 늘립니다.",
+      "modifier": {
+        "war_support_factor": 0.04,
+        "industrial_capacity_factory": 0.03,
+        "stability_factor": -0.04
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_wc_command",
+      "title": "연결된 방위평의회",
+      "desc": "작업장 방위조직의 연락망을 통일합니다. 공장을 지키는 데 익숙한 부대의 한계는 남습니다.",
+      "modifier": {
+        "army_core_defence_factor": 0.1,
+        "army_org_factor": -0.11
+      },
+      "picture": "KOR_army_noman_idea"
+    },
+    {
+      "id": "TFRKC_focus_wc_grid",
+      "title": "꺼지지 않는 교대등",
+      "desc": "식량 운송과 발전소 교대가 무너지면 평의회의 표결도 멎습니다.",
+      "modifier": {
+        "industrial_capacity_factory": 0.05,
+        "production_factory_efficiency_gain_factor": 0.03
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_wc_local",
+      "title": "현장의 거부권",
+      "desc": "작업장 대표가 생산 할당량을 거부할 수 있습니다. 자치는 회복되지만 군수 계획은 늦어집니다.",
+      "modifier": {
+        "stability_factor": 0.04,
+        "production_factory_efficiency_gain_factor": -0.03
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_wc_plan",
+      "title": "전시 생산배정국",
+      "desc": "필요한 물자를 중앙에서 배정합니다. 더 많은 납품서가 더 적은 발언권과 함께 도착합니다.",
+      "modifier": {
+        "industrial_capacity_factory": 0.06,
+        "stability_factor": -0.04,
+        "political_power_gain": -0.05
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_sf_command",
+      "title": "단일한 완장",
+      "desc": "서로 다른 무장조직의 명령을 하나로 묶었습니다. 내부의 의심은 새 계급장 아래에도 남습니다.",
+      "modifier": {
+        "army_org_factor": -0.12,
+        "political_power_gain": -0.15
+      },
+      "picture": "KOR_army_noman_idea"
+    },
+    {
+      "id": "TFRKC_focus_sf_control",
+      "title": "검문소의 장부",
+      "desc": "강압적 통제는 움직일 수 있는 사람과 물자를 함께 줄입니다.",
+      "modifier": {
+        "war_support_factor": 0.03,
+        "industrial_capacity_factory": -0.05,
+        "stability_factor": -0.03
+      },
+      "picture": "KOR_after_bubble_defeat_idea"
+    },
+    {
+      "id": "TFRKC_focus_sf_purge",
+      "title": "좁아지는 우리",
+      "desc": "배제의 선전을 확대하면 전투원 일부의 결속은 높아집니다. 숙련인력의 이탈과 불신이 그 대가입니다.",
+      "modifier": {
+        "army_attack_factor": 0.04,
+        "recruitable_population_factor": -0.08,
+        "industrial_capacity_factory": -0.07,
+        "stability_factor": -0.05
+      },
+      "picture": "KOR_after_bubble_defeat_idea"
+    },
+    {
+      "id": "TFRKC_focus_sf_pragmatic",
+      "title": "필요한 사람들의 예외",
+      "desc": "전선의 지도부가 숙련공과 배급 담당자에게 예외를 허용합니다. 생산은 덜 무너지지만 강경 지지자는 배신을 말합니다.",
+      "modifier": {
+        "production_factory_efficiency_gain_factor": 0.03,
+        "war_support_factor": -0.04,
+        "political_power_gain": -0.1
+      },
+      "picture": "KOR_army_great_nation_idea"
+    },
+    {
+      "id": "TFRKC_focus_navy_rescue",
+      "title": "구조 우선의 항로",
+      "desc": "교전 임무 없이 피난민 구조와 도서 지역 보급을 지원하는 정비 체계입니다.",
+      "modifier": {
+        "naval_accidents_chance": -0.1
+      },
+      "picture": "KOR_japan_assistance_idea"
+    },
+    {
+      "id": "TFRKC_focus_pl_liaison",
+      "title": "공동지휘 연락망",
+      "desc": "파견군의 보고와 평의회 측 연락을 조정합니다. 파견 결정을 새로 내리거나 추가 부대를 만들어내지 않습니다.",
+      "modifier": {
+        "army_org_factor": -0.05,
+        "supply_consumption_factor": 0.05
+      },
+      "picture": "KOR_army_noman_idea"
+    }
+  ],
+  "assets": [
+    {
+      "name": "GFX_KOR_lee_army_route_common_focus_1",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_1.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_1.png"
+    },
+    {
+      "name": "GFX_KOR_lee_army_route_common_focus_2",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_2.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_common_focus_2.png"
+    },
+    {
+      "name": "GFX_KOR_lee_army_route_promise_democracy",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_promise_democracy.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_lee_army_route_promise_democracy.png"
+    },
+    {
+      "name": "GFX_KOR_strengthening_international_cooperation",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_strengthening_international_cooperation.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_strengthening_international_cooperation.png"
+    },
+    {
+      "name": "GFX_KOR_support_for_mask",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_support_for_mask.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_support_for_mask.png"
+    },
+    {
+      "name": "GFX_KOR_yoon_constitution_control",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_constitution_control.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_yoon_constitution_control.png"
+    },
+    {
+      "name": "GFX_KOR_yoon_yoons_think",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_yoon_yoons_think.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_yoon_yoons_think.png"
+    },
+    {
+      "name": "GFX_KOR_domestic_production",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_goals_KOR.gfx",
+      "texture": "gfx/interface/goals/KOR/focus_GFX_KOR_domestic_production.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/goals/KOR/focus_GFX_KOR_domestic_production.png"
+    },
+    {
+      "name": "GFX_idea_KOR_army_noman_idea",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_ideas_KOR.gfx",
+      "texture": "gfx/interface/ideas/KOR/idea_KOR_army_noman_idea.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/ideas/KOR/idea_KOR_army_noman_idea.png"
+    },
+    {
+      "name": "GFX_idea_KOR_japan_assistance_idea",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_ideas_KOR.gfx",
+      "texture": "gfx/interface/ideas/KOR/idea_KOR_japan_assistance_idea.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/ideas/KOR/idea_KOR_japan_assistance_idea.png"
+    },
+    {
+      "name": "GFX_idea_KOR_after_bubble_defeat_idea",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_ideas_KOR.gfx",
+      "texture": "gfx/interface/ideas/KOR/idea_KOR_after_bubble_defeat_idea.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/ideas/KOR/idea_KOR_after_bubble_defeat_idea.png"
+    },
+    {
+      "name": "GFX_idea_KOR_army_great_nation_idea",
+      "source": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/interface/TFR_ideas_KOR.gfx",
+      "texture": "gfx/interface/ideas/KOR/idea_KOR_army_great_nation_idea.png",
+      "textureSource": "C:/Program Files (x86)/Steam/steamapps/workshop/content/394360/3617039195/gfx/interface/ideas/KOR/idea_KOR_army_great_nation_idea.png"
+    }
+  ],
+  "localisationKeys": [
+    "TFRKC_focus_administration_tt",
+    "TFRKC_focus_aid_tt",
+    "TFRKC_focus_pdto_tt",
+    "TFRKC_focus_nato_tt",
+    "TFRKC_focus_joint_tt",
+    "TFRKC_focus_constitutional_tt",
+    "TFRKC_focus_intervention_tt",
+    "TFRKC_focus_workers_settlement_tt",
+    "TFRKC_focus_navy_tt",
+    "TFRKC_focus_postwar_tt",
+    "TFRKC_focus_extension_tt",
+    "TFRKC_focus_exclusion_opinion",
+    "TFRKC_focus_KOR_tree",
+    "TFRKC_focus_KOR_start",
+    "TFRKC_focus_KOR_start_desc",
+    "TFRKC_focus_KOR_a1",
+    "TFRKC_focus_KOR_a1_desc",
+    "TFRKC_focus_KOR_a2",
+    "TFRKC_focus_KOR_a2_desc",
+    "TFRKC_focus_KOR_a3",
+    "TFRKC_focus_KOR_a3_desc",
+    "TFRKC_focus_KOR_m1",
+    "TFRKC_focus_KOR_m1_desc",
+    "TFRKC_focus_KOR_m2",
+    "TFRKC_focus_KOR_m2_desc",
+    "TFRKC_focus_KOR_m3",
+    "TFRKC_focus_KOR_m3_desc",
+    "TFRKC_focus_KOR_p1",
+    "TFRKC_focus_KOR_p1_desc",
+    "TFRKC_focus_KOR_pA",
+    "TFRKC_focus_KOR_pA_desc",
+    "TFRKC_focus_KOR_pB",
+    "TFRKC_focus_KOR_pB_desc",
+    "TFRKC_focus_KOR_pA2",
+    "TFRKC_focus_KOR_pA2_desc",
+    "TFRKC_focus_KOR_pB2",
+    "TFRKC_focus_KOR_pB2_desc",
+    "TFRKC_focus_KOR_logistics",
+    "TFRKC_focus_KOR_logistics_desc",
+    "TFRKC_focus_KOR_charter",
+    "TFRKC_focus_KOR_charter_desc",
+    "TFRKC_focus_KOR_diplomacy",
+    "TFRKC_focus_KOR_diplomacy_desc",
+    "TFRKC_focus_KOR_pdto",
+    "TFRKC_focus_KOR_pdto_desc",
+    "TFRKC_focus_KOR_nato",
+    "TFRKC_focus_KOR_nato_desc",
+    "TFRKC_focus_KOR_joint",
+    "TFRKC_focus_KOR_joint_desc",
+    "TFRKC_focus_KCH_tree",
+    "TFRKC_focus_KCH_start",
+    "TFRKC_focus_KCH_start_desc",
+    "TFRKC_focus_KCH_a1",
+    "TFRKC_focus_KCH_a1_desc",
+    "TFRKC_focus_KCH_a2",
+    "TFRKC_focus_KCH_a2_desc",
+    "TFRKC_focus_KCH_a3",
+    "TFRKC_focus_KCH_a3_desc",
+    "TFRKC_focus_KCH_m1",
+    "TFRKC_focus_KCH_m1_desc",
+    "TFRKC_focus_KCH_m2",
+    "TFRKC_focus_KCH_m2_desc",
+    "TFRKC_focus_KCH_m3",
+    "TFRKC_focus_KCH_m3_desc",
+    "TFRKC_focus_KCH_p1",
+    "TFRKC_focus_KCH_p1_desc",
+    "TFRKC_focus_KCH_pA",
+    "TFRKC_focus_KCH_pA_desc",
+    "TFRKC_focus_KCH_pB",
+    "TFRKC_focus_KCH_pB_desc",
+    "TFRKC_focus_KCH_pA2",
+    "TFRKC_focus_KCH_pA2_desc",
+    "TFRKC_focus_KCH_pB2",
+    "TFRKC_focus_KCH_pB2_desc",
+    "TFRKC_focus_KCH_logistics",
+    "TFRKC_focus_KCH_logistics_desc",
+    "TFRKC_focus_KCH_charter",
+    "TFRKC_focus_KCH_charter_desc",
+    "TFRKC_focus_KYA_tree",
+    "TFRKC_focus_KYA_start",
+    "TFRKC_focus_KYA_start_desc",
+    "TFRKC_focus_KYA_a1",
+    "TFRKC_focus_KYA_a1_desc",
+    "TFRKC_focus_KYA_a2",
+    "TFRKC_focus_KYA_a2_desc",
+    "TFRKC_focus_KYA_a3",
+    "TFRKC_focus_KYA_a3_desc",
+    "TFRKC_focus_KYA_m1",
+    "TFRKC_focus_KYA_m1_desc",
+    "TFRKC_focus_KYA_m2",
+    "TFRKC_focus_KYA_m2_desc",
+    "TFRKC_focus_KYA_m3",
+    "TFRKC_focus_KYA_m3_desc",
+    "TFRKC_focus_KYA_p1",
+    "TFRKC_focus_KYA_p1_desc",
+    "TFRKC_focus_KYA_pA",
+    "TFRKC_focus_KYA_pA_desc",
+    "TFRKC_focus_KYA_pB",
+    "TFRKC_focus_KYA_pB_desc",
+    "TFRKC_focus_KYA_pA2",
+    "TFRKC_focus_KYA_pA2_desc",
+    "TFRKC_focus_KYA_pB2",
+    "TFRKC_focus_KYA_pB2_desc",
+    "TFRKC_focus_KYA_logistics",
+    "TFRKC_focus_KYA_logistics_desc",
+    "TFRKC_focus_KYA_charter",
+    "TFRKC_focus_KYA_charter_desc",
+    "TFRKC_focus_KRC_tree",
+    "TFRKC_focus_KRC_start",
+    "TFRKC_focus_KRC_start_desc",
+    "TFRKC_focus_KRC_a1",
+    "TFRKC_focus_KRC_a1_desc",
+    "TFRKC_focus_KRC_a2",
+    "TFRKC_focus_KRC_a2_desc",
+    "TFRKC_focus_KRC_a3",
+    "TFRKC_focus_KRC_a3_desc",
+    "TFRKC_focus_KRC_m1",
+    "TFRKC_focus_KRC_m1_desc",
+    "TFRKC_focus_KRC_m2",
+    "TFRKC_focus_KRC_m2_desc",
+    "TFRKC_focus_KRC_m3",
+    "TFRKC_focus_KRC_m3_desc",
+    "TFRKC_focus_KRC_p1",
+    "TFRKC_focus_KRC_p1_desc",
+    "TFRKC_focus_KRC_pA",
+    "TFRKC_focus_KRC_pA_desc",
+    "TFRKC_focus_KRC_pB",
+    "TFRKC_focus_KRC_pB_desc",
+    "TFRKC_focus_KRC_pA2",
+    "TFRKC_focus_KRC_pA2_desc",
+    "TFRKC_focus_KRC_pB2",
+    "TFRKC_focus_KRC_pB2_desc",
+    "TFRKC_focus_KRC_logistics",
+    "TFRKC_focus_KRC_logistics_desc",
+    "TFRKC_focus_KRC_charter",
+    "TFRKC_focus_KRC_charter_desc",
+    "TFRKC_focus_KLF_tree",
+    "TFRKC_focus_KLF_start",
+    "TFRKC_focus_KLF_start_desc",
+    "TFRKC_focus_KLF_a1",
+    "TFRKC_focus_KLF_a1_desc",
+    "TFRKC_focus_KLF_a2",
+    "TFRKC_focus_KLF_a2_desc",
+    "TFRKC_focus_KLF_a3",
+    "TFRKC_focus_KLF_a3_desc",
+    "TFRKC_focus_KLF_m1",
+    "TFRKC_focus_KLF_m1_desc",
+    "TFRKC_focus_KLF_m2",
+    "TFRKC_focus_KLF_m2_desc",
+    "TFRKC_focus_KLF_m3",
+    "TFRKC_focus_KLF_m3_desc",
+    "TFRKC_focus_KLF_p1",
+    "TFRKC_focus_KLF_p1_desc",
+    "TFRKC_focus_KLF_pA",
+    "TFRKC_focus_KLF_pA_desc",
+    "TFRKC_focus_KLF_pB",
+    "TFRKC_focus_KLF_pB_desc",
+    "TFRKC_focus_KLF_pA2",
+    "TFRKC_focus_KLF_pA2_desc",
+    "TFRKC_focus_KLF_pB2",
+    "TFRKC_focus_KLF_pB2_desc",
+    "TFRKC_focus_KLF_logistics",
+    "TFRKC_focus_KLF_logistics_desc",
+    "TFRKC_focus_KLF_charter",
+    "TFRKC_focus_KLF_charter_desc",
+    "TFRKC_focus_KWC_tree",
+    "TFRKC_focus_KWC_start",
+    "TFRKC_focus_KWC_start_desc",
+    "TFRKC_focus_KWC_a1",
+    "TFRKC_focus_KWC_a1_desc",
+    "TFRKC_focus_KWC_a2",
+    "TFRKC_focus_KWC_a2_desc",
+    "TFRKC_focus_KWC_a3",
+    "TFRKC_focus_KWC_a3_desc",
+    "TFRKC_focus_KWC_m1",
+    "TFRKC_focus_KWC_m1_desc",
+    "TFRKC_focus_KWC_m2",
+    "TFRKC_focus_KWC_m2_desc",
+    "TFRKC_focus_KWC_m3",
+    "TFRKC_focus_KWC_m3_desc",
+    "TFRKC_focus_KWC_p1",
+    "TFRKC_focus_KWC_p1_desc",
+    "TFRKC_focus_KWC_pA",
+    "TFRKC_focus_KWC_pA_desc",
+    "TFRKC_focus_KWC_pB",
+    "TFRKC_focus_KWC_pB_desc",
+    "TFRKC_focus_KWC_pA2",
+    "TFRKC_focus_KWC_pA2_desc",
+    "TFRKC_focus_KWC_pB2",
+    "TFRKC_focus_KWC_pB2_desc",
+    "TFRKC_focus_KWC_logistics",
+    "TFRKC_focus_KWC_logistics_desc",
+    "TFRKC_focus_KWC_charter",
+    "TFRKC_focus_KWC_charter_desc",
+    "TFRKC_focus_KSF_tree",
+    "TFRKC_focus_KSF_start",
+    "TFRKC_focus_KSF_start_desc",
+    "TFRKC_focus_KSF_a1",
+    "TFRKC_focus_KSF_a1_desc",
+    "TFRKC_focus_KSF_a2",
+    "TFRKC_focus_KSF_a2_desc",
+    "TFRKC_focus_KSF_a3",
+    "TFRKC_focus_KSF_a3_desc",
+    "TFRKC_focus_KSF_m1",
+    "TFRKC_focus_KSF_m1_desc",
+    "TFRKC_focus_KSF_m2",
+    "TFRKC_focus_KSF_m2_desc",
+    "TFRKC_focus_KSF_m3",
+    "TFRKC_focus_KSF_m3_desc",
+    "TFRKC_focus_KSF_p1",
+    "TFRKC_focus_KSF_p1_desc",
+    "TFRKC_focus_KSF_pA",
+    "TFRKC_focus_KSF_pA_desc",
+    "TFRKC_focus_KSF_pB",
+    "TFRKC_focus_KSF_pB_desc",
+    "TFRKC_focus_KSF_pA2",
+    "TFRKC_focus_KSF_pA2_desc",
+    "TFRKC_focus_KSF_pB2",
+    "TFRKC_focus_KSF_pB2_desc",
+    "TFRKC_focus_KSF_logistics",
+    "TFRKC_focus_KSF_logistics_desc",
+    "TFRKC_focus_KSF_charter",
+    "TFRKC_focus_KSF_charter_desc",
+    "TFRKC_focus_KNM_tree",
+    "TFRKC_focus_KNM_rescue",
+    "TFRKC_focus_KNM_rescue_desc",
+    "TFRKC_focus_KNM_shelter",
+    "TFRKC_focus_KNM_shelter_desc",
+    "TFRKC_focus_KNM_maintenance",
+    "TFRKC_focus_KNM_maintenance_desc",
+    "TFRKC_focus_KNM_ledger",
+    "TFRKC_focus_KNM_ledger_desc",
+    "TFRKC_focus_KPL_tree",
+    "TFRKC_focus_KPL_contact",
+    "TFRKC_focus_KPL_contact_desc",
+    "TFRKC_focus_KPL_liaison",
+    "TFRKC_focus_KPL_liaison_desc",
+    "TFRKC_focus_KPL_civilian",
+    "TFRKC_focus_KPL_civilian_desc",
+    "TFRKC_focus_KPL_settlement",
+    "TFRKC_focus_KPL_settlement_desc",
+    "TFRKC_focus_POST_tree",
+    "TFRKC_focus_POST_inventory",
+    "TFRKC_focus_POST_inventory_desc",
+    "TFRKC_focus_POST_civilian",
+    "TFRKC_focus_POST_civilian_desc",
+    "TFRKC_focus_gov_supply",
+    "TFRKC_focus_gov_supply_desc",
+    "TFRKC_focus_gov_repair",
+    "TFRKC_focus_gov_repair_desc",
+    "TFRKC_focus_gov_civil",
+    "TFRKC_focus_gov_civil_desc",
+    "TFRKC_focus_gov_emergency",
+    "TFRKC_focus_gov_emergency_desc",
+    "TFRKC_focus_ch_front",
+    "TFRKC_focus_ch_front_desc",
+    "TFRKC_focus_ch_civil",
+    "TFRKC_focus_ch_civil_desc",
+    "TFRKC_focus_ch_oversight",
+    "TFRKC_focus_ch_oversight_desc",
+    "TFRKC_focus_ch_autonomy",
+    "TFRKC_focus_ch_autonomy_desc",
+    "TFRKC_focus_ya_command",
+    "TFRKC_focus_ya_command_desc",
+    "TFRKC_focus_ya_factory",
+    "TFRKC_focus_ya_factory_desc",
+    "TFRKC_focus_ya_cadre",
+    "TFRKC_focus_ya_cadre_desc",
+    "TFRKC_focus_ya_crusade",
+    "TFRKC_focus_ya_crusade_desc",
+    "TFRKC_focus_rc_fuel",
+    "TFRKC_focus_rc_fuel_desc",
+    "TFRKC_focus_rc_tech",
+    "TFRKC_focus_rc_tech_desc",
+    "TFRKC_focus_rc_nam",
+    "TFRKC_focus_rc_nam_desc",
+    "TFRKC_focus_rc_hard",
+    "TFRKC_focus_rc_hard_desc",
+    "TFRKC_focus_lf_command",
+    "TFRKC_focus_lf_command_desc",
+    "TFRKC_focus_lf_housing",
+    "TFRKC_focus_lf_housing_desc",
+    "TFRKC_focus_lf_reform",
+    "TFRKC_focus_lf_reform_desc",
+    "TFRKC_focus_lf_radical",
+    "TFRKC_focus_lf_radical_desc",
+    "TFRKC_focus_wc_command",
+    "TFRKC_focus_wc_command_desc",
+    "TFRKC_focus_wc_grid",
+    "TFRKC_focus_wc_grid_desc",
+    "TFRKC_focus_wc_local",
+    "TFRKC_focus_wc_local_desc",
+    "TFRKC_focus_wc_plan",
+    "TFRKC_focus_wc_plan_desc",
+    "TFRKC_focus_sf_command",
+    "TFRKC_focus_sf_command_desc",
+    "TFRKC_focus_sf_control",
+    "TFRKC_focus_sf_control_desc",
+    "TFRKC_focus_sf_purge",
+    "TFRKC_focus_sf_purge_desc",
+    "TFRKC_focus_sf_pragmatic",
+    "TFRKC_focus_sf_pragmatic_desc",
+    "TFRKC_focus_navy_rescue",
+    "TFRKC_focus_navy_rescue_desc",
+    "TFRKC_focus_pl_liaison",
+    "TFRKC_focus_pl_liaison_desc"
+  ],
+  "files": [
+    "common/opinion_modifiers/TFRKC_focus_opinions.txt",
+    "common/scripted_triggers/TFRKC_focus_runtime.txt",
+    "common/national_focus/TFRKC_focus_KOR.txt",
+    "common/national_focus/TFRKC_focus_KCH.txt",
+    "common/national_focus/TFRKC_focus_KYA.txt",
+    "common/national_focus/TFRKC_focus_KRC.txt",
+    "common/national_focus/TFRKC_focus_KLF.txt",
+    "common/national_focus/TFRKC_focus_KWC.txt",
+    "common/national_focus/TFRKC_focus_KSF.txt",
+    "common/national_focus/TFRKC_focus_KNM.txt",
+    "common/national_focus/TFRKC_focus_KPL.txt",
+    "common/national_focus/TFRKC_focus_POST.txt",
+    "common/ideas/TFRKC_focus_ideas.txt",
+    "common/scripted_effects/TFRKC_focus_runtime.txt",
+    "common/on_actions/TFRKC_focus_runtime.txt",
+    "localisation/korean/TFRKC_focus_l_korean.yml"
+  ],
+  "initialWartimeIdeas": [
+    "TFRKC_government_disruption",
+    "TFRKC_frontier_burden",
+    "TFRKC_militia_divisions",
+    "TFRKC_fuel_shortage",
+    "TFRKC_liberation_coalition",
+    "TFRKC_workers_defence",
+    "TFRKC_local_fragmentation",
+    "TFRKC_joint_command"
+  ]
+}

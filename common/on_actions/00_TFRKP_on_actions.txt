@@ -1,0 +1,713 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = KOR
+					has_country_flag = KOR_yec_space_revolution_initialized_flag
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KOR_yec_default_page_initialized_flag }
+					}
+					set_variable = { KOR_yec_space_page_var = 0 }
+					set_country_flag = KOR_yec_default_page_initialized_flag
+				}
+				KOR_yec_daily_satellite_production_effect = yes
+				KOR_yec_daily_maintenance_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = KOR
+					has_country_flag = KOR_yec_space_revolution_initialized_flag
+				}
+				KOR_yec_monthly_availability_tick_effect = yes
+				add_to_variable = { KOR_yec_gui_dirty_var = 1 }
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_custom_achievement = {
+						mod = the_fire_rises_korea_plus
+						achievement = TFRKP_achieve_ending_lee_army_yec_bad
+					}
+				}	
+				KOR = {
+					set_country_flag = KOR_yec_2nd_paly_flag
+				}
+			}
+			set_global_flag = TFRKP_mod_setup_global_flag # TFRKP Global Setup
+			1041 = { add_dynamic_modifier = { modifier = KOR_seoul_city } }
+			1041 = { add_dynamic_modifier = { modifier = KOR_USFK_dynamic } }
+			1409 = { add_dynamic_modifier = { modifier = KOR_busan_city } }
+			869 = { add_dynamic_modifier = { modifier = KOR_gwangju_city } }
+			1410 = { add_dynamic_modifier = { modifier = KOR_ulsan_city } }
+			1411 = { add_dynamic_modifier = { modifier = KOR_daegu_city } }
+			869 = { add_dynamic_modifier = { modifier = KOR_jeju_special_self_governing_province } }
+			1041 = { add_dynamic_modifier = { modifier = KOR_incheon_city } }
+			525 = { add_dynamic_modifier = { modifier = KOR_daejeon_city } }
+			525 = { add_dynamic_modifier = { modifier = KOR_sejong_special_city } }
+			1043 = { add_dynamic_modifier = { modifier = PRK_pyongyang_city } }
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = korea.264 }
+			}
+			PRK = {
+				add_ideas = PRK_economy_broken_beyond_recognition
+				if = {
+					limit = {
+						is_ai = no
+						NOT = { has_country_flag = korea_1563_fired_flag }
+					}
+					set_country_flag = korea_1563_fired_flag
+					country_event = { id = korea.1563 hours = 1 }
+				}
+
+				if = {
+					limit = { has_country_leader = { character = PRK_kim_jongun ruling_only = yes } }
+					set_country_leader_description = {
+						ideology = totalitarian_socialist
+						desc = PRK_kim_jongun_char_desc
+					}
+					set_country_leader_description = {
+						ideology = communist
+						desc = PRK_kim_jongun_char_desc
+					}
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = { tag = KOR }
+				set_temp_variable = { tmp_amount = modifier@btc_mainstream_monthly_gain }
+				KOR_BtC_increase_influence_mainstream = yes
+				clear_temp_variable = tmp_amount
+
+				set_temp_variable = { tmp_amount = modifier@btc_nonmainstream_monthly_gain }
+				KOR_BtC_increase_influence_nonmainstream = yes
+				clear_temp_variable = tmp_amount
+
+				set_temp_variable = { tmp_amount = modifier@btc_yushin_monthly_gain }
+				KOR_BtC_increase_influence_yushin = yes
+				clear_temp_variable = tmp_amount
+
+				if = {
+					limit = {
+						has_completed_focus = KOR_lee_overseas_dispatch
+						KOR_in_taiwan_war = yes
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = 1 }
+					clamp_variable = { var = KOR_taiwan_guardian_public_opinion_var min = 0 max = 999 }
+				}
+
+				if = {
+					limit = { has_dynamic_modifier = KOR_army_nuclear_cost_dynamic }
+					KOR_army_nuclear_development_increase = yes
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_army_igonrant_flag
+				}
+				KOR_lee_army_ignorant_clamp = yes
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_special_strategic_materials_route_selected_flag
+					NOT = { has_country_flag = KOR_special_strategic_materials_completed_flag }
+				}
+				KOR_special_strategic_materials_daily_progress_effect = yes
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_active_mission = KOR_kfxx_fighter_project_mission
+					NOT = { has_country_flag = KOR_kfxx_project_days_var_initialized_flag }
+				}
+				set_country_flag = KOR_kfxx_project_days_var_initialized_flag
+				set_variable = { KOR_kfxx_project_days_var = 1000 }
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_active_mission = KOR_kfxx_fighter_project_mission
+					check_variable = { KOR_kfxx_project_days_var > 0 }
+				}
+				add_to_variable = { KOR_kfxx_project_days_var = -1 }
+				clamp_variable = { var = KOR_kfxx_project_days_var min = 0 max = 1000 }
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_nis_dismantlement_active_flag
+					NOT = { has_country_flag = KOR_nis_dismantlement_finished_flag }
+				}
+				KOR_nis_dismantlement_update_total_support_effect = yes
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_completed_focus = KOR_lee_victory_sup_26
+					NOT = { has_country_flag = KOR_lee_new_republic_category_closed_flag }
+				}
+				set_country_flag = KOR_lee_new_republic_category_closed_flag
+				clr_country_flag = KOR_lee_new_republic_category_flag
+				remove_mission = KOR_lee_political_negotiation_mission
+				remove_ideas = KOR_lee_new_republic_establishment_resistance_1
+				remove_ideas = KOR_lee_new_republic_establishment_resistance_2
+				remove_ideas = KOR_lee_new_republic_establishment_resistance_3
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_completed_focus = KOR_lee_victory_sup_9
+					NOT = { has_completed_focus = KOR_lee_victory_sup_26 }
+					NOT = { has_country_flag = KOR_lee_new_republic_category_closed_flag }
+					NOT = { has_country_flag = KOR_lee_new_republic_category_flag }
+				}
+				set_country_flag = KOR_lee_new_republic_category_flag
+				set_variable = { KOR_lee_social_reform_count_var = 3 }
+				set_variable = { KOR_lee_establishment_resistance_var = 0 }
+				set_variable = { KOR_lee_reform_completion_var = 0 }
+				activate_mission = KOR_lee_political_negotiation_mission
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_new_republic_category_flag
+					NOT = { has_completed_focus = KOR_lee_victory_sup_26 }
+					NOT = { has_country_flag = KOR_lee_new_republic_category_closed_flag }
+				}
+				if = {
+					limit = {
+						check_variable = { KOR_lee_establishment_resistance_var < 1 }
+					}
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_1
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_2
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_3
+				}
+				else_if = {
+					limit = {
+						check_variable = { KOR_lee_establishment_resistance_var > 0 }
+						check_variable = { KOR_lee_establishment_resistance_var < 4 }
+					}
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_2
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_3
+					if = {
+						limit = {
+							NOT = { has_idea = KOR_lee_new_republic_establishment_resistance_1 }
+						}
+						add_ideas = KOR_lee_new_republic_establishment_resistance_1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { KOR_lee_establishment_resistance_var > 3 }
+						check_variable = { KOR_lee_establishment_resistance_var < 7 }
+					}
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_1
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_3
+					if = {
+						limit = {
+							NOT = { has_idea = KOR_lee_new_republic_establishment_resistance_2 }
+						}
+						add_ideas = KOR_lee_new_republic_establishment_resistance_2
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { KOR_lee_establishment_resistance_var > 6 }
+					}
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_1
+					remove_ideas = KOR_lee_new_republic_establishment_resistance_2
+					if = {
+						limit = {
+							NOT = { has_idea = KOR_lee_new_republic_establishment_resistance_3 }
+						}
+						add_ideas = KOR_lee_new_republic_establishment_resistance_3
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					has_completed_focus = KOR_lee_overseas_dispatch
+					KOR_in_taiwan_war = yes
+				}
+				if = {
+					limit = {
+						check_variable = { KOR_taiwan_guardian_navy_operation_timer_var > 0 }
+					}
+					add_to_variable = { KOR_taiwan_guardian_navy_operation_timer_var = -1 }
+					clamp_variable = { var = KOR_taiwan_guardian_navy_operation_timer_var min = 0 max = 120 }
+				}
+				if = {
+					limit = {
+						check_variable = { KOR_taiwan_guardian_air_operation_timer_var > 0 }
+					}
+					add_to_variable = { KOR_taiwan_guardian_air_operation_timer_var = -1 }
+					clamp_variable = { var = KOR_taiwan_guardian_air_operation_timer_var min = 0 max = 120 }
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_taipei_chi_control }
+						NOT = { has_country_flag = KOR_twg_taipei_prc_control }
+						CHI = { controls_state = 1148 }
+					}
+					set_country_flag = KOR_twg_taipei_chi_control
+				}
+				else_if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_taipei_chi_control }
+						NOT = { has_country_flag = KOR_twg_taipei_prc_control }
+						PRC = { controls_state = 1148 }
+					}
+					set_country_flag = KOR_twg_taipei_prc_control
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_taichung_chi_control }
+						NOT = { has_country_flag = KOR_twg_taichung_prc_control }
+						CHI = { controls_state = 1149 }
+					}
+					set_country_flag = KOR_twg_taichung_chi_control
+				}
+				else_if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_taichung_chi_control }
+						NOT = { has_country_flag = KOR_twg_taichung_prc_control }
+						PRC = { controls_state = 1149 }
+					}
+					set_country_flag = KOR_twg_taichung_prc_control
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_tainan_chi_control }
+						NOT = { has_country_flag = KOR_twg_tainan_prc_control }
+						CHI = { controls_state = 1150 }
+					}
+					set_country_flag = KOR_twg_tainan_chi_control
+				}
+				else_if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_tainan_chi_control }
+						NOT = { has_country_flag = KOR_twg_tainan_prc_control }
+						PRC = { controls_state = 1150 }
+					}
+					set_country_flag = KOR_twg_tainan_prc_control
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_okinawa_jap_control }
+						NOT = { has_country_flag = KOR_twg_okinawa_prc_control }
+						JAP = { controls_state = 526 }
+					}
+					set_country_flag = KOR_twg_okinawa_jap_control
+				}
+				else_if = {
+					limit = {
+						NOT = { has_country_flag = KOR_twg_okinawa_jap_control }
+						NOT = { has_country_flag = KOR_twg_okinawa_prc_control }
+						PRC = { controls_state = 526 }
+					}
+					set_country_flag = KOR_twg_okinawa_prc_control
+				}
+				if = {
+					limit = {
+						PRC = { controls_state = 1148 }
+						has_country_flag = KOR_twg_taipei_chi_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = 3 }
+					set_country_flag = KOR_twg_taipei_prc_control
+					clr_country_flag = KOR_twg_taipei_chi_control
+				}
+				else_if = {
+					limit = {
+						CHI = { controls_state = 1148 }
+						has_country_flag = KOR_twg_taipei_prc_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = -3 }
+					set_country_flag = KOR_twg_taipei_chi_control
+					clr_country_flag = KOR_twg_taipei_prc_control
+				}
+				if = {
+					limit = {
+						PRC = { controls_state = 1149 }
+						has_country_flag = KOR_twg_taichung_chi_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = 3 }
+					set_country_flag = KOR_twg_taichung_prc_control
+					clr_country_flag = KOR_twg_taichung_chi_control
+				}
+				else_if = {
+					limit = {
+						CHI = { controls_state = 1149 }
+						has_country_flag = KOR_twg_taichung_prc_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = -3 }
+					set_country_flag = KOR_twg_taichung_chi_control
+					clr_country_flag = KOR_twg_taichung_prc_control
+				}
+				if = {
+					limit = {
+						PRC = { controls_state = 1150 }
+						has_country_flag = KOR_twg_tainan_chi_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = 3 }
+					set_country_flag = KOR_twg_tainan_prc_control
+					clr_country_flag = KOR_twg_tainan_chi_control
+				}
+				else_if = {
+					limit = {
+						CHI = { controls_state = 1150 }
+						has_country_flag = KOR_twg_tainan_prc_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = -3 }
+					set_country_flag = KOR_twg_tainan_chi_control
+					clr_country_flag = KOR_twg_tainan_prc_control
+				}
+				if = {
+					limit = {
+						PRC = { controls_state = 526 }
+						has_country_flag = KOR_twg_okinawa_jap_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = 4 }
+					set_country_flag = KOR_twg_okinawa_prc_control
+					clr_country_flag = KOR_twg_okinawa_jap_control
+				}
+				else_if = {
+					limit = {
+						JAP = { controls_state = 526 }
+						has_country_flag = KOR_twg_okinawa_prc_control
+					}
+					add_to_variable = { KOR_taiwan_guardian_public_opinion_var = -4 }
+					set_country_flag = KOR_twg_okinawa_jap_control
+					clr_country_flag = KOR_twg_okinawa_prc_control
+				}
+				clamp_variable = { var = KOR_taiwan_guardian_public_opinion_var min = 0 max = 999 }
+				if = {
+					limit = {
+						check_variable = { KOR_taiwan_guardian_public_opinion_var < 6 }
+					}
+					remove_ideas = KOR_taiwan_guardian_public_opinion_fatigue_idea
+					remove_ideas = KOR_taiwan_guardian_public_opinion_antiwar_idea
+					if = {
+						limit = {
+							NOT = { has_idea = KOR_taiwan_guardian_public_opinion_support_idea }
+						}
+						add_ideas = KOR_taiwan_guardian_public_opinion_support_idea
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { KOR_taiwan_guardian_public_opinion_var > 5 }
+						check_variable = { KOR_taiwan_guardian_public_opinion_var < 11 }
+					}
+					remove_ideas = KOR_taiwan_guardian_public_opinion_support_idea
+					remove_ideas = KOR_taiwan_guardian_public_opinion_antiwar_idea
+					if = {
+						limit = {
+							NOT = { has_idea = KOR_taiwan_guardian_public_opinion_fatigue_idea }
+						}
+						add_ideas = KOR_taiwan_guardian_public_opinion_fatigue_idea
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { KOR_taiwan_guardian_public_opinion_var > 10 }
+					}
+					remove_ideas = KOR_taiwan_guardian_public_opinion_support_idea
+					remove_ideas = KOR_taiwan_guardian_public_opinion_fatigue_idea
+					if = {
+						limit = {
+							NOT = { has_idea = KOR_taiwan_guardian_public_opinion_antiwar_idea }
+						}
+						add_ideas = KOR_taiwan_guardian_public_opinion_antiwar_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOR
+					OR = {
+						NOT = { has_completed_focus = KOR_lee_overseas_dispatch }
+						NOT = { KOR_in_taiwan_war = yes }
+					}
+				}
+				set_variable = { KOR_taiwan_guardian_navy_operation_timer_var = 0 }
+				set_variable = { KOR_taiwan_guardian_air_operation_timer_var = 0 }
+				remove_ideas = KOR_taiwan_guardian_public_opinion_support_idea
+				remove_ideas = KOR_taiwan_guardian_public_opinion_fatigue_idea
+				remove_ideas = KOR_taiwan_guardian_public_opinion_antiwar_idea
+			}
+		}
+	}
+
+	on_new_term_election = {
+		effect = {
+			if = { #2022 President Election
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_president_election_2022
+				}
+				KOR = {
+					country_event = { id = korea.52 }
+				}
+			}
+			else_if = { #22 Yoon - Bright 2027
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_yoon_taiwan_war_victory
+					NOT = { has_country_flag = KOR_second_president_PPP }
+				}
+				KOR = {
+					country_event = { id = korea.179 }
+				}
+			}
+			else_if = { #22 Yoon - Bright 2032
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_yoon_taiwan_war_victory
+					has_country_flag = KOR_second_president_PPP
+					NOT = { has_country_flag = KOR_third_president_PPP }
+					NOT = { has_country_flag = KOR_ai_park_chung_hee_flag }
+				}
+				KOR = {
+					country_event = { id = korea.275 }
+				}
+			}
+			else_if = { #22 Yoon - Lee Jae-myung 2030(변동 가능)
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_yoon_taiwan_war_defeat
+					NOT = { has_country_flag = KOR_yoon_winter_republic }
+					NOT = { has_country_flag = KOR_second_president_DP }
+				}
+				KOR = {
+					country_event = { #김민석
+						id = korea.351
+					}
+				}
+			}
+			else_if = { #22 Lee - Bright 2027
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_taiwan_war_victory
+					has_country_flag = KOR_lee_taiwan_war_victory_supported
+					NOT = { has_country_flag = KOR_second_president_DPK_22 }
+				}
+				KOR = {
+					country_event = { id = korea.591 }
+				}
+			}
+			else_if = { #22 Lee - Bright 2032
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_taiwan_war_victory
+					has_country_flag = KOR_lee_taiwan_war_victory_supported
+					has_country_flag = KOR_second_president_DPK_22
+					NOT = { has_country_flag = KOR_third_president_DPK_22 }
+				}
+				KOR = {
+					country_event = { id = korea.592 }
+				}
+			}
+			else_if = { #22 Lee - Nothing 2027
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_taiwan_war_victory
+					NOT = { has_country_flag = KOR_lee_taiwan_war_victory_supported }
+					NOT = { has_country_flag = KOR_lee_nothing_2027_election }
+				}
+				KOR = {
+					country_event = { id = korea.594 }
+				}
+			}
+			else_if = { #22 Lee - Nothing 2032
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_taiwan_war_victory
+					NOT = { has_country_flag = KOR_lee_taiwan_war_victory_supported }
+					NOT = { has_country_flag = KOR_lee_nothing_2032_election }
+				}
+				KOR = {
+					country_event = { id = korea.595 }
+				}
+			}
+			else_if = { #22 Lee - Lose Coaliation 2029
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_taiwan_war_defeat
+					has_country_flag = KOR_lee_coalition_route
+					NOT = { has_country_flag = KOR_lee_coa_2029_election }
+				}
+				KOR = {
+					country_event = { id = korea.596 }
+				}
+			}
+			else_if = { #22 Lee - Lose DLP 2029
+				limit = {
+					tag = KOR
+					KOR_is_PP_path = yes
+					NOT = { has_country_flag = KOR_lee_dlp_2029_election }
+				}
+				KOR = {
+					country_event = { id = korea.847 }
+				}
+			}
+			else_if = { #22 Lee - Army Revolution 2029 Nam Yeongshin
+				limit = {
+					tag = KOR
+					has_country_flag = KOR_lee_taiwan_war_defeat
+					has_country_flag = KOR_lee_national_revolution_route
+					NOT = { has_country_flag = KOR_lee_army_2029_election }
+					NOT = { has_country_flag = KOR_army_power_yec_strong }
+					NOT = { has_country_flag = KOR_yoon_mtl_focus_unlock }
+				}
+				KOR = {
+					country_event = { id = korea.619 }
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = PRK }
+					has_global_flag = pan_asian_war_ongoing
+					KOR = {
+						exists = yes
+						is_in_faction_with = JAP
+						NOT = {
+							has_war_with = PRC
+						}
+					}
+				}
+				PRC = {
+					declare_war_on = { target = KOR type = annex_everything }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = PRK }
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+				KPA = {
+					annex_country = {
+						target = PRK
+						transfer_troops = yes
+					}
+				}
+				KOR = {
+					set_global_flag = pdto_takes_1415
+					set_global_flag = pdto_takes_1413_1414
+					country_event = { id = korea.687 }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = KPA }
+					has_global_flag = PRK_north_korea_coupdeta_flag
+				}
+				if = {
+					limit = {
+						PRK = { exists = no }
+					}
+					PRK = { get_current_government_type = yes }
+					PRC = { puppet = PRK }
+					PRK = { restore_previous_government_type = yes }
+				}
+				PRK = {
+					set_cosmetic_tag = PRK_chinese_control_cosmetic
+					transfer_state = 1043
+					transfer_state = 1050
+					transfer_state = 527
+					transfer_state = 875
+					transfer_state = 873
+					transfer_state = 872
+					transfer_state = 874
+					transfer_state = 1046
+					transfer_state = 1045
+					transfer_state = 1042
+					transfer_state = 1044
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						FROM = {
+							OR = {
+								original_tag = KOR
+								original_tag = PD1
+								is_puppet_of = KOR
+							}
+						}
+						ROOT = {
+							OR = {
+								original_tag = NMA
+								original_tag = A78
+								original_tag = MST
+								original_tag = APF
+								original_tag = BDG
+								original_tag = NTT
+								original_tag = NK2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						PD1 = { exists = no }
+					}
+					KOR = { puppet = PD1 }
+					PD1 = {
+						set_politics = {
+							ruling_party = nationalist
+							last_election = "2017.10.22"
+							election_frequency = 48
+							elections_allowed = yes
+						}
+
+						set_popularities = {
+							nationalist = 38.3
+							conservative = 10.7
+							libertarian_socialist = 3.2
+							communist = 47.8
+						}
+					}
+				}
+				every_country = {
+					PD1 = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+				}
+			}
+		}
+	}
+}

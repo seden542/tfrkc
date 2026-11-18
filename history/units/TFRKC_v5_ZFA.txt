@@ -1,0 +1,9 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 ZFA militia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+units = {
+ division = { name = "ZFA militia 1" location = 15156 division_template = "TFRKC v5 ZFA militia" start_manpower_factor = 0.7 start_equipment_factor = 0.55 start_experience_factor = 0.35 }
+ division = { name = "ZFA militia 2" location = 15198 division_template = "TFRKC v5 ZFA militia" start_manpower_factor = 0.7 start_equipment_factor = 0.55 start_experience_factor = 0.35 }
+ division = { name = "ZFA militia 3" location = 15207 division_template = "TFRKC v5 ZFA militia" start_manpower_factor = 0.7 start_equipment_factor = 0.55 start_experience_factor = 0.35 }
+ division = { name = "ZFA militia 4" location = 15239 division_template = "TFRKC v5 ZFA militia" start_manpower_factor = 0.7 start_equipment_factor = 0.55 start_experience_factor = 0.35 }
+ division = { name = "ZFA militia 5" location = 15226 division_template = "TFRKC v5 ZFA militia" start_manpower_factor = 0.7 start_equipment_factor = 0.55 start_experience_factor = 0.35 }
+}

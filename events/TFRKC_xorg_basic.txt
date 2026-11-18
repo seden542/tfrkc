@@ -1,0 +1,114 @@
+# RETIRED NEW16 events; old IDs retained disabled, not reassigned.
+add_namespace = tfrkc_xorg
+country_event = { id = tfrkc_xorg.1 title = TFRKC_xorg_draft_GWANGJU_t desc = TFRKC_xorg_draft_GWANGJU_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_GWANGJU_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_GWANGJU_resolved } }
+ option = { name = TFRKC_xorg_draft_GWANGJU_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_GWANGJU_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_GWANGJU_resolved } } set_global_flag = TFRKC_xorg_GWANGJU_resolved set_global_flag = TFRKC_xorg_GWANGJU_choice_a clr_global_flag = TFRKC_xorg_GWANGJU_pending } } }
+ option = { name = TFRKC_xorg_draft_GWANGJU_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_GWANGJU_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_GWANGJU_resolved } } set_global_flag = TFRKC_xorg_GWANGJU_resolved set_global_flag = TFRKC_xorg_GWANGJU_choice_b clr_global_flag = TFRKC_xorg_GWANGJU_pending } } }
+}
+country_event = { id = tfrkc_xorg.2 title = TFRKC_xorg_draft_JEONJU_t desc = TFRKC_xorg_draft_JEONJU_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_JEONJU_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_JEONJU_resolved } }
+ option = { name = TFRKC_xorg_draft_JEONJU_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_JEONJU_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_JEONJU_resolved } } set_global_flag = TFRKC_xorg_JEONJU_resolved set_global_flag = TFRKC_xorg_JEONJU_choice_a clr_global_flag = TFRKC_xorg_JEONJU_pending } } }
+ option = { name = TFRKC_xorg_draft_JEONJU_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_JEONJU_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_JEONJU_resolved } } set_global_flag = TFRKC_xorg_JEONJU_resolved set_global_flag = TFRKC_xorg_JEONJU_choice_b clr_global_flag = TFRKC_xorg_JEONJU_pending } } }
+}
+country_event = { id = tfrkc_xorg.3 title = TFRKC_xorg_draft_CORPORATE_t desc = TFRKC_xorg_draft_CORPORATE_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_CORPORATE_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CORPORATE_resolved } }
+ option = { name = TFRKC_xorg_draft_CORPORATE_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CORPORATE_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CORPORATE_resolved } } set_global_flag = TFRKC_xorg_CORPORATE_resolved set_global_flag = TFRKC_xorg_CORPORATE_choice_a clr_global_flag = TFRKC_xorg_CORPORATE_pending } } }
+ option = { name = TFRKC_xorg_draft_CORPORATE_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CORPORATE_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CORPORATE_resolved } } set_global_flag = TFRKC_xorg_CORPORATE_resolved set_global_flag = TFRKC_xorg_CORPORATE_choice_b clr_global_flag = TFRKC_xorg_CORPORATE_pending } } }
+}
+country_event = { id = tfrkc_xorg.4 title = TFRKC_xorg_draft_CONTINUITY_t desc = TFRKC_xorg_draft_CONTINUITY_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_CONTINUITY_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CONTINUITY_resolved } }
+ option = { name = TFRKC_xorg_draft_CONTINUITY_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CONTINUITY_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CONTINUITY_resolved } } set_global_flag = TFRKC_xorg_CONTINUITY_resolved set_global_flag = TFRKC_xorg_CONTINUITY_choice_a clr_global_flag = TFRKC_xorg_CONTINUITY_pending } } }
+ option = { name = TFRKC_xorg_draft_CONTINUITY_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CONTINUITY_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CONTINUITY_resolved } } set_global_flag = TFRKC_xorg_CONTINUITY_resolved set_global_flag = TFRKC_xorg_CONTINUITY_choice_b clr_global_flag = TFRKC_xorg_CONTINUITY_pending } } }
+}
+country_event = { id = tfrkc_xorg.5 title = TFRKC_xorg_draft_TAEBAEK_t desc = TFRKC_xorg_draft_TAEBAEK_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_TAEBAEK_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_TAEBAEK_resolved } }
+ option = { name = TFRKC_xorg_draft_TAEBAEK_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_TAEBAEK_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_TAEBAEK_resolved } } set_global_flag = TFRKC_xorg_TAEBAEK_resolved set_global_flag = TFRKC_xorg_TAEBAEK_choice_a clr_global_flag = TFRKC_xorg_TAEBAEK_pending } } }
+ option = { name = TFRKC_xorg_draft_TAEBAEK_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_TAEBAEK_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_TAEBAEK_resolved } } set_global_flag = TFRKC_xorg_TAEBAEK_resolved set_global_flag = TFRKC_xorg_TAEBAEK_choice_b clr_global_flag = TFRKC_xorg_TAEBAEK_pending } } }
+}
+country_event = { id = tfrkc_xorg.6 title = TFRKC_xorg_draft_FARMERS_t desc = TFRKC_xorg_draft_FARMERS_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_FARMERS_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_FARMERS_resolved } }
+ option = { name = TFRKC_xorg_draft_FARMERS_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_FARMERS_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_FARMERS_resolved } } set_global_flag = TFRKC_xorg_FARMERS_resolved set_global_flag = TFRKC_xorg_FARMERS_choice_a clr_global_flag = TFRKC_xorg_FARMERS_pending } } }
+ option = { name = TFRKC_xorg_draft_FARMERS_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_FARMERS_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_FARMERS_resolved } } set_global_flag = TFRKC_xorg_FARMERS_resolved set_global_flag = TFRKC_xorg_FARMERS_choice_b clr_global_flag = TFRKC_xorg_FARMERS_pending } } }
+}
+country_event = { id = tfrkc_xorg.7 title = TFRKC_xorg_draft_COVENANT_t desc = TFRKC_xorg_draft_COVENANT_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_COVENANT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_COVENANT_resolved } }
+ option = { name = TFRKC_xorg_draft_COVENANT_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_COVENANT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_COVENANT_resolved } } set_global_flag = TFRKC_xorg_COVENANT_resolved set_global_flag = TFRKC_xorg_COVENANT_choice_a clr_global_flag = TFRKC_xorg_COVENANT_pending } } }
+ option = { name = TFRKC_xorg_draft_COVENANT_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_COVENANT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_COVENANT_resolved } } set_global_flag = TFRKC_xorg_COVENANT_resolved set_global_flag = TFRKC_xorg_COVENANT_choice_b clr_global_flag = TFRKC_xorg_COVENANT_pending } } }
+}
+country_event = { id = tfrkc_xorg.8 title = TFRKC_xorg_draft_TAIWAN_t desc = TFRKC_xorg_draft_TAIWAN_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_TAIWAN_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_TAIWAN_resolved } }
+ option = { name = TFRKC_xorg_draft_TAIWAN_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_TAIWAN_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_TAIWAN_resolved } } set_global_flag = TFRKC_xorg_TAIWAN_resolved set_global_flag = TFRKC_xorg_TAIWAN_choice_a clr_global_flag = TFRKC_xorg_TAIWAN_pending } } }
+ option = { name = TFRKC_xorg_draft_TAIWAN_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_TAIWAN_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_TAIWAN_resolved } } set_global_flag = TFRKC_xorg_TAIWAN_resolved set_global_flag = TFRKC_xorg_TAIWAN_choice_b clr_global_flag = TFRKC_xorg_TAIWAN_pending } } }
+}
+country_event = { id = tfrkc_xorg.9 title = TFRKC_xorg_draft_DAEDEOK_t desc = TFRKC_xorg_draft_DAEDEOK_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_DAEDEOK_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_DAEDEOK_resolved } }
+ option = { name = TFRKC_xorg_draft_DAEDEOK_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_DAEDEOK_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_DAEDEOK_resolved } } set_global_flag = TFRKC_xorg_DAEDEOK_resolved set_global_flag = TFRKC_xorg_DAEDEOK_choice_a clr_global_flag = TFRKC_xorg_DAEDEOK_pending } } }
+ option = { name = TFRKC_xorg_draft_DAEDEOK_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_DAEDEOK_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_DAEDEOK_resolved } } set_global_flag = TFRKC_xorg_DAEDEOK_resolved set_global_flag = TFRKC_xorg_DAEDEOK_choice_b clr_global_flag = TFRKC_xorg_DAEDEOK_pending } } }
+}
+country_event = { id = tfrkc_xorg.10 title = TFRKC_xorg_draft_RAIL_t desc = TFRKC_xorg_draft_RAIL_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_RAIL_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_RAIL_resolved } }
+ option = { name = TFRKC_xorg_draft_RAIL_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_RAIL_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_RAIL_resolved } } set_global_flag = TFRKC_xorg_RAIL_resolved set_global_flag = TFRKC_xorg_RAIL_choice_a clr_global_flag = TFRKC_xorg_RAIL_pending } } }
+ option = { name = TFRKC_xorg_draft_RAIL_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_RAIL_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_RAIL_resolved } } set_global_flag = TFRKC_xorg_RAIL_resolved set_global_flag = TFRKC_xorg_RAIL_choice_b clr_global_flag = TFRKC_xorg_RAIL_pending } } }
+}
+country_event = { id = tfrkc_xorg.11 title = TFRKC_xorg_draft_WHITE_NIGHT_t desc = TFRKC_xorg_draft_WHITE_NIGHT_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_WHITE_NIGHT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_WHITE_NIGHT_resolved } }
+ option = { name = TFRKC_xorg_draft_WHITE_NIGHT_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_WHITE_NIGHT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_WHITE_NIGHT_resolved } } set_global_flag = TFRKC_xorg_WHITE_NIGHT_resolved set_global_flag = TFRKC_xorg_WHITE_NIGHT_choice_a clr_global_flag = TFRKC_xorg_WHITE_NIGHT_pending } } }
+ option = { name = TFRKC_xorg_draft_WHITE_NIGHT_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_WHITE_NIGHT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_WHITE_NIGHT_resolved } } set_global_flag = TFRKC_xorg_WHITE_NIGHT_resolved set_global_flag = TFRKC_xorg_WHITE_NIGHT_choice_b clr_global_flag = TFRKC_xorg_WHITE_NIGHT_pending } } }
+}
+country_event = { id = tfrkc_xorg.12 title = TFRKC_xorg_draft_CHEONGSONG_t desc = TFRKC_xorg_draft_CHEONGSONG_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_CHEONGSONG_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CHEONGSONG_resolved } }
+ option = { name = TFRKC_xorg_draft_CHEONGSONG_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CHEONGSONG_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CHEONGSONG_resolved } } set_global_flag = TFRKC_xorg_CHEONGSONG_resolved set_global_flag = TFRKC_xorg_CHEONGSONG_choice_a clr_global_flag = TFRKC_xorg_CHEONGSONG_pending } } }
+ option = { name = TFRKC_xorg_draft_CHEONGSONG_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CHEONGSONG_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CHEONGSONG_resolved } } set_global_flag = TFRKC_xorg_CHEONGSONG_resolved set_global_flag = TFRKC_xorg_CHEONGSONG_choice_b clr_global_flag = TFRKC_xorg_CHEONGSONG_pending } } }
+}
+country_event = { id = tfrkc_xorg.13 title = TFRKC_xorg_draft_IMPERIAL_t desc = TFRKC_xorg_draft_IMPERIAL_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_IMPERIAL_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_IMPERIAL_resolved } }
+ option = { name = TFRKC_xorg_draft_IMPERIAL_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_IMPERIAL_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_IMPERIAL_resolved } } set_global_flag = TFRKC_xorg_IMPERIAL_resolved set_global_flag = TFRKC_xorg_IMPERIAL_choice_a clr_global_flag = TFRKC_xorg_IMPERIAL_pending } } }
+ option = { name = TFRKC_xorg_draft_IMPERIAL_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_IMPERIAL_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_IMPERIAL_resolved } } set_global_flag = TFRKC_xorg_IMPERIAL_resolved set_global_flag = TFRKC_xorg_IMPERIAL_choice_b clr_global_flag = TFRKC_xorg_IMPERIAL_pending } } }
+}
+country_event = { id = tfrkc_xorg.14 title = TFRKC_xorg_draft_HOMECOMING_t desc = TFRKC_xorg_draft_HOMECOMING_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_HOMECOMING_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_HOMECOMING_resolved } }
+ option = { name = TFRKC_xorg_draft_HOMECOMING_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_HOMECOMING_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_HOMECOMING_resolved } } set_global_flag = TFRKC_xorg_HOMECOMING_resolved set_global_flag = TFRKC_xorg_HOMECOMING_choice_a clr_global_flag = TFRKC_xorg_HOMECOMING_pending } } }
+ option = { name = TFRKC_xorg_draft_HOMECOMING_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_HOMECOMING_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_HOMECOMING_resolved } } set_global_flag = TFRKC_xorg_HOMECOMING_resolved set_global_flag = TFRKC_xorg_HOMECOMING_choice_b clr_global_flag = TFRKC_xorg_HOMECOMING_pending } } }
+}
+country_event = { id = tfrkc_xorg.15 title = TFRKC_xorg_draft_CREDIT_t desc = TFRKC_xorg_draft_CREDIT_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_CREDIT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CREDIT_resolved } }
+ option = { name = TFRKC_xorg_draft_CREDIT_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CREDIT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CREDIT_resolved } } set_global_flag = TFRKC_xorg_CREDIT_resolved set_global_flag = TFRKC_xorg_CREDIT_choice_a clr_global_flag = TFRKC_xorg_CREDIT_pending } } }
+ option = { name = TFRKC_xorg_draft_CREDIT_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_CREDIT_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_CREDIT_resolved } } set_global_flag = TFRKC_xorg_CREDIT_resolved set_global_flag = TFRKC_xorg_CREDIT_choice_b clr_global_flag = TFRKC_xorg_CREDIT_pending } } }
+}
+country_event = { id = tfrkc_xorg.16 title = TFRKC_xorg_draft_UNDERGROUND_t desc = TFRKC_xorg_draft_UNDERGROUND_d picture = GFX_report_event_martial_law_notebook is_triggered_only = yes
+ trigger = { always = no TFRKC_xorg_UNDERGROUND_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_UNDERGROUND_resolved } }
+ option = { name = TFRKC_xorg_draft_UNDERGROUND_a ai_chance = { factor = 65 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_UNDERGROUND_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_UNDERGROUND_resolved } } set_global_flag = TFRKC_xorg_UNDERGROUND_resolved set_global_flag = TFRKC_xorg_UNDERGROUND_choice_a clr_global_flag = TFRKC_xorg_UNDERGROUND_pending } } }
+ option = { name = TFRKC_xorg_draft_UNDERGROUND_b ai_chance = { factor = 35 } custom_effect_tooltip = TFRKC_xorg_record_tt
+ hidden_effect = { if = { limit = { TFRKC_xorg_UNDERGROUND_actor_trigger = yes NOT = { has_global_flag = TFRKC_xorg_UNDERGROUND_resolved } } set_global_flag = TFRKC_xorg_UNDERGROUND_resolved set_global_flag = TFRKC_xorg_UNDERGROUND_choice_b clr_global_flag = TFRKC_xorg_UNDERGROUND_pending } } }
+}

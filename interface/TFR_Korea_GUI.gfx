@@ -1,0 +1,299 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_KOR_coronavirus_dissatisfaction_progbar"
+		textureFile1 = "gfx/interface/GUI/coronavirus/KOR_coronavirus_dissatisfaction.png"
+		textureFile2 = "gfx/interface/GUI/coronavirus/KOR_coronavirus_dissatisfaction_background.png"
+		# textureFile2 = "gfx/interface/tiles/tiled_window_transparent.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 85 y = 124 } 
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_KOR_coronavirus_infection_progbar"
+		textureFile1 = "gfx/interface/GUI/coronavirus/KOR_coronavirus_infection.png"
+		textureFile2 = "gfx/interface/GUI/coronavirus/KOR_coronavirus_infection_background.png"
+		# textureFile2 = "gfx/interface/tiles/tiled_window_transparent.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 123 y = 123 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_KOR_coronavirus_vaccine_progbar"
+		textureFile1 = "gfx/interface/GUI/coronavirus/KOR_coronavirus_vaccine.png"
+		textureFile2 = "gfx/interface/GUI/coronavirus/KOR_coronavirus_vaccine_background.png"
+		# textureFile2 = "gfx/interface/tiles/tiled_window_transparent.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 110 y = 118 } 
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	spriteType = {
+		name = "GFX_KOR_coronavirus_box_icon"
+		textureFile = "gfx/interface/GUI/coronavirus/KOR_coronavirus_box.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_national_assembly_member_icon"
+		texturefile = "gfx/interface/GUI/national_assembly/parliament_parties.dds"
+		noOfFrames = 9
+	}
+	spriteType = {
+		name = "GFX_KOR_yoon_father_icon"
+		textureFile = "gfx/interface/GUI/inlay/KOR_yoon_father_icon.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_bird_background"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_bird.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_inner_circle_leader_backgound"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_inner_circle_leader_backgound.png"
+		legacy_lazy_load = no
+		noofframes = 11
+	}
+	
+
+	spriteType = {
+		name = "GFX_KOR_PPP_inner_circle_background"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_inner_circle_background.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_inner_circle_party_leaders"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_inner_party_leader.png"
+		legacy_lazy_load = no
+		noofframes = 5
+	}
+	spriteType = {
+		name = "GFX_KOR_inner_circle_floor_leader"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_inner_party_leader_2.png"
+		legacy_lazy_load = no
+		noofframes = 4
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_conservative_president_portrait"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_conservative_president_portrait.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_conservative_president_portrait_01"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_conservative_president_portrait_01.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_conservative_president_portrait_02"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_conservative_president_portrait_02.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_conservative_president_portrait_03"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_conservative_president_portrait_03.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_conservative_president_portrait_04"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_conservative_president_portrait_04.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_syngman_rhee"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_syngman_rhee.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_park_chung_hee"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_park_chung_hee.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_kim_oung_sam"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_kim_oung_sam.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_PPP_yoon_seok_youl"
+		textureFile = "gfx/interface/GUI/inner_circle/KOR_PPP_yoon_seok_youl.png"
+		legacy_lazy_load = no
+	}
+
+
+	spriteType = {
+		name = "GFX_KOR_president_election_background"
+		textureFile = "gfx/interface/GUI/inlay/background.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_president_election_background_human"
+		textureFile = "gfx/interface/GUI/inlay/human.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_president_election_background_line"
+		textureFile = "gfx/interface/GUI/inlay/line.png"
+	}
+
+	spriteType = {
+		name = "GFX_tight_match_president_election"
+		textureFile = "gfx/interface/GUI/inlay/tight_game.png"
+	}
+	spriteType = {
+		name = "GFX_unknown_president_election"
+		textureFile = "gfx/interface/blank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lee_prime_president_election"
+		texturefile = "gfx/interface/GUI/inlay/lee_prime.png"
+	}
+
+	spriteType = {
+		name = "GFX_yoon_prime_president_election"
+		texturefile = "gfx/interface/GUI/inlay/yoon_prime.png"
+	}
+
+	spriteType = {
+		name = "GFX_yoon_certain_president_election"
+		texturefile = "gfx/interface/GUI/inlay/yoon_certain.png"
+	}
+
+	spriteType = {
+		name = "GFX_lee_certain_president_election"
+		texturefile = "gfx/interface/GUI/inlay/lee_certain.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_bop_lee_leftwing"
+		texturefile = "gfx/interface/bop/KOR_bop_lee_leftwing.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_bop_lee_rightwing"
+		texturefile = "gfx/interface/bop/KOR_bop_lee_rightwing.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_bop_coa_leftwing"
+		texturefile = "gfx/interface/bop/KOR_bop_coa_leftwing.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_bop_coa_rightwing"
+		texturefile = "gfx/interface/bop/KOR_bop_coa_rightwing.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_bop_army_leftwing"
+		texturefile = "gfx/interface/bop/KOR_bop_army_leftwing.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_bop_army_rightwing"
+		texturefile = "gfx/interface/bop/KOR_bop_army_rightwing.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_bop_plp_NA_leftwing"
+		texturefile = "gfx/interface/bop/KOR_bop_plp_NA_leftwing.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_bop_plp_NA_rightwing"
+		texturefile = "gfx/interface/bop/KOR_bop_plp_NA_rightwing.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_army_secret_plan_background"
+		texturefile = "gfx/interface/GUI/army_secret_plan/army_secret_plan_background.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_president_election_background_2027"
+		textureFile = "gfx/interface/GUI/inlay_2027/background_2027.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_KOR_president_election_background_human_2027"
+		textureFile = "gfx/interface/GUI/inlay_2027/human_2027.png"
+	}
+
+	spriteType = {
+		name = "GFX_KOR_president_election_background_line_2027"
+		textureFile = "gfx/interface/GUI/inlay_2027/line_2027.png"
+	}
+
+	spriteType = {
+		name = "GFX_tight_match_president_election_2027"
+		textureFile = "gfx/interface/GUI/inlay_2027/tight_game_2027.png"
+	}
+	spriteType = {
+		name = "GFX_lee_prime_president_election_2027"
+		texturefile = "gfx/interface/GUI/inlay_2027/lee_prime_2027.png"
+	}
+
+	spriteType = {
+		name = "GFX_cho_prime_president_election_2027"
+		texturefile = "gfx/interface/GUI/inlay_2027/cho_prime_2027.png"
+	}
+
+	spriteType = {
+		name = "GFX_cho_certain_president_election_2027"
+		texturefile = "gfx/interface/GUI/inlay_2027/cho_certain_2027.png"
+	}
+
+	spriteType = {
+		name = "GFX_lee_certain_president_election_2027"
+		texturefile = "gfx/interface/GUI/inlay_2027/lee_certain_2027.png"
+	}
+
+	progressBarType = {
+		name = "GFX_KOR_president_election_2027_left"
+		textureFile1 = "gfx/interface/GUI/inlay_2027/cho_bar.png"
+		textureFile2 = "gfx/interface/absolute_nothing.dds"
+		size = { x = 163 y = 24 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	progressBarType = {
+		name = "GFX_KOR_president_election_2027_right"
+		textureFile1 = "gfx/interface/GUI/inlay_2027/lee_jun_bar.png"
+		textureFile2 = "gfx/interface/absolute_nothing.dds"
+		size = { x = 163 y = 24 }
+		effectFile = "gfx/FX/progress_reverse.lua"
+	}
+
+	spritetype = {
+		name = "GFX_army_nuclear_funding_slider_thumb"
+		texturefile = "gfx/interface/GUI/nuclear_program/slider_dot.png"
+		effectfile = "gfx/FX/BRA_nuclear_funding_slider_thumb_anim.shader"
+	}
+
+	spritetype = {
+		name = "GFX_KOR_nuclear_funding_slider_background"
+		texturefile = "gfx/interface/GUI/nuclear_program/KOR_nuclear_funding_slider_background.png"
+	}
+
+	spritetype = {
+		name = "GFX_KOR_army_nuclear_program_progress_bg"
+		texturefile = "gfx/interface/GUI/nuclear_program/KOR_nuke_button_bg.png"
+	}
+
+	progressbartype = {
+		name = "GFX_KOR_army_nuclear_program_progress_pie"
+		textureFile1 = "gfx/interface/GUI/nuclear_program/KOR_nuke_button_on.png"
+		textureFile2 = "gfx/interface/GUI/nuclear_program/KOR_nuke_button_off.png"
+		size = { 
+			x = 132
+			y = 131
+		}
+		effectFile = "gfx/FX/progress_radial_gap.lua"
+		horizontal = yes
+		steps = 10
+	}
+
+	spritetype = {
+		name = "GFX_KOR_army_nuclear_program_background"
+		texturefile = "gfx/interface/GUI/nuclear_program/KOR_army_nuclear_program_background.png"
+	}
+
+	spritetype = {
+		name = "GFX_KOR_army_nuclear_program_progress_complete_button"
+		texturefile = "gfx/interface/GUI/nuclear_program/KOR_nuke_button_on.png"
+	}
+
+}

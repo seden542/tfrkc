@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_theatre_army_shield_kp_selected"
+		texturefile = "gfx/army_icons/TFRKP_army_icons_selected.png" #TFRKP_army_icons
+		noOfFrames = 29
+	}
+	spriteType = {
+		name = "GFX_theatre_army_shield_kp"
+		texturefile = "gfx/army_icons/TFRKP_army_icons.png"
+		noOfFrames = 29
+	}
+	spriteType = {
+		name = "GFX_theatre_army_group_shield_kp_selected"
+		texturefile = "gfx/army_icons/TFRKP_army_group_icons_selected.png" #TFRKP_army_group_icons_selected
+		noOfFrames = 14
+	}
+	spriteType = {
+		name = "GFX_theatre_army_group_shield_kp"
+		texturefile = "gfx/army_icons/TFRKP_army_group_icons.png"
+		noOfFrames = 14
+	}
+}

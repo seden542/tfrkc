@@ -1,0 +1,346 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_democratic_party_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 620 }
+		
+		containerWindowType = {
+			name = "TFR_KOR_DPK_social_liberal_president_portrait_container"
+			orientation = center
+			position = { x = -195 y = -300 }
+			clipping = no
+			
+			containerWindowType = {
+				name = "TFR_KOR_DPK_party_leader_portrait_container_01"
+				size = { width = 91 height = 120 }
+				clipping = no
+				
+				#PORTRAIT
+				iconType = {
+					name = "TFR_KOR_DPK_party_leader_portrait_01"
+					spriteType = "GFX_KOR_DPK_social_liberal_president_portrait_01"
+					position = { x=0 y=-0 }
+					pdx_tooltip = KOR_social_liberal_president_01_tt
+					pdx_tooltip_delayed = KOR_social_liberal_president_01_delayed_tt
+				}
+			}
+			
+			containerWindowType = {
+				name = "TFR_KOR_DPK_party_leader_portrait_container_02"
+				position = { x = 130 y = 0 }
+				size = { width = 91 height = 120 }
+				clipping = no
+				
+				#PORTRAIT
+				iconType = {
+					name = "TFR_KOR_DPK_party_leader_portrait_02"
+					spriteType = "GFX_KOR_DPK_social_liberal_president_portrait_02"
+					position = { x=0 y=-0 }
+					pdx_tooltip = KOR_social_liberal_president_02_tt
+					pdx_tooltip_delayed = KOR_social_liberal_president_02_delayed_tt
+				}
+			}
+			
+			containerWindowType = {
+				name = "TFR_KOR_DPK_party_leader_portrait_container_03"
+				position = { x = 260 y = 0 }
+				size = { width = 91 height = 120 }
+				clipping = no
+				
+				#PORTRAIT
+				iconType = {
+					name = "TFR_KOR_DPK_party_leader_portrait_03"
+					spriteType = "GFX_KOR_DPK_social_liberal_president_portrait_03"
+					position = { x=0 y=-0 }
+					pdx_tooltip = KOR_social_liberal_president_03_tt
+					pdx_tooltip_delayed = KOR_social_liberal_president_03_delayed_tt
+				}
+			}
+			
+			containerWindowType = {
+				name = "TFR_KOR_DPK_party_leader_portrait_container_04"
+				position = { x = 390 y = 0 }
+				size = { width = 91 height = 120 }
+				clipping = no
+				
+				#PORTRAIT
+				iconType = {
+					name = "TFR_KOR_DPK_party_leader_portrait_04"
+					spriteType = "GFX_KOR_DPK_social_liberal_president_portrait_04"
+					position = { x=0 y=-0 }
+					pdx_tooltip = KOR_social_liberal_president_04_tt
+					pdx_tooltip_delayed = KOR_social_liberal_president_04_delayed_tt
+				}
+			}
+
+		}
+
+		iconType = {
+			name = "KOR_democratic_party_help"
+			spriteType = "GFX_help_button"
+			position = { x = 470 y = -30 }
+			pdx_tooltip = "KOR_democratic_party_help_tooltip"
+		}
+
+		containerWindowType = {
+			name = "KOR_dpk_dynasty_cycle"
+			position = { x = 0 y = 130 }
+		
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_icon"
+				spriteType = "GFX_KOR_circle_pre_lee"
+				position = { x = 30 y = 0 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_tt
+			}
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_pre_lee_bottom_left_icon"
+				spriteType = "GFX_KOR_circle_pre_lee_bottom_left"
+				position = { x = 30 y = 84 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_bottom_left_anxious_tt
+			}
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_pre_lee_bottom_right_icon"
+				spriteType = "GFX_KOR_circle_pre_lee_bottom_right"
+				position = { x = 247 y = 84 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_bottom_right_anti_lee_tt
+			}
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_anti_lee_bottom_left_icon"
+				spriteType = "GFX_KOR_circle_anti_lee_bottom_left"
+				position = { x = 30 y = 84 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_bottom_left_pre_lee_tt
+			}
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_anti_lee_bottom_right_icon"
+				spriteType = "GFX_KOR_circle_anti_lee_bottom_right"
+				position = { x = 247 y = 84 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_bottom_right_anxious_tt
+			}
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_anxious_bottom_left_icon"
+				spriteType = "GFX_KOR_circle_anxious_bottom_left"
+				position = { x = 30 y = 84 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_bottom_left_anti_lee_tt
+			}
+			iconType = {
+				name = "KOR_dpk_dynasty_cycle_anxious_bottom_right_icon"
+				spriteType = "GFX_KOR_circle_anxious_bottom_right"
+				position = { x = 247 y = 84 }
+				pdx_tooltip = KOR_DPK_dynasty_cycle_bottom_right_pre_lee_tt
+			}
+		}
+		containerWindowType = {
+			name = "KOR_DPK_party_leader_box"
+			position = { x = 10 y = 400 }
+			iconType = {
+				name = "KOR_DPK_party_leader_icon"
+				spriteType = "GFX_portrait_nothing"
+				position = { x = 6 y = 5 }
+				scale = 0.8
+			}
+
+			iconType = {
+				name = "KOR_DPK_party_leader_frame"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "KOR_DPK_party_leader_desc_tt"
+				scale = 0.8
+			}
+
+			iconType = {
+				name = "KOR_DPK_party_leader_pannel_frame"
+				spriteType = "GFX_KOR_dpk_leader_frame"
+				position = { x = 30 y = -30 }
+			}
+			
+			instantTextBoxType = {
+				name = "KOR_DPK_party_leader_name"
+				position = { x = 30 y = 180 }
+				font = "VCR02_14"
+				text = "[GetKORDPKLeaderNameDesc]"
+				maxWidth = 70
+				maxHeight = 24
+				format = center
+			}
+		}		
+		containerWindowType = {
+			name = "KOR_dpk_gov_state_container"
+			position = { x = 150 y = 370 }
+			size = { width = 350 height = 250 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+				clipping = no
+			}
+			
+			containerWindowType = {
+				name = "KOR_DPK_government_container"
+				position = { x = 0 y = 40 }
+				instantTextboxType = {
+					name = "KOR_DPK_government_state"
+					font = "VCR02_20"
+					maxWidth = 150
+					maxHeight = 16
+					format = center
+					text = "KOR_DPK_government_state_text"
+				}
+
+				iconType = { #진척도
+					name = "KOR_DPK_government_progressbar"
+					spriteType = "GFX_KOR_dpk_progressbar_green"
+					position = { x = 135 y = -3 } 
+					pdx_tooltip = KOR_DPK_government_stability_gauge_tt
+				}
+				iconType = { #
+					name = "KOR_DPK_government_progressbar_frame"
+					spriteType = "GFX_KOR_dpk_progressbar_frame"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_government_stability_gauge_tt
+				}
+			}
+			containerWindowType = {
+				name = "KOR_DPK_pre_lee_container"
+				position = { x = 0 y = 90 }
+				instantTextboxType = {
+					name = "KOR_DPK_pre_lee_state"
+					font = "VCR02_20"
+					maxWidth = 150
+					maxHeight = 16
+					format = center
+					text = "KOR_DPK_pre_lee_state_text"
+				}
+
+				iconType = {#진척도
+					name = "KOR_DPK_pre_lee_progressbar"
+					spriteType = "GFX_KOR_dpk_progressbar"
+					position = { x = 135 y = -3 } 
+					pdx_tooltip = KOR_DPK_pre_lee_gauge_tt
+				}
+				iconType = {#
+					name = "KOR_DPK_pre_lee_progressbar_frame"
+					spriteType = "GFX_KOR_dpk_progressbar_frame"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_pre_lee_gauge_tt
+				}
+				iconType = { #
+					name = "KOR_DPK_pre_lee_progressbar_frame_ruling"
+					spriteType = "GFX_KOR_dpk_progressbar_ruling_circle"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_pre_lee_gauge_ruling_tt
+				}
+				iconType = { #잠금
+					name = "KOR_DPK_pre_lee_gauge_lock_progressbar"
+					spriteType = "GFX_KOR_gauge_bar_lock"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_gauge_cannot_start_tt
+				}
+				iconType = { #잠금
+					name = "KOR_DPK_pre_lee_gauge_lock"
+					spriteType = "GFX_KOR_gauge_lock"
+					position = { x = 220 y = -5 } 
+					pdx_tooltip = KOR_DPK_gauge_cannot_start_tt
+				}
+			}
+			
+			containerWindowType = {
+				name = "KOR_DPK_anti_lee_container"
+				position = { x = 0 y = 140 }
+				instantTextboxType = {
+					name = "KOR_DPK_anti_lee_state"
+					font = "VCR02_20"
+					maxWidth = 150
+					maxHeight = 16
+					format = center
+					text = "KOR_DPK_anti_lee_state_text"
+				}
+				iconType = { #진척도
+					name = "KOR_DPK_anti_lee_progressbar"
+					spriteType = "GFX_KOR_dpk_progressbar"
+					position = { x = 135 y = -3 } 
+					pdx_tooltip = KOR_DPK_anti_lee_gauge_tt
+				}
+				iconType = {#
+					name = "KOR_DPK_anti_lee_progressbar_frame"
+					spriteType = "GFX_KOR_dpk_progressbar_frame"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_anti_lee_gauge_tt
+				}
+				iconType = {#
+					name = "KOR_DPK_anti_lee_progressbar_frame_ruling"
+					spriteType = "GFX_KOR_dpk_progressbar_ruling_circle"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_anti_lee_gauge_ruling_tt
+				}
+				iconType = { #잠금
+					name = "KOR_DPK_anti_lee_gauge_lock_progressbar"
+					spriteType = "GFX_KOR_gauge_bar_lock"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_gauge_cannot_start_tt
+				}
+				iconType = { #잠금
+					name = "KOR_DPK_anti_lee_gauge_lock"
+					spriteType = "GFX_KOR_gauge_lock"
+					position = { x = 220 y = -5 } 
+					pdx_tooltip = KOR_DPK_gauge_cannot_start_tt
+				}
+			}
+			
+			containerWindowType = {
+				name = "KOR_DPK_anxious_container"
+				position = { x = 0 y = 190 }
+				instantTextboxType = {
+					name = "KOR_DPK_anxious_state"
+					font = "VCR02_20"
+					maxWidth = 150
+					maxHeight = 16
+					format = center
+					text = "KOR_DPK_anxious_state_text"
+				}
+
+				iconType = {#진척도
+					name = "KOR_DPK_anxious_progressbar"
+					spriteType = "GFX_KOR_dpk_progressbar"
+					position = { x = 135 y = -3 } 
+					pdx_tooltip = KOR_DPK_anxious_gauge_tt
+				}
+				iconType = {#
+					name = "KOR_DPK_anxious_progressbar_frame"
+					spriteType = "GFX_KOR_dpk_progressbar_frame"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_anxious_gauge_tt
+				}
+				iconType = { #
+					name = "KOR_DPK_anxious_progressbar_frame_ruling"
+					spriteType = "GFX_KOR_dpk_progressbar_ruling_circle"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_anxious_gauge_ruling_tt
+				}
+				iconType = { #잠금
+					name = "KOR_DPK_anxious_gauge_lock_progressbar"
+					spriteType = "GFX_KOR_gauge_bar_lock"
+					position = { x = 135 y = -3 } 
+					scale = 0.65
+					pdx_tooltip = KOR_DPK_gauge_cannot_start_tt
+				}
+				iconType = { #잠금
+					name = "KOR_DPK_anxious_gauge_lock"
+					spriteType = "GFX_KOR_gauge_lock"
+					position = { x = 220 y = -5 } 
+					pdx_tooltip = KOR_DPK_gauge_cannot_start_tt
+				}
+			}
+			
+		}
+
+	}
+}

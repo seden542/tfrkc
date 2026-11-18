@@ -1,0 +1,679 @@
+KOR_unit_production = { #ROK Always want fighter
+	allowed = { original_tag = KOR }
+
+	enable = {
+		original_tag = KOR
+		always = yes
+	}
+	abort = {
+		has_war = yes
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 1
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 3
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 45
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 15
+	}
+}
+KOR_wanna_airplanes = { 
+	allowed = { original_tag = KOR }
+
+	enable = {
+		original_tag = KOR
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 120
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe
+		value = 200
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_cas_airframe
+		value = 200
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 2
+	}
+}
+KOR_wanna_fight_at_korea_and_manchu = { #ROK Always fight at Korean Peninsula, without PRK Capitulated.
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = { exists = yes }
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = front_control
+		strategic_region = 186
+		ratio = 0.4
+		priority = 1050
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		strategic_region = 155
+		ratio = 0.4
+		priority = 1050
+		ordertype = front
+	}
+	ai_strategy = {
+		type = garrison
+		value = 150
+	}
+}
+KOR_kpa_north_korea_attack = { #ROK Always fight at Korean Peninsula, without PRK Capitulated.
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = { exists = yes }
+		KPA = {
+			exists = yes
+			is_in_faction_with = KOR
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = KPA
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = PRK
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_control
+		strategic_region = 186
+		ratio = 0.4
+		priority = 1050
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		strategic_region = 155
+		ratio = 0.4
+		priority = 1050
+		ordertype = front
+	}
+}
+KOR_war_with_at_prk = { #ROK Always fight at Korean Peninsula, without PRK Capitulated.
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = { exists = yes }
+		PRK = { exists = yes }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = PRK
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_control
+		tag = PRK
+		ratio = 0.7
+		priority = 1000
+		ordertype = front
+		execution_type = rush
+	}
+	ai_strategy = {
+		type = front_control
+		tag = PRC
+		ratio = 0.2
+		priority = 1060
+		ordertype = front
+	}
+}
+KOR_war_with_at_prc = { #ROK Always fight at Korean Peninsula, without PRK Capitulated.
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = { exists = yes }
+		PRK = { exists = no }
+		KPA = { exists = no }
+		PRC = { exists = yes }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = PRC
+		ratio = 0.6
+		priority = 1060
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		strategic_region = 186
+		ratio = 0.4
+		priority = 1050
+		ordertype = front
+	}
+	ai_strategy = {
+		type = front_control
+		strategic_region = 155
+		ratio = 0.4
+		priority = 1050
+		ordertype = front
+	}
+}
+
+KOR_dont_fight_with_SOV = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		original_tag = KOR
+	}
+
+	abort = {
+		OR = {
+			has_war = yes
+			has_war_with = SOV
+		}
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SOV
+		value = -100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		tag = SOV
+		value = -100
+	}
+	ai_strategy = {
+		type = conquer
+		tag = SOV
+		value = -100
+	}
+
+}
+KOR_defend_home_islands = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		original_tag = KOR
+	}
+
+	abort = {
+		is_ally_with = PRC
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.2
+		states = {
+			1041
+			871
+			525
+			869
+			870
+			1412
+			1411
+			1410
+			1409
+ 		}
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.1
+		strategic_region = 186
+		subtract_fronts_from_need = yes
+	}
+}
+KOR_if_not_prk_cap_dont_go_another = {
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = { exists = yes }
+		PRK = {
+			OR = {
+				exists = yes
+				has_capitulated = no
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = PRK
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RAJ
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BRM
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = VIN
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = LAO
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = CAM
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PHI
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MAL
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = INS
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = AST
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SIG
+		value = 1000
+	}
+}
+KOR_dont_want_to_go_arabia = {
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = {
+			exists = yes
+			has_completed_focus = KOR_follow_up_measures
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAU
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ARR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ROC
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = JAH
+		value = -1000
+	}
+}
+KOR_dont_want_to_go_prc_volunteers = {
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = {
+			exists = yes
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PRC
+		value = -1000
+	}
+}	
+KOR_dont_want_to_go_europe = {
+	allowed = { original_tag = KOR }
+
+	enable = {
+		KOR = {
+			exists = yes
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = GER
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BEL
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = FRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PLD
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = HUN
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LIT
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LAT
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = EST
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DEN
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = HOL
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ENG
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AUS
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ITA
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TUR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SLO
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ROM
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BUL
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = GRE
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CZE
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NOR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ALB
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = POR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MOL
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CRO
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SLV
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ICE
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BRS
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SOV
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KAZ
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = UZB
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TMS
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TAJ
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KYR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = GEO
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AZR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NGK
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = AZR
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ARM
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PTF
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USC
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USB
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = APA
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NSM
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ATW
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TEX
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NOV
+		value = -1000
+	}
+}

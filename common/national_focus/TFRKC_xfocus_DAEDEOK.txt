@@ -1,0 +1,301 @@
+# RETIRED in rework 2026-11-17. Definitions retained only for explicit legacy references.
+# OWNED: 16-faction focus authoring. No country/map/war creation.
+focus_tree = {
+ id = TFRKC_xfocus_DAEDEOK_tree
+ default = no
+ reset_on_civilwar = no
+ country = { factor = 0 }
+ initial_show_position = { focus = TFRKC_xfocus_DAEDEOK_start }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_start
+  icon = GFX_KOR_domestic_production
+  x = 6
+  y = 0
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 100 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_civic_1
+  icon = GFX_KOR_lee_army_route_common_focus_2
+  x = 0
+  y = 1
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_start }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 32 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_civic_2
+  icon = GFX_KOR_domestic_production
+  x = 0
+  y = 2
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_civic_1 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_civic_3
+  icon = GFX_KOR_domestic_production
+  x = 0
+  y = 3
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_civic_2 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_military_1
+  icon = GFX_KOR_lee_army_route_common_focus_1
+  x = 6
+  y = 1
+  cost = 1
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_start }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 60 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_military_2
+  icon = GFX_KOR_domestic_production
+  x = 6
+  y = 2
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_military_1 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_military_3
+  icon = GFX_KOR_domestic_production
+  x = 6
+  y = 3
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_military_2 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_system_1
+  icon = GFX_KOR_lee_army_route_common_focus_2
+  x = 12
+  y = 1
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_start }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_system_2
+  icon = GFX_KOR_lee_army_route_promise_democracy
+  x = 12
+  y = 2
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_system_1 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_system_3
+  icon = GFX_KOR_domestic_production
+  x = 12
+  y = 3
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_system_2 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_council
+  icon = GFX_KOR_lee_army_route_common_focus_2
+  x = 18
+  y = 1
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_start }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_route_a
+  icon = GFX_KOR_lee_army_route_promise_democracy
+  x = 16
+  y = 2
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_council }
+  mutually_exclusive = { focus = TFRKC_xfocus_DAEDEOK_route_b }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 20 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_route_b
+  icon = GFX_KOR_yoon_constitution_control
+  x = 20
+  y = 2
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_council }
+  mutually_exclusive = { focus = TFRKC_xfocus_DAEDEOK_route_a }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 8 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_route_a_2
+  icon = GFX_KOR_lee_army_route_common_focus_2
+  x = 16
+  y = 3
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_route_a }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_route_b_2
+  icon = GFX_KOR_lee_army_route_common_focus_2
+  x = 20
+  y = 3
+  cost = 2
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_route_b }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_route_a_3
+  icon = GFX_KOR_lee_army_route_promise_democracy
+  x = 16
+  y = 4
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_route_a_2 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_route_b_3
+  icon = GFX_KOR_lee_army_route_common_focus_2
+  x = 20
+  y = 4
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_route_b_2 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+
+ focus = {
+  id = TFRKC_xfocus_DAEDEOK_settlement
+  icon = GFX_KOR_domestic_production
+  x = 6
+  y = 6
+  cost = 3
+  available_if_capitulated = no
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_civic_3 }
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_military_3 }
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_system_3 }
+  prerequisite = { focus = TFRKC_xfocus_DAEDEOK_route_a_3 focus = TFRKC_xfocus_DAEDEOK_route_b_3 }
+  available = { always = no }
+  bypass = { always = no }
+  ai_will_do = { factor = 14 }
+  completion_reward = { }
+ }
+}

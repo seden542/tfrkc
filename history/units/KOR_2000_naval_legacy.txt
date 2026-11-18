@@ -1,0 +1,177 @@
+﻿units = {
+
+	### Naval OOB ###
+	fleet = {
+		name = "제7기동전단"
+		naval_base = 1177
+		task_force = {
+			name = "제71전대"
+			location = 1177 #Donghae
+			ship = { name = "ROKS DDG-991 세종대왕" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDG-993 서애 류성룡" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-975 충무공 이순신" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-977 대조영" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-979 강감찬" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제72전대"
+			location = 1177 #Donghae
+			ship = { name = "ROKS DDG-992 율곡 이이" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-976 문무대왕" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-978 왕건" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-981 최영" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+		}
+	}
+	fleet = {
+		name = "제1함대"
+		naval_base = 12011
+		task_force = {
+			name = "제11전투전대"
+			location = 12011 #Donghae
+			ship = { name = "ROKS DDH-971 광개토대왕함" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS DDH-973 양만춘" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-815 강원" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-818 대구" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제12전투전대"
+			location = 12011 #Donghae
+			ship = { name = "ROKS FFG-818 대구" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FF-959 부산" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-769 원주" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-771 안동" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-778 속초" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-781 남원" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-718 현시학" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-719 정긍모" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-722 임병래" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-725 홍대선" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-729 김수현" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-733 이병철" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+		}
+	}
+	fleet = {
+		name = "제2함대"
+		naval_base = 7221
+		task_force = {
+			name = "제21전투전대"
+			location = 7221
+			ship = { name = "ROKS DDH-972 을지문덕" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-811 인천" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-812 경기" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-816 충북" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-821 서울" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FF-958 제주" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FF-961 청주" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제22전투전대"
+			location = 7221
+			ship = { name = "ROKS PCC-773 부천" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } } 
+			ship = { name = "ROKS PCC-776 제천" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } } 
+			ship = { name = "ROKS PCC-779 영주" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-783 신성" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-711 윤영하" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-712 한상국" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-713 조천형" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-715 황도현" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-716 서후원" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-717 박동혁" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-721 지덕칠" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-723 홍시욱" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+		}
+	}
+	fleet = {
+		name = "제3함대"
+		naval_base = 4056
+		task_force = {
+			name = "제31전투전대"
+			location = 4056 #Pyeongtaek
+			ship = { name = "ROKS FFG-813 전북" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FFG-817 광주" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS FF-957 전남" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-775 성남" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-777 대천" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-727 김창학" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-728 박동진" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-732 전병익" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-723 홍시욱" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제32전투전대"
+			location = 4056 #Pyeongtaek
+			ship = { name = "ROKS FFG-819 경남" definition = heavy_cruiser equipment = { heavy_cruiser_3 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-782 광명" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PCC-785 공주" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS PKG-726 한문식" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = KOR } } }
+		}
+	}
+	fleet = {
+		name = "잠수함사령부"
+		naval_base = 12060
+		task_force = {
+			name = "제91잠수함전대"
+			location = 12060 #Donghae
+			ship = { name = "ROKS SS-061 장보고" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-083 도산 안창호" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제92잠수함전대"
+			location = 12060 #Donghae
+			ship = { name = "ROKS SS-062 이천" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-063 최무선" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-065 박위" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-066 이종무" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-067 정운" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제93잠수함전대"
+			location = 1177 #Donghae
+			ship = { name = "ROKS SS-068 이순신" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-069 나대용" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-071 이억기" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제95잠수함전대"
+			location = 12060 #Donghae
+			ship = { name = "ROKS SS-072 손원일" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-073 정지" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-075 안중근" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-076 김좌진" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-077 윤봉길" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+		}
+		task_force = {
+			name = "제96잠수함전대"
+			location = 12060 #Donghae
+			ship = { name = "ROKS SS-078 유관순" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-079 홍범도" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-081 이범석" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+			ship = { name = "ROKS SS-082 신돌석" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR } } }
+		}
+	}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "KOR"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+		amount = 3
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_3
+			creator = "KOR"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 100
+		amount = 1
+	}
+	
+}

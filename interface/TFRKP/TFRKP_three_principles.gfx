@@ -1,0 +1,135 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_three_principles_background"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_background.png"
+		legacy_lazy_load = no
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_three_principles_easter_egg_glow"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_easter_egg_glow_strip.png"
+		noOfFrames = 10
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_three_principles_easter_egg_glow_call"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_easter_egg_glow_call_strip.png"
+		noOfFrames = 8
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_easter_egg_phone"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_easter_egg_phone.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_left_light"
+		texturefile = "gfx/interface/GUI/three_principles/left_light.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_center_light"
+		texturefile = "gfx/interface/GUI/three_principles/center_light.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_right_light"
+		texturefile = "gfx/interface/GUI/three_principles/right_light.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_three_principles_idle_eye"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_eye_strip.png"
+		noOfFrames = 12
+		animation_rate_fps = 5
+		looping = yes
+		play_on_show = yes
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_nation_eye"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_nation_eye.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_democracy_eye"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_democracy_eye.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_people_eye"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_people_eye.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_easter_egg_eye"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_easter_egg_eye.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_eye_background"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_eye_background.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_three_principles_eye_shadow"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_eye_shadow.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_sclera"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_sclera.png"
+		transparencecheck = yes
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_nation_label"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_nation_label_button.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_democracy_label"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_democracy_label_button.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_KOR_three_principles_people_label"
+		texturefile = "gfx/interface/GUI/three_principles/KOR_three_principles_people_label_button.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+}

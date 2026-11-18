@@ -1,0 +1,5 @@
+﻿# DPRK
+
+recruit_character = PRK_kim_yojong_char
+
+#

@@ -1,0 +1,19 @@
+state = {
+ id = 1625
+ name = "STATE_1625"
+ manpower = 103361
+ provinces = { 15394 }
+ resources = { aluminium = 0 }
+ buildings_max_level_factor = 0.0303030303
+ state_category = large_town
+local_supplies = 0.000
+ history = {
+ owner = KOR
+add_core_of = KOR
+add_claim_by = PRK
+ buildings = { infrastructure = 4
+ 
+ }
+ 
+ }
+}

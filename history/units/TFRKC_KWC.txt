@@ -1,0 +1,24 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KWC 3" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC KWC infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KWC armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "제51사단 이탈 제1전투단" location = 7221 division_template = "TFRKC KWC 3" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "제51사단 이탈 제2전투단" location = 15118 division_template = "TFRKC KWC 3" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "산업지역 제1방위여단" location = 14241 division_template = "TFRKC KWC 3" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "산업지역 제2방위여단" location = 15186 division_template = "TFRKC KWC 3" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "산업지역 제3방위여단" location = 7221 division_template = "TFRKC KWC 3" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제1보병사단" location = 15118 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제2보병사단" location = 14241 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제3보병사단" location = 15186 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제4보병사단" location = 7221 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제5보병사단" location = 15118 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제6보병사단" location = 14241 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제7보병사단" location = 15186 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제8보병사단" location = 7221 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제9보병사단" location = 15118 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제10보병사단" location = 14241 division_template = "TFRKC KWC infantry_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제1기갑사단" location = 15186 division_template = "TFRKC KWC armored_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제2기갑사단" location = 7221 division_template = "TFRKC KWC armored_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+division = { name = "KWC 증편 제3기갑사단" location = 15118 division_template = "TFRKC KWC armored_division" start_experience_factor = 0.3 start_equipment_factor = 0.6 start_manpower_factor = 0.7 }
+}

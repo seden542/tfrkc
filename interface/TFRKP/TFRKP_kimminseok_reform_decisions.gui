@@ -1,0 +1,318 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFRKP_reform_tab_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 480 height = 670 }
+		iconType = {
+			name = "TFRKP_regiondev_bg"
+			spriteType = "GFX_TFRKP_regiondev_bg"
+			position = { x = 35 y = 275 }
+		}
+		iconType = {
+			name = "TFRKP_reform_gui_big_bg"
+			spriteType = "GFX_TFRKP_reform_gui_big_bg"
+			position = { x = 5 y = 7 }
+		}
+		iconType = {
+			name = "TFRKP_election_before_bg"
+			spriteType = "GFX_TFRKP_election_before_bg"
+			position = { x = 10 y = 280 }
+		}
+		containerWindowType = {
+			name = "TFRKP_reform_influence_box"
+			position = { x = 35 y = 20 }
+			size = { width = 440 height = 44 }
+
+			iconType = {
+				name = "TFRKP_reform_gui_bg"
+				spriteType = "GFX_TFRKP_reform_gui_bg"
+				position = { x = 0 y = 0 }
+			}
+
+			instantTextboxType = {
+				name = "TFRKP_kim_influence_text"
+				position = { x = 8 y = 5 }
+				font = "VCR02_14"
+				maxWidth = 160
+				maxHeight = 16
+				format = left
+				text = "TFRKP_kim_influence_value_text"
+			}
+
+			instantTextboxType = {
+				name = "TFRKP_jeong_influence_text"
+				position = { x = 272 y = 5 }
+				font = "VCR02_14"
+				maxWidth = 160
+				maxHeight = 16
+				format = right
+				text = "TFRKP_jeong_influence_value_text"
+			}
+
+			iconType = {
+				name = "TFRKP_reform_influence_bar"
+				spriteType = "GFX_TFRKP_reform_influence_bar"
+				position = { x = 28 y = 24 }
+				frame = 11
+				pdx_tooltip = "TFRKP_reform_influence_bar_tooltip"
+			}
+
+			containerWindowType = {
+				name = "TFRKP_reform_tab_button_box"
+				position = { x = 0 y = 50 }
+				size = { width = 440 height = 32 }
+
+				buttonType = {
+					name = "TFRKP_reform_tab_political_button"
+					position = { x = 6 y = 0 }
+					spriteType = "GFX_TFRKP_reform_tab_button"
+					buttonFont = "VCR02_14"
+					buttonText = "TFRKP_reform_tab_political_button_text"
+					frame = 1
+					pdx_tooltip = "TFRKP_reform_tab_political_tooltip"
+				}
+
+				buttonType = {
+					name = "TFRKP_reform_tab_social_button"
+					position = { x = 152 y = 0 }
+					spriteType = "GFX_TFRKP_reform_tab_button"
+					buttonFont = "VCR02_14"
+					buttonText = "TFRKP_reform_tab_social_button_text"
+					frame = 1
+					pdx_tooltip = "TFRKP_reform_tab_social_tooltip"
+				}
+
+				buttonType = {
+					name = "TFRKP_reform_tab_economic_button"
+					position = { x = 298 y = 0 }
+					spriteType = "GFX_TFRKP_reform_tab_button"
+					buttonFont = "VCR02_14"
+					buttonText = "TFRKP_reform_tab_economic_button_text"
+					frame = 1
+					pdx_tooltip = "TFRKP_reform_tab_economic_tooltip"
+				}
+			}
+		}
+
+		iconType = {
+			name = "TFRKP_icarus_bg"
+			spriteType = "GFX_TFRKP_icarus_bg_h"
+			position = { x = 35 y = 102 }
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_icarus_title"
+			position = { x = 45 y = 105 }
+			font = "VCR02_14"
+			maxWidth = 200
+			maxHeight = 16
+			format = left
+			text = "TFRKP_icarus_title_text"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_icarus_altitude_text"
+			position = { x = 245 y = 105 }
+			font = "VCR02_14"
+			maxWidth = 220
+			maxHeight = 16
+			format = right
+			text = "TFRKP_icarus_altitude_value_text"
+		}
+
+		# 가로형 고도 트랙 (11프레임, 지상->태양)
+		iconType = {
+			name = "TFRKP_icarus_track"
+			spriteType = "GFX_TFRKP_icarus_track_h"
+			position = { x = 41 y = 125 }
+			frame = 1
+			pdx_tooltip = "TFRKP_icarus_track_tooltip"
+		}
+
+		# 이카루스 마커: x좌표를 scripted_gui properties의 변수로 이동
+		iconType = {
+			name = "TFRKP_icarus_marker"
+			spriteType = "GFX_TFRKP_icarus_marker"
+			position = { x = 31 y = 132 }
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_icarus_stage_desc"
+			position = { x = 45 y = 167 }
+			font = "VCR02_14"
+			maxWidth = 420
+			maxHeight = 18
+			format = left
+			text = "TFRKP_icarus_stage_desc_text"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_icarus_spirit_text"
+			position = { x = 200 y = 229 }
+			font = "VCR02_14"
+			maxWidth = 420
+			maxHeight = 16
+			format = left
+			text = "TFRKP_icarus_spirit_value_text"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_icarus_wax_label"
+			position = { x = 45 y = 229 }
+			font = "VCR02_14"
+			maxWidth = 240
+			maxHeight = 14
+			format = left
+			text = "TFRKP_icarus_wax_label_text"
+		}
+
+		iconType = {
+			name = "TFRKP_icarus_wax_bar"
+			spriteType = "GFX_TFRKP_icarus_wax_bar_h"
+			position = { x = 41 y = 247 }
+			frame = 21
+			pdx_tooltip = "TFRKP_icarus_wax_bartooltip"
+		}
+
+		buttonType = {
+			name = "TFRKP_icarus_ascend_button"
+			position = { x = 345 y = 233 }
+			spriteType = "GFX_TFRKP_icarus_ascend_button_s"
+			buttonFont = "VCR02_14"
+			buttonText = "TFRKP_icarus_ascend_button_text"
+			pdx_tooltip = "TFRKP_icarus_ascend_tooltip"
+			pdx_disabled_tooltip = "TFRKP_icarus_ascend_disabled_tooltip"
+		}
+		instantTextboxType = {
+			name = "TFRKP_regiondev_title"
+			position = { x = 270 y = 295 }
+			font = "VCR02_14"
+			maxWidth = 200
+			maxHeight = 16
+			format = center
+			text = "TFRKP_regiondev_title_text"
+		}
+
+		### [1페이즈] 남한 지역 버튼 (큰 지역 먼저 = 아래층) ###
+		buttonType = { name = "TFRKP_regiondev_map_yeongnam" position = { x = 136 y = 344 } spriteType = "GFX_TFRKP_regiondev_map_yeongnam" frame = 1 pdx_tooltip = "TFRKP_regiondev_yeongnam_tooltip" }
+		buttonType = { name = "TFRKP_regiondev_map_honam" position = { x = 35 y = 416 } spriteType = "GFX_TFRKP_regiondev_map_honam" frame = 1 pdx_tooltip = "TFRKP_regiondev_honam_tooltip" }
+		buttonType = { name = "TFRKP_regiondev_map_chungcheong" position = { x = 74 y = 359 } spriteType = "GFX_TFRKP_regiondev_map_chungcheong" frame = 1 pdx_tooltip = "TFRKP_regiondev_chungcheong_tooltip" }
+		buttonType = { name = "TFRKP_regiondev_map_gangwon" position = { x = 117 y = 289 } spriteType = "GFX_TFRKP_regiondev_map_gangwon" frame = 1 pdx_tooltip = "TFRKP_regiondev_gangwon_tooltip" }
+		buttonType = { name = "TFRKP_regiondev_map_gyeonggi" position = { x = 35 y = 306 } spriteType = "GFX_TFRKP_regiondev_map_gyeonggi" frame = 1 pdx_tooltip = "TFRKP_regiondev_gyeonggi_tooltip" }
+
+		buttonType = { name = "TFRKP_regiondev_map_jeju" position = { x = 78 y = 545 } spriteType = "GFX_TFRKP_regiondev_map_jeju" frame = 1 pdx_tooltip = "TFRKP_regiondev_honam_tooltip" }
+		
+		### Quest ###
+		iconType = {
+			name = "TFRKP_2028_election_quest"
+			spriteType = "GFX_help_button"
+			position = { x = 450 y = 500 }
+			pdx_tooltip = "TFRKP_2028_election_quest_tooltip"
+		}
+		
+		### [1페이즈] 극비 문서 티저 ###
+		iconType = {
+			name = "TFRKP_regiondev_secret"
+			spriteType = "GFX_TFRKP_regiondev_secret"
+			position = { x = 423 y = 523 }
+			pdx_tooltip = "TFRKP_regiondev_secret_tooltip"
+		}
+
+		### [2페이즈] 전자 문서 (지도 자리 대체) ###
+		iconType = {
+			name = "TFRKP_constitution_doc"
+			spriteType = "GFX_TFRKP_regiondev_doc"
+			position = { x = 39 y = 280 }
+			pdx_tooltip = "TFRKP_constitution_doc_tooltip"
+		}
+
+		# 문서 위 개헌 요점 4줄
+		instantTextboxType = { name = "TFRKP_const_sum_1" position = { x = 60 y = 340 } font = "VCR02_14" maxWidth = 194 maxHeight = 16 format = left text = "TFRKP_const_sum_1_text" }
+		instantTextboxType = { name = "TFRKP_const_sum_2" position = { x = 60 y = 400 } font = "VCR02_14" maxWidth = 194 maxHeight = 16 format = left text = "TFRKP_const_sum_2_text" }
+		instantTextboxType = { name = "TFRKP_const_sum_3" position = { x = 60 y = 461 } font = "VCR02_14" maxWidth = 194 maxHeight = 16 format = left text = "TFRKP_const_sum_3_text" }
+		instantTextboxType = { name = "TFRKP_const_sum_4" position = { x = 60 y = 521 } font = "VCR02_14" maxWidth = 194 maxHeight = 16 format = left text = "TFRKP_const_sum_4_text" }
+
+		### 우측 패널 (양 페이즈 공용) ###
+		instantTextboxType = {
+			name = "TFRKP_regiondev_header"
+			position = { x = 270 y = 321 }
+			font = "VCR02_14"
+			maxWidth = 200
+			maxHeight = 18
+			format = center
+			text = "TFRKP_regiondev_header_text"
+		}
+
+		buttonType = {
+			name = "TFRKP_regiondev_agenda_1"
+			position = { x = 270 y = 347 }
+			spriteType = "GFX_TFRKP_regiondev_agenda_button"
+			buttonFont = "VCR02_14"
+			buttonText = "TFRKP_regiondev_agenda_1_text"
+			pdx_tooltip = "TFRKP_regiondev_agenda_1_tooltip"
+		}
+		buttonType = {
+			name = "TFRKP_regiondev_agenda_2"
+			position = { x = 270 y = 379 }
+			spriteType = "GFX_TFRKP_regiondev_agenda_button"
+			buttonFont = "VCR02_14"
+			buttonText = "TFRKP_regiondev_agenda_2_text"
+			pdx_tooltip = "TFRKP_regiondev_agenda_2_tooltip"
+		}
+		buttonType = {
+			name = "TFRKP_regiondev_agenda_3"
+			position = { x = 270 y = 411 }
+			spriteType = "GFX_TFRKP_regiondev_agenda_button"
+			buttonFont = "VCR02_14"
+			buttonText = "TFRKP_regiondev_agenda_3_text"
+			pdx_tooltip = "TFRKP_regiondev_agenda_3_tooltip"
+		}
+
+		### 자물쇠: 의제 3칸 (선거 종료 또는 개헌위 해산) ###
+		iconType = { name = "TFRKP_regiondev_agenda_lock_1" spriteType = "GFX_TFRKP_regiondev_lock" position = { x = 250 y = 349 } pdx_tooltip = "TFRKP_regiondev_lock_dynamic_tooltip" }
+		iconType = { name = "TFRKP_regiondev_agenda_lock_2" spriteType = "GFX_TFRKP_regiondev_lock" position = { x = 250 y = 381 } pdx_tooltip = "TFRKP_regiondev_lock_dynamic_tooltip" }
+		iconType = { name = "TFRKP_regiondev_agenda_lock_3" spriteType = "GFX_TFRKP_regiondev_lock" position = { x = 250 y = 413 } pdx_tooltip = "TFRKP_regiondev_lock_dynamic_tooltip" }
+
+		### 대형 자물쇠: 개헌위 해산 시 문서 위 ###
+		iconType = {
+			name = "TFRKP_constitution_lock_big"
+			spriteType = "GFX_TFRKP_regiondev_lock_big"
+			position = { x = 113 y = 379 }
+			pdx_tooltip = "TFRKP_constitution_lock_tooltip"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_regiondev_status"
+			position = { x = 273 y = 447 }
+			font = "VCR02_14"
+			maxWidth = 200
+			maxHeight = 32
+			format = center
+			text = "TFRKP_regiondev_status_text"
+		}
+
+		iconType = {
+			name = "TFRKP_regiondev_progress"
+			spriteType = "GFX_TFRKP_regiondev_progress_bar"
+			position = { x = 273 y = 485 }
+			frame = 1
+			pdx_tooltip = "TFRKP_regiondev_progress_tooltip"
+		}
+
+		buttonType = {
+			name = "TFRKP_regiondev_cancel"
+			position = { x = 338 y = 500 }
+			spriteType = "GFX_TFRKP_regiondev_cancel_button"
+			buttonFont = "VCR02_14"
+			buttonText = "TFRKP_regiondev_cancel_text"
+			pdx_tooltip = "TFRKP_regiondev_cancel_tooltip"
+		}
+		iconType = {
+			name = "TFRKP_constitution_before_bg"
+			spriteType = "GFX_TFRKP_constitution_before_bg"
+			position = { x = 10 y = 280 }
+			pdx_tooltip = "TFRKP_constitution_lock_tooltip"
+		}
+
+	}
+}

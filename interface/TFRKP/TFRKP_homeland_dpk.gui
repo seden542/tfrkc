@@ -1,0 +1,109 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_democratic_pillars_container"
+		size = { width = 500 height = 500 }
+		clipping = no
+
+		# Full GUI backdrop, then the current stage, base web, and portraits.
+		iconType = {
+			name = "KOR_democratic_pillars_background"
+			position = { x = -9 y = -16 }
+			spriteType = "GFX_KOR_lee_homeland_dpk_background"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_democratic_pillars_step_one"
+			position = { x = 60 y = 78 }
+			spriteType = "GFX_KOR_lee_pentagon_step_one"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_democratic_pillars_step_two"
+			position = { x = 60 y = 78 }
+			spriteType = "GFX_KOR_lee_pentagon_step_two"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_step_three"
+			position = { x = 60 y = 78 }
+			spriteType = "GFX_KOR_lee_pentagon_step_third"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_step_four"
+			position = { x = 60 y = 78 }
+			spriteType = "GFX_KOR_lee_pentagon_step_four"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_step_five"
+			position = { x = 60 y = 78 }
+			spriteType = "GFX_KOR_lee_pentagon_step_five"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_democratic_pillars_pentagon_background"
+			position = { x = 43 y = 62 }
+			spriteType = "GFX_KOR_lee_pentagon_basic_background"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_democratic_pillars_cho_guk"
+			position = { x = 203 y = 10 }
+			spriteType = "GFX_KOR_lee_homeland_homeland_texticon"
+			pdx_tooltip = KOR_democratic_pillars_cho_guk_tt
+			pdx_tooltip_delayed = KOR_democratic_pillars_cho_guk_desc_tt
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_moon_jae_in"
+			position = { x = 12 y = 130 }
+			spriteType = "GFX_KOR_lee_homeland_moon_texticon"
+			pdx_tooltip = KOR_democratic_pillars_moon_jae_in_tt
+			pdx_tooltip_delayed = KOR_democratic_pillars_moon_jae_in_desc_tt
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_jeong_cheong_rae"
+			position = { x = 393 y = 130 }
+			spriteType = "GFX_KOR_lee_homeland_chaeng_texticon"
+			pdx_tooltip = KOR_democratic_pillars_jeong_cheong_rae_tt
+			pdx_tooltip_delayed = KOR_democratic_pillars_jeong_cheong_rae_desc_tt
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_kim_eo_jun"
+			position = { x = 104 y = 358 }
+			spriteType = "GFX_KOR_lee_homeland_kimajoon_texticon"
+			pdx_tooltip = KOR_democratic_pillars_kim_eo_jun_tt
+			pdx_tooltip_delayed = KOR_democratic_pillars_kim_eo_jun_desc_tt
+		}
+		iconType = {
+			name = "KOR_democratic_pillars_yoo_si_min"
+			position = { x = 301 y = 358 }
+			spriteType = "GFX_KOR_lee_homeland_you_texticon"
+			pdx_tooltip = KOR_democratic_pillars_yoo_si_min_tt
+			pdx_tooltip_delayed = KOR_democratic_pillars_yoo_si_min_desc_tt
+		}
+
+		# Drawn last so the counter remains above every image layer.
+		iconType = {
+			name = "KOR_democratic_pillars_innovation_choice_icon"
+			position = { x = 14 y = 486 }
+			spriteType = "GFX_KOR_RKP_texticon"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "KOR_democratic_pillars_innovation_choice_counter"
+			position = { x = 40 y = 488 }
+			font = "VCR02_14"
+			text = "KOR_democratic_pillars_innovation_choice_gui"
+			format = left
+			maxWidth = 250
+			maxHeight = 500
+			alwaystransparent = yes
+		}
+	}
+}

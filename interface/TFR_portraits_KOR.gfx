@@ -1,0 +1,1407 @@
+spriteTypes = {
+	###
+	#Game Rules
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_yoon_seok_yeol.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_2022_gamerule
+		textureFile = "gfx/leaders/KOR/Lee_Jae-myung_t.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_lee_jae_myung_president.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_martial_law_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_martial_law.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_KOR_shin_won_sik_yec
+		textureFile = "gfx/leaders/KOR/KOR_shin_won_sik_yec.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_sang_hyun_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_yoon_sang_hyun.png"
+		legacy_lazy_load = no
+	} 
+	spriteType = {
+		name = GFX_portrait_KOR_song_young_gill_president
+		textureFile = "gfx/leaders/KOR/KOR_song_young_gill_president.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_han_dong_hoon_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_han_dong_hoon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_na_kyung_won_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_na_kyung_won.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_min_soo_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_kim_min_soo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_kyoung_tae_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_cho_kyoung_tae.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jae_sub_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_kim_jae_sub.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_moon_soo_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_kim_moon_soo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_nam_young_sin_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_nam_young_sin_civilian.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_eui_cheol_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_yoon_eui_cheol.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_chan_dae_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_park_chan_dae.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chong_won_oh_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_chong_won_oh.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_joo_min_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_park_joo_min.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jae_yeon_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_kim_jae_yeon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_jong_o_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_yoon_jong_o.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jang_hye_young_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_jang_hye_young.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_baek_yoon_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_lee_baek_yoon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_22_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_new.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_guk_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_cho_guk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_hwang_un_ha_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_hwang_un_ha.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jang_dong_hyeok_gamerule
+		textureFile = "gfx/leaders/KOR/KOR_jang_dong_hyeok.png"
+		legacy_lazy_load = no
+	}
+	###
+	#Decisions
+	###
+	spriteType = {
+		name = GFX_portrait_nothing
+		textureFile = "gfx/leaders/portrait_nothing.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_jong_o_plp
+		textureFile = "gfx/leaders/KOR/KOR_yoon_jong_o.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_sim_sang_jung_plp
+		textureFile = "gfx/leaders/KOR/KOR_sim_sang_jung.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jang_hye_young_plp
+		textureFile = "gfx/leaders/KOR/KOR_jang_hye_young.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_baek_yoon_plp
+		textureFile = "gfx/leaders/KOR/KOR_lee_baek_yoon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_hee_suk_plp
+		textureFile = "gfx/leaders/KOR/KOR_yoon_hee_suk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jun_woo_plp
+		textureFile = "gfx/leaders/KOR/KOR_kim_jun_woo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jang_ji_hwa_plp
+		textureFile = "gfx/leaders/KOR/KOR_jang_ji_hwa.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jong_min_plp
+		textureFile = "gfx/leaders/KOR/KOR_kim_jong_min.png"
+		legacy_lazy_load = no
+	}
+	# DPK
+	spriteType = {
+		name = GFX_portrait_KOR_cho_guk_dpk
+		textureFile = "gfx/leaders/KOR/KOR_cho_guk.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_chan_dae_dpk
+		textureFile = "gfx/leaders/KOR/KOR_park_chan_dae.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jeong_chung_rae_dpk
+		textureFile = "gfx/leaders/KOR/KOR_jeong_chung_rae.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_song_yeong_gik_dpk
+		textureFile = "gfx/leaders/KOR/KOR_song_yeong_gil.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jung_sung_ho_dpk
+		textureFile = "gfx/leaders/KOR/KOR_jung_sung_ho.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_jeong_sik_dpk
+		textureFile = "gfx/leaders/KOR/KOR_cho_jeong_sik.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_yong_man_dpk
+		textureFile = "gfx/leaders/KOR/KOR_kim_yong_man.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_hwang_un_ha_dpk
+		textureFile = "gfx/leaders/KOR/KOR_hwang_un_ha.png"
+		legacy_lazy_load = no
+	}
+	###
+	spriteType = {
+		name = GFX_portrait_KOR_moon_jae_in_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_moon_jae_in.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_moon_jae_in_after_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_moon_jae_in_after.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_president_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jae_myung_president.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_waron_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jae_myung_waron.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_char_civilian_large
+		textureFile = "gfx/leaders/KOR/Lee_Jae-myung.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_char_2022_civilian_large
+		textureFile = "gfx/leaders/KOR/Lee_Jae-myung_t.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_char_real_korea_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jae_myung_real_korea.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_char_nothing_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jae_myung_nothing.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jae_myung_char_great_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jae_myung_great.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_han_duck_sooh
+		textureFile = "gfx/leaders/KOR/KOR_han_duck_sooh.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_ju_ho_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_Lee_ju_ho.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_choi_sang_muk_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_choi_sang_muk.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_seok_yeol.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_martial_law_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_martial_law.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_martial_law_success_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_martial_law_success.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_army_route_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_army_route.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_end_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_end.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_defeat_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_defeat.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_victory_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_victory.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_martial_law_fail_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_end.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_suk_yeol_drunked_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_suk_yeol_drunked.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_won_jin_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_cho_won_jin.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_han_duck_soo_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_han_duck_sooh.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chang_je_won_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_Chang_Je_won.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_min_seok_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_min_seok.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_min_seok_char_coa_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_min_seok_coa.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chu_mi_ae_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_chu_mi_ae.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_guk_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_cho_guk.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_guk_char_authoritarian_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_cho_guk_authoritarian.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_guk_char_fail_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_cho_guk_fail.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_yong_jin_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_park_yong_jin.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_hwang_un_ha_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_hwang_un_ha.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_beom_kye_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_park_beom_kye.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_joon_hyung_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_joon_hyung.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_won_char_civilian_large" 
+        texturefile = "gfx/leaders/KOR/KOR_yi_won.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_yeongju_char_civilian_large" 
+        texturefile = "gfx/leaders/KOR/KOR_yi_yeongju.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_seok_char_civilian_large" 
+        texturefile = "gfx/leaders/KOR/KOR_yi_seok.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KOR_yi_won_joon_char_civilian_large" 
+        texturefile = "gfx/leaders/KOR/KOR_yi_won_joon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_moon_soo_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_moon_soo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_im_jong_seok_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_im_jong_seok.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_moon_soo_char_communist_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_moon_soo_communist.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_won_hee_ryong_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_won_hee_ryong.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_eui_cheol_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_eui_cheol.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_eui_cheol_char_fool_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_eui_cheol_fool.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_eui_cheol_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_yoon_eui_cheol_army.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_yong_woo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_yong_woo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_chan_ju_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_park_chan_ju.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_song_yeong_gil_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_song_yeong_gil.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chun_ha_ram_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_chun_ha_ram.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_chan_dae_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_park_chan_dae.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chong_won_oh_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_chong_won_oh.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_joo_min_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_park_joo_min.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jeong_chung_rae_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_jeong_chung_rae.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chung_jin_suk_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_chung_jin_suk.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kwon_seong_dong_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kwon_seong_dong.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_joo_ho_young_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_joo_ho_young.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_gi_hyeon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_gi_hyeon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yun_jae_ok_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yun_jae_ok.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yu_eui_dong_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yu_eui_dong.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jae_yeon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_jae_yeon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_jong_o_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_jong_o.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jang_hye_young_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_jang_hye_young.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_baek_yoon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_baek_yoon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_han_sang_gyun_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_han_sang_gyun_president.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kwon_yong_gook_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kwon_young_gook.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kang_sung_hee_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kang_sung_hee.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jae_yeon_char_civilian_large_war
+		textureFile = "gfx/leaders/KOR/KOR_kim_jae_yeon_war.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_huh_kyung_young_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_huh_kyung_young.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jang_dong_hyeok_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_jang_dong_hyeok.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_shin_won_sik_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_shin_won_sik.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_byeong_joo_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_byeong_joo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_chang_yong_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_chang_yong.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kwak_sang_eon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kwak_sang_eon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_min_hyung_bae_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_min_hyung_bae.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_choe_kang_wook_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_choe_kang_wook.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_vacant_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_vacant.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_outlawed_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_vacant.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_federation_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_federation.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_ahn_cheol_soo_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_ahn_cheol_soo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_nak_yon_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_nak_yon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_ryu_seung_gu_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_ryu_seung_gu.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_sim_sang_jung_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_sim_sang_jung.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_sohn_hak_kyu_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_sohn_hak_kyu.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_sang_hoon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_sang_hoon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_sang_kyu_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_sang_kyu.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_na_do_won_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_na_do_won.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kang_ki_hoon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kang_ki_hoon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_dakaki_char_civilian_large
+		textureFile = "gfx/leaders/KOR/AI/KOR_dakaki.png"
+	}
+	spriteType = { # 장군
+		name = GFX_portrait_KOR_dakaki_general_char_civilian_large
+		textureFile = "gfx/leaders/KOR/AI/KOR_dakaki_general.png"
+	}
+	spriteType = { # 아이돌
+		name = GFX_portrait_KOR_dakaki_Idol_char_civilian_large
+		textureFile = "gfx/leaders/KOR/AI/KOR_dakaki_Idol.png"
+	}
+	spriteType = { # 육영수
+		name = GFX_portrait_KOR_dakaki_youngsoo_char_civilian_large
+		textureFile = "gfx/leaders/KOR/AI/KOR_dakaki_youngsoo.png"
+	}
+
+
+
+
+
+	spriteType = {
+		name = GFX_portrait_KOR_kim_min_soo_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_min_soo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_cho_kyoung_tae_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_cho_kyoung_tae.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_jae_sub_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_kim_jae_sub.png"
+	}
+	
+	## 대한민국 장군들 ##
+	spriteType = {
+		name = GFX_portrait_KOR_nam_young_sin_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_nam_young_sin.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_nam_young_sin_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_nam_young_sin_civilian.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_an_soo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_park_an_soo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_soo_young_min_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_soo_young_min.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_an_jun_suck_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_an_jun_suck.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_im_seong_geun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_im_seong_geun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kuak_jong_kun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kuak_jong_kun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jin_woo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_lee_jin_woo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_moon_sangho_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_moon_sangho.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_jae_yeol_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_park_jae_yeol.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yeo_inhyung_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_yeo_inhyung.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_sin_hee_heun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_sin_hee_heun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_gu_jun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_lee_gu_jun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_ho_kang_soo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_ho_kang_soo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_doo_hee_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_lee_doo_hee.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chang_kwang_sun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_chang_kwang_sun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kang_Ho_pill_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kang_Ho_pill.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_heun_tee_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_heun_tee.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jong_ho_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_lee_jong_ho.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yang_yong_mo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_yang_yong_mo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_kyung_ryul_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_kyung_ryul.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_you_kun_jong_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_you_kun_jong.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_seong_yul_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_lee_seong_yul.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_seong_hak_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_seong_hak.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_in_ho_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_in_ho.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_an_sang_min_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_an_sang_min.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chnag_seong_kun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_chnag_seong_kun.png"
+	}
+		spriteType = {
+		name = GFX_portrait_KOR_mac_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_mac.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chae_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_chae.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yoon_sang_hyun_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_yoon_sang_hyun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_han_dong_hoon_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_han_dong_hoon.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_na_kyung_won_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_na_kyung_won.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chang_Je_won_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_chang_Je_won.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_22_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_new.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_real_president_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_president.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_happy_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_happy.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_last_year_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_last_year.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_sad_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_sad.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jun_seok_char_GG_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_lee_jun_seok_GG.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_hwang_kyo_ahn_char_civilian_large
+		textureFile = "gfx/leaders/KOR/KOR_hwang_kyo_ahn.png"
+	}
+	# New Generals
+	spriteType = {
+		name = GFX_portrait_KOR_kang_shin_cheol_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kang_shin_cheol.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kang_shin_cheol_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kang_shin_cheol_advisors.png"
+	}
+	spriteType = { #L
+		name = GFX_portrait_KOR_go_chang_jun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_go_chang_jun.png"
+	}
+	spriteType = { #S
+		name = GFX_portrait_KOR_go_chang_jun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_go_chang_jun_advisors.png"
+	}
+	spriteType = { #L
+		name = GFX_portrait_KOR_kim_seung_gyeom_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_seung_gyeom.png"
+	}
+	spriteType = { #S
+		name = GFX_portrait_KOR_kim_seung_gyeom_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kim_seung_gyeom_advisors.png"
+	}
+	spriteType = { #L
+		name = GFX_portrait_KOR_kim_myeong_soo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_myeong_soo.png"
+	}
+	spriteType = { #S
+		name = GFX_portrait_KOR_kim_myeong_soo_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kim_myeong_soo_advisors.png"
+	}
+	## Smalls ##
+	spriteType = {
+		name = GFX_portrait_KOR_nam_young_sin_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_nam_young_sin_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_an_soo_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_park_an_soo_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_soo_young_min_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_soo_young_min_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_an_jun_suck_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_an_jun_suck_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_im_seong_geun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_im_seong_geun_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_jae_yeol_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_park_jae_yeol_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kang_Ho_pill_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kang_Ho_pill_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kuak_jong_kun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kuak_jong_kun_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jin_woo_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_lee_jin_woo_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_moon_sangho_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_moon_sangho_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yeo_inhyung_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_yeo_inhyung_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_sin_hee_heun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_sin_hee_heun_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_gu_jun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_lee_gu_jun_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_ho_kang_soo_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_ho_kang_soo_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_doo_hee_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_lee_doo_hee_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chang_kwang_sun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_chang_kwang_sun_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_soo_yung_min_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_soo_yung_min_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_jong_ho_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_lee_jong_ho_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_yang_yong_mo_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_yang_yong_mo_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_kyung_ryul_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kim_kyung_ryul_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_seong_hak_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kim_seong_hak_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_in_ho_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kim_in_ho_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_you_kun_jong_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_you_kun_jong_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_seong_yul_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_lee_seong_yul_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_an_sang_min_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_an_sang_min_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_chnag_seong_kun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_chnag_seong_kun_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jung_sanghwa_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_jung_sanghwa_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_lee_young_su_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_lee_young_su_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_giwan_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_park_giwan_advisors.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_son_seokrak_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_son_seokrak_advisors.png"
+	}
+	#Ai Park Chung Hee
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_ai_park_chunghee_gif"
+		texturefile = "gfx/leaders/KOR/AI/KOR_ai_park_chunghee_gif.dds"
+		noOfFrames = 90		#107
+		animation_rate_fps = 16		#4
+		looping = yes
+		play_on_show = yes
+	}
+    frameAnimatedSpriteType = {
+		name = "GFX_portrait_KOR_yoon_eui_cheol_sigarette"
+		texturefile = "gfx/leaders/KOR/KOR_yoon_eui_cheol_sigarette.png"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+    }
+	# Other Countires
+	spriteType = {
+		name = GFX_portrait_JPN_vacant_char_civilian_large
+		textureFile = "gfx/leaders/JPN/JPN_vacant.png"
+	}
+	spriteType = {
+		name = GFX_portrait_CNA_vacant_char_civilian_large
+		textureFile = "gfx/leaders/CNA/CNA_vacant.png"
+	}
+	## Randoms ##
+	# Army
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_2
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_2.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_3
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_3.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_4
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_4.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_5
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_5.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_6
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_6.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_7
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_7.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_8
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_8.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_9
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_9.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_10
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_10.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_11
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_11.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_12
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_12.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_13
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_13.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_14
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_14.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_15
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_15.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_16
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_16.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_17
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_17.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_18
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_18.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_19
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_19.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_20
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_20.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_21
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_21.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_22
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_22.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_23
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_23.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_24
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_24.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_25
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_25.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_26
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_generals_kor_26.png"
+	}
+	# Navy
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_admirals_kor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_2
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_admirals_kor_2.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_3
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_admirals_kor_3.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_4
+		textureFile = "gfx/leaders/KOR/generic/KOR_random_admirals_kor_4.png"
+	}
+	## Randoms Smalls ##
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_2_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_2_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_3_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_3_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_4_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_4_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_5_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_5_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_6_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_6_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_7_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_7_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_8_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_8_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_9_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_9_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_10_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_10_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_11_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_11_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_12_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_12_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_13_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_13_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_14_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_14_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_15_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_15_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_16_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_16_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_17_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_17_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_18_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_18_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_19_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_19_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_20_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_20_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_21_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_21_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_22_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_22_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_23_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_23_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_24_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_24_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_25_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_25_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_generals_kor_26_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_generals_kor_26_advisor.png"
+	}
+	#Navy
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_admirals_kor_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_2_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_admirals_kor_2_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_3_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_admirals_kor_3_advisor.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_admirals_kor_4_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_random_admirals_kor_4_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 박정환 (Park Jeong-hwan)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_park_jeong_hwan_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_park_jeong_hwan.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_park_jeong_hwan_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_park_jeong_hwan_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 전동진 (Jeon Dong-jin)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_jeon_dong_jin_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_jeon_dong_jin.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jeon_dong_jin_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_jeon_dong_jin_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 손식 (Son Sik)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_son_sik_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_son_sik.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_son_sik_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_son_sik_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 안병석 (Ahn Byung-seok)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_ahn_byung_seok_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_ahn_byung_seok.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_ahn_byung_seok_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_ahn_byung_seok_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 정진팔 (Jung Jin-pal)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_jung_jin_pal_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_jung_jin_pal.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_jung_jin_pal_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_jung_jin_pal_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 원천희 (Won Cheon-hee)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_won_cheon_hee_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_won_cheon_hee.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_won_cheon_hee_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_won_cheon_hee_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 엄용진 (Eom Yong-jin)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_eom_yong_jin_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_eom_yong_jin.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_eom_yong_jin_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_eom_yong_jin_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 김도균 (Kim Do-gyun)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_kim_do_gyun_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kim_do_gyun.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kim_do_gyun_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kim_do_gyun_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 강동길 (Kang Dong-gil)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_kang_dong_gil_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_kang_dong_gil.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_kang_dong_gil_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_kang_dong_gil_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 최성혁 (Choi Sung-hyuk)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_choi_sung_hyuk_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_choi_sung_hyuk.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_choi_sung_hyuk_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_choi_sung_hyuk_advisor.png"
+	}
+
+	# ------------------------------------------
+	# 황선우 (Hwang Sun-woo)
+	# ------------------------------------------
+	spriteType = {
+		name = GFX_portrait_KOR_hwang_sun_woo_char_army_large
+		textureFile = "gfx/leaders/KOR/generals/KOR_hwang_sun_woo.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_hwang_sun_woo_char_army_small
+		textureFile = "gfx/interface/ideas/KOR/ministers/KOR_hwang_sun_woo_advisor.png"
+	}
+	##########
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_1
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_1.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_2
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_2.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_3
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_3.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_4
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_4.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_5
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_5.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_6
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_6.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_7
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_7.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_8
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_8.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_9
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_9.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_10
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_10.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_11
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_11.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_12
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_12.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_male_13
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_male_13.png"
+	}
+
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_female_1
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_female_1.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_female_2
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_female_2.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_female_3
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_female_3.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_female_4
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_female_4.png"
+	}
+	spriteType = {
+		name = GFX_portrait_KOR_random_spy_female_5
+		textureFile = "gfx/leaders/KOR/spy/KOR_random_spy_female_5.png"
+	}
+}

@@ -1,0 +1,14 @@
+﻿capital = 1334
+set_country_flag = shithole_country
+recruit_character = JPN_vacant_char
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "2018.11.13"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	authoritarian_democrat = 100
+}

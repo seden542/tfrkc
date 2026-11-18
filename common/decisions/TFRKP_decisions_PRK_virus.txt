@@ -1,0 +1,834 @@
+PRK_fight_malignant_virus_category = {
+	PRK_virus_spread_mission = {
+		icon = generic_coronavirus
+		allowed = { always = no }
+		visible = {
+			has_country_flag = PRK_virus_crisis_active
+			has_country_flag = PRK_virus_spread_stage_1
+		}
+		available = { always = no }
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 20
+		priority = 100
+		timeout_effect = {
+			hidden_effect = {
+				PRK_epidemic_spread_effect = yes
+				if = {
+					limit = {
+						has_country_flag = PRK_virus_crisis_active
+						has_country_flag = PRK_virus_spread_stage_1
+					}
+					activate_mission = PRK_virus_spread_mission
+				}
+			}
+		}
+	}
+
+	PRK_virus_spread_mission_stage_2 = {
+		icon = generic_coronavirus
+		allowed = { always = no }
+		visible = {
+			has_country_flag = PRK_virus_crisis_active
+			has_country_flag = PRK_virus_spread_stage_2
+		}
+		available = { always = no }
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 15
+		priority = 100
+		timeout_effect = {
+			hidden_effect = {
+				PRK_epidemic_spread_effect = yes
+				if = {
+					limit = {
+						has_country_flag = PRK_virus_crisis_active
+						has_country_flag = PRK_virus_spread_stage_2
+					}
+					activate_mission = PRK_virus_spread_mission_stage_2
+				}
+			}
+		}
+	}
+
+	PRK_virus_spread_mission_stage_3 = {
+		icon = generic_coronavirus
+		allowed = { always = no }
+		visible = {
+			has_country_flag = PRK_virus_crisis_active
+			has_country_flag = PRK_virus_spread_stage_3
+		}
+		available = { always = no }
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 10
+		priority = 100
+		timeout_effect = {
+			hidden_effect = {
+				PRK_epidemic_spread_effect = yes
+				if = {
+					limit = {
+						has_country_flag = PRK_virus_crisis_active
+						has_country_flag = PRK_virus_spread_stage_3
+					}
+					activate_mission = PRK_virus_spread_mission_stage_3
+				}
+			}
+		}
+	}
+
+	PRK_virus_stage_2_countdown_mission = {
+		allowed = { always = no }
+		visible = { always = no }
+		available = { always = no }
+		selectable_mission = no
+		days_mission_timeout = 100
+		priority = 99
+		timeout_effect = {
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = PRK_virus_crisis_active }
+					clr_country_flag = PRK_virus_spread_stage_1
+					set_country_flag = PRK_virus_spread_stage_2
+					remove_mission = PRK_virus_spread_mission
+					activate_mission = PRK_virus_spread_mission_stage_2
+					activate_mission = PRK_virus_stage_3_countdown_mission
+				}
+			}
+		}
+	}
+
+	PRK_virus_stage_3_countdown_mission = {
+		allowed = { always = no }
+		visible = { always = no }
+		available = { always = no }
+		selectable_mission = no
+		days_mission_timeout = 100
+		priority = 99
+		timeout_effect = {
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = PRK_virus_crisis_active }
+					clr_country_flag = PRK_virus_spread_stage_2
+					set_country_flag = PRK_virus_spread_stage_3
+					remove_mission = PRK_virus_spread_mission_stage_2
+					activate_mission = PRK_virus_spread_mission_stage_3
+				}
+			}
+		}
+	}
+
+	PRK_epidemic_supply_production_mission = {
+		allowed = { always = no }
+		visible = { always = no }
+		available = { always = no }
+		selectable_mission = no
+		days_mission_timeout = 30
+		priority = 98
+		timeout_effect = {
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = PRK_virus_crisis_active }
+					add_to_variable = { PRK_epidemic_supplies_var = 2 }
+					PRK_epidemic_update_effect = yes
+					activate_mission = PRK_epidemic_supply_production_mission
+				}
+			}
+		}
+	}
+
+	PRK_quarantine_pyongan = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_pyongan_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_4
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 25
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 4 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_pyongan_change_tt
+			hidden_effect = { PRK_epidemic_pyongan_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { PRK_pyongan_infection_var > 0.20 } }
+			modifier = { factor = 3 check_variable = { PRK_pyongan_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_quarantine_hwanghae = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_hwanghae_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_4
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 25
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 4 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_hwanghae_change_tt
+			hidden_effect = { PRK_epidemic_hwanghae_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { PRK_hwanghae_infection_var > 0.20 } }
+			modifier = { factor = 3 check_variable = { PRK_hwanghae_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_quarantine_kangwon = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_kangwon_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_4
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 25
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 4 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_kangwon_change_tt
+			hidden_effect = { PRK_epidemic_kangwon_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { PRK_kangwon_infection_var > 0.20 } }
+			modifier = { factor = 3 check_variable = { PRK_kangwon_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_quarantine_hamgyong = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_hamgyong_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_4
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 25
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 4 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_hamgyong_change_tt
+			hidden_effect = { PRK_epidemic_hamgyong_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { PRK_hamgyong_infection_var > 0.20 } }
+			modifier = { factor = 3 check_variable = { PRK_hamgyong_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_quarantine_ryanggang = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_ryanggang_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_4
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 25
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 4 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_ryanggang_change_tt
+			hidden_effect = { PRK_epidemic_ryanggang_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { PRK_ryanggang_infection_var > 0.20 } }
+			modifier = { factor = 3 check_variable = { PRK_ryanggang_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_quarantine_chagang = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_chagang_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_4
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 25
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 4 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.10 }
+			custom_effect_tooltip = PRK_infection_chagang_change_tt
+			hidden_effect = { PRK_epidemic_chagang_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { PRK_chagang_infection_var > 0.20 } }
+			modifier = { factor = 3 check_variable = { PRK_chagang_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_mobilize_party_quarantine_cells = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_role_of_party
+			check_variable = { PRK_national_infection_var > 0.02 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 5 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_5
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = { subtract_from_variable = { PRK_epidemic_supplies_var = 5 } }
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.025 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 80
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.15 } }
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.35 } }
+		}
+	}
+
+	PRK_nationwide_disinfection_campaign = {
+		icon = generic_coronavirus
+		visible = {
+			has_completed_focus = PRK_activate_maximum_emergency_epidemic_prevention_system
+			check_variable = { PRK_national_infection_var > 0.02 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 7 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_7
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 7 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.03 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 60
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.20 } }
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_enforce_nationwide_lockdown = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_impose_lockdowns_across_provinces
+			check_variable = { PRK_national_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 12 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_12
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 45
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 12 }
+			add_stability = -0.02
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.06 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 20
+			modifier = { factor = 4 check_variable = { PRK_national_infection_var > 0.25 } }
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.50 } }
+		}
+	}
+
+	PRK_requisition_medical_supplies = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRK_ensure_medical_supplies
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_epidemic_supplies_var < 89 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 45
+		remove_effect = {
+			set_temp_variable = { PRK_epidemic_supplies_change_temp = 12 }
+			custom_effect_tooltip = PRK_epidemic_supplies_change_tt
+			add_timed_idea = {
+				idea = PRK_epidemic_supply_requisition_disruption
+				days = 30
+			}
+			hidden_effect = { PRK_epidemic_supplies_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 20
+			modifier = { factor = 0.1 check_variable = { PRK_epidemic_supplies_var > 40 } }
+			modifier = { factor = 5 check_variable = { PRK_epidemic_supplies_var < 25 } }
+			modifier = { factor = 4 check_variable = { PRK_epidemic_supplies_var < 12 } }
+		}
+	}
+
+	PRK_punish_quarantine_violations = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_role_of_judiciary_and_prosecution
+			check_variable = { PRK_national_infection_var > 0.03 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 30
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = { add_stability = -0.01 }
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.03 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.20 } }
+		}
+	}
+
+	PRK_quarantine_self_reporting_period = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_role_of_judiciary_and_prosecution
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.03 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 15
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 4 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_4_pp_15_cost
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 45
+		complete_effect = { subtract_from_variable = { PRK_epidemic_supplies_var = 4 } }
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.02 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			add_stability = 0.003
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 80
+			modifier = { factor = 2 stability < 0.50 }
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.20 } }
+		}
+	}
+
+	PRK_emergency_vaccination_drive = {
+		icon = generic_vaccine
+		visible = {
+			OR = {
+				has_completed_focus = PRK_emergency_vaccine_imports
+				has_completed_focus = PRK_our_own_vaccine
+			}
+			check_variable = { PRK_national_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 15 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_15
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 45
+		complete_effect = { subtract_from_variable = { PRK_epidemic_supplies_var = 15 } }
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.08 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 120
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.25 } }
+		}
+	}
+
+	PRK_prioritize_high_risk_vaccination = {
+		icon = generic_vaccine
+		visible = {
+			OR = {
+				has_completed_focus = PRK_emergency_vaccine_imports
+				has_completed_focus = PRK_our_own_vaccine
+			}
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.03 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 8 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_8
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = { subtract_from_variable = { PRK_epidemic_supplies_var = 8 } }
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.04 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 90
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.15 } }
+		}
+	}
+
+	PRK_deploy_army_quarantine_cordon = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_role_of_peoples_army
+			check_variable = { PRK_national_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = { command_power > 15 }
+		custom_cost_text = PRK_army_quarantine_command_power_cost
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 45
+		complete_effect = {
+			add_command_power = -15
+			add_war_support = -0.01
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.07 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 100
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.20 } }
+		}
+	}
+
+	PRK_dispatch_military_medical_units = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRK_role_of_peoples_army
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.03 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 3 compare = greater_than_or_equals }
+			command_power > 9
+		}
+		custom_cost_text = PRK_epidemic_supplies_3_cp_10_cost
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 40
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 3 }
+			add_command_power = -10
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.04 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			add_timed_idea = {
+				idea = PRK_military_medical_units_deployment_strain
+				days = 30
+			}
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 80
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.15 } }
+			modifier = { factor = 0.25 has_war = yes }
+		}
+	}
+
+	PRK_koryo_medicine_treatment_campaign = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRK_research_koryo_medicine
+			check_variable = { PRK_national_infection_var > 0.03 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 6 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_6
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = { subtract_from_variable = { PRK_epidemic_supplies_var = 6 } }
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.04 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 90
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.15 } }
+		}
+	}
+
+	PRK_expand_koryo_medicine_production = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRK_research_koryo_medicine
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_epidemic_supplies_var < 96 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 60
+		remove_effect = {
+			set_temp_variable = { PRK_epidemic_supplies_change_temp = 5 }
+			custom_effect_tooltip = PRK_epidemic_supplies_change_tt
+			add_timed_idea = {
+				idea = PRK_koryo_medicine_production_disruption
+				days = 20
+			}
+			hidden_effect = { PRK_epidemic_supplies_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 15
+			modifier = { factor = 0.1 check_variable = { PRK_epidemic_supplies_var > 40 } }
+			modifier = { factor = 5 check_variable = { PRK_epidemic_supplies_var < 20 } }
+			modifier = { factor = 3 check_variable = { PRK_epidemic_supplies_var < 10 } }
+		}
+	}
+
+	PRK_expand_temporary_quarantine_posts = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_organize_state_emergency_epidemic_prevention_command
+			has_country_flag = PRK_virus_crisis_active
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 8 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_8
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 8 }
+			add_stability = -0.005
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.015 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.02 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+			}
+		}
+		ai_will_do = { base = 250 }
+	}
+
+	PRK_deploy_epidemic_reserve_units = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_organize_state_emergency_epidemic_prevention_command
+			has_country_flag = PRK_virus_crisis_active
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+			NOT = { has_country_flag = PRK_epidemic_reserve_units_prepared }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 6 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_6
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 50
+		complete_effect = { subtract_from_variable = { PRK_epidemic_supplies_var = 6 } }
+		remove_effect = {
+			custom_effect_tooltip = PRK_epidemic_reserve_units_prepared_tt
+			hidden_effect = { set_country_flag = PRK_epidemic_reserve_units_prepared }
+		}
+		ai_will_do = {
+			base = 110
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.20 } }
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_household_fever_surveys = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_role_of_party
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_epidemic_containment_var < 0.10 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 5 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_5
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 50
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 5 }
+			add_stability = -0.003
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_epidemic_response_change_temp = 0.005 }
+			custom_effect_tooltip = PRK_epidemic_response_change_tt
+			set_temp_variable = { PRK_infection_change_temp = -0.01 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = {
+				PRK_epidemic_response_change_effect = yes
+				PRK_epidemic_all_infection_change_effect = yes
+			}
+		}
+		ai_will_do = { base = 160 }
+	}
+
+	PRK_suspend_interprovincial_transport = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = PRK_impose_lockdowns_across_provinces
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 8 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_8
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 50
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 8 }
+			add_stability = -0.015
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.07 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 20
+			modifier = { factor = 4 check_variable = { PRK_national_infection_var > 0.20 } }
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.40 } }
+		}
+	}
+
+	PRK_dispatch_emergency_medical_trains = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRK_ensure_medical_supplies
+			has_country_flag = PRK_virus_crisis_active
+			check_variable = { PRK_national_infection_var > 0.05 }
+			NOT = { has_country_flag = PRK_virus_crisis_over }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = { var = PRK_epidemic_supplies_var value = 10 compare = greater_than_or_equals }
+		}
+		custom_cost_text = PRK_epidemic_supplies_cost_10
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 40
+		complete_effect = {
+			subtract_from_variable = { PRK_epidemic_supplies_var = 10 }
+			add_command_power = -10
+		}
+		remove_effect = {
+			set_temp_variable = { PRK_infection_change_temp = -0.05 }
+			custom_effect_tooltip = PRK_infection_all_change_tt
+			hidden_effect = { PRK_epidemic_all_infection_change_effect = yes }
+		}
+		ai_will_do = {
+			base = 70
+			modifier = { factor = 2 check_variable = { PRK_national_infection_var > 0.25 } }
+		}
+	}
+}

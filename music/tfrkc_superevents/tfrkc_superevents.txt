@@ -1,0 +1,6 @@
+# Trigger-only music, mirroring TFRKP's super-event music registration.
+music_station = "tfrkc_superevents"
+music = {
+ song = "TFRKP_TFRKC_SE_KOREAN_CIVILWAR"
+ chance = { modifier = { factor = 0 } }
+}

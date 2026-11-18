@@ -1,0 +1,141 @@
+guiTypes = {
+
+	### 국방개혁 카테고리 GUI (460x530, 디시전 카테고리 부착형) ###
+	containerWindowType = {
+		name = "TFRKP_defreform_main_GUI"
+		position = { x = 50 y = 0 }
+		size = { width = 460 height = 530 }
+
+		iconType = {
+			name = "TFRKP_defreform_bg"
+			spriteType = "GFX_TFRKP_defreform_bg"
+			position = { x = 5 y = 0 }
+		}
+		iconType = {
+			name = "TFRKP_defreform_hanzi"
+			spriteType = "GFX_TFRKP_defreform_hanzi"
+			position = { x = 5 y = 0 }
+			pdx_tooltip = "TFRKP_defreform_hanzi_tooltip"
+		}
+
+		### 국방개혁 토큰 (5개, 프레임: 1=빈 것 / 2=보유) ###
+		instantTextboxType = {
+			name = "TFRKP_defreform_token_label"
+			position = { x = 20 y = 190 }
+			font = "VCR02_14"
+			maxWidth = 240
+			maxHeight = 16
+			format = left
+			text = "TFRKP_defreform_token_label_text"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_defreform_token_count"
+			position = { x = 330 y = 190 }
+			font = "VCR02_14"
+			maxWidth = 160
+			maxHeight = 16
+			format = right
+			text = "TFRKP_defreform_token_count_text"
+		}
+
+		iconType = { name = "TFRKP_defreform_token_1" spriteType = "GFX_TFRKP_defreform_token" position = { x = 30 y = 208 } frame = 1 pdx_tooltip = "TFRKP_defreform_token_tooltip" }
+		iconType = { name = "TFRKP_defreform_token_2" spriteType = "GFX_TFRKP_defreform_token" position = { x = 130 y = 208 } frame = 1 pdx_tooltip = "TFRKP_defreform_token_tooltip" }
+		iconType = { name = "TFRKP_defreform_token_3" spriteType = "GFX_TFRKP_defreform_token" position = { x = 230 y = 208 } frame = 1 pdx_tooltip = "TFRKP_defreform_token_tooltip" }
+		iconType = { name = "TFRKP_defreform_token_4" spriteType = "GFX_TFRKP_defreform_token" position = { x = 330 y = 208 } frame = 1 pdx_tooltip = "TFRKP_defreform_token_tooltip" }
+		iconType = { name = "TFRKP_defreform_token_5" spriteType = "GFX_TFRKP_defreform_token" position = { x = 430 y = 208 } frame = 1 pdx_tooltip = "TFRKP_defreform_token_tooltip" }
+
+		### 3대 수치 ###
+		instantTextboxType = {
+			name = "TFRKP_defreform_progress_label"
+			position = { x = 20 y = 278 }
+			font = "VCR02_14"
+			maxWidth = 145
+			maxHeight = 16
+			format = left
+			text = "TFRKP_defreform_progress_label_text"
+		}
+		iconType = {
+			name = "TFRKP_defreform_progress_bar"
+			spriteType = "GFX_TFRKP_defreform_progress_bar"
+			position = { x = 170 y = 281 }
+			frame = 1
+		}
+		instantTextboxType = {
+			name = "TFRKP_defreform_progress_value"
+			position = { x = 376 y = 278 }
+			font = "VCR02_14"
+			maxWidth = 64
+			maxHeight = 16
+			format = right
+			text = "TFRKP_defreform_progress_value_text"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_defreform_trust_label"
+			position = { x = 20 y = 306 }
+			font = "VCR02_14"
+			maxWidth = 145
+			maxHeight = 16
+			format = left
+			text = "TFRKP_defreform_trust_label_text"
+		}
+		iconType = {
+			name = "TFRKP_defreform_trust_bar"
+			spriteType = "GFX_TFRKP_defreform_trust_bar"
+			position = { x = 170 y = 309 }
+			frame = 1
+		}
+		instantTextboxType = {
+			name = "TFRKP_defreform_trust_value"
+			position = { x = 376 y = 306 }
+			font = "VCR02_14"
+			maxWidth = 64
+			maxHeight = 16
+			format = right
+			text = "TFRKP_defreform_trust_value_text"
+		}
+
+		instantTextboxType = {
+			name = "TFRKP_defreform_rank_label"
+			position = { x = 20 y = 334 }
+			font = "VCR02_14"
+			maxWidth = 220
+			maxHeight = 16
+			format = left
+			text = "TFRKP_defreform_rank_label_text"
+		}
+		instantTextboxType = {
+			name = "TFRKP_defreform_rank_value"
+			position = { x = 240 y = 334 }
+			font = "VCR02_14"
+			maxWidth = 200
+			maxHeight = 16
+			format = right
+			text = "TFRKP_defreform_rank_value_text"
+		}
+
+		### 국방개혁 포스터 3종 (좌: 복무환경 / 중: 장비 연구 / 우: 훈련 개선) ###
+		buttonType = {
+			name = "TFRKP_defreform_poster_welfare"
+			position = { x = 15 y = 352 }
+			spriteType = "GFX_TFRKP_defreform_poster_welfare"
+			frame = 1
+			pdx_tooltip = "TFRKP_defreform_poster_welfare_tooltip"
+		}
+		buttonType = {
+			name = "TFRKP_defreform_poster_equip"
+			position = { x = 185 y = 352 }
+			spriteType = "GFX_TFRKP_defreform_poster_equip"
+			frame = 1
+			pdx_tooltip = "TFRKP_defreform_poster_equip_tooltip"
+		}
+		buttonType = {
+			name = "TFRKP_defreform_poster_training"
+			position = { x = 365 y = 352 }
+			spriteType = "GFX_TFRKP_defreform_poster_training"
+			frame = 1
+			pdx_tooltip = "TFRKP_defreform_poster_training_tooltip"
+		}
+	}
+}

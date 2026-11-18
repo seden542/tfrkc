@@ -1,0 +1,19 @@
+state={
+	id = 1050
+	name = "STATE_1050"
+	
+	history = {
+owner = PRK
+add_core_of = PRK
+add_claim_by = KOR
+ buildings = {
+ infrastructure = 3
+ }
+victory_points = {7171 5}
+}
+	provinces = { 13712 7171 15115 15155 13687 }
+	manpower = 1262126
+	buildings_max_level_factor = 0.25065274
+	
+	state_category = suburb
+}

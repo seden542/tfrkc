@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_KMS_ECON_line_graph_chart"
+		textureFile = "/gfx/interface/GUI/KMS_ECON/line_graph_chart.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_KMS_ECON_line_segment"
+		textureFile1 = "/gfx/interface/GUI/KMS_ECON/graph_line_full.dds"
+		textureFile2 = "/gfx/interface/GUI/KMS_ECON/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+
+}

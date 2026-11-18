@@ -1,0 +1,14 @@
+﻿capital = 1201
+set_country_flag = shithole_country
+recruit_character = CNA_vacant_char
+
+set_politics = {
+	ruling_party = totalitarian_socialist
+	last_election = "2018.11.13"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalitarian_socialist = 100
+}

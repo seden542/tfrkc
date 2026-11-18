@@ -1,0 +1,105 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_unfinished_symphony_KOR_pm_seal
+		texturefile = "gfx/interface/GUI/unfinished_symphony/KOR_pm_seal.png"
+	}
+	spriteType = {
+		name = GFX_unfinished_symphony_KOR_president_seal
+		texturefile = "gfx/interface/GUI/unfinished_symphony/KOR_president_seal.png"
+	}
+	spriteType = {
+		name = GFX_unfinished_symphony_KOR_sub_pm_seal
+		texturefile = "gfx/interface/GUI/unfinished_symphony/KOR_sub_pm_seal.png"
+	}
+
+	spriteType = {
+		name = GFX_unfinished_symphony_kim_moonsoo_portrait
+		texturefile = "gfx/interface/GUI/unfinished_symphony/kim_moonsoo_portrait.png"
+	}
+	spriteType = {
+		name = GFX_unfinished_symphony_blank_portrait
+		texturefile = "gfx/interface/GUI/unfinished_symphony/blank_portrait.png"
+	}
+	spriteType = {
+		name = GFX_unfinished_symphony_ministers_portrait_strip
+		texturefile = "gfx/interface/GUI/unfinished_symphony/ministers_portrait_strip.png"
+		noOfFrames = 11
+	}
+	spriteType = {
+		name = GFX_unfinished_symphony_choo_miae_portrait
+		texturefile = "gfx/interface/GUI/unfinished_symphony/choo_miae_portrait.png"
+	}
+
+	spriteType = {
+		name = GFX_jeon_jae_soo_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/jeon_jae_soo_minister.png"
+	}
+	spriteType = {
+		name = GFX_jeon_jae_soo_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/jeon_jae_soo_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_kim_sang_wook_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/kim_sang_wook_minister.png"
+	}
+	spriteType = {
+		name = GFX_kim_sang_wook_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/kim_sang_wook_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_kim_bu_gyeom_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/kim_bu_gyeom_minister.png"
+	}
+	spriteType = {
+		name = GFX_kim_bu_gyeom_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/kim_bu_gyeom_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ha_tae_kyung_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/ha_tae_kyung_minister.png"
+	}
+	spriteType = {
+		name = GFX_ha_tae_kyung_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/ha_tae_kyung_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ahn_cheol_soo_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/ahn_cheol_soo_minister.png"
+	}
+	spriteType = {
+		name = GFX_ahn_cheol_soo_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/ahn_cheol_soo_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_cha_myeong_jin_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/cha_myeong_jin_minister.png"
+	}
+	spriteType = {
+		name = GFX_cha_myeong_jin_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/cha_myeong_jin_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_kim_byeong_gi_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/kim_byeong_gi_minister.png"
+	}
+	spriteType = {
+		name = GFX_kim_byeong_gi_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/kim_byeong_gi_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_im_jong_seok_minister
+		texturefile = "gfx/interface/GUI/unfinished_symphony/minister/im_jong_seok_minister.png"
+	}
+	spriteType = {
+		name = GFX_im_jong_seok_minister_texticon
+		texturefile = "gfx/interface/GUI/unfinished_symphony/texticon/im_jong_seok_minister_texticon.png"
+		legacy_lazy_load = no
+	}
+}

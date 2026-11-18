@@ -1,0 +1,29 @@
+add_namespace = tfrkc_super
+
+# A major news event is broadcast by the engine to all countries.
+# Open the inherited TFRKP window only when this recipient clicks the news.
+news_event = {
+ id = tfrkc_super.1
+ title = tfrkc_super.1.t
+ desc = tfrkc_super.1.d
+ picture = GFX_TFRKC_story_outbreak
+ major = yes
+ is_triggered_only = yes
+ option = {
+  name = tfrkc_super.1.a
+  ai_chance = { factor = 100 }
+  hidden_effect = { TFRKC_open_civilwar_super_event_effect = yes }
+ }
+}
+
+# Console-only repeatable UI/audio test. No war/date/territory effects.
+country_event = {
+ id = tfrkc_super.900
+ hidden = yes
+ is_triggered_only = yes
+ immediate = {
+  clr_country_flag = TFRKC_civilwar_super_seen_v2
+  clear_variable = TFRKP_super_event
+  TFRKC_open_civilwar_super_event_effect = yes
+ }
+}

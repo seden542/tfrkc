@@ -1,0 +1,18 @@
+state = {
+ id = 871
+ name = "STATE_871"
+ manpower = 124171
+ provinces = { 15204 15192 14248 15241 }
+ resources = { steel = 3 tungsten = 2 }
+ buildings_max_level_factor = 0.0805810466
+ state_category = large_suburb
+ history = {
+ owner = KOR
+add_core_of = KOR
+add_claim_by = PRK
+ buildings = { infrastructure = 3  air_base = 1
+ 
+ }
+ victory_points = { 14248 5 }
+ }
+}

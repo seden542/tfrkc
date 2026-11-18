@@ -1,0 +1,8 @@
+KCH = "countries/TFRKC_KCH.txt"
+KYA = "countries/TFRKC_KYA.txt"
+KRC = "countries/TFRKC_KRC.txt"
+KLF = "countries/TFRKC_KLF.txt"
+KWC = "countries/TFRKC_KWC.txt"
+KSF = "countries/TFRKC_KSF.txt"
+KNM = "countries/TFRKC_KNM.txt"
+KPL = "countries/TFRKC_KPL.txt"

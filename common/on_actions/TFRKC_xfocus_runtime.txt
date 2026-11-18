@@ -1,0 +1,2 @@
+# RETIRED 2026-11-17: no daily binding or reconciliation for the former 16 organizations.
+on_actions = { }

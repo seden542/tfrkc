@@ -1,0 +1,14 @@
+division_template = { name = "TFRKC city KJR 0" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } }  }
+division_template = { name = "TFRKC city KJR 1" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } artillery_brigade = { x = 1 y = 1 } }  }
+units = {
+division = { name = "전주국민혁명위원회 제1전투단" location = 15181 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제2전투단" location = 15177 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제3전투단" location = 15181 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제4전투단" location = 15177 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제5전투단" location = 15181 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제6전투단" location = 15177 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제7전투단" location = 15181 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제8전투단" location = 15177 division_template = "TFRKC city KJR 0" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제9전투단" location = 15181 division_template = "TFRKC city KJR 1" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+division = { name = "전주국민혁명위원회 제10전투단" location = 15177 division_template = "TFRKC city KJR 1" start_manpower_factor = 0.85 start_equipment_factor = 0.6 start_experience_factor = 0.35 }
+}

@@ -1,0 +1,190 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unitlist_unitinfo_button_plp"
+		texturefile = "gfx/interface/unitcontrol/unitlist_unitinfo_button.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile ="gfx/interface/unitcontrol/unitlist_unitinfo_button.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 2
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/unitcontrol/unitlist_unitinfo_button.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 2
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_banner_PLP"
+		texturefile = "gfx/interface/GUI/PLP/decision_banner_PLP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_party_select_icon"
+		texturefile = "gfx/interface/GUI/PLP/KOR_party_select_icon.png"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_pp"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_pp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_jp"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_jp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_lp"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_lp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_test_focus_banner"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_1"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_pp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_2"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_pp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_3"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_jp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_4"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_jp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_5"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_lp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_6"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_lp.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_7"
+		texturefile = "gfx/interface/GUI/PLP/focus_banner_7.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_8"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_9"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_10"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_11"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_12"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_13"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_14"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_15"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_banner_16"
+		texturefile = "gfx/interface/GUI/PLP/test_focus_banner.png"
+	}
+	spriteType = {
+		name = "GFX_plp_icon"
+		texturefile = "gfx/interface/GUI/PLP/plp_icon.png"
+	}
+	spriteType = {
+		name = "GFX_plp_info_big"
+		texturefile = "gfx/interface/GUI/PLP/plp_info_big.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PLP_president_influence_back"
+		texturefile = "gfx/interface/GUI/PLP/president_inf_back.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PLP_president_influence_color1"
+		texturefile = "gfx/interface/GUI/PLP/president_inf_color1.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PLP_president_influence_color2"
+		texturefile = "gfx/interface/GUI/PLP/president_inf_color2.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PLP_president_influence_color3"
+		texturefile = "gfx/interface/GUI/PLP/president_inf_color3.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PLP_president_influence_color4"
+		texturefile = "gfx/interface/GUI/PLP/president_inf_color4.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_PLP_president_influence_color5"
+		texturefile = "gfx/interface/GUI/PLP/president_inf_color5.png"
+	}
+	spriteType = {
+		name = "GFX_PLP_head_faction_PP"
+		texturefile = "gfx/interface/GUI/PLP/PLP_head_faction_pp.png"
+	}
+	spriteType = {
+		name = "GFX_PLP_head_faction_jp"
+		texturefile = "gfx/interface/GUI/PLP/PLP_head_faction_jp.png"
+	}
+	spriteType = {
+		name = "GFX_PLP_head_faction_lp"
+		texturefile = "gfx/interface/GUI/PLP/PLP_head_faction_lp.png"
+	}
+	spriteType = {
+		name = "GFX_PLP_head_faction_nothing"
+		texturefile = "gfx/interface/GUI/PLP/plp_info_big.png"
+	}
+	spriteType = {
+		name = "GFX_plp_focus_on_active"
+		texturefile = "gfx/interface/GUI/PLP/plp_focus_on_active.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/GUI/PLP/plp_focus_on_active.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0	# -90 clockwise 90 counterclockwise (by default)
+			animationlooping = yes		# yes or no ;)
+			animationtime = 2		# in seconds
+			animationdelay = 0.2		# in seconds
+			animationblendmode = "add"	# add, multiply, overlay
+			animationtype = "pulsing"	# scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

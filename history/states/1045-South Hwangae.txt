@@ -1,0 +1,22 @@
+state={
+	id = 1045
+	name = "STATE_1045"
+	
+	history = {
+owner = PRK
+add_claim_by = KOR
+add_core_of = PRK
+ buildings = {
+ infrastructure = 3
+ dockyard = 1
+ }
+victory_points = {
+			1003 3
+		}
+}
+	provinces = { 15160 15103 15086 1003 4107 }
+	manpower = 1069835
+	buildings_max_level_factor = 0.46303502
+	
+	state_category = town
+}

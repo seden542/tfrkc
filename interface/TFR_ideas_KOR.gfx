@@ -1,0 +1,1551 @@
+spriteTypes = {
+	# Counrty Ideas
+
+	# Advisors
+	spriteType = {
+		name = "GFX_idea_KOR_lee_nak_yon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_nak_yon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_chung_sye_kyun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_chung_sye_kyun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kang_kyung_hwa"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kang_kyung_hwa.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hong_nam_gi"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_hong_nam_gi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jin_young"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jin_young.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jeon_hae_cheol"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jeon_hae_cheol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_suh_hoon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_suh_hoon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_chung_eui_yong"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_chung_eui_yong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jeong_kyeong_doo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jeong_kyeong_doo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_suh_wook"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_suh_wook.png"
+	}
+
+	# Yoon Advisors
+	spriteType = {
+		name = "GFX_idea_KOR_han_duck_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_han_duck_soo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_sang_min"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_sang_min.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_choo_kyung_hoo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_choo_kyung_hoo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_jin"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_jin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_seung_han"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_seung_han.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_no_sang_won"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_no_sang_won.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_jung_sub"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_jung_sub.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yu_in_heung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yu_in_heung.png"
+	}
+
+	# Lee After Yoon Advisors
+	spriteType = {
+		name = "GFX_idea_KOR_kim_min_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_min_seok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_cho_hyun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_hyun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_koo_yun_cheol"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_koo_yun_cheol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_ho_jung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yoon_ho_jung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_jong_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_jong_seok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_an_gyu_baek"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_an_gyu_baek.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_kim_gi_hyeon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_gi_hyeon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_baek_jong_heon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_baek_jong_heon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_ho_jung_HM"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yoon_ho_jung_HM.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kang_deuk_gu"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kang_deuk_gu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hwang_myeong_seon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_hwang_myeong_seon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hong_kee_won"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_hong_kee_won.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_tae_nyeon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_tae_nyeon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_geon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_geon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_sung_han"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_sung_han.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_wi_sung_lac"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_wi_sung_lac.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_choi_sang_mok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_choi_sang_mok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_hee_suk"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yoon_hee_suk.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_ha_joon_kyung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ha_joon_kyung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_chul_gyu"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_chul_gyu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_wan_su"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_wan_su.png"
+	}
+	### Lee Advisors
+	spriteType = {
+		name = "GFX_idea_KOR_kim_moon_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_moon_soo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_im_jong_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_im_jong_seok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_cho_tae_yeol"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_tae_yeol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_dong_yeon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_dong_yeon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_gyeong_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_gyeong_soo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_im_jong_deuk"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_im_jong_deuk.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_han_ki_ho"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_han_ki_ho.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_chu_mi_ae"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_chu_mi_ae.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_yong_beom"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_yong_beom.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_han_ju"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_han_ju.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_nam_gwan_pyo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_nam_gwan_pyo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_ko_chang_jun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ko_chang_jun.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_yeo_young_guk"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yeo_young_guk.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_moon_jeong_in"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_moon_jeong_in.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_joon_koo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_joon_koo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_sang_kyu"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_sang_kyu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_dong_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_dong_soo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_jong_dae"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_jong_dae.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_nam_yeong_shin_cabinet"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_nam_yeong_shin_cabinet.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_eui_cheol"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yoon_eui_cheol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_yong_woo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_yong_woo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_chan_ju"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_chan_ju.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_kyou_hyun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_kyou_hyun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_rhee_chang_yong"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_rhee_chang_yong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_moon_sang_ho"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_moon_sang_ho.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_song_young_moo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_song_young_moo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_yeom_tae_young"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yeom_tae_young.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_wu_won_sik"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_wu_won_sik.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_tae_hyo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_tae_hyo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_nam_joo_hong"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_nam_joo_hong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_sun_won"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_sun_won.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lim_ho_young"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lim_ho_young.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_shin_won_sik"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_shin_won_sik.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_byung_joo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_byung_joo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_ha_tae_kyung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ha_tae_kyung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_choi_jong_kun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_choi_jong_kun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_yong_jin"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_yong_jin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_joo_min"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_joo_min.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hwang_un_ha"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_hwang_un_ha.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_cho_kuk"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_kuk.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_han_dong_hoon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_han_dong_hoon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_ryu_si_min"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ryu_si_min.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_min_sik"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_min_sik.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_seo_wang_jin"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_seo_wang_jin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_bok_hyeon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_bok_hyeon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_park_eun_jung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_eun_jung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_joo_jin_woo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_joo_jin_woo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_hwang_hyun_seon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_hwang_hyun_seon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_cho_sang_jun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_sang_jun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_jae_gwan"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yoon_jae_gwan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lim_jong_deuk"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lim_jong_deuk.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_bu_gyeom"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_bu_gyeom.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_song_eon_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_song_eon_seok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_won_hee_ryong"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_won_hee_ryong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_jeon_jae_sung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jeon_jae_sung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_nmhtetrokm"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_nmhtetrokm.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kang_shin_cheol"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kang_shin_cheol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_doo_kyeom"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_doo_kyeom.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kang_ki_jung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kang_ki_jung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_ko_dong_jin"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ko_dong_jin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_hyung_il"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_hyung_il.png"
+	}
+	# ==========================================
+	# 1. 국무총리 (HM)
+	# ==========================================
+
+	spriteType = {
+		name = "GFX_idea_KOR_han_min_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_han_min_soo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_ahn_cheol_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ahn_cheol_soo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_ki_in"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_ki_in.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_park_chan_dae"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_chan_dae.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_boo_seung_chan"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_boo_seung_chan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_choi_kang_wook"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_choi_kang_wook.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_noh_young_min"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_noh_young_min.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_cho_seung_rae"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_seung_rae.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_choi_min_hee"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_choi_min_hee.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_sung_yoon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_sung_yoon.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_song_gap_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_song_gap_seok.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_cho_eung_cheon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_eung_cheon.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_cheon_ha_ram"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cheon_ha_ram.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_hong_jun_pyo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_hong_jun_pyo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_jeong_seong_ho"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jeong_seong_ho.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_song_myung_sook"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_song_myung_sook.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_jeong_mi"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_jeong_mi.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_jang_woo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_jang_woo.png"
+	}
+
+
+	# ==========================================
+	# 2. 외교부장관 (FM)
+	# ==========================================
+
+	spriteType = {
+		name = "GFX_idea_KOR_cho_sei_young"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_sei_young.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_jeong_byeong_guk"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jeong_byeong_guk.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_hae_young"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_hae_young.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_jeong_ho_jin"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jeong_ho_jin.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_park_no_ja"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_park_no_ja.png"
+	}
+
+
+	# ==========================================
+	# 3. 기재부장관 (EM)
+	# ==========================================
+
+	spriteType = {
+		name = "GFX_idea_KOR_jin_sung_joon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jin_sung_joon.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_kim_chul_geun"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_chul_geun.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_na_won_joon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_na_won_joon.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_woo_seok_hoon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_woo_seok_hoon.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_cho_sung_chan"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_sung_chan.png"
+	}
+
+
+	# ==========================================
+	# 4. 행안부장관 (IM)
+	# ==========================================
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_hae_sik"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_hae_sik.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_yu_eui_dong"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yu_eui_dong.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_kim_yong_tae"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_yong_tae.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_won_ook"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_won_ook.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_kang_sung_hee"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kang_sung_hee.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_bae_jin_gyo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_bae_jin_gyo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_lee_hyang_hee"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_lee_hyang_hee.png"
+	}
+
+
+	# ==========================================
+	# 5. 정보부장 (IntelM)
+	# ==========================================
+
+	spriteType = {
+		name = "GFX_idea_KOR_youn_kun_young"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_youn_kun_young.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_ha_tae_keung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ha_tae_keung.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_cho_ji_hoon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_cho_ji_hoon.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_jang_yeo_kyung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_jang_yeo_kyung.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_ha_seung_soo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_ha_seung_soo.png"
+	}
+
+
+	# ==========================================
+	# 6. 국방부장관 (TM)
+	# ==========================================
+
+	spriteType = {
+		name = "GFX_idea_KOR_kim_young_woo"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_young_woo.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_bang_hye_rin"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_bang_hye_rin.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_kim_jong_min"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_jong_min.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_na_kyung_chae"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_na_kyung_chae.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_kwon_young_se"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kwon_young_se.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_sang_hyeon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_yoon_sang_hyeon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_roh_sang_won"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_roh_sang_won.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kim_yong_hyeon"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_kim_yong_hyeon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_NCfU_hog"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_NCfU_hog.png"
+	}
+
+	## Ideas
+	spriteType = {
+		name = "GFX_idea_TFRKP_placehold_idea"
+		texturefile = "gfx/interface/ideas/idea_TFRKP_placehold_idea.png"
+	}
+	## Ideas
+	spriteType = {
+		name = "GFX_idea_KOR_candlelight"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_candlelight.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_candlelight2"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_candlelight2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_economic_bubble"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_economic_bubble.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_imf"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_imf.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_imf2"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_imf2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_imf2"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_imf2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dispatch_to_taiwan_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_dispatch_to_taiwan_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reformed_education_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reformed_education_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_buil_buff_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_buil_buff_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_kstar_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_kstar_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_pdto_integrated_army_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_pdto_integrated_army_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_yoon_negotiations_china_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_negotiations_china_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_yoon_park_chung_hee_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_park_chung_hee_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_yoon_kimyoungsam_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_kimyoungsam_idea.png"
+	}
+	spriteType = { ## 기본적인것 ##
+		name = "GFX_idea_KOR_enterprise_calmdown_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_enterprise_calmdown_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_escort_squadron_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_escort_squadron_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_martial_law_success_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_martial_law_success_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_oil_shock_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_oil_shock_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_army_noman_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_noman_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_ocean_navy_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_ocean_navy_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_roka_dynamic_modifir_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_roka_dynamic_modifir_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_common_conservatism_dynamic_modifir_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_common_conservatism_dynamic_modifir_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_martial_law_success_idea_1"
+		texturefile = "gfx/interface/ideas/KOR/idea_nothing_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_martial_law_success_idea_2"
+		texturefile = "gfx/interface/ideas/KOR/idea_nothing_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_back_san_huck_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_back_san_huck_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_taiwan_state_dynamic_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_taiwan_state_dynamic_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_park_agi_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_park_agi_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_infinity_of_thought_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_infinity_of_thought_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_real_choice_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_real_choice_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_jeju_train_center_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_jeju_train_center_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_japan_assistance_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_japan_assistance_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_oil_import_diversification_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_oil_import_diversification_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_election_victory_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_election_victory_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_after_bubble_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_after_bubble_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_after_bubble_defeat_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_after_bubble_defeat_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_big_father_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_big_father_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_park_agi_focus_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_park_agi_focus_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_gwanghwamun_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_gwanghwamun_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_military_education_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_military_education_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_prc_tech_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_prc_tech_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_nakai_route2_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_nakai_route2_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_anti_country_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_anti_country_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_samchang_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_samchang_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_tawian_people_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_tawian_people_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_nakai_route_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_nakai_route_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_youn_ecnomic_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_youn_ecnomic_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_great_leap_dynamic_dummy_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_youn_ecnomic_idea.png" #임시로 동일한거 사용
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_conservation_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_conservation_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_overseas_talent_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_overseas_talent_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_army_ignorant_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_ignorant_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_invisible_hand_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_invisible_hand_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_yoon_renovatioin_party_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_renovatioin_party_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_lee_army_rapist_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_army_rapist_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_getthefuckout_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_getthefuckout_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_farm_building_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_farm_building_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_constitutional_order_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_constitutional_order_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_after_bubble_martial_law_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_after_bubble_martial_law_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_midnight_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_midnight_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_dismissal_prosecution_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_dismissal_prosecution_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_sejong_capital_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_sejong_capital_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_KOR_upgrade_weapon_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_upgrade_weapon_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_democratic_weapon_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_democratic_weapon_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_army_elite_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_elite_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_secretly_great_military_network_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_secretly_great_military_network_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_human_modification_anticommunist_education_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_human_modification_anticommunist_education_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_human_modification_combat_stress_recovery_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_human_modification_combat_stress_recovery_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_human_modification_ideological_officers_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_human_modification_ideological_officers_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_army_ending_great_nation"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_ending_great_nation.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_lee_new_socity_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_new_socity_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_lee_korean_style_iron_dome"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_korean_style_iron_dome.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_iron_doom_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_korean_style_iron_dome.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_manchu_jap"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_manchu_jap_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_manchu_dprk"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_manchu_dprk_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_concealed_weapon_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_concealed_weapon_idea.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_lee_nothing_fast_track_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_nothing_fast_track_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_manchu_seventh_army"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_manchu_seventh_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_undersea_tunnel_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_undersea_tunnel_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_great_asian_war_dynamic_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_great_asian_war_dynamic_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_civil_unrest"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_civil_unrest.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_civil_unrest1"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_civil_unrest1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_victors_of_army_idea"
+		texturefile = "gfx/interface/ideas/KOR/ideas_KOR_lee_victors_of_army_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_after_virus"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_after_virus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_police_department_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_police_department_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_martial_law_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_martial_law_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_prk_in_taiwan_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_prk_in_taiwan_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_end_divide_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_end_divide_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yoon_roh_moo_hyun_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yoon_roh_moo_hyun_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_green_nuke_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_green_nuke_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_china_sanctions_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_china_sanctions_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_declining_population"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_declining_population.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_china_trade_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_china_trade_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_upgrade_weapon_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_upgrade_weapon_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_gwr_plan_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_gwr_plan_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_gwr_attack_to_prc_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_gwr_attack_to_prc_idea.png"
+	}
+	## Laws
+	spriteType = {
+		name = "GFX_idea_laws_KOR_safety_law"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_safety_law.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_safety_law_hard"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_safety_law_hard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_police_law"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_police_law.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_surveillance_state"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_surveillance_state.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_police_law_hard"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_police_law_hard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_police_law_household"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_police_law_household.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_korean_welfare"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_korean_welfare.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_welfare_hard_laws"
+		texturefile = "gfx/interface/ideas/laws/economic_laws/laws_KOR_welfare_hard_laws.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_korean_education"
+		texturefile = "gfx/interface/ideas/laws/social_laws/laws_KOR_korean_education.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_korean_education_under_guidance"
+		texturefile = "gfx/interface/ideas/laws/social_laws/laws_KOR_korean_education_under_guidance.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_korean_immigration"
+		texturefile = "gfx/interface/ideas/laws/social_laws/laws_KOR_korean_immigration.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_equal_female"
+		texturefile = "gfx/interface/ideas/laws/social_laws/laws_KOR_equal_female.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_mobilization_hard_laws"
+		texturefile = "gfx/interface/ideas/laws/military_laws/laws_KOR_mobilization_hard_laws.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_mobilization_hard_laws_2"
+		texturefile = "gfx/interface/ideas/laws/military_laws/laws_KOR_mobilization_hard_laws_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_only_male_service"
+		texturefile = "gfx/interface/ideas/laws/military_laws/laws_KOR_only_male_service.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_social_agent_law"
+		texturefile = "gfx/interface/ideas/laws/military_laws/laws_KOR_social_agent_law.png"
+	}
+	spriteType = {
+		name = "GFX_idea_laws_KOR_all_army_elite"
+		texturefile = "gfx/interface/ideas/laws/military_laws/laws_KOR_all_army_elite.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRK_korean_unification"
+		texturefile = "gfx/interface/ideas/KOR/idea_PRK_korean_unification.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRK_national_economic_reconstruction_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_PRK_national_economic_reconstruction_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRK_march_forward_korean_peoples_army_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_PRK_march_forward_korean_peoples_army_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_after_nuclear_war"
+		texturefile = "gfx/interface/ideas/KOR/idea_after_nuclear_war.png"
+	}
+	### Lee Path
+	spriteType = {
+		name = "GFX_idea_KOR_lee_basic_income_test_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_basic_income_test_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_re100_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_re100_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_load_of_war_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_load_of_war_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_yeosu_oil_chemical_industry_idea"
+		texturefile = "gfx/interface/ideas/KOR/GFX_idea_KOR_oil_shock_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_stock_uprising_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_stock_uprising_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_disaster_economy_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_disaster_economy_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_modern_air_war_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_modern_air_war_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_prepared_the_storm_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_prepared_the_storm_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_basic_income_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_basic_income_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_continued_rearmament_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_continued_rearmament_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_drone_attack_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_drone_attack_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_ai_invest_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_ai_invest_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_basic_income_start_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_basic_income_start_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_support_the_air_superiority_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_support_the_air_superiority_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_save_our_fatherland_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_save_our_fatherland_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_pdto_trade_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_pdto_trade_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_storm_is_comming_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_storm_is_comming_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kimminseok_industrial_1_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_kimminseok_industrial_1_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_kimminseok_industrial_2_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_kimminseok_industrial_2_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_press_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_press_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_unstable_government"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_unstable_government.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_peoples_nation"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_peoples_nation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_attack_the_china"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_attack_the_china.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_korail_sr_integration_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_korail_sr_integration_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_national_liberation_war"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_national_liberation_war.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_national_production"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_national_production.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_green_economy_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_green_economy_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_nuclear_cost_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_nuclear_cost_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Shattered_Workforce_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_Shattered_Workforce_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_trade_with_japan"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_trade_with_japan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_configured_bioweapon_attack"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_configured_bioweapon_attack_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_economy_cooperation"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_economy_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_reds_small_prepare_war"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_reds_small_prepare_war.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_unstable_republic_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_unstable_republic_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_japanese_korean_united_front_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_japanese_korean_united_front_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_seek_our_in_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_seek_our_in_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_prepared_inset_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_prepared_inset_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_following_fate_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_following_fate_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_core_of_4th_revolution_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_core_of_4th_revolution_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_coa_republic_of_7th_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_coa_republic_of_7th_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_stock_boom_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_stock_boom_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_revolution_ideology_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_revolution_ideology_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_great_nation_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_great_nation_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_great_nation_idea_2"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_great_nation_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_great_nation_idea_3"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_great_nation_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_mass_tank_production"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_mass_tank_production.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_mass_air_production"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_mass_air_production.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_rebuild_military_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_rebuild_military_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_rebuild_military_idea_2"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_rebuild_military_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_reds_jeongsanghwa_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_reds_jeongsanghwa_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_with_chae_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_with_chae_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_with_chang_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_army_with_chang_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_time_of_cho_guk_dynamic_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_time_of_cho_guk_dynamic_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_space_age_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_space_age_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_yec_satellite_status_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_yec_satellite_status_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dpk_lead_pre_lee_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_dpk_lead_pre_lee_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dpk_lead_anti_lee_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_dpk_lead_anti_lee_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_dpk_lead_anxious_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_dpk_lead_anxious_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GAW_attack_the_north_korea"
+		texturefile = "gfx/interface/ideas/KOR/idea_GAW_plan_ongoing_north_attack.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GAW_plan_ongoing_none_attack"
+		texturefile = "gfx/interface/ideas/KOR/idea_GAW_plan_ongoing_none.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GAW_plan_ongoing_none_defence"
+		texturefile = "gfx/interface/ideas/KOR/idea_GAW_plan_ongoing_none_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_local"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_local.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_cut"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_cut.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_main"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_main.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_west"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_west.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_style"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_style.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_china"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_china.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_old"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_old.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_LJS_study"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_LJS_study.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_1"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_2"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_3"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_4"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_5"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_6"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_7"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_8"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_9"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_icarus_flight_10"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_icarus.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_reds_dprk_reds_resistance_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_reds_dprk_reds_resistance_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_reds_dprk_reds_armys_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_reds_dprk_reds_armys_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PD1_chaebol_playground_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_PD1_chaebol_playground_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PD1_korean_garrison_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_manchu_seventh_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PD1_manchukuo_court_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_PD1_manchukuo_court.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_raimduck_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_raimduck_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_lee_fight_for_taiwan_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_lee_fight_for_taiwan_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PD1_manchukuo_default"
+		texturefile = "gfx/interface/ideas/KOR/idea_PD1_manchukuo_default.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_military_supreme_council_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_military_supreme_council_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_afterwar_lee_jun_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_army_afterwar_lee_jun_seok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_afterwar_wi_sung_lac"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_army_afterwar_wi_sung_lac.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_afterwar_song_eon_seok"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_army_afterwar_song_eon_seok.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_afterwar_kim_bu_gyeom"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_army_afterwar_kim_bu_gyeom.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_army_afterwar_jeon_jae_sung"
+		texturefile = "gfx/interface/ideas/KOR/ministers/KOR_army_afterwar_jeon_jae_sung.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_cho_guk_democratic_police_boxes_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_cho_guk_democratic_police_boxes_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_cho_guk_democracy_dynamic"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_cho_guk_democracy_dynamic.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_taiwan_guardian_public_opinion_support_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_taiwan_guardian_public_opinion_support_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_taiwan_guardian_public_opinion_fatigue_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_taiwan_guardian_public_opinion_fatigue_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_taiwan_guardian_public_opinion_antiwar_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_taiwan_guardian_public_opinion_antiwar_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_kimminseok_korea_war_unprepared_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_kimminseok_korea_war_unprepared_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_people_democracy_idea"
+		texturefile = "gfx/interface/ideas/KOR/idea_KOR_people_democracy_idea.png"
+	}
+}

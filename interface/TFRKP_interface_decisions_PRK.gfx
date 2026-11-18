@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_PRK_fight_malignant_virus_category"
+		texturefile = "gfx/interface/decisions/PRK/PRK_fight_malignant_virus_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_PRK_national_economic_development_plan_category"
+		texturefile = "gfx/interface/decisions/PRK/PRK_national_economic_development_plan_category.png"
+	}
+	spriteType = {
+		name = "GFX_decision_PRK_civilian_factory"
+		texturefile = "gfx/interface/decisions/PRK/PRK_civilian_factory_decision.png"
+	}
+	spriteType = {
+		name = "GFX_decision_PRK_military_factory"
+		texturefile = "gfx/interface/decisions/PRK/PRK_military_factory_decision.png"
+	}
+}

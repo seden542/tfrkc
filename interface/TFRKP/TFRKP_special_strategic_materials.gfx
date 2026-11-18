@@ -1,0 +1,237 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_bio_icon"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/bio_icon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_bio_second_icon"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/bio_second_icon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_cough"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/cough.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_vomiting"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/vomiting.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_immunosuppression"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/immunosuppression.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_inflammation"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/inflammation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_explosive_rage"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_explosive_rage.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_inhibitory_control_loss"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_inhibitory_control_loss.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_threat_misidentification"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_threat_misidentification.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_persistent_pursuit"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_persistent_pursuit.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_auditory_hypersensitivity"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_auditory_hypersensitivity.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_photosensitivity"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_photosensitivity.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_pain_dissociation"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_pain_dissociation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_insomniac_arousal"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_insomniac_arousal.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_language_collapse"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_language_collapse.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_orofacial_dyskinesia"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_orofacial_dyskinesia.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_convulsive_gait"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_convulsive_gait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_autonomic_storm"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_autonomic_storm.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_delayed_reanimation"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_delayed_reanimation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_postmortem_stimulus_tracking"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_postmortem_stimulus_tracking.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_feeding_automatism"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_feeding_automatism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_corona_banner_putrefactive_motor_persistence"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/corona_putrefactive_motor_persistence.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_systemic_infection"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/systemic_infection.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_internal_bleeding"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/internal_bleeding.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_necrosis"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/necrosis.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_hemorrhagic_shock"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/hemorrhagic_shock.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_adrenal_fatigue"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/adrenal_fatigue.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_sensory_paralysis"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/sensory_paralysis.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_paranoia"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/paranoia.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_hypersensitivity"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/hypersensitivity.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_irritable_bowel_syndrome"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/irritable_bowel_syndrome.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_sex_hormone_imbalance"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/sex_hormone_imbalance.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_alopecia"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/alopecia.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_sexual_dysfunction"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/sexual_dysfunction.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_symptom_banner_selection_complete"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/symptom_banners/selection_complete.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_keypad_background"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/keypad_background.png"
+		legacy_lazy_load = no
+	}
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_0" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_0.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_1" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_2" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_3" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_4" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_5" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_6" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_7" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_8" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_8.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_9" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_9.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_star" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_star.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_KOR_special_strategic_materials_keypad_key_hash" texturefile = "gfx/interface/GUI/special_strategic_materials/keypad/key_hash.png" legacy_lazy_load = no }
+
+	spriteType = {
+		name = "GFX_select_weapon_button"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/select_weapon_button.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_mutually_exclusive_icon"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/mutually_exclusive_icon.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_background"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/background.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_special_strategic_materials_long_button"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/long_button.png"
+	}
+	spriteType = {
+		name = "GFX_KOR_ssm_signature_bg"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/signature_bg.png"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_ssm_signature_animation"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/signature/signature_animation.png"
+		noOfFrames = 24
+		legacy_lazy_load = no
+		animation_rate_fps = 12
+		looping = no
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_KOR_ssm_signature_completion_animation"
+		texturefile = "gfx/interface/GUI/special_strategic_materials/signature/signature_completion_animation.png"
+		noOfFrames = 33
+		legacy_lazy_load = no
+		animation_rate_fps = 12
+		looping = no
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+}

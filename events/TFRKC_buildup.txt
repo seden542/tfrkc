@@ -1,0 +1,344 @@
+add_namespace = tfrkc_buildup
+country_event = {
+ id = tfrkc_buildup.1
+ title = TFRKC_buildup_1_t desc = TFRKC_buildup_1_d picture = GFX_report_event_kor_gwangju_riot
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_1_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_1_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_1_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_1_chosen } }
+   set_country_flag = TFRKC_buildup_1_chosen add_political_power = -8 add_stability = 0.005 set_country_flag = TFRKC_buildup_relief
+  } }
+  custom_effect_tooltip = TFRKC_buildup_1_a_tt
+ }
+ option = { name = TFRKC_buildup_1_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_1_chosen } }
+   set_country_flag = TFRKC_buildup_1_chosen add_political_power = 3 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_1_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.2
+ title = TFRKC_buildup_2_t desc = TFRKC_buildup_2_d picture = GFX_report_event_yoon_arrest
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_2_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_2_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_2_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_2_chosen } }
+   set_country_flag = TFRKC_buildup_2_chosen add_political_power = -6 set_country_flag = TFRKC_buildup_registry
+  } }
+  custom_effect_tooltip = TFRKC_buildup_2_a_tt
+ }
+ option = { name = TFRKC_buildup_2_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_2_chosen } }
+   set_country_flag = TFRKC_buildup_2_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_2_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.3
+ title = TFRKC_buildup_3_t desc = TFRKC_buildup_3_d picture = GFX_report_event_kor_gwangju_riot_2
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_3_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_3_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_3_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_3_chosen } }
+   set_country_flag = TFRKC_buildup_3_chosen add_political_power = -10 add_stability = 0.005 set_country_flag = TFRKC_buildup_inquiry
+  } }
+  custom_effect_tooltip = TFRKC_buildup_3_a_tt
+ }
+ option = { name = TFRKC_buildup_3_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_3_chosen } }
+   set_country_flag = TFRKC_buildup_3_chosen add_political_power = 3 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_3_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.4
+ title = TFRKC_buildup_4_t desc = TFRKC_buildup_4_d picture = GFX_report_event_martial_law_jeon
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_4_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_4_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_4_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_4_chosen } }
+   set_country_flag = TFRKC_buildup_4_chosen add_political_power = -7 set_country_flag = TFRKC_buildup_logistics_talks
+  } }
+  custom_effect_tooltip = TFRKC_buildup_4_a_tt
+ }
+ option = { name = TFRKC_buildup_4_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_4_chosen } }
+   set_country_flag = TFRKC_buildup_4_chosen add_political_power = 2 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_4_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.5
+ title = TFRKC_buildup_5_t desc = TFRKC_buildup_5_d picture = GFX_report_event_martial_law_youtuber
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_5_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_5_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_5_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_5_chosen } }
+   set_country_flag = TFRKC_buildup_5_chosen add_political_power = -5 set_country_flag = TFRKC_buildup_open_briefing
+  } }
+  custom_effect_tooltip = TFRKC_buildup_5_a_tt
+ }
+ option = { name = TFRKC_buildup_5_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_5_chosen } }
+   set_country_flag = TFRKC_buildup_5_chosen add_political_power = 2 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_5_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.6
+ title = TFRKC_buildup_6_t desc = TFRKC_buildup_6_d picture = GFX_report_event_martial_law_univ
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_6_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_6_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_6_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_6_chosen } }
+   set_country_flag = TFRKC_buildup_6_chosen add_political_power = -8 add_stability = 0.005 set_country_flag = TFRKC_buildup_local_talks
+  } }
+  custom_effect_tooltip = TFRKC_buildup_6_a_tt
+ }
+ option = { name = TFRKC_buildup_6_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_6_chosen } }
+   set_country_flag = TFRKC_buildup_6_chosen add_political_power = 3
+  } }
+  custom_effect_tooltip = TFRKC_buildup_6_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.7
+ title = TFRKC_buildup_7_t desc = TFRKC_buildup_7_d picture = GFX_report_event_kor_watch
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_7_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_7_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_7_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_7_chosen } }
+   set_country_flag = TFRKC_buildup_7_chosen add_political_power = -10 set_country_flag = TFRKC_buildup_veteran_aid
+  } }
+  custom_effect_tooltip = TFRKC_buildup_7_a_tt
+ }
+ option = { name = TFRKC_buildup_7_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_7_chosen } }
+   set_country_flag = TFRKC_buildup_7_chosen add_political_power = 2 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_7_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.8
+ title = TFRKC_buildup_8_t desc = TFRKC_buildup_8_d picture = GFX_report_event_martial_law_seoul
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_8_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_8_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_8_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_8_chosen } }
+   set_country_flag = TFRKC_buildup_8_chosen add_political_power = -6 set_country_flag = TFRKC_buildup_patrol_rules
+  } }
+  custom_effect_tooltip = TFRKC_buildup_8_a_tt
+ }
+ option = { name = TFRKC_buildup_8_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_8_chosen } }
+   set_country_flag = TFRKC_buildup_8_chosen add_political_power = 3 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_8_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.9
+ title = TFRKC_buildup_9_t desc = TFRKC_buildup_9_d picture = GFX_report_event_martial_law_notebook
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_9_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_9_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_9_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_9_chosen } }
+   set_country_flag = TFRKC_buildup_9_chosen add_political_power = -5 set_country_flag = TFRKC_buildup_written_orders
+  } }
+  custom_effect_tooltip = TFRKC_buildup_9_a_tt
+ }
+ option = { name = TFRKC_buildup_9_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_9_chosen } }
+   set_country_flag = TFRKC_buildup_9_chosen add_political_power = 3
+  } }
+  custom_effect_tooltip = TFRKC_buildup_9_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.10
+ title = TFRKC_buildup_10_t desc = TFRKC_buildup_10_d picture = GFX_report_event_martial_law_notebook
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_10_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_10_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_10_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_10_chosen } }
+   set_country_flag = TFRKC_buildup_10_chosen add_political_power = -4 set_country_flag = TFRKC_buildup_civil_priority
+  } }
+  custom_effect_tooltip = TFRKC_buildup_10_a_tt
+ }
+ option = { name = TFRKC_buildup_10_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_10_chosen } }
+   set_country_flag = TFRKC_buildup_10_chosen add_political_power = 3
+  } }
+  custom_effect_tooltip = TFRKC_buildup_10_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.11
+ title = TFRKC_buildup_11_t desc = TFRKC_buildup_11_d picture = GFX_report_event_martial_law_ready
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_11_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_11_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_11_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_11_chosen } }
+   set_country_flag = TFRKC_buildup_11_chosen add_political_power = -3 set_country_flag = TFRKC_buildup_daily_notice
+  } }
+  custom_effect_tooltip = TFRKC_buildup_11_a_tt
+ }
+ option = { name = TFRKC_buildup_11_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_11_chosen } }
+   set_country_flag = TFRKC_buildup_11_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_11_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.12
+ title = TFRKC_buildup_12_t desc = TFRKC_buildup_12_d picture = GFX_report_event_martial_law_smoke
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_12_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_12_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_12_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_12_chosen } }
+   set_country_flag = TFRKC_buildup_12_chosen add_political_power = -4 set_country_flag = TFRKC_buildup_command_record
+  } }
+  custom_effect_tooltip = TFRKC_buildup_12_a_tt
+ }
+ option = { name = TFRKC_buildup_12_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_12_chosen } }
+   set_country_flag = TFRKC_buildup_12_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_12_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.13
+ title = TFRKC_buildup_13_t desc = TFRKC_buildup_13_d picture = GFX_report_event_more_impeachment
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_13_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_13_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_13_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_13_chosen } }
+   set_country_flag = TFRKC_buildup_13_chosen add_political_power = -5 set_country_flag = TFRKC_buildup_civil_records
+  } }
+  custom_effect_tooltip = TFRKC_buildup_13_a_tt
+ }
+ option = { name = TFRKC_buildup_13_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_13_chosen } }
+   set_country_flag = TFRKC_buildup_13_chosen add_political_power = 2 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_13_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.14
+ title = TFRKC_buildup_14_t desc = TFRKC_buildup_14_d picture = GFX_report_event_more_impeachment
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_14_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_14_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_14_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_14_chosen } }
+   set_country_flag = TFRKC_buildup_14_chosen add_political_power = -5 set_country_flag = TFRKC_buildup_acting_contact
+  } }
+  custom_effect_tooltip = TFRKC_buildup_14_a_tt
+ }
+ option = { name = TFRKC_buildup_14_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_14_chosen } }
+   set_country_flag = TFRKC_buildup_14_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_14_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.15
+ title = TFRKC_buildup_15_t desc = TFRKC_buildup_15_d picture = GFX_report_event_martial_law_notebook
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_15_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_15_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_15_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_15_chosen } }
+   set_country_flag = TFRKC_buildup_15_chosen add_political_power = -4 set_country_flag = TFRKC_buildup_watch_contacts
+  } }
+  custom_effect_tooltip = TFRKC_buildup_15_a_tt
+ }
+ option = { name = TFRKC_buildup_15_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_15_chosen } }
+   set_country_flag = TFRKC_buildup_15_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_15_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.16
+ title = TFRKC_buildup_16_t desc = TFRKC_buildup_16_d picture = GFX_TFRKC_story_return
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_16_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_16_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_16_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_16_chosen } }
+   set_country_flag = TFRKC_buildup_16_chosen add_political_power = -4 set_country_flag = TFRKC_buildup_family_notice
+  } }
+  custom_effect_tooltip = TFRKC_buildup_16_a_tt
+ }
+ option = { name = TFRKC_buildup_16_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_16_chosen } }
+   set_country_flag = TFRKC_buildup_16_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_16_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.17
+ title = TFRKC_buildup_17_t desc = TFRKC_buildup_17_d picture = GFX_TFRKC_story_daejeon
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_17_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_17_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_17_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_17_chosen } }
+   set_country_flag = TFRKC_buildup_17_chosen add_political_power = -4 set_country_flag = TFRKC_buildup_backup_office
+  } }
+  custom_effect_tooltip = TFRKC_buildup_17_a_tt
+ }
+ option = { name = TFRKC_buildup_17_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_17_chosen } }
+   set_country_flag = TFRKC_buildup_17_chosen add_political_power = 2 add_stability = -0.005
+  } }
+  custom_effect_tooltip = TFRKC_buildup_17_b_tt
+ }
+}
+country_event = {
+ id = tfrkc_buildup.18
+ title = TFRKC_buildup_18_t desc = TFRKC_buildup_18_d picture = GFX_TFRKC_story_outbreak
+ is_triggered_only = yes fire_only_once = yes
+ trigger = { TFRKC_buildup_18_ready_trigger = yes }
+ immediate = { set_country_flag = TFRKC_buildup_18_seen TFRKC_buildup_mark_story_effect = yes }
+ option = { name = TFRKC_buildup_18_a ai_chance = { factor = 65 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_18_chosen } }
+   set_country_flag = TFRKC_buildup_18_chosen add_political_power = -5 set_country_flag = TFRKC_buildup_emergency_notice
+  } }
+  custom_effect_tooltip = TFRKC_buildup_18_a_tt
+ }
+ option = { name = TFRKC_buildup_18_b ai_chance = { factor = 35 }
+  hidden_effect = { if = { limit = { TFRKC_buildup_live_trigger = yes NOT = { has_country_flag = TFRKC_buildup_18_chosen } }
+   set_country_flag = TFRKC_buildup_18_chosen add_political_power = 2
+  } }
+  custom_effect_tooltip = TFRKC_buildup_18_b_tt
+ }
+}
+country_event = { id = tfrkc_buildup.100 hidden = yes is_triggered_only = yes immediate = { TFRKC_buildup_poll_effect = yes } }

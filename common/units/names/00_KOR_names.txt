@@ -1,0 +1,169 @@
+﻿KOR = {
+	submarine = {
+		prefix = "ROKS"
+		generic = { "Submarine" }
+		unique = {
+			"SSN-001" "SSN-002" "SSN-003" "SSN-004" "SSN-005" "SSN-006" "SSN-007" "SSN-008" "SSN-009" "SSN-010" "SSN-011" "SSN-012" "SSN-013" "SSN-014" "SSN-015"
+			"SSN-016" "SSN-017" "SSN-018" "SSN-019" "SSN-020" "SSN-021" "SSN-022" "SSN-023" "SSN-024" "SSN-025" "SSN-026" "SSN-027" "SSN-028" "SSN-029" "SSN-030"
+			"SSN-031" "SSN-032" "SSN-033" "SSN-034" "SSN-035" "SSN-036" "SSN-037" "SSN-038" "SSN-039" "SSN-040" "SSN-041" "SSN-042" "SSN-043" "SSN-044" "SSN-045"
+			"SSN-046" "SSN-047" "SSN-048" "SSN-049" "SSN-050" "SSN-051" "SSN-052" "SSN-053" "SSN-054" "SSN-055" "SSN-056" "SSN-057" "SSN-058" "SSN-059" "SSN-060"
+			"SSN-061" "SSN-062" "SSN-063" "SSN-064" "SSN-065" "SSN-066" "SSN-067" "SSN-068" "SSN-069" "SSN-070" "SSN-071" "SSN-072" "SSN-073" "SSN-074" "SSN-075"
+			"SSN-076" "SSN-077" "SSN-078" "SSN-079" "SSN-080" "SSN-081" "SSN-082" "SSN-083" "SSN-084" "SSN-085" "SSN-086" "SSN-087" "SSN-088" "SSN-089" "SSN-090"
+			"SSN-091" "SSN-092" "SSN-093" "SSN-094" "SSN-095" "SSN-096" "SSN-097" "SSN-098" "SSN-099" "SSN-100" "SSN-101" "SSN-102" "SSN-103" "SSN-104" "SSN-105"
+			"SSN-106" "SSN-107" "SSN-108" "SSN-109" "SSN-110" "SSN-111" "SSN-112" "SSN-113" "SSN-114" "SSN-115" "SSN-116" "SSN-117" "SSN-118" "SSN-119" "SSN-120"
+			"SSN-121" "SSN-122" "SSN-123" "SSN-124" "SSN-125" "SSN-126" "SSN-127" "SSN-128" "SSN-129" "SSN-130" "SSN-131" "SSN-132" "SSN-133" "SSN-134" "SSN-135"
+			"SSN-136" "SSN-137" "SSN-138" "SSN-139" "SSN-140" "SSN-141" "SSN-142" "SSN-143" "SSN-144" "SSN-145" "SSN-146" "SSN-147" "SSN-148" "SSN-149" "SSN-150"
+			"SSN-151" "SSN-152" "SSN-153" "SSN-154" "SSN-155" "SSN-156" "SSN-157" "SSN-158" "SSN-159" "SSN-160" "SSN-161" "SSN-162" "SSN-163" "SSN-164" "SSN-165"
+			"SSN-166" "SSN-167" "SSN-168" "SSN-169" "SSN-170" "SSN-171" "SSN-172" "SSN-173" "SSN-174" "SSN-175" "SSN-176" "SSN-177" "SSN-178" "SSN-179" "SSN-180"
+			"SSN-181" "SSN-182" "SSN-183" "SSN-184" "SSN-185" "SSN-186" "SSN-187" "SSN-188" "SSN-189" "SSN-190" "SSN-191" "SSN-192" "SSN-193" "SSN-194" "SSN-195"
+			"SSN-196" "SSN-197" "SSN-198" "SSN-199" "SSN-200" "SSN-201" "SSN-202" "SSN-203" "SSN-204" "SSN-205" "SSN-206" "SSN-207" "SSN-208" "SSN-209" "SSN-210"
+			"SSN-211" "SSN-212" "SSN-213" "SSN-214" "SSN-215" "SSN-216" "SSN-217" "SSN-218" "SSN-219" "SSN-220" "SSN-221" "SSN-222" "SSN-223" "SSN-224" "SSN-225" 
+			"SSN-226" "SSN-227" "SSN-228" "SSN-229" "SSN-230" "SSN-231" "SSN-232" "SSN-233" "SSN-234" "SSN-235" "SSN-236" "SSN-237" "SSN-238" "SSN-239" "SSN-240"
+			"SSN-241" "SSN-242" "SSN-243" "SSN-244" "SSN-245" "SSN-246" "SSN-247" "SSN-248" "SSN-249" "SSN-250" "SSN-251" "SSN-252" "SSN-253" "SSN-254" "SSN-255"
+			"SSN-256" "SSN-257" "SSN-258" "SSN-259" "SSN-260" "SSN-261" "SSN-262" "SSN-263" "SSN-264" "SSN-265" "SSN-266" "SSN-267" "SSN-268" "SSN-269" "SSN-270"
+			"SSN-271" "SSN-272" "SSN-273" "SSN-274" "SSN-275" "SSN-276" "SSN-277" "SSN-278" "SSN-279" "SSN-280" "SSN-281" "SSN-282" "SSN-283" "SSN-284" "SSN-285"
+			"SSN-286" "SSN-287" "SSN-288" "SSN-289" "SSN-290" "SSN-291" "SSN-292" "SSN-293" "SSN-294" "SSN-295" "SSN-296" "SSN-297" "SSN-298" "SSN-299" "SSN-301"
+			"SSN-302" "SSN-303" "SSN-304" "SSN-305" "SSN-306" "SSN-307" "SSN-308" "SSN-309" "SSN-310" "SSN-311" "SSN-312" "SSN-313" "SSN-314" "SSN-315" "SSN-316"
+			"SSN-317" "SSN-318" "SSN-319" "SSN-320" "SSN-321" "SSN-322" "SSN-323" "SSN-324" "SSN-325" "SSN-326" "SSN-327" "SSN-328" "SSN-329" "SSN-330" "SSN-331"
+			"SSN-332" "SSN-333" "SSN-334" "SSN-335" "SSN-336" "SSN-337" "SSN-338" "SSN-339" "SSN-340" "SSN-341" "SSN-342" "SSN-343" "SSN-344" "SSN-345" "SSN-346"
+			"SSN-347" "SSN-348" "SSN-349" "SSN-350" "SSN-351" "SSN-352" "SSN-353" "SSN-354" "SSN-355" "SSN-356" "SSN-357" "SSN-358" "SSN-359" "SSN-360" "SSN-361"
+			"SSN-362" "SSN-363" "SSN-364" "SSN-365" "SSN-366" "SSN-367" "SSN-368" "SSN-369" "SSN-370" "SSN-371" "SSN-372" "SSN-373" "SSN-374" "SSN-375" "SSN-376"
+			"SSN-377" "SSN-378" "SSN-379" "SSN-380" "SSN-381" "SSN-382" "SSN-383" "SSN-384" "SSN-385" "SSN-386" "SSN-387" "SSN-388" "SSN-389" "SSN-390" "SSN-391"
+			"SSN-392" "SSN-393" "SSN-394" "SSN-395" "SSN-396" "SSN-397" "SSN-398" "SSN-399" "SSN-401"
+			"SSN-402" "SSN-403" "SSN-404" "SSN-405" "SSN-406" "SSN-407" "SSN-408" "SSN-409" "SSN-410" "SSN-411" "SSN-412" "SSN-413" "SSN-414" "SSN-415" "SSN-416"
+			"SSN-417" "SSN-418" "SSN-419" "SSN-420" "SSN-421" "SSN-422" "SSN-423" "SSN-424" "SSN-425" "SSN-426" "SSN-427" "SSN-428" "SSN-429" "SSN-430" "SSN-431"
+			"SSN-432" "SSN-433" "SSN-434" "SSN-435" "SSN-436" "SSN-437" "SSN-438" "SSN-439" "SSN-440" "SSN-441" "SSN-442" "SSN-443" "SSN-444" "SSN-445" "SSN-446"
+			"SSN-447" "SSN-448" "SSN-449" "SSN-450" "SSN-451" "SSN-452" "SSN-453" "SSN-454" "SSN-455" "SSN-456" "SSN-457" "SSN-458" "SSN-459" "SSN-460" "SSN-461"
+			"SSN-462" "SSN-463" "SSN-464" "SSN-465" "SSN-466" "SSN-467" "SSN-468" "SSN-469" "SSN-470" "SSN-471" "SSN-472" "SSN-473" "SSN-474" "SSN-475" "SSN-476"
+			"SSN-477" "SSN-478" "SSN-479" "SSN-480" "SSN-481" "SSN-482" "SSN-483" "SSN-484" "SSN-485" "SSN-486" "SSN-487" "SSN-488" "SSN-489" "SSN-490" "SSN-491"
+			"SSN-492" "SSN-493" "SSN-494" "SSN-495" "SSN-496" "SSN-497" "SSN-498" "SSN-499" "SSN-501"
+			"SSN-502" "SSN-503" "SSN-504" "SSN-505" "SSN-506" "SSN-507" "SSN-508" "SSN-509" "SSN-510" "SSN-511" "SSN-512" "SSN-513" "SSN-514" "SSN-515" "SSN-516"
+			"SSN-517" "SSN-518" "SSN-519" "SSN-520" "SSN-521" "SSN-522" "SSN-523" "SSN-524" "SSN-525" "SSN-526" "SSN-527" "SSN-528" "SSN-529" "SSN-530" "SSN-531"
+			"SSN-532" "SSN-533" "SSN-534" "SSN-535" "SSN-536" "SSN-537" "SSN-538" "SSN-539" "SSN-540" "SSN-541" "SSN-542" "SSN-543" "SSN-544" "SSN-545" "SSN-546"
+			"SSN-547" "SSN-548" "SSN-549" "SSN-550" "SSN-551" "SSN-552" "SSN-553" "SSN-554" "SSN-555" "SSN-556" "SSN-557" "SSN-558" "SSN-559" "SSN-560" "SSN-561"
+			"SSN-562" "SSN-563" "SSN-564" "SSN-565" "SSN-566" "SSN-567" "SSN-568" "SSN-569" "SSN-570" "SSN-571" "SSN-572" "SSN-573" "SSN-574" "SSN-575" "SSN-576"
+			"SSN-577" "SSN-578" "SSN-579" "SSN-580" "SSN-581" "SSN-582" "SSN-583" "SSN-584" "SSN-585" "SSN-586" "SSN-587" "SSN-588" "SSN-589" "SSN-590" "SSN-591"
+			"SSN-592" "SSN-593" "SSN-594" "SSN-595" "SSN-596" "SSN-597" "SSN-598" "SSN-599"
+		}
+	}
+	
+
+	air_wing_names_template = AIR_WING_NAME_KOR_FALLBACK
+
+	fighter_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Fighter Aircraft Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	jet_fighter_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Jet Fighter Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	heavy_fighter_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Heavy Fighter Aircraft Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	CAS_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Close Aircraft Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Aircraft Carrier Fighter Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Aircraft Carrier Close Aircraft Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Carrier Torpedo Bomber Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	tac_bomber_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Tactical Bomber Air Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	jet_tac_bomber_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Jet Tactical Bomber Air Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	nav_bomber_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Torpedo Bomber Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	strat_bomber_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Strategic Bomber Air Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	jet_strat_bomber_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Jet Strategic Bomber Air Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+
+	transport_plane_equipment = {
+		prefix = ""
+		generic = {
+			"ROKAF Transport Aircraft Wing"
+		}
+		generic_pattern = AIR_WING_NAME_KOR_GENERIC
+		unique = {}
+	}
+	
+}

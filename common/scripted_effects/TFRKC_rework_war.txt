@@ -1,0 +1,1917 @@
+TFRKC_rework_prepare_partition_effect = {
+ if = { limit = { TFRKC_rework_map_ready_trigger = yes NOT = { has_global_flag = TFRKC_rework_partition_complete } NOT = { has_global_flag = TFRKC_rework_actual_started } KOR = { exists = yes has_war = no } }
+  TFRKC_rework_bound_partition_effect = yes
+ }
+}
+# The bound partition must transfer all land, create the approved OOBs, remove KOR's
+# external faction/guarantee war-entry links, mark rework participants and only then
+# set TFRKC_rework_partition_complete. It never declares a war itself.
+TFRKC_rework_begin_wars_effect = {
+ if = { limit = { TFRKC_rework_map_ready_trigger = yes has_global_flag = TFRKC_rework_partition_complete NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ set_global_flag = TFRKC_rework_start_requested
+ TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+TFRKC_rework_refresh_border_wars_effect = {
+ if = { limit = { TFRKC_rework_map_ready_trigger = yes has_global_flag = TFRKC_rework_start_requested NOT = { has_global_flag = TFRKC_civilwar_finished } }
+ TFRKC_rework_establish_factions_effect = yes
+ if = { limit = { TFRKC_rework_border_ZGP_ZIA_trigger = yes }
+  ZGP = { declare_war_on = { target = ZIA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZIA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZMS_trigger = yes }
+  ZGP = { declare_war_on = { target = ZMS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZMS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZNE_trigger = yes }
+  ZGP = { declare_war_on = { target = ZNE type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZNE } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KPL_trigger = yes }
+  ZGP = { declare_war_on = { target = KPL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KPL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZHY_trigger = yes }
+  ZGP = { declare_war_on = { target = ZHY type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZHY } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZFA_trigger = yes }
+  ZGP = { declare_war_on = { target = ZFA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZFA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZSS_trigger = yes }
+  ZGP = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KWC_trigger = yes }
+  ZGP = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KLF_trigger = yes }
+  ZGP = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZAF_trigger = yes }
+  ZGP = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KRC_trigger = yes }
+  ZGP = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KCH_trigger = yes }
+  ZGP = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZTW_trigger = yes }
+  ZGP = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZGL_trigger = yes }
+  ZGP = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZSL_trigger = yes }
+  ZGP = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZEC_trigger = yes }
+  ZGP = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KYA_trigger = yes }
+  ZGP = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZUS_trigger = yes }
+  ZGP = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KOR_trigger = yes }
+  ZGP = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZGT_trigger = yes }
+  ZGP = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZRD_trigger = yes }
+  ZGP = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_ZUN_trigger = yes }
+  ZGP = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGP_KCG_trigger = yes }
+  ZGP = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGP = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZMS_trigger = yes }
+  ZIA = { declare_war_on = { target = ZMS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZMS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZNE_trigger = yes }
+  ZIA = { declare_war_on = { target = ZNE type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZNE } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KPL_trigger = yes }
+  ZIA = { declare_war_on = { target = KPL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KPL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZHY_trigger = yes }
+  ZIA = { declare_war_on = { target = ZHY type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZHY } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZFA_trigger = yes }
+  ZIA = { declare_war_on = { target = ZFA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZFA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZSS_trigger = yes }
+  ZIA = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KWC_trigger = yes }
+  ZIA = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KLF_trigger = yes }
+  ZIA = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZAF_trigger = yes }
+  ZIA = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KRC_trigger = yes }
+  ZIA = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KCH_trigger = yes }
+  ZIA = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZTW_trigger = yes }
+  ZIA = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZGL_trigger = yes }
+  ZIA = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZSL_trigger = yes }
+  ZIA = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZEC_trigger = yes }
+  ZIA = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KYA_trigger = yes }
+  ZIA = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZUS_trigger = yes }
+  ZIA = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KOR_trigger = yes }
+  ZIA = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZGT_trigger = yes }
+  ZIA = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZRD_trigger = yes }
+  ZIA = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_ZUN_trigger = yes }
+  ZIA = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZIA_KCG_trigger = yes }
+  ZIA = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZIA = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZNE_trigger = yes }
+  ZMS = { declare_war_on = { target = ZNE type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZNE } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KPL_trigger = yes }
+  ZMS = { declare_war_on = { target = KPL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KPL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZHY_trigger = yes }
+  ZMS = { declare_war_on = { target = ZHY type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZHY } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZFA_trigger = yes }
+  ZMS = { declare_war_on = { target = ZFA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZFA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZSS_trigger = yes }
+  ZMS = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KWC_trigger = yes }
+  ZMS = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KLF_trigger = yes }
+  ZMS = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZAF_trigger = yes }
+  ZMS = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KRC_trigger = yes }
+  ZMS = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KCH_trigger = yes }
+  ZMS = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZTW_trigger = yes }
+  ZMS = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZGL_trigger = yes }
+  ZMS = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZSL_trigger = yes }
+  ZMS = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZEC_trigger = yes }
+  ZMS = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KYA_trigger = yes }
+  ZMS = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZUS_trigger = yes }
+  ZMS = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KOR_trigger = yes }
+  ZMS = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZGT_trigger = yes }
+  ZMS = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZRD_trigger = yes }
+  ZMS = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_ZUN_trigger = yes }
+  ZMS = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZMS_KCG_trigger = yes }
+  ZMS = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZMS = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KPL_trigger = yes }
+  ZNE = { declare_war_on = { target = KPL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KPL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZHY_trigger = yes }
+  ZNE = { declare_war_on = { target = ZHY type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZHY } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZFA_trigger = yes }
+  ZNE = { declare_war_on = { target = ZFA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZFA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZSS_trigger = yes }
+  ZNE = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KWC_trigger = yes }
+  ZNE = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KLF_trigger = yes }
+  ZNE = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZAF_trigger = yes }
+  ZNE = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KRC_trigger = yes }
+  ZNE = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KCH_trigger = yes }
+  ZNE = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZTW_trigger = yes }
+  ZNE = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZGL_trigger = yes }
+  ZNE = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZSL_trigger = yes }
+  ZNE = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZEC_trigger = yes }
+  ZNE = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KYA_trigger = yes }
+  ZNE = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZUS_trigger = yes }
+  ZNE = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KOR_trigger = yes }
+  ZNE = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZGT_trigger = yes }
+  ZNE = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZRD_trigger = yes }
+  ZNE = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_ZUN_trigger = yes }
+  ZNE = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZNE_KCG_trigger = yes }
+  ZNE = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZNE = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZHY_trigger = yes }
+  KPL = { declare_war_on = { target = ZHY type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZHY } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZFA_trigger = yes }
+  KPL = { declare_war_on = { target = ZFA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZFA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZSS_trigger = yes }
+  KPL = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZAF_trigger = yes }
+  KPL = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_KRC_trigger = yes }
+  KPL = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_KCH_trigger = yes }
+  KPL = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZTW_trigger = yes }
+  KPL = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZGL_trigger = yes }
+  KPL = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZSL_trigger = yes }
+  KPL = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZEC_trigger = yes }
+  KPL = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_KYA_trigger = yes }
+  KPL = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZUS_trigger = yes }
+  KPL = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_KOR_trigger = yes }
+  KPL = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZGT_trigger = yes }
+  KPL = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZRD_trigger = yes }
+  KPL = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_ZUN_trigger = yes }
+  KPL = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KPL_KCG_trigger = yes }
+  KPL = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KPL = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZFA_trigger = yes }
+  ZHY = { declare_war_on = { target = ZFA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZFA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZSS_trigger = yes }
+  ZHY = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KWC_trigger = yes }
+  ZHY = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KLF_trigger = yes }
+  ZHY = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZAF_trigger = yes }
+  ZHY = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KRC_trigger = yes }
+  ZHY = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KCH_trigger = yes }
+  ZHY = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZTW_trigger = yes }
+  ZHY = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZGL_trigger = yes }
+  ZHY = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZSL_trigger = yes }
+  ZHY = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZEC_trigger = yes }
+  ZHY = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KYA_trigger = yes }
+  ZHY = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZUS_trigger = yes }
+  ZHY = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KOR_trigger = yes }
+  ZHY = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZGT_trigger = yes }
+  ZHY = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZRD_trigger = yes }
+  ZHY = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_ZUN_trigger = yes }
+  ZHY = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZHY_KCG_trigger = yes }
+  ZHY = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZHY = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZSS_trigger = yes }
+  ZFA = { declare_war_on = { target = ZSS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZSS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KWC_trigger = yes }
+  ZFA = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KLF_trigger = yes }
+  ZFA = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZAF_trigger = yes }
+  ZFA = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KRC_trigger = yes }
+  ZFA = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KCH_trigger = yes }
+  ZFA = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZTW_trigger = yes }
+  ZFA = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZGL_trigger = yes }
+  ZFA = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZSL_trigger = yes }
+  ZFA = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZEC_trigger = yes }
+  ZFA = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KYA_trigger = yes }
+  ZFA = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZUS_trigger = yes }
+  ZFA = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KOR_trigger = yes }
+  ZFA = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZGT_trigger = yes }
+  ZFA = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZRD_trigger = yes }
+  ZFA = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_ZUN_trigger = yes }
+  ZFA = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZFA_KCG_trigger = yes }
+  ZFA = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZFA = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KWC_trigger = yes }
+  ZSS = { declare_war_on = { target = KWC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KWC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KLF_trigger = yes }
+  ZSS = { declare_war_on = { target = KLF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KLF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZAF_trigger = yes }
+  ZSS = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KRC_trigger = yes }
+  ZSS = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KCH_trigger = yes }
+  ZSS = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZTW_trigger = yes }
+  ZSS = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZGL_trigger = yes }
+  ZSS = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZSL_trigger = yes }
+  ZSS = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZEC_trigger = yes }
+  ZSS = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KYA_trigger = yes }
+  ZSS = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZUS_trigger = yes }
+  ZSS = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KOR_trigger = yes }
+  ZSS = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZGT_trigger = yes }
+  ZSS = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZRD_trigger = yes }
+  ZSS = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_ZUN_trigger = yes }
+  ZSS = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSS_KCG_trigger = yes }
+  ZSS = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSS = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZAF_trigger = yes }
+  KWC = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_KRC_trigger = yes }
+  KWC = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_KCH_trigger = yes }
+  KWC = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZTW_trigger = yes }
+  KWC = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZGL_trigger = yes }
+  KWC = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZSL_trigger = yes }
+  KWC = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZEC_trigger = yes }
+  KWC = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_KYA_trigger = yes }
+  KWC = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZUS_trigger = yes }
+  KWC = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_KOR_trigger = yes }
+  KWC = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZGT_trigger = yes }
+  KWC = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZRD_trigger = yes }
+  KWC = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_ZUN_trigger = yes }
+  KWC = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KWC_KCG_trigger = yes }
+  KWC = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KWC = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZAF_trigger = yes }
+  KLF = { declare_war_on = { target = ZAF type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZAF } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_KRC_trigger = yes }
+  KLF = { declare_war_on = { target = KRC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = KRC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_KCH_trigger = yes }
+  KLF = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZTW_trigger = yes }
+  KLF = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZGL_trigger = yes }
+  KLF = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZSL_trigger = yes }
+  KLF = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZEC_trigger = yes }
+  KLF = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_KYA_trigger = yes }
+  KLF = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZUS_trigger = yes }
+  KLF = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_KOR_trigger = yes }
+  KLF = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZGT_trigger = yes }
+  KLF = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZRD_trigger = yes }
+  KLF = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_ZUN_trigger = yes }
+  KLF = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KLF_KCG_trigger = yes }
+  KLF = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KLF = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_KCH_trigger = yes }
+  ZAF = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZTW_trigger = yes }
+  ZAF = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZGL_trigger = yes }
+  ZAF = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZSL_trigger = yes }
+  ZAF = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZEC_trigger = yes }
+  ZAF = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_KYA_trigger = yes }
+  ZAF = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZUS_trigger = yes }
+  ZAF = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_KOR_trigger = yes }
+  ZAF = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZGT_trigger = yes }
+  ZAF = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZRD_trigger = yes }
+  ZAF = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_ZUN_trigger = yes }
+  ZAF = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZAF_KCG_trigger = yes }
+  ZAF = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZAF = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_KCH_trigger = yes }
+  KRC = { declare_war_on = { target = KCH type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = KCH } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZTW_trigger = yes }
+  KRC = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZGL_trigger = yes }
+  KRC = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZSL_trigger = yes }
+  KRC = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZEC_trigger = yes }
+  KRC = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_KYA_trigger = yes }
+  KRC = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZUS_trigger = yes }
+  KRC = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_KOR_trigger = yes }
+  KRC = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZGT_trigger = yes }
+  KRC = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZRD_trigger = yes }
+  KRC = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_ZUN_trigger = yes }
+  KRC = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KRC_KCG_trigger = yes }
+  KRC = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KRC = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZTW_trigger = yes }
+  KCH = { declare_war_on = { target = ZTW type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZTW } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZGL_trigger = yes }
+  KCH = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZSL_trigger = yes }
+  KCH = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZEC_trigger = yes }
+  KCH = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_KYA_trigger = yes }
+  KCH = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZUS_trigger = yes }
+  KCH = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZGT_trigger = yes }
+  KCH = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZRD_trigger = yes }
+  KCH = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_ZUN_trigger = yes }
+  KCH = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KCH_KCG_trigger = yes }
+  KCH = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KCH = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZGL_trigger = yes }
+  ZTW = { declare_war_on = { target = ZGL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZGL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZSL_trigger = yes }
+  ZTW = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZEC_trigger = yes }
+  ZTW = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_KYA_trigger = yes }
+  ZTW = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZUS_trigger = yes }
+  ZTW = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_KOR_trigger = yes }
+  ZTW = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZGT_trigger = yes }
+  ZTW = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZRD_trigger = yes }
+  ZTW = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_ZUN_trigger = yes }
+  ZTW = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZTW_KCG_trigger = yes }
+  ZTW = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZTW = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_ZSL_trigger = yes }
+  ZGL = { declare_war_on = { target = ZSL type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = ZSL } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_ZEC_trigger = yes }
+  ZGL = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_KYA_trigger = yes }
+  ZGL = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_ZUS_trigger = yes }
+  ZGL = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_KOR_trigger = yes }
+  ZGL = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_ZGT_trigger = yes }
+  ZGL = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_ZRD_trigger = yes }
+  ZGL = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_ZUN_trigger = yes }
+  ZGL = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGL_KCG_trigger = yes }
+  ZGL = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGL = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSL_ZEC_trigger = yes }
+  ZSL = { declare_war_on = { target = ZEC type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSL = { has_war_with = ZEC } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSL_KOR_trigger = yes }
+  ZSL = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSL = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSL_ZGT_trigger = yes }
+  ZSL = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSL = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSL_ZRD_trigger = yes }
+  ZSL = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSL = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSL_ZUN_trigger = yes }
+  ZSL = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSL = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZSL_KCG_trigger = yes }
+  ZSL = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZSL = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_KYA_trigger = yes }
+  ZEC = { declare_war_on = { target = KYA type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = KYA } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_ZUS_trigger = yes }
+  ZEC = { declare_war_on = { target = ZUS type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = ZUS } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_KOR_trigger = yes }
+  ZEC = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_ZGT_trigger = yes }
+  ZEC = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_ZRD_trigger = yes }
+  ZEC = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_ZUN_trigger = yes }
+  ZEC = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZEC_KCG_trigger = yes }
+  ZEC = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZEC = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KYA_KOR_trigger = yes }
+  KYA = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KYA = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KYA_ZGT_trigger = yes }
+  KYA = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KYA = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KYA_ZRD_trigger = yes }
+  KYA = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KYA = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KYA_ZUN_trigger = yes }
+  KYA = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KYA = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KYA_KCG_trigger = yes }
+  KYA = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KYA = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZUS_KOR_trigger = yes }
+  ZUS = { declare_war_on = { target = KOR type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZUS = { has_war_with = KOR } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZUS_ZGT_trigger = yes }
+  ZUS = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZUS = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZUS_ZRD_trigger = yes }
+  ZUS = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZUS = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZUS_ZUN_trigger = yes }
+  ZUS = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZUS = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZUS_KCG_trigger = yes }
+  ZUS = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZUS = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KOR_ZGT_trigger = yes }
+  KOR = { declare_war_on = { target = ZGT type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KOR = { has_war_with = ZGT } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KOR_ZRD_trigger = yes }
+  KOR = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KOR = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KOR_ZUN_trigger = yes }
+  KOR = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KOR = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_KOR_KCG_trigger = yes }
+  KOR = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } KOR = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGT_ZRD_trigger = yes }
+  ZGT = { declare_war_on = { target = ZRD type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGT = { has_war_with = ZRD } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGT_ZUN_trigger = yes }
+  ZGT = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGT = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZGT_KCG_trigger = yes }
+  ZGT = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZGT = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZRD_ZUN_trigger = yes }
+  ZRD = { declare_war_on = { target = ZUN type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZRD = { has_war_with = ZUN } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZRD_KCG_trigger = yes }
+  ZRD = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZRD = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ if = { limit = { TFRKC_rework_border_ZUN_KCG_trigger = yes }
+  ZUN = { declare_war_on = { target = KCG type = annex_everything } }
+  if = { limit = { NOT = { has_global_flag = TFRKC_rework_actual_started } ZUN = { has_war_with = KCG } }
+   set_global_flag = TFRKC_rework_actual_started set_global_flag = TFRKC_civilwar_active
+   KOR = { TFRKC_rework_record_civilwar_start_effect = yes }
+  }
+ }
+ }
+}
+TFRKC_rework_spawn_UN_effect = {
+ if = { limit = { TFRKC_rework_UN_ready_trigger = yes }
+  TFRKC_rework_UN_bound_landing_effect = yes
+  if = { limit = { TFRKC_rework_UN_landing_complete_trigger = yes }
+   set_global_flag = TFRKC_rework_UN_spawned clr_global_flag = TFRKC_rework_UN_pending
+   TFRKC_rework_refresh_border_wars_effect = yes
+  } else = { set_global_flag = TFRKC_rework_UN_pending }
+ } else = {
+  if = { limit = { has_global_flag = TFRKC_rework_UN_due NOT = { has_global_flag = TFRKC_rework_UN_spawned } NOT = { has_global_flag = TFRKC_civilwar_finished } } set_global_flag = TFRKC_rework_UN_pending }
+ }
+}
+TFRKC_rework_spawn_KPL_effect = {
+ if = { limit = { TFRKC_rework_KPL_ready_trigger = yes }
+  TFRKC_rework_KPL_bound_landing_effect = yes
+  if = { limit = { TFRKC_rework_KPL_landing_complete_trigger = yes }
+   set_global_flag = TFRKC_rework_KPL_spawned clr_global_flag = TFRKC_rework_KPL_pending
+   TFRKC_rework_refresh_border_wars_effect = yes
+  } else = { set_global_flag = TFRKC_rework_KPL_pending }
+ } else = {
+  if = { limit = { has_global_flag = TFRKC_rework_KPL_due NOT = { has_global_flag = TFRKC_rework_KPL_spawned } NOT = { has_global_flag = TFRKC_civilwar_finished } } set_global_flag = TFRKC_rework_KPL_pending }
+ }
+}

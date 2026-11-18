@@ -1,0 +1,46 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KRC mobile" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } artillery_brigade = { x = 2 y = 1 } } }
+division_template = { name = "TFRKC KRC 4" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } }
+division_template = { name = "TFRKC KRC 3" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC KRC infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KRC armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "제8기동사단 가담 기동전투단" location = 15185 division_template = "TFRKC KRC mobile" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "제11기동사단 가담 기동전투단" location = 1100 division_template = "TFRKC KRC mobile" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "제37사단 가담 전투단" location = 14240 division_template = "TFRKC KRC 4" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "제50사단 최고회의 분파" location = 15089 division_template = "TFRKC KRC 3" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "최고회의 직할 경비여단" location = 10115 division_template = "TFRKC KRC 3" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "북서부 군수시설 방위여단" location = 1081 division_template = "TFRKC KRC 3" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제1보병사단" location = 15130 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제2보병사단" location = 15088 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제3보병사단" location = 15185 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제4보병사단" location = 1100 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제5보병사단" location = 14240 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제6보병사단" location = 15089 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제7보병사단" location = 10115 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제8보병사단" location = 1081 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제9보병사단" location = 15130 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제10보병사단" location = 15088 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제11보병사단" location = 15185 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제12보병사단" location = 1100 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제13보병사단" location = 14240 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제14보병사단" location = 15089 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제15보병사단" location = 10115 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제16보병사단" location = 1081 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제17보병사단" location = 15130 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제18보병사단" location = 15088 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제19보병사단" location = 15185 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제20보병사단" location = 1100 division_template = "TFRKC KRC infantry_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제1기갑사단" location = 14240 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제2기갑사단" location = 15089 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제3기갑사단" location = 10115 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제4기갑사단" location = 1081 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제5기갑사단" location = 15130 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제6기갑사단" location = 15088 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제7기갑사단" location = 15185 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제8기갑사단" location = 1100 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제9기갑사단" location = 14240 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제10기갑사단" location = 15089 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제11기갑사단" location = 10115 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+division = { name = "KRC 증편 제12기갑사단" location = 1081 division_template = "TFRKC KRC armored_division" start_experience_factor = 0.65 start_equipment_factor = 0.85 start_manpower_factor = 0.85 }
+}

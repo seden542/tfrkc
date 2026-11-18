@@ -1,0 +1,220 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_KOR_LJS_government_gui_window"
+		clipping = no
+		size = { width = 500 height = 220 }
+
+		containerWindowType = {
+			name = "line_graph_ljs_gui"
+			position = { x = 0 y = -20 }
+			size = { width = 500 height = 250 }
+			clipping = no
+			orientation = center
+			origo = center
+			moveable = yes
+
+			background = {
+				name = "LJS_government_background_frame"
+				spriteType = "GFX_LJS_government_background_frame"
+				position = { x = 0 y = 22 }
+				size = { x = 476 y = 220 }
+				alwaystransparent = yes
+			}
+			
+			# Chart background
+			iconType = {
+				name = "chart"
+				spriteType = "GFX_LJS_line_graph_chart"
+				position = { x = 68 y = 90 }
+			}
+
+			# Container which will hold each of our line segments
+			gridboxtype = {
+				name = "LJS_government_positive"
+				position = { x = 82 y = 86 }
+				size = { width = 0 height = 200 }
+				slotsize = { width = 20 height = 200 }
+				max_slots_horizontal = 20
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "LJS_government_negative"
+				position = { x = 82 y = 86 }
+				size = { width = 0 height = 200 }
+				slotsize = { width = 20 height = 200 }
+				max_slots_horizontal = 20
+				add_horizontal = yes
+			}
+
+			instantTextboxType = {
+				name = "LJS_government_title"
+				position = { x = 0 y = 35 }
+				font = "VCR02_20"
+				text = "LJS_goverment_header"
+				maxWidth = 500
+				format = center
+			}
+
+			instantTextboxType = {
+				name = "LJS_government_positive_rating"
+				position = { x = 0 y = 61 }
+				font = "VCR02_14"
+				text = "LJS_government_positive_rating"
+				maxWidth = 250
+				format = center
+			}
+
+			instantTextboxType = {
+				name = "LJS_government_negative_rating"
+				position = { x = 250 y = 61 }
+				font = "VCR02_14"
+				text = "LJS_government_negative_rating"
+				maxWidth = 250
+				format = center
+			}
+
+			instantTextboxType = {
+				name = "100pct"
+				position = { x = 12 y = 85 }
+				font = "garamond_14"
+				text = "100%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "80pct"
+				position = { x = 12 y = 105 }
+				font = "garamond_14"
+				text = "80%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "60pct"
+				position = { x = 12 y = 125 }
+				font = "garamond_14"
+				text = "60%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "40pct"
+				position = { x = 12 y = 145 }
+				font = "garamond_14"
+				text = "40%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "20pct"
+				position = { x = 12 y = 165 }
+				font = "garamond_14"
+				text = "20%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "0pct"
+				position = { x = 12 y = 185 }
+				font = "garamond_14"
+				text = "0%"
+				maxWidth = 50
+				format = right
+			}
+
+			instantTextboxType = {
+				name = "LJS_government_poll_methodology"
+				position = { x = 77 y = 205 }
+				font = "VCR02_10"
+				text = "LJS_government_poll_methodology"
+				maxWidth = 400
+				format = left
+			}
+		}
+
+		iconType = {
+			name = "KOR_LJS_government_help"
+			spriteType = "GFX_help_button"
+			position = { x = 473 y = -35 }
+			pdx_tooltip = "KOR_LJS_government_help_tooltip"
+		}
+
+		instantTextboxType = {
+			name = "KOR_LJS_fatigue_progress_label"
+			position = { x = 205 y = -60 }
+			font = "VCR02_14"
+			text = "KOR_LJS_fatigue_progress_label"
+			maxWidth = 95
+			format = right
+		}
+
+		iconType = {
+			name = "KOR_LJS_fatigue_progressbar"
+			spriteType = "GFX_KOR_dpk_progressbar"
+			position = { x = 305 y = -62 }
+			pdx_tooltip = "KOR_LJS_fatigue_progress_tooltip"
+		}
+
+		iconType = {
+			name = "KOR_LJS_fatigue_progressbar_frame"
+			spriteType = "GFX_KOR_dpk_progressbar_frame"
+			position = { x = 305 y = -62 }
+			scale = 0.65
+			pdx_tooltip = "KOR_LJS_fatigue_progress_tooltip"
+		}
+
+	}
+
+	containerWindowType = {
+		name = "LJS_government_positive_line_graph_line_segment"
+		size = { width = 20 height = 200 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "positive_segment"
+			spriteType = "GFX_LJS_government_positive_line_segment"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+
+		instantTextboxType = {
+			name = "positive_value_label"
+			position = { x = 0 y = 0 }
+			font = "garamond_14"
+			text = "KOR_LJS_positive_graph_value_label"
+			maxWidth = 40
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "label"
+			position = { x = -15 y = 112}
+			font = "garamond_12"
+			text = "KOR_LJS_line_graph_data_label"
+			maxWidth = 30
+			format = center
+		}
+	}
+
+	containerWindowType = {
+		name = "LJS_government_negative_line_graph_line_segment"
+		size = { width = 20 height = 200 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "negative_segment"
+			spriteType = "GFX_LJS_government_negative_line_segment"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+
+		instantTextboxType = {
+			name = "negative_value_label"
+			position = { x = 0 y = 0 }
+			font = "garamond_14"
+			text = "KOR_LJS_negative_graph_value_label"
+			maxWidth = 40
+			format = center
+		}
+	}
+}

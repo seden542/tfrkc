@@ -1,0 +1,1119 @@
+KOR_is_yoon_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_yoon_path_tt
+		OR = {
+			has_government = conservative
+			has_government = authoritarian_democrat
+			has_government = nationalist
+		}
+		has_country_flag = KOR_yoon_path
+		NOT = { has_country_flag = KOR_lee_path }
+	}
+}
+
+KOR_is_yoon_declare_martial_law = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_yoon_declare_martial_law_tt
+		KOR_is_yoon_path = yes
+		has_country_flag = KOR_yoon_taiwan_war_defeat
+		has_country_flag = KOR_yoon_under_martial_law
+		NOT = { has_country_flag = KOR_yoon_taiwan_war_victory }
+	}
+}
+
+KOR_is_yoon_failed_coup = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_yoon_failed_coup_tt
+		KOR_is_yoon_path = yes
+		has_country_flag = KOR_yoon_taiwan_war_defeat
+		has_country_flag = KOR_yoon_failed_coup
+		NOT = { has_country_flag = KOR_yoon_taiwan_war_victory }
+	}
+}
+
+KOR_is_lee_after_yoon_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_lee_after_yoon_path_tt
+		has_government = social_liberal
+		has_country_flag = KOR_lee_after_yoon_path
+		has_country_flag = KOR_yoon_path
+		NOT = { has_country_flag = KOR_lee_path }
+	}
+}
+
+KOR_is_lee_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_lee_path_tt
+		has_government = social_liberal
+		has_country_flag = KOR_lee_path
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_is_lee_PPP_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_lee_PPP_path_tt
+		OR = {
+			has_country_leader_ideology = korean_conservatism
+			has_country_leader_ideology = sextonism	
+		}
+		has_country_flag = KOR_lee_path
+		has_country_flag = KOR_lee_PPP_path
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_LJS_jeong_cheong_rae_ending_locked = {
+	OR = {
+		has_country_flag = KOR_LJS_constitutional_amendment_failed_flag
+		has_country_flag = KOR_LJS_2032_wartime_bad_ending_flag
+		AND = {
+			has_country_flag = KOR_LJS_constitutional_amendment_passed_flag
+			NOT = { has_country_flag = KOR_LJS_solo_constitutional_amendment_flag }
+			NOT = { has_country_flag = KOR_LJS_bipartisan_cooperation_flag }
+		}
+	}
+}
+
+KOR_is_lee_DPK_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_lee_DPK_path_tt
+		OR = {
+			has_government = social_liberal
+			AND = {
+				has_government = authoritarian_democrat
+				has_country_flag = KOR_lee_dpk_cho_korea_flag
+			}
+		}
+		has_country_flag = KOR_lee_path
+		has_country_flag = KOR_lee_DPK_path
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_is_lee_DPK_fail_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_lee_DPK_fail_path_tt
+		has_government = conservative
+		has_country_flag = KOR_lee_path
+		has_country_flag = KOR_lee_DPK_path
+		has_country_flag = KOR_dpk_cho_korea_fail_flag
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_is_PPPDKP_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_PPPDKP_path_tt
+		OR = {
+			has_government = social_liberal
+			has_government = conservative
+			has_government = social_democrat
+		}
+		has_country_flag = KOR_lee_path
+		has_country_flag = KOR_lee_coalition_route
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_is_PP_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_PP_path_tt
+		has_country_flag = KOR_lee_progress_party_route
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_is_PP_DPK_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_PP_DPK_path_tt
+		has_country_flag = KOR_lee_progress_party_route
+		has_country_flag = KOR_PP_DPK_route
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_is_army_path = {
+	custom_override_tooltip = {
+		tooltip = KOR_is_army_path_tt
+		has_country_flag = KOR_lee_national_revolution_route
+		NOT = { has_country_flag = KOR_yoon_path }
+	}
+}
+
+KOR_army_stupid_success = {
+	custom_override_tooltip = {
+		tooltip = KOR_army_stupid_success_tt		
+		# 국민들 우민화 성공 
+		check_variable = { KOR_lee_military_ignorant_var > 79 }
+		
+		# 체제 구축하기
+		OR = { 
+			has_completed_focus = KOR_lee_army_route_nam_focus_13
+			has_completed_focus = KOR_lee_army_route_yec_focus_13
+			has_country_flag = KOR_set_new_regime_flag
+		}
+		
+		# 화장조 척결
+		OR = {
+			has_completed_focus = KOR_lee_army_route_common_focus_16 
+			has_country_flag = KOR_purge_chinese_communists_flag
+		}
+	}
+}
+
+KOR_in_taiwan_war = {
+	OR = {
+		has_global_flag = PRC_ongoing_taiwan_war
+		hidden_trigger = {
+			AND = {
+				is_debug = yes
+				has_country_flag = KOR_debug_taiwan_war
+			}
+		}
+	}
+}
+
+KOR_in_saudi_civil_war = {
+	OR = {
+		has_global_flag = SAU_saudi_civil_war_global
+		hidden_trigger = {
+			AND = {
+				is_debug = yes
+				has_country_flag = KOR_debug_saudi_civil_war
+			}
+		}
+	}
+}
+
+KOR_has_ministry_of_interior_and_safety = {
+	OR = {
+		has_idea = KOR_kim_chong_in_ns
+		has_idea = KOR_lee_sang_min_ns
+		has_idea = KOR_yoo_seong_min_ns
+		has_idea = KOR_chang_Je_won_ns
+		has_idea = KOR_lee_jun_seok_ns
+	}
+}
+
+TFR_asian_anarchy = {
+	original_tag = ZZX
+	has_global_flag = KOR_asia_fucked_event_global
+}
+KOR_PLP_faction_decision_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_plp_not_clicked_faction_dec_tt
+		NOT = {
+			has_decision = KOR_plp_pp_upgrade_1
+			has_decision = KOR_plp_pp_upgrade_2
+			has_decision = KOR_plp_jp_upgrade_1
+			has_decision = KOR_plp_jp_upgrade_2
+			has_decision = KOR_plp_lp_upgrade_1
+			has_decision = KOR_plp_lp_upgrade_2
+			has_decision = KOR_plp_pp_attack_1
+			has_decision = KOR_plp_jp_attack_1
+			has_decision = KOR_plp_lp_attack_1
+			#
+			has_country_flag = KOR_plp_up_att_flag
+		}
+	}	
+}
+	
+KOR_PLP_focus_is_clearable = {
+	NOT = {
+		check_variable = {
+			KOR_plp_focus_selected = 7
+		}
+	}
+}
+KOR_PLP_is_pp_focus_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_is_pp_focus_trigger_tt
+		OR = {
+			check_variable = { plp_focus_array^idx = 1 }
+			check_variable = { plp_focus_array^idx = 2 }
+			#
+			AND = {
+				check_variable = { plp_focus_owner_var = 1 }
+				check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+			}
+		}
+	}
+}
+KOR_PLP_is_jp_focus_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_is_jp_focus_trigger_tt
+		OR = {
+			check_variable = { plp_focus_array^idx = 3 }
+			check_variable = { plp_focus_array^idx = 4 }
+			#
+			AND = {
+				check_variable = { plp_focus_owner_var = 2 }
+				check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+			}
+		}
+	}
+}
+KOR_PLP_is_lp_focus_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_is_lp_focus_trigger_tt
+		OR = {
+			check_variable = { plp_focus_array^idx = 5 }
+			check_variable = { plp_focus_array^idx = 6 }
+			AND = {
+				check_variable = { plp_focus_owner_var = 3 }
+				check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+			}
+		}
+	}
+}
+KOR_PLP_is_common_focus_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_is_common_trigger_tt
+		OR = {
+			check_variable = { plp_focus_array^idx = 7 }
+			check_variable = { plp_focus_array^idx = 8 }
+			check_variable = { plp_focus_array^idx = 9 }
+			check_variable = { plp_focus_array^idx = 10 }
+			check_variable = { plp_focus_array^idx = 11 }
+			check_variable = { plp_focus_array^idx = 12 }
+			check_variable = { plp_focus_array^idx = 13 }
+			check_variable = { plp_focus_array^idx = 14 }
+			check_variable = { plp_focus_array^idx = 15 }
+			check_variable = { plp_focus_array^idx = 16 }
+		}
+		NOT = {
+			check_variable = { plp_focus_owner_var = 1 }
+			check_variable = { plp_focus_owner_var = 2 }
+			check_variable = { plp_focus_owner_var = 3 }
+		}
+	}
+}
+KOR_PLP_is_focus_select_trigger = {
+	OR = {
+		KOR_PLP_is_common_focus_trigger = yes
+		if = {
+			limit = {
+				check_variable = { PLPHeadFaction_var = 1 }
+			}
+			KOR_PLP_is_pp_focus_trigger = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { PLPHeadFaction_var = 2 }
+			}
+			KOR_PLP_is_jp_focus_trigger = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { PLPHeadFaction_var = 3 }
+			}
+			KOR_PLP_is_lp_focus_trigger = yes
+		}
+	}
+	NOT = { has_country_flag = KOR_plp_set_net_focus_flag }
+}
+KOR_PLP_focus_mine_can_show_trigger = {
+	KOR_PLP_focus_is_clearable = yes
+	KOR_PLP_is_common_focus_trigger = yes
+	check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+	NOT = { check_variable = { plp_focus_owner_var = PLPHeadFaction_var } }
+}	
+KOR_PLP_focus_mine_button_trigger = {
+	KOR_PLP_focus_is_clearable = yes
+	NOT = { check_variable = { plp_focus_owner_var = PLPHeadFaction_var } }
+	has_political_power > 100
+}
+KOR_PLP_focus_end_1_trigger = {
+	libertarian_socialist > 0.2
+	has_stability > 0.499
+	NOT = {
+		has_country_leader_with_trait = kor_kim_jae_yeon_traits
+	}
+}
+KOR_PLP_focus_end_2_trigger = {
+	has_completed_focus = KOR_lee_reds_focus_28
+	has_country_flag = KOR_revise_inter_korean_exchange_cooperation_act_end_flag
+	has_country_flag = KOR_lee_create_dprk_infra_end_flag
+}
+KOR_PLP_focus_end_3_trigger = {
+	has_idea = higher_safety
+	has_completed_focus = KOR_lee_reds_focus_6
+	OR = {
+		has_idea = high_poverty
+		has_idea = higher_poverty
+		has_idea = highest_poverty
+	}
+}
+KOR_PLP_focus_end_4_trigger = {
+	has_idea = higher_race
+	has_idea = high_female
+	has_idea = higher_prison
+}
+KOR_PLP_focus_end_5_trigger = {
+	has_completed_focus = KOR_lee_reds_focus_12
+	has_completed_focus = KOR_lee_reds_focus_35
+	OR = {
+		has_idea = higher_industry
+		has_idea = highest_industry
+	}
+}
+KOR_PLP_focus_end_6_trigger = {
+	communist > 0.1
+	has_idea = higher_safety
+	OR = {
+		has_idea = low_police
+		has_idea = lower_police
+		has_idea = lowest_police
+	}
+}
+KOR_PLP_focus_end_7_trigger = {
+	has_country_flag = KOR_lee_red_white_terror_complete_flag
+	has_completed_focus = KOR_lee_reds_purge_the_army
+	has_completed_focus = KOR_lee_persuation_dpk
+}
+KOR_PLP_focus_end_8_trigger = {
+	has_stability > 0.799
+	OR = {
+		has_idea = low_taxes
+		has_idea = lower_taxes
+	}
+	OR = {
+		has_idea = medium_interest_rates
+		has_idea = low_interest_rates
+		has_idea = lower_interest_rates
+	}
+}
+KOR_PLP_focus_end_9_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_focus_end_9_trigger_office_tt
+		KOR = {
+			office_park > 14
+		}
+	}
+	has_completed_focus = KOR_lee_reds_focus_11
+}
+KOR_PLP_focus_end_10_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_focus_end_10_trigger_infra_tt
+		KOR = {
+			infrastructure > 34
+		}
+	}
+	custom_trigger_tooltip = {
+		tooltip = KOR_PLP_focus_end_10_trigger_decision_tt
+		has_country_flag = KOR_lee_haebang_youk_1_end_flag
+		has_country_flag = KOR_lee_haebang_youk_2_end_flag
+		has_country_flag = KOR_lee_haebang_youk_3_end_flag
+		has_country_flag = KOR_lee_haebang_youk_5_end_flag
+		has_country_flag = KOR_lee_haebang_youk_6_end_flag
+	}
+}
+KOR_PLP_focus_end_11_trigger = {
+	has_political_power > 1557
+}
+KOR_PLP_focus_end_12_trigger = {
+	has_political_power > 1557
+}
+KOR_PLP_focus_end_13_trigger = {
+	has_political_power > 1557
+}
+KOR_PLP_focus_end_14_trigger = {
+	has_political_power > 1557
+}
+KOR_PLP_focus_end_15_trigger = {
+	has_political_power > 1557
+}
+KOR_PLP_focus_end_16_trigger = {
+	has_political_power > 1557
+}
+KOR_PLP_is_focus_end_trigger = {
+	check_variable = { plp_focus_array^idx = KOR_plp_focus_selected }
+	if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 0 }
+		}
+		always = no
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 1 }
+		}
+		KOR_PLP_focus_end_1_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 2 }
+		}
+		KOR_PLP_focus_end_2_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 3 }
+		}
+		KOR_PLP_focus_end_3_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 4 }
+		}
+		KOR_PLP_focus_end_4_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 5 }
+		}
+		KOR_PLP_focus_end_5_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 6 }
+		}
+		KOR_PLP_focus_end_6_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 7 }
+		}
+		KOR_PLP_focus_end_7_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 8 }
+		}
+		KOR_PLP_focus_end_8_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 9 }
+		}
+		KOR_PLP_focus_end_9_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 10 }
+		}
+		KOR_PLP_focus_end_10_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 11 }
+		}
+		KOR_PLP_focus_end_11_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 12 }
+		}
+		KOR_PLP_focus_end_12_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 13 }
+		}
+		KOR_PLP_focus_end_13_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 14 }
+		}
+		KOR_PLP_focus_end_14_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 15 }
+		}
+		KOR_PLP_focus_end_15_trigger = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { KOR_plp_focus_selected = 16 }
+		}
+		KOR_PLP_focus_end_16_trigger = yes
+	}
+}
+KOR_DPK_is_pre_lee_trigger = {
+	custom_trigger_tooltip = {
+		tooltip =  KOR_DPK_is_pre_lee_tt
+		check_variable = { KOR_DPK_cycle_var = 1 }
+	}
+}
+KOR_DPK_is_anti_lee_trigger = {
+	custom_trigger_tooltip = {
+		tooltip =  KOR_DPK_is_anti_lee_tt
+		check_variable = { KOR_DPK_cycle_var = 2 }
+	}
+}
+KOR_DPK_is_anxious_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = KOR_DPK_is_anxious_lee_tt
+		check_variable = { KOR_DPK_cycle_var = 3 }
+	}	
+}
+TFRKP_is_debug_decisions = {
+	OR = {
+		is_debug = yes
+		is_ai = yes
+		has_country_flag = TFRKP_cheat_decision_flag
+	}
+}
+GAW_plan_isnt_ongoing_trigger = {
+	NOT = {
+		check_variable = { var_GAW_border_nk = 2 }
+		check_variable = { var_GAW_border_gd = 2 }
+		check_variable = { var_GAW_border_mc = 2 }
+		check_variable = { var_GAW_border_hb = 2 }
+		check_variable = { var_GAW_border_jd = 2 }
+		check_variable = { var_GAW_border_lg = 2 }
+		check_variable = { var_GAW_border_hz = 2 }
+		check_variable = { var_GAW_border_xn = 2 }
+		check_variable = { var_GAW_border_sc = 2 }
+		check_variable = { var_GAW_border_xb = 2 }
+		check_variable = { var_GAW_border_bj = 2 }
+		check_variable = { var_GAW_border_tw = 2 }
+		check_variable = { var_GAW_border_ni = 2 }
+		check_variable = { var_GAW_border_sea = 2 }
+	}	
+}
+GAW_is_north_korea = {
+	OR = {
+		state = 1044
+		state = 1045
+		state = 1046
+		state = 1042
+		state = 1043
+		state = 1050
+		state = 527
+		state = 875
+		state = 873
+		state = 872
+		state = 874
+	}
+}
+GAW_is_jiandao = {
+	OR = {
+		state = 1413
+		state = 1417
+		state = 1414
+		state = 1415
+		state = 1416
+	}
+}
+GAW_is_manchuria = {
+	OR = {
+		state = 716
+		state = 1394
+		state = 1425
+		state = 715
+		state = 328
+		state = 717
+		state = 714
+		state = 1167
+		state = 1424
+	}
+}
+GAW_is_huabei = {
+	OR = {
+		state = 612
+		state = 611
+		state = 621
+		state = 610
+		state = 608
+		state = 1157
+		state = 609
+		state = 1232
+		state = 1421
+		state = 1154
+		state = 614
+		state = 1233
+		state = 615
+		state = 1194
+		state = 607
+		state = 1226
+		state = 1225
+		state = 1224
+		state = 1426
+		state = 1231
+		state = 597
+		state = 1230
+		state = 1427
+		state = 1229
+		state = 1420
+		state = 1393
+	}
+}
+GAW_is_jiangdong = {
+	OR = {
+		state = 598
+		state = 1228
+		state = 1223
+		state = 606
+		state = 1222
+		state = 1429
+		state = 613
+		state = 1215
+		state = 1221
+		state = 1220
+		state = 1159
+		state = 596
+		state = 1219
+		state = 1227
+		state = 600
+		state = 1428
+		state = 1214
+		state = 1213
+		state = 1217
+		state = 595
+		state = 1218
+		state = 1216
+		state = 1431
+	}
+}
+GAW_is_taiwan = {
+	OR = {
+		state = 648
+		state = 1451
+		state = 1148
+		state = 1149
+		state = 1150
+		state = 524
+	}
+}
+GAW_is_liangguang = {
+	OR = {
+		state = 1206
+		state = 1430
+		state = 1207
+		state = 592
+		state = 1395
+		state = 326
+		state = 729
+		state = 728
+		state = 591
+		state = 1191
+		state = 599
+		state = 1205
+		state = 1204
+		state = 594
+		state = 593
+		state = 1203
+	}
+}
+GAW_is_huazhong = {
+	OR = {
+		state = 1212
+		state = 1211
+		state = 620
+		state = 602
+		state = 1208
+		state = 1209
+	}
+}
+GAW_is_xinan = {
+	OR = {
+		state = 1197
+		state = 603
+		state = 1210
+		state = 1196
+		state = 1192
+		state = 325
+		state = 1195
+	}
+}
+GAW_is_sichuan = {
+	OR = {
+		state = 1189
+		state = 1190
+		state = 605
+		state = 1168
+		state = 601
+		state = 1188
+	}
+}
+GAW_is_xibei = {
+	OR = {
+		state = 1202
+		state = 1201
+		state = 622
+		state = 1200
+		state = 1193
+		state = 1199
+		state = 283
+		state = 616
+		state = 1166
+		state = 1198
+	}
+}
+GAW_is_bianjing = {
+	OR = {
+		state = 1187
+		state = 604
+		state = 1186
+		state = 1152
+		state = 1156
+		state = 322
+		state = 1153
+		state = 1155
+		state = 1163
+		state = 1158
+		state = 1162
+		state = 618
+		state = 617
+		state = 1165
+		state = 1161
+		state = 1164
+		state = 287
+		state = 619
+		state = 1160
+		state = 788
+	}
+}
+GAW_is_north_india = {
+	OR = {
+		state = 787
+		state = 441
+		state = 442
+		state = 440
+		state = 1132
+		state = 1380
+		state = 1321
+		state = 1323
+		state = 445
+		state = 443
+		state = 1324
+		state = 444
+		state = 1322
+		state = 1131
+		state = 1373
+		state = 439
+		state = 1381
+		state = 428
+		state = 433
+		state = 437
+		state = 1379
+		state = 438
+		state = 1397
+		state = 436
+		state = 1400
+		state = 1372
+		state = 426
+		state = 1371
+		state = 431
+		state = 1398
+		state = 1399
+		state = 435
+		state = 1370
+		state = 789
+		state = 430
+		state = 1369
+		state = 1368
+		state = 432
+		state = 1366
+		state = 1367
+		state = 434
+		state = 324
+		state = 323
+	}
+}
+GAW_is_SEA = {
+	OR = {
+		state = 1407
+		state = 1408
+		state = 1259
+		state = 1260
+		state = 1406
+		state = 1261
+		state = 1267
+		state = 1401
+		state = 1263
+		state = 1402
+		state = 640
+		state = 1405
+		state = 1265
+		state = 1264
+		state = 1404
+		state = 1403
+		state = 1266
+		state = 1270
+		state = 1271
+		state = 1262
+		state = 288
+		state = 1269
+		state = 1268
+		state = 890
+		state = 289
+		state = 891
+		state = 892
+		state = 724
+		state = 286
+		state = 670
+		state = 671
+		state = 784
+		state = 783
+	}
+}
+
+KOR_riot_any_resistance_active = {
+	OR = {
+		check_variable = { KOR_riot_resistance_busan_var > 0 }
+		check_variable = { KOR_riot_resistance_chungbuk_var > 0 }
+		check_variable = { KOR_riot_resistance_chungnam_var > 0 }
+		check_variable = { KOR_riot_resistance_daegu_var > 0 }
+		check_variable = { KOR_riot_resistance_daejeon_var > 0 }
+		check_variable = { KOR_riot_resistance_gangwon_var > 0 }
+		check_variable = { KOR_riot_resistance_gwangju_var > 0 }
+		check_variable = { KOR_riot_resistance_gyeongbuk_var > 0 }
+		check_variable = { KOR_riot_resistance_gyeonggi_var > 0 }
+		check_variable = { KOR_riot_resistance_gyeongnam_var > 0 }
+		check_variable = { KOR_riot_resistance_incheon_var > 0 }
+		check_variable = { KOR_riot_resistance_jeju_var > 0 }
+		check_variable = { KOR_riot_resistance_jeonbuk_var > 0 }
+		check_variable = { KOR_riot_resistance_jeonnam_var > 0 }
+		check_variable = { KOR_riot_resistance_sejong_var > 0 }
+		check_variable = { KOR_riot_resistance_seoul_var > 0 }
+		check_variable = { KOR_riot_resistance_ulsan_var > 0 }
+	}
+}
+
+KOR_yec_is_southern_north_china_plain_state_trigger = {
+	OR = {
+		state = 597
+		state = 607
+		state = 614
+		state = 615
+		state = 1194
+		state = 1225
+		state = 1226
+		state = 1229
+		state = 1230
+		state = 1231
+		state = 1393
+		state = 1420
+		state = 1427
+	}
+}
+
+KOR_yec_is_west_emp_theatre_state_trigger = {
+	is_core_of = PRC
+	OR = {
+		# East Turkestan
+		state = 287
+		state = 617
+		state = 618
+		state = 619
+		state = 1158
+		state = 1160
+		state = 1161
+		state = 1162
+		state = 1163
+		state = 1164
+		state = 1165
+
+		# Himalayas
+		state = 322
+		state = 788
+		state = 1152
+		state = 1153
+		state = 1155
+		state = 1156
+
+		# Xibei
+		state = 604
+		state = 616
+		state = 1166
+		state = 1186
+		state = 1187
+		state = 1198
+
+		# Upper Yangtze
+		state = 601
+		state = 605
+		state = 1168
+		state = 1188
+		state = 1189
+		state = 1190
+
+		# Shaan-Gan-Ning
+		state = 283
+		state = 622
+		state = 1193
+		state = 1199
+		state = 1200
+		state = 1201
+		state = 1202
+
+		# Yungui Plateau
+		state = 325
+		state = 603
+		state = 1192
+		state = 1195
+		state = 1196
+		state = 1197
+	}
+}
+
+KOR_yec_is_east_emp_theatre_state_trigger = {
+	is_core_of = PRC
+	OR = {
+		# Middle Yangtze
+		state = 602
+		state = 620
+		state = 1208
+		state = 1209
+		state = 1210
+		state = 1211
+		state = 1212
+		state = 1224
+
+		# Lower Yangtze
+		state = 595
+		state = 596
+		state = 598
+		state = 600
+		state = 606
+		state = 613
+		state = 1159
+		state = 1213
+		state = 1214
+		state = 1215
+		state = 1216
+		state = 1217
+		state = 1218
+		state = 1219
+		state = 1220
+		state = 1221
+		state = 1222
+		state = 1223
+		state = 1227
+		state = 1228
+		state = 1428
+		state = 1429
+		state = 1431
+
+		# Liangguang
+		state = 326
+		state = 591
+		state = 592
+		state = 593
+		state = 594
+		state = 599
+		state = 728
+		state = 729
+		state = 1191
+		state = 1203
+		state = 1204
+		state = 1205
+		state = 1206
+		state = 1207
+		state = 1395
+		state = 1430
+
+		# Southern North China Plain
+		KOR_yec_is_southern_north_china_plain_state_trigger = yes
+	}
+}
+
+KOR_yec_is_north_emp_theatre_state_trigger = {
+	is_core_of = PRC
+	OR = {
+		# Manchuria
+		state = 328
+		state = 714
+		state = 715
+		state = 716
+		state = 717
+		state = 1167
+		state = 1394
+		state = 1413
+		state = 1414
+		state = 1415
+		state = 1416
+		state = 1417
+		state = 1424
+		state = 1425
+
+		# Remaining North China Plain
+		state = 608
+		state = 609
+		state = 610
+		state = 611
+		state = 1154
+		state = 1157
+		state = 1232
+		state = 1233
+		state = 1421
+		state = 1426
+	}
+}
+
+KOR_yec_is_selected_emp_theatre_state_trigger = {
+	OR = {
+		AND = {
+			ROOT = {
+				check_variable = { KOR_yec_emp_theatre_var = 1 }
+			}
+			KOR_yec_is_west_emp_theatre_state_trigger = yes
+		}
+		AND = {
+			ROOT = {
+				check_variable = { KOR_yec_emp_theatre_var = 2 }
+			}
+			KOR_yec_is_east_emp_theatre_state_trigger = yes
+		}
+		AND = {
+			ROOT = {
+				check_variable = { KOR_yec_emp_theatre_var = 3 }
+			}
+			KOR_yec_is_north_emp_theatre_state_trigger = yes
+		}
+	}
+}
+
+KOR_yec_is_selected_emp_theatre_available_for_strike_trigger = {
+	OR = {
+		AND = {
+			check_variable = { KOR_yec_emp_theatre_var = 1 }
+			NOT = {
+				has_country_flag = KOR_yec_emp_west_blackout_flag
+			}
+		}
+		AND = {
+			check_variable = { KOR_yec_emp_theatre_var = 2 }
+			NOT = {
+				has_country_flag = KOR_yec_emp_east_blackout_flag
+			}
+		}
+		AND = {
+			check_variable = { KOR_yec_emp_theatre_var = 3 }
+			NOT = {
+				has_country_flag = KOR_yec_emp_north_blackout_flag
+			}
+		}
+	}
+}
+
+KOR_yec_has_civil_emp_cost_trigger = {
+	has_political_power > 24
+}
+
+KOR_yec_has_military_emp_cost_trigger = {
+	command_power > 49
+}
+
+### TFR - 남북대립 스크립티드 트리거 ###
+# ★ PRK = 북한 태그 플레이스홀더. 모드의 실제 북한 태그로 이 파일과
+#   events/kimminseok_korea_war_events.txt 의 선전포고 부분만 바꾸면 됨.
+
+kimminseok_korea_war_all_prep_done_trigger = {
+	check_variable = { kimminseok_korea_war_prog_warprep > 2 }
+	check_variable = { kimminseok_korea_war_prog_unrest > 2 }
+	check_variable = { kimminseok_korea_war_prog_asym > 2 }
+}
+
+# 북한 지역 점령 판정: 북한이 소멸했거나 수도를 우리가 통제 중
+kimminseok_korea_war_occupies_north_trigger = {
+	OR = {
+		NOT = { country_exists = PRK }
+		PRK = { capital_scope = { is_controlled_by = ROOT } }
+	}
+}

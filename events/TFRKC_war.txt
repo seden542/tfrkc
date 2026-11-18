@@ -1,0 +1,56 @@
+add_namespace = tfrkc_war
+# Donor events use actual stockpiles; no expeditionary force or foreign war entry.
+country_event = { id = tfrkc_war.1 hidden = yes is_triggered_only = yes
+ immediate = { if = { limit = { has_global_flag = TFRKC_civilwar_active KOR = { exists = yes } }
+ if = { limit = { country_exists = JAP } JAP = { country_event = { id = tfrkc_war.2 } } }
+ if = { limit = { country_exists = GER } GER = { country_event = { id = tfrkc_war.3 } } }
+ } }
+}
+country_event = {
+ picture = GFX_report_event_kor_support_taiwan
+ id = tfrkc_war.2 title = tfrkc_war.2.t desc = tfrkc_war.2.d is_triggered_only = yes fire_only_once = yes
+ option = { name = tfrkc_war.a trigger = { has_global_flag = TFRKC_civilwar_active KOR = { exists = yes } } ai_chance = { factor = 80 modifier = { factor = 0 is_in_faction_with = PRC } } send_equipment_fraction = { target = KOR value = 0.005 } if = { limit = { KCH = { exists = yes } } send_equipment_fraction = { target = KCH value = 0.005 } } add_political_power = -25 }
+ option = { name = tfrkc_war.no ai_chance = { factor = 20 } }
+}
+country_event = {
+ picture = GFX_report_event_kor_support_taiwan
+ id = tfrkc_war.3 title = tfrkc_war.3.t desc = tfrkc_war.3.d is_triggered_only = yes fire_only_once = yes
+ option = { name = tfrkc_war.a trigger = { has_global_flag = TFRKC_civilwar_active KOR = { exists = yes } is_in_faction_with = ENG NOT = { is_in_faction_with = PRC } } ai_chance = { factor = 70 } send_equipment_fraction = { target = KOR value = 0.003 } add_political_power = -25 KOR = { add_stability = 0.03 add_political_power = 25 } }
+ option = { name = tfrkc_war.no ai_chance = { factor = 30 } }
+}
+# Latest bloc contract forbids internal war; use bilateral integration API.
+country_event = { id = tfrkc_war.10 hidden = yes is_triggered_only = yes trigger = { always = no } }
+# Latest bloc contract forbids internal war; use bilateral integration API.
+country_event = { id = tfrkc_war.11 hidden = yes is_triggered_only = yes trigger = { always = no } }
+# The original PRC_gaw_start owns global war timing. Attach the surviving tag only after that war starts.
+country_event = { id = tfrkc_war.20 hidden = yes fire_only_once = yes
+ trigger = { has_country_flag = TFRKC_unifier has_global_flag = pan_asian_war_ongoing has_country_flag = TFRKC_postwar_connection_ready PRC = { exists = yes has_war_with = JAP } JAP = { exists = yes } }
+ mean_time_to_happen = { days = 1 }
+ immediate = { leave_faction = yes if = { limit = { OR = { tag = KWC tag = KPL has_country_flag = TFRKC_align_EADI } } PRC = { add_to_faction = ROOT } declare_war_on = { target = JAP type = annex_everything } } else = { JAP = { add_to_faction = ROOT } declare_war_on = { target = PRC type = annex_everything } } }
+}
+
+
+# Military-owned completion worker. The visible popup closes before any TAG transfer.
+# Recheck the actual map after the delay; stale popups cannot annex countries.
+country_event = {
+ id = tfrkc_war.30
+ hidden = yes
+ is_triggered_only = yes
+ immediate = {
+  log = "TFRKC_UNIFY_TRACE worker_enter actor=[ROOT.GetTag]"
+  if = { limit = {
+   exists = yes has_country_flag = TFRKC_unification_pending
+   has_country_flag = TFRKC_unification_completion_queued
+   NOT = { has_global_flag = TFRKC_unification_finalized }
+  }
+   clr_country_flag = TFRKC_unification_completion_queued
+   if = { limit = { TFRKC_can_unify_trigger = yes }
+    TFRKC_finalize_unification_as_KOR_effect = yes
+   }
+   else = {
+    clr_country_flag = TFRKC_unification_pending
+    log = "TFRKC_UNIFY_TRACE worker_cancelled_conditions_changed actor=[ROOT.GetTag]"
+   }
+  }
+ }
+}

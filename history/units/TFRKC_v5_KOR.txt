@@ -1,0 +1,28 @@
+# Fictional formations. No claim about real units political allegiance.
+division_template = { name = "TFRKC v5 KOR line" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } support = { engineer = { x = 0 y = 0 } } }
+division_template = { name = "TFRKC v5 KOR armor" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+division_template = { name = "TFRKC v5 KOR mobile" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+units = {
+ division = { name = "KOR line 1" location = 15172 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 2" location = 14229 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 3" location = 15417 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 4" location = 1054 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 5" location = 15424 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 6" location = 15409 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 7" location = 15383 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 8" location = 14227 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 9" location = 15426 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 10" location = 15450 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 11" location = 15425 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 12" location = 15447 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 13" location = 15375 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 14" location = 15174 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 15" location = 15172 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 16" location = 14229 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 17" location = 15417 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR line 18" location = 1054 division_template = "TFRKC v5 KOR line" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR armor 1" location = 15424 division_template = "TFRKC v5 KOR armor" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR armor 2" location = 15409 division_template = "TFRKC v5 KOR armor" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR mobile 1" location = 15383 division_template = "TFRKC v5 KOR mobile" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+ division = { name = "KOR mobile 2" location = 14227 division_template = "TFRKC v5 KOR mobile" start_manpower_factor = 0.75 start_equipment_factor = 0.68 start_experience_factor = 0.5 }
+}

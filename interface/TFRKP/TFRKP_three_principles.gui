@@ -1,0 +1,168 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_three_principles_category_container"
+		size = { width = 500 height = 455 }
+		clipping = no
+
+		# Sclera, moving/static iris, then the eye socket frame.
+		iconType = {
+			name = "KOR_three_principles_background"
+			spriteType = "GFX_KOR_three_principles_background"
+			position = { x = 5 y = -5 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_easter_egg_glow"
+			spriteType = "GFX_KOR_three_principles_easter_egg_glow"
+			position = { x = 145 y = 232 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_easter_egg_glow_call"
+			spriteType = "GFX_KOR_three_principles_easter_egg_glow_call"
+			position = { x = 145 y = 232 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_three_principles_sclera"
+			position = { x = 75 y = 10 }
+			spriteType = "GFX_KOR_three_principles_sclera"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_idle_eye"
+			position = { x = 160 y = 68 }
+			spriteType = "GFX_KOR_three_principles_idle_eye"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_nation_eye"
+			position = { x = 160 y = 75 }
+			spriteType = "GFX_KOR_three_principles_nation_eye"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_democracy_eye"
+			position = { x = 160 y = 75 }
+			spriteType = "GFX_KOR_three_principles_people_eye"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_people_eye"
+			position = { x = 160 y = 75 }
+			spriteType = "GFX_KOR_three_principles_democracy_eye"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_easter_egg_eye"
+			position = { x = 160 y = 62 }
+			spriteType = "GFX_KOR_three_principles_easter_egg_eye"
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_three_principles_eye_background"
+			position = { x = 75 y = 10 }
+			spriteType = "GFX_KOR_three_principles_eye_background"
+		}
+		iconType = {
+			name = "KOR_three_principles_eye_shadow"
+			spriteType = "GFX_KOR_three_principles_eye_shadow"
+			position = { x = 145 y = 53 }
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KOR_three_principles_nation_button"
+			position = { x = 15 y = 280 }
+			spriteType = "GFX_KOR_three_principles_nation_label"
+			frame = 1
+			pdx_tooltip = KOR_three_principles_nation_button_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_three_principles_democracy_button"
+			position = { x = 185 y = 280 }
+			spriteType = "GFX_KOR_three_principles_democracy_label"
+			frame = 1
+			pdx_tooltip = KOR_three_principles_democracy_button_tt
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "KOR_three_principles_people_button"
+			position = { x = 355 y = 280 }
+			spriteType = "GFX_KOR_three_principles_people_label"
+			frame = 1
+			pdx_tooltip = KOR_three_principles_people_button_tt
+			clicksound = click_default
+		}
+		iconType = {
+			name = "KOR_three_principles_left_light"
+			position = { x = 25 y = 108 }
+			spriteType = "GFX_KOR_three_principles_left_light"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_center_light"
+			position = { x = 175 y = 110 }
+			spriteType = "GFX_KOR_three_principles_center_light"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "KOR_three_principles_right_light"
+			position = { x = 245 y = 108 }
+			spriteType = "GFX_KOR_three_principles_right_light"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_three_principles_nation_selected"
+			position = { x = 18 y = 388 }
+			font = "VCR02_14"
+			text = "KOR_three_principles_selected"
+			format = center
+			maxWidth = 137
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_three_principles_democracy_selected"
+			position = { x = 187 y = 388 }
+			font = "VCR02_14"
+			text = "KOR_three_principles_selected"
+			format = center
+			maxWidth = 141
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_three_principles_people_selected"
+			position = { x = 360 y = 388 }
+			font = "VCR02_14"
+			text = "KOR_three_principles_selected"
+			format = center
+			maxWidth = 142
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "KOR_three_principles_easter_egg_phone_container"
+		hide = yes
+		position = { x = 544 y = -500 }
+		show_position = { x = 544 y = 471 }
+		hide_position = { x = 544 y = -500 }
+		animation_time = 1000
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		size = { width = 167 height = 311 }
+		clipping = no
+
+		buttonType = {
+			name = "KOR_three_principles_easter_egg_phone_button"
+			spriteType = "GFX_KOR_three_principles_easter_egg_phone"
+			position = { x = 0 y = 0 }
+		}
+	}
+}

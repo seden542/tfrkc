@@ -1,0 +1,2 @@
+# Country existence is not the timer: global records survive KOR annexation/player tag changes.
+on_actions = { on_daily = { effect = { KOR = { TFRKC_rework_check_intervention_dates_effect = yes } } } }

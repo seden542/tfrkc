@@ -1,0 +1,21 @@
+state={
+	id = 1518
+	name = "STATE_1518"
+	provinces = { 906 15082 9899 3904 15095 }
+	manpower = 363043
+	buildings_max_level_factor = 0.50473934
+	
+	resources = { tungsten = 1 steel = 4 }
+	
+	history = {
+owner = PRK
+add_core_of = PRK
+add_claim_by = KOR
+ buildings = {
+ infrastructure = 2
+ industrial_complex = 1
+ }
+}
+	
+	state_category = village
+}

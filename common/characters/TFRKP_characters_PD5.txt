@@ -1,0 +1,15 @@
+characters = {
+	PD5_shin_jangsik_char = {
+		name = PD5_shin_jangsik_char
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PD5_shin_jangsik_char_civilian_large
+			}
+		}
+		country_leader = {
+			desc = PD5_shin_jangsik_char_desc
+			ideology = chogukism
+			traits = { }
+		}
+	}
+}

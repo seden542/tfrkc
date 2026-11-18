@@ -1,0 +1,787 @@
+defined_text = {
+	name = GetKORNationalAssemblyCategoryTitle
+	text = {
+		trigger = {
+			has_country_flag = KOR_NatAsm_southern_local_government_assembly_flag
+		}
+		localization_key = KOR_national_assembly_category_title_southern_local_government
+	}
+	text = {
+		localization_key = KOR_national_assembly_category_title_default
+	}
+}
+
+defined_text = {
+	name = KOR_NatAsm_current_faction_dynamic
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 1 }
+		}
+		localization_key = KOR_NatAsm_DP_c
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 2 }
+		}
+		localization_key = KOR_NatAsm_PPP_c
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 3 }
+		}
+		localization_key = KOR_NatAsm_JP_c
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 4 }
+		}
+		localization_key = KOR_NatAsm_PP_c
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 5 }
+		}
+		localization_key = KOR_NatAsm_Ind_c
+	}
+}
+
+defined_text = {
+	name = KOR_NatAsm_change_seats_dynamic
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_temp = 1 }
+		}
+		localization_key = KOR_NatAsm_DP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_temp = 2 }
+		}
+		localization_key = KOR_NatAsm_PPP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_temp = 3 }
+		}
+		localization_key = KOR_NatAsm_JP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_temp = 4 }
+		}
+		localization_key = KOR_NatAsm_PP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_temp = 5 }
+		}
+		localization_key = KOR_NatAsm_Ind_seat_tooltip
+	}
+}
+
+defined_text = {
+	name = KOR_NatAsm_change_seats_specific_1_target
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_target = 1 }
+		}
+		localization_key = KOR_NatAsm_DP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_target = 2 }
+		}
+		localization_key = KOR_NatAsm_PPP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_target = 3 }
+		}
+		localization_key = KOR_NatAsm_JP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_target = 4 }
+		}
+		localization_key = KOR_NatAsm_PP_seat_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction_target = 5 }
+		}
+		localization_key = KOR_NatAsm_Ind_seat_tooltip
+	}
+}
+
+defined_text = {
+	name = KOR_NatAsm_current_faction_color_dynamic
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 1 }
+		}
+		localization_key = KOR_NatAsm_DP_color
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 2 }
+		}
+		localization_key = KOR_NatAsm_PPP_color
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 3 }
+		}
+		localization_key = KOR_NatAsm_JP_color
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 4 }
+		}
+		localization_key = KOR_NatAsm_PP_color
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 5 }
+		}
+		localization_key = KOR_NatAsm_Ind_color
+	}
+}
+
+defined_text = {
+	name = KOR_NatAsm_vote_seats
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_current_ordinance_id = 0 }
+		}
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_current_ordinance_id > 0 }
+		}
+		localization_key = KOR_NatAsm_vote_seat_show
+	}
+}
+
+defined_text = {
+	name = KOR_NatAsm_current_faction_seats_dynamic
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 1 }
+		}
+		localization_key = KOR_NatAsm_DP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 2 }
+		}
+		localization_key = KOR_NatAsm_PPP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 3 }
+		}
+		localization_key = KOR_NatAsm_JP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 4 }
+		}
+		localization_key = KOR_NatAsm_PP_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_NatAsm_faction = 5 }
+		}
+		localization_key = KOR_NatAsm_Ind_seats
+	}
+}
+
+defined_text = {
+	name = GetNatAsmspeaker
+	text = {
+		trigger = {
+			has_country_flag = speaker_moon_hee_sang
+		}
+		localization_key = NatAsmSpeaker_moon_hee_sang
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_park_byeong_seug
+		}
+		localization_key = NatAsmSpeaker_park_byeong_seug
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_jin_pyo
+		}
+		localization_key = NatAsmSpeaker_kim_jin_pyo
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_woo_won_shik
+		}
+		localization_key = NatAsmSpeaker_woo_won_shik
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_jeong_dong_yeong
+		}
+		localization_key = NatAsmSpeaker_jeong_dong_yeong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_cho_jeong_shik
+		}
+		localization_key = NatAsmSpeaker_cho_jeong_shik
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_lee_in_yeong
+		}
+		localization_key = NatAsmSpeaker_lee_in_yeong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_jeong_seong_ho
+		}
+		localization_key = NatAsmSpeaker_jeong_seong_ho
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_seol_hoon
+		}
+		localization_key = NatAsmSpeaker_seol_hoon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_joo_ho_yeong
+		}
+		localization_key = NatAsmSpeaker_joo_ho_yeong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_park_ji_won
+		}
+		localization_key = NatAsmSpeaker_park_ji_won
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kwon_yeong_se
+		}
+		localization_key = NatAsmSpeaker_kwon_yeong_se
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_song_yeong_gil
+		}
+		localization_key = NatAsmSpeaker_song_yeong_gil
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_hong_yeong_pyo
+		}
+		localization_key = NatAsmSpeaker_hong_yeong_pyo
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_yoon_sang_hyeon
+		}
+		localization_key = NatAsmSpeaker_yoon_sang_hyeon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_ki_hyeon
+		}
+		localization_key = NatAsmSpeaker_kim_ki_hyeon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_hak_yong
+		}
+		localization_key = NatAsmSpeaker_kim_hak_yong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_roh_woon_rae
+		}
+		localization_key = NatAsmSpeaker_roh_woon_rae
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_yu_eui_dong
+		}
+		localization_key = NatAsmSpeaker_yu_eui_dong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_an_kyu_baek
+		}
+		localization_key = NatAsmSpeaker_an_kyu_baek
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_tae_nyeon
+		}
+		localization_key = NatAsmSpeaker_kim_tae_nyeon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_jeon_byung_heon
+		}
+		localization_key = NatAsmSpeaker_jeon_byung_heon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_ahn_cheol_soo
+		}
+		localization_key = NatAsmSpeaker_ahn_cheol_soo
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_na_kyung_won
+		}
+		localization_key = NatAsmSpeaker_na_kyung_won
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_sim_sang_jung
+		}
+		localization_key = NatAsmSpeaker_sim_sang_jung
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_yoon_ho_jung
+		}
+		localization_key = NatAsmSpeaker_yoon_ho_jung
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_jong_min
+		}
+		localization_key = NatAsmSpeaker_kim_jong_min
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_se_yeon
+		}
+		localization_key = NatAsmSpeaker_kim_se_yeon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_seon_dong
+		}
+		localization_key = NatAsmSpeaker_kim_seon_dong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_lee_hak_yeong
+		}
+		localization_key = NatAsmSpeaker_lee_hak_yeong
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_min_hong_cheol
+		}
+		localization_key = NatAsmSpeaker_min_hong_cheol
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_jeong_cheong_rae
+		}
+		localization_key = NatAsmSpeaker_jeong_cheong_rae
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_cho_seung_rae
+		}
+		localization_key = NatAsmSpeaker_cho_seung_rae
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_jong_hoon
+		}
+		localization_key = NatAsmSpeaker_kim_jong_hoon
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kang_eun_mi
+		}
+		localization_key = NatAsmSpeaker_kang_eun_mi
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_jeong_jin_seok #국힘 2024 전반기
+		}
+		localization_key = NatAsmSpeaker_jeong_jin_seok
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_cho_gyeong_tae #국힘 2024 후반기
+		}
+		localization_key = NatAsmSpeaker_cho_gyeong_tae
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_ha_tae_gyung #국힘 2028 전반기
+		}
+		localization_key = NatAsmSpeaker_ha_tae_gyung
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_kim_tae_ho #국힘 2028 후반기
+		}
+		localization_key = NatAsmSpeaker_kim_tae_ho
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_jang_dong_hyeok #국힘 2032 전반기
+		}
+		localization_key = NatAsmSpeaker_jang_dong_hyeok
+	}
+	text = {
+		trigger = {
+			has_country_flag = speaker_bae_hyeon_jin #국힘 2032 후반기
+		}
+		localization_key = NatAsmSpeaker_bae_hyeon_jin
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = speaker_vacant_2020
+				has_country_flag = speaker_vacant_2022
+				has_country_flag = speaker_vacant_2024
+				has_country_flag = speaker_vacant_2028
+				has_country_flag = speaker_vacant_2032
+			}
+		}
+		localization_key = NatAsmSpeaker_vacant
+	}
+}
+defined_text = {
+	name = GetNameDPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_DPK = 3 } 
+		}
+		localization_key = KOR_RKP_LOC_RKP
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_DPK = 2 } 
+		}
+		localization_key = KOR_DP_LOC_NFP
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_DPK = 1 } 
+		}
+		localization_key = KOR_DP_LOC_DPK
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameRKPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_RKP = 1 } 
+		}
+		localization_key = KOR_RKP_LOC_RKP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameODPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_ODP = 2 } 
+		}
+		localization_key = KOR_ODP_LOC_ANNEXED
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_ODP = 1 } 
+		}
+		localization_key = KOR_ODP_LOC_ODP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+
+defined_text = {
+	name = GetNamePPPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_PPP = 6 } 
+		}
+		localization_key = KOR_PPP_LOC_NP # 한동훈
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PPP = 5 } 
+		}
+		localization_key = KOR_PPP_LOC_RC # 장동혁
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PPP = 4 } 
+		}
+		localization_key = KOR_PPP_LOC_DISMENDTLED # 해산됨
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PPP = 3 } 
+		}
+		localization_key = KOR_PPP_LOC_PPP # 국힘
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PPP = 2 } 
+		}
+		localization_key = KOR_PPP_LOC_UFP # 미통당
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PPP = 1 } 
+		}
+		localization_key = KOR_PPP_LOC_LKP # 자한당
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+
+defined_text = {
+	name = GetNameJPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_JP = 6 }
+		}	
+		localization_key = KOR_JP_LOC_IJP # 혁신정의당 (조국루트)
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_JP = 5 }
+		}	
+		localization_key = KOR_JP_LOC_ESP # 평등사회당 (거국내각 해산 후 복원)
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_JP = 4 }
+		}	
+		localization_key = KOR_JP_LOC_DLP # 민주노동당 (좌빨루트)
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_JP = 3 }  # JP_name_KDLP (country_flag)
+		}	
+		localization_key = KOR_JP_LOC_KDLP # 민주노동당 (원역사 2025)
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_JP = 2 }  # JP_name_GJP (country_flag)
+		}	
+		localization_key = KOR_JP_LOC_GJP # 녹색정의당
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_JP = 1 } 
+		}
+		localization_key = KOR_JP_LOC_JP # 정의당
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameTPPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_TPP = 3 } 
+		}
+		localization_key = KOR_TPP_LOC_NPP
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_TPP = 2 } 
+		}
+		localization_key = KOR_TPP_LOC_TPP
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_TPP = 1 } 
+		}
+		localization_key = KOR_TPP_LOC_PPSK
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameLPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_LP = 1 } 
+		}
+		localization_key = KOR_LP_LOC_LP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNamePPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_PP = 4 } 
+		}
+		localization_key = KOR_PP_LOC_ANNEXED2
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PP = 3 } 
+		}
+		localization_key = KOR_PP_LOC_ANNEXED
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PP = 2 } 
+		}
+		localization_key = KOR_PP_LOC_PP
+	}
+	text = {
+		trigger = {
+			check_variable = { NA_show_PP = 1 } 
+		}
+		localization_key = KOR_PP_LOC_BP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameRPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_RP = 1 } 
+		}
+		localization_key = KOR_RP_LOC_RP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameLUPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_LUP = 1 } 
+		}
+		localization_key = KOR_LUP_LOC_LUP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNamePDPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_PDP = 1 }
+		}
+		localization_key = KOR_PDP_LOC_PDP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameKSDLWPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_KSDLWP = 1 }
+		}
+		localization_key = KOR_KSDLWP_LOC_KSDLWP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameKSDPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_KSDP = 1 }
+		}
+		localization_key = KOR_KSDP_LOC_KSDP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameGPKLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_GPK = 1 }
+		}
+		localization_key = KOR_GPK_LOC_GPK
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameBIPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_BIP = 1 }
+		}
+		localization_key = KOR_BIP_LOC_BIP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameHEOLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_HEO = 1 }
+		}
+		localization_key = KOR_HEO_LOC_HEO
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+defined_text = {
+	name = GetNameORPLoc
+	text = {
+		trigger = {
+			check_variable = { NA_show_ORP = 1 }
+		}
+		localization_key = KOR_ORP_LOC_ORP
+	}
+	text = {
+		localization_key = KOR_PARTY_LOC_NONE
+	}
+}
+### Head of DP
+defined_text = {
+	name = GetHeadofDP
+	text = {
+		trigger = {
+			check_variable = { NA_show_DPK = 3 } # 조국혁신당(민주당)
+		}
+		localization_key = KOR_RKP_LOC_RKP
+	}
+	text = {
+		localization_key = KOR_DP_LOC_DPK
+	}
+}

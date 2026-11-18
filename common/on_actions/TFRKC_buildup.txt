@@ -1,0 +1,4 @@
+# Noon dispatcher lets the existing morning timeline mark its own date first.
+on_actions = { on_daily = { effect = { KOR = {
+ if = { limit = { TFRKC_buildup_live_trigger = yes } country_event = { id = tfrkc_buildup.100 hours = 12 } }
+} } } }

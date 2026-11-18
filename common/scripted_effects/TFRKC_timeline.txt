@@ -1,0 +1,28 @@
+TFRKC_record_proclamation_effect = {
+ if = { limit = { NOT = { has_country_flag = TFRKC_proclamation_recorded } }
+ set_country_flag = TFRKC_proclamation_recorded
+ TFRKC_buildup_mark_main_effect = yes
+ set_variable = { TFRKC_proclamation_date = global.date }
+ country_event = { id = tfrkc_timeline.12 days = 2 }
+ if = { limit = { has_country_flag = TFRKC_national_unrest }
+ TFRKC_calendar_delay_effect = yes
+ if = { limit = { NOT = { has_country_flag = TFRKC_calendar_unsupported } }
+ set_country_flag = TFRKC_calendar_armed
+ TFRKC_schedule_month_effect = yes
+ }
+ }
+ }
+}
+
+
+TFRKC_schedule_month_effect = {
+ if = { limit = { check_variable = { TFRKC_month_delay = 28 } } country_event = { id = tfrkc_timeline.20 days = 28 } }
+ if = { limit = { check_variable = { TFRKC_month_delay = 29 } } country_event = { id = tfrkc_timeline.20 days = 29 } }
+ if = { limit = { check_variable = { TFRKC_month_delay = 30 } } country_event = { id = tfrkc_timeline.20 days = 30 } }
+ if = { limit = { check_variable = { TFRKC_month_delay = 31 } } country_event = { id = tfrkc_timeline.20 days = 31 } }
+}
+
+TFRKC_schedule_year_effect = {
+ if = { limit = { check_variable = { TFRKC_year_delay = 365 } } country_event = { id = tfrkc_timeline.1 days = 365 } }
+ if = { limit = { check_variable = { TFRKC_year_delay = 366 } } country_event = { id = tfrkc_timeline.1 days = 366 } }
+}

@@ -1,0 +1,88 @@
+﻿l_english:
+ the_fire_rises_korea_plus:0 "The Fire Rises: Korea Plus Achievements"
+ 
+ ### Challenge ###
+ ## One star ##
+ # Yoon Suk Yeol
+ TFRKP_achieve_ending_yoon_canon_NAME:0 "A Single Rose for You"
+ TFRKP_achieve_ending_yoon_canon_DESC:0 "Protect the democracy of the Republic of Korea amid the blazing flames."
+ 
+ TFRKP_achieve_ending_yoon_martial_law_NAME:0 "March for the Beloved"
+ TFRKP_achieve_ending_yoon_martial_law_DESC:0 "Defend liberal democracy and protect the 3,000-li territory from an invasion by North Korea."
+ 
+ TFRKP_achieve_ending_yoon_martial_law_nuke_NAME:0 "Fallout"
+ TFRKP_achieve_ending_yoon_martial_law_nuke_DESC:0 "Smash the civilizations of Northeast Asia to pieces with nuclear war."
+ 
+ TFRKP_achieve_ending_yoon_happy_NAME:0 "The Lamp of Freedom of the East"
+ TFRKP_achieve_ending_yoon_happy_DESC:0 "Seize victory in the Great Asian War and become the new power of the East."
+ 
+ TFRKP_achieve_ending_yoon_gaka_NAME:0 "GAKA.exe"
+ TFRKP_achieve_ending_yoon_gaka_DESC:0 "§LSecurity alert: threat detected. Malicious Kim Jae-gyu found in the system. Initiating immediate quarantine procedures.§!\n\nBring the previous leader, resurrected through cyberization, to power as president and win the Great Asian War."
+ 
+ # Lee Jae-myung
+ TFRKP_achieve_ending_lee_happy_NAME:0 "Let's Achieve It Too"
+ TFRKP_achieve_ending_lee_happy_DESC:0 "Intervene in Taiwan and win, and expand the territory of the Republic of Korea into Manchuria along the Kim Min-seok route."
+ 
+ TFRKP_achieve_ending_lee_free_ppp_happy_NAME:0 "Spring" 
+ TFRKP_achieve_ending_lee_free_ppp_happy_DESC:0 "It is not that darkness retreats and the sun rises, but that darkness is pushed away because the sun rises."
+ 
+ TFRKP_achieve_ending_lee_free_dpk_happy_NAME:0 "He Watches"
+ TFRKP_achieve_ending_lee_free_dpk_happy_DESC:0 "§1Look Beyond the Wall.§!"
+ 
+ TFRKP_achieve_ending_lee_army_nam_happy_NAME:0 "Spring in Seoul"
+ TFRKP_achieve_ending_lee_army_nam_happy_DESC:0 "After winning the Great Asian War, disband the Supreme Council for National Reconstruction and revive the democracy of the Republic of Korea."
+ 
+ TFRKP_achieve_ending_lee_army_nam_bad_NAME:0 "From Here, the City Looks Like a Prison of Light"
+ TFRKP_achieve_ending_lee_army_nam_bad_DESC:0 "After winning the Great Asian War, preserve the Supreme Council for National Reconstruction and build a corporate state of South Manchuria.\n\n§L\"Inside that rectangular space, lights filled with everyone's worries spill out, and loneliness decorates the night in Seoul.\"§!"
+
+ 
+ TFRKP_achieve_ending_lee_army_yec_happy_NAME:0 "Place a Flower in the Muzzle"
+ TFRKP_achieve_ending_lee_army_yec_happy_DESC:0 "Carry another revolution against Yoon Eui-cheol."
+ 
+ TFRKP_achieve_ending_lee_army_yec_bad_NAME:0 "If You Cross the Line, You Can Never Come Back"
+ TFRKP_achieve_ending_lee_army_yec_bad_DESC:0 "Create a Republic of Korea where everyone is truly happy. And another weapon is unlocked."
+ 
+ TFRKP_achieve_ending_lee_reds_dpk_NAME:0 "The Hot Summer Nights Are Gone, and What Remains Is Shabby, But"
+ TFRKP_achieve_ending_lee_reds_dpk_DESC:0 "Give up your dream."
+ 
+ TFRKP_achieve_ending_lee_reds_pp_NAME:0 "Independence, Democracy, Reunification"
+ TFRKP_achieve_ending_lee_reds_pp_DESC:0 "At last, we shall forge our homeland united as one."
+ 
+ TFRKP_achieve_ending_lee_reds_jp_NAME:0 "The Hope of Labor, the Dream of Citizens"
+ TFRKP_achieve_ending_lee_reds_jp_DESC:0 "Let us live like a rock, the cornerstone of the liberated world that will finally come."
+ 
+ TFRKP_achieve_ending_lee_reds_lp_NAME:0 "The Revolutionary Fighting Spirit"
+ TFRKP_achieve_ending_lee_reds_lp_DESC:0 "Rise, you! Fight on, you!"
+ 
+ TFRKP_achieve_ending_lee_coa_ending_NAME:0 "Together we will win!"
+ TFRKP_achieve_ending_lee_coa_ending_DESC:0 "On the path of national unity, protect the Republic of Korea.\n\n§LYou are my echo\nIt's a handful of such feelings\nWhen the time comes, in my heart\nIt'll be held like a festival §!"
+ 
+ ## Two stars ##
+ TFRKP_achieve_normal_sons_of_pacific_NAME:0 "The Sons of the Pacific"
+ TFRKP_achieve_normal_sons_of_pacific_DESC:0 "The sons of the Pacific will live freely!"
+ 
+ TFRKP_achieve_normal_kill_reds_NAME:0 "Commies Who Deserve a Beating"
+ TFRKP_achieve_normal_kill_reds_DESC:0 "Wreck the country as thoroughly as possible by passing legislation on the Democratic Labor Party path.\n\n§LThey kept crying \"pro-North,\" and then actually turned the country into North Korea. Those fucking commies.§!"
+ 
+ TFRKP_achieve_normal_army_got_fucked_NAME:0 "Chungmugong Will Shed Tears"
+ TFRKP_achieve_normal_army_got_fucked_DESC:0 "This is not what they meant by \"If you do nothing, you will at least break even.\""
+ 
+ ## Three Star ##
+ TFRKP_achieve_normal_k_pandemic_NAME:0 "Proud K-Quarantine"
+ TFRKP_achieve_normal_k_pandemic_DESC:0 "You are a god of epidemic control. You achieved results roughly three times better than in reality."
+ 
+ TFRKP_achieve_normal_luanox_of_diplomancy_NAME:0 "Diplomatic Genius"
+ TFRKP_achieve_normal_luanox_of_diplomancy_DESC:0 "Better than friends is having more friends."
+ 
+ TFRKP_achieve_normal_fly_of_icarus_NAME:0 "Towards the Sun"
+ TFRKP_achieve_normal_fly_of_icarus_DESC:0 "On Kim Min-seok's path, complete \"Icarus's Flight\" in 10 stages."
+ 
+ TFRKP_achieve_normal_house_of_card_NAME:0 "A House Built on Sand"
+ TFRKP_achieve_normal_house_of_card_DESC:0 "When the rain brought a flood and the wind blew and swept the house, it collapsed heavily."
+ 
+ ## Posta ##
+ TFRKP_achieve_normal_malatang_is_korean_NAME:0 "Mala Soup Is a Korean Dish"
+ TFRKP_achieve_normal_malatang_is_korean_DESC:0 "As the Republic of Korea, actually station troops in Sichuan."
+ 
+ TFRKP_achieve_normal_real_kk_NAME:0 "Just Type 'fr lol'"
+ TFRKP_achieve_normal_real_kk_DESC:0 "Everyone—the world exists beyond your keyboard."

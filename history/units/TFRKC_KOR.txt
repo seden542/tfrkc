@@ -1,0 +1,19 @@
+# Fictional civil-war fragments; these names do not claim real political allegiance.
+division_template = { name = "TFRKC KOR 3" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } }
+division_template = { name = "TFRKC KOR 2" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } } }
+division_template = { name = "TFRKC KOR infantry_division" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } }
+division_template = { name = "TFRKC KOR armored_division" regiments = { modern_armor = { x = 0 y = 0 } modern_armor = { x = 0 y = 1 } modern_armor = { x = 0 y = 2 } modern_armor = { x = 1 y = 0 } motorized = { x = 1 y = 1 } motorized = { x = 1 y = 2 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } artillery_brigade = { x = 2 y = 2 } } }
+units = {
+division = { name = "수도방위사령부 잔류 경비단" location = 13695 division_template = "TFRKC KOR 3" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "제52사단 잔류 전투단" location = 13692 division_template = "TFRKC KOR 2" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "제56사단 잔류 전투단" location = 7125 division_template = "TFRKC KOR 2" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제1보병사단" location = 13694 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제2보병사단" location = 15113 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제3보병사단" location = 13690 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제4보병사단" location = 14246 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제5보병사단" location = 15190 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제6보병사단" location = 14245 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제7보병사단" location = 13695 division_template = "TFRKC KOR infantry_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제1기갑사단" location = 13692 division_template = "TFRKC KOR armored_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+division = { name = "KOR 증편 제2기갑사단" location = 7125 division_template = "TFRKC KOR armored_division" start_experience_factor = 0.45 start_equipment_factor = 0.65 start_manpower_factor = 0.6 }
+}

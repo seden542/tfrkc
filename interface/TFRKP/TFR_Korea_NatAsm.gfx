@@ -1,0 +1,90 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_KOR_NatAsm_Overlay
+		texturefile = "gfx/interface/GUI/national_assembly/NatAsm_overlay.dds"
+	}
+	spriteType = {
+		name = GFX_KOR_NatAsm_cover
+		texturefile = "gfx/interface/GUI/national_assembly/NatAsm_cover.dds"
+	}
+	spriteType = {
+		name = GFX_KOR_NatAsm_Logo
+		texturefile = "gfx/interface/GUI/national_assembly/NatAsm_logo.dds"
+	}
+
+	spriteType = {
+		name = GFX_KOR_NatAsm_Box 
+		texturefile = "gfx/interface/GUI/national_assembly/NatAsm_box.dds"
+	}
+
+	progressbartype = {
+		name = GFX_KOR_DP_Bar
+		textureFile1 = "gfx/interface/GUI/national_assembly/DP.dds"
+		textureFile2 = "gfx/interface/GUI/national_assembly/empty.dds"
+		color = { 0 0.305 0.635 0 }
+		colortwo = { 0 0 0 0 }
+		size = { 
+			x = 350
+			y = 350
+		}
+		effectFile = "gfx/FX/progress_radial_legco.shader"
+		steps = 100000
+	}
+	progressbartype = {
+		name = GFX_KOR_PPP_Bar
+		textureFile1 = "gfx/interface/GUI/national_assembly/PPP.dds"
+		textureFile2 = "gfx/interface/GUI/national_assembly/empty.dds"
+		color = { 0.901 0.117 0.168 0 }
+		colortwo = { 0 0 0 0 }
+		size = { 
+			x = 350
+			y = 350
+		}
+		effectFile = "gfx/FX/progress_radial_legco.shader"
+		steps = 100000
+	}
+	progressbartype = {
+		name = GFX_KOR_PP_Bar
+		textureFile1 = "gfx/interface/GUI/national_assembly/PP.dds"
+		textureFile2 = "gfx/interface/GUI/national_assembly/empty.dds"
+		color = { 0.917 0.333 0.015 0 }
+		colortwo = { 0 0 0 0 }
+		size = { 
+			x = 350
+			y = 350
+		}
+		effectFile = "gfx/FX/progress_radial_legco.shader"
+		steps = 100000
+	}
+	progressbartype = {
+		name = GFX_KOR_JP_Bar
+		textureFile1 = "gfx/interface/GUI/national_assembly/JP.dds"
+		textureFile2 = "gfx/interface/GUI/national_assembly/empty.dds"
+		color = { 0.541 0.074 0.145 0 }
+		colortwo = { 0 0 0 0 }
+		size = { 
+			x = 350
+			y = 350
+		}
+		effectFile = "gfx/FX/progress_radial_legco.shader"
+		steps = 100000
+	}
+	progressbartype = {
+		name = GFX_KOR_Ind_Bar
+		textureFile1 = "gfx/interface/GUI/national_assembly/JP.dds"
+		textureFile2 = "gfx/interface/GUI/national_assembly/Ind.dds"
+		color = { 1 0.8 0 0 }
+		colortwo = { 0.301 0.301 0.301 1.0 }
+		size = { 
+			x = 350
+			y = 350
+		}
+		effectFile = "gfx/FX/progress_radial_legco.shader"
+		steps = 100000
+	}
+	spriteType = {
+		name = "GFX_NatAsm_party_icon"
+		texturefile = "gfx/interface/GUI/national_assembly/parties_icon.png"
+		noOfFrames = 9
+	}
+}

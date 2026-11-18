@@ -1,0 +1,146 @@
+# Explicit bilateral event/focus choice. All tag scopes are literal engine-readable tags.
+TFRKC_rework_integrate_KWC_KLF_effect = {
+ if = { limit = { TFRKC_rework_integration_KWC_KLF_trigger = yes }
+  if = { limit = { KLF = { is_ai = no } } KWC = { change_tag_from = KLF } }
+  KLF = { every_owned_state = { add_core_of = KWC } every_unit_leader = { set_nationality = KWC } transfer_units_fraction = { target = KWC size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KWC = { annex_country = { target = KLF transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KLF }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KWC_KPL_effect = {
+ if = { limit = { TFRKC_rework_integration_KWC_KPL_trigger = yes }
+  if = { limit = { KPL = { is_ai = no } } KWC = { change_tag_from = KPL } }
+  KPL = { every_owned_state = { add_core_of = KWC } every_unit_leader = { set_nationality = KWC } transfer_units_fraction = { target = KWC size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KWC = { annex_country = { target = KPL transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KPL }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KLF_KWC_effect = {
+ if = { limit = { TFRKC_rework_integration_KLF_KWC_trigger = yes }
+  if = { limit = { KWC = { is_ai = no } } KLF = { change_tag_from = KWC } }
+  KWC = { every_owned_state = { add_core_of = KLF } every_unit_leader = { set_nationality = KLF } transfer_units_fraction = { target = KLF size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KLF = { annex_country = { target = KWC transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KWC }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KLF_KPL_effect = {
+ if = { limit = { TFRKC_rework_integration_KLF_KPL_trigger = yes }
+  if = { limit = { KPL = { is_ai = no } } KLF = { change_tag_from = KPL } }
+  KPL = { every_owned_state = { add_core_of = KLF } every_unit_leader = { set_nationality = KLF } transfer_units_fraction = { target = KLF size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KLF = { annex_country = { target = KPL transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KPL }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KPL_KWC_effect = {
+ if = { limit = { TFRKC_rework_integration_KPL_KWC_trigger = yes }
+  if = { limit = { KWC = { is_ai = no } } KPL = { change_tag_from = KWC } }
+  KWC = { every_owned_state = { add_core_of = KPL } every_unit_leader = { set_nationality = KPL } transfer_units_fraction = { target = KPL size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KPL = { annex_country = { target = KWC transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KWC }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KPL_KLF_effect = {
+ if = { limit = { TFRKC_rework_integration_KPL_KLF_trigger = yes }
+  if = { limit = { KLF = { is_ai = no } } KPL = { change_tag_from = KLF } }
+  KLF = { every_owned_state = { add_core_of = KPL } every_unit_leader = { set_nationality = KPL } transfer_units_fraction = { target = KPL size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KPL = { annex_country = { target = KLF transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KLF }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KRC_ZAF_effect = {
+ if = { limit = { TFRKC_rework_integration_KRC_ZAF_trigger = yes }
+  if = { limit = { ZAF = { is_ai = no } } KRC = { change_tag_from = ZAF } }
+  ZAF = { every_owned_state = { add_core_of = KRC } every_unit_leader = { set_nationality = KRC } transfer_units_fraction = { target = KRC size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KRC = { annex_country = { target = ZAF transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_ZAF }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_ZAF_KRC_effect = {
+ if = { limit = { TFRKC_rework_integration_ZAF_KRC_trigger = yes }
+  if = { limit = { KRC = { is_ai = no } } ZAF = { change_tag_from = KRC } }
+  KRC = { every_owned_state = { add_core_of = ZAF } every_unit_leader = { set_nationality = ZAF } transfer_units_fraction = { target = ZAF size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  ZAF = { annex_country = { target = KRC transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KRC }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KOR_KCH_effect = {
+ if = { limit = { TFRKC_rework_integration_KOR_KCH_trigger = yes }
+  if = { limit = { KCH = { is_ai = no } } KOR = { change_tag_from = KCH } }
+  KCH = { every_owned_state = { add_core_of = KOR } every_unit_leader = { set_nationality = KOR } transfer_units_fraction = { target = KOR size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KOR = { annex_country = { target = KCH transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KCH }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KCH_KOR_effect = {
+ if = { limit = { TFRKC_rework_integration_KCH_KOR_trigger = yes }
+  if = { limit = { KOR = { is_ai = no } } KCH = { change_tag_from = KOR } }
+  KOR = { every_owned_state = { add_core_of = KCH } every_unit_leader = { set_nationality = KCH } transfer_units_fraction = { target = KCH size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KCH = { annex_country = { target = KOR transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KOR }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KYA_ZSL_effect = {
+ if = { limit = { TFRKC_rework_integration_KYA_ZSL_trigger = yes }
+  if = { limit = { ZSL = { is_ai = no } } KYA = { change_tag_from = ZSL } }
+  ZSL = { every_owned_state = { add_core_of = KYA } every_unit_leader = { set_nationality = KYA } transfer_units_fraction = { target = KYA size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KYA = { annex_country = { target = ZSL transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_ZSL }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_KYA_ZUS_effect = {
+ if = { limit = { TFRKC_rework_integration_KYA_ZUS_trigger = yes }
+  if = { limit = { ZUS = { is_ai = no } } KYA = { change_tag_from = ZUS } }
+  ZUS = { every_owned_state = { add_core_of = KYA } every_unit_leader = { set_nationality = KYA } transfer_units_fraction = { target = KYA size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  KYA = { annex_country = { target = ZUS transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_ZUS }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_ZSL_KYA_effect = {
+ if = { limit = { TFRKC_rework_integration_ZSL_KYA_trigger = yes }
+  if = { limit = { KYA = { is_ai = no } } ZSL = { change_tag_from = KYA } }
+  KYA = { every_owned_state = { add_core_of = ZSL } every_unit_leader = { set_nationality = ZSL } transfer_units_fraction = { target = ZSL size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  ZSL = { annex_country = { target = KYA transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KYA }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_ZSL_ZUS_effect = {
+ if = { limit = { TFRKC_rework_integration_ZSL_ZUS_trigger = yes }
+  if = { limit = { ZUS = { is_ai = no } } ZSL = { change_tag_from = ZUS } }
+  ZUS = { every_owned_state = { add_core_of = ZSL } every_unit_leader = { set_nationality = ZSL } transfer_units_fraction = { target = ZSL size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  ZSL = { annex_country = { target = ZUS transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_ZUS }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_ZUS_KYA_effect = {
+ if = { limit = { TFRKC_rework_integration_ZUS_KYA_trigger = yes }
+  if = { limit = { KYA = { is_ai = no } } ZUS = { change_tag_from = KYA } }
+  KYA = { every_owned_state = { add_core_of = ZUS } every_unit_leader = { set_nationality = ZUS } transfer_units_fraction = { target = ZUS size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  ZUS = { annex_country = { target = KYA transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_KYA }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+
+TFRKC_rework_integrate_ZUS_ZSL_effect = {
+ if = { limit = { TFRKC_rework_integration_ZUS_ZSL_trigger = yes }
+  if = { limit = { ZSL = { is_ai = no } } ZUS = { change_tag_from = ZSL } }
+  ZSL = { every_owned_state = { add_core_of = ZUS } every_unit_leader = { set_nationality = ZUS } transfer_units_fraction = { target = ZUS size = 1 army_ratio = 1 air_ratio = 1 navy_ratio = 1 stockpile_ratio = 1 } }
+  ZUS = { annex_country = { target = ZSL transfer_troops = yes } clr_country_flag = TFRKC_rework_accept_ZSL }
+  TFRKC_rework_refresh_border_wars_effect = yes
+ }
+}
+# Retired parameterized API is intentionally inert. Use a fixed pair above.
+TFRKC_rework_integrate_effect = { }

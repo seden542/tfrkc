@@ -1,0 +1,9 @@
+TFRKC_protracted_civilwar = {
+ icon = GFX_idea_generic_build_infrastructure
+ enable = { TFRKC_war_pacing_eligible_trigger = yes }
+ remove_trigger = { NOT = { TFRKC_war_pacing_eligible_trigger = yes } }
+ army_core_defence_factor = 0.18
+ army_org_factor = 0.15
+ army_attack_factor = -0.08
+ surrender_limit = 0.10
+}
